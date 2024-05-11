@@ -1,0 +1,165 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+    "http://www.w3.org/TR/html4/loose.dtd">
+<HTML LANG="EN-US">
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="viewport" CONTENT="width=device-width, initial-scale=1.0">
+<STYLE TYPE="text/css">
+<!--
+img { margin-bottom: -4px }
+.r { font-family: "Arial Narrow";
+     font-size: x-small;
+   }
+.i { font-family: "Arial Narrow";
+     font-size: x-small;
+     color: gray;
+   }
+-->
+</STYLE>
+<link rel="stylesheet" 
+media="screen" 
+href="https://fontlibrary.org//face/xits-math" 
+type="text/css"/> 
+<STYLE TYPE="text/css"> 
+<!--
+  .wff { color: blue; } 
+  .objvar { color: red; } 
+  .term { color: green; } 
+  .class { color: #CC33CC; } 
+  .typecode { color: gray; } 
+  .math { font-family: XITSRegular; } 
+-->
+</STYLE>
+<TITLE>df-or-D2.3 - bfol.mm Proof Explorer</TITLE>
+<LINK REL="shortcut icon" HREF="favicon.ico" TYPE="image/x-icon">
+</HEAD>
+<BODY BGCOLOR="#FFFFFF">
+<TABLE BORDER=0 CELLSPACING=0 CELLPADDING=0 WIDTH="100%">
+  <TR>
+    <TD ALIGN=LEFT VALIGN=TOP WIDTH="25%"><A HREF=
+    "mmset.html"><IMG SRC="mm.gif"
+      BORDER=0
+      ALT="PE Home"
+      TITLE="PE Home"
+      HEIGHT=32 WIDTH=32 ALIGN=TOP STYLE="margin-bottom:0px"></A>
+    </TD>
+    <TD ALIGN=CENTER COLSPAN=2 VALIGN=TOP><FONT SIZE="+3" COLOR="#006633"><B>
+bfol.mm Proof Explorer
+      </B></FONT></TD>
+    <TD ALIGN=RIGHT VALIGN=TOP WIDTH="25%">
+      <FONT SIZE=-1 FACE=sans-serif>
+      <A HREF="wff-or.html">
+      &lt; Previous</A>&nbsp;&nbsp;
+      <A HREF="orintl-P2.15a.html">Next &gt;</A>
+      </FONT><FONT FACE=sans-serif SIZE=-2>
+      <BR><A HREF="mmtheorems2.html#df-or-D2.3">Nearby theorems</A>
+      </FONT>
+    </TD>
+  </TR>
+  <TR>
+    <TD COLSPAN=2 ALIGN=LEFT VALIGN=TOP><FONT SIZE=-2
+      FACE=sans-serif>
+      <A HREF="../mm.html">Mirrors</A>&nbsp; &gt;
+      &nbsp;<A HREF="../index.html">Home</A>&nbsp; &gt;
+      &nbsp;<A HREF="mmset.html">PE Home</A>&nbsp; &gt;
+      &nbsp;<A HREF="mmtheorems.html">Th. List</A>&nbsp; &gt;
+      &nbsp;df-or-D2.3
+      </FONT>
+    </TD>
+    <TD COLSPAN=2 ALIGN=RIGHT VALIGN=TOP>
+      <FONT SIZE=-2 FACE=sans-serif>
+
+      </FONT>
+    </TD>
+  </TR>
+</TABLE>
+<HR NOSHADE SIZE=1>
+<CENTER><B><FONT SIZE="+1">Definition <FONT
+COLOR="#006633">df-or-D2.3</FONT></FONT></B>&nbsp;<SPAN CLASS=r
+STYLE="color:#C55D00">155</SPAN></CENTER>
+<CENTER><TABLE><TR><TD ALIGN=LEFT><B>Description: </B>Definition of
+Disjunction, '<SPAN CLASS=math>&vee;</SPAN>'. Read as
+&quot;or&quot;.</TD></TR></TABLE></CENTER>
+
+<CENTER><TABLE BORDER CELLSPACING=0 BGCOLOR="#EEFFFA"
+SUMMARY="Assertion">
+<CAPTION><B>Assertion</B></CAPTION>
+<TR><TH>Ref
+</TH><TH>Expression</TH></TR>
+<TR ALIGN=LEFT><TD><FONT COLOR="#006633"><B>df-or-D2.3</B></FONT></TD><TD>
+<SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN>((<SPAN
+CLASS=wff>&#x1D711;</SPAN> &vee; <SPAN CLASS=wff>&#x1D713;</SPAN>) &harr;
+(&not; <SPAN CLASS=wff>&#x1D711;</SPAN> &rarr; <SPAN
+CLASS=wff>&#x1D713;</SPAN>))</SPAN></TD></TR>
+</TABLE></CENTER>
+
+
+<HR NOSHADE SIZE=1>
+<CENTER><TABLE BORDER CELLSPACING=0 BGCOLOR="#EEFFFA"
+SUMMARY="Detailed syntax breakdown of definition">
+<CAPTION><B>Detailed syntax breakdown of Definition <FONT
+   COLOR="#006633">df-or-D2.3</FONT></B></CAPTION>
+<TR><TH>Step</TH><TH>Hyp</TH><TH>Ref
+</TH><TH>Expression</TH></TR>
+<TR ALIGN=LEFT><TD>1</TD><TD>&nbsp;</TD><TD>wff-ph</TD><TD><A NAME="1"></A>
+<SPAN CLASS=i>. . 3</SPAN>
+<SPAN CLASS=math><SPAN CLASS=typecode>wff </SPAN><SPAN
+CLASS=wff>&#x1D711;</SPAN></SPAN></TD></TR>
+<TR ALIGN=LEFT><TD>2</TD><TD>&nbsp;</TD><TD>wff-ps</TD><TD><A NAME="2"></A>
+<SPAN CLASS=i>. . 3</SPAN>
+<SPAN CLASS=math><SPAN CLASS=typecode>wff </SPAN><SPAN
+CLASS=wff>&#x1D713;</SPAN></SPAN></TD></TR>
+<TR ALIGN=LEFT><TD>3</TD><TD><A HREF="#1">1</A>, <A HREF="#2">2</A></TD><TD><A
+HREF="wff-or.html"
+TITLE="Extend WFF definition to include the 'or' symbol '`\/`'.">wff-or</A>&nbsp;<SPAN
+CLASS=r STYLE="color:#C55C00">154</SPAN></TD><TD><A NAME="3"></A>
+<SPAN CLASS=i>. 2</SPAN>
+<SPAN CLASS=math><SPAN CLASS=typecode>wff </SPAN>(<SPAN
+CLASS=wff>&#x1D711;</SPAN> &vee; <SPAN
+CLASS=wff>&#x1D713;</SPAN>)</SPAN></TD></TR>
+<TR ALIGN=LEFT><TD>4</TD><TD><A HREF="#1">1</A></TD><TD><A HREF="wff-neg.html"
+TITLE="If '`w_ph`' is well formed formula, then '`-. w_ph`' is a well formed formula.">wff-neg</A>&nbsp;<SPAN
+CLASS=r STYLE="color:#FA0200">9</SPAN></TD><TD><A NAME="4"></A>
+<SPAN CLASS=i>. . 3</SPAN>
+<SPAN CLASS=math><SPAN CLASS=typecode>wff </SPAN> &not; <SPAN
+CLASS=wff>&#x1D711;</SPAN></SPAN></TD></TR>
+<TR ALIGN=LEFT><TD>5</TD><TD><A HREF="#4">4</A>, <A HREF="#2">2</A></TD><TD><A
+HREF="wff-imp.html"
+TITLE="If '`w_ph`' and '`w_ps`' are well formed formulas, then '`( w_ph -> w_ps )`' is a...">wff-imp</A>&nbsp;<SPAN
+CLASS=r STYLE="color:#FA0200">10</SPAN></TD><TD><A NAME="5"></A>
+<SPAN CLASS=i>. 2</SPAN>
+<SPAN CLASS=math><SPAN CLASS=typecode>wff </SPAN>(&not; <SPAN
+CLASS=wff>&#x1D711;</SPAN> &rarr; <SPAN
+CLASS=wff>&#x1D713;</SPAN>)</SPAN></TD></TR>
+<TR ALIGN=LEFT><TD>6</TD><TD><A HREF="#3">3</A>, <A HREF="#5">5</A></TD><TD><A
+HREF="wff-bi.html"
+TITLE="Extend WFF definition to include the biconditional symbol '`<->`'.">wff-bi</A>&nbsp;<SPAN
+CLASS=r STYLE="color:#E14100">103</SPAN></TD><TD><A NAME="6"></A>
+<SPAN CLASS=i>1</SPAN>
+<SPAN CLASS=math><SPAN CLASS=typecode>wff </SPAN>((<SPAN
+CLASS=wff>&#x1D711;</SPAN> &vee; <SPAN CLASS=wff>&#x1D713;</SPAN>) &harr;
+(&not; <SPAN CLASS=wff>&#x1D711;</SPAN> &rarr; <SPAN
+CLASS=wff>&#x1D713;</SPAN>))</SPAN></TD></TR>
+</TABLE></CENTER>
+<CENTER><TABLE CELLSPACING=5><TR><TD ALIGN=LEFT><FONT SIZE=-1><B>Colors of
+variables:</B>  <SPAN CLASS=typecode
+STYLE="color:blue;font-style:normal">wff</SPAN> <SPAN CLASS=typecode
+STYLE="color:red;font-style:normal">objvar</SPAN> <SPAN CLASS=typecode
+STYLE="color:green;font-style:normal">term</SPAN> <SPAN CLASS=typecode
+STYLE="color:#CC33CC;font-style:normal">class</SPAN></FONT></TD></TR>
+<TR><TD ALIGN=LEFT><FONT SIZE=-1><B>This definition is referenced by:</B> &nbsp;<A HREF="orintl-P2.15a.html">orintl-P2.15a</A>
+&nbsp;<SPAN CLASS=r STYLE="color:#C45D00">156</SPAN> &nbsp;<A HREF="orintr-P2.15b.html">orintr-P2.15b</A>
+&nbsp;<SPAN CLASS=r STYLE="color:#C35E00">158</SPAN> &nbsp;<A HREF="orelim-P2.15c.html">orelim-P2.15c</A>
+&nbsp;<SPAN CLASS=r STYLE="color:#C16000">160</SPAN></FONT></TD></TR></TABLE></CENTER>
+<TABLE BORDER=0 WIDTH="100%">
+<TR><TD WIDTH="25%">&nbsp;</TD>
+<TD ALIGN=CENTER VALIGN=BOTTOM>
+<FONT SIZE=-2 FACE=sans-serif>
+Copyright terms:
+<A HREF="../copyright.html#pd">Public domain</A>
+</FONT></TD><TD ALIGN=RIGHT VALIGN=BOTTOM WIDTH="25%">
+<FONT SIZE=-2 FACE=sans-serif>
+<A HREF="http://validator.w3.org/check?uri=referer">
+W3C validator</A>
+</FONT></TD></TR></TABLE>
+</BODY></HTML>

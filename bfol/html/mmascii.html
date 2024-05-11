@@ -1,0 +1,219 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+    "http://www.w3.org/TR/html4/loose.dtd">
+<HTML LANG="EN-US">
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="viewport" CONTENT="width=device-width, initial-scale=1.0">
+<STYLE TYPE="text/css">
+<!--
+img { margin-bottom: -4px }
+.r { font-family: "Arial Narrow";
+     font-size: x-small;
+   }
+.i { font-family: "Arial Narrow";
+     font-size: x-small;
+     color: gray;
+   }
+-->
+</STYLE>
+<link rel="stylesheet" 
+media="screen" 
+href="https://fontlibrary.org//face/xits-math" 
+type="text/css"/> 
+<STYLE TYPE="text/css"> 
+<!--
+  .wff { color: blue; } 
+  .objvar { color: red; } 
+  .term { color: green; } 
+  .class { color: #CC33CC; } 
+  .typecode { color: gray; } 
+  .math { font-family: XITSRegular; } 
+-->
+</STYLE>
+<TITLE>mmascii - bfol.mm Proof Explorer</TITLE>
+<LINK REL="shortcut icon" HREF="favicon.ico" TYPE="image/x-icon">
+</HEAD>
+<BODY BGCOLOR="#FFFFFF">
+<TABLE BORDER=0 CELLSPACING=0 CELLPADDING=0 WIDTH="100%">
+  <TR>
+    <TD ALIGN=LEFT VALIGN=TOP WIDTH="25%"><A HREF=
+    "mmset.html"><IMG SRC="mm.gif"
+      BORDER=0
+      ALT="PE Home"
+      TITLE="PE Home"
+      HEIGHT=32 WIDTH=32 ALIGN=TOP STYLE="margin-bottom:0px"></A>
+    </TD>
+    <TD ALIGN=CENTER COLSPAN=2 VALIGN=TOP><FONT SIZE="+3" COLOR="#006633"><B>
+bfol.mm Proof Explorer
+      </B></FONT></TD>
+      <TD ALIGN=RIGHT VALIGN=TOP
+       ><FONT FACE=sans-serif SIZE=-2>
+&nbsp;
+      </FONT>
+    </TD>
+  </TR>
+</TABLE>
+<HR NOSHADE SIZE=1>
+<CENTER><FONT COLOR="#006633"><B>Symbol to ASCII Correspondence for Text-Only
+Browsers (in order of appearance in $c and $v statements in the
+database)</B></FONT></CENTER><P>
+<CENTER>
+<TABLE BORDER CELLSPACING=0 BGCOLOR="#EEFFFA"
+SUMMARY="Symbol to ASCII correspondences">
+<TR ALIGN=LEFT><TD><B>
+Symbol</B></TD><TD><B>ASCII
+</B></TD></TR>
+<TR ALIGN=LEFT><TD><SPAN CLASS=math><SPAN CLASS=typecode>objvar
+</SPAN></SPAN>&nbsp;</TD><TD><TT>objvar</TT></TD></TR>
+<TR ALIGN=LEFT><TD><SPAN CLASS=math><SPAN CLASS=typecode>term
+</SPAN></SPAN>&nbsp;</TD><TD><TT>term</TT></TD></TR>
+<TR ALIGN=LEFT><TD><SPAN CLASS=math><SPAN CLASS=typecode>class
+</SPAN></SPAN>&nbsp;</TD><TD><TT>class</TT></TD></TR>
+<TR ALIGN=LEFT><TD><SPAN CLASS=math><SPAN CLASS=typecode>wff
+</SPAN></SPAN>&nbsp;</TD><TD><TT>wff</TT></TD></TR>
+<TR ALIGN=LEFT><TD><SPAN CLASS=math><SPAN CLASS=typecode>&vdash;
+</SPAN></SPAN>&nbsp;</TD><TD><TT>|-</TT></TD></TR>
+<TR ALIGN=LEFT><TD><SPAN CLASS=math>(</SPAN>&nbsp;</TD><TD><TT>(</TT></TD></TR>
+<TR ALIGN=LEFT><TD><SPAN CLASS=math>)</SPAN>&nbsp;</TD><TD><TT>)</TT></TD></TR>
+<TR ALIGN=LEFT><TD><SPAN CLASS=math> &rarr;
+</SPAN>&nbsp;</TD><TD><TT>-&gt;</TT></TD></TR>
+<TR ALIGN=LEFT><TD><SPAN CLASS=math>&not;
+</SPAN>&nbsp;</TD><TD><TT>-.</TT></TD></TR>
+<TR ALIGN=LEFT><TD><SPAN
+CLASS=math>&forall;</SPAN>&nbsp;</TD><TD><TT>A.</TT></TD></TR>
+<TR ALIGN=LEFT><TD><SPAN CLASS=math> =
+</SPAN>&nbsp;</TD><TD><TT>=</TT></TD></TR>
+<TR ALIGN=LEFT><TD><SPAN CLASS=math> &isin;
+</SPAN>&nbsp;</TD><TD><TT>e.</TT></TD></TR>
+<TR ALIGN=LEFT><TD><SPAN CLASS=math>0</SPAN>&nbsp;</TD><TD><TT>0</TT></TD></TR>
+<TR ALIGN=LEFT><TD><SPAN
+CLASS=math>s&lsquo;</SPAN>&nbsp;</TD><TD><TT>s`</TT></TD></TR>
+<TR ALIGN=LEFT><TD><SPAN CLASS=math> +
+</SPAN>&nbsp;</TD><TD><TT>+</TT></TD></TR>
+<TR ALIGN=LEFT><TD><SPAN CLASS=math> &sdot;
+</SPAN>&nbsp;</TD><TD><TT>x.</TT></TD></TR>
+<TR ALIGN=LEFT><TD><SPAN CLASS=math> &harr;
+</SPAN>&nbsp;</TD><TD><TT>&lt;-&gt;</TT></TD></TR>
+<TR ALIGN=LEFT><TD><SPAN CLASS=math> &wedge;
+</SPAN>&nbsp;</TD><TD><TT>/\</TT></TD></TR>
+<TR ALIGN=LEFT><TD><SPAN CLASS=math> &vee;
+</SPAN>&nbsp;</TD><TD><TT>\/</TT></TD></TR>
+<TR ALIGN=LEFT><TD><SPAN CLASS=math> &top;
+</SPAN>&nbsp;</TD><TD><TT>T.</TT></TD></TR>
+<TR ALIGN=LEFT><TD><SPAN CLASS=math> &perp;
+</SPAN>&nbsp;</TD><TD><TT>F.</TT></TD></TR>
+<TR ALIGN=LEFT><TD><SPAN
+CLASS=math>&exist;</SPAN>&nbsp;</TD><TD><TT>E.</TT></TD></TR>
+<TR ALIGN=LEFT><TD><SPAN
+CLASS=math>&#8498;</SPAN>&nbsp;</TD><TD><TT>F/</TT></TD></TR>
+<TR ALIGN=LEFT><TD><SPAN CLASS=math>[</SPAN>&nbsp;</TD><TD><TT>[</TT></TD></TR>
+<TR ALIGN=LEFT><TD><SPAN CLASS=math>]</SPAN>&nbsp;</TD><TD><TT>]</TT></TD></TR>
+<TR ALIGN=LEFT><TD><SPAN CLASS=math> /
+</SPAN>&nbsp;</TD><TD><TT>/</TT></TD></TR>
+<TR ALIGN=LEFT><TD><SPAN CLASS=math> &amp;
+</SPAN>&nbsp;</TD><TD><TT>&amp;</TT></TD></TR>
+<TR ALIGN=LEFT><TD><SPAN CLASS=math> &rArr;
+</SPAN>&nbsp;</TD><TD><TT>=&gt;</TT></TD></TR>
+<TR ALIGN=LEFT><TD><SPAN CLASS=math> &hArr;
+</SPAN>&nbsp;</TD><TD><TT>&lt;=&gt;</TT></TD></TR>
+<TR ALIGN=LEFT><TD><SPAN CLASS=math> &coloneq;
+</SPAN>&nbsp;</TD><TD><TT>:=</TT></TD></TR>
+<TR ALIGN=LEFT><TD><SPAN CLASS=math> &dagger;
+</SPAN>&nbsp;</TD><TD><TT>t.</TT></TD></TR>
+<TR ALIGN=LEFT><TD><SPAN CLASS=math><SPAN
+CLASS=wff>&#x1D711;</SPAN></SPAN>&nbsp;</TD><TD><TT>w_ph</TT></TD></TR>
+<TR ALIGN=LEFT><TD><SPAN CLASS=math><SPAN
+CLASS=wff>&#x1D711;&#x2081;</SPAN></SPAN>&nbsp;</TD><TD><TT>w_ph1</TT></TD></TR>
+<TR ALIGN=LEFT><TD><SPAN CLASS=math><SPAN
+CLASS=wff>&#x1D711;&#x2082;</SPAN></SPAN>&nbsp;</TD><TD><TT>w_ph2</TT></TD></TR>
+<TR ALIGN=LEFT><TD><SPAN CLASS=math><SPAN
+CLASS=wff>&#x1D711;&#x2083;</SPAN></SPAN>&nbsp;</TD><TD><TT>w_ph3</TT></TD></TR>
+<TR ALIGN=LEFT><TD><SPAN CLASS=math><SPAN
+CLASS=wff>&#x1D711;&#x2084;</SPAN></SPAN>&nbsp;</TD><TD><TT>w_ph4</TT></TD></TR>
+<TR ALIGN=LEFT><TD><SPAN CLASS=math><SPAN
+CLASS=wff>&#x1D711;&#x2085;</SPAN></SPAN>&nbsp;</TD><TD><TT>w_ph5</TT></TD></TR>
+<TR ALIGN=LEFT><TD><SPAN CLASS=math><SPAN
+CLASS=wff>&#x1D713;</SPAN></SPAN>&nbsp;</TD><TD><TT>w_ps</TT></TD></TR>
+<TR ALIGN=LEFT><TD><SPAN CLASS=math><SPAN
+CLASS=wff>&#x1D713;&#x2081;</SPAN></SPAN>&nbsp;</TD><TD><TT>w_ps1</TT></TD></TR>
+<TR ALIGN=LEFT><TD><SPAN CLASS=math><SPAN
+CLASS=wff>&#x1D712;</SPAN></SPAN>&nbsp;</TD><TD><TT>w_ch</TT></TD></TR>
+<TR ALIGN=LEFT><TD><SPAN CLASS=math><SPAN
+CLASS=wff>&#x1D712;&#x2081;</SPAN></SPAN>&nbsp;</TD><TD><TT>w_ch1</TT></TD></TR>
+<TR ALIGN=LEFT><TD><SPAN CLASS=math><SPAN
+CLASS=wff>&#x1D717;</SPAN></SPAN>&nbsp;</TD><TD><TT>w_th</TT></TD></TR>
+<TR ALIGN=LEFT><TD><SPAN CLASS=math><SPAN
+CLASS=wff>&#x1D70F;</SPAN></SPAN>&nbsp;</TD><TD><TT>w_ta</TT></TD></TR>
+<TR ALIGN=LEFT><TD><SPAN CLASS=math><SPAN
+CLASS=wff>&#x1D6FE;</SPAN></SPAN>&nbsp;</TD><TD><TT>w_ga</TT></TD></TR>
+<TR ALIGN=LEFT><TD><SPAN CLASS=math><SPAN
+CLASS=wff>&#x1D6FE;&#x2081;</SPAN></SPAN>&nbsp;</TD><TD><TT>w_ga1</TT></TD></TR>
+<TR ALIGN=LEFT><TD><SPAN CLASS=math><SPAN
+CLASS=wff>&#x1D6FE;&#x2082;</SPAN></SPAN>&nbsp;</TD><TD><TT>w_ga2</TT></TD></TR>
+<TR ALIGN=LEFT><TD><SPAN CLASS=math><SPAN
+CLASS=wff>&#x1D6FE;&#x2083;</SPAN></SPAN>&nbsp;</TD><TD><TT>w_ga3</TT></TD></TR>
+<TR ALIGN=LEFT><TD><SPAN CLASS=math><SPAN
+CLASS=wff>&#x1D6FE;&#x2084;</SPAN></SPAN>&nbsp;</TD><TD><TT>w_ga4</TT></TD></TR>
+<TR ALIGN=LEFT><TD><SPAN CLASS=math><SPAN
+CLASS=wff>&#x1D6FE;&#x2085;</SPAN></SPAN>&nbsp;</TD><TD><TT>w_ga5</TT></TD></TR>
+<TR ALIGN=LEFT><TD><SPAN CLASS=math><SPAN
+CLASS=term>&#x1D460;</SPAN></SPAN>&nbsp;</TD><TD><TT>t_s</TT></TD></TR>
+<TR ALIGN=LEFT><TD><SPAN CLASS=math><SPAN
+CLASS=term>&#x1D461;</SPAN></SPAN>&nbsp;</TD><TD><TT>t_t</TT></TD></TR>
+<TR ALIGN=LEFT><TD><SPAN CLASS=math><SPAN
+CLASS=term>&#x1D461;&#x2081;</SPAN></SPAN>&nbsp;</TD><TD><TT>t_t1</TT></TD></TR>
+<TR ALIGN=LEFT><TD><SPAN CLASS=math><SPAN
+CLASS=term>&#x1D461;&#x2082;</SPAN></SPAN>&nbsp;</TD><TD><TT>t_t2</TT></TD></TR>
+<TR ALIGN=LEFT><TD><SPAN CLASS=math><SPAN
+CLASS=term>&#x1D462;</SPAN></SPAN>&nbsp;</TD><TD><TT>t_u</TT></TD></TR>
+<TR ALIGN=LEFT><TD><SPAN CLASS=math><SPAN
+CLASS=term>&#x1D462;&#x2081;</SPAN></SPAN>&nbsp;</TD><TD><TT>t_u1</TT></TD></TR>
+<TR ALIGN=LEFT><TD><SPAN CLASS=math><SPAN
+CLASS=term>&#x1D462;&#x2082;</SPAN></SPAN>&nbsp;</TD><TD><TT>t_u2</TT></TD></TR>
+<TR ALIGN=LEFT><TD><SPAN CLASS=math><SPAN
+CLASS=term>&#x1D463;</SPAN></SPAN>&nbsp;</TD><TD><TT>t_v</TT></TD></TR>
+<TR ALIGN=LEFT><TD><SPAN CLASS=math><SPAN
+CLASS=term>&#x1D463;&#x2081;</SPAN></SPAN>&nbsp;</TD><TD><TT>t_v1</TT></TD></TR>
+<TR ALIGN=LEFT><TD><SPAN CLASS=math><SPAN
+CLASS=term>&#x1D463;&#x2082;</SPAN></SPAN>&nbsp;</TD><TD><TT>t_v2</TT></TD></TR>
+<TR ALIGN=LEFT><TD><SPAN CLASS=math><SPAN
+CLASS=term>&#x1D464;</SPAN></SPAN>&nbsp;</TD><TD><TT>t_w</TT></TD></TR>
+<TR ALIGN=LEFT><TD><SPAN CLASS=math><SPAN
+CLASS=objvar>&#x1D465;</SPAN></SPAN>&nbsp;</TD><TD><TT>x</TT></TD></TR>
+<TR ALIGN=LEFT><TD><SPAN CLASS=math><SPAN
+CLASS=objvar>&#x1D465;&#x2081;</SPAN></SPAN>&nbsp;</TD><TD><TT>x1</TT></TD></TR>
+<TR ALIGN=LEFT><TD><SPAN CLASS=math><SPAN
+CLASS=objvar>&#x1D466;</SPAN></SPAN>&nbsp;</TD><TD><TT>y</TT></TD></TR>
+<TR ALIGN=LEFT><TD><SPAN CLASS=math><SPAN
+CLASS=objvar>&#x1D466;&#x2081;</SPAN></SPAN>&nbsp;</TD><TD><TT>y1</TT></TD></TR>
+<TR ALIGN=LEFT><TD><SPAN CLASS=math><SPAN
+CLASS=objvar>&#x1D467;</SPAN></SPAN>&nbsp;</TD><TD><TT>z</TT></TD></TR>
+<TR ALIGN=LEFT><TD><SPAN CLASS=math><SPAN
+CLASS=objvar>&#x1D467;&#x2081;</SPAN></SPAN>&nbsp;</TD><TD><TT>z1</TT></TD></TR>
+<TR ALIGN=LEFT><TD><SPAN CLASS=math><SPAN
+CLASS=objvar>&#x1D44E;</SPAN></SPAN>&nbsp;</TD><TD><TT>a</TT></TD></TR>
+<TR ALIGN=LEFT><TD><SPAN CLASS=math><SPAN
+CLASS=objvar>&#x1D44E;&#x2081;</SPAN></SPAN>&nbsp;</TD><TD><TT>a1</TT></TD></TR>
+<TR ALIGN=LEFT><TD><SPAN CLASS=math><SPAN
+CLASS=objvar>&#x1D44F;</SPAN></SPAN>&nbsp;</TD><TD><TT>b</TT></TD></TR>
+<TR ALIGN=LEFT><TD><SPAN CLASS=math><SPAN
+CLASS=objvar>&#x1D44F;&#x2081;</SPAN></SPAN>&nbsp;</TD><TD><TT>b1</TT></TD></TR>
+<TR ALIGN=LEFT><TD><SPAN CLASS=math><SPAN
+CLASS=objvar>&#x1D450;</SPAN></SPAN>&nbsp;</TD><TD><TT>c</TT></TD></TR>
+<TR ALIGN=LEFT><TD><SPAN CLASS=math><SPAN
+CLASS=objvar>&#x1D450;&#x2081;</SPAN></SPAN>&nbsp;</TD><TD><TT>c1</TT></TD></TR>
+<TR ALIGN=LEFT><TD><SPAN CLASS=math><SPAN
+CLASS=objvar>&#x1D451;</SPAN></SPAN>&nbsp;</TD><TD><TT>d</TT></TD></TR>
+</TABLE></CENTER>
+<TABLE BORDER=0 WIDTH="100%">
+<TR><TD WIDTH="25%">&nbsp;</TD>
+<TD ALIGN=CENTER VALIGN=BOTTOM>
+<FONT SIZE=-2 FACE=sans-serif>
+Copyright terms:
+<A HREF="../copyright.html#pd">Public domain</A>
+</FONT></TD><TD ALIGN=RIGHT VALIGN=BOTTOM WIDTH="25%">
+<FONT SIZE=-2 FACE=sans-serif>
+<A HREF="http://validator.w3.org/check?uri=referer">
+W3C validator</A>
+</FONT></TD></TR></TABLE>
+</BODY></HTML>

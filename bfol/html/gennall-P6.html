@@ -1,0 +1,161 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+    "http://www.w3.org/TR/html4/loose.dtd">
+<HTML LANG="EN-US">
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="viewport" CONTENT="width=device-width, initial-scale=1.0">
+<STYLE TYPE="text/css">
+<!--
+img { margin-bottom: -4px }
+.r { font-family: "Arial Narrow";
+     font-size: x-small;
+   }
+.i { font-family: "Arial Narrow";
+     font-size: x-small;
+     color: gray;
+   }
+-->
+</STYLE>
+<link rel="stylesheet" 
+media="screen" 
+href="https://fontlibrary.org//face/xits-math" 
+type="text/css"/> 
+<STYLE TYPE="text/css"> 
+<!--
+  .wff { color: blue; } 
+  .objvar { color: red; } 
+  .term { color: green; } 
+  .class { color: #CC33CC; } 
+  .typecode { color: gray; } 
+  .math { font-family: XITSRegular; } 
+-->
+</STYLE>
+<TITLE>gennall-P6 - bfol.mm Proof Explorer</TITLE>
+<LINK REL="shortcut icon" HREF="favicon.ico" TYPE="image/x-icon">
+</HEAD>
+<BODY BGCOLOR="#FFFFFF">
+<TABLE BORDER=0 CELLSPACING=0 CELLPADDING=0 WIDTH="100%">
+  <TR>
+    <TD ALIGN=LEFT VALIGN=TOP WIDTH="25%"><A HREF=
+    "mmset.html"><IMG SRC="mm.gif"
+      BORDER=0
+      ALT="PE Home"
+      TITLE="PE Home"
+      HEIGHT=32 WIDTH=32 ALIGN=TOP STYLE="margin-bottom:0px"></A>
+    </TD>
+    <TD ALIGN=CENTER COLSPAN=2 VALIGN=TOP><FONT SIZE="+3" COLOR="#006633"><B>
+bfol.mm Proof Explorer
+      </B></FONT></TD>
+    <TD ALIGN=RIGHT VALIGN=TOP WIDTH="25%">
+      <FONT SIZE=-1 FACE=sans-serif>
+      <A HREF="isubtopsub-P6.html">
+      &lt; Previous</A>&nbsp;&nbsp;
+      <A HREF="genex-P6.html">Next &gt;</A>
+      </FONT><FONT FACE=sans-serif SIZE=-2>
+      <BR><A HREF="mmtheorems8.html#gennall-P6">Nearby theorems</A>
+      </FONT>
+    </TD>
+  </TR>
+  <TR>
+    <TD COLSPAN=2 ALIGN=LEFT VALIGN=TOP><FONT SIZE=-2
+      FACE=sans-serif>
+      <A HREF="../mm.html">Mirrors</A>&nbsp; &gt;
+      &nbsp;<A HREF="../index.html">Home</A>&nbsp; &gt;
+      &nbsp;<A HREF="mmset.html">PE Home</A>&nbsp; &gt;
+      &nbsp;<A HREF="mmtheorems.html">Th. List</A>&nbsp; &gt;
+      &nbsp;gennall-P6
+      </FONT>
+    </TD>
+    <TD COLSPAN=2 ALIGN=RIGHT VALIGN=TOP>
+      <FONT SIZE=-2 FACE=sans-serif>
+
+      </FONT>
+    </TD>
+  </TR>
+</TABLE>
+<HR NOSHADE SIZE=1>
+<CENTER><B><FONT SIZE="+1">Theorem <FONT
+COLOR="#006633">gennall-P6</FONT></FONT></B>&nbsp;<SPAN CLASS=r
+STYLE="color:#736BFF">736</SPAN></CENTER>
+<CENTER><TABLE><TR><TD ALIGN=LEFT><B>Description: </B>The WFF '<SPAN
+CLASS=math>&not; &forall;<SPAN CLASS=objvar>&#x1D465;</SPAN><SPAN
+CLASS=wff>&#x1D711;</SPAN></SPAN>' is General For '<SPAN CLASS=math><SPAN
+CLASS=objvar>&#x1D465;</SPAN></SPAN>'.
+<P STYLE="margin-bottom:0em">
+       If this result is stated as an axiom (<A
+HREF="ax-L10.html">ax-L10</A>&nbsp;<SPAN CLASS=r
+STYLE="color:#F80800">27</SPAN>), then all the other
+       related &quot;general for&quot; rules will follow (though half will
+require
+       <A HREF="ax-L12.html">ax-L12</A>&nbsp;<SPAN CLASS=r
+STYLE="color:#F70900">29</SPAN> as well).
+<P STYLE="margin-bottom:0em">
+       See <A HREF="gennallw-P6.html">gennallw-P6</A>&nbsp;<SPAN CLASS=r
+STYLE="color:#3778FF">684</SPAN> for a version that requires only FOL
+axioms.</TD></TR></TABLE></CENTER>
+
+<CENTER><TABLE BORDER CELLSPACING=0 BGCOLOR="#EEFFFA"
+SUMMARY="Assertion">
+<CAPTION><B>Assertion</B></CAPTION>
+<TR><TH>Ref
+</TH><TH>Expression</TH></TR>
+<TR ALIGN=LEFT><TD><FONT COLOR="#006633"><B>gennall-P6</B></FONT></TD><TD>
+<SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN>(&not; &forall;<SPAN
+CLASS=objvar>&#x1D465;</SPAN><SPAN CLASS=wff>&#x1D711;</SPAN> &rarr;
+&forall;<SPAN CLASS=objvar>&#x1D465;</SPAN> &not; &forall;<SPAN
+CLASS=objvar>&#x1D465;</SPAN><SPAN CLASS=wff>&#x1D711;</SPAN>)</SPAN></TD></TR>
+</TABLE></CENTER>
+
+
+<HR NOSHADE SIZE=1>
+<CENTER><TABLE BORDER CELLSPACING=0 BGCOLOR="#EEFFFA"
+SUMMARY="Proof of theorem">
+<CAPTION><B>Proof of Theorem <FONT
+   COLOR="#006633">gennall-P6</FONT></B></CAPTION>
+<TR><TH>Step</TH><TH>Hyp</TH><TH>Ref
+</TH><TH>Expression</TH></TR>
+<TR ALIGN=LEFT><TD>1</TD><TD>&nbsp;</TD><TD><A HREF="ax-L10.html"
+TITLE="Non-freeness of Negated Bound Variable.">ax-L10</A>&nbsp;<SPAN CLASS=r
+STYLE="color:#F80800">27</SPAN></TD><TD><A NAME="1"></A>
+<SPAN CLASS=i>1</SPAN>
+<SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN>(&not; &forall;<SPAN
+CLASS=objvar>&#x1D465;</SPAN><SPAN CLASS=wff>&#x1D711;</SPAN> &rarr;
+&forall;<SPAN CLASS=objvar>&#x1D465;</SPAN> &not; &forall;<SPAN
+CLASS=objvar>&#x1D465;</SPAN><SPAN CLASS=wff>&#x1D711;</SPAN>)</SPAN></TD></TR>
+</TABLE></CENTER>
+<CENTER><TABLE CELLSPACING=5><TR><TD ALIGN=LEFT><FONT SIZE=-1><B>Colors of
+variables:</B>  <SPAN CLASS=typecode
+STYLE="color:blue;font-style:normal">wff</SPAN> <SPAN CLASS=typecode
+STYLE="color:red;font-style:normal">objvar</SPAN> <SPAN CLASS=typecode
+STYLE="color:green;font-style:normal">term</SPAN> <SPAN CLASS=typecode
+STYLE="color:#CC33CC;font-style:normal">class</SPAN></FONT></TD></TR>
+<TR><TD ALIGN=LEFT><FONT SIZE=-1><B>Syntax hints:</B>  &nbsp;<SPAN
+CLASS=math>&forall;</SPAN><A HREF="wff-forall.html">wff-forall</A>&nbsp;<SPAN
+CLASS=r STYLE="color:#FA0200">8</SPAN> &nbsp;<SPAN CLASS=math>&not; </SPAN><A
+HREF="wff-neg.html">wff-neg</A>&nbsp;<SPAN CLASS=r
+STYLE="color:#FA0200">9</SPAN> &nbsp;<SPAN CLASS=math> &rarr; </SPAN><A
+HREF="wff-imp.html">wff-imp</A>&nbsp;<SPAN CLASS=r
+STYLE="color:#FA0200">10</SPAN></FONT></TD></TR>
+<TR><TD ALIGN=LEFT><FONT SIZE=-1><B>This theorem was proved from axioms:</B>
+&nbsp;<A HREF="ax-L10.html">ax-L10</A>&nbsp;<SPAN CLASS=r
+STYLE="color:#F80800">27</SPAN></FONT></TD></TR>
+<TR><TD ALIGN=LEFT><FONT SIZE=-1><B>This theorem is referenced by:</B> &nbsp;<A
+HREF="genex-P6.html">genex-P6</A>
+&nbsp;<SPAN CLASS=r STYLE="color:#746AFF">737</SPAN> &nbsp;<A
+HREF="exgenall-P6.html">exgenall-P6</A>
+&nbsp;<SPAN CLASS=r STYLE="color:#746AFF">738</SPAN> &nbsp;<A
+HREF="genall-P6.html">genall-P6</A>
+&nbsp;<SPAN CLASS=r STYLE="color:#7869FF">743</SPAN></FONT></TD></TR>
+</TABLE></CENTER>
+<TABLE BORDER=0 WIDTH="100%">
+<TR><TD WIDTH="25%">&nbsp;</TD>
+<TD ALIGN=CENTER VALIGN=BOTTOM>
+<FONT SIZE=-2 FACE=sans-serif>
+Copyright terms:
+<A HREF="../copyright.html#pd">Public domain</A>
+</FONT></TD><TD ALIGN=RIGHT VALIGN=BOTTOM WIDTH="25%">
+<FONT SIZE=-2 FACE=sans-serif>
+<A HREF="http://validator.w3.org/check?uri=referer">
+W3C validator</A>
+</FONT></TD></TR></TABLE>
+</BODY></HTML>
