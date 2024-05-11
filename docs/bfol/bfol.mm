@@ -15921,7 +15921,7 @@ $( $t
 /* Custom CSS for Unicode fonts */
 htmlcss '<link rel="stylesheet" \n' + 
     'media="screen" \n' +
-    'href="https://fontlibrary.org//face/xits-math" \n' +
+    'href="https://fontlibrary.org/en/face/xits-math" \n' +
     'type="text/css"/> \n' +
     '<STYLE TYPE="text/css"> \n' +
     '<!--\n' +
