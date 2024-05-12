@@ -4523,15 +4523,13 @@ $(
   2.) '`( (` ... `( ( w_ga1 /\ w_ga2 ) /\ w_ga3 ) /\` ... `w_ga`_n
   `) -> w_ph )`.
 
-  To see this, notice that to go from 1.) to 2.), we can repeatedly apply
-  ~ndimi-P3.5 to obtain a nested implication WFF.  Then to obtain a nested
-  conjunction from a nested implication we can apply ~import-P3.34a.RC
-  repeatedly.
+  To obtain 2.) from 1.), first repeatedly apply ~ndimi-P3.5 to obtain a
+  nested implication.  To obtain a nested conjunction we then apply
+  ~import-P3.34a.RC repeatedly.
 
-  To go the other we, we first apply ~export-P3.34b.RC repeatedly to obtain a
-  nested implication WFF from a nested conjunction WFF, then use a
-  combination of ~ndasm-P3.1 , ~ndimp-P3.2 , and ~ndime-P3.6 repeatedly to
-  build the sequent back up.
+  To obtain 1.) from 2.), first apply ~export-P3.34b.RC repeatedly to obtain a
+  nested implication.  From there, use a combination of ~ndasm-P3.1 ,
+  ~ndimp-P3.2 , and ~ndime-P3.6 repeatedly to build the sequent back up.
 $)
 
 ${
