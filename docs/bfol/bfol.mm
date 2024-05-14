@@ -13093,7 +13093,7 @@ $(
 
   To be able to make our natural deduction system not just logically
   equivalent, but *scheme* equivalent to the original Hilbert system, some of
-  the effective non-freeness axioms need to be extended to also apply in the
+  the effective non-freeness rules need to be extended to also apply in the
   *conditional* case.  Since it is not always possible to deduce
   '`F/ x w_ph`', given '`( w_ga -> F/ x w_ph )`', *conditional* effective
   non-freeness is a weaker notion of non-freeness that depends on the given
@@ -13101,8 +13101,8 @@ $(
 
   The deductive forms of ~ndenfrall2-P7.9 and ~ndenfrex2-P7.10 are definitely
   needed to recover ~ax-L11 .  It also appears that the additional axiom,
-  ~ndenfrenfr-P7.12 , is needed to recover certain closed forms from which
-  ~axL12-P7 follows.
+  ~ndenfrenfr-P7.12 , is needed to recover some closed forms that are
+  deducible in the Hilbert system.
 $)
 
 ${
@@ -13294,6 +13294,14 @@ $(
 -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.
   Proper Substitution Rules.
 -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.
+
+   These four rules define define all cases where '`t_t`' properly replaces
+   '`x`' in '`w_ph`'.  The first three rules define proper substitution of
+   '`t_t`' for '`x`' when '`x`' does not occur in '`t_t`'.  The first rule
+   describes the sufficient condition ("if" part), while the second and third
+   rules together describe the necessary condition ("only if" part).  The
+   fourth rule expands the definition of proper substitutioin to include cases
+   where '`x`' may occur in '`t_t`'.
 $)
 
 ${
@@ -13355,6 +13363,11 @@ $(
 -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.
   Quantifier Rules.
 -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.
+
+  These are the classic introduction and elimination rules for '`A.`' and
+  '`E.`'.  Effective non-freeness and proper substitution needed to be defined
+  precisely with the previous 12 rules in order to be able to state these next
+  4 rules.
 $)
 
 ${
@@ -13489,7 +13502,16 @@ ${
        assumptions on the left side of the sequent indicated by '`w_ga`').
        This is where temporary variables normally associated with a "let"
        statement will appear.  Such temporary variables are later discharged
-       by invoking this rule. $)
+       by invoking this rule.
+
+       One thing slightly different here is the the third non-freeness
+       hypothesis.  Only *conditional* (where '`w_ga`' is the condition),
+       effective non-freeness of '`y`' in '`w_ch`' is necessary.  This
+       makes the rule slightly stronger than if we required the stronger
+       hypothesis that '`F/ y w_ps`'.  This slight strengthing seems to be
+       necessary to  derive the closed form
+       '`( F/ x -> ( w_ph -> A. x w_ph ) )`'.  The weaker form,  given by
+       ~ndexew-P7 is more typically used.  $)
 
     ndexe-P7.20 $p |- ( w_ga -> w_ps ) $=
         ( ndexe-P6 ) ABCDEFGHIJK
@@ -13500,6 +13522,9 @@ $(
 -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.
   Equality Introduction Axiom.
 -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.
+
+  The '`=`' introduction rule serves a similar role as ~ax-L6 in the Hilbert
+  system.
 $)
 
 ${
@@ -13513,6 +13538,14 @@ $(
 -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.
   Substitution Rules (Equality Elimination).
 -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.
+
+  In classical texts, all of these rules are often combined into one
+  "substitution" rule that states that if '`x = t_t`' then '`x`' can be
+  properly replaced with '`t_t`' any place it occurs free.  It's impossible
+  to state this general of a scheme in metamath, so we replace it with finite
+  set of rules that covers every predicate (indluding equality) and every
+  primitive function in the language.  These rules can be combined with
+  other derived substitution rules to obtain the same results.
 $)
 
 ${
