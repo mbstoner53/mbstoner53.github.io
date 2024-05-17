@@ -2610,12 +2610,13 @@ $(
   This syntax allows one to write sequents of length longer than three without
   the need for nested parentheses.  The recipes 'rcp-NDSEP' and 'rcp-NDJOIN'
   facilitate the use of this syntax.  Addational versions can be added as
-  needed for longer sequents.
+  needed for longer sequents.  These rules merely add more convenient syntax.
+  They do not extend the logic at all.
 $)
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
-  Fundamental Rules.
+  Axiomatic Rules.
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 $)
 
@@ -2917,7 +2918,7 @@ $}
 
 $(
 -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.
-  Separate Front Supposition.
+  Separate Front Supposition (Syntactic Axioms).
 -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.
 
   This recipe is used in conjunction with ~ndnegi-P3.3 , ~ndimi-P3.5 , and
@@ -2974,7 +2975,7 @@ $}
 
 $(
 -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.
-  Join Front Supposition.
+  Join Front Supposition (Syntactic Axioms).
 -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.
 
   This recipe is used in conjunction with ~ndasm-P3.1 and ~ndimp-P3.2 .
@@ -3031,10 +3032,9 @@ $(
   Utility Recipes.
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 
-  For the rest of the chapter we will treat P3.1 - P3.20 along with recipes
-  NDSEP and NDJOIN as a new set of axioms.  From here on out, we will not rely
-  on any results from chapters 1 or 2 (except indirectly through the new set
-  of axioms).  
+  For the rest of the chapter we will treat P3.1 - P3.20 as a new set of
+  axioms.  From here on out, we will not rely on any results from chapters 1
+  or 2 (except indirectly through the new set of axioms).  
 
   This will allow us to track the use of ~ndexclmid-P3.16 .  By avoiding the
   Law of Excluded Middle, it is possible to develop an intuitionist logical
@@ -7264,7 +7264,7 @@ $}
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*
-  Appendix: Convenience Theorems.
+  Appendix: Miscellaneous Utility Rules.
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*
 $)
 
@@ -13069,7 +13069,7 @@ $)
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
-  Fundamental Rules.
+  Axiomatic Rules.
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 $)
 
@@ -13099,10 +13099,13 @@ $(
   non-freeness is a weaker notion of non-freeness that depends on the given
   context '`w_ga`'.
 
-  The deductive forms of ~ndenfrall2-P7.9 and ~ndenfrex2-P7.10 are definitely
-  needed to recover ~ax-L11 .  It also appears that the additional axiom,
-  ~ndenfrenfr-P7.12 , is needed to recover some closed forms that are
-  deducible in the Hilbert system.
+  As an example consider '`w_ga :=  y = 0`' and '`w_ph := 0 = ( x x. y )`'.
+  Then it is true that '`( w_ga -> F/ x w_ph )`' but '`F/ x w_ph`' is
+  obviously false.
+
+  It also appears that one additional axiom, ~ndenfrenfr-P7.12 , is needed to
+  recover the closed form definition of effective non-freeness given in the
+  Hilbert system. 
 $)
 
 ${
@@ -13647,13 +13650,12 @@ $}
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
-  Derived Rules.
+  Utility Rules.
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 
-  From here on we will treat P3.1 - P3.20, P7.1 - P7.24, and recipes NDSEP and
-  NDJOIN as the new set of axioms.  We will no longer refer to any results
-  from chapters 1, 2, 5, or 6 (except indirectly through the axioms stated
-  above).
+  From here on we will treat P3.1 - P3.20 and P7.1 - P7.24 as the new set of
+  axioms.  We will no longer refer to any results from chapters 1, 2, 5, or 6
+  (except indirectly through the axioms stated above).
 
   This will allow us to track the us of ~ndexclmid-P3.16 . By avoiding the Law
   of Excluded Middle, it is possible to develop an intuitionist logical
@@ -14502,27 +14504,6 @@ ${
     $d t_t x $.
     $d x y $.
 
-    lemma-L7.02a.1 $e |- F/ x w_ga $.
-    lemma-L7.02a.2 $e |- ( w_ga -> F/ x w_ph ) $.
-
-    $( Proper Substitution Applied To ENF Variable Lemma. `t.`
-
-       '`x`' cannot occur in '`t_t`'. $)
-    lemma-L7.02a $p |- ( w_ga -> ( [ t_t / x ] w_ph <-> w_ph ) ) $=
-        ( wff-psub objvar-y term-obj wff-equals wff-bi ndenfrv-P7.1
-          wff-enfree ndpsub3-P7.15 rcp-NDIMP0addall ndenfrbi-P7.6 wff-imp
-          ndpsub2-P7.14 lemma-L7.01a bisym-P3.33b.RC subiml2-P4.RC wff-exists
-          axL6ex-P7 ndexe-P7.20 bisym-P3.33b )
-        AACDGZBHICJZAUFKZBHDEUGDLAUFBDFUFDMBACDNOPUGDIZHGZUHQBUICJZUJUHACDRUJU
-        KUICHSTUAOUGHUBBCHUCOUDUE
-    $.
-$}
-
-$( ------------------------------------------------------------------------- $)
-
-${
-    $d t_t x $.
-
     psubenfrv-P7.1 $e |- F/ x w_ph $.
 
     $( Proper Substitution Applied To ENF Variable (variable restriction).
@@ -14530,9 +14511,10 @@ ${
 
        '`x`' cannot occur in '`t_t`'. $)
     psubenfrv-P7 $p |- ( [ t_t / x ] w_ph <-> w_ph ) $=
-        ( wff-psub wff-bi wff-true ndenfrv-P7.1 wff-enfree ndtruei-P3.17
-          lemma-L7.02a ndtruee-P3.18 )
-        ABCEAFAGZBCMCHACIDJKL
+        ( wff-psub objvar-y term-obj wff-equals wff-bi ndpsub3-P7.15
+          ndenfrbi-P7.6.RC ndpsub2-P7.14 lemma-L7.01a bisym-P3.33b.RC
+          subiml2-P4.RC axL6ex-P7 ndexew-P7.RC.VR1of2 )
+        AABCEZFGBHZARIZFCARCDABCJKCGZBHZSUAFEZTABCLUCUBUABFMNOBFPQN
     $.
 $}
 
@@ -14733,11 +14715,11 @@ ${
     $d t_t x $.
     $d x y $.
 
-    lemma-L7.03a-L1.1 $e |- F/ x w_ga $.
-    lemma-L7.03a-L1.2 $e |- ( w_ga -> ( w_ph -> w_ps ) ) $.
+    lemma-L7.02a-L1.1 $e |- F/ x w_ga $.
+    lemma-L7.02a-L1.2 $e |- ( w_ga -> ( w_ph -> w_ps ) ) $.
 
-    $( Lemma for ~lemma-L7.03a . `t.` $)
-    lemma-L7.03a-L1 $p
+    $( Lemma for ~lemma-L7.02a . `t.` $)
+    lemma-L7.02a-L1 $p
         |- ( w_ga -> ( [ t_t / x ] w_ph -> [ t_t / x ] w_ps ) )
     $=
         ( objvar-y term-obj wff-equals wff-psub wff-imp ndpsub3-P7.15
@@ -14757,29 +14739,18 @@ ${
     $d w_ga y $. $d w_ph y $. $d w_ps y $. $d t_t y $.
     $d x y $.
 
-    lemma-L7.03a.1 $e |- F/ x w_ga $.
-    lemma-L7.03a.2 $e |- ( w_ga -> ( w_ph -> w_ps ) ) $.
+    lemma-L7.02a.1 $e |- F/ x w_ga $.
+    lemma-L7.02a.2 $e |- ( w_ga -> ( w_ph -> w_ps ) ) $.
 
     $( Proper Substitution Over Implication Lemma. `t.` $)
-    lemma-L7.03a $p
+    lemma-L7.02a $p
         |- ( w_ga -> ( [ t_t / x ] w_ph -> [ t_t / x ] w_ps ) )
     $=
         ( wff-psub objvar-y term-obj wff-imp ndpsub4-P7.16 rcp-NDBIEF0
-          rcp-NDIMP0addall ndenfrv-P7.1 lemma-L7.03a-L1 rcp-NDBIER0
+          rcp-NDIMP0addall ndenfrv-P7.1 lemma-L7.02a-L1 rcp-NDBIER0
           dsyl-P3.25 )
         ADEHZAIJZEHZDIHZBTEHZDIHZBDEHZCSUBKCSUBADEILMNUAUCCDICIOABCTEFGPPUDUEK
         CUEUDBDEILQNR
-    $.
-$}
-
-${
-    lemma-L7.03a.RC.1 $e |- ( w_ph -> w_ps ) $.
-
-    $( Inference Form of ~lemma-L7.03a . `t.` $)
-    lemma-L7.03a.RC $p |- ( [ t_t / x ] w_ph -> [ t_t / x ] w_ps ) $=
-        ( wff-psub wff-imp wff-true ndenfrv-P7.1 ndtruei-P3.17 lemma-L7.03a
-          ndtruee-P3.18 )
-        ACDFBCDFGABHZCDMDIABGEJKL
     $.
 $}
 
@@ -14797,7 +14768,7 @@ ${
     axL4-P7 $p |- ( A. x ( w_ph -> w_ps ) -> ( A. x w_ph -> A. x w_ps ) ) $=
         ( wff-forall wff-imp wff-and objvar-y term-obj wff-psub
           ndalle-P7.18.CL rcp-NDIMP0addall ndenfrall1-P7.7 alle-P7.CL
-          lemma-L7.03a syl-P3.24 import-P3.34a.RC ndalli-P7.17.VR12of2
+          lemma-L7.02a syl-P3.24 import-P3.34a.RC ndalli-P7.17.VR12of2
           rcp-NDIMI2 )
         BCDABEZCDZACDZBTUAFCGTUABGHZCIZUAAUBCIZUCTUAUDETAUBCJKABTUBCSCLSCMNOPQ
         R
@@ -14813,7 +14784,7 @@ ${
     $( Existential Form of ~axL4-P7 . `t.` $)
     axL4ex-P7 $p |- ( A. x ( w_ph -> w_ps ) -> ( E. x w_ph -> E. x w_ps ) ) $=
         ( wff-exists wff-imp wff-forall wff-and objvar-y term-obj wff-psub
-          ndenfrall1-P7.7 alle-P7.CL lemma-L7.03a ndexi-P7.19.CL
+          ndenfrall1-P7.7 alle-P7.CL lemma-L7.02a ndexi-P7.19.CL
           rcp-NDIMP0addall syl-P3.24 rcp-NDIMP1add1 rcp-NDASM2of2
           ndexew-P7.VR123of3 rcp-NDIMI2 )
         BCDZABEZCFZACDZAUAUCUDGCHAHIZCJZUAEUCUDUFBUECJZUAUCABUCUECUBCKUBCLMUGU
@@ -15011,6 +14982,30 @@ $(
 $)
 
 ${
+    $d w_ph y $. $d t_t y $.
+    $d t_t x $.
+    $d x y $.
+
+    lemma-L7.03.1 $e |- F/ x w_ga $.
+    lemma-L7.03.2 $e |- ( w_ga -> F/ x w_ph ) $.
+
+    $( Proper Substitution Applied To ENF Variable Lemma. `t.`
+
+       '`x`' cannot occur in '`t_t`'. $)
+    lemma-L7.03 $p |- ( w_ga -> ( [ t_t / x ] w_ph <-> w_ph ) ) $=
+        ( wff-psub objvar-y term-obj wff-equals wff-bi ndenfrv-P7.1
+          wff-enfree ndpsub3-P7.15 rcp-NDIMP0addall ndenfrbi-P7.6 wff-imp
+          ndpsub2-P7.14 lemma-L7.01a bisym-P3.33b.RC subiml2-P4.RC wff-exists
+          axL6ex-P7 ndexe-P7.20 bisym-P3.33b )
+        AACDGZBHICJZAUFKZBHDEUGDLAUFBDFUFDMBACDNOPUGDIZHGZUHQBUICJZUJUHACDRUJU
+        KUICHSTUAOUGHUBBCHUCOUDUE
+    $.
+$}
+
+$( ------------------------------------------------------------------------- $)
+
+
+${
     $( General for `=>` ENF in (closed form). `t.` $)
     genenfrcl-P7 $p |- ( A. x ( w_ph -> A. x w_ph ) -> F/ x w_ph ) $=
         ( wff-forall wff-enfree wff-imp ndenfrall1-P7.7 rcp-NDIMP0addall
@@ -15040,7 +15035,7 @@ ${
     $( ENF In `=>` General For (closed form). `t.` $)
     enfrgencl-P7 $p |- ( F/ x w_ph -> ( w_ph -> A. x w_ph ) ) $=
         ( wff-forall wff-enfree wff-and objvar-y term-obj wff-psub
-          ndenfrenfr-P7.12 rcp-NDASM1of1 lemma-L7.02a ndbier-P3.15
+          ndenfrenfr-P7.12 rcp-NDASM1of1 lemma-L7.03 ndbier-P3.15
           import-P3.34a.RC ndalli-P7.17.VR12of2 rcp-NDIMI2 )
         ABCABDZAAPAEBFPAAFGZBHZRAPAPQBABIPJKLMNO
     $.
@@ -15170,18 +15165,34 @@ $}
 $( ------------------------------------------------------------------------- $)
 
 ${
-    qimeqallintb-P7.1 $e |- F/ x w_ps $.
+    $( Partial Quantified Implication Equivalence Law ( ( E `->` U ) `->` U ).
+       `t.`
 
-    $( Quantified Implication Equivalence Law  ( U `->` ( E `->` U ) )
-       (intuitionist version - non-freeness condition b). `t.`
-
-       Only this direction is deducible with intuitionist logic. $)
-    qimeqallintb-P7 $p
-        |- ( A. x ( w_ph -> w_ps ) -> ( E. x w_ph -> A. x w_ps ) )
+       The reverse implication is also true if '`x`' is ENF in either '`w_ph`'
+       (see ~qimeqalla-P7 ) or '`w_ps`' (see ~qimeqallb-P7r ). $)
+    qimeqallhalf-P7 $p
+        |- ( ( E. x w_ph -> A. x w_ps ) -> A. x ( w_ph -> w_ps ) )
     $=
-        ( wff-exists wff-forall wff-imp axL4ex-P7 wff-enfree dfenfreealt-P7
-          bimpf-P4.RC rcp-NDIMP0addall syl-P3.24 )
-        ACEBCEZBCFZABGCFZABCHNOGZPBCIQDBCJKLM
+        ( wff-imp wff-exists wff-forall ndenfrex1-P7.8 ndenfrall1-P7.7
+          ndenfrim-P7.3.RC exi-P7.CL alle-P7.CL imsubd-P3.28c.RC alli-P7 )
+        ABDACEZBCFZDCNOCACGBCHIANOBACJBCKLM
+    $.
+$}
+
+$( ------------------------------------------------------------------------- $)
+
+${
+    qimeqallb-P7.1 $e |- F/ x w_ps $.
+
+    $( Quantified Implication Equivalence Law ( ( E `->` U ) `<->` U )
+       (non-freeness condition b). `t.` $)
+    qimeqallb-P7 $p
+        |- ( ( E. x w_ph -> A. x w_ps ) <-> A. x ( w_ph -> w_ps ) )
+    $=
+        ( wff-exists wff-forall wff-imp qimeqallhalf-P7 axL4ex-P7
+          enfrexgen-P7.CL enfrgen-P7.CL syl-P3.24.RC rcp-NDIMP0addall
+          syl-P3.24 rcp-NDBII0 )
+        ACEZBCFZGABGCFZABCHPBCEZQRABCISQGRSBQBCDJBCDKLMNO
     $.
 $}
 
@@ -15197,14 +15208,15 @@ ${
     $( ~dfpsubv-P6 , Derived from Natural Deduction Rules (restriction on
        '`t_t`'). `t.`
 
-       This form can be used whenever '`x`' does not occur in '`t_t`'. $)
+       This form can be used whenever '`x`' does not occur in '`t_t`'.  $)
     dfpsubv-P7 $p |- ( [ t_t / x ] w_ph <-> A. x ( x = t_t -> w_ph ) ) $=
         ( wff-psub term-obj wff-equals wff-imp wff-forall ndpsub3-P7.15
           ndpsub2-P7.14 ndbier-P3.15 imcomm-P3.27.RC alli-P7 ndbief-P3.14
-          axL2-P3.22.RC alloverim-P7.GENF.RC wff-exists qimeqallintb-P7
-          axL6ex-P7 mae-P3.23.RC alle-P7.CL dsyl-P3.25.RC rcp-NDBII0 )
-        ABCDZCEBFZAGZCHZUFUDCABCIZUEUDAAUDUEABCJZKLMUGUEUDGZCHZUDCHZUDUFUJCUEA
-        UDAUDUEUINOPUKUECQULUEUDCUHRBCSTUDCUAUBUC
+          axL2-P3.22.RC alloverim-P7.GENF.RC wff-exists qimeqallb-P7
+          rcp-NDBIER0 axL6ex-P7 mae-P3.23.RC alle-P7.CL dsyl-P3.25.RC
+          rcp-NDBII0 )
+        ABCDZCEBFZAGZCHZUGUECABCIZUFUEAAUEUFABCJZKLMUHUFUEGZCHZUECHZUEUGUKCUFA
+        UEAUEUFUJNOPULUFCQZUMUNUMGULUFUECUIRSBCTUAUECUBUCUD
     $.
 $}
 
@@ -15382,10 +15394,10 @@ ${
 $}
 
 ${
-    alli-P7r.RC.1 $e |- w_ph $.
+    exi-P7r.RC.1 $e |- w_ph $.
 
     $( Inference Form of ~exi-P7r . `t.` $)
-    alli-P7r.RC $p |- E. x w_ph $=
+    exi-P7r.RC $p |- E. x w_ph $=
         ( wff-exists wff-true ndtruei-P3.17 exi-P7 ndtruee-P3.18 )
         ABDAEBACFGH
     $.
@@ -15490,6 +15502,151 @@ ${
        '`x`' cannot occur in '`w_ps`'. $)
     exe-P7r.RC.VR $p |- w_ps $=
         ( ndenfrv-P7.1 exe-P7r.RC ) ABCBCFDEG
+    $.
+$}
+
+$(
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.
+  Variant forms of alli-P7 and exe-P7.
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.
+$)
+
+${
+    allic-P7.1 $e |- F/ x w_ga $.
+    allic-P7.2 $e |- F/ x w_ph $.
+    allic-P7.3 $e |- ( w_ga -> ( w_ph -> w_ps ) ) $.
+
+    $( Introduce Universal Quantifier as Consequent. `t.`
+
+       The inference form is ~alli-P7r . $)
+    allic-P7 $p |- ( w_ga -> ( w_ph -> A. x w_ps ) ) $=
+        ( wff-forall wff-and ndenfrand-P7.4.RC import-P3.34a.RC alli-P7
+          rcp-NDIMI2 )
+        BDHCABCAIDCADEFJCABGKLM
+    $.
+$}
+
+${
+    $d w_ga x $.
+
+    allic-P7.VR1of2.1 $e |- F/ x w_ph $.
+    allic-P7.VR1of2.2 $e |- ( w_ga -> ( w_ph -> w_ps ) ) $.
+
+    $( ~allic-P7 with one variable restriction. `t.`
+
+       '`x`' cannot occur in '`w_ga`'. $)
+    allic-P7.VR1of2 $p |- ( w_ga -> ( w_ph -> A. x w_ps ) ) $=
+        ( ndenfrv-P7.1 allic-P7 ) ABCDCDGEFH
+    $.
+$}
+
+${
+    $d w_ph x $.
+
+    allic-P7.VR2of2.1 $e |- F/ x w_ga $.
+    allic-P7.VR2of2.2 $e |- ( w_ga -> ( w_ph -> w_ps ) ) $.
+
+    $( ~allic-P7 with one variable restriction. `t.`
+
+       '`x`' cannot occur in '`w_ph`'. $)
+    allic-P7.VR2of2 $p |- ( w_ga -> ( w_ph -> A. x w_ps ) ) $=
+        ( ndenfrv-P7.1 allic-P7 ) ABCDEADGFH
+    $.
+$}
+
+${
+    $d w_ga x $. $d w_ph x $.
+
+    allic-P7.VR12of2.1 $e |- ( w_ga -> ( w_ph -> w_ps ) ) $.
+
+    $( ~allic-P7 with two variable restrictions. `t.`
+
+       '`x`' cannot occur in either '`w_ga`' or '`w_ph`'. $)
+    allic-P7.VR12of2 $p |- ( w_ga -> ( w_ph -> A. x w_ps ) ) $=
+        ( ndenfrv-P7.1 allic-P7 ) ABCDCDFADFEG
+    $.
+$}
+
+$( ------------------------------------------------------------------------- $)
+
+${
+    exia-P7r.1 $e |- F/ x w_ga $.
+    exia-P7r.2 $e |- F/ x w_ps $.
+    exia-P7r.3 $e |- ( w_ga -> ( w_ph -> w_ps ) ) $.
+
+    $( Introduce Existential Quantifier as Antecedent. `t.`
+
+       This is the restatement of a previously proven result.  Do not use in
+       proofs.  Use ~exia-P7 instead. $)
+    exia-P7r $p |- ( w_ga -> ( E. x w_ph -> w_ps ) ) $=
+        ( exia-P7 ) ABCDEFGH
+    $.
+$}
+
+${
+    $d w_ga x $.
+
+    exia-P7r.VR1of2.1 $e |- F/ x w_ps $.
+    exia-P7r.VR1of2.2 $e |- ( w_ga -> ( w_ph -> w_ps ) ) $.
+
+    $( ~exia-P7r with one variable restriction. `t.`
+
+       '`x`' cannot occur in '`w_ga`'. $)
+    exia-P7r.VR1of2 $p |- ( w_ga -> ( E. x w_ph -> w_ps ) ) $=
+        ( ndenfrv-P7.1 exia-P7 ) ABCDCDGEFH
+    $.
+$}
+
+${
+    $d w_ps x $.
+
+    exia-P7r.VR2of2.1 $e |- F/ x w_ga $.
+    exia-P7r.VR2of2.2 $e |- ( w_ga -> ( w_ph -> w_ps ) ) $.
+
+    $( ~exia-P7r with one variable restriction. `t.`
+
+       '`x`' cannot occur in '`w_ps`'. $)
+    exia-P7r.VR2of2 $p |- ( w_ga -> ( E. x w_ph -> w_ps ) ) $=
+        ( ndenfrv-P7.1 exia-P7 ) ABCDEBDGFH
+    $.
+$}
+
+${
+    $d w_ps x $.
+    $d w_ga x $.
+
+    exia-P7r.VR12of2.1 $e |- ( w_ga -> ( w_ph -> w_ps ) ) $.
+
+    $( ~exia-P7r with two variable restrictions. `t.`
+
+    '`x`' cannot occur in either '`w_ga`' or '`w_ps`'. $)
+    exia-P7r.VR12of2 $p |- ( w_ga -> ( E. x w_ph -> w_ps ) ) $=
+        ( ndenfrv-P7.1 exia-P7 ) ABCDCDFBDFEG
+    $.
+$}
+
+${
+    exia-P7r.RC.1 $e |- F/ x w_ps $.
+    exia-P7r.RC.2 $e |- ( w_ph -> w_ps ) $.
+
+    $( Inference Form of ~exia-P7r . `t.` $)
+    exia-P7r.RC $p |- ( E. x w_ph -> w_ps ) $=
+        ( wff-exists wff-imp wff-true ndenfrv-P7.1 ndtruei-P3.17 exia-P7
+          ndtruee-P3.18 )
+        ACFBGABHZCMCIDABGEJKL
+    $.
+$}
+
+${
+    $d w_ps x $.
+
+    exia-P7r.RC.VR.1 $e |- ( w_ph -> w_ps ) $.
+
+    $( ~exia-P7r.RC with variable restriction. `t.`
+
+       '`x`' cannot occur in '`w_ps`'. $)
+    exia-P7r.RC.VR $p |- ( E. x w_ph -> w_ps ) $=
+        ( ndenfrv-P7.1 exia-P7r.RC ) ABCBCEDF
     $.
 $}
 
@@ -15759,7 +15916,7 @@ ${
     dalloverimex-P7.GENF.2 $e |- ( w_ga -> ( w_ph -> ( w_ps -> w_ch ) ) ) $.
 
     $( ~dalloverimex-P7 with generalization augmentation (non-freeness
-       condition. `t.` $)
+       condition). `t.` $)
     dalloverimex-P7.GENF $p
         |- ( w_ga -> ( A. x w_ph -> ( E. x w_ps -> E. x w_ch ) ) )
     $=
@@ -15935,6 +16092,340 @@ ${
         ( wff-neg wff-exists wff-forall exnegall-P7 subneg-P3.39.RC
           dnegeq-P4.10 bitrns-P3.33c.RC bisym-P3.33b.RC )
         ACBDZCZABEZLMCZCMKNABFGMHIJ
+    $.
+$}
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+  Quantified Implication Equivalence Laws.
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+$)
+
+${
+    $( Partial Quantified Implication Equivalence Law ( ( E `->` U ) `->` U ).
+       `t.`
+
+       The reverse implication is also true if '`x`' is ENF in either '`w_ph`'
+       (see ~qimeqalla-P7 ) or '`w_ps`' (see ~qimeqallb-P7r ).
+
+
+       This is the restatement of a previously proven result.  Do not use in
+       proofs.  Use ~qimeqallhalf-P7 instead. $)
+    qimeqallhalf-P7r $p
+        |- ( ( E. x w_ph -> A. x w_ps ) -> A. x ( w_ph -> w_ps ) )
+    $=
+        ( qimeqallhalf-P7 ) ABCD
+    $.
+$}
+
+$( ------------------------------------------------------------------------- $)
+
+${
+    qimeqalla-P7.1 $e |- F/ x w_ph $.
+
+    $( Quantified Implication Equivalence Law ( ( E `->` U ) `<->` U )
+       (non-freeness condition a).  `t.` $)
+    qimeqalla-P7 $p
+        |- ( ( E. x w_ph -> A. x w_ps ) <-> A. x ( w_ph -> w_ps ) )
+    $=
+        ( wff-exists wff-forall wff-imp qimeqallhalf-P7 enfrexgen-P7.CL
+          enfrgen-P7.CL syl-P3.24.RC rcp-NDIMP0addall axL4-P7 syl-P3.24
+          rcp-NDBII0 )
+        ACEZBCFZGABGCFZABCHPACFZQRPSGRPASACDIACDJKLABCMNO
+    $.
+$}
+
+${
+    $d w_ph x $.
+
+    $( ~qimeqalla-P7 with variable restriction. `t.`
+
+       '`x`' cannot occur in '`w_ph`'. $)
+    qimeqalla-P7.VR $p
+        |- ( ( E. x w_ph -> A. x w_ps ) <-> A. x ( w_ph -> w_ps ) )
+    $=
+        ( ndenfrv-P7.1 qimeqalla-P7 ) ABCACDE
+    $.
+$}
+
+$( ------------------------------------------------------------------------- $)
+
+${
+    qimeqallb-P7r.1 $e |- F/ x w_ps $.
+
+    $( Quantified Implication Equivalence Law ( ( E `->` U ) `<->` U )
+       (non-freeness condition b). `t.`
+
+       This is the restatement of a previously proven result.  Do not use in
+       proofs.  Use ~qimeqallb-P7 instead. $)
+    qimeqallb-P7r $p
+        |- ( ( E. x w_ph -> A. x w_ps ) <-> A. x ( w_ph -> w_ps ) )
+    $=
+        ( qimeqallb-P7 ) ABCDE
+    $.
+$}
+
+${
+    $d w_ps x $.
+
+    $( ~qimeqallb-P7r with variable restriction. `t.`
+
+       '`x`' cannot occur in '`w_ps`'. $)
+    qimeqallb-P7r.VR $p
+        |- ( ( E. x w_ph -> A. x w_ps ) <-> A. x ( w_ph -> w_ps ) )
+    $=
+        ( ndenfrv-P7.1 qimeqallb-P7 ) ABCBCDE
+    $.
+$}
+
+$( ------------------------------------------------------------------------- $)
+
+${
+    $( Lemma for ~qimeqex-P7 . $)
+    qimeqex-P7-L1 $p
+        |- ( ( A. x w_ph -> E. x w_ps ) -> E. x ( w_ph -> w_ps ) )
+    $=
+        ( wff-forall wff-neg wff-imp wff-exists wff-and ndenfrall1-P7.7
+          ndenfrex1-P7.8 ndenfrim-P7.3.RC ndenfrand-P7.4.RC rcp-NDASM2of2
+          axL1-P3.21 exi-P7 rcp-NDIMI2 rcp-NDIMP1add1 rcp-NDASM1of1
+          import-P3.34a.RC exe-P7 ndenfrneg-P7.2.RC trnsp-P3.31d exnegall-P7
+          bisym-P3.33b.RC subimr2-P4.RC ndexclmid-P3.16.AC rcp-NDORE2 )
+        ACDZUHEZABFZCGZUHBCGZFZBUKUMUHHCUMUHCUHULCACIZBCJKZUNLUJCJZBUKFUMUHUKU
+        MBUJUMBHZCBAUQUMBMNOPQUMUHULUM RSTAEZUKUMUIHZCUMUICUOUHCUNUALUPURUKFUM
+        UIUKUMURUJUMURHZCBAUTURBEUTUMURMNUBOPQUIURCGZUSUMUIMVAUIACUCUDUETUHUMU
+        FUG
+    $.
+$}
+
+$( ------------------------------------------------------------------------- $)
+
+${
+    $( Lemma for ~qimeqex-P7 . `t.` $)
+    qimeqex-P7-L2 $p
+        |- ( E. x ( w_ph -> w_ps ) -> ( A. x w_ph -> E. x w_ps ) )
+    $=
+        ( wff-exists wff-imp wff-forall wff-and ndenfrex1-P7.8 ndenfrall1-P7.7
+          ndenfrand-P7.4.RC wff-rcp-AND3 rcp-NDASM2of3 alle-P7 rcp-NDASM3of3
+          ndime-P3.6 exi-P7 rcp-NDIMI3 rcp-NDASM1of2 exe-P7 rcp-NDIMI2 )
+        BCDZABEZCDZACFZUBUAUCUDGCUCUDCUBCHACIJBCHUAUCUDUBBUCUDUBKZCABUEAUECUCU
+        DUBLMUCUDUBNOPQUCUDRST
+    $.
+$}
+
+$( ------------------------------------------------------------------------- $)
+
+
+${
+    $( Quantified Implication Equivalence Law ( ( U `->` E ) `<->` E ).
+
+       This statement is not deducible with intuitionist logic. $)
+    qimeqex-P7 $p
+        |- ( ( A. x w_ph -> E. x w_ps ) <-> E. x ( w_ph -> w_ps ) )
+    $=
+        ( wff-forall wff-exists wff-imp qimeqex-P7-L1 qimeqex-P7-L2
+          rcp-NDBII0 )
+        ACDBCEFABFCEABCGABCHI
+    $.
+$}
+
+$( ------------------------------------------------------------------------- $)
+
+${
+    $( One Direction of Quantified Implication Equivalence Law
+       ( E `->` ( U `->` E ) ). `t.`
+
+       This direction is deducible with intuitionist logic. $)
+    qimeqexint-P7 $p
+        |- ( E. x ( w_ph -> w_ps ) -> ( A. x w_ph -> E. x w_ps ) )
+    $=
+        ( qimeqex-P7-L2 ) ABCD
+    $.
+$}
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+  More Properties Related to Effective Non-Freeness.
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+$)
+
+$(
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.
+  "General For" / "Not Free" Conversion.
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.
+$)
+
+${
+    enfrgen-P7r.1 $e |- F/ x w_ph $.
+    enfrgen-P7r.2 $e |- ( w_ga -> w_ph ) $.
+
+    $( ENF `=>` General For. `t.`
+
+       The inference form is ~axGEN-P7 .
+
+       This is the restatement of a previously proven result.  Do not use in
+       proofs.  Use ~enfrgen-P7 instead. $)
+    enfrgen-P7r $p |- ( w_ga -> A. x w_ph ) $=
+        ( enfrgen-P7 ) ABCDEF
+    $.
+$}
+
+${
+    enfrgen-P7r.CL.1 $e |- F/ x w_ph $.
+
+    $( Closed Form of ~enfrgen-P7r . `t.`
+
+       This is the restatement of a previously proven result.  Do not use in
+       proofs.  Use ~enfrgen-P7.CL instead. $)
+    enfrgen-P7r.CL $p |- ( w_ph -> A. x w_ph ) $=
+        ( enfrgen-P7.CL ) ABCD
+    $.
+$}
+
+$( ------------------------------------------------------------------------- $)
+
+${
+    enfrexgen-P7r.1 $e |- F/ x w_ph $.
+    enfrexgen-P7r.2 $e |- ( w_ga -> E. x w_ph ) $.
+
+    $( Dual Form of ~enfrgen-P7r . `t.`
+
+       This is the restatement of a previously proven result.  Do not use in
+       proofs.  Use ~enfrexgen-P7 instead. $)
+    enfrexgen-P7r $p |- ( w_ga -> w_ph ) $=
+        ( enfrexgen-P7 ) ABCDEF
+    $.
+$}
+
+${
+    enfrexgen-P7r.RC.1 $e |- F/ x w_ph $.
+    enfrexgen-P7r.RC.2 $e |- E. x w_ph $.
+
+    $( Inference Form of ~enfrexgen-P7r . `t.` $)
+    enfrexgen-P7r.RC $p |- w_ph $=
+        ( wff-true wff-exists ndtruei-P3.17 enfrexgen-P7 ndtruee-P3.18 )
+        AAEBCABFDGHI
+    $.
+$}
+
+${
+    enfrexgen-P7r.CL.1 $e |- F/ x w_ph $.
+
+    $( Closed Form of ~enfrexgen-P7r . `t.`
+
+       This is the restatement of a previously proven result.  Do not use in
+       proofs.  Use ~enfrexgen-P7.CL instead. $)
+    enfrexgen-P7r.CL $p |- ( E. x w_ph -> w_ph ) $=
+        ( enfrexgen-P7.CL ) ABCD
+    $.
+$}
+
+$( ------------------------------------------------------------------------- $)
+
+${
+    genenfr-P7.1 $e |- ( w_ph -> A. x w_ph ) $.
+
+    $( General For `=>` ENF. `t.` $)
+    genenfr-P7 $p |- F/ x w_ph $=
+        ( wff-forall wff-enfree ndenfrall1-P7.7 alle-P7.CL rcp-NDBII0
+          ndenfrleq-P7.11.RC bimpf-P4.RC )
+        ABDZBEABEABFKABKAABGCHIJ
+    $.
+$}
+
+$( ------------------------------------------------------------------------- $)
+
+${
+    exgenenfr-P7.1 $e |- ( E. x w_ph -> w_ph ) $.
+
+    $( Dual Form of ~genenfr-P7 . `t.` $)
+    exgenenfr-P7 $p |- F/ x w_ph $=
+        ( wff-exists wff-enfree ndenfrex1-P7.8 exi-P7.CL rcp-NDBII0
+          ndenfrleq-P7.11.RC bimpf-P4.RC )
+        ABDZBEABEABFKABKACABGHIJ
+    $.
+$}
+
+$(
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.
+  Consequences of Effictive Non-Freeness.
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.
+$)
+
+${
+    enfrthm-P7r.1 $e |- w_ph $.
+
+    $( Every Variable is ENF in a Theorem. `t.`
+
+       This is the restatement of a previously proven result.  Do not use in
+       proofs.  Use ~enfrthm-P7 instead. $)
+    enfrthm-P7r $p |- F/ x w_ph $=
+        ( enfrthm-P7 ) ABCD
+    $.
+$}
+
+$( ------------------------------------------------------------------------- $)
+
+${
+    enfrcond-P7.1 $e |- F/ x w_ga $.
+    enfrcond-P7.2 $e |- ( w_ga -> w_ph ) $.
+
+    $( ENF in Antecedent `=>` Conditionally ENF in Consequent. `t.`
+
+       This is actually a generalization of ~enfrthm-P7r . $)
+    enfrcond-P7 $p |- ( w_ga -> F/ x w_ph ) $=
+        ( wff-forall wff-imp wff-enfree alli-P7 axL1-P3.21 genenfrcl-P7
+          syl-P3.24.RC )
+        BAACFZGZCFACHNBCDMABABCDEIJIACKL
+    $.
+$}
+
+$( ------------------------------------------------------------------------- $)
+
+${
+    enfrnegr-P7.1 $e |- ( w_ga -> F/ x -. w_ph ) $.
+
+    $( Converse of ~ndenfrneg-P7.2 .
+
+       This statement is not deducible with intuitionist logic. $)
+    enfrnegc-P7 $p |- ( w_ga -> F/ x w_ph ) $=
+        ( wff-neg wff-enfree wff-exists wff-forall wff-imp exnegall-P7
+          rcp-NDBIER0 rcp-NDIMP0addall dfenfreealtonlyif-P7 allnegex-P7
+          rcp-NDBIEF0 dsyl-P3.25 trnsp-P3.31d dfenfreealtif-P7 dsyl-P3.25.RC )
+        BAEZCFZACGZACHZIACFDUCUBUAUCEZTCGZTCHZUBEZUAUDUEIUAUEUDACJKLTCMUFUGIUA
+        UFUGACNOLPQACRS
+    $.
+$}
+
+${
+    enfrnegc-P7.RC.1 $e |- F/ x -. w_ph $.
+
+    $( Inference Form of ~enfrnegc-P7 .
+
+       This statement is not deducible with intuitionist logic. $)
+    enfrnegc-P7.RC $p |- F/ x w_ph $=
+        ( wff-enfree wff-true wff-neg ndtruei-P3.17 enfrnegc-P7
+          ndtruee-P3.18 )
+    ABDAEBAFBDCGHI $.
+$}
+
+${
+    $( Closed Form of ~enfrnegc-P7 .
+
+       This statement is not deducible with intuitionist logic. $)
+    enfrnegc-P7.CL $p |- ( F/ x -. w_ph -> F/ x w_ph ) $=
+        ( wff-neg wff-enfree rcp-NDASM1of1 enfrnegc-P7 ) AACBDZBGEF
+    $.
+$}
+
+$( ------------------------------------------------------------------------- $)
+
+${
+    $( Biconditional Combining ~ndenfrneg-P7.2 and ~enfrnegc-P7 .
+
+       This statement is not deducible with intuitionist logic. $)
+    enfrnegbi-P7 $p |- ( F/ x -. w_ph <-> F/ x w_ph ) $=
+        ( wff-neg wff-enfree enfrnegc-P7.CL ndenfrneg-P7.2.CL rcp-NDBII0 )
+        ACBDABDABEABFG
     $.
 $}
 $( End $[ bfol-ch7.mm $] $)

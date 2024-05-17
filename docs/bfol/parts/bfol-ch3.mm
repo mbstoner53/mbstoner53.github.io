@@ -113,12 +113,13 @@ $(
   This syntax allows one to write sequents of length longer than three without
   the need for nested parentheses.  The recipes 'rcp-NDSEP' and 'rcp-NDJOIN'
   facilitate the use of this syntax.  Addational versions can be added as
-  needed for longer sequents.
+  needed for longer sequents.  These rules merely add more convenient syntax.
+  They do not extend the logic at all.
 $)
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
-  Fundamental Rules.
+  Axiomatic Rules.
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 $)
 
@@ -420,7 +421,7 @@ $}
 
 $(
 -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.
-  Separate Front Supposition.
+  Separate Front Supposition (Syntactic Axioms).
 -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.
 
   This recipe is used in conjunction with ~ndnegi-P3.3 , ~ndimi-P3.5 , and
@@ -477,7 +478,7 @@ $}
 
 $(
 -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.
-  Join Front Supposition.
+  Join Front Supposition (Syntactic Axioms).
 -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.
 
   This recipe is used in conjunction with ~ndasm-P3.1 and ~ndimp-P3.2 .
@@ -534,10 +535,9 @@ $(
   Utility Recipes.
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 
-  For the rest of the chapter we will treat P3.1 - P3.20 along with recipes
-  NDSEP and NDJOIN as a new set of axioms.  From here on out, we will not rely
-  on any results from chapters 1 or 2 (except indirectly through the new set
-  of axioms).  
+  For the rest of the chapter we will treat P3.1 - P3.20 as a new set of
+  axioms.  From here on out, we will not rely on any results from chapters 1
+  or 2 (except indirectly through the new set of axioms).  
 
   This will allow us to track the use of ~ndexclmid-P3.16 .  By avoiding the
   Law of Excluded Middle, it is possible to develop an intuitionist logical

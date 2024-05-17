@@ -48,7 +48,7 @@ bfol.mm Proof Explorer
       </B></FONT></TD>
     <TD ALIGN=RIGHT VALIGN=TOP WIDTH="25%">
       <FONT SIZE=-1 FACE=sans-serif>
-      <A HREF="lemma-L7.02a.html">
+      <A HREF="enfrthm-P7.html">
       &lt; Previous</A>&nbsp;&nbsp;
       <A HREF="enfrgen-P7.html">Next &gt;</A>
       </FONT><FONT FACE=sans-serif SIZE=-2>
@@ -76,7 +76,7 @@ bfol.mm Proof Explorer
 <HR NOSHADE SIZE=1>
 <CENTER><B><FONT SIZE="+1">Theorem <FONT
 COLOR="#006633">psubenfrv-P7</FONT></FONT></B>&nbsp;<SPAN CLASS=r
-STYLE="color:#D70BE7">922</SPAN></CENTER>
+STYLE="color:#D018F1">921</SPAN></CENTER>
 <CENTER><TABLE><TR><TD ALIGN=LEFT><B>Description: </B>Proper Substitution
 Applied To ENF Variable (variable restriction).
        <SPAN CLASS=math>&dagger;</SPAN>
@@ -111,44 +111,95 @@ CLASS=wff>&#x1D711;</SPAN>)</SPAN></TD></TR>
 CLASS=math> &nbsp; <SPAN CLASS=term>&#x1D461;</SPAN>,<SPAN
 CLASS=objvar>&#x1D465;</SPAN></SPAN></CENTER>
 <HR NOSHADE SIZE=1>
+<CENTER><B>Proof of Theorem <FONT
+   COLOR="#006633">psubenfrv-P7</FONT></B></CENTER>
+<CENTER><A HREF="mmset.html#dvnote1">Dummy variable</A> <SPAN CLASS=math> <SPAN
+CLASS=objvar>&#x1D466;</SPAN></SPAN> is distinct from all other
+variables.</CENTER>
 <CENTER><TABLE BORDER CELLSPACING=0 BGCOLOR="#EEFFFA"
 SUMMARY="Proof of theorem">
-<CAPTION><B>Proof of Theorem <FONT
-   COLOR="#006633">psubenfrv-P7</FONT></B></CAPTION>
 <TR><TH>Step</TH><TH>Hyp</TH><TH>Ref
 </TH><TH>Expression</TH></TR>
-<TR ALIGN=LEFT><TD>1</TD><TD>&nbsp;</TD><TD><A HREF="ndenfrv-P7.1.html"
-TITLE="Natural Deduction: Effective Non-Freeness Rule 1. If '`x`' does not occur in...">ndenfrv-P7.1</A>&nbsp;<SPAN
-CLASS=r STYLE="color:#B73CFF">832</SPAN></TD><TD><A NAME="1"></A>
-<SPAN CLASS=i>. . 3</SPAN>
-<SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN>&#8498;<SPAN
-CLASS=objvar>&#x1D465;</SPAN> &top;</SPAN></TD></TR>
-<TR ALIGN=LEFT><TD>2</TD><TD>&nbsp;</TD><TD>psubenfrv-P7.1</TD><TD><A
-NAME="2"></A>
+<TR ALIGN=LEFT><TD>1</TD><TD>&nbsp;</TD><TD>psubenfrv-P7.1</TD><TD><A
+NAME="1"></A>
 <SPAN CLASS=i>. . . 4</SPAN>
 <SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN>&#8498;<SPAN
 CLASS=objvar>&#x1D465;</SPAN><SPAN CLASS=wff>&#x1D711;</SPAN></SPAN></TD></TR>
-<TR ALIGN=LEFT><TD>3</TD><TD><A HREF="#2">2</A></TD><TD><A
-HREF="ndtruei-P3.17.html"
-TITLE="Natural Deduction: '`T.`' Introduction Rule. This can be used to turn an ordinary...">ndtruei-P3.17</A>&nbsp;<SPAN
-CLASS=r STYLE="color:#AC6F00">192</SPAN></TD><TD><A NAME="3"></A>
+<TR ALIGN=LEFT><TD>2</TD><TD>&nbsp;</TD><TD><A HREF="ndpsub3-P7.15.html"
+TITLE="Natural Deduction: Proper Substitution Rule 3. '`x`' cannot occur in '`t_t`'.">ndpsub3-P7.15</A>&nbsp;<SPAN
+CLASS=r STYLE="color:#B143FF">846</SPAN></TD><TD><A NAME="2"></A>
+<SPAN CLASS=i>. . . 4</SPAN>
+<SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN>&#8498;<SPAN
+CLASS=objvar>&#x1D465;</SPAN>[<SPAN CLASS=term>&#x1D461;</SPAN> / <SPAN
+CLASS=objvar>&#x1D465;</SPAN>]<SPAN CLASS=wff>&#x1D711;</SPAN></SPAN></TD></TR>
+<TR ALIGN=LEFT><TD>3</TD><TD><A HREF="#1">1</A>, <A HREF="#2">2</A></TD><TD><A
+HREF="ndenfrbi-P7.6.RC.html"
+TITLE="Inference Form of ~ndenfrbi-P7.6 .">ndenfrbi-P7.6.RC</A>&nbsp;<SPAN
+CLASS=r STYLE="color:#C12EFC">881</SPAN></TD><TD><A NAME="3"></A>
 <SPAN CLASS=i>. . 3</SPAN>
-<SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN>( &top; &rarr;
-&#8498;<SPAN CLASS=objvar>&#x1D465;</SPAN><SPAN
-CLASS=wff>&#x1D711;</SPAN>)</SPAN></TD></TR>
-<TR ALIGN=LEFT><TD>4</TD><TD><A HREF="#1">1</A>, <A HREF="#3">3</A></TD><TD><A
-HREF="lemma-L7.02a.html"
-TITLE="Proper Substitution Applied To ENF Variable Lemma. `t.` '`x`' cannot occur in '`t_t`'.">lemma-L7.02a</A>&nbsp;<SPAN
-CLASS=r STYLE="color:#D70BE7">921</SPAN></TD><TD><A NAME="4"></A>
-<SPAN CLASS=i>. 2</SPAN>
-<SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN>( &top; &rarr; ([<SPAN
+<SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN>&#8498;<SPAN
+CLASS=objvar>&#x1D465;</SPAN>(<SPAN CLASS=wff>&#x1D711;</SPAN> &harr; [<SPAN
 CLASS=term>&#x1D461;</SPAN> / <SPAN CLASS=objvar>&#x1D465;</SPAN>]<SPAN
-CLASS=wff>&#x1D711;</SPAN> &harr; <SPAN
+CLASS=wff>&#x1D711;</SPAN>)</SPAN></TD></TR>
+<TR ALIGN=LEFT><TD>4</TD><TD>&nbsp;</TD><TD><A HREF="ndpsub2-P7.14.html"
+TITLE="Natural Deduction: Proper Substitution Rule 2. '`x`' cannot occur in '`t_t`'.">ndpsub2-P7.14</A>&nbsp;<SPAN
+CLASS=r STYLE="color:#B143FF">845</SPAN></TD><TD><A NAME="4"></A>
+<SPAN CLASS=i>. . . 4</SPAN>
+<SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN>(<SPAN
+CLASS=objvar>&#x1D465;</SPAN> = <SPAN CLASS=term>&#x1D461;</SPAN> &rarr; (<SPAN
+CLASS=wff>&#x1D711;</SPAN> &harr; [<SPAN CLASS=term>&#x1D461;</SPAN> / <SPAN
+CLASS=objvar>&#x1D465;</SPAN>]<SPAN
 CLASS=wff>&#x1D711;</SPAN>))</SPAN></TD></TR>
-<TR ALIGN=LEFT><TD>5</TD><TD><A HREF="#4">4</A></TD><TD><A
-HREF="ndtruee-P3.18.html"
-TITLE="Natural Deduction: '`T.`' Elimination Rule. Rules 17 and 18 allow us to write '`( T....">ndtruee-P3.18</A>&nbsp;<SPAN
-CLASS=r STYLE="color:#AB6F00">193</SPAN></TD><TD><A NAME="5"></A>
+<TR ALIGN=LEFT><TD>5</TD><TD>&nbsp;</TD><TD><A HREF="lemma-L7.01a.html"
+TITLE="Proper Substitution Over Equality Lemma. `t.` '`x`' cannot occur in '`t_t`' or '`t_u`'.">lemma-L7.01a</A>&nbsp;<SPAN
+CLASS=r STYLE="color:#CF19F2">918</SPAN></TD><TD><A NAME="5"></A>
+<SPAN CLASS=i>. . . . 5</SPAN>
+<SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN>([<SPAN
+CLASS=objvar>&#x1D465;</SPAN> / <SPAN CLASS=objvar>&#x1D466;</SPAN>]<SPAN
+CLASS=objvar>&#x1D466;</SPAN> = <SPAN CLASS=term>&#x1D461;</SPAN> &harr; <SPAN
+CLASS=objvar>&#x1D465;</SPAN> = <SPAN
+CLASS=term>&#x1D461;</SPAN>)</SPAN></TD></TR>
+<TR ALIGN=LEFT><TD>6</TD><TD><A HREF="#5">5</A></TD><TD><A
+HREF="bisym-P3.33b.RC.html"
+TITLE="Inference Form of ~bisym-P3.33b . `t.`">bisym-P3.33b.RC</A>&nbsp;<SPAN
+CLASS=r STYLE="color:#698900">309</SPAN></TD><TD><A NAME="6"></A>
+<SPAN CLASS=i>. . . 4</SPAN>
+<SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN>(<SPAN
+CLASS=objvar>&#x1D465;</SPAN> = <SPAN CLASS=term>&#x1D461;</SPAN> &harr; [<SPAN
+CLASS=objvar>&#x1D465;</SPAN> / <SPAN CLASS=objvar>&#x1D466;</SPAN>]<SPAN
+CLASS=objvar>&#x1D466;</SPAN> = <SPAN
+CLASS=term>&#x1D461;</SPAN>)</SPAN></TD></TR>
+<TR ALIGN=LEFT><TD>7</TD><TD><A HREF="#4">4</A>, <A HREF="#6">6</A></TD><TD><A
+HREF="subiml2-P4.RC.html"
+TITLE="Inference Form of ~subiml2-P4 . `t.`">subiml2-P4.RC</A>&nbsp;<SPAN
+CLASS=r STYLE="color:#008F70">547</SPAN></TD><TD><A NAME="7"></A>
+<SPAN CLASS=i>. . 3</SPAN>
+<SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN>([<SPAN
+CLASS=objvar>&#x1D465;</SPAN> / <SPAN CLASS=objvar>&#x1D466;</SPAN>]<SPAN
+CLASS=objvar>&#x1D466;</SPAN> = <SPAN CLASS=term>&#x1D461;</SPAN> &rarr; (<SPAN
+CLASS=wff>&#x1D711;</SPAN> &harr; [<SPAN CLASS=term>&#x1D461;</SPAN> / <SPAN
+CLASS=objvar>&#x1D465;</SPAN>]<SPAN
+CLASS=wff>&#x1D711;</SPAN>))</SPAN></TD></TR>
+<TR ALIGN=LEFT><TD>8</TD><TD>&nbsp;</TD><TD><A HREF="axL6ex-P7.html"
+TITLE="Existential Form of ~ax-L6 , Derived from Natural Deduction Rules. `t.` '`x`' cannot...">axL6ex-P7</A>&nbsp;<SPAN
+CLASS=r STYLE="color:#D019F2">919</SPAN></TD><TD><A NAME="8"></A>
+<SPAN CLASS=i>. . 3</SPAN>
+<SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN>&exist;<SPAN
+CLASS=objvar>&#x1D466;</SPAN> <SPAN CLASS=objvar>&#x1D466;</SPAN> = <SPAN
+CLASS=term>&#x1D461;</SPAN></SPAN></TD></TR>
+<TR ALIGN=LEFT><TD>9</TD><TD><A HREF="#3">3</A>, <A HREF="#7">7</A>, <A
+HREF="#8">8</A></TD><TD><A HREF="ndexew-P7.RC.VR1of2.html"
+TITLE="~ndexew-P7.RC with one variable restriction. `t.` '`y`' cannot occur in '`w_ph`'.">ndexew-P7.RC.VR1of2</A>&nbsp;<SPAN
+CLASS=r STYLE="color:#C628FA">890</SPAN></TD><TD><A NAME="9"></A>
+<SPAN CLASS=i>. 2</SPAN>
+<SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN>(<SPAN
+CLASS=wff>&#x1D711;</SPAN> &harr; [<SPAN CLASS=term>&#x1D461;</SPAN> / <SPAN
+CLASS=objvar>&#x1D465;</SPAN>]<SPAN
+CLASS=wff>&#x1D711;</SPAN>)</SPAN></TD></TR>
+<TR ALIGN=LEFT><TD>10</TD><TD><A HREF="#9">9</A></TD><TD><A
+HREF="bisym-P3.33b.RC.html"
+TITLE="Inference Form of ~bisym-P3.33b . `t.`">bisym-P3.33b.RC</A>&nbsp;<SPAN
+CLASS=r STYLE="color:#698900">309</SPAN></TD><TD><A NAME="10"></A>
 <SPAN CLASS=i>1</SPAN>
 <SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN>([<SPAN
 CLASS=term>&#x1D461;</SPAN> / <SPAN CLASS=objvar>&#x1D465;</SPAN>]<SPAN
@@ -161,15 +212,17 @@ STYLE="color:blue;font-style:normal">wff</SPAN> <SPAN CLASS=typecode
 STYLE="color:red;font-style:normal">objvar</SPAN> <SPAN CLASS=typecode
 STYLE="color:green;font-style:normal">term</SPAN> <SPAN CLASS=typecode
 STYLE="color:#CC33CC;font-style:normal">class</SPAN></FONT></TD></TR>
-<TR><TD ALIGN=LEFT><FONT SIZE=-1><B>Syntax hints:</B>  &nbsp;<SPAN CLASS=math>
-&harr; </SPAN><A HREF="wff-bi.html">wff-bi</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#E14100">103</SPAN> &nbsp;<SPAN CLASS=math> &top; </SPAN><A
-HREF="wff-true.html">wff-true</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#BF6100">163</SPAN> &nbsp;<SPAN CLASS=math>&#8498;</SPAN><A
+<TR><TD ALIGN=LEFT><FONT SIZE=-1><B>Syntax hints:</B>  &nbsp;<A
+HREF="term-obj.html">term-obj</A>&nbsp;<SPAN CLASS=r
+STYLE="color:#FB0000">1</SPAN> &nbsp;<SPAN CLASS=math> = </SPAN><A
+HREF="wff-equals.html">wff-equals</A>&nbsp;<SPAN CLASS=r
+STYLE="color:#FA0100">6</SPAN> &nbsp;<SPAN CLASS=math> &harr; </SPAN><A
+HREF="wff-bi.html">wff-bi</A>&nbsp;<SPAN CLASS=r
+STYLE="color:#E23F00">103</SPAN> &nbsp;<SPAN CLASS=math>&#8498;</SPAN><A
 HREF="wff-enfree.html">wff-enfree</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#3C78FF">687</SPAN> &nbsp;<SPAN CLASS=math>[</SPAN><A
+STYLE="color:#157CFF">687</SPAN> &nbsp;<SPAN CLASS=math>[</SPAN><A
 HREF="wff-psub.html">wff-psub</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#646FFF">720</SPAN></FONT></TD></TR>
+STYLE="color:#4D75FF">720</SPAN></FONT></TD></TR>
 <TR><TD ALIGN=LEFT><FONT SIZE=-1><B>This theorem was proved from axioms:</B>
 &nbsp;<A HREF="ax-L1.html">ax-L1</A>&nbsp;<SPAN CLASS=r
 STYLE="color:#F90300">11</SPAN> &nbsp;<A HREF="ax-L2.html">ax-L2</A>&nbsp;<SPAN
@@ -189,29 +242,29 @@ STYLE="color:#F80800">27</SPAN> &nbsp;<A
 HREF="ax-L11.html">ax-L11</A>&nbsp;<SPAN CLASS=r
 STYLE="color:#F80800">28</SPAN> &nbsp;<A
 HREF="ax-L12.html">ax-L12</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#F70900">29</SPAN></FONT></TD></TR>
+STYLE="color:#F80800">29</SPAN></FONT></TD></TR>
 <TR><TD ALIGN=LEFT><FONT SIZE=-1><B>This theorem depends on definitions:</B>
 &nbsp;<A HREF="df-bi-D2.1.html">df-bi-D2.1</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#DF4300">106</SPAN> &nbsp;<A
+STYLE="color:#E14100">106</SPAN> &nbsp;<A
 HREF="df-and-D2.2.html">df-and-D2.2</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#D15200">134</SPAN> &nbsp;<A
+STYLE="color:#D35000">134</SPAN> &nbsp;<A
 HREF="df-or-D2.3.html">df-or-D2.3</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#C55D00">155</SPAN> &nbsp;<A
+STYLE="color:#C85A00">155</SPAN> &nbsp;<A
 HREF="df-true-D2.4.html">df-true-D2.4</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#BE6200">165</SPAN> &nbsp;<A
+STYLE="color:#C16000">165</SPAN> &nbsp;<A
 HREF="df-rcp-AND3.html">df-rcp-AND3</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#BA6500">171</SPAN> &nbsp;<A
+STYLE="color:#BD6300">171</SPAN> &nbsp;<A
 HREF="df-exists-D5.1.html">df-exists-D5.1</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#0088BF">602</SPAN> &nbsp;<A
+STYLE="color:#008BA4">602</SPAN> &nbsp;<A
 HREF="df-enfree-D6.1.html">df-enfree-D6.1</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#3E77FF">688</SPAN> &nbsp;<A
+STYLE="color:#177CFF">688</SPAN> &nbsp;<A
 HREF="df-psub-D6.2.html">df-psub-D6.2</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#666EFF">722</SPAN></FONT></TD></TR>
+STYLE="color:#4F74FF">722</SPAN></FONT></TD></TR>
 <TR><TD ALIGN=LEFT><FONT SIZE=-1><B>This theorem is referenced by:</B> &nbsp;<A
 HREF="enfrgen-P7.html">enfrgen-P7</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#D70AE6">923</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#D017F1">922</SPAN> &nbsp;<A
 HREF="enfrexgen-P7.html">enfrexgen-P7</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#D809E5">926</SPAN></FONT></TD></TR>
+&nbsp;<SPAN CLASS=r STYLE="color:#D116F0">925</SPAN></FONT></TD></TR>
 </TABLE></CENTER>
 <TABLE BORDER=0 WIDTH="100%">
 <TR><TD WIDTH="25%">&nbsp;</TD>
