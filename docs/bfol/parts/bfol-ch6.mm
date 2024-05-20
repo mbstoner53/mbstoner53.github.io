@@ -117,7 +117,7 @@ ${
 
     exgenallw-P6.1 $e |- ( x = x1 -> ( w_ph <-> w_ph1 ) ) $.
 
-    $( Dual of ~genallw-P6 (weakened form).
+    $( Dual of ~gennallw-P6 (weakened form).
 
        Requires the existence of '`w_ph1 ( x1 )`' as a replacement for
        '`w_ph ( x )`'. $)
@@ -143,7 +143,7 @@ $)
 ${
     $( Extend WFF definition to include the effective non-freeness predicate
        '`F/`'. $)
-    wff-enfree $a wff F/ x w_ph $.
+    wff-nfree $a wff F/ x w_ph $.
 $}
 
 $(
@@ -171,14 +171,14 @@ ${
 
        This definition states exactly this.  Unlike the regular textbook 
        definition of non-freeness, it does *not* state that '`x`' cannot
-       occur free in '`w_ph`'. If we set '`w_ph := x = x`' then '`x`' is still
-       *effectively* free in '`w_ph`' since '`x = x`' is a tautology in our
-       system.  Effective non-freeness is thus slightly more general than the
-       standard textbook definition, which we will call grammatical
-       non-freeness (GNF).  We could also call effective non-freeness
-       *logical* non-freenness because, unlike grammatical non-freeness, it is
-       bound to logical equivalence (see ~enfrleq-P6 ). $)
-    df-enfree-D6.1 $a |- ( F/ x w_ph <-> ( A. x w_ph \/ A. x -. w_ph ) ) $.
+       occur free in '`w_ph`'. If we set '`w_ph`&nbsp;`:=`&nbsp`x = x`' then
+       '`x`' is still *effectively* free in '`w_ph`' since '`x = x`' is a
+       tautology in our system.  Effective non-freeness is thus slightly more
+       general than the standard textbook definition, which we will call
+       grammatical non-freeness (GNF).  We could also call effective
+       non-freeness *logical* non-freenness because, unlike grammatical
+       non-freeness, it is bound to logical equivalence (see ~nfrleq-P6 ). $)
+    df-nfree-D6.1 $a |- ( F/ x w_ph <-> ( A. x w_ph \/ A. x -. w_ph ) ) $.
 $}
 
 $(
@@ -186,15 +186,15 @@ $(
   Equivalencies.
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 
-  The theorems ~enfrgenw-P6 and ~genenfrw-P6 , show that *general for*
-  and *effectively not free* are identical.
+  The laws ~nfrgenw-P6 and ~gennfrw-P6 , show that *general for* and
+  *effectively not free* are identical.
 $)
 
 ${
     $( Alternate Definition of Effective Non-Freeness. $)
-    dfenfreealt-P6 $p |- ( F/ x w_ph <-> ( E. x w_ph -> A. x w_ph ) ) $=
-        ( wff-enfree wff-forall wff-neg wff-or wff-exists wff-imp
-          df-enfree-D6.1 allnegex-P5 suborr-P3.43b.RC orcomm-P3.37
+    dfnfreealt-P6 $p |- ( F/ x w_ph <-> ( E. x w_ph -> A. x w_ph ) ) $=
+        ( wff-nfree wff-forall wff-neg wff-or wff-exists wff-imp
+          df-nfree-D6.1 allnegex-P5 suborr-P3.43b.RC orcomm-P3.37
           imasor-P4.32a bisym-P3.33b.RC tbitrns-P4.17.RC )
         ABCABDZAEBDZFPABGZEZFSPFZRPHZABIQSPABJKPSLUATRPMNO
     $.
@@ -206,8 +206,8 @@ ${
     $d w_ph x1 $. $d w_ph1 x $.
     $d x x1 $.
 
-    enfrgenw-P6.1 $e |- ( x = x1 -> ( w_ph <-> w_ph1 ) ) $.
-    enfrgenw-P6.2 $e |- F/ x w_ph $.
+    nfrgenw-P6.1 $e |- ( x = x1 -> ( w_ph <-> w_ph1 ) ) $.
+    nfrgenw-P6.2 $e |- F/ x w_ph $.
 
     $( ENF in `=>` General for (weakened form). 
 
@@ -216,8 +216,8 @@ ${
 
        If '`x`' is effectively not free in '`w_ph`', then '`w_ph`' is
        general for '`x`'. $)
-    enfrgenw-P6 $p |- ( w_ph -> A. x w_ph ) $=
-        ( wff-exists wff-forall exiw-P5 wff-enfree wff-imp dfenfreealt-P6
+    nfrgenw-P6 $p |- ( w_ph -> A. x w_ph ) $=
+        ( wff-exists wff-forall exiw-P5 wff-nfree wff-imp dfnfreealt-P6
           bimpf-P4.RC syl-P3.24.RC )
         AACGZACHZABCDEIACJOPKFACLMN
     $.
@@ -229,8 +229,8 @@ ${
     $d w_ph x1 $. $d w_ph1 x $.
     $d x x1 $.
 
-    genenfrw-P6.1 $e |- ( x = x1 -> ( w_ph <-> w_ph1 ) ) $.
-    genenfrw-P6.2 $e |- ( w_ph -> A. x w_ph ) $.
+    gennfrw-P6.1 $e |- ( x = x1 -> ( w_ph <-> w_ph1 ) ) $.
+    gennfrw-P6.2 $e |- ( w_ph -> A. x w_ph ) $.
 
     $( General for `=>` ENF in (weakened form).
 
@@ -239,9 +239,9 @@ ${
 
        If '`w_ph`' is general for '`x`', then '`x`' is effectively not free
        in '`w_ph`'. $)
-    genenfrw-P6 $p |- F/ x w_ph $=
-        ( wff-enfree wff-exists wff-forall wff-imp alloverimex-P5.RC.GEN
-          exgenallw-P6 syl-P3.24.RC dfenfreealt-P6 bimpr-P4.RC )
+    gennfrw-P6 $p |- F/ x w_ph $=
+        ( wff-nfree wff-exists wff-forall wff-imp alloverimex-P5.RC.GEN
+          exgenallw-P6 syl-P3.24.RC dfnfreealt-P6 bimpr-P4.RC )
         ACGACHZACIZJPQCHQAQCFKABCDELMACNO
     $.
 $}
@@ -287,7 +287,7 @@ $(
   Assume '`w_ph`' is atomic.  Since an atomic formula cannot contain '`A. x`',
   if '`x`' occurs at all in '`w_ph`', it must occur free.  Therefore if '`x`'
   is GNF in '`w_ph`', then '`x`' does not occur at all in '`w_ph`'.
-  Therefore by ~enfrv-P6 , '`x`' is ENF in '`w_ph`'.
+  Therefore by ~nfrv-P6 , '`x`' is ENF in '`w_ph`'.
 
   Induction:
 
@@ -302,7 +302,7 @@ $(
   Note that '`x`' occurs free in '`w_ph`' if and only if '`x`' occurs free in
   `w_ps`.  Therefore if '`x`' is GNF in '`w_ph`', then it is GNF in '`w_ps`'.
   Since '`w_ps`' has length 'n-1', we know '`x`' is ENF in '`w_ps`'.
-  Therefore, by ~enfrneg-P6 , '`x`' is ENF in `-. w_ps`, i.e. '`x`' is ENF in
+  Therefore, by ~nfrneg-P6 , '`x`' is ENF in `-. w_ps`, i.e. '`x`' is ENF in
   '`w_ph`'.
 
   Case 2: '`w_ph := w_ps -> w_ch`'.
@@ -311,20 +311,20 @@ $(
   free in '`w_ph`'.  Therefore if '`x`' is GNF in '`w_ph`', then it is GNF in
   both '`w_ps`' and '`w_ch`'.  Since both '`w_ps`' and '`w_ch`' have a length
   that is less than 'n', we know '`x`' is ENF in both '`w_ps`' and '`w_ch`'.
-  Therefore, by ~enfrim-P6 , '`x`' is ENF in `w_ps -> w_ch`, i.e. '`x`' is ENF
+  Therefore, by ~nfrim-P6 , '`x`' is ENF in `w_ps -> w_ch`, i.e. '`x`' is ENF
   in '`w_ph`'.
 
   Case 3: '`w_ph := A. x w_ps`'.
 
   In this case it is definite that '`x`' is GNF in '`w_ph`'.  By 
-  ~enfrall1w-P6 , '`x`' is also ENF in '`w_ph`'.
+  ~nfrall1w-P6 , '`x`' is also ENF in '`w_ph`'.
 
   Case 4: '`w_ph := A. y w_ps` ('`y`' is different from '`x`').
 
   '`x`' occurs free in '`w_ph`' if and only if it occurs free in '`w_ps`'.
   Therefore if '`x`' is GNF in '`w_ph`', then it is GNF in `w_ps`.  Since
   '`w_ps`' has length 'n-1', we know '`x`' is ENF in '`w_ps`'  Therefore by
-  ~enfrall2w-P6 , '`x`' is ENF in '`A. y w_ps`', i.e. '`x`' is ENF in
+  ~nfrall2w-P6 , '`x`' is ENF in '`A. y w_ps`', i.e. '`x`' is ENF in
   '`w_ph`'
 
   By induction, we conclude that the statement...
@@ -349,7 +349,7 @@ $(
   gramatically free variables that appear in a WFF containing definitions must
   also appear in the logically equivalent primitive form.  This means '`x`' is
   GNF in a WFF containing definitions if and only if it is GNF in the
-  logically equivalent primitive form of the WFF.  ~enfrleq-P6 can be used to
+  logically equivalent primitive form of the WFF.  ~nfrleq-P6 can be used to
   show similarly, that '`x`' is ENF in a WFF containing definitions if and
   only  if '`x`' is ENF in the logically equivalent primitive form of the WFF.
 $)
@@ -364,9 +364,9 @@ ${
 
        If '`x`' does not occur in '`w_ph`', then '`x`' is effectively not
        free in '`w_ph`'. $)
-    enfrv-P6 $p |- F/ x w_ph $=
+    nfrv-P6 $p |- F/ x w_ph $=
         ( objvar-x1 wff-bi term-obj wff-equals biref-P3.33a rcp-NDIMP0addall
-          ax-L5 genenfrw-P6 )
+          ax-L5 gennfrw-P6 )
         AABCAADBECEFAGHABIJ
     $.
 $}
@@ -374,11 +374,11 @@ $}
 $( ------------------------------------------------------------------------- $)
 
 ${
-    enfrleq-P6.1 $e |- ( w_ph <-> w_ps ) $.
+    nfrleq-P6.1 $e |- ( w_ph <-> w_ps ) $.
 
     $( Effective Non-Freeness is Bound to Logical Equivalence . $)
-    enfrleq-P6 $p |- ( F/ x w_ph <-> F/ x w_ps ) $=
-        ( wff-enfree wff-forall wff-neg wff-or df-enfree-D6.1 suballinf-P5
+    nfrleq-P6 $p |- ( F/ x w_ph <-> F/ x w_ps ) $=
+        ( wff-nfree wff-forall wff-neg wff-or df-nfree-D6.1 suballinf-P5
           subneg-P3.39.RC subord-P3.43c.RC bisym-P3.33b.RC dbitrns-P4.16.RC )
         ACEACFZAGZCFZHBCFZBGZCFZHZBCEZACIORQTABCDJPSCABDKJLUBUABCIMN
     $.
@@ -388,8 +388,8 @@ $( ------------------------------------------------------------------------- $)
 
 ${
     $( ENF Over Negation. $)
-    enfrneg-P6 $p |- ( F/ x -. w_ph <-> F/ x w_ph ) $=
-        ( wff-neg wff-enfree wff-forall wff-or df-enfree-D6.1 dnegeq-P4.10
+    nfrneg-P6 $p |- ( F/ x -. w_ph <-> F/ x w_ph ) $=
+        ( wff-neg wff-nfree wff-forall wff-or df-nfree-D6.1 dnegeq-P4.10
           suballinf-P5 suborr-P3.43b.RC orcomm-P3.37 bisym-P3.33b.RC
           tbitrns-P4.17.RC )
         ACZBDNBEZNCZBEZFOABEZFROFZABDZNBGQROPABAHIJORKTSABGLM
@@ -399,13 +399,13 @@ $}
 $( ------------------------------------------------------------------------- $)
 
 ${
-    enfrim-P6.1 $e |- F/ x w_ph $.
-    enfrim-P6.2 $e |- F/ x w_ps $.
+    nfrim-P6.1 $e |- F/ x w_ph $.
+    nfrim-P6.2 $e |- F/ x w_ps $.
 
     $( ENF Over Implication. $)
-    enfrim-P6 $p |- F/ x ( w_ph -> w_ps ) $=
-        ( wff-imp wff-enfree wff-exists wff-forall qimeqex-P5 rcp-NDBIER0
-          dfenfreealt-P6 bimpf-P4.RC imsubd-P3.28c.RC qimeqallhalf-P5
+    nfrim-P6 $p |- F/ x ( w_ph -> w_ps ) $=
+        ( wff-imp wff-nfree wff-exists wff-forall qimeqex-P5 rcp-NDBIER0
+          dfnfreealt-P6 bimpf-P4.RC imsubd-P3.28c.RC qimeqallhalf-P5
           dsyl-P3.25.RC bimpr-P4.RC )
         ABFZCGRCHZRCIZFSACIZBCHZFZACHZBCIZFTUCSABCJKUDUAUBUEACGUDUAFDACLMBCGUB
         UEFEBCLMNABCOPRCLQ
@@ -415,13 +415,13 @@ $}
 $( ------------------------------------------------------------------------- $)
 
 ${
-    enfrand-P6.1 $e |- F/ x w_ph $.
-    enfrand-P6.2 $e |- F/ x w_ps $.
+    nfrand-P6.1 $e |- F/ x w_ph $.
+    nfrand-P6.2 $e |- F/ x w_ps $.
 
     $( ENF Over Conjunction. $)
-    enfrand-P6 $p |- F/ x ( w_ph /\ w_ps ) $=
-        ( wff-and wff-enfree wff-neg wff-imp enfrneg-P6 bimpr-P4.RC enfrim-P6
-          andasim-P3.46a enfrleq-P6 )
+    nfrand-P6 $p |- F/ x ( w_ph /\ w_ps ) $=
+        ( wff-and wff-nfree wff-neg wff-imp nfrneg-P6 bimpr-P4.RC nfrim-P6
+          andasim-P3.46a nfrleq-P6 )
         ABFZCGABHZIZHZCGZSQCGAPCDPCGBCGEBCJKLQCJKORCABMNK
     $.
 $}
@@ -429,13 +429,13 @@ $}
 $( ------------------------------------------------------------------------- $)
 
 ${
-    enfrbi-P6.1 $e |- F/ x w_ph $.
-    enfrbi-P6.2 $e |- F/ x w_ps $.
+    nfrbi-P6.1 $e |- F/ x w_ph $.
+    nfrbi-P6.2 $e |- F/ x w_ps $.
 
     $( ENF Over Equivalency. $)
-    enfrbi-P6 $p |- F/ x ( w_ph <-> w_ps ) $=
-        ( wff-bi wff-enfree wff-imp wff-and enfrim-P6 enfrand-P6
-          dfbi-P3.47 enfrleq-P6 bimpr-P4.RC )
+    nfrbi-P6 $p |- F/ x ( w_ph <-> w_ps ) $=
+        ( wff-bi wff-nfree wff-imp wff-and nfrim-P6 nfrand-P6
+          dfbi-P3.47 nfrleq-P6 bimpr-P4.RC )
         ABFZCGABHZBAHZIZCGPQCABCDEJBACEDJKORCABLMN
     $.
 $}
@@ -446,15 +446,15 @@ ${
     $d w_ph x1 $. $d w_ph1 x $.
     $d x x1 $.
 
-    enfrall1w-P6.1 $e |- ( x = x1 -> ( w_ph <-> w_ph1 ) ) $.
+    nfrall1w-P6.1 $e |- ( x = x1 -> ( w_ph <-> w_ph1 ) ) $.
 
     $( ENF Over Universal Quantifier (same variable - weakened form). 
 
        Requires the existence of '`w_ph1 ( x1 )`' as a replacement for
        '`w_ph ( x )`'. $)
-    enfrall1w-P6 $p |- F/ x A. x w_ph $=
+    nfrall1w-P6 $p |- F/ x A. x w_ph $=
         ( wff-forall wff-bi term-obj wff-equals cbvallv-P5 rcp-NDIMP0addall
-          genallw-P6 genenfrw-P6 )
+          genallw-P6 gennfrw-P6 )
         ACFZBDFZCDNOGCHDHIABCDEJKABCDELM
     $.
 $}
@@ -465,15 +465,15 @@ ${
     $d w_ph x1 $. $d w_ph1 x $.
     $d x x1 $.
 
-    enfrex1w-P6.1 $e |- ( x = x1 -> ( w_ph <-> w_ph1 ) ) $.
+    nfrex1w-P6.1 $e |- ( x = x1 -> ( w_ph <-> w_ph1 ) ) $.
 
     $( ENF Over Existential Quantifier (same variable - weakened form). 
 
        Requires the existence of '`w_ph1 ( x1 )`' as a replacement for
        '`w_ph ( x )`'. $)
-    enfrex1w-P6 $p |- F/ x E. x w_ph $=
+    nfrex1w-P6 $p |- F/ x E. x w_ph $=
         ( wff-exists wff-bi term-obj wff-equals cbvexv-P5 rcp-NDIMP0addall
-          genexw-P6 genenfrw-P6 )
+          genexw-P6 gennfrw-P6 )
         ACFZBDFZCDNOGCHDHIABCDEJKABCDELM
     $.
 $}
@@ -484,16 +484,16 @@ ${
     $d w_ph x1 $. $d w_ph1 x $.
     $d x y x1 $.
 
-    enfrall2w-P6.1 $e |- ( x = x1 -> ( w_ph <-> w_ph1 ) ) $.
-    enfrall2w-P6.2 $e |- F/ x w_ph $.
+    nfrall2w-P6.1 $e |- ( x = x1 -> ( w_ph <-> w_ph1 ) ) $.
+    nfrall2w-P6.2 $e |- F/ x w_ph $.
 
     $( ENF Over Universal Quantifier (different variable - weakened form).
 
        Requires the existence of '`w_ph1 ( x1 )`' as a replacement for
        '`w_ph ( x )`'. $)
-    enfrall2w-P6 $p |- F/ x A. y w_ph $=
-        ( wff-forall term-obj wff-equals suballv-P5 enfrgenw-P6
-          alloverim-P5.RC.GEN lemma-L5.04a syl-P3.24.RC genenfrw-P6 )
+    nfrall2w-P6 $p |- F/ x A. y w_ph $=
+        ( wff-forall term-obj wff-equals suballv-P5 nfrgenw-P6
+          alloverim-P5.RC.GEN lemma-L5.04a syl-P3.24.RC gennfrw-P6 )
         AEHZBEHCDABCIDIJEFKQACHZEHQCHAREABCDFGLMABECDFNOP
     $.
 $}
@@ -504,19 +504,19 @@ ${
     $d w_ph x1 $. $d w_ph1 x $.
     $d x y x1 $.
 
-    enfrex2w-P6.1 $e |- ( x = x1 -> ( w_ph <-> w_ph1 ) ) $.
-    enfrex2w-P6.2 $e |- F/ x w_ph $.
+    nfrex2w-P6.1 $e |- ( x = x1 -> ( w_ph <-> w_ph1 ) ) $.
+    nfrex2w-P6.2 $e |- F/ x w_ph $.
 
     $( ENF Over Existential Quantifier (different variable -
        weakened form).
 
        Requires the existence of '`w_ph1 ( x1 )`' as a replacement for
        '`w_ph ( x )`'. $)
-    enfrex2w-P6 $p |- F/ x E. y w_ph $=
-        ( wff-exists wff-neg wff-enfree term-obj wff-equals subexv-P5
-          subneg-P3.39 wff-imp wff-forall lemma-L5.05a enfrneg-P6 bimpr-P4.RC
-          enfrgenw-P6 lemma-L5.01a alloverimex-P5.RC.GEN syl-P3.24.RC
-          bimpf-P4.RC genenfrw-P6 )
+    nfrex2w-P6 $p |- F/ x E. y w_ph $=
+        ( wff-exists wff-neg wff-nfree term-obj wff-equals subexv-P5
+          subneg-P3.39 wff-imp wff-forall lemma-L5.05a nfrneg-P6 bimpr-P4.RC
+          nfrgenw-P6 lemma-L5.01a alloverimex-P5.RC.GEN syl-P3.24.RC
+          bimpf-P4.RC gennfrw-P6 )
         AEHZIZCJUFCJUGBEHZICDUFUHCKDKLZABUIEFMNUFCHZUFOUGUGCPOUJACHZEHUFABCDEF
         QUKAEUKAOAIZULCPOULBICDABUIFNULCJACJGACRSTACUASUBUCUFCUAUDUEUFCRUD
     $.
@@ -532,16 +532,16 @@ ${
     $d w_ph x1 $. $d w_ph1 x $.
     $d x x1 $.
 
-    enfrexgenw-P6.1 $e |- ( x = x1 -> ( w_ph <-> w_ph1 ) ) $.
-    enfrexgenw-P6.2 $e |- F/ x w_ph $.
+    nfrexgenw-P6.1 $e |- ( x = x1 -> ( w_ph <-> w_ph1 ) ) $.
+    nfrexgenw-P6.2 $e |- F/ x w_ph $.
 
-    $( Dual Form of ~enfrgenw-P6 (weakened form).
+    $( Dual Form of ~nfrgenw-P6 (weakened form).
 
        Requires the existence of '`w_ph1 ( x1 )`' as a replacement for
        '`w_ph ( x )`'. $)
-    enfrexgenw-P6 $p |- ( E. x w_ph -> w_ph ) $=
+    nfrexgenw-P6 $p |- ( E. x w_ph -> w_ph ) $=
         ( wff-exists wff-imp wff-neg wff-forall term-obj wff-equals
-          subneg-P3.39 wff-enfree enfrneg-P6 bimpr-P4.RC enfrgenw-P6
+          subneg-P3.39 wff-nfree nfrneg-P6 bimpr-P4.RC nfrgenw-P6
           lemma-L5.01a )
         ACGAHAIZSCJHSBICDABCKDKLEMSCNACNFACOPQACRP
     $.
@@ -553,16 +553,16 @@ ${
     $d w_ph x1 $. $d w_ph1 x $.
     $d x x1 $.
 
-    exgenenfrw-P6.1 $e |- ( x = x1 -> ( w_ph <-> w_ph1 ) ) $.
-    exgenenfrw-P6.2 $e |- ( E. x w_ph -> w_ph ) $.
-    $( Dual Form of ~genenfrw-P6 (weakened form).
+    exgennfrw-P6.1 $e |- ( x = x1 -> ( w_ph <-> w_ph1 ) ) $.
+    exgennfrw-P6.2 $e |- ( E. x w_ph -> w_ph ) $.
+    $( Dual Form of ~gennfrw-P6 (weakened form).
 
        Requires the existence of '`w_ph1 ( x1 )`' as a replacement for
        '`w_ph ( x )`'. $)
-    exgenenfrw-P6 $p |- F/ x w_ph $=
-        ( wff-neg wff-enfree term-obj wff-equals subneg-P3.39 wff-exists
-          wff-imp wff-forall lemma-L5.01a bimpf-P4.RC genenfrw-P6
-          enfrneg-P6 )
+    exgennfrw-P6 $p |- F/ x w_ph $=
+        ( wff-neg wff-nfree term-obj wff-equals subneg-P3.39 wff-exists
+          wff-imp wff-forall lemma-L5.01a bimpf-P4.RC gennfrw-P6
+          nfrneg-P6 )
         AGZCHACHSBGCDABCIDIJEKACLAMSSCNMFACOPQACRP
     $.
 $}
@@ -576,7 +576,7 @@ ${
     qimeqalla-P6-L1 $p
         |- ( A. x ( w_ph -> w_ps ) -> ( E. x w_ph -> A. x w_ps ) )
     $=
-        ( wff-exists wff-forall wff-imp wff-enfree dfenfreealt-P6 bimpf-P4.RC
+        ( wff-exists wff-forall wff-imp wff-nfree dfnfreealt-P6 bimpf-P4.RC
           rcp-NDIMP0addall ax-L4 syl-P3.24 )
         ACEZACFZBCFABGCFZNOGZPACHQDACIJKABCLM
     $.
@@ -607,8 +607,8 @@ ${
     qimeqallb-P6-L1 $p
         |- ( A. x ( w_ph -> w_ps ) -> ( E. x w_ph -> A. x w_ps ) )
     $=
-        ( wff-exists wff-forall wff-imp alloverimex-P5.CL wff-enfree
-          dfenfreealt-P6 bimpf-P4.RC rcp-NDIMP0addall syl-P3.24 )
+        ( wff-exists wff-forall wff-imp alloverimex-P5.CL wff-nfree
+          dfnfreealt-P6 bimpf-P4.RC rcp-NDIMP0addall syl-P3.24 )
         ACEBCEZBCFZABGCFZABCHNOGZPBCIQDBCJKLM
     $.
 $}
@@ -643,7 +643,7 @@ ${
        Requires the existence of '`w_ph1 ( x1 )`' as a replacement for
        '`w_ph ( x )`'. $)
     qremallw-P6 $p |- ( A. x w_ph <-> w_ph ) $=
-        ( wff-forall specw-P5 enfrgenw-P6 rcp-NDBII0 ) ACGAABCDEHABCDEFIJ
+        ( wff-forall specw-P5 nfrgenw-P6 rcp-NDBII0 ) ACGAABCDEHABCDEFIJ
     $.
 $}
 
@@ -662,7 +662,7 @@ ${
        Requires the existence of '`w_ph1 ( x1 )`' as a replacement for
        '`w_ph ( x )`'. $)
     qremexw-P6 $p |- ( E. x w_ph <-> w_ph ) $=
-        ( wff-exists enfrexgenw-P6 exiw-P5 rcp-NDBII0 ) ACGAABCDEFHABCDEIJ
+        ( wff-exists nfrexgenw-P6 exiw-P5 rcp-NDBII0 ) ACGAABCDEFHABCDEIJ
     $.
 $}
 
@@ -697,13 +697,13 @@ ${
        with '`t_t`' with fresh variables.  The result of this process, which
        is guaranteed to exist, will be called '`w_ps`'.  So long as '`x`' does
        not appear in '`t_t`', '`x`' will not occur free in the result,
-       '`w_ps`'. This fact is needed to prove this theorem..
+       '`w_ps`'. This fact is needed to prove this statement.
 
        Using the process described above, the existence of a formula,
-       '`w_ps`', that satisfies the hypotheses of this theorem can be proven
+       '`w_ps`', that satisfies the hypotheses of this statement can be proven
        through induction on formula length.  With the assumption that such a
-       formula exists, the theorem then "solves" for a direct formula that is
-       gauranteed to be logically equivalent to '`w_ps`' in every case.
+       formula exists, this statement then "solves" for a direct formula that
+       is gauranteed to be logically equivalent to '`w_ps`' in every case.
 
        The only limitation of this direct formula is the rule that '`x`' is
        not allowed to occur in '`t_t`'.  An even more general formula where
@@ -735,7 +735,7 @@ ${
        remove some of the hypotheses. $)
     solvesub-P6a.VR $p |- ( w_ps <-> A. x ( x = t_t -> w_ph ) ) $=
         ( objvar-x1 wff-bi term-obj wff-equals biref-P3.33a rcp-NDIMP0addall
-          enfrv-P6 solvesub-P6a )
+          nfrv-P6 solvesub-P6a )
         ABBCDFBBGDHFHIBJKBDLEM
     $.
 $}
@@ -764,8 +764,8 @@ ${
 
        and '`( b = x -> ( w_ph <-> w_ps ) ) `'. $)
     example-E6.01a $p |- ( w_ps <-> A. b ( b = x -> w_ph ) ) $=
-        ( term-obj wff-elemof wff-imp wff-forall wff-enfree enfrv-P6
-          bisym-P3.33b.RC enfrleq-P6 bimpf-P4.RC wff-bi wff-equals
+        ( term-obj wff-elemof wff-imp wff-forall wff-nfree nfrv-P6
+          bisym-P3.33b.RC nfrleq-P6 bimpf-P4.RC wff-bi wff-equals
           subelofl-P5.CL subimd-P3.40c cbvallv-P5 rcp-NDIMP0addall
           subelofr-P5.CL subiml-P3.40a suballv-P5 bitrns-P3.33c
           subbid-P3.41c.RC subimr2-P4.RC solvesub-P6a )
@@ -852,8 +852,8 @@ ${
     trnsvsubw-P6 $p |- ( x = t_t -> ( w_ph <-> w_ch ) ) $=
         ( term-obj wff-equals wff-and wff-exists wff-bi eqmiddle-P6.CL
           joinimandres2-P4.RC bitrns-P3.33c.CL syl-P3.24.RC
-          alloverimex-P5.RC.GEN subbir-P3.41b enfrv-P6 enfrbi-P6
-          enfrexgenw-P6 dsyl-P3.25.RC )
+          alloverimex-P5.RC.GEN subbir-P3.41b nfrv-P6 nfrbi-P6
+          nfrexgenw-P6 dsyl-P3.25.RC )
         FMZENUHGMZNZUIENZOZGPACQZGPUMEFGRULUMGULABQZBCQZOUMUJUNUKUOKLSABCTUAUB
         UMADQGHCDAUIHMNJUCACGAGUDIUEUFUG
     $.
@@ -891,8 +891,8 @@ ${
        The double substitution above is needed to allow '`x`' to occur in
        the term '`t_t`'.  Again, it can be proved inductively that the
        formulas '`w_ps`' and '`w_ch`', obtained by the double substitution
-       described above, satisfy the hypotheses above of this theorem.  We
-       can then "solve" for an equivalent direct formula. $)
+       described above, satisfy the hypotheses of this statement.  We can
+       then "solve" for an equivalent direct formula. $)
     solvedsub-P6a $p
         |- ( w_ch <-> A. y ( y = t_t -> A. x ( x = y -> w_ph ) ) )
     $=
@@ -938,8 +938,8 @@ ${
     example-E6.02a $p
         |- ( w_ch <-> A. c ( c = ( x x. b ) -> A. b ( b = c -> w_ph ) ) )
     $=
-        ( term-obj term-mult wff-equals wff-exists wff-enfree enfrv-P6
-          bisym-P3.33b.RC enfrleq-P6 bimpf-P4.RC wff-bi subeql-P5.CL subexv-P5
+        ( term-obj term-mult wff-equals wff-exists wff-nfree nfrv-P6
+          bisym-P3.33b.RC nfrleq-P6 bimpf-P4.RC wff-bi subeql-P5.CL subexv-P5
           subbid-P3.41c.RC subimr2-P4.RC ax-L9-multl subeqr-P5 cbvexv-P5
           rcp-NDIMP0addall bitrns-P3.33c solvedsub-P6a )
         ABCDEFRZIRZSZIJKLMKRZURHRZSZTZFUAZIUBBIUBVEIUCVEBIBVEPUDZUEUFNUTGRZVBS
@@ -989,7 +989,6 @@ ${
     $.
 $}
 
-
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
   Define Proper Substitution.
@@ -1019,7 +1018,9 @@ ${
     $d t_t y $. $d t_t z $.
     $d x y z $.
 
-    $( Justification Theorem for ~df-psub-D6.2 . $)
+    $( Justification Theorem for ~df-psub-D6.2 . 
+
+       '`y`' and '`z`' are distinct from all other variables. $)
     psubjust-P6 $p
         |- (
           A. y ( y = t_t -> A. x ( y = x -> w_ph ) ) <->
@@ -1045,7 +1046,9 @@ ${
 
     $( Definition of Proper Substitution, '`[ t_t / x ] w_ph`'.  Read as 
        "The formula resulting from properly substituting '`t_t`' for '`x`' in
-       '`w_ph`'". $)
+       '`w_ph`'".
+
+       '`y`' is distinct from all other variables. $)
     df-psub-D6.2 $a
         |- (
           [ t_t / x ] w_ph <-> A. y ( y = t_t -> A. x ( x = y -> w_ph ) )
@@ -1193,7 +1196,7 @@ $}
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
-  Strengthened Quantifier Removal Rules.
+  Strengthened Quantifier Removal Laws.
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 $)
 
@@ -1204,8 +1207,8 @@ ${
 
        See ~qremallw-P6 for a version that requires only FOL axioms. $)
     qremall-P6 $p |- ( A. x w_ph <-> w_ph ) $=
-        ( wff-forall spec-P6 wff-exists exi-P6 wff-enfree wff-imp
-          dfenfreealt-P6 bimpf-P4.RC syl-P3.24.RC rcp-NDBII0 )
+        ( wff-forall spec-P6 wff-exists exi-P6 wff-nfree wff-imp
+          dfnfreealt-P6 bimpf-P4.RC syl-P3.24.RC rcp-NDBII0 )
         ABDZAABEAABFZNABGABHONICABJKLM
     $.
 $}
@@ -1219,7 +1222,7 @@ ${
 
        See ~qremexw-P6 for a version that requires only FOL axioms. $)
     qremex-P6 $p |- ( E. x w_ph <-> w_ph ) $=
-        ( wff-exists wff-forall wff-enfree wff-imp dfenfreealt-P6 bimpf-P4.RC
+        ( wff-exists wff-forall wff-nfree wff-imp dfnfreealt-P6 bimpf-P4.RC
          spec-P6 syl-P3.24.RC exi-P6 rcp-NDBII0 )
         ABDZANABEZAABFNOGCABHIABJKABLM
     $.
@@ -1365,10 +1368,10 @@ $)
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
-  Strengthened "General For" Rules (first half).
+  Strengthened "General For" Laws (first half).
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 
-  These rules require ~ax-L10 but not ~ax-L12 .
+  These laws require ~ax-L10 but not ~ax-L12 .
 $)
 
 ${
@@ -1400,7 +1403,7 @@ $}
 $( ------------------------------------------------------------------------- $)
 
 ${
-    $( Dual of ~genall-P6 . 
+    $( Dual of ~gennall-P6 . 
 
        See ~exgenallw-P6 for a version that requires only FOL axioms. $)
     exgenall-P6 $p |- ( E. x A. x w_ph -> A. x w_ph ) $=
@@ -1412,7 +1415,7 @@ $}
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
-  Strengthened "General For" / "Not Free" Conversion Theorems.
+  Strengthened "General For" / "Not Free" Conversion Laws.
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 
   The inference "`x` is ENF in `w_ph` `=>` `w_ph` is general for `x`" 
@@ -1423,16 +1426,16 @@ $(
 $)
 
 ${
-    enfrgen-P6.1 $e |- F/ x w_ph $.
+    nfrgen-P6.1 $e |- F/ x w_ph $.
 
     $( ENF in `=>` General for.
 
        If '`x`' is effectively not free in '`w_ph`', then '`w_ph`' is general
        for '`x`'. 
 
-       See ~enfrgenw-P6 for a version that requires only FOL axioms. $)
-    enfrgen-P6 $p |- ( w_ph -> A. x w_ph ) $=
-        ( wff-exists wff-forall exi-P6 wff-enfree wff-imp dfenfreealt-P6
+       See ~nfrgenw-P6 for a version that requires only FOL axioms. $)
+    nfrgen-P6 $p |- ( w_ph -> A. x w_ph ) $=
+        ( wff-exists wff-forall exi-P6 wff-nfree wff-imp dfnfreealt-P6
           bimpf-P4.RC syl-P3.24.RC )
         AABDZABEZABFABGLMHCABIJK
     $.
@@ -1441,17 +1444,17 @@ $}
 $( ------------------------------------------------------------------------- $)
 
 ${
-    genenfr-P6.1 $e |- ( w_ph -> A. x w_ph ) $.
+    gennfr-P6.1 $e |- ( w_ph -> A. x w_ph ) $.
 
     $( General for `=>` ENF in.
 
        If '`w_ph`' is general for '`x`', then '`x`' is effectively not free in
        '`w_ph`'. 
 
-       See ~genenfrw-P6 for a version that requires only FOL axioms. $)
-    genenfr-P6 $p |- F/ x w_ph $=
-        ( wff-enfree wff-exists wff-forall wff-imp alloverimex-P5.RC.GEN
-          exgenall-P6 syl-P3.24.RC dfenfreealt-P6 bimpr-P4.RC )
+       See ~gennfrw-P6 for a version that requires only FOL axioms. $)
+    gennfr-P6 $p |- F/ x w_ph $=
+        ( wff-nfree wff-exists wff-forall wff-imp alloverimex-P5.RC.GEN
+          exgenall-P6 syl-P3.24.RC dfnfreealt-P6 bimpr-P4.RC )
         ABDABEZABFZGMNBENANBCHABIJABKL
     $.
 $}
@@ -1459,14 +1462,14 @@ $}
 $( ------------------------------------------------------------------------- $)
 
 ${
-    enfrexgen-P6.1 $e |- F/ x w_ph $.
+    nfrexgen-P6.1 $e |- F/ x w_ph $.
 
-    $( Dual Form of ~enfrgen-P6 . 
+    $( Dual Form of ~nfrgen-P6 . 
 
-       See ~enfrexgenw-P6 for a version that requires only FOL axioms. $)
-    enfrexgen-P6 $p |- ( E. x w_ph -> w_ph ) $=
-        ( wff-exists wff-imp wff-neg wff-forall wff-enfree enfrneg-P6
-          bimpr-P4.RC enfrgen-P6 lemma-L5.01a )
+       See ~nfrexgenw-P6 for a version that requires only FOL axioms. $)
+    nfrexgen-P6 $p |- ( E. x w_ph -> w_ph ) $=
+        ( wff-exists wff-imp wff-neg wff-forall wff-nfree nfrneg-P6
+          bimpr-P4.RC nfrgen-P6 lemma-L5.01a )
         ABDAEAFZMBGEMBMBHABHCABIJKABLJ
     $.
 $}
@@ -1474,21 +1477,21 @@ $}
 $( ------------------------------------------------------------------------- $)
 
 ${
-    exgenenfr-P6.1 $e |- ( E. x w_ph -> w_ph ) $.
+    exgennfr-P6.1 $e |- ( E. x w_ph -> w_ph ) $.
 
-    $( Dual Form of ~genenfr-P6 . 
+    $( Dual Form of ~gennfr-P6 . 
 
-       See ~exgenenfrw-P6 for a version that requires only FOL axioms. $)
-    exgenenfr-P6 $p |- F/ x w_ph $=
-        ( wff-neg wff-enfree wff-exists wff-imp wff-forall lemma-L5.01a
-          bimpf-P4.RC genenfr-P6 enfrneg-P6 )
+       See ~exgennfrw-P6 for a version that requires only FOL axioms. $)
+    exgennfr-P6 $p |- F/ x w_ph $=
+        ( wff-neg wff-nfree wff-exists wff-imp wff-forall lemma-L5.01a
+          bimpf-P4.RC gennfr-P6 nfrneg-P6 )
         ADZBEABEMBABFAGMMBHGCABIJKABLJ
     $.
 $}
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
-  Strengthened "General For" Rules (second half).
+  Strengthened "General For" Laws (second half).
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 
   These rules require ~ax-L10 and ~ax-L12 .
@@ -1499,8 +1502,8 @@ ${
 
        See ~genallw-P6 for a version that requires only FOL axioms. $)
     genall-P6 $p |- ( A. x w_ph -> A. x A. x w_ph ) $=
-        ( wff-forall wff-neg wff-enfree gennall-P6 genenfr-P6 enfrneg-P6
-          bimpf-P4.RC enfrgen-P6 )
+        ( wff-forall wff-neg wff-nfree gennall-P6 gennfr-P6 nfrneg-P6
+          bimpf-P4.RC nfrgen-P6 )
         ABCZBKDZBEKBELBABFGKBHIJ
     $.
 $}
@@ -1520,10 +1523,10 @@ $}
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
-  Strengthened Quantifier Commutivity Rules.
+  Strengthened Quantifier Commutivity Laws.
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 
-  These rules require ~ax-L11 .
+  These laws require ~ax-L11 .
 $)
 
 ${
@@ -1554,22 +1557,22 @@ $}
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
-  Strengthened Effective Non-Freeness Rules.
+  Strengthened Effective Non-Freeness Properties.
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 
-  ~enfrex1-P6 and ~enfrex2-P6 require ~ax-L12 .
+  ~nfrex1-P6 and ~nfrex2-P6 require ~ax-L12 .
   
-  ~enfrall1-P6 and ~enfrall2-P6 require ~ax-L10 and ~ax-L12 .  
+  ~nfrall1-P6 and ~nfrall2-P6 require ~ax-L10 and ~ax-L12 .  
 
-  ~enfrall2-P6 and ~enfrex2-P6 require ~ax-L11 .
+  ~nfrall2-P6 and ~nfrex2-P6 require ~ax-L11 .
 $)
 
 ${
     $( ENF Over Universal Quantifier (same variable).
 
-       See ~enfrall1w-P6 for a version that requires only FOL axioms. $)
-    enfrall1-P6 $p |- F/ x A. x w_ph $=
-        ( wff-forall genall-P6 genenfr-P6 ) ABCBABDE
+       See ~nfrall1w-P6 for a version that requires only FOL axioms. $)
+    nfrall1-P6 $p |- F/ x A. x w_ph $=
+        ( wff-forall genall-P6 gennfr-P6 ) ABCBABDE
     $.
 $}
 
@@ -1578,9 +1581,9 @@ $( ------------------------------------------------------------------------- $)
 ${
     $( ENF Over Existential Quantifier (same variable).
 
-       See ~enfrex1w-P6 for a version that requires only FOL axioms. $)
-    enfrex1-P6 $p |- F/ x E. x w_ph $=
-        ( wff-exists genex-P6 genenfr-P6 ) ABCBABDE
+       See ~nfrex1w-P6 for a version that requires only FOL axioms. $)
+    nfrex1-P6 $p |- F/ x E. x w_ph $=
+        ( wff-exists genex-P6 gennfr-P6 ) ABCBABDE
     $.
 $}
 
@@ -1589,14 +1592,14 @@ $( ------------------------------------------------------------------------- $)
 ${
     $d x y $.
 
-    enfrall2-P6.1 $e |- F/ x w_ph $.
+    nfrall2-P6.1 $e |- F/ x w_ph $.
 
     $( ENF Over Universal Quantifier (different variable). 
 
-       See ~enfrall2w-P6 for a version that requires only FOL axioms. $)
-    enfrall2-P6 $p |- F/ x A. y w_ph $=
-        ( wff-forall enfrgen-P6 alloverim-P5.RC.GEN allcomm-P6 rcp-NDBIEF0
-          syl-P3.24.RC genenfr-P6 )
+       See ~nfrall2w-P6 for a version that requires only FOL axioms. $)
+    nfrall2-P6 $p |- F/ x A. y w_ph $=
+        ( wff-forall nfrgen-P6 alloverim-P5.RC.GEN allcomm-P6 rcp-NDBIEF0
+          syl-P3.24.RC gennfr-P6 )
         ACEZBLABEZCEZLBEZAMCABDFGNOACBHIJK
     $.
 $}
@@ -1606,19 +1609,17 @@ $( ------------------------------------------------------------------------- $)
 ${
     $d x y $.
 
-    enfrex2-P6.1 $e |- F/ x w_ph $.
+    nfrex2-P6.1 $e |- F/ x w_ph $.
 
     $( ENF Over Existential Quantifier (different variable).
 
-       See ~enfrex2w-P6 for a version that requires only FOL axioms. $)
-    enfrex2-P6 $p |- F/ x E. y w_ph $=
-        ( wff-exists excomm-P6 rcp-NDBIEF0 enfrexgen-P6
-          alloverimex-P5.RC.GEN syl-P3.24.RC exgenenfr-P6 )
+       See ~nfrex2w-P6 for a version that requires only FOL axioms. $)
+    nfrex2-P6 $p |- F/ x E. y w_ph $=
+        ( wff-exists excomm-P6 rcp-NDBIEF0 nfrexgen-P6
+          alloverimex-P5.RC.GEN syl-P3.24.RC exgennfr-P6 )
         ACEZBLBEZABEZCEZLMOABCFGNACABDHIJK
     $.
 $}
-
-
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*
@@ -1642,7 +1643,7 @@ ${
        This proposition is equivalent to the '`A.`' introduction rule in the
        natural deduction system. $)
     allic-P6 $p |- ( w_ph -> A. x w_ps ) $=
-        ( wff-forall enfrgen-P6 alloverim-P5.RC.GEN syl-P3.24.RC )
+        ( wff-forall nfrgen-P6 alloverim-P5.RC.GEN syl-P3.24.RC )
         AACFBCFACDGABCEHI
     $.
 $}
@@ -1659,7 +1660,7 @@ ${
        This proposition is equivalent to the '`E.`' elimination rule in the
        natural deduction system. $)
     exia-P6 $p |- ( E. x w_ph -> w_ps ) $=
-        ( wff-exists alloverimex-P5.RC.GEN enfrexgen-P6 syl-P3.24.RC )
+        ( wff-exists alloverimex-P5.RC.GEN nfrexgen-P6 syl-P3.24.RC )
         ACFBCFBABCEGBCDHI
     $.
 $}
@@ -1690,7 +1691,7 @@ $}
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
-  Change of Bound Variables Theorems with Non-Freeness Conditions.
+  Change of Bound Variables Laws with Non-Freeness Conditions.
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 $)
 
@@ -1705,7 +1706,7 @@ ${
        '`x` cannot occur in '`t_t`'. $)
     lemma-L6.04a $p |- ( A. x w_ph -> w_ps ) $=
         ( wff-forall wff-exists term-obj wff-equals imcomm-P3.27.RC
-          dalloverimex-P5.RC.GEN axL6ex-P5 mae-P3.23.RC enfrexgen-P6
+          dalloverimex-P5.RC.GEN axL6ex-P5 mae-P3.23.RC nfrexgen-P6
           syl-P3.24.RC )
         ADGZBDHZBQDICJZDHRASBDSABFKLCDMNBDEOP
     $.
@@ -1722,7 +1723,7 @@ ${
 
     $( Lemma for ~cbvall-P6 . $)
     cbvall-P6-L1 $p |- ( A. x w_ph -> A. y w_ps ) $=
-        ( wff-forall enfrall2-P6 term-obj lemma-L6.04a allic-P6 )
+        ( wff-forall nfrall2-P6 term-obj lemma-L6.04a allic-P6 )
         ACHBDADCFIABDJCEGKL
     $.
 $}
@@ -1736,7 +1737,7 @@ ${
     cbvall-P6.2 $e |- F/ y w_ph $.
     cbvall-P6.3 $e |- ( x = y -> ( w_ph <-> w_ps ) ) $.
 
-    $( Change of Bound Variable Theorem for '`A. x`' (non-freeness
+    $( Change of Bound Variable Law for '`A. x`' (non-freeness
        condition). $)
     cbvall-P6 $p |- ( A. x w_ph <-> A. y w_ps ) $=
         ( wff-forall term-obj wff-equals ndbief-P3.14 cbvall-P6-L1 wff-imp
@@ -1754,10 +1755,10 @@ ${
     cbvex-P6.2 $e |- F/ y w_ph $.
     cbvex-P6.3 $e |- ( x = y -> ( w_ph <-> w_ps ) ) $.
 
-    $( Change of Bound Variable Theorem for '`E. x`' (non-freeness
+    $( Change of Bound Variable Law for '`E. x`' (non-freeness
        condition). $)
     cbvex-P6 $p |- ( E. x w_ph <-> E. y w_ps ) $=
-        ( wff-exists wff-neg wff-forall df-exists-D5.1 wff-enfree enfrneg-P6
+        ( wff-exists wff-neg wff-forall df-exists-D5.1 wff-nfree nfrneg-P6
           bimpr-P4.RC term-obj wff-equals subneg-P3.39 cbvall-P6
           subneg-P3.39.RC bisym-P3.33b.RC dbitrns-P4.16.RC )
         ACHAIZCJZIBIZDJZIZBDHZACKUCUEUBUDCDUDCLBCLEBCMNUBDLADLFADMNABCODOPGQRS
@@ -1767,7 +1768,7 @@ $}
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
-  (Implicit) Substitution Theorems with Non-Freeness Conditions.
+  (Implicit) Substitution Laws with Non-Freeness Conditions.
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 $)
 
@@ -1775,7 +1776,7 @@ ${
     suball-P6.1 $e |- F/ x w_ga $.
     suball-P6.2 $e |- ( w_ga -> ( w_ph <-> w_ps ) ) $.
 
-    $( Substitution Theorem for '`A. x`' (non-freeness condition). $)
+    $( Substitution Law for '`A. x`' (non-freeness condition). $)
     suball-P6 $p |- ( w_ga -> ( A. x w_ph <-> A. x w_ps ) ) $=
         ( wff-forall ndbief-P3.14 alloverim-P5.GENF ndbier-P3.15 ndbii-P3.13 )
         ADGBDGCABCDEABCFHIBACDEABCFJIK
@@ -1788,7 +1789,7 @@ ${
     subex-P6.1 $e |- F/ x w_ga $.
     subex-P6.2 $e |- ( w_ga -> ( w_ph <-> w_ps ) ) $.
 
-    $( Substitution Theorem for '`E. x `'(non-freeness condition). $)
+    $( Substitution Law for '`E. x `'(non-freeness condition). $)
     subex-P6 $p |- ( w_ga -> ( E. x w_ph <-> E. x w_ps ) ) $=
         ( wff-exists ndbief-P3.14 alloverimex-P5.GENF ndbier-P3.15 ndbii-P3.13 )
         ADGBDGCABCDEABCFHIBACDEABCFJIK
@@ -1798,13 +1799,13 @@ $}
 $( ------------------------------------------------------------------------- $)
 
 ${
-    subenfr.1 $e |- F/ x w_ga $.
-    subenfr.2 $e |- ( w_ga -> ( w_ph <-> w_ps ) ) $.
+    subnfr.1 $e |- F/ x w_ga $.
+    subnfr.2 $e |- ( w_ga -> ( w_ph <-> w_ps ) ) $.
 
-    $( Substitution Theorem for '`F/ x`' Predicate. $)
-    subenfr-P6 $p |- ( w_ga -> ( F/ x w_ph <-> F/ x w_ps ) ) $=
-        ( wff-exists wff-forall wff-imp wff-enfree subex-P6 suball-P6
-          subimd-P3.40c wff-bi dfenfreealt-P6 bisym-P3.33b.RC rcp-NDIMP0addall
+    $( Substitution Law for '`F/ x`' Predicate. $)
+    subnfr-P6 $p |- ( w_ga -> ( F/ x w_ph <-> F/ x w_ps ) ) $=
+        ( wff-exists wff-forall wff-imp wff-nfree subex-P6 suball-P6
+          subimd-P3.40c wff-bi dfnfreealt-P6 bisym-P3.33b.RC rcp-NDIMP0addall
           subbid2-P4 )
         ADGZADHZIZADJZBDGZBDHZIZBDJZCSUCTUDCABCDEFKABCDEFLMUAUBNCUBUAADOPQUEUF
         NCUFUEBDOPQR
@@ -1814,28 +1815,28 @@ $}
 ${
     $d w_ga x $.
 
-    subenfr-P6.VR.1 $e |- ( w_ga -> ( w_ph <-> w_ps ) ) $.
+    subnfr-P6.VR.1 $e |- ( w_ga -> ( w_ph <-> w_ps ) ) $.
 
-    $( Variable Restricted Form of ~subenfr-P6 . 
+    $( Variable Restricted Form of ~subnfr-P6 . 
 
        '`x`' cannot occur in '`w_ga`'. $)
-    subenfr-P6.VR $p |- ( w_ga -> ( F/ x w_ph <-> F/ x w_ps ) ) $=
-        ( enfrv-P6 subenfr-P6 ) ABCDCDFEG
+    subnfr-P6.VR $p |- ( w_ga -> ( F/ x w_ph <-> F/ x w_ps ) ) $=
+        ( nfrv-P6 subnfr-P6 ) ABCDCDFEG
     $.
 $}
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
-  Quantifier Grouping Laws with Non-Freeness Conditions.
+  Quantifier Collection Laws with Non-Freeness Conditions.
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 $)
 
 ${
-    qgallimr-P6.1 $e |- F/ x w_ph $.
+    qcallimr-P6.1 $e |- F/ x w_ph $.
 
-    $( Quantifier Grouping Law, Universal Quantifier Right on Implication
+    $( Quantifier Collection Law: Universal Quantifier Right on Implication
        (non-freeness condition). $)
-    qgallimr-P6 $p
+    qcallimr-P6 $p
         |- ( ( w_ph -> A. x w_ps ) <-> A. x ( w_ph -> w_ps ) )
     $=
         ( wff-exists wff-forall wff-imp qimeqalla-P6 qremex-P6
@@ -1847,11 +1848,11 @@ $}
 $( ------------------------------------------------------------------------- $)
 
 ${
-    qgeximr-P6.1 $e |- F/ x w_ph $.
+    qceximr-P6.1 $e |- F/ x w_ph $.
 
-    $( Quantifier Grouping Law, Existential Quantifier Right on Implication
+    $( Quantifier Collection Law: Existential Quantifier Right on Implication
        (non-freeness condition). $)
-    qgeximr-P6 $p
+    qceximr-P6 $p
         |- ( ( w_ph -> E. x w_ps ) <-> E. x ( w_ph -> w_ps ) )
     $=
         ( wff-forall wff-exists wff-imp qimeqex-P5 qremall-P6 subiml-P3.40a.RC
@@ -1863,11 +1864,11 @@ $}
 $( ------------------------------------------------------------------------- $)
 
 ${
-    qgalliml-P6.1 $e |- F/ x w_ps $.
+    qcalliml-P6.1 $e |- F/ x w_ps $.
 
-    $( Quantifier Grouping Law, Universal Quantifier Left on Implication
+    $( Quantifier Collection Law: Universal Quantifier Left on Implication
        (non-freeness condition). $)
-    qgalliml-P6 $p
+    qcalliml-P6 $p
         |- ( ( A. x w_ph -> w_ps ) <-> E. x ( w_ph -> w_ps ) )
     $=
         ( wff-forall wff-exists wff-imp qimeqex-P5 qremex-P6 subimr-P3.40b.RC
@@ -1879,11 +1880,11 @@ $}
 $( ------------------------------------------------------------------------- $)
 
 ${
-    qgeximl-P6.1 $e |- F/ x w_ps $.
+    qceximl-P6.1 $e |- F/ x w_ps $.
 
-    $( Quantifier Grouping Law, Existential Quantifier Left on Implication
+    $( Quantifier Collection Law: Existential Quantifier Left on Implication
        (non-freeness condition). $)
-    qgeximl-P6 $p
+    qceximl-P6 $p
         |- ( ( E. x w_ph -> w_ps ) <-> A. x ( w_ph -> w_ps ) )
     $=
         ( wff-exists wff-forall wff-imp qimeqallb-P6 qremall-P6
@@ -1895,13 +1896,13 @@ $}
 $( ------------------------------------------------------------------------- $)
 
 ${
-    qgexandr-P6.1 $e |- F/ x w_ph $.
+    qcexandr-P6.1 $e |- F/ x w_ph $.
 
-    $( Quantifier Grouping Law, Existential Quantifier Right on Conjunction
+    $( Quantifier Collection Law: Existential Quantifier Right on Conjunction
        (non-freeness condition). $)
-    qgexandr-P6 $p |- ( ( w_ph /\ E. x w_ps ) <-> E. x ( w_ph /\ w_ps ) ) $=
+    qcexandr-P6 $p |- ( ( w_ph /\ E. x w_ps ) <-> E. x ( w_ph /\ w_ps ) ) $=
         ( wff-exists wff-and wff-neg wff-imp andasim-P3.46a wff-forall
-          subexinf-P5 exnegall-P5 qgallimr-P6 bisym-P3.33b.RC allnegex-P5
+          subexinf-P5 exnegall-P5 qcallimr-P6 bisym-P3.33b.RC allnegex-P5
           subimr-P3.40b.RC bitrns-P3.33c.RC subneg-P3.39.RC dbitrns-P4.16.RC )
         ABCEZFATGZHZGZABFZCEZATIUEUCUEABGZHZGZCEUGCJZGUCUDUHCABIKUGCLUIUBUIAUF
         CJZHZUBUKUIAUFCDMNUJUAABCOPQRSNQ
@@ -1911,12 +1912,12 @@ $}
 $( ------------------------------------------------------------------------- $)
 
 ${
-    qgexandl-P6.1 $e |- F/ x w_ps $.
-    $( Quantifier Grouping Law, Existential Quantifier Left on Conjunction
+    qcexandl-P6.1 $e |- F/ x w_ps $.
+    $( Quantifier Collection Law: Existential Quantifier Left on Conjunction
       (non-freeness condition). $)
-    qgexandl-P6 $p |- ( ( E. x w_ph /\ w_ps ) <-> E. x ( w_ph /\ w_ps ) ) $=
+    qcexandl-P6 $p |- ( ( E. x w_ph /\ w_ps ) <-> E. x ( w_ph /\ w_ps ) ) $=
         ( wff-exists wff-and wff-neg wff-imp andasim-P3.46a wff-forall
-          subexinf-P5 exnegall-P5 wff-enfree enfrneg-P6 bimpr-P4.RC qgeximl-P6
+          subexinf-P5 exnegall-P5 wff-nfree nfrneg-P6 bimpr-P4.RC qceximl-P6
           bisym-P3.33b.RC subneg-P3.39.RC dbitrns-P4.16.RC bitrns-P3.33c.RC )
         ACEZBFUABGZHZGZABFZCEZUABIUFUDUFAUBHZGZCEUGCJZGUDUEUHCABIKUGCLUIUCUCUI
         AUBCUBCMBCMDBCNOPQRSQT
@@ -1952,7 +1953,7 @@ ${
     trnsvsub-P6 $p |- ( x = t_t -> ( w_ph <-> w_ch ) ) $=
         ( term-obj wff-equals wff-and wff-exists wff-bi eqmiddle-P6.CL
           joinimandres2-P4.RC bitrns-P3.33c.CL syl-P3.24.RC
-          alloverimex-P5.RC.GEN enfrbi-P6 enfrexgen-P6 dsyl-P3.25.RC )
+          alloverimex-P5.RC.GEN nfrbi-P6 nfrexgen-P6 dsyl-P3.25.RC )
         EKZDLUDFKZLZUEDLZMZFNACOZFNUIDEFPUHUIFUHABOZBCOZMUIUFUJUGUKIJQABCRSTUI
         FACFGHUAUBUC
     $.
@@ -1977,7 +1978,7 @@ ${
           )
         )
     $=
-        ( term-obj wff-equals wff-imp wff-forall enfrall1-P6 lemma-L6.01a
+        ( term-obj wff-equals wff-imp wff-forall nfrall1-P6 lemma-L6.01a
           trnsvsub-P6 )
         ACFDFZGAHCIZMBGNHZDIBCDEODJAMCKNBDKL
     $.
@@ -1994,7 +1995,7 @@ ${
        This theorem holds even when '`t_t`' contains '`x`'. $)
     psubtoisub-P6 $p |- ( x = t_t -> ( w_ph <-> [ t_t / x ] w_ph ) ) $=
         ( objvar-y term-obj wff-equals wff-imp wff-forall wff-bi wff-psub
-          enfrv-P6 lemma-L6.05a df-psub-D6.2 bisym-P3.33b.RC subbir-P3.41b.RC
+          nfrv-P6 lemma-L6.05a df-psub-D6.2 bisym-P3.33b.RC subbir-P3.41b.RC
           subimr2-P4.RC )
         ADEZBFCEZQFAGCHGDHZIAABCJZIRBFABCDADKLSTATSABCDMNOP
     $.
@@ -2010,8 +2011,8 @@ ${
 
        Note this only holds when '`t_t`' does not contain '`x`'. $)
     lemma-L6.06a $p |- F/ x [ t_t / x ] w_ph $=
-        ( wff-psub wff-enfree term-obj wff-equals wff-imp wff-forall
-          enfrall1-P6 dfpsubv-P6 enfrleq-P6 bimpr-P4.RC )
+        ( wff-psub wff-nfree term-obj wff-equals wff-imp wff-forall
+          nfrall1-P6 dfpsubv-P6 nfrleq-P6 bimpr-P4.RC )
         ABCDZCECFBGAHZCIZCEOCJNPCABCKLM
     $.
 $}
@@ -2082,7 +2083,7 @@ ${
     $=
         ( term-obj wff-equals wff-imp wff-forall wff-exists wff-and
           lemma-L6.01a ndbief-P3.14 import-P3.34a.RC alloverimex-P5.RC.GEN
-          enfrall1-P6 qremex-P6 subimr2-P4.RC )
+          nfrall1-P6 qremex-P6 subimr2-P4.RC )
         CDBEZAFZCGZCHSQAIZCHTSCQASASQABCJKLMSCRCNOP
     $.
 $}
@@ -2098,7 +2099,7 @@ ${
     $=
         ( term-obj wff-equals wff-exists wff-imp wff-forall wff-and
           rcp-NDASM1of2 lemma-L6.01a ndbier-P3.15 import-P3.34a.RC ndandi-P3.7
-          alloverimex-P5.RC.GEN enfrall1-P6 qgexandl-P6 bisym-P3.33b.RC
+          alloverimex-P5.RC.GEN nfrall1-P6 qcexandl-P6 bisym-P3.33b.RC
           subiml2-P4.RC axL6ex-P5 idandthml-P4.23a )
         CDBEZCFZUBAGZCHZIZUEUBAIZCFZUBUEIZCFZUFUHUIUGCUBAUIUBUEJUBUEAAUEUBABCK
         LMNOUFUJUBUECUDCPQRSUCUEBCTUAS
@@ -2202,8 +2203,8 @@ ${
 
        '`a`' is distinct from all other variables. $)
     spliteq-P6 $p |- ( t_t = t_u <-> E. a ( a = t_t /\ a = t_u ) ) $=
-        ( term-obj wff-equals wff-exists wff-and wff-bi axL6ex-P5 enfrv-P6
-          enfrex1-P6 enfrbi-P6 spliteq-P6-L1 exia-P6 rcp-NDIME0 )
+        ( term-obj wff-equals wff-exists wff-and wff-bi axL6ex-P5 nfrv-P6
+          nfrex1-P6 nfrbi-P6 spliteq-P6-L1 exia-P6 rcp-NDIME0 )
         CDZAEZCFABEZQPBEGZCFZHZACIQUACRTCRCJSCKLABCMNO
     $.
 $}
@@ -2249,7 +2250,7 @@ ${
         |- ( t_t e. t_u <-> E. a E. b ( ( a = t_t /\ b = t_u ) /\ a e. b ) )
     $=
         ( term-obj wff-equals wff-exists wff-elemof wff-and wff-bi axL6ex-P5
-          enfrv-P6 enfrex1-P6 enfrex2-P6 enfrbi-P6 wff-imp enfrim-P6
+          nfrv-P6 nfrex1-P6 nfrex2-P6 nfrbi-P6 wff-imp nfrim-P6
           splitelof-P6-L1 rcp-NDIMI2 exia-P6 rcp-NDIME0 )
         DEZBFZDGABHZCEZAFZUCIUEUBHIZDGZCGZJZBDKUCUJDUDUIDUDDLUHDCUGDMNOUFCGUCU
         JPZACKUFUKCUCUJCUCCLUDUICUDCLU HCMOQUJUFUCABCDRSTUATUA
@@ -2266,14 +2267,14 @@ ${
     $d t_t a $. $d t_t b $.
     $d x a b $.
 
-    enfrterm-P6.1 $e |- F/ x a = t_t $.
+    nfrterm-P6.1 $e |- F/ x a = t_t $.
 
     $( Changing the dummy variable doesn't change the ENF state.
 
        '`a`' and '`b`' are distinct from all other variables. $)
-    enfrterm-P6 $p |- F/ x b = t_t $=
-        ( term-obj wff-equals wff-enfree wff-forall ax-GEN subeql-P5.CL
-          subenfr-P6.VR cbvallv-P5 bimpf-P4.RC spec-P6 rcp-NDIME0 )
+    nfrterm-P6 $p |- F/ x b = t_t $=
+        ( term-obj wff-equals wff-nfree wff-forall ax-GEN subeql-P5.CL
+          subnfr-P6.VR cbvallv-P5 bimpf-P4.RC spec-P6 rcp-NDIME0 )
         DFZAGZBHZDIZSCFZAGZBHZCITUCCEJUCSCDUBRUAQGBUAQAKLMNSDOP
     $.
 $}
@@ -2285,14 +2286,14 @@ ${
    $d t_t a $.
    $d a b x $.
 
-    enfrsucc-P6.1 $e |- F/ x a = t_t $.
+    nfrsucc-P6.1 $e |- F/ x a = t_t $.
     $( If '`x`' is ENF a term '`t_t`', then '`x`' is also ENF in its successor
        's&lsquo;`t_t`'.
 
        '`a`' is distinct from all other variables. $)
-    enfrsucc-P6 $p |- F/ x a = s` t_t $=
-        ( objvar-b term-obj wff-equals term_succ wff-enfree enfrv-P6
-          rcp-NDIMP0addall enfrterm-P6 ax-L9-succ subeqr-P5 subenfr-P6
+    nfrsucc-P6 $p |- F/ x a = s` t_t $=
+        ( objvar-b term-obj wff-equals term_succ wff-nfree nfrv-P6
+          rcp-NDIMP0addall nfrterm-P6 ax-L9-succ subeqr-P5 subnfr-P6
           bimpf-P4 axL6ex-P5 exiav-P5.SH )
         EFZAGZCFZAHZGZBIZEUASHZGZBIZUDTUGTUFBJKUFUCTBABCEDLTUEUBUASAMNOPAEQR
     $.
@@ -2307,16 +2308,16 @@ ${
     $d t_t1 a $. $d t_t2 a $.
     $d a b c x $.
 
-    enfradd-P6.1 $e |- F/ x a = t_t1 $.
-    enfradd-P6.2 $e |- F/ x a = t_t2 $.
+    nfradd-P6.1 $e |- F/ x a = t_t1 $.
+    nfradd-P6.2 $e |- F/ x a = t_t2 $.
     $( If '`x`' is ENF in the terms '`t_t1`' and '`t_t2`', then '`x`' is ENF
        in the sum term '`( t_t1 + t_t2 )`'.
 
        '`a`' is distinct from all other variables. $)
-    enfradd-P6 $p |- F/ x a = ( t_t1 + t_t2 ) $=
-        ( objvar-c term-obj wff-equals term-add wff-enfree objvar-b wff-imp
-          wff-and enfrv-P6 rcp-NDIMP0addall enfrterm-P6 enfrand-P6
-          subaddd-P5.CL subeqr-P5 subenfr-P6 bimpf-P4 rcp-NDIMI2 axL6ex-P5
+    nfradd-P6 $p |- F/ x a = ( t_t1 + t_t2 ) $=
+        ( objvar-c term-obj wff-equals term-add wff-nfree objvar-b wff-imp
+          wff-and nfrv-P6 rcp-NDIMP0addall nfrterm-P6 nfrand-P6
+          subaddd-P5.CL subeqr-P5 subnfr-P6 bimpf-P4 rcp-NDIMI2 axL6ex-P5
           exiav-P5.SH )
         GHZBIZDHZABJZIZCKZGLHZAIZUGUKMLUKUMUGUHULUFJZIZCKZUKUMUGNZUPUQUOCOPUOU
         JUQCUMUGCACDLEQBCDGFQRUQUNUIUH ULAUFBSTUAUBUCALUDUEBGUDUE
@@ -2332,16 +2333,16 @@ ${
     $d t_t1 a $. $d t_t2 a $.
     $d a b c x $.
 
-    enfrmult-P6.1 $e |- F/ x a = t_t1 $.
-    enfrmult-P6.2 $e |- F/ x a = t_t2 $.
+    nfrmult-P6.1 $e |- F/ x a = t_t1 $.
+    nfrmult-P6.2 $e |- F/ x a = t_t2 $.
     $( If '`x`' is ENF in the terms '`t_t1`' and '`t_t2`', then '`x`' is ENF
        in the product term '`( t_t1 x. t_t2 )`'.
 
        '`a`' is distinct from all other variables. $)
-    enfrmult-P6 $p |- F/ x a = ( t_t1 x. t_t2 ) $=
-        ( objvar-c term-obj wff-equals term-mult wff-enfree objvar-b wff-imp
-          wff-and enfrv-P6 rcp-NDIMP0addall enfrterm-P6 enfrand-P6
-          submultd-P5.CL subeqr-P5 subenfr-P6 bimpf-P4 rcp-NDIMI2 axL6ex-P5
+    nfrmult-P6 $p |- F/ x a = ( t_t1 x. t_t2 ) $=
+        ( objvar-c term-obj wff-equals term-mult wff-nfree objvar-b wff-imp
+          wff-and nfrv-P6 rcp-NDIMP0addall nfrterm-P6 nfrand-P6
+          submultd-P5.CL subeqr-P5 subnfr-P6 bimpf-P4 rcp-NDIMI2 axL6ex-P5
           exiav-P5.SH )
         GHZBIZDHZABJZIZCKZGLHZAIZUGUKMLUKUMUGUHULUFJZIZCKZUKUMUGNZUPUQUOCOPUOU
         JUQCUMUGCACDLEQBCDGFQRUQUNUIUHULAUFBSTUAUBUCALUDUEBGUDUE
@@ -2551,12 +2552,12 @@ ${
     $d w_ph y $. $d t_t y $.
     $d x y $.
 
-    psubenfr-P6.1 $e |- F/ x w_ph $.
+    psubnfr-P6.1 $e |- F/ x w_ph $.
     $( Proper Substitution Applied to ENF Variable.
 
        If '`x`' is effectively not free in '`w_ph`', then replacing '`x`' with
        some '`t_t`' through proper substitution has no effect on '`w_ph`'. $)
-    psubenfr-P6 $p |- ( [ t_t / x ] w_ph <-> w_ph ) $=
+    psubnfr-P6 $p |- ( [ t_t / x ] w_ph <-> w_ph ) $=
         ( wff-psub objvar-y term-obj wff-equals wff-imp wff-forall
           df-psub-D6.2 wff-exists wff-true qimeqallb-P6 bisym-P3.33b.RC
           axL6ex-P5 thmeqtrue-P4.21a qremall-P6 subimd-P3.40c.RC trueie-P4.22a
@@ -2571,9 +2572,11 @@ $}
 ${
     $d w_ph x $.
 
-    $( Variable Restricted Form of ~psubenfr-P6 . $)
-    psubenfr-P6.VR $p |- ( [ t_t / x ] w_ph <-> w_ph ) $=
-        ( enfrv-P6 psubenfr-P6 ) ABCACDE
+    $( Variable Restricted Form of ~psubnfr-P6 .
+
+       '`x`' cannot occur in '`w_ph`'. $)
+    psubnfr-P6.VR $p |- ( [ t_t / x ] w_ph <-> w_ph ) $=
+        ( nfrv-P6 psubnfr-P6 ) ABCACDE
     $.
 $}
 
@@ -2704,7 +2707,7 @@ $( ------------------------------------------------------------------------- $)
 ${
     $( Proper Substitution Over Universal Quantifier (same variable). $)
     psuball1-P6 $p |- ( [ t_t / x ] A. x w_ph <-> A. x w_ph ) $=
-        ( wff-forall enfrall1-P6 psubenfr-P6 ) ACDBCACEF
+        ( wff-forall nfrall1-P6 psubnfr-P6 ) ACDBCACEF
     $.
 $}
 
@@ -2713,7 +2716,7 @@ $( ------------------------------------------------------------------------- $)
 ${
     $( Proper Substitution Over Existential Quantifier (same variable). $)
     psubex1-P6 $p |- ( [ t_t / x ] E. x w_ph <-> E. x w_ph ) $=
-        ( wff-exists enfrex1-P6 psubenfr-P6 ) ACDBCACEF
+        ( wff-exists nfrex1-P6 psubnfr-P6 ) ACDBCACEF
     $.
 $}
 
@@ -2727,7 +2730,7 @@ ${
     psuball2v-P6-L1 $p
         |- ( [ t_t / x ] A. y w_ph <-> A. y [ t_t / x ] w_ph )
     $=
-        ( wff-forall wff-psub lemma-L6.06a enfrall2-P6 term-obj wff-equals
+        ( wff-forall wff-psub lemma-L6.06a nfrall2-P6 term-obj wff-equals
           psubtoisub-P6 suballv-P5 isubtopsubv-P6 )
         ADEABCFZDEBCNCDABCGHANCIBJDABCKLM
     $.
@@ -2860,7 +2863,7 @@ ${
     $=
         ( wff-elemof wff-psub term-obj wff-equals wff-and wff-exists
           splitelof-P6 psubleq-P6 psubex2v-P6 subexinf-P5 psuband-P6
-          psubenfr-P6.VR subandd-P3.42c.RC bitrns-P3.33c.RC tbitrns-P4.17.RC )
+          psubnfr-P6.VR subandd-P3.42c.RC bitrns-P3.33c.RC tbitrns-P4.17.RC )
         ABGZCDHEIZAJZFIZBJZKZUCUEGZKZFLZELZCDHUJCDHZELUICDHZFLZELUDCDHUFCDHKZU
         HKZFLZELUBUKCDABEFMNUJCDEOULUNEUICDFOPUNUQEUMUPFUMUGCDHZUHCDHZKUPUGUHC
         DQURUOUSUHUDUFCDQUHCDRSTPPUA $.
@@ -2881,7 +2884,7 @@ ${
 
        '`a`' is distinct from all other variables. $)
     psubvar1-P6 $p |- ( [ t_t / x ] a = x <-> a = t_t ) $=
-        ( term-obj wff-equals objvar-y enfrv-P6 subeqr-P5.CL isubtopsub-P6 )
+        ( term-obj wff-equals objvar-y nfrv-P6 subeqr-P5.CL isubtopsub-P6 )
         CDZBDZEJFDZEZJAEZABFMBGNFGKLJHLAJHI
     $.
 $}
@@ -2896,7 +2899,7 @@ ${
 
        '`a`' is distinct from all other variables. $)
     psubvar2-P6 $p |- ( [ t_t / x ] a = y <-> a = y ) $=
-        ( term-obj wff-equals psubenfr-P6.VR ) DECEFABG
+        ( term-obj wff-equals psubnfr-P6.VR ) DECEFABG
     $.
 $}
 
@@ -2911,7 +2914,7 @@ ${
 
     '`a`' is distinct from all other variables. $)
     psubconst-P6 $p |- ( [ t_t / x ] a = 0 <-> a = 0 ) $=
-        ( term-obj term_zero wff-equals psubenfr-P6.VR ) CDEFABG
+        ( term-obj term_zero wff-equals psubnfr-P6.VR ) CDEFABG
     $.
 $}
 
@@ -2954,8 +2957,8 @@ ${
        '`a`' and '`b`' are distinct from all other variables and '`x`' cannot
        occur in '`t_w`'. $)
     psubsuccv-P6 $p |- ( [ t_w / x ] b = s` t_t <-> b = s` t_u ) $=
-        ( term-obj term_succ wff-equals wff-psub wff-enfree lemma-L6.06a
-          enfrleq-P6 bimpf-P4.RC enfrterm-P6 enfrsucc-P6 psubsuccv-P6-L1
+        ( term-obj term_succ wff-equals wff-psub wff-nfree lemma-L6.06a
+          nfrleq-P6 bimpf-P4.RC nfrterm-P6 nfrsucc-P6 psubsuccv-P6-L1
           isubtopsubv-P6 )
         FHZAIJTBIJCDBDFBDEFEHZAJZCDKZDLUABJZDLUBCDMUCUDDGNOPQABCDEFGRS
     $.
@@ -3008,8 +3011,8 @@ ${
     psubaddv-P6 $p
         |- ( [ t_w / x ] c = ( t_t1 + t_t2 ) <-> c = ( t_u1 + t_u2 ) )
     $=
-        ( term-obj term-add wff-equals wff-psub wff-enfree lemma-L6.06a
-          enfrleq-P6 bimpf-P4.RC enfrterm-P6 enfradd-P6 psubaddv-P6-L1
+        ( term-obj term-add wff-equals wff-psub wff-nfree lemma-L6.06a
+          nfrleq-P6 bimpf-P4.RC nfrterm-P6 nfradd-P6 psubaddv-P6-L1
           isubtopsubv-P6 )
         ILZABMNUDCDMNEFCDFICFGIGLZANZEFOZFPUECNZFPUFEFQUGUHFJRSTDFHIHLZBNZEFOZ
         FPUIDNZFPUJEFQUKULFKRSTUAABCDEFGHIJKUBUC
@@ -3062,8 +3065,8 @@ ${
     psubmultv-P6 $p
         |- ( [ t_w / x ] c = ( t_t1 x. t_t2 ) <-> c = ( t_u1 x. t_u2 ) )
     $=
-        ( term-obj term-mult wff-equals wff-psub wff-enfree lemma-L6.06a
-          enfrleq-P6 bimpf-P4.RC enfrterm-P6 enfrmult-P6 psubmultv-P6-L1
+        ( term-obj term-mult wff-equals wff-psub wff-nfree lemma-L6.06a
+          nfrleq-P6 bimpf-P4.RC nfrterm-P6 nfrmult-P6 psubmultv-P6-L1
           isubtopsubv-P6 )
         ILZABMNUDCDMNEFCDFICFGIGLZANZEFOZFPUECNZFPUFEFQUGUHFJRSTDFHIHLZBNZEFOZ
         FPUIDNZFPUJEFQUKULFKRSTUAABCDEFGHIJKUBUC
@@ -3083,10 +3086,10 @@ $(
 $)
 
 ${
-    $( Closed Form of ~enfrgen-P6 . $)
-    enfrgencl-L6 $p |- ( F/ x w_ph -> ( w_ph -> A. x w_ph ) ) $=
-        ( wff-exists wff-forall wff-enfree wff-imp exi-P6 rcp-NDIMP0addall
-          dfenfreealt-P6 rcp-NDBIEF0 syl-P3.24 )
+    $( Closed Form of ~nfrgen-P6 . $)
+    nfrgencl-L6 $p |- ( F/ x w_ph -> ( w_ph -> A. x w_ph ) ) $=
+        ( wff-exists wff-forall wff-nfree wff-imp exi-P6 rcp-NDIMP0addall
+          dfnfreealt-P6 rcp-NDBIEF0 syl-P3.24 )
         AABCZABDZABEZALFNABGHNLMFABIJK
     $.
 $}
@@ -3094,10 +3097,10 @@ $}
 $( ------------------------------------------------------------------------- $)
 
 ${
-    $( Closed Form of ~genenfr-P6 . $)
-    genenfrcl-L6 $p |- ( A. x ( w_ph -> A. x w_ph ) -> F/ x w_ph ) $=
-        ( wff-exists wff-forall wff-imp wff-enfree alloverimex-P5.CL
-          exgenall-P6 rcp-NDIMP0addall syl-P3.24 dfenfreealt-P6
+    $( Closed Form of ~gennfr-P6 . $)
+    gennfrcl-L6 $p |- ( A. x ( w_ph -> A. x w_ph ) -> F/ x w_ph ) $=
+        ( wff-exists wff-forall wff-imp wff-nfree alloverimex-P5.CL
+          exgenall-P6 rcp-NDIMP0addall syl-P3.24 dfnfreealt-P6
           bisym-P3.33b.RC subimr2-P4.RC )
         ABCZABDZEZABFZAOEBDZNOBCZORAOBGSOERABHIJQPABKLM
     $.
@@ -3106,10 +3109,10 @@ $}
 $( ------------------------------------------------------------------------- $)
 
 ${
-    $( Closed Form of ~enfrexgen-P6 . $)
-    enfrexgencl-L6 $p |- ( F/ x w_ph -> ( E. x w_ph -> w_ph ) ) $=
-        ( wff-neg wff-enfree wff-forall wff-imp wff-exists enfrgencl-L6
-          trnsp-P3.31b enfrneg-P6 df-exists-D5.1 bisym-P3.33b.RC
+    $( Closed Form of ~nfrexgen-P6 . $)
+    nfrexgencl-L6 $p |- ( F/ x w_ph -> ( E. x w_ph -> w_ph ) ) $=
+        ( wff-neg wff-nfree wff-forall wff-imp wff-exists nfrgencl-L6
+          trnsp-P3.31b nfrneg-P6 df-exists-D5.1 bisym-P3.33b.RC
           subiml-P3.40a.RC subimd2-P4.RC )
         ACZBDZABDOBEZCZAFABGZAFAQPOBHIABJRSASRABKLMN
     $.
@@ -3118,10 +3121,10 @@ $}
 $( ------------------------------------------------------------------------- $)
 
 ${
-    $( Closed Form of ~exgenenfr-P6 . $)
-    exgenenfrcl-L6 $p |- ( A. x ( E. x w_ph -> w_ph ) -> F/ x w_ph ) $=
-        ( wff-neg wff-enfree wff-exists wff-imp wff-forall lemma-L5.01a
-          rcp-NDBIEF0 alloverim-P5.RC.GEN genenfrcl-L6 syl-P3.24.RC enfrneg-P6
+    $( Closed Form of ~exgennfr-P6 . $)
+    exgennfrcl-L6 $p |- ( A. x ( E. x w_ph -> w_ph ) -> F/ x w_ph ) $=
+        ( wff-neg wff-nfree wff-exists wff-imp wff-forall lemma-L5.01a
+          rcp-NDBIEF0 alloverim-P5.RC.GEN gennfrcl-L6 syl-P3.24.RC nfrneg-P6
           subimr2-P4.RC )
         ACZBDZABDABEAFZBGZROOBGFZBGPQSBQSABHIJOBKLABMN
     $.
@@ -3134,13 +3137,13 @@ $(
 $)
 
 ${
-    enfrimd-P6.1 $e |- ( w_ga -> F/ x w_ph ) $.
-    enfrimd-P6.2 $e |- ( w_ga -> F/ x w_ps ) $.
+    nfrimd-P6.1 $e |- ( w_ga -> F/ x w_ph ) $.
+    nfrimd-P6.2 $e |- ( w_ga -> F/ x w_ps ) $.
 
     $( ENF Over Implication (deductive form). $)
-    enfrimd-P6 $p |- ( w_ga -> F/ x ( w_ph -> w_ps ) ) $=
-        ( wff-imp wff-exists wff-forall wff-enfree qimeqex-P5 rcp-NDBIER0
-          rcp-NDIMP0addall dfenfreealt-P6 subimr2-P4.RC imsubd-P3.28c
+    nfrimd-P6 $p |- ( w_ga -> F/ x ( w_ph -> w_ps ) ) $=
+        ( wff-imp wff-exists wff-forall wff-nfree qimeqex-P5 rcp-NDBIER0
+          rcp-NDIMP0addall dfnfreealt-P6 subimr2-P4.RC imsubd-P3.28c
           qimeqallhalf-P5 dsyl-P3.25 bisym-P3.33b.RC )
         ABGZDHZTDIZGZTDJZCUAADIZBDHZGZADHZBDIZGZUBCUAUGGCUGUAABDKLMUHUEUFUICAD
         JUHUEGCEADNOBDJUFUIGCFBDNOPUJUBGCABDQMRUDUCTDNSO
@@ -3150,13 +3153,13 @@ $}
 $( ------------------------------------------------------------------------- $)
 
 ${
-    enfrandd-P6.1 $e |- ( w_ga -> F/ x w_ph ) $.
-    enfrandd-P6.2 $e |- ( w_ga -> F/ x w_ps ) $.
+    nfrandd-P6.1 $e |- ( w_ga -> F/ x w_ph ) $.
+    nfrandd-P6.2 $e |- ( w_ga -> F/ x w_ps ) $.
 
     $( ENF Over Conjunction (deductive form). $)
-    enfrandd-P6 $p |- ( w_ga -> F/ x ( w_ph /\ w_ps ) ) $=
-        ( wff-neg wff-imp wff-enfree wff-and enfrneg-P6 bisym-P3.33b.RC
-          subimr2-P4.RC enfrimd-P6 andasim-P3.46a enfrleq-P6 )
+    nfrandd-P6 $p |- ( w_ga -> F/ x ( w_ph /\ w_ps ) ) $=
+        ( wff-neg wff-imp wff-nfree wff-and nfrneg-P6 bisym-P3.33b.RC
+          subimr2-P4.RC nfrimd-P6 andasim-P3.46a nfrleq-P6 )
         ABGZHZGZDIZABJZDIZCRDIZTCAQCDEBDIZQDIZCFUEUDBDKLMNTUCRDKLMUBTUASDABOPL
         M
     $.
@@ -3165,13 +3168,13 @@ $}
 $( ------------------------------------------------------------------------- $)
 
 ${
-    enfrord-P6.1 $e |- ( w_ga -> F/ x w_ph ) $.
-    enfrord-P6.2 $e |- ( w_ga -> F/ x w_ps ) $.
+    nfrord-P6.1 $e |- ( w_ga -> F/ x w_ph ) $.
+    nfrord-P6.2 $e |- ( w_ga -> F/ x w_ps ) $.
 
     $( ENF Over Disjunction (deductive form). $)
-    enfrord-P6 $p |- ( w_ga -> F/ x ( w_ph \/ w_ps ) ) $=
-        ( wff-neg wff-imp wff-enfree wff-or enfrneg-P6 bisym-P3.33b.RC
-          subimr2-P4.RC enfrimd-P6 orasim-P3.48a enfrleq-P6 )
+    nfrord-P6 $p |- ( w_ga -> F/ x ( w_ph \/ w_ps ) ) $=
+        ( wff-neg wff-imp wff-nfree wff-or nfrneg-P6 bisym-P3.33b.RC
+          subimr2-P4.RC nfrimd-P6 orasim-P3.48a nfrleq-P6 )
         AGZBHZDIZABJZDIZCQBCDADIZQDIZCEUCUBADKLMFNUASTRDABOPLM
     $.
 $}
@@ -3179,13 +3182,13 @@ $}
 $( ------------------------------------------------------------------------- $)
 
 ${
-    enfrbid-P6.1 $e |- ( w_ga -> F/ x w_ph ) $.
-    enfrbid-P6.2 $e |- ( w_ga -> F/ x w_ps ) $.
+    nfrbid-P6.1 $e |- ( w_ga -> F/ x w_ph ) $.
+    nfrbid-P6.2 $e |- ( w_ga -> F/ x w_ps ) $.
 
     $( ENF Over Biconditional (deductive form). $)
-    enfrbid-P6 $p |- ( w_ga -> F/ x ( w_ph <-> w_ps ) ) $=
-        ( wff-imp wff-and wff-enfree wff-bi enfrimd-P6 enfrandd-P6 dfbi-P3.47
-          enfrleq-P6 bisym-P3.33b.RC subimr2-P4.RC )
+    nfrbid-P6 $p |- ( w_ga -> F/ x ( w_ph <-> w_ps ) ) $=
+        ( wff-imp wff-and wff-nfree wff-bi nfrimd-P6 nfrandd-P6 dfbi-P3.47
+          nfrleq-P6 bisym-P3.33b.RC subimr2-P4.RC )
         ABGZBAGZHZDIZABJZDIZCQRCDABCDEFKBACDFEKLUBTUASDABMNOP
     $.
 $}
@@ -3195,15 +3198,15 @@ $( ------------------------------------------------------------------------- $)
 ${
     $d x y $.
 
-    enfrall2d-P6.1 $e |- F/ x w_ga $.
-    enfrall2d-P6.2 $e |- F/ y w_ga $.
-    enfrall2d-P6.3 $e |- ( w_ga -> F/ x w_ph ) $.
+    nfrall2d-P6.1 $e |- F/ x w_ga $.
+    nfrall2d-P6.2 $e |- F/ y w_ga $.
+    nfrall2d-P6.3 $e |- ( w_ga -> F/ x w_ph ) $.
 
     $( ENF Over Universal Quantifier (different variable - deductive form). $)
-    enfrall2d-P6 $p |- ( w_ga -> F/ x A. y w_ph ) $=
-        ( wff-forall wff-imp wff-enfree enfrgencl-L6 syl-P3.24.RC
+    nfrall2d-P6 $p |- ( w_ga -> F/ x A. y w_ph ) $=
+        ( wff-forall wff-imp wff-nfree nfrgencl-L6 syl-P3.24.RC
           alloverim-P5.GENF allcomm-P6 subimr-P3.40b.RC subimr2-P4.RC allic-P6
-          genenfrcl-L6 )
+          gennfrcl-L6 )
         BADHZSCHZIZCHSCJBUACESACHZDHZIUABAUBBDFBACJAUBIGACKLMUCTSADCNOPQSCRL
     $.
 $}
@@ -3213,16 +3216,16 @@ $( ------------------------------------------------------------------------- $)
 ${
     $d x y $.
 
-    enfrex2d-P6.1 $e |- F/ x w_ga $.
-    enfrex2d-P6.2 $e |- F/ y w_ga $.
-    enfrex2d-P6.3 $e |- ( w_ga -> F/ x w_ph ) $.
+    nfrex2d-P6.1 $e |- F/ x w_ga $.
+    nfrex2d-P6.2 $e |- F/ y w_ga $.
+    nfrex2d-P6.3 $e |- ( w_ga -> F/ x w_ph ) $.
 
     $( ENF Over Existential Quantifier (different variable - deductive
        form). $)
-    enfrex2d-P6 $p |- ( w_ga -> F/ x E. y w_ph ) $=
-        ( wff-exists wff-imp wff-forall wff-enfree enfrexgencl-L6 syl-P3.24.RC
+    nfrex2d-P6 $p |- ( w_ga -> F/ x E. y w_ph ) $=
+        ( wff-exists wff-imp wff-forall wff-nfree nfrexgencl-L6 syl-P3.24.RC
           alloverimex-P5.GENF excomm-P6 subiml-P3.40a.RC subimr2-P4.RC
-          allic-P6 exgenenfrcl-L6 )
+          allic-P6 exgennfrcl-L6 )
         BADHZCHZTIZCJTCKBUBCEACHZDHZTIUBBUCABDFBACKUCAIGACLMNUDUATADCOPQRTCSM
     $.
 $}
@@ -3238,9 +3241,9 @@ ${
        WFF that will either be true for every '`x`' assignment or false for
        every '`x`' assignment.  We expect this since ENF is a property
        that we should be able to determine grammatically. $)
-    enfrenfr-P6 $p |- F/ x F/ x w_ph $=
-        ( wff-enfree wff-exists wff-forall wff-imp enfrex1-P6 enfrall1-P6
-          enfrim-P6 dfenfreealt-P6 enfrleq-P6 bimpr-P4.RC )
+    nfrnfr-P6 $p |- F/ x F/ x w_ph $=
+        ( wff-nfree wff-exists wff-forall wff-imp nfrex1-P6 nfrall1-P6
+          nfrim-P6 dfnfreealt-P6 nfrleq-P6 bimpr-P4.RC )
         ABCZBCABDZABEZFZBCNOBABGABHIMPBABJKL
     $.
 $}
@@ -3277,7 +3280,7 @@ ${
 
     $( Existential Quantifier Removal Theorem (deductive form). $)
     qremexd-P6 $p |- ( w_ga -> ( E. x w_ph <-> w_ph ) ) $=
-        ( wff-exists wff-forall wff-enfree wff-imp dfenfreealt-P6
+        ( wff-exists wff-forall wff-nfree wff-imp dfnfreealt-P6
           subimr2-P4.RC spec-P6 rcp-NDIMP0addall syl-P3.24 exi-P6 ndbii-P3.13 )
         ACEZABPACFZABACGPQHBDACIJQAHBACKLMAPHBACNLO
     $.

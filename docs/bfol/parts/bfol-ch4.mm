@@ -675,12 +675,12 @@ $}
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
-  Some Double Negation Theorems.
+  Some Double Negation Laws.
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 $)
 
 ${
-    $(  Double Negation Equivalence Property.  $)
+    $( Double Negation Equivalence Property. $)
     dnegeq-P4.10 $p |- ( -. -. w_ph <-> w_ph ) $=
         ( wff-neg dnege-P3.30.CL dnegi-P3.29.CL rcp-NDBII0 ) ABBAACADE
     $.
@@ -715,7 +715,7 @@ $( ------------------------------------------------------------------------- $)
 ${
     dnegeint-P4.12.1 $e |- ( w_ga -> -. -. -. w_ph ) $.
 
-    $( Version of Double Negative Elimination derivalbe with intuitionist
+    $( Version of Double Negative Elimination deducible with intuitionist
        logic. `t.` $)
     dnegeint-P4.12 $p |- ( w_ga -> -. w_ph ) $=
         ( wff-neg wff-and rcp-NDASM2of2 dnegi-P3.29 rcp-NDIMP1add1
@@ -1102,12 +1102,12 @@ $}
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
-  Idempotent Laws.
+  Idempotency Laws.
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 $)
 
 ${
-    $( Idempotent Law for '`/\`'. `t.` $)
+    $( Idempotency Law for '`/\`'. `t.` $)
     idempotand-P4.25a $p |- ( ( w_ph /\ w_ph ) <-> w_ph ) $=
         ( wff-and rcp-NDASM1of2 rcp-NDASM1of1 ndandi-P3.7 rcp-NDBII0 )
         AABAAACAAAADZGEF
@@ -1117,7 +1117,7 @@ $}
 $( ------------------------------------------------------------------------- $)
 
 ${
-    $( Idempotent Law for '`\/`'. `t.` $)
+    $( Idempotency Law for '`\/`'. `t.` $)
     idempotor-P4.25b $p |- ( ( w_ph \/ w_ph ) <-> w_ph ) $=
         ( wff-or rcp-NDASM2of2 rcp-NDASM1of1 rcp-NDORE2 ndoril-P3.10.CL
           rcp-NDBII0 )
@@ -1208,7 +1208,7 @@ $( ------------------------------------------------------------------------- $)
 ${
     $( De Morgan's Law B ( Intuitionist Version ). `t.`
 
-       The reverse of this implication cannot be proven in an intuitionist
+       The reverse of this implication cannot be deduced in an intuitionist
        framework. However, it can be added as an axiom to create an
        intermediate strength logic. $)
     dmorgbint-P4.26c $p
@@ -2387,7 +2387,7 @@ $}
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
-  Different Form for Substitution Theorems. 
+  Different Form for Substitution Laws. 
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 $)
 
@@ -2420,7 +2420,8 @@ ${
 
     $( Alternate Form of ~subiml-P3.40a . `t.` $)
     subiml2-P4 $p |- ( w_ga -> ( w_ps -> w_ch ) ) $=
-        ( wff-imp subiml-P3.40a ndbief-P3.14 ndime-P3.6 ) ACGZBCGZDEKLDABCDFHIJ
+        ( wff-imp subiml-P3.40a ndbief-P3.14 ndime-P3.6 )
+        ACGZBCGZDEKLDABCDFHIJ
     $.
 $}
 
@@ -2443,7 +2444,8 @@ ${
 
     $( Alternate Form of ~subimr-P3.40b . `t.` $)
     subimr2-P4 $p |- ( w_ga -> ( w_ch -> w_ps ) ) $=
-        ( wff-imp subimr-P3.40b ndbief-P3.14 ndime-P3.6 ) CAGZCBGZDEKLDABCDFHIJ
+        ( wff-imp subimr-P3.40b ndbief-P3.14 ndime-P3.6 )
+        CAGZCBGZDEKLDABCDFHIJ
     $.
 $}
 

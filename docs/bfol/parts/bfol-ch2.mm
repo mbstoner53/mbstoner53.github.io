@@ -541,11 +541,11 @@ $}
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
-  Substitution Theorems.
+  Substitution Laws.
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 
-  These theorems can be chained together to produce a countably infinite set
-  of rules of the form...
+  These laws can be chained together to produce a countably infinite set of
+  rules of the form...
 
   `( ( w_ph <-> w_ps ) -> ( w_th <-> w_th ( w_ps `/` w_ph ) )`,
 
@@ -561,7 +561,7 @@ $)
 $( ------------------------------------------------------------------------- $)
 
 ${
-    $( Substitution Theorem for '`-.`'. $)
+    $( Substitution Law for '`-.`'. $)
     subneg-P2.7 $p |- ( ( w_ph <-> w_ps ) -> ( -. w_ph <-> -. w_ps ) ) $= 
         ( wff-neg wff-bi birev-P2.5b trnsp-P1.15c.AC.SH bifwd-P2.5a
           bicmb-P2.5c.AC.2SH )
@@ -572,7 +572,7 @@ $}
 $( ------------------------------------------------------------------------- $)
 
 ${
-    $( Left Substitution Theorem for '`->`'. $)
+    $( Left Substitution Law for '`->`'. $)
     subiml-P2.8a $p 
         |- ( ( w_ph <-> w_ps ) -> ( ( w_ph -> w_ch ) <-> ( w_ps -> w_ch ) ) )
     $= 
@@ -594,7 +594,7 @@ $}
 $( ------------------------------------------------------------------------- $)
 
 ${
-    $( Right Substitution Theorem for '`->`'. $)
+    $( Right Substitution Law for '`->`'. $)
     subimr-P2.8b $p 
         |- ( ( w_ph <-> w_ps ) -> ( ( w_ch -> w_ph ) <-> ( w_ch -> w_ps ) ) )
     $= 
@@ -720,12 +720,12 @@ $}
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
-  Importation and Exportation Theorems.
+  Importation and Exportation Laws.
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 $)
 
 ${
-    $( '`/\`' Importation Theorem. $)
+    $( '`/\`' Importation Law. $)
     import-P2.10a $p 
         |- ( ( w_ph -> ( w_ps -> w_ch ) ) -> ( ( w_ph /\ w_ps ) -> w_ch ) )
     $= 
@@ -747,7 +747,7 @@ $}
 $( ------------------------------------------------------------------------- $)
 
 ${
-    $( '`/\`' Exportation Theorem. $)
+    $( '`/\`' Exportation Law. $)
     export-P2.10b $p 
         |- ( ( ( w_ph /\ w_ps ) -> w_ch ) -> ( w_ph -> ( w_ps -> w_ch ) ) ) 
     $= 
@@ -822,12 +822,12 @@ $}
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
-  Substitution Theorems.
+  Substitution Laws.
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 $)
 
 ${
-    $( Left Substitution Theorem for '`/\`'. $)
+    $( Left Substitution Law for '`/\`'. $)
     subandl-P2.14a $p
         |- ( ( w_ph <-> w_ps ) -> ( ( w_ph /\ w_ch ) <-> ( w_ps /\ w_ch ) ) )
     $=
@@ -849,7 +849,7 @@ $}
 $( ------------------------------------------------------------------------- $)
 
 ${
-    $( Right Substitution Theorem for '`/\`'. $)
+    $( Right Substitution Law for '`/\`'. $)
     subandr-P2.14b $p
         |- ( ( w_ph <-> w_ps ) -> ( ( w_ch /\ w_ph ) <-> ( w_ch /\ w_ps ) ) )
     $=
@@ -956,7 +956,7 @@ $}
 $( ------------------------------------------------------------------------- $)
 
 ${
-    $( '`/\`' Elimination Rule.
+    $( '`/\`' Elimination Law.
 
        This is also known as the "Proof by Cases" rule. $)
     orelim-P2.15c $p

@@ -549,10 +549,10 @@ $)
 
 $(
 -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.
-  Theorems for Stating / Re-Stating Assumptions.
+  Derived Rules for Stating / Re-Stating Assumptions.
 -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.
 
-  These theorems may be used in place of ~ndasm-P3.1 .
+  These derived rules may be used in place of ~ndasm-P3.1 .
 $)
 
 $( ------------------------------------------------------------------------- $)
@@ -1022,8 +1022,6 @@ ${
     $.
 $}
 
-
-
 $(
 -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.
   Derived Rule for Conjunction Introduction. 
@@ -1429,7 +1427,7 @@ $}
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
-  Other Implication Rules.
+  Other Implication Laws.
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 $)
 
@@ -1646,7 +1644,7 @@ $}
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
-  Double Negation Rules.
+  Double Negation Laws.
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 $)
 
@@ -1656,7 +1654,7 @@ ${
     $( Double Negation Introduction. `t.`
 
        This statement does not require ~ndexclmid-P3.16 , and is thus
-       derivable with intuitionist logic. $)
+       deducible with intuitionist logic. $)
     dnegi-P3.29 $p |- ( w_ga -> -. -. w_ph ) $=
         ( wff-neg rcp-NDIMP1add1 rcp-NDASM2of2 rcp-NDNEGI2 )
         ABADZABHCEBHFG
@@ -1687,7 +1685,8 @@ ${
 
     $( Double Negation Elimination.
 
-       This statement is equivalent to ~ndexclmid-P3.16 . $)
+       This statement is equivalent to ~ndexclmid-P3.16 , thus it is not
+       deducible with intuitionist logic. $)
     dnege-P3.30 $p |- ( w_ga -> w_ph ) $=
         ( wff-neg rcp-NDASM2of2 wff-and rcp-NDIMP1add1 ndnege-P3.4
           ndexclmid-P3.16.AC ndore-P3.12 )
@@ -1714,7 +1713,7 @@ $}
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
-  Transposition Rules (including Axiom L3).
+  Transposition Laws (including Axiom L3).
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 $)
 
@@ -1724,7 +1723,7 @@ ${
     $( Transposition Variant A (negation introduction). `t.`
 
        This statement is the deductive form of ~trnsp-P1.15a .  It does not
-       require the Law of Excluded Middle, and is thus derivable with
+       require the Law of Excluded Middle, and is thus deducible with
        intuitionist logic. $)
     trnsp-P3.31a $p |- ( w_ga -> ( w_ps -> -. w_ph ) ) $=
         ( wff-neg rcp-NDASM2of3 wff-rcp-AND3 rcp-NDASM3of3 wff-imp
@@ -1758,7 +1757,8 @@ ${
     $( Transposition Variant B (negation elimination).
 
        This statement is the deductive form of ~trnsp-P1.15b . It is
-       equivalent to Axiom L3 and requires the Law of Excluded Middle. $)
+       equivalent to Axiom L3 and requires the Law of Excluded Middle.  It is
+       thus not deducible with intuitionist logic. $)
     trnsp-P3.31b $p |- ( w_ga -> ( -. w_ps -> w_ph ) ) $=
         ( wff-neg wff-and wff-rcp-AND3 rcp-NDASM3of3 wff-imp rcp-NDIMP1add2
           ndime-P3.6 rcp-NDASM2of3 rcp-NDNEGI3 dnege-P3.30 rcp-NDIMI2 )
@@ -1791,7 +1791,7 @@ ${
     $( Transposition Variant C (negation introduction). `t.`
 
        This statement is the deductive form of ~trnsp-P1.15c .  It does not
-       require the  Law of Excluded Middle, and is thus derivable with
+       require the  Law of Excluded Middle, and is thus deducible with
        intuitionist logic. $)
     trnsp-P3.31c $p |- ( w_ga -> ( -. w_ps -> -. w_ph ) ) $=
         ( wff-neg wff-rcp-AND3 rcp-NDASM3of3 wff-imp rcp-NDIMP1add2
@@ -1824,8 +1824,9 @@ ${
 
     $( Transposition Variant D (negation elimination).
 
-       This statement is the deductive form of ~trnsp-P1.15d and Axiom L3.
-       It requires the Law of Excluded Middle. $)
+       This statement is the deductive form of ~trnsp-P1.15d (and Axiom L3).
+       It requires the Law of Excluded Middle and is thus not deducible
+       with intuitionist logic. $)
     trnsp-P3.31d $p |- ( w_ga -> ( w_ps -> w_ph ) ) $=
         ( wff-and wff-neg rcp-NDASM2of3 wff-rcp-AND3 rcp-NDASM3of3 wff-imp
           rcp-NDIMP1add2 ndime-P3.6 rcp-NDNEGI3 dnege-P3.30 rcp-NDIMI2 )
@@ -1844,7 +1845,9 @@ ${
 $}
 
 ${
-    $( Closed Form of ~trnsp-P3.31d . $)
+    $( Closed Form of ~trnsp-P3.31d . 
+
+       This is a restatement of Axiom L3, deduced via natural deduction. $)
     trnsp-P3.31d.CL $p |- ( ( -. w_ph -> -. w_ps ) -> ( w_ps -> w_ph ) ) $=
         ( wff-neg wff-imp rcp-NDASM1of1 trnsp-P3.31d ) ABACBCDZGEF
     $.
@@ -1852,7 +1855,7 @@ $}
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
-  Other Rules Involving Negation.
+  Other Laws Involving Negation.
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 $)
 
@@ -1895,7 +1898,8 @@ ${
     $(  Negated Modus Tollens.
 
        This statement is the deductive form of ~clav-P1.12 .  It requires the
-       Law of Excluded Middle.  $)
+       Law of Excluded Middle and is thus not deducible with intuitionist
+       logic.  $)
     nmt-P3.32b $p |- ( w_ga -> w_ph ) $=
         ( wff-neg wff-and rcp-NDASM2of2 wff-imp rcp-NDIMP1add1 ndime-P3.6
           rcp-NDNEGI2 dnege-P3.30 )
@@ -2013,10 +2017,10 @@ $}
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
-  Importation and Exportation Theorems.
+  Importation and Exportation Laws.
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 
-  These two theorems can be thought of as justification theorems for treating
+  These two laws can be thought of as justification theorems for treating
   a sequent of the form...
 
   1.) '( `w_ga1`, `w_ga2`, ... , `w_ga`_n ) `|-` `w_ph`'
@@ -2038,7 +2042,7 @@ $)
 ${
     import-P3.34a.1 $e |- ( w_ga -> ( w_ph -> ( w_ps -> w_ch ) ) ) $.
 
-    $( '`/\`' Importation Theorem. `t.` $)
+    $( '`/\`' Importation Law. `t.` $)
     import-P3.34a $p |- ( w_ga -> ( ( w_ph /\ w_ps ) -> w_ch ) ) $=
         ( wff-and rcp-NDASM2of2 ndandel-P3.8 wff-imp ndander-P3.9
           rcp-NDIMP1add1 ndime-P3.6 rcp-NDIMI2 )
@@ -2061,7 +2065,7 @@ $( ------------------------------------------------------------------------- $)
 ${
     export-P3.34b.1 $e |- ( w_ga -> ( ( w_ph /\ w_ps ) -> w_ch ) ) $.
 
-    $( '`/\`' Exportation Theorem. `t.` $)
+    $( '`/\`' Exportation Law. `t.` $)
     export-P3.34b $p |- ( w_ga -> ( w_ph -> ( w_ps -> w_ch ) ) ) $=
         ( wff-imp wff-and wff-rcp-AND3 rcp-NDASM2of3 rcp-NDASM3of3
           ndandi-P3.7 rcp-NDIMP1add2 ndime-P3.6 rcp-NDIMI3 rcp-NDIMI2 )
@@ -2187,11 +2191,11 @@ $}
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
-  Substitution Theorems.
+  Substitution Laws.
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 
-  These theorems can be chained together to produce a countably infinite set
-  of rules of the form...
+  These laws can be chained together to produce a countably infinite set of
+  rules of the form...
 
   `( ( w_ph <-> w_ps ) -> ( w_th <-> w_th ( w_ps `/` w_ph ) )`,
 
@@ -2210,10 +2214,10 @@ $)
 
 ${
     subneg-P3.39.1 $e |- ( w_ga -> ( w_ph <-> w_ps ) ) $.
-    $( Substitution Theorem for '`-.`'. `t.`
+    $( Substitution Law for '`-.`'. `t.`
 
        Note that the proof of this theorem uses ~trnsp-P3.31c , which does 
-       not rely on the Law of Excluded Middle.  This means this theorem is
+       not rely on the Law of Excluded Middle.  This means this law is
        deducible with intuitionist logic. $)
     subneg-P3.39 $p |- ( w_ga -> ( -. w_ph <-> -. w_ps ) ) $=
         ( wff-neg ndbier-P3.15 trnsp-P3.31c ndbief-P3.14 ndbii-P3.13 )
@@ -2236,7 +2240,7 @@ $( ------------------------------------------------------------------------- $)
 ${
     subiml-P3.40a.1 $e |- ( w_ga -> ( w_ph <-> w_ps ) ) $.
 
-    $( Left Substitution Theorem for '`->`'. `t.` $)
+    $( Left Substitution Law for '`->`'. `t.` $)
     subiml-P3.40a $p
         |- ( w_ga -> ( ( w_ph -> w_ch ) <-> ( w_ps -> w_ch ) ) )
     $=
@@ -2285,7 +2289,7 @@ ${
     subimd-P3.40c.1 $e |- ( w_ga -> ( w_ph <-> w_ps ) ) $.
     subimd-P3.40c.2 $e |- ( w_ga -> ( w_ch <-> w_th ) ) $.
 
-    $( Dual Substitution Theorem for '`->`'. `t.` $)
+    $( Dual Substitution Law for '`->`'. `t.` $)
     subimd-P3.40c $p
         |- ( w_ga -> ( ( w_ph -> w_ch ) <-> ( w_ps -> w_th ) ) )
     $=
@@ -2323,7 +2327,7 @@ $}
 ${
     subbil-P3.41a.1 $e |- ( w_ga -> ( w_ph <-> w_ps ) ) $.
 
-    $( Left Substitution Theorem for '`<->`'. `t.` $)
+    $( Left Substitution Law for '`<->`'. `t.` $)
     subbil-P3.41a $p
         |- ( w_ga -> ( ( w_ph <-> w_ch ) <-> ( w_ps <-> w_ch ) ) )
     $=
@@ -2347,7 +2351,7 @@ $( ------------------------------------------------------------------------- $)
 ${
     subbir-P3.41b.1 $e |- ( w_ga -> ( w_ph <-> w_ps ) ) $.
 
-    $( Right Substitution Theorem for '`<->`'. `t.` $)
+    $( Right Substitution Law for '`<->`'. `t.` $)
     subbir-P3.41b $p
         |- ( w_ga -> ( ( w_ch <-> w_ph ) <-> ( w_ch <-> w_ps ) ) )
     $=
@@ -2373,7 +2377,7 @@ ${
     subbid-P3.41c.1 $e |- ( w_ga -> ( w_ph <-> w_ps ) ) $.
     subbid-P3.41c.2 $e |- ( w_ga -> ( w_ch <-> w_th ) ) $.
 
-    $( Dual Substitution Theorem for '`<->`'. `t.` $)
+    $( Dual Substitution Law for '`<->`'. `t.` $)
     subbid-P3.41c $p
         |- ( w_ga -> ( ( w_ph <-> w_ch ) <-> ( w_ps <-> w_th ) ) )
     $=
@@ -2411,7 +2415,7 @@ $}
 ${
     subandl-P3.42a.1 $e |- ( w_ga -> ( w_ph <-> w_ps ) ) $.
 
-    $( Left Substitution Theorem for '`/\`'. `t.` $)
+    $( Left Substitution Law for '`/\`'. `t.` $)
     subandl-P3.42a $p
         |- ( w_ga -> ( ( w_ph /\ w_ch ) <-> ( w_ps /\ w_ch ) ) )
     $=
@@ -2435,7 +2439,7 @@ $( ------------------------------------------------------------------------- $)
 ${
     subandr-P3.42b.1 $e |- ( w_ga -> ( w_ph <-> w_ps ) ) $.
 
-    $( Right Substitution Theorem for '`/\`'. `t.` $)
+    $( Right Substitution Law for '`/\`'. `t.` $)
     subandr-P3.42b $p
         |- ( w_ga -> ( ( w_ch /\ w_ph ) <-> ( w_ch /\ w_ps ) ) )
     $=
@@ -2461,7 +2465,7 @@ ${
     subandd-P3.42c.1 $e |- ( w_ga -> ( w_ph <-> w_ps ) ) $.
     subandd-P3.42c.2 $e |- ( w_ga -> ( w_ch <-> w_th ) ) $.
 
-    $( Dual Substitution Theorem for '`/\`'. `t.` $)
+    $( Dual Substitution Law for '`/\`'. `t.` $)
     subandd-P3.42c $p
         |- ( w_ga -> ( ( w_ph /\ w_ch ) <-> ( w_ps /\ w_th ) ) )
     $=
@@ -2524,7 +2528,7 @@ $( ------------------------------------------------------------------------- $)
 ${
     suborr-P3.43b.1 $e |- ( w_ga -> ( w_ph <-> w_ps ) ) $.
 
-    $( Right Substitution Theorem for '`\/`' . `t.` $)
+    $( Right Substitution Law for '`\/`' . `t.` $)
     suborr-P3.43b $p
         |- ( w_ga -> ( ( w_ch \/ w_ph ) <-> ( w_ch \/ w_ps ) ) )
     $=

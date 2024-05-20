@@ -97,14 +97,14 @@ $}
 
 $(
 -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.
-  A Substitution Theorem for Universal Quantification.
+  A Substitution Law for Universal Quantification.
 -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.
 $)
 
 ${
     suballinf-P5.1 $e |- ( w_ph <-> w_ps ) $.
 
-    $( Inference Version of '`A. x`' Substitution Theorem.
+    $( Inference Version of '`A. x`' Substitution Law.
 
        For the deductive form with a variable restriction, see ~suballv-P5 .
        For the most general form, see ~suball-P6 . $)
@@ -203,7 +203,7 @@ $}
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
-  More Quantifier Rules.
+  More Quantifier Laws.
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 $)
 
@@ -294,14 +294,14 @@ $}
 
 $(
 -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.
-  A Substitution Theorem for Existential Quantification.
+  A Substitution Law for Existential Quantification.
 -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.
 $)
 
 ${
     subexinf-P5.1 $e |- ( w_ph <-> w_ps ) $.
 
-    $( Inference Version of '`E. x`' Substitution Theorem.
+    $( Inference Version of '`E. x`' Substitution Law.
 
        For the deductive form with a variable restriction see ~subexv-P5 .
        For the most general form see ~subex-P6 . $)
@@ -549,7 +549,7 @@ $}
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
-  Substitution Theorems for Quantifiers.
+  Substitution Laws for Quantifiers.
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 $)
 
@@ -558,8 +558,8 @@ ${
 
     suballv-P5.1 $e |- ( w_ga -> ( w_ph <-> w_ps ) ) $.
 
-    $( Substitution Theorem for '`A. x`' (variable restriction).  The most
-       general form is ~suball-P6 . $)
+    $( Substitution Law for '`A. x`' (variable restriction).  The most general
+       form is ~suball-P6 . $)
     suballv-P5 $p |- ( w_ga -> ( A. x w_ph <-> A. x w_ps ) ) $=
         ( wff-forall ndbief-P3.14 alloverim-P5.GENV ndbier-P3.15 ndbii-P3.13 )
         ADFBDFCABCDABCEGHBACDABCEIHJ
@@ -573,8 +573,8 @@ ${
 
     subexv-P5.1 $e |- ( w_ga -> ( w_ph <-> w_ps ) ) $.
 
-    $( Substitution Theorem for '`E. x`' (variable restriction).  The most
-       general form is ~subex-P6 . $)
+    $( Substitution Law for '`E. x`' (variable restriction).  The most general
+       form is ~subex-P6 . $)
     subexv-P5 $p |- ( w_ga -> ( E. x w_ph <-> E. x w_ps ) ) $=
         ( wff-exists ndbief-P3.14 alloverimex-P5.GENV ndbier-P3.15 ndbii-P3.13 )
         ADFBDFCABCDABCEGHBACDABCEIHJ
@@ -600,10 +600,10 @@ $}
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
-  Equivalence Properties.
+  Equivalence Properties of Equality Predicate.
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 
-Show that '`=`' is an equivalence relation.
+  Show that '`=`' is an equivalence relation.
 $)
 
 ${
@@ -668,20 +668,20 @@ $}
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
-  More Substitution Theorems.
+  More Substitution Laws.
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 $)
 
 $(
 -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.
-  Substitution Theorems for Equality.
+  Substitution Laws for Equality.
 -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.
 $)
 
 ${
     subeql-P5.1 $e |- ( w_ga -> t_t = t_u ) $.
 
-    $( Left Substitution Theorem for '`=`' . $)
+    $( Left Substitution Law for '`=`' . $)
     subeql-P5 $p |- ( w_ga -> ( t_t = t_w <-> t_u = t_w ) ) $=
         ( wff-equals wff-imp ax-L7 rcp-NDIMP0addall ndime-P3.6 eqsym-P5
           ndbii-P3.13 )
@@ -712,7 +712,7 @@ $( ------------------------------------------------------------------------- $)
 ${
     subeqr-P5.1 $e |- ( w_ga -> t_t = t_u ) $.
 
-    $( Right Substitution Theorem for '`=`' . $)
+    $( Right Substitution Law for '`=`' . $)
     subeqr-P5 $p |- ( w_ga -> ( t_w = t_t <-> t_w = t_u ) ) $=
         ( wff-equals wff-bi subeqr-P5-L1 wff-imp eqsym-P5.CL.SYM subiml2-P4.RC
           ndbii-P3.13 syl-P3.24.RC )
@@ -733,7 +733,7 @@ ${
     subeqd-P5.1 $e |- ( w_ga -> t_s = t_t ) $.
     subeqd-P5.2 $e |- ( w_ga -> t_u = t_w ) $.
 
-    $( Dual Substitution Theorem for '`=`'. $)
+    $( Dual Substitution Law for '`=`'. $)
     subeqd-P5 $p |- ( w_ga -> ( t_s = t_u <-> t_t = t_w ) ) $=
         ( wff-equals subeql-P5 subeqr-P5 bitrns-P3.33c )
         BDHCDHCEHAABCDFIADECGJK
@@ -742,7 +742,7 @@ $}
 
 $(
 -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.
-  Substitution Theorems for Primitive Predicate.
+  Substitution Laws for Primitive Predicate.
 -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.
 $)
 
@@ -809,16 +809,14 @@ $}
 
 $(
 -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.
-  Substitution Theorems for Functions.
+  Substitution Laws for Functions.
 -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.
 $)
-
-$( ------------------------------------------------------------------------- $)
 
 ${
     subsucc-P5.1 $e |- ( w_ga -> t_t = t_u ) $.
 
-    $( Substitution Theorem for 's&lsquo;'. $)
+    $( Substitution Law for 's&lsquo;'. $)
     subsucc-P5 $p |- ( w_ga -> s` t_t = s` t_u ) $=
         ( wff-equals term_succ ax-L9-succ syl-P3.24.RC ) ABCEBFCFEDBCGH
     $.
@@ -829,7 +827,7 @@ $( ------------------------------------------------------------------------- $)
 ${
     subaddl-P5.1 $e |- ( w_ga -> t_t = t_u ) $.
 
-    $( Left Substitution Theorem for '`+`'. $)
+    $( Left Substitution Law for '`+`'. $)
     subaddl-P5 $p |- ( w_ga -> ( t_t + t_w ) = ( t_u + t_w ) ) $=
         ( wff-equals term-add ax-L9-addl syl-P3.24.RC ) ABCFBDGCDGFEBCDHI
     $.
@@ -840,7 +838,7 @@ $( ------------------------------------------------------------------------- $)
 ${
     subaddr-P5.1 $e |- ( w_ga -> t_t = t_u ) $.
 
-    $( Right Substitution Theorem for '`+`'. $)
+    $( Right Substitution Law for '`+`'. $)
     subaddr-P5 $p |- ( w_ga -> ( t_w + t_t ) = ( t_w + t_u ) ) $=
         ( wff-equals term-add ax-L9-addr syl-P3.24.RC ) ABCFDBGDCGFEBCDHI
     $.
@@ -853,7 +851,7 @@ ${
     subaddd-P5.1 $e |- ( w_ga -> t_s = t_t ) $.
     subaddd-P5.2 $e |- ( w_ga -> t_u = t_w ) $.
 
-    $( Dual Substitution Theorem for '`+`'. $)
+    $( Dual Substitution Law for '`+`'. $)
     subaddd-P5 $p |- ( w_ga -> ( t_s + t_u ) = ( t_t + t_w ) ) $=
         ( term-add subaddl-P5 subaddr-P5 eqtrns-P5 ) ABDHCDHCEHABCDFIADECGJK
     $.
@@ -874,7 +872,7 @@ $( ------------------------------------------------------------------------- $)
 ${
     submultl-P5.1 $e |- ( w_ga -> t_t = t_u ) $.
 
-    $( Left Substitution Theorem for '`x.`'. $)
+    $( Left Substitution Law for '`x.`'. $)
     submultl-P5 $p |- ( w_ga -> ( t_t x. t_w ) = ( t_u x. t_w ) ) $=
         ( wff-equals term-mult ax-L9-multl syl-P3.24.RC ) ABCFBDGCDGFEBCDHI
     $.
@@ -885,7 +883,7 @@ $( ------------------------------------------------------------------------- $)
 ${
     submultr-P5.1 $e |- ( w_ga -> t_t = t_u ) $.
 
-    $( Right Substitution Theorem for '`x.`'. $)
+    $( Right Substitution Law for '`x.`'. $)
     submultr-P5 $p |- ( w_ga -> ( t_w x. t_t ) = ( t_w x. t_u ) ) $=
         ( wff-equals term-mult ax-L9-multr syl-P3.24.RC ) ABCFDBGDCGFEBCDHI
     $.
@@ -897,7 +895,7 @@ ${
     submultd-P5.1 $e |- ( w_ga -> t_s = t_t ) $.
     submultd-P5.2 $e |- ( w_ga -> t_u = t_w ) $.
 
-    $( Dual Substitution Theorem for '`x.`'. $)
+    $( Dual Substitution Law for '`x.`'. $)
     submultd-P5 $p |- ( w_ga -> ( t_s x. t_u ) = ( t_t x. t_w ) ) $=
         ( term-mult submultl-P5 submultr-P5 eqtrns-P5 )
         ABDHCDHCEHABCDFIADECGJK
@@ -996,7 +994,7 @@ $}
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
-  Quantifier Removal Theorems.
+  Quantifier Removal Laws.
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 $)
 
@@ -1038,7 +1036,7 @@ $}
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
-  Change of Bound Variables Theorems.
+  Change of Bound Variables Laws.
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 $)
 
@@ -1064,7 +1062,7 @@ ${
 
     cbvallv-P5.1 $e |- ( x = y -> ( w_ph <-> w_ps ) ) $.
 
-    $( Change of Bound Variable Theorem for '`A. x`' (variable restriction).
+    $( Change of Bound Variable Law for '`A. x`' (variable restriction).
 
        '`x`' cannot occur in '`w_ps`' and '`y`' cannot occur in '`w_ph`'.
 
@@ -1089,7 +1087,7 @@ ${
 
     cbvexv-P5.1 $e |- ( x = y -> ( w_ph <-> w_ps ) ) $.
 
-    $( Change of Bound Variable Theorem for '`E. x`' (variable restriction).
+    $( Change of Bound Variable Law for '`E. x`' (variable restriction).
 
        '`x`' cannot occur in '`w_ps`' and '`y`' cannot occur in '`w_ph`'.
 
@@ -1342,10 +1340,10 @@ $}
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*
-  Quantifier Grouping Laws.
+  Quantifier Collection Laws.
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*
 
-  The next four theorems are useful for putting a WFF in prenex form.  In this
+  The next four laws are useful for putting a WFF in prenex form.  In this
   form all quantifiers are on the left and no logical connectives appear
   outside the scope of any individual quantifier.  An example is given below. 
 $)
@@ -1353,13 +1351,13 @@ $)
 ${
     $d w_ph x $.
 
-    $( Quantifier Grouping Law, Universal Quantifier Right on Implication.
+    $( Quantifier Collection Law: Universal Quantifier Right on Implication.
        (variable restriction).
 
        '`x`' cannot occur in '`w_ph`'. 
 
-       The most general form is ~qgallimr-P6 . $)
-    qgallimrv-P5 $p
+       The most general form is ~qcallimr-P6 . $)
+    qcallimrv-P5 $p
         |- ( ( w_ph -> A. x w_ps ) <-> A. x ( w_ph -> w_ps ) )
     $=
         ( wff-exists wff-forall wff-imp qimeqallav-P5 qremexv-P5
@@ -1373,13 +1371,13 @@ $( ------------------------------------------------------------------------- $)
 ${
     $d w_ph x $.
 
-    $( Quantifier Grouping Law, Existential Quantifier Right on Implication
+    $( Quantifier Collection Law: Existential Quantifier Right on Implication
        (variable restriction). 
 
        '`x`' cannot occur in '`w_ph`'.
 
-       The most general form is ~qgeximr-P6 . $)
-    qgeximrv-P5 $p
+       The most general form is ~qceximr-P6 . $)
+    qceximrv-P5 $p
         |- ( ( w_ph -> E. x w_ps ) <-> E. x ( w_ph -> w_ps ) )
     $=
         ( wff-forall wff-exists wff-imp qimeqex-P5 qremallv-P5
@@ -1393,13 +1391,13 @@ $( ------------------------------------------------------------------------- $)
 ${
     $d w_ps x $.
 
-    $( Quantifier Grouping Law, Universal Quantifier Left on Implication
+    $( Quantifier Collection Law: Universal Quantifier Left on Implication
        (variable restriction). 
 
        '`x`' cannot occur in '`w_ps`'.
 
-       The most general form is ~qgalliml-P6 . $)
-    qgallimlv-P5 $p
+       The most general form is ~qcalliml-P6 . $)
+    qcallimlv-P5 $p
         |- ( ( A. x w_ph -> w_ps ) <-> E. x ( w_ph -> w_ps ) )
     $=
         ( wff-forall wff-exists wff-imp qimeqex-P5 qremexv-P5 subimr-P3.40b.RC
@@ -1413,13 +1411,13 @@ $( ------------------------------------------------------------------------- $)
 ${
     $d w_ps x $.
 
-    $( Quantifier Grouping Law, Existential Quantifier Left on Implication
+    $( Quantifier Collection Law: Existential Quantifier Left on Implication
        (variable restriction). 
 
        '`x`' cannot occur in '`w_ps`'.
 
-       The most general form is ~qgeximl-P6 . $)
-    qgeximlv-P5 $p
+       The most general form is ~qceximl-P6 . $)
+    qceximlv-P5 $p
         |- ( ( E. x w_ph -> w_ps ) <-> A. x ( w_ph -> w_ps ) )
     $=
         ( wff-exists wff-forall wff-imp qimeqallbv-P5 qremallv-P5
@@ -1482,8 +1480,8 @@ ${
         ( term-obj wff-equals wff-imp wff-forall wff-elemof wff-exists
           subiml-P3.40a suballv-P5 subexv-P5 cbvallv-P5 rcp-NDASM1of1
           subeql-P5 subimd-P3.40c subexinf-P5 suballinf-P5 bitrns-P3.33c.RC
-          subiml2-P4.RC qgeximrv-P5 bimpf-P4.RC qgallimrv-P5
-          qgallimlv-P5 qgeximlv-P5 )
+          subiml2-P4.RC qceximrv-P5 bimpf-P4.RC qcallimrv-P5
+          qcallimlv-P5 qceximlv-P5 )
         CGNZHNZOZPZGQZDNZJNRAFNZINRPPZPZHQZESZFQZDQZISZUSVCPGSZHQZESZFQZDQZISU
         THSZVCPZESZFQZDQZISZVIVOEQZVCP ZFQZDQZISZVTWAVCFQZPZDQZISZWEWAWFDQZPZI
         SZWIWAWJISZPWLAVBUQOZPZFQZHSZDQZWAWMMWRBWNPZFQZHSZEQWAWQXADEWPWTVAENOZ

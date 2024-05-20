@@ -1,0 +1,260 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+    "http://www.w3.org/TR/html4/loose.dtd">
+<HTML LANG="EN-US">
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="viewport" CONTENT="width=device-width, initial-scale=1.0">
+<STYLE TYPE="text/css">
+<!--
+img { margin-bottom: -4px }
+.r { font-family: "Arial Narrow";
+     font-size: x-small;
+   }
+.i { font-family: "Arial Narrow";
+     font-size: x-small;
+     color: gray;
+   }
+-->
+</STYLE>
+<link rel="stylesheet" 
+media="screen" 
+href="https://fontlibrary.org/en/face/xits-math" 
+type="text/css"/> 
+<STYLE TYPE="text/css"> 
+<!--
+  .wff { color: blue; } 
+  .objvar { color: red; } 
+  .term { color: green; } 
+  .class { color: #CC33CC; } 
+  .typecode { color: gray; } 
+  .math { font-family: XITSRegular; } 
+-->
+</STYLE>
+<TITLE>nfrneg-P6 - bfol.mm Proof Explorer</TITLE>
+<LINK REL="shortcut icon" HREF="favicon.ico" TYPE="image/x-icon">
+</HEAD>
+<BODY BGCOLOR="#FFFFFF">
+<TABLE BORDER=0 CELLSPACING=0 CELLPADDING=0 WIDTH="100%">
+  <TR>
+    <TD ALIGN=LEFT VALIGN=TOP WIDTH="25%"><A HREF=
+    "mmset.html"><IMG SRC="mm.gif"
+      BORDER=0
+      ALT="PE Home"
+      TITLE="PE Home"
+      HEIGHT=32 WIDTH=32 ALIGN=TOP STYLE="margin-bottom:0px"></A>
+    </TD>
+    <TD ALIGN=CENTER COLSPAN=2 VALIGN=TOP><FONT SIZE="+3" COLOR="#006633"><B>
+bfol.mm Proof Explorer
+      </B></FONT></TD>
+    <TD ALIGN=RIGHT VALIGN=TOP WIDTH="25%">
+      <FONT SIZE=-1 FACE=sans-serif>
+      <A HREF="nfrleq-P6.html">
+      &lt; Previous</A>&nbsp;&nbsp;
+      <A HREF="nfrim-P6.html">Next &gt;</A>
+      </FONT><FONT FACE=sans-serif SIZE=-2>
+      <BR><A HREF="mmtheorems7.html#nfrneg-P6">Nearby theorems</A>
+      </FONT>
+    </TD>
+  </TR>
+  <TR>
+    <TD COLSPAN=2 ALIGN=LEFT VALIGN=TOP><FONT SIZE=-2
+      FACE=sans-serif>
+      <A HREF="../mm.html">Mirrors</A>&nbsp; &gt;
+      &nbsp;<A HREF="../index.html">Home</A>&nbsp; &gt;
+      &nbsp;<A HREF="mmset.html">PE Home</A>&nbsp; &gt;
+      &nbsp;<A HREF="mmtheorems.html">Th. List</A>&nbsp; &gt;
+      &nbsp;nfrneg-P6
+      </FONT>
+    </TD>
+    <TD COLSPAN=2 ALIGN=RIGHT VALIGN=TOP>
+      <FONT SIZE=-2 FACE=sans-serif>
+
+      </FONT>
+    </TD>
+  </TR>
+</TABLE>
+<HR NOSHADE SIZE=1>
+<CENTER><B><FONT SIZE="+1">Theorem <FONT
+COLOR="#006633">nfrneg-P6</FONT></FONT></B>&nbsp;<SPAN CLASS=r
+STYLE="color:#0182E9">694</SPAN></CENTER>
+<CENTER><TABLE><TR><TD ALIGN=LEFT><B>Description: </B>ENF Over
+Negation.</TD></TR></TABLE></CENTER>
+
+<CENTER><TABLE BORDER CELLSPACING=0 BGCOLOR="#EEFFFA"
+SUMMARY="Assertion">
+<CAPTION><B>Assertion</B></CAPTION>
+<TR><TH>Ref
+</TH><TH>Expression</TH></TR>
+<TR ALIGN=LEFT><TD><FONT COLOR="#006633"><B>nfrneg-P6</B></FONT></TD><TD>
+<SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN>(&#8498;<SPAN
+CLASS=objvar>&#x1D465;</SPAN> &not; <SPAN CLASS=wff>&#x1D711;</SPAN> &harr;
+&#8498;<SPAN CLASS=objvar>&#x1D465;</SPAN><SPAN
+CLASS=wff>&#x1D711;</SPAN>)</SPAN></TD></TR>
+</TABLE></CENTER>
+
+
+<HR NOSHADE SIZE=1>
+<CENTER><TABLE BORDER CELLSPACING=0 BGCOLOR="#EEFFFA"
+SUMMARY="Proof of theorem">
+<CAPTION><B>Proof of Theorem <FONT
+   COLOR="#006633">nfrneg-P6</FONT></B></CAPTION>
+<TR><TH>Step</TH><TH>Hyp</TH><TH>Ref
+</TH><TH>Expression</TH></TR>
+<TR ALIGN=LEFT><TD>1</TD><TD>&nbsp;</TD><TD><A HREF="df-nfree-D6.1.html"
+TITLE="Definition of Effective Non-Freeness (ENF), '`F/`'. Read as 'is not (effectively)...">df-nfree-D6.1</A>&nbsp;<SPAN
+CLASS=r STYLE="color:#0083E3">688</SPAN></TD><TD><A NAME="1"></A>
+<SPAN CLASS=i>. 2</SPAN>
+<SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN>(&#8498;<SPAN
+CLASS=objvar>&#x1D465;</SPAN> &not; <SPAN CLASS=wff>&#x1D711;</SPAN> &harr;
+(&forall;<SPAN CLASS=objvar>&#x1D465;</SPAN> &not; <SPAN
+CLASS=wff>&#x1D711;</SPAN> &vee; &forall;<SPAN CLASS=objvar>&#x1D465;</SPAN>
+&not; &not; <SPAN CLASS=wff>&#x1D711;</SPAN>))</SPAN></TD></TR>
+<TR ALIGN=LEFT><TD>2</TD><TD>&nbsp;</TD><TD><A HREF="dnegeq-P4.10.html"
+TITLE="Double Negation Equivalence Property.">dnegeq-P4.10</A>&nbsp;<SPAN
+CLASS=r STYLE="color:#299100">424</SPAN></TD><TD><A NAME="2"></A>
+<SPAN CLASS=i>. . . 4</SPAN>
+<SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN>(&not; &not; <SPAN
+CLASS=wff>&#x1D711;</SPAN> &harr; <SPAN
+CLASS=wff>&#x1D711;</SPAN>)</SPAN></TD></TR>
+<TR ALIGN=LEFT><TD>3</TD><TD><A HREF="#2">2</A></TD><TD><A
+HREF="suballinf-P5.html"
+TITLE="Inference Version of '`A. x`' Substitution Law. For the deductive form with a...">suballinf-P5</A>&nbsp;<SPAN
+CLASS=r STYLE="color:#008E81">600</SPAN></TD><TD><A NAME="3"></A>
+<SPAN CLASS=i>. . 3</SPAN>
+<SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN>(&forall;<SPAN
+CLASS=objvar>&#x1D465;</SPAN> &not; &not; <SPAN CLASS=wff>&#x1D711;</SPAN>
+&harr; &forall;<SPAN CLASS=objvar>&#x1D465;</SPAN><SPAN
+CLASS=wff>&#x1D711;</SPAN>)</SPAN></TD></TR>
+<TR ALIGN=LEFT><TD>4</TD><TD><A HREF="#3">3</A></TD><TD><A
+HREF="suborr-P3.43b.RC.html"
+TITLE="Inference Form of ~suborr-P3.43b .">suborr-P3.43b.RC</A>&nbsp;<SPAN
+CLASS=r STYLE="color:#588C00">355</SPAN></TD><TD><A NAME="4"></A>
+<SPAN CLASS=i>. 2</SPAN>
+<SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN>((&forall;<SPAN
+CLASS=objvar>&#x1D465;</SPAN> &not; <SPAN CLASS=wff>&#x1D711;</SPAN> &vee;
+&forall;<SPAN CLASS=objvar>&#x1D465;</SPAN> &not; &not; <SPAN
+CLASS=wff>&#x1D711;</SPAN>) &harr; (&forall;<SPAN CLASS=objvar>&#x1D465;</SPAN>
+&not; <SPAN CLASS=wff>&#x1D711;</SPAN> &vee; &forall;<SPAN
+CLASS=objvar>&#x1D465;</SPAN><SPAN
+CLASS=wff>&#x1D711;</SPAN>))</SPAN></TD></TR>
+<TR ALIGN=LEFT><TD>5</TD><TD>&nbsp;</TD><TD><A HREF="orcomm-P3.37.html"
+TITLE="'`\/`' Commutativity. `t.`">orcomm-P3.37</A>&nbsp;<SPAN CLASS=r
+STYLE="color:#6A8800">325</SPAN></TD><TD><A NAME="5"></A>
+<SPAN CLASS=i>. 2</SPAN>
+<SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN>((&forall;<SPAN
+CLASS=objvar>&#x1D465;</SPAN> &not; <SPAN CLASS=wff>&#x1D711;</SPAN> &vee;
+&forall;<SPAN CLASS=objvar>&#x1D465;</SPAN><SPAN CLASS=wff>&#x1D711;</SPAN>)
+&harr; (&forall;<SPAN CLASS=objvar>&#x1D465;</SPAN><SPAN
+CLASS=wff>&#x1D711;</SPAN> &vee; &forall;<SPAN CLASS=objvar>&#x1D465;</SPAN>
+&not; <SPAN CLASS=wff>&#x1D711;</SPAN>))</SPAN></TD></TR>
+<TR ALIGN=LEFT><TD>6</TD><TD>&nbsp;</TD><TD><A HREF="df-nfree-D6.1.html"
+TITLE="Definition of Effective Non-Freeness (ENF), '`F/`'. Read as 'is not (effectively)...">df-nfree-D6.1</A>&nbsp;<SPAN
+CLASS=r STYLE="color:#0083E3">688</SPAN></TD><TD><A NAME="6"></A>
+<SPAN CLASS=i>. . 3</SPAN>
+<SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN>(&#8498;<SPAN
+CLASS=objvar>&#x1D465;</SPAN><SPAN CLASS=wff>&#x1D711;</SPAN> &harr;
+(&forall;<SPAN CLASS=objvar>&#x1D465;</SPAN><SPAN CLASS=wff>&#x1D711;</SPAN>
+&vee; &forall;<SPAN CLASS=objvar>&#x1D465;</SPAN> &not; <SPAN
+CLASS=wff>&#x1D711;</SPAN>))</SPAN></TD></TR>
+<TR ALIGN=LEFT><TD>7</TD><TD><A HREF="#6">6</A></TD><TD><A
+HREF="bisym-P3.33b.RC.html"
+TITLE="Inference Form of ~bisym-P3.33b . `t.`">bisym-P3.33b.RC</A>&nbsp;<SPAN
+CLASS=r STYLE="color:#728600">309</SPAN></TD><TD><A NAME="7"></A>
+<SPAN CLASS=i>. 2</SPAN>
+<SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN>((&forall;<SPAN
+CLASS=objvar>&#x1D465;</SPAN><SPAN CLASS=wff>&#x1D711;</SPAN> &vee;
+&forall;<SPAN CLASS=objvar>&#x1D465;</SPAN> &not; <SPAN
+CLASS=wff>&#x1D711;</SPAN>) &harr; &#8498;<SPAN
+CLASS=objvar>&#x1D465;</SPAN><SPAN CLASS=wff>&#x1D711;</SPAN>)</SPAN></TD></TR>
+<TR ALIGN=LEFT><TD>8</TD><TD><A HREF="#1">1</A>, <A HREF="#4">4</A>, <A
+HREF="#5">5</A>, <A HREF="#7">7</A></TD><TD><A HREF="tbitrns-P4.17.RC.html"
+TITLE="Inference Form of ~tbitrns-P4.17 . `t.`">tbitrns-P4.17.RC</A>&nbsp;<SPAN
+CLASS=r STYLE="color:#1F9200">437</SPAN></TD><TD><A NAME="8"></A>
+<SPAN CLASS=i>1</SPAN>
+<SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN>(&#8498;<SPAN
+CLASS=objvar>&#x1D465;</SPAN> &not; <SPAN CLASS=wff>&#x1D711;</SPAN> &harr;
+&#8498;<SPAN CLASS=objvar>&#x1D465;</SPAN><SPAN
+CLASS=wff>&#x1D711;</SPAN>)</SPAN></TD></TR>
+</TABLE></CENTER>
+<CENTER><TABLE CELLSPACING=5><TR><TD ALIGN=LEFT><FONT SIZE=-1><B>Colors of
+variables:</B>  <SPAN CLASS=typecode
+STYLE="color:blue;font-style:normal">wff</SPAN> <SPAN CLASS=typecode
+STYLE="color:red;font-style:normal">objvar</SPAN> <SPAN CLASS=typecode
+STYLE="color:green;font-style:normal">term</SPAN> <SPAN CLASS=typecode
+STYLE="color:#CC33CC;font-style:normal">class</SPAN></FONT></TD></TR>
+<TR><TD ALIGN=LEFT><FONT SIZE=-1><B>Syntax hints:</B>  &nbsp;<SPAN
+CLASS=math>&forall;</SPAN><A HREF="wff-forall.html">wff-forall</A>&nbsp;<SPAN
+CLASS=r STYLE="color:#FA0200">8</SPAN> &nbsp;<SPAN CLASS=math>&not; </SPAN><A
+HREF="wff-neg.html">wff-neg</A>&nbsp;<SPAN CLASS=r
+STYLE="color:#FA0200">9</SPAN> &nbsp;<SPAN CLASS=math> &harr; </SPAN><A
+HREF="wff-bi.html">wff-bi</A>&nbsp;<SPAN CLASS=r
+STYLE="color:#E43B00">103</SPAN> &nbsp;<SPAN CLASS=math> &vee; </SPAN><A
+HREF="wff-or.html">wff-or</A>&nbsp;<SPAN CLASS=r
+STYLE="color:#CD5600">154</SPAN> &nbsp;<SPAN CLASS=math>&#8498;</SPAN><A
+HREF="wff-nfree.html">wff-nfree</A>&nbsp;<SPAN CLASS=r
+STYLE="color:#0083E2">687</SPAN></FONT></TD></TR>
+<TR><TD ALIGN=LEFT><FONT SIZE=-1><B>This theorem was proved from axioms:</B>
+&nbsp;<A HREF="ax-L1.html">ax-L1</A>&nbsp;<SPAN CLASS=r
+STYLE="color:#F90300">11</SPAN> &nbsp;<A HREF="ax-L2.html">ax-L2</A>&nbsp;<SPAN
+CLASS=r STYLE="color:#F90300">12</SPAN> &nbsp;<A
+HREF="ax-L3.html">ax-L3</A>&nbsp;<SPAN CLASS=r STYLE="color:#F90300">13</SPAN>
+&nbsp;<A HREF="ax-MP.html">ax-MP</A>&nbsp;<SPAN CLASS=r
+STYLE="color:#F90300">14</SPAN> &nbsp;<A
+HREF="ax-GEN.html">ax-GEN</A>&nbsp;<SPAN CLASS=r
+STYLE="color:#F90400">15</SPAN> &nbsp;<A HREF="ax-L4.html">ax-L4</A>&nbsp;<SPAN
+CLASS=r STYLE="color:#F90400">16</SPAN></FONT></TD></TR>
+<TR><TD ALIGN=LEFT><FONT SIZE=-1><B>This theorem depends on definitions:</B>
+&nbsp;<A HREF="df-bi-D2.1.html">df-bi-D2.1</A>&nbsp;<SPAN CLASS=r
+STYLE="color:#E33D00">106</SPAN> &nbsp;<A
+HREF="df-and-D2.2.html">df-and-D2.2</A>&nbsp;<SPAN CLASS=r
+STYLE="color:#D74D00">134</SPAN> &nbsp;<A
+HREF="df-or-D2.3.html">df-or-D2.3</A>&nbsp;<SPAN CLASS=r
+STYLE="color:#CD5600">155</SPAN> &nbsp;<A
+HREF="df-true-D2.4.html">df-true-D2.4</A>&nbsp;<SPAN CLASS=r
+STYLE="color:#C75B00">165</SPAN> &nbsp;<A
+HREF="df-rcp-AND3.html">df-rcp-AND3</A>&nbsp;<SPAN CLASS=r
+STYLE="color:#C45E00">171</SPAN> &nbsp;<A
+HREF="df-nfree-D6.1.html">df-nfree-D6.1</A>&nbsp;<SPAN CLASS=r
+STYLE="color:#0083E3">688</SPAN></FONT></TD></TR>
+<TR><TD ALIGN=LEFT><FONT SIZE=-1><B>This theorem is referenced by:</B> &nbsp;<A
+HREF="nfrand-P6.html">nfrand-P6</A>
+&nbsp;<SPAN CLASS=r STYLE="color:#0182EB">696</SPAN> &nbsp;<A
+HREF="nfrex2w-P6.html">nfrex2w-P6</A>
+&nbsp;<SPAN CLASS=r STYLE="color:#0181EF">701</SPAN> &nbsp;<A
+HREF="nfrexgenw-P6.html">nfrexgenw-P6</A>
+&nbsp;<SPAN CLASS=r STYLE="color:#0181F0">702</SPAN> &nbsp;<A
+HREF="exgennfrw-P6.html">exgennfrw-P6</A>
+&nbsp;<SPAN CLASS=r STYLE="color:#0181F1">703</SPAN> &nbsp;<A
+HREF="nfrexgen-P6.html">nfrexgen-P6</A>
+&nbsp;<SPAN CLASS=r STYLE="color:#2B7AFF">741</SPAN> &nbsp;<A
+HREF="exgennfr-P6.html">exgennfr-P6</A>
+&nbsp;<SPAN CLASS=r STYLE="color:#2D7AFF">742</SPAN> &nbsp;<A
+HREF="genall-P6.html">genall-P6</A>
+&nbsp;<SPAN CLASS=r STYLE="color:#2F79FF">743</SPAN> &nbsp;<A
+HREF="cbvex-P6.html">cbvex-P6</A>
+&nbsp;<SPAN CLASS=r STYLE="color:#4876FF">758</SPAN> &nbsp;<A
+HREF="qcexandl-P6.html">qcexandl-P6</A>
+&nbsp;<SPAN CLASS=r STYLE="color:#5174FF">768</SPAN> &nbsp;<A
+HREF="nfrexgencl-L6.html">nfrexgencl-L6</A>
+&nbsp;<SPAN CLASS=r STYLE="color:#7D67FF">819</SPAN> &nbsp;<A
+HREF="exgennfrcl-L6.html">exgennfrcl-L6</A>
+&nbsp;<SPAN CLASS=r STYLE="color:#7D67FF">820</SPAN> &nbsp;<A
+HREF="nfrandd-P6.html">nfrandd-P6</A>
+&nbsp;<SPAN CLASS=r STYLE="color:#7F66FF">822</SPAN> &nbsp;<A
+HREF="nfrord-P6.html">nfrord-P6</A>
+&nbsp;<SPAN CLASS=r STYLE="color:#7F66FF">823</SPAN> &nbsp;<A
+HREF="ndnfrneg-P7.2.html">ndnfrneg-P7.2</A>
+&nbsp;<SPAN CLASS=r STYLE="color:#8663FF">833</SPAN></FONT></TD></TR>
+</TABLE></CENTER>
+<TABLE BORDER=0 WIDTH="100%">
+<TR><TD WIDTH="25%">&nbsp;</TD>
+<TD ALIGN=CENTER VALIGN=BOTTOM>
+<FONT SIZE=-2 FACE=sans-serif>
+Copyright terms:
+<A HREF="../copyright.html#pd">Public domain</A>
+</FONT></TD><TD ALIGN=RIGHT VALIGN=BOTTOM WIDTH="25%">
+<FONT SIZE=-2 FACE=sans-serif>
+<A HREF="http://validator.w3.org/check?uri=referer">
+W3C validator</A>
+</FONT></TD></TR></TABLE>
+</BODY></HTML>
