@@ -1,7 +1,7 @@
 
 $(
 ##############################################################################
-  Chapter 6: Predicate Calculus (continued).
+  Chapter 6: Predicate Calculus (Definitions and ax-L10 - ax-L12).
 ##############################################################################
 $)
 
@@ -404,12 +404,12 @@ ${
 
     $( ENF Over Implication. $)
     nfrim-P6 $p |- F/ x ( w_ph -> w_ps ) $=
-        ( wff-imp wff-nfree wff-exists wff-forall qimeqex-P5 rcp-NDBIER0
-          dfnfreealt-P6 bimpf-P4.RC imsubd-P3.28c.RC qimeqallhalf-P5
-          dsyl-P3.25.RC bimpr-P4.RC )
-        ABFZCGRCHZRCIZFSACIZBCHZFZACHZBCIZFTUCSABCJKUDUAUBUEACGUDUAFDACLMBCGUB
-        UEFEBCLMNABCOPRCLQ
-    $.
+        ( wff-imp wff-nfree wff-exists wff-forall qimeqex-P5-L2 dfnfreealt-P6
+          bimpf-P4.RC imsubd-P3.28c.RC qimeqallhalf-P5 dsyl-P3.25.RC
+          bimpr-P4.RC )
+        ABFZCGQCHZQCIZFRACIZBCHZFACHZBCIZFSABCJUBTUAUCACGUBTFDACKLBCGUAUCFEBCK
+        LMABCNOQCKP
+   $.
 $}
 
 $( ------------------------------------------------------------------------- $)
@@ -587,14 +587,14 @@ $( ------------------------------------------------------------------------- $)
 ${
     qimeqalla-P6.1 $e |- F/ x w_ph $.
 
-    $( Quantified Implication Equivalence Law ( ( E `->` U ) `<->` U )
+    $( Quantified Implication Equivalence Law ( U `<->` ( E `->` U ) )
        (non-freeness condition a). $)
     qimeqalla-P6 $p
-        |- ( ( E. x w_ph -> A. x w_ps ) <-> A. x ( w_ph -> w_ps ) )
+        |- ( A. x ( w_ph -> w_ps ) <-> ( E. x w_ph -> A. x w_ps ) )
     $=
-        ( wff-exists wff-forall wff-imp qimeqallhalf-P5 qimeqalla-P6-L1
+        ( wff-imp wff-forall wff-exists qimeqalla-P6-L1 qimeqallhalf-P5
           rcp-NDBII0 )
-        ACEBCFGABGCFABCHABCDIJ
+        ABECFACGBCFEABCDHABCIJ
     $.
 $}
 
@@ -612,19 +612,20 @@ ${
         ACEBCEZBCFZABGCFZABCHNOGZPBCIQDBCJKLM
     $.
 $}
+
 $( ------------------------------------------------------------------------- $)
 
 ${
     qimeqallb-P6.1 $e |- F/ x w_ps $.
 
-    $( Quantified Implication Equivalence Law ( ( E `->` U ) `<->` U )
+    $( Quantified Implication Equivalence Law ( U `<->` ( E `->` U ) )
        (non-freeness condition b). $)
     qimeqallb-P6 $p
-        |- ( ( E. x w_ph -> A. x w_ps ) <-> A. x ( w_ph -> w_ps ) )
+        |- ( A. x ( w_ph -> w_ps ) <-> ( E. x w_ph -> A. x w_ps ) )
     $=
-        ( wff-exists wff-forall wff-imp qimeqallhalf-P5 qimeqallb-P6-L1
+        ( wff-imp wff-forall wff-exists qimeqallb-P6-L1 qimeqallhalf-P5
           rcp-NDBII0 )
-        ACEBCFGABGCFABCHABCDIJ
+        ABECFACGBCFEABCDHABCIJ
     $.
 $}
 
@@ -712,11 +713,11 @@ ${
        This is shown in ~solvedsub-P6a . $)
     solvesub-P6a $p |- ( w_ps <-> A. x ( x = t_t -> w_ph ) ) $=
         ( term-obj wff-equals wff-imp wff-forall wff-exists wff-true wff-bi
-          imoverbi-P4.30b bimpf-P4.RC suballinf-P5 qimeqallb-P6
-          bisym-P3.33b.RC axL6ex-P5 thmeqtrue-P4.21a qremallw-P6
-          subimd-P3.40c.RC trueie-P4.22a tbitrns-P4.17.RC )
-        EJDKZALZEMZBUJUHBLZEMZUHENZBEMZLZOZBLBUIUKEUHABPLUIUKPIUHABQRSUOULUHBE
-        HTUAUMUPUNBUMDEUBUCBCEFGHUDUEBUFUGUA
+          imoverbi-P4.30b bimpf-P4.RC suballinf-P5 qimeqallb-P6 axL6ex-P5
+          thmeqtrue-P4.21a qremallw-P6 subimd-P3.40c.RC trueie-P4.22a
+          tbitrns-P4.17.RC bisym-P3.33b.RC )
+        EJDKZALZEMZBUJUHBLZEMUHENZBEMZLOZBLBUIUKEUHABPLUIUKPIUHABQRSUHBEHTULUN
+        UMBULDEUAUBBCEFGHUCUDBUEUFUG
     $.
 $}
 
@@ -1284,12 +1285,12 @@ ${
        '`x`' cannot occur in '`t_t`'. $)
     lemma-L6.02a $p |- ( A. x ( x = t_t -> w_ph ) <-> w_ps ) $=
         ( term-obj wff-equals wff-imp wff-forall wff-exists wff-true wff-bi
-          imoverbi-P4.30b bimpf-P4.RC suballinf-P5 qimeqallb-P6
-          bisym-P3.33b.RC axL6ex-P5 thmeqtrue-P4.21a qremall-P6
-          subimd-P3.40c.RC trueie-P4.22a tbitrns-P4.17.RC )
-         DGCHZAIZDJUEBIZDJZUEDKZBDJZIZLZBIBUFUGDUEABMIUFUGMFUEABNOPUKUHUEBDEQR
-         UIULUJBUICDSTBDEUAUBBUCUD
-     $.
+          imoverbi-P4.30b bimpf-P4.RC suballinf-P5 qimeqallb-P6 axL6ex-P5
+          thmeqtrue-P4.21a qremall-P6 subimd-P3.40c.RC trueie-P4.22a
+          tbitrns-P4.17.RC )
+        DGCHZAIZDJUDBIZDJUDDKZBDJZILZBIBUEUFDUDABMIUEUFMFUDABNOPUDBDEQUGUIUHBU
+        GCDRSBDETUABUBUC
+    $.
 $}
 
 $( ------------------------------------------------------------------------- $)
@@ -1839,9 +1840,9 @@ ${
     qcallimr-P6 $p
         |- ( ( w_ph -> A. x w_ps ) <-> A. x ( w_ph -> w_ps ) )
     $=
-        ( wff-exists wff-forall wff-imp qimeqalla-P6 qremex-P6
+        ( wff-exists wff-forall wff-imp qimeqalla-P6 bisym-P3.33b.RC qremex-P6
           subiml-P3.40a.RC subbil2-P4.RC )
-        ACEZBCFZGAMGABGCFABCDHLAMACDIJK
+        ACEZBCFZGZANGABGCFZPOABCDHIMANACDJKL
     $.
 $}
 
@@ -1852,12 +1853,10 @@ ${
 
     $( Quantifier Collection Law: Existential Quantifier Right on Implication
        (non-freeness condition). $)
-    qceximr-P6 $p
-        |- ( ( w_ph -> E. x w_ps ) <-> E. x ( w_ph -> w_ps ) )
-    $=
-        ( wff-forall wff-exists wff-imp qimeqex-P5 qremall-P6 subiml-P3.40a.RC
-          subbil2-P4.RC )
-        ACEZBCFZGAMGABGCFABCHLAMACDIJK
+    qceximr-P6 $p |- ( ( w_ph -> E. x w_ps ) <-> E. x ( w_ph -> w_ps ) ) $=
+        ( wff-forall wff-exists wff-imp qimeqex-P5 bisym-P3.33b.RC qremall-P6
+          subiml-P3.40a.RC subbil2-P4.RC )
+        ACEZBCFZGZANGABGCFZPOABCHIMANACDJKL
     $.
 $}
 
@@ -1871,11 +1870,13 @@ ${
     qcalliml-P6 $p
         |- ( ( A. x w_ph -> w_ps ) <-> E. x ( w_ph -> w_ps ) )
     $=
-        ( wff-forall wff-exists wff-imp qimeqex-P5 qremex-P6 subimr-P3.40b.RC
-          subbil2-P4.RC )
-        ACEZBCFZGLBGABGCFABCHMBLBCDIJK
+        ( wff-forall wff-exists wff-imp qimeqex-P5 bisym-P3.33b.RC qremex-P6
+          subimr-P3.40b.RC subbil2-P4.RC )
+        ACEZBCFZGZMBGABGCFZPOABCHINBMBCDJKL
     $.
 $}
+
+
 
 $( ------------------------------------------------------------------------- $)
 
@@ -1887,9 +1888,9 @@ ${
     qceximl-P6 $p
         |- ( ( E. x w_ph -> w_ps ) <-> A. x ( w_ph -> w_ps ) )
     $=
-        ( wff-exists wff-forall wff-imp qimeqallb-P6 qremall-P6
-          subimr-P3.40b.RC subbil2-P4.RC )
-        ACEZBCFZGLBGABGCFABCDHMBLBCDIJK
+        ( wff-exists wff-forall wff-imp qimeqallb-P6 bisym-P3.33b.RC
+          qremall-P6 subimr-P3.40b.RC subbil2-P4.RC )
+        ACEZBCFZGZMBGABGCFZPOABCDHINBMBCDJKL
     $.
 $}
 
@@ -2553,19 +2554,20 @@ ${
     $d x y $.
 
     psubnfr-P6.1 $e |- F/ x w_ph $.
+
     $( Proper Substitution Applied to ENF Variable.
 
        If '`x`' is effectively not free in '`w_ph`', then replacing '`x`' with
        some '`t_t`' through proper substitution has no effect on '`w_ph`'. $)
     psubnfr-P6 $p |- ( [ t_t / x ] w_ph <-> w_ph ) $=
         ( wff-psub objvar-y term-obj wff-equals wff-imp wff-forall
-          df-psub-D6.2 wff-exists wff-true qimeqallb-P6 bisym-P3.33b.RC
-          axL6ex-P5 thmeqtrue-P4.21a qremall-P6 subimd-P3.40c.RC trueie-P4.22a
+          df-psub-D6.2 wff-exists wff-true qimeqallb-P6 axL6ex-P5
+          thmeqtrue-P4.21a qremall-P6 subimd-P3.40c.RC trueie-P4.22a
           dbitrns-P4.16.RC subimr-P3.40b.RC suballinf-P5 qimeqallbv-P5
           qremallv-P5 )
-        ABCEFGZBHZCGUFHZAICJZIZFJUGAIZFJZAABCFKUJUKFUIAUGUIUHCLZACJZIZMZAIZAUO
-        UIUHACDNOUMUPUNAUMUFCPQACDRSATZUAUBUCULUGFLZAFJZIZUQAVAULUGAFUDOUSUPUT
-        AUSBFPQAFUESURUAUA
+        ABCEFGZBHZCGUEHZAICJZIZFJUFAIZFJZAABCFKUIUJFUHAUFUHUGCLZACJZIMZAIZAUGA
+        CDNULUNUMAULUECOPACDQRASZTUAUBUKUFFLZAFJZIUOAUFAFUCUQUNURAUQBFOPAFUDRU
+        PTT
     $.
 $}
 
@@ -3142,11 +3144,11 @@ ${
 
     $( ENF Over Implication (deductive form). $)
     nfrimd-P6 $p |- ( w_ga -> F/ x ( w_ph -> w_ps ) ) $=
-        ( wff-imp wff-exists wff-forall wff-nfree qimeqex-P5 rcp-NDBIER0
+        ( wff-imp wff-exists wff-forall wff-nfree qimeqex-P5 rcp-NDBIEF0
           rcp-NDIMP0addall dfnfreealt-P6 subimr2-P4.RC imsubd-P3.28c
           qimeqallhalf-P5 dsyl-P3.25 bisym-P3.33b.RC )
-        ABGZDHZTDIZGZTDJZCUAADIZBDHZGZADHZBDIZGZUBCUAUGGCUGUAABDKLMUHUEUFUICAD
-        JUHUEGCEADNOBDJUFUIGCFBDNOPUJUBGCABDQMRUDUCTDNSO
+        ABGZDHZTDIZGZTDJZCUAADIZBDHZGZADHZBDIZGZUBCUAUGGCUAUGABDKLMUHUEUFUICAD
+        JUHUEGCEADNOBDJUFUIGCFBDNOPUJU BGCABDQMRUDUCTDNSO
     $.
 $}
 

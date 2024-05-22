@@ -126,7 +126,7 @@ $( Defined Syntax: Chapter 6 $)
     $c / $.
 
 $( ========================================================================= $)
-$( Defined Syntax: Chapter 7 $)
+$( Defined Syntax: Chapter 8 $)
 
   $( Is (effectively) Not Free in a Term. $)
   $c F/t $.
@@ -224,29 +224,35 @@ $( Term Variables $)
 $( ========================================================================= $)
 $( Object Variables $)
 
-    $v x x1 $.
+    $v x x1 x2 $.
     objvar-x $f objvar x $.
     objvar-x1 $f objvar x1 $.
+    objvar-x2 $f objvar x2 $.
 
-    $v y y1 $.
+    $v y y1 y2 $.
     objvar-y $f objvar y $.
     objvar-y1 $f objvar y1 $.
+    objvar-y2 $f objvar y2 $.
 
-    $v z z1 $.
+    $v z z1 z2 $.
     objvar-z $f objvar z $.
     objvar-z1 $f objvar z1 $.
+    objvar-z2 $f objvar z2 $.
 
-    $v a a1 $.
+    $v a a1 a2 $.
     objvar-a $f objvar a $.
     objvar-a1 $f objvar a1 $.
+    objvar-a2 $f objvar a2 $.
 
-    $v b b1 $.
+    $v b b1 b2 $.
     objvar-b $f objvar b $.
     objvar-b1 $f objvar b1 $.
+    objvar-b2 $f objvar b2 $.
 
-    $v c c1 $.
+    $v c c1 c2 $.
     objvar-c $f objvar c $.
     objvar-c1 $f objvar c1 $.
+    objvar-c2 $f objvar c2 $.
 
     $v d $.
     objvar-d $f objvar d $.

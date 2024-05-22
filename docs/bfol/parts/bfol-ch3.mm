@@ -1384,7 +1384,7 @@ ${
 $}
 
 ${
-    $( Closed Form of ~axL1-P3.21 . `t.` $)
+    $( Closed Form of ~axL1-P3.21 (Axiom L1). `t.` $)
     axL1-P3.21.CL $p |- ( w_ph -> ( w_ps -> w_ph ) ) $=
         ( rcp-NDASM1of1 axL1-P3.21 ) ABAACD
     $.
@@ -1414,7 +1414,7 @@ ${
 $}
 
 ${
-    $( Closed Form of ~axL2-P3.22 . `t.` $)
+    $( Closed Form of ~axL2-P3.22 (Axiom L2). `t.` $)
     axL2-P3.22.CL $p
         |- (
           ( w_ph -> ( w_ps -> w_ch ) ) ->
@@ -1845,7 +1845,7 @@ ${
 $}
 
 ${
-    $( Closed Form of ~trnsp-P3.31d . 
+    $( Closed Form of ~trnsp-P3.31d (Axiom L3). 
 
        This is a restatement of Axiom L3, deduced via natural deduction. $)
     trnsp-P3.31d.CL $p |- ( ( -. w_ph -> -. w_ps ) -> ( w_ps -> w_ph ) ) $=

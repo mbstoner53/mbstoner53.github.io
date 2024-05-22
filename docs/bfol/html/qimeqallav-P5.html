@@ -76,18 +76,18 @@ bfol.mm Proof Explorer
 <HR NOSHADE SIZE=1>
 <CENTER><B><FONT SIZE="+1">Theorem <FONT
 COLOR="#006633">qimeqallav-P5</FONT></FONT></B>&nbsp;<SPAN CLASS=r
-STYLE="color:#008D97">624</SPAN></CENTER>
+STYLE="color:#008D8F">624</SPAN></CENTER>
 <CENTER><TABLE><TR><TD ALIGN=LEFT><B>Description: </B>First Bi-directional Form
 of <A HREF="qimeqallhalf-P5.html">qimeqallhalf-P5</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#008D8F">615</SPAN> ( ( E <SPAN CLASS=math>&rarr;</SPAN> U ) <SPAN
-CLASS=math>&harr;</SPAN> U )
+STYLE="color:#008E87">615</SPAN> ( U <SPAN CLASS=math>&harr;</SPAN> ( E <SPAN
+CLASS=math>&rarr;</SPAN> U ) )
        (variable restriction a).
 <P STYLE="margin-bottom:0em">
        Holds when '<SPAN CLASS=math><SPAN CLASS=objvar>&#x1D465;</SPAN></SPAN>'
 does not occur in '<SPAN CLASS=math><SPAN CLASS=wff>&#x1D711;</SPAN></SPAN>'. 
 The most general version
        is <A HREF="qimeqalla-P6.html">qimeqalla-P6</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#0280F3">705</SPAN>.</TD></TR></TABLE></CENTER>
+STYLE="color:#0182EB">705</SPAN>.</TD></TR></TABLE></CENTER>
 
 <CENTER><TABLE BORDER CELLSPACING=0 BGCOLOR="#EEFFFA"
 SUMMARY="Assertion">
@@ -95,11 +95,11 @@ SUMMARY="Assertion">
 <TR><TH>Ref
 </TH><TH>Expression</TH></TR>
 <TR ALIGN=LEFT><TD><FONT COLOR="#006633"><B>qimeqallav-P5</B></FONT></TD><TD>
-<SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN>((&exist;<SPAN
+<SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN>(&forall;<SPAN
+CLASS=objvar>&#x1D465;</SPAN>(<SPAN CLASS=wff>&#x1D711;</SPAN> &rarr; <SPAN
+CLASS=wff>&#x1D713;</SPAN>) &harr; (&exist;<SPAN
 CLASS=objvar>&#x1D465;</SPAN><SPAN CLASS=wff>&#x1D711;</SPAN> &rarr;
-&forall;<SPAN CLASS=objvar>&#x1D465;</SPAN><SPAN CLASS=wff>&#x1D713;</SPAN>)
-&harr; &forall;<SPAN CLASS=objvar>&#x1D465;</SPAN>(<SPAN
-CLASS=wff>&#x1D711;</SPAN> &rarr; <SPAN
+&forall;<SPAN CLASS=objvar>&#x1D465;</SPAN><SPAN
 CLASS=wff>&#x1D713;</SPAN>))</SPAN></TD></TR>
 </TABLE></CENTER>
 
@@ -114,19 +114,9 @@ SUMMARY="Proof of theorem">
    COLOR="#006633">qimeqallav-P5</FONT></B></CAPTION>
 <TR><TH>Step</TH><TH>Hyp</TH><TH>Ref
 </TH><TH>Expression</TH></TR>
-<TR ALIGN=LEFT><TD>1</TD><TD>&nbsp;</TD><TD><A HREF="qimeqallhalf-P5.html"
-TITLE="Partial Quantified Implication Equivalence Law ( ( E `->` U ) `->` U ). The reverse...">qimeqallhalf-P5</A>&nbsp;<SPAN
-CLASS=r STYLE="color:#008D8F">615</SPAN></TD><TD><A NAME="1"></A>
-<SPAN CLASS=i>. 2</SPAN>
-<SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN>((&exist;<SPAN
-CLASS=objvar>&#x1D465;</SPAN><SPAN CLASS=wff>&#x1D711;</SPAN> &rarr;
-&forall;<SPAN CLASS=objvar>&#x1D465;</SPAN><SPAN CLASS=wff>&#x1D713;</SPAN>)
-&rarr; &forall;<SPAN CLASS=objvar>&#x1D465;</SPAN>(<SPAN
-CLASS=wff>&#x1D711;</SPAN> &rarr; <SPAN
-CLASS=wff>&#x1D713;</SPAN>))</SPAN></TD></TR>
-<TR ALIGN=LEFT><TD>2</TD><TD>&nbsp;</TD><TD><A HREF="qimeqallav-P5-L1.html"
+<TR ALIGN=LEFT><TD>1</TD><TD>&nbsp;</TD><TD><A HREF="qimeqallav-P5-L1.html"
 TITLE="Lemma for ~qimeqallav-P5 .">qimeqallav-P5-L1</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#008D96">623</SPAN></TD><TD><A NAME="2"></A>
+STYLE="color:#008D8E">623</SPAN></TD><TD><A NAME="1"></A>
 <SPAN CLASS=i>. 2</SPAN>
 <SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN>(&forall;<SPAN
 CLASS=objvar>&#x1D465;</SPAN>(<SPAN CLASS=wff>&#x1D711;</SPAN> &rarr; <SPAN
@@ -134,16 +124,26 @@ CLASS=wff>&#x1D713;</SPAN>) &rarr; (&exist;<SPAN
 CLASS=objvar>&#x1D465;</SPAN><SPAN CLASS=wff>&#x1D711;</SPAN> &rarr;
 &forall;<SPAN CLASS=objvar>&#x1D465;</SPAN><SPAN
 CLASS=wff>&#x1D713;</SPAN>))</SPAN></TD></TR>
-<TR ALIGN=LEFT><TD>3</TD><TD><A HREF="#1">1</A>, <A HREF="#2">2</A></TD><TD><A
-HREF="rcp-NDBII0.html"
-TITLE="'`<->`' Introduction. `t.`">rcp-NDBII0</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#937C00">249</SPAN></TD><TD><A NAME="3"></A>
-<SPAN CLASS=i>1</SPAN>
+<TR ALIGN=LEFT><TD>2</TD><TD>&nbsp;</TD><TD><A HREF="qimeqallhalf-P5.html"
+TITLE="Partial Quantified Implication Equivalence Law ( ( E `->` U ) `->` U ). The reverse...">qimeqallhalf-P5</A>&nbsp;<SPAN
+CLASS=r STYLE="color:#008E87">615</SPAN></TD><TD><A NAME="2"></A>
+<SPAN CLASS=i>. 2</SPAN>
 <SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN>((&exist;<SPAN
 CLASS=objvar>&#x1D465;</SPAN><SPAN CLASS=wff>&#x1D711;</SPAN> &rarr;
 &forall;<SPAN CLASS=objvar>&#x1D465;</SPAN><SPAN CLASS=wff>&#x1D713;</SPAN>)
-&harr; &forall;<SPAN CLASS=objvar>&#x1D465;</SPAN>(<SPAN
+&rarr; &forall;<SPAN CLASS=objvar>&#x1D465;</SPAN>(<SPAN
 CLASS=wff>&#x1D711;</SPAN> &rarr; <SPAN
+CLASS=wff>&#x1D713;</SPAN>))</SPAN></TD></TR>
+<TR ALIGN=LEFT><TD>3</TD><TD><A HREF="#1">1</A>, <A HREF="#2">2</A></TD><TD><A
+HREF="rcp-NDBII0.html"
+TITLE="'`<->`' Introduction. `t.`">rcp-NDBII0</A>&nbsp;<SPAN CLASS=r
+STYLE="color:#957B00">249</SPAN></TD><TD><A NAME="3"></A>
+<SPAN CLASS=i>1</SPAN>
+<SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN>(&forall;<SPAN
+CLASS=objvar>&#x1D465;</SPAN>(<SPAN CLASS=wff>&#x1D711;</SPAN> &rarr; <SPAN
+CLASS=wff>&#x1D713;</SPAN>) &harr; (&exist;<SPAN
+CLASS=objvar>&#x1D465;</SPAN><SPAN CLASS=wff>&#x1D711;</SPAN> &rarr;
+&forall;<SPAN CLASS=objvar>&#x1D465;</SPAN><SPAN
 CLASS=wff>&#x1D713;</SPAN>))</SPAN></TD></TR>
 </TABLE></CENTER>
 <CENTER><TABLE CELLSPACING=5><TR><TD ALIGN=LEFT><FONT SIZE=-1><B>Colors of
@@ -158,12 +158,12 @@ CLASS=r STYLE="color:#FA0200">8</SPAN> &nbsp;<SPAN CLASS=math> &rarr; </SPAN><A
 HREF="wff-imp.html">wff-imp</A>&nbsp;<SPAN CLASS=r
 STYLE="color:#FA0200">10</SPAN> &nbsp;<SPAN CLASS=math> &harr; </SPAN><A
 HREF="wff-bi.html">wff-bi</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#E43B00">103</SPAN> &nbsp;<SPAN CLASS=math>&exist;</SPAN><A
+STYLE="color:#E53A00">103</SPAN> &nbsp;<SPAN CLASS=math>&exist;</SPAN><A
 HREF="wff-exists.html">wff-exists</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#008E81">601</SPAN></FONT></TD></TR>
+STYLE="color:#008F7B">601</SPAN></FONT></TD></TR>
 <TR><TD ALIGN=LEFT><FONT SIZE=-1><B>This theorem was proved from axioms:</B>
 &nbsp;<A HREF="ax-L1.html">ax-L1</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#F90300">11</SPAN> &nbsp;<A HREF="ax-L2.html">ax-L2</A>&nbsp;<SPAN
+STYLE="color:#FA0200">11</SPAN> &nbsp;<A HREF="ax-L2.html">ax-L2</A>&nbsp;<SPAN
 CLASS=r STYLE="color:#F90300">12</SPAN> &nbsp;<A
 HREF="ax-L3.html">ax-L3</A>&nbsp;<SPAN CLASS=r STYLE="color:#F90300">13</SPAN>
 &nbsp;<A HREF="ax-MP.html">ax-MP</A>&nbsp;<SPAN CLASS=r
@@ -175,20 +175,20 @@ HREF="ax-L5.html">ax-L5</A>&nbsp;<SPAN CLASS=r
 STYLE="color:#F90400">17</SPAN></FONT></TD></TR>
 <TR><TD ALIGN=LEFT><FONT SIZE=-1><B>This theorem depends on definitions:</B>
 &nbsp;<A HREF="df-bi-D2.1.html">df-bi-D2.1</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#E33D00">106</SPAN> &nbsp;<A
+STYLE="color:#E43C00">106</SPAN> &nbsp;<A
 HREF="df-and-D2.2.html">df-and-D2.2</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#D74D00">134</SPAN> &nbsp;<A
+STYLE="color:#D84C00">134</SPAN> &nbsp;<A
 HREF="df-or-D2.3.html">df-or-D2.3</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#CD5600">155</SPAN> &nbsp;<A
+STYLE="color:#CE5500">155</SPAN> &nbsp;<A
 HREF="df-true-D2.4.html">df-true-D2.4</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#C75B00">165</SPAN> &nbsp;<A
+STYLE="color:#C95A00">165</SPAN> &nbsp;<A
 HREF="df-rcp-AND3.html">df-rcp-AND3</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#C45E00">171</SPAN> &nbsp;<A
+STYLE="color:#C55D00">171</SPAN> &nbsp;<A
 HREF="df-exists-D5.1.html">df-exists-D5.1</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#008E82">602</SPAN></FONT></TD></TR>
+STYLE="color:#008F7B">602</SPAN></FONT></TD></TR>
 <TR><TD ALIGN=LEFT><FONT SIZE=-1><B>This theorem is referenced by:</B> &nbsp;<A
 HREF="qcallimrv-P5.html">qcallimrv-P5</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#0085D9">677</SPAN></FONT></TD></TR>
+&nbsp;<SPAN CLASS=r STYLE="color:#0086CD">677</SPAN></FONT></TD></TR>
 </TABLE></CENTER>
 <TABLE BORDER=0 WIDTH="100%">
 <TR><TD WIDTH="25%">&nbsp;</TD>

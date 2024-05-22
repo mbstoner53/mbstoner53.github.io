@@ -224,11 +224,17 @@ latexdef "x" as "x";
 althtmldef "x1" as "<SPAN CLASS=objvar>&#x1D465;&#x2081;</SPAN>";
 latexdef "x1" as "x_1";
 
+althtmldef "x2" as "<SPAN CLASS=objvar>&#x1D465;&#x2082;</SPAN>";
+latexdef "x2" as "x_2";
+
 althtmldef "y" as "<SPAN CLASS=objvar>&#x1D466;</SPAN>";
 latexdef "y" as "y";
 
 althtmldef "y1" as "<SPAN CLASS=objvar>&#x1D466;&#x2081;</SPAN>";
 latexdef "y1" as "y_1";
+
+althtmldef "y2" as "<SPAN CLASS=objvar>&#x1D466;&#x2082;</SPAN>";
+latexdef "y2" as "y_2";
 
 althtmldef "z" as "<SPAN CLASS=objvar>&#x1D467;</SPAN>";
 latexdef "z" as "z";
@@ -236,11 +242,17 @@ latexdef "z" as "z";
 althtmldef "z1" as "<SPAN CLASS=objvar>&#x1D467;&#x2081;</SPAN>";
 latexdef "z1" as "z_1";
 
+althtmldef "z2" as "<SPAN CLASS=objvar>&#x1D467;&#x2082;</SPAN>";
+latexdef "z2" as "z_2";
+
 althtmldef "a" as "<SPAN CLASS=objvar>&#x1D44E;</SPAN>";
 latexdef "a" as "a";
 
 althtmldef "a1" as "<SPAN CLASS=objvar>&#x1D44E;&#x2081;</SPAN>";
 latexdef "a1" as "a_1";
+
+althtmldef "a2" as "<SPAN CLASS=objvar>&#x1D44E;&#x2082;</SPAN>";
+latexdef "a2" as "a_2";
 
 althtmldef "b" as "<SPAN CLASS=objvar>&#x1D44F;</SPAN>";
 latexdef "b" as "b";
@@ -248,11 +260,17 @@ latexdef "b" as "b";
 althtmldef "b1" as "<SPAN CLASS=objvar>&#x1D44F;&#x2081;</SPAN>";
 latexdef "b1" as "b_1";
 
+althtmldef "b2" as "<SPAN CLASS=objvar>&#x1D44F;&#x2082;</SPAN>";
+latexdef "b2" as "b_2";
+
 althtmldef "c" as "<SPAN CLASS=objvar>&#x1D450;</SPAN>";
 latexdef "c" as "c";
 
 althtmldef "c1" as "<SPAN CLASS=objvar>&#x1D450;&#x2081;</SPAN>";
 latexdef "c1" as "c_1";
+
+althtmldef "c2" as "<SPAN CLASS=objvar>&#x1D450;&#x2082;</SPAN>";
+latexdef "c2" as "c_2";
 
 althtmldef "d" as "<SPAN CLASS=objvar>&#x1D451;</SPAN>";
 latexdef "d" as "d";
@@ -309,7 +327,7 @@ althtmldef "/" as " / ";
 latexdef "/" as "/";
 
 /* ######################################################################### */
-/* Chapter 7                                                                 */
+/* Chapter 8                                                                 */
 /* ######################################################################### */
 
 /* ************************************************************************* */

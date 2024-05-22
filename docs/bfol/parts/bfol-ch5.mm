@@ -365,13 +365,13 @@ $}
 $( ------------------------------------------------------------------------- $)
 
 ${
-    $( Quantified Implication Equivalence Law ( ( U `->` E ) `<->` E ). $)
+    $( Quantified Implication Equivalence Law ( E `<->` ( U `->` E ) ). $)
     qimeqex-P5 $p
-        |- ( ( A. x w_ph -> E. x w_ps ) <-> E. x ( w_ph -> w_ps ) )
+        |- ( E. x ( w_ph -> w_ps ) <-> ( A. x w_ph -> E. x w_ps ) )
     $=
-        ( wff-forall wff-exists wff-imp qimeqex-P5-L1 qimeqex-P5-L2
+        ( wff-imp wff-exists wff-forall qimeqex-P5-L2 qimeqex-P5-L1
           rcp-NDBII0 )
-        ACDBCEFABFCEABCGABCHI
+        ABDCEACFBCEDABCGABCHI
     $.
 $}
 
@@ -466,18 +466,17 @@ $( ------------------------------------------------------------------------- $)
 
 ${
     $d w_ph x $.
-
-    $( First Bi-directional Form of ~qimeqallhalf-P5 ( ( E `->` U ) `<->` U )
+    $( First Bi-directional Form of ~qimeqallhalf-P5 ( U `<->` ( E `->` U ) )
        (variable restriction a).
 
        Holds when '`x`' does not occur in '`w_ph`'.  The most general version
        is ~qimeqalla-P6 . $)
     qimeqallav-P5 $p
-        |- ( ( E. x w_ph -> A. x w_ps ) <-> A. x ( w_ph -> w_ps ) )
+        |- ( A. x ( w_ph -> w_ps ) <-> ( E. x w_ph -> A. x w_ps ) )
     $=
-        ( wff-exists wff-forall wff-imp qimeqallhalf-P5 qimeqallav-P5-L1
+        ( wff-imp wff-forall wff-exists qimeqallav-P5-L1 qimeqallhalf-P5
           rcp-NDBII0 )
-        ACDBCEFABFCEABCGABCHI
+        ABDCEACFBCEDABCGABCHI
     $.
 $}
 
@@ -501,17 +500,17 @@ $( ------------------------------------------------------------------------- $)
 ${
     $d w_ps x $.
 
-    $( Second Bi-directional Form of ~qimeqallhalf-P5 ( ( E `->` U ) `<->` U )
+    $( Second Bi-directional Form of ~qimeqallhalf-P5 ( U `<->` ( E `->` U ) )
        (variable restriction b).
 
        Holds when '`x`' does not occur in '`w_ps`'.  The most general version
        is ~qimeqallb-P6 . $)
     qimeqallbv-P5 $p
-        |- ( ( E. x w_ph -> A. x w_ps ) <-> A. x ( w_ph -> w_ps ) )
+        |- ( A. x ( w_ph -> w_ps ) <-> ( E. x w_ph -> A. x w_ps ) )
     $=
-        ( wff-exists wff-forall wff-imp qimeqallhalf-P5 qimeqallbv-P5-L1
+        ( wff-imp wff-forall wff-exists qimeqallbv-P5-L1 qimeqallhalf-P5
           rcp-NDBII0 )
-        ACDBCEFABFCEABCGABCHI
+        ABDCEACFBCEDABCGABCHI
     $.
 $}
 
@@ -1357,12 +1356,10 @@ ${
        '`x`' cannot occur in '`w_ph`'. 
 
        The most general form is ~qcallimr-P6 . $)
-    qcallimrv-P5 $p
-        |- ( ( w_ph -> A. x w_ps ) <-> A. x ( w_ph -> w_ps ) )
-    $=
-        ( wff-exists wff-forall wff-imp qimeqallav-P5 qremexv-P5
-          subiml-P3.40a.RC subbil2-P4.RC )
-        ACDZBCEZFALFABFCEABCGKALACHIJ
+    qcallimrv-P5 $p |- ( ( w_ph -> A. x w_ps ) <-> A. x ( w_ph -> w_ps ) ) $=
+        ( wff-exists wff-forall wff-imp qimeqallav-P5 bisym-P3.33b.RC
+          qremexv-P5 subiml-P3.40a.RC subbil2-P4.RC )
+        ACDZBCEZFZAMFABFCEZONABCGHLAMACIJK
     $.
 $}
 
@@ -1380,9 +1377,9 @@ ${
     qceximrv-P5 $p
         |- ( ( w_ph -> E. x w_ps ) <-> E. x ( w_ph -> w_ps ) )
     $=
-        ( wff-forall wff-exists wff-imp qimeqex-P5 qremallv-P5
+        ( wff-forall wff-exists wff-imp qimeqex-P5 bisym-P3.33b.RC qremallv-P5
           subiml-P3.40a.RC subbil2-P4.RC )
-        ACDZBCEZFALFABFCEABCGKALACHIJ
+        ACDZBCEZFZAMFABFCEZONABCGHLAMACIJK
     $.
 $}
 
@@ -1390,7 +1387,6 @@ $( ------------------------------------------------------------------------- $)
 
 ${
     $d w_ps x $.
-
     $( Quantifier Collection Law: Universal Quantifier Left on Implication
        (variable restriction). 
 
@@ -1400,9 +1396,9 @@ ${
     qcallimlv-P5 $p
         |- ( ( A. x w_ph -> w_ps ) <-> E. x ( w_ph -> w_ps ) )
     $=
-        ( wff-forall wff-exists wff-imp qimeqex-P5 qremexv-P5 subimr-P3.40b.RC
-          subbil2-P4.RC )
-        ACDZBCEZFKBFABFCEABCGLBKBCHIJ
+        ( wff-forall wff-exists wff-imp qimeqex-P5 bisym-P3.33b.RC
+          qremexv-P5 subimr-P3.40b.RC subbil2-P4.RC )
+        ACDZBCEZFZLBFABFCEZONABCGHMBLBCIJK
     $.
 $}
 
@@ -1420,12 +1416,11 @@ ${
     qceximlv-P5 $p
         |- ( ( E. x w_ph -> w_ps ) <-> A. x ( w_ph -> w_ps ) )
     $=
-        ( wff-exists wff-forall wff-imp qimeqallbv-P5 qremallv-P5
-          subimr-P3.40b.RC subbil2-P4.RC )
-        ACDZBCEZFKBFABFCEABCGLBKBCHIJ
+        ( wff-exists wff-forall wff-imp qimeqallbv-P5 bisym-P3.33b.RC
+          qremallv-P5 subimr-P3.40b.RC subbil2-P4.RC )
+        ACDZBCEZFZLBFABFCEZONABCGHMBLBCIJK
     $.
 $}
-
 
 $(
 -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.
