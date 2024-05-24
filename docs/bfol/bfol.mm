@@ -17418,7 +17418,7 @@ $)
 
 ${
     $( Extend WFF definition to include the effective non-freeness in a term
-       predicate '`F/t x`. $)
+       predicate '`F/t x`'. $)
     wff-nfreet $a wff F/t x t_t $.
 $}
 
