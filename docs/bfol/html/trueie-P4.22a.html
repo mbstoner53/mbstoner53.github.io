@@ -27,7 +27,7 @@ type="text/css"/>
   .term { color: green; } 
   .class { color: #CC33CC; } 
   .typecode { color: gray; } 
-  .math { font-family: XITSRegular; } 
+  .math { font-family: XITSMathRegular; } 
 -->
 </STYLE>
 <TITLE>trueie-P4.22a - bfol.mm Proof Explorer</TITLE>
@@ -76,7 +76,7 @@ bfol.mm Proof Explorer
 <HR NOSHADE SIZE=1>
 <CENTER><B><FONT SIZE="+1">Theorem <FONT
 COLOR="#006633">trueie-P4.22a</FONT></FONT></B>&nbsp;<SPAN CLASS=r
-STYLE="color:#199302">450</SPAN></CENTER>
+STYLE="color:#1A9302">450</SPAN></CENTER>
 <CENTER><TABLE><TR><TD ALIGN=LEFT><B>Description: </B>'<SPAN
 CLASS=math>&top;</SPAN>' Introduction and Elimination (closed form). <SPAN
 CLASS=math>&dagger;</SPAN></TD></TR></TABLE></CENTER>
@@ -87,7 +87,7 @@ SUMMARY="Assertion">
 <TR><TH>Ref
 </TH><TH>Expression</TH></TR>
 <TR ALIGN=LEFT><TD><FONT COLOR="#006633"><B>trueie-P4.22a</B></FONT></TD><TD>
-<SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN>(( &top; &rarr; <SPAN
+<SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN>((&top; &rarr; <SPAN
 CLASS=wff>&#x1D711;</SPAN>) &harr; <SPAN
 CLASS=wff>&#x1D711;</SPAN>)</SPAN></TD></TR>
 </TABLE></CENTER>
@@ -104,7 +104,7 @@ SUMMARY="Proof of theorem">
 TITLE="Closed Form of ~ndime-P3.6 . `t.`">ndime-P3.6.CL</A>&nbsp;<SPAN CLASS=r
 STYLE="color:#927C00">254</SPAN></TD><TD><A NAME="1"></A>
 <SPAN CLASS=i>. . . 4</SPAN>
-<SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN>(( &top; &wedge; ( &top;
+<SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN>((&top; &wedge; (&top;
 &rarr; <SPAN CLASS=wff>&#x1D711;</SPAN>)) &rarr; <SPAN
 CLASS=wff>&#x1D711;</SPAN>)</SPAN></TD></TR>
 <TR ALIGN=LEFT><TD>2</TD><TD><A HREF="#1">1</A></TD><TD><A
@@ -112,15 +112,15 @@ HREF="rcp-NDIMI2.html"
 TITLE="`->` Introduction Recipe. `t.`">rcp-NDIMI2</A>&nbsp;<SPAN CLASS=r
 STYLE="color:#9F7600">234</SPAN></TD><TD><A NAME="2"></A>
 <SPAN CLASS=i>. . 3</SPAN>
-<SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN>( &top; &rarr; (( &top;
+<SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN>(&top; &rarr; ((&top;
 &rarr; <SPAN CLASS=wff>&#x1D711;</SPAN>) &rarr; <SPAN
 CLASS=wff>&#x1D711;</SPAN>))</SPAN></TD></TR>
 <TR ALIGN=LEFT><TD>3</TD><TD><A HREF="#2">2</A></TD><TD><A
 HREF="ndtruee-P3.18.html"
 TITLE="Natural Deduction: '`T.`' Elimination Rule. Rules 17 and 18 allow us to write '`( T....">ndtruee-P3.18</A>&nbsp;<SPAN
-CLASS=r STYLE="color:#B76700">193</SPAN></TD><TD><A NAME="3"></A>
+CLASS=r STYLE="color:#B86700">193</SPAN></TD><TD><A NAME="3"></A>
 <SPAN CLASS=i>. 2</SPAN>
-<SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN>(( &top; &rarr; <SPAN
+<SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN>((&top; &rarr; <SPAN
 CLASS=wff>&#x1D711;</SPAN>) &rarr; <SPAN
 CLASS=wff>&#x1D711;</SPAN>)</SPAN></TD></TR>
 <TR ALIGN=LEFT><TD>4</TD><TD>&nbsp;</TD><TD><A HREF="axL1-P3.21.CL.html"
@@ -128,14 +128,14 @@ TITLE="Closed Form of ~axL1-P3.21 (Axiom L1). `t.`">axL1-P3.21.CL</A>&nbsp;<SPAN
 CLASS=r STYLE="color:#8C7E00">263</SPAN></TD><TD><A NAME="4"></A>
 <SPAN CLASS=i>. 2</SPAN>
 <SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN>(<SPAN
-CLASS=wff>&#x1D711;</SPAN> &rarr; ( &top; &rarr; <SPAN
+CLASS=wff>&#x1D711;</SPAN> &rarr; (&top; &rarr; <SPAN
 CLASS=wff>&#x1D711;</SPAN>))</SPAN></TD></TR>
 <TR ALIGN=LEFT><TD>5</TD><TD><A HREF="#3">3</A>, <A HREF="#4">4</A></TD><TD><A
 HREF="rcp-NDBII0.html"
 TITLE="'`<->`' Introduction. `t.`">rcp-NDBII0</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#957B00">249</SPAN></TD><TD><A NAME="5"></A>
+STYLE="color:#967B00">249</SPAN></TD><TD><A NAME="5"></A>
 <SPAN CLASS=i>1</SPAN>
-<SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN>(( &top; &rarr; <SPAN
+<SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN>((&top; &rarr; <SPAN
 CLASS=wff>&#x1D711;</SPAN>) &harr; <SPAN
 CLASS=wff>&#x1D711;</SPAN>)</SPAN></TD></TR>
 </TABLE></CENTER>
@@ -149,7 +149,7 @@ STYLE="color:#CC33CC;font-style:normal">class</SPAN></FONT></TD></TR>
 &rarr; </SPAN><A HREF="wff-imp.html">wff-imp</A>&nbsp;<SPAN CLASS=r
 STYLE="color:#FA0200">10</SPAN> &nbsp;<SPAN CLASS=math> &harr; </SPAN><A
 HREF="wff-bi.html">wff-bi</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#E53A00">103</SPAN> &nbsp;<SPAN CLASS=math> &top; </SPAN><A
+STYLE="color:#E53A00">103</SPAN> &nbsp;<SPAN CLASS=math>&top;</SPAN><A
 HREF="wff-true.html">wff-true</A>&nbsp;<SPAN CLASS=r
 STYLE="color:#CA5900">163</SPAN></FONT></TD></TR>
 <TR><TD ALIGN=LEFT><FONT SIZE=-1><B>This theorem was proved from axioms:</B>
@@ -168,17 +168,17 @@ HREF="df-true-D2.4.html">df-true-D2.4</A>&nbsp;<SPAN CLASS=r
 STYLE="color:#C95A00">165</SPAN></FONT></TD></TR>
 <TR><TD ALIGN=LEFT><FONT SIZE=-1><B>This theorem is referenced by:</B> &nbsp;<A
 HREF="oroverim-P4.28-L1.html">oroverim-P4.28-L1</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#0A930E">471</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#0A930D">471</SPAN> &nbsp;<A
 HREF="truthtbltimt-P4.36a.html">truthtbltimt-P4.36a</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#009225">501</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#009224">501</SPAN> &nbsp;<A
 HREF="truthtbltimf-P4.36b.html">truthtbltimf-P4.36b</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#009226">502</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#009225">502</SPAN> &nbsp;<A
 HREF="solvesub-P6a.html">solvesub-P6a</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#0181EF">710</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#0181EE">710</SPAN> &nbsp;<A
 HREF="lemma-L6.02a.html">lemma-L6.02a</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#0B7DFF">732</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#097EFF">732</SPAN> &nbsp;<A
 HREF="psubnfr-P6.html">psubnfr-P6</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#5D71FF">790</SPAN></FONT></TD></TR>
+&nbsp;<SPAN CLASS=r STYLE="color:#5B71FF">790</SPAN></FONT></TD></TR>
 </TABLE></CENTER>
 <TABLE BORDER=0 WIDTH="100%">
 <TR><TD WIDTH="25%">&nbsp;</TD>

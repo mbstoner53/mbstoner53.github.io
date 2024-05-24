@@ -27,7 +27,7 @@ type="text/css"/>
   .term { color: green; } 
   .class { color: #CC33CC; } 
   .typecode { color: gray; } 
-  .math { font-family: XITSRegular; } 
+  .math { font-family: XITSMathRegular; } 
 -->
 </STYLE>
 <TITLE>ndnfrand-P7.4.RC - bfol.mm Proof Explorer</TITLE>
@@ -76,10 +76,10 @@ bfol.mm Proof Explorer
 <HR NOSHADE SIZE=1>
 <CENTER><B><FONT SIZE="+1">Theorem <FONT
 COLOR="#006633">ndnfrand-P7.4.RC</FONT></FONT></B>&nbsp;<SPAN CLASS=r
-STYLE="color:#A450FF">883</SPAN></CENTER>
+STYLE="color:#A351FF">883</SPAN></CENTER>
 <CENTER><TABLE><TR><TD ALIGN=LEFT><B>Description: </B>Inference Form of <A
 HREF="ndnfrand-P7.4.html">ndnfrand-P7.4</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#8066FF">835</SPAN>. <SPAN
+STYLE="color:#7F66FF">835</SPAN>. <SPAN
 CLASS=math>&dagger;</SPAN></TD></TR></TABLE></CENTER>
 
 <CENTER><TABLE BORDER CELLSPACING=0 BGCOLOR="#EEFFFA"
@@ -122,11 +122,10 @@ CLASS=objvar>&#x1D465;</SPAN><SPAN CLASS=wff>&#x1D711;</SPAN></SPAN></TD></TR>
 <TR ALIGN=LEFT><TD>2</TD><TD><A HREF="#1">1</A></TD><TD><A
 HREF="ndtruei-P3.17.html"
 TITLE="Natural Deduction: '`T.`' Introduction Rule. This can be used to turn an ordinary...">ndtruei-P3.17</A>&nbsp;<SPAN
-CLASS=r STYLE="color:#B86700">192</SPAN></TD><TD><A NAME="2"></A>
+CLASS=r STYLE="color:#B86600">192</SPAN></TD><TD><A NAME="2"></A>
 <SPAN CLASS=i>. . 3</SPAN>
-<SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN>( &top; &rarr;
-&#8498;<SPAN CLASS=objvar>&#x1D465;</SPAN><SPAN
-CLASS=wff>&#x1D711;</SPAN>)</SPAN></TD></TR>
+<SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN>(&top; &rarr; &#8498;<SPAN
+CLASS=objvar>&#x1D465;</SPAN><SPAN CLASS=wff>&#x1D711;</SPAN>)</SPAN></TD></TR>
 <TR ALIGN=LEFT><TD>3</TD><TD>&nbsp;</TD><TD>ndnfrand-P7.4.RC.2</TD><TD><A
 NAME="3"></A>
 <SPAN CLASS=i>. . . 4</SPAN>
@@ -135,23 +134,22 @@ CLASS=objvar>&#x1D465;</SPAN><SPAN CLASS=wff>&#x1D713;</SPAN></SPAN></TD></TR>
 <TR ALIGN=LEFT><TD>4</TD><TD><A HREF="#3">3</A></TD><TD><A
 HREF="ndtruei-P3.17.html"
 TITLE="Natural Deduction: '`T.`' Introduction Rule. This can be used to turn an ordinary...">ndtruei-P3.17</A>&nbsp;<SPAN
-CLASS=r STYLE="color:#B86700">192</SPAN></TD><TD><A NAME="4"></A>
+CLASS=r STYLE="color:#B86600">192</SPAN></TD><TD><A NAME="4"></A>
 <SPAN CLASS=i>. . 3</SPAN>
-<SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN>( &top; &rarr;
-&#8498;<SPAN CLASS=objvar>&#x1D465;</SPAN><SPAN
-CLASS=wff>&#x1D713;</SPAN>)</SPAN></TD></TR>
+<SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN>(&top; &rarr; &#8498;<SPAN
+CLASS=objvar>&#x1D465;</SPAN><SPAN CLASS=wff>&#x1D713;</SPAN>)</SPAN></TD></TR>
 <TR ALIGN=LEFT><TD>5</TD><TD><A HREF="#2">2</A>, <A HREF="#4">4</A></TD><TD><A
 HREF="ndnfrand-P7.4.html"
 TITLE="Natural Deduction: Effective Non-Freeness Rule 4. If '`x`' is (conditionally)...">ndnfrand-P7.4</A>&nbsp;<SPAN
-CLASS=r STYLE="color:#8066FF">835</SPAN></TD><TD><A NAME="5"></A>
+CLASS=r STYLE="color:#7F66FF">835</SPAN></TD><TD><A NAME="5"></A>
 <SPAN CLASS=i>. 2</SPAN>
-<SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN>( &top; &rarr;
-&#8498;<SPAN CLASS=objvar>&#x1D465;</SPAN>(<SPAN CLASS=wff>&#x1D711;</SPAN>
-&wedge; <SPAN CLASS=wff>&#x1D713;</SPAN>))</SPAN></TD></TR>
+<SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN>(&top; &rarr; &#8498;<SPAN
+CLASS=objvar>&#x1D465;</SPAN>(<SPAN CLASS=wff>&#x1D711;</SPAN> &wedge; <SPAN
+CLASS=wff>&#x1D713;</SPAN>))</SPAN></TD></TR>
 <TR ALIGN=LEFT><TD>6</TD><TD><A HREF="#5">5</A></TD><TD><A
 HREF="ndtruee-P3.18.html"
 TITLE="Natural Deduction: '`T.`' Elimination Rule. Rules 17 and 18 allow us to write '`( T....">ndtruee-P3.18</A>&nbsp;<SPAN
-CLASS=r STYLE="color:#B76700">193</SPAN></TD><TD><A NAME="6"></A>
+CLASS=r STYLE="color:#B86700">193</SPAN></TD><TD><A NAME="6"></A>
 <SPAN CLASS=i>1</SPAN>
 <SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN>&#8498;<SPAN
 CLASS=objvar>&#x1D465;</SPAN>(<SPAN CLASS=wff>&#x1D711;</SPAN> &wedge; <SPAN
@@ -165,11 +163,11 @@ STYLE="color:green;font-style:normal">term</SPAN> <SPAN CLASS=typecode
 STYLE="color:#CC33CC;font-style:normal">class</SPAN></FONT></TD></TR>
 <TR><TD ALIGN=LEFT><FONT SIZE=-1><B>Syntax hints:</B>  &nbsp;<SPAN CLASS=math>
 &wedge; </SPAN><A HREF="wff-and.html">wff-and</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#D84B00">133</SPAN> &nbsp;<SPAN CLASS=math> &top; </SPAN><A
+STYLE="color:#D84B00">133</SPAN> &nbsp;<SPAN CLASS=math>&top;</SPAN><A
 HREF="wff-true.html">wff-true</A>&nbsp;<SPAN CLASS=r
 STYLE="color:#CA5900">163</SPAN> &nbsp;<SPAN CLASS=math>&#8498;</SPAN><A
 HREF="wff-nfree.html">wff-nfree</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#0084DA">687</SPAN></FONT></TD></TR>
+STYLE="color:#0085D9">687</SPAN></FONT></TD></TR>
 <TR><TD ALIGN=LEFT><FONT SIZE=-1><B>This theorem was proved from axioms:</B>
 &nbsp;<A HREF="ax-L1.html">ax-L1</A>&nbsp;<SPAN CLASS=r
 STYLE="color:#FA0200">11</SPAN> &nbsp;<A HREF="ax-L2.html">ax-L2</A>&nbsp;<SPAN
@@ -190,26 +188,26 @@ STYLE="color:#CE5500">155</SPAN> &nbsp;<A
 HREF="df-true-D2.4.html">df-true-D2.4</A>&nbsp;<SPAN CLASS=r
 STYLE="color:#C95A00">165</SPAN> &nbsp;<A
 HREF="df-rcp-AND3.html">df-rcp-AND3</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#C55D00">171</SPAN> &nbsp;<A
+STYLE="color:#C55C00">171</SPAN> &nbsp;<A
 HREF="df-exists-D5.1.html">df-exists-D5.1</A>&nbsp;<SPAN CLASS=r
 STYLE="color:#008F7B">602</SPAN> &nbsp;<A
 HREF="df-nfree-D6.1.html">df-nfree-D6.1</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#0084DB">688</SPAN></FONT></TD></TR>
+STYLE="color:#0084DA">688</SPAN></FONT></TD></TR>
 <TR><TD ALIGN=LEFT><FONT SIZE=-1><B>This theorem is referenced by:</B> &nbsp;<A
 HREF="allnegex-P7-L1.html">allnegex-P7-L1</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#C924F9">962</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#C826FA">962</SPAN> &nbsp;<A
 HREF="allic-P7.html">allic-P7</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#D50EE9">1013</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#D50FEA">1013</SPAN> &nbsp;<A
 HREF="exnegallint-P7.html">exnegallint-P7</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#DE00D9">1053</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#DD00DB">1053</SPAN> &nbsp;<A
 HREF="qimeqex-P7-L1.html">qimeqex-P7-L1</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#E000D0">1060</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#DF00D3">1060</SPAN> &nbsp;<A
 HREF="qimeqex-P7-L2.html">qimeqex-P7-L2</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#E000CF">1061</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#DF00D1">1061</SPAN> &nbsp;<A
 HREF="nfradd-P8.html">nfradd-P8</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#EE0089">1124</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#EE0089">1126</SPAN> &nbsp;<A
 HREF="nfrmult-P8.html">nfrmult-P8</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#EE0088">1125</SPAN></FONT></TD></TR>
+&nbsp;<SPAN CLASS=r STYLE="color:#EE0088">1127</SPAN></FONT></TD></TR>
 </TABLE></CENTER>
 <TABLE BORDER=0 WIDTH="100%">
 <TR><TD WIDTH="25%">&nbsp;</TD>

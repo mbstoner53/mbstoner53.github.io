@@ -2438,11 +2438,11 @@ $(
 
   '`( [ t_w / x ] a = y <-> a = y )`', and
 
-  from ~psubconst-P6 we have ...
+  from ~psubzero-P6 we have ...
 
   '`( [ t_w / x ] a = 0 <-> a = 0 )`'.
 
-  Since we expenct '`( x )`*` := t_w`', '`( y )`*` := y`', and
+  Since we expect '`( x )`*` := t_w`', '`( y )`*` := y`', and
   '`( 0 )`*` := 0`', in all three cases the equivalency is exactly as desired.
   Now consider a term '`t_t`' (not containing '`x`') of length 'n', where for
   every term '`t_s`' (not containing '`x`') of length less than 'n'...
@@ -2915,7 +2915,7 @@ ${
     $( Proper Substitution Applied to Atomic Term (constant).
 
     '`a`' is distinct from all other variables. $)
-    psubconst-P6 $p |- ( [ t_t / x ] a = 0 <-> a = 0 ) $=
+    psubzero-P6 $p |- ( [ t_t / x ] a = 0 <-> a = 0 ) $=
         ( term-obj term_zero wff-equals psubnfr-P6.VR ) CDEFABG
     $.
 $}

@@ -27,10 +27,10 @@ type="text/css"/>
   .term { color: green; } 
   .class { color: #CC33CC; } 
   .typecode { color: gray; } 
-  .math { font-family: XITSRegular; } 
+  .math { font-family: XITSMathRegular; } 
 -->
 </STYLE>
-<TITLE>psubconst-P6 - bfol.mm Proof Explorer</TITLE>
+<TITLE>nfrvar-P8 - bfol.mm Proof Explorer</TITLE>
 <LINK REL="shortcut icon" HREF="favicon.ico" TYPE="image/x-icon">
 </HEAD>
 <BODY BGCOLOR="#FFFFFF">
@@ -48,11 +48,11 @@ bfol.mm Proof Explorer
       </B></FONT></TD>
     <TD ALIGN=RIGHT VALIGN=TOP WIDTH="25%">
       <FONT SIZE=-1 FACE=sans-serif>
-      <A HREF="psubvar2-P6.html">
+      <A HREF="nfrzero-P8.html">
       &lt; Previous</A>&nbsp;&nbsp;
-      <A HREF="psubsuccv-P6-L1.html">Next &gt;</A>
+      <A HREF="nfrsucc-P8.html">Next &gt;</A>
       </FONT><FONT FACE=sans-serif SIZE=-2>
-      <BR><A HREF="mmtheorems9.html#psubconst-P6">Nearby theorems</A>
+      <BR><A HREF="mmtheorems12.html#nfrvar-P8">Nearby theorems</A>
       </FONT>
     </TD>
   </TR>
@@ -63,7 +63,7 @@ bfol.mm Proof Explorer
       &nbsp;<A HREF="../index.html">Home</A>&nbsp; &gt;
       &nbsp;<A HREF="mmset.html">PE Home</A>&nbsp; &gt;
       &nbsp;<A HREF="mmtheorems.html">Th. List</A>&nbsp; &gt;
-      &nbsp;psubconst-P6
+      &nbsp;nfrvar-P8
       </FONT>
     </TD>
     <TD COLSPAN=2 ALIGN=RIGHT VALIGN=TOP>
@@ -75,46 +75,73 @@ bfol.mm Proof Explorer
 </TABLE>
 <HR NOSHADE SIZE=1>
 <CENTER><B><FONT SIZE="+1">Theorem <FONT
-COLOR="#006633">psubconst-P6</FONT></FONT></B>&nbsp;<SPAN CLASS=r
-STYLE="color:#6F6CFF">810</SPAN></CENTER>
-<CENTER><TABLE><TR><TD ALIGN=LEFT><B>Description: </B>Proper Substitution
-Applied to Atomic Term (constant).
-<P STYLE="margin-bottom:0em">
-    '<SPAN CLASS=math><SPAN CLASS=objvar>&#x1D44E;</SPAN></SPAN>' is distinct
-from all other variables.</TD></TR></TABLE></CENTER>
+COLOR="#006633">nfrvar-P8</FONT></FONT></B>&nbsp;<SPAN CLASS=r
+STYLE="color:#ED008B">1124</SPAN></CENTER>
+<CENTER><TABLE><TR><TD ALIGN=LEFT><B>Description: </B>Any variable '<SPAN
+CLASS=math><SPAN CLASS=objvar>&#x1D465;</SPAN></SPAN>' is ENF in term
+consisting of some variable, '<SPAN CLASS=math><SPAN
+CLASS=objvar>&#x1D466;</SPAN></SPAN>',
+       that is different from '<SPAN CLASS=math><SPAN
+CLASS=objvar>&#x1D465;</SPAN></SPAN>'. <SPAN
+CLASS=math>&dagger;</SPAN></TD></TR></TABLE></CENTER>
 
 <CENTER><TABLE BORDER CELLSPACING=0 BGCOLOR="#EEFFFA"
 SUMMARY="Assertion">
 <CAPTION><B>Assertion</B></CAPTION>
 <TR><TH>Ref
 </TH><TH>Expression</TH></TR>
-<TR ALIGN=LEFT><TD><FONT COLOR="#006633"><B>psubconst-P6</B></FONT></TD><TD>
-<SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN>([<SPAN
-CLASS=term>&#x1D461;</SPAN> / <SPAN CLASS=objvar>&#x1D465;</SPAN>]<SPAN
-CLASS=objvar>&#x1D44E;</SPAN> = 0 &harr; <SPAN CLASS=objvar>&#x1D44E;</SPAN> =
-0)</SPAN></TD></TR>
+<TR ALIGN=LEFT><TD><FONT COLOR="#006633"><B>nfrvar-P8</B></FONT></TD><TD>
+<SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN>&#8498;<sub>t</sub><SPAN
+CLASS=objvar>&#x1D465;</SPAN> <SPAN
+CLASS=objvar>&#x1D466;</SPAN></SPAN></TD></TR>
 </TABLE></CENTER>
 
 
-<CENTER><A HREF="mmset.html#distinct">Distinct variable</A> groups: <SPAN
-CLASS=math> &nbsp; <SPAN CLASS=term>&#x1D461;</SPAN>,<SPAN
-CLASS=objvar>&#x1D44E;</SPAN> &nbsp; <SPAN CLASS=objvar>&#x1D465;</SPAN>,<SPAN
-CLASS=objvar>&#x1D44E;</SPAN></SPAN></CENTER>
+<CENTER><A HREF="mmset.html#distinct">Distinct variable</A> group: <SPAN
+CLASS=math> &nbsp; <SPAN CLASS=objvar>&#x1D465;</SPAN>,<SPAN
+CLASS=objvar>&#x1D466;</SPAN></SPAN></CENTER>
 <HR NOSHADE SIZE=1>
+<CENTER><B>Proof of Theorem <FONT
+   COLOR="#006633">nfrvar-P8</FONT></B></CENTER>
+<CENTER><A HREF="mmset.html#dvnote1">Dummy variable</A> <SPAN CLASS=math> <SPAN
+CLASS=objvar>&#x1D467;</SPAN></SPAN> is distinct from all other
+variables.</CENTER>
 <CENTER><TABLE BORDER CELLSPACING=0 BGCOLOR="#EEFFFA"
 SUMMARY="Proof of theorem">
-<CAPTION><B>Proof of Theorem <FONT
-   COLOR="#006633">psubconst-P6</FONT></B></CAPTION>
 <TR><TH>Step</TH><TH>Hyp</TH><TH>Ref
 </TH><TH>Expression</TH></TR>
-<TR ALIGN=LEFT><TD>1</TD><TD>&nbsp;</TD><TD><A HREF="psubnfr-P6.VR.html"
-TITLE="Variable Restricted Form of ~psubnfr-P6 . '`x`' cannot occur in '`w_ph`'.">psubnfr-P6.VR</A>&nbsp;<SPAN
-CLASS=r STYLE="color:#5E71FF">791</SPAN></TD><TD><A NAME="1"></A>
+<TR ALIGN=LEFT><TD>1</TD><TD>&nbsp;</TD><TD><A HREF="ndnfrv-P7.1.html"
+TITLE="Natural Deduction: Effective Non-Freeness Rule 1. If '`x`' does not occur in...">ndnfrv-P7.1</A>&nbsp;<SPAN
+CLASS=r STYLE="color:#7D67FF">832</SPAN></TD><TD><A NAME="1"></A>
+<SPAN CLASS=i>. . 3</SPAN>
+<SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN>&#8498;<SPAN
+CLASS=objvar>&#x1D465;</SPAN> <SPAN CLASS=objvar>&#x1D467;</SPAN> = <SPAN
+CLASS=objvar>&#x1D466;</SPAN></SPAN></TD></TR>
+<TR ALIGN=LEFT><TD>2</TD><TD><A HREF="#1">1</A></TD><TD><A HREF="axGEN-P7.html"
+TITLE="Generalization Rule ( ~ax-GEN ), Derived from Natural Deduction Rules. `t.`">axGEN-P7</A>&nbsp;<SPAN
+CLASS=r STYLE="color:#BD33FD">939</SPAN></TD><TD><A NAME="2"></A>
+<SPAN CLASS=i>. 2</SPAN>
+<SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN>&forall;<SPAN
+CLASS=objvar>&#x1D467;</SPAN>&#8498;<SPAN CLASS=objvar>&#x1D465;</SPAN> <SPAN
+CLASS=objvar>&#x1D467;</SPAN> = <SPAN
+CLASS=objvar>&#x1D466;</SPAN></SPAN></TD></TR>
+<TR ALIGN=LEFT><TD>3</TD><TD>&nbsp;</TD><TD><A HREF="df-nfreet-D8.1.html"
+TITLE="Definition of Effictive Non-Freeness in a Term, '`F/t x` `t_t`'. '`y`' is distinct...">df-nfreet-D8.1</A>&nbsp;<SPAN
+CLASS=r STYLE="color:#ED008D">1122</SPAN></TD><TD><A NAME="3"></A>
+<SPAN CLASS=i>. 2</SPAN>
+<SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN>(&#8498;<sub>t</sub><SPAN
+CLASS=objvar>&#x1D465;</SPAN> <SPAN CLASS=objvar>&#x1D466;</SPAN> &harr;
+&forall;<SPAN CLASS=objvar>&#x1D467;</SPAN>&#8498;<SPAN
+CLASS=objvar>&#x1D465;</SPAN> <SPAN CLASS=objvar>&#x1D467;</SPAN> = <SPAN
+CLASS=objvar>&#x1D466;</SPAN>)</SPAN></TD></TR>
+<TR ALIGN=LEFT><TD>4</TD><TD><A HREF="#2">2</A>, <A HREF="#3">3</A></TD><TD><A
+HREF="bimpr-P4.RC.html"
+TITLE="Inference Form of ~bimpr-P4 . `t.`">bimpr-P4.RC</A>&nbsp;<SPAN CLASS=r
+STYLE="color:#009148">540</SPAN></TD><TD><A NAME="4"></A>
 <SPAN CLASS=i>1</SPAN>
-<SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN>([<SPAN
-CLASS=term>&#x1D461;</SPAN> / <SPAN CLASS=objvar>&#x1D465;</SPAN>]<SPAN
-CLASS=objvar>&#x1D44E;</SPAN> = 0 &harr; <SPAN CLASS=objvar>&#x1D44E;</SPAN> =
-0)</SPAN></TD></TR>
+<SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN>&#8498;<sub>t</sub><SPAN
+CLASS=objvar>&#x1D465;</SPAN> <SPAN
+CLASS=objvar>&#x1D466;</SPAN></SPAN></TD></TR>
 </TABLE></CENTER>
 <CENTER><TABLE CELLSPACING=5><TR><TD ALIGN=LEFT><FONT SIZE=-1><B>Colors of
 variables:</B>  <SPAN CLASS=typecode
@@ -124,15 +151,16 @@ STYLE="color:green;font-style:normal">term</SPAN> <SPAN CLASS=typecode
 STYLE="color:#CC33CC;font-style:normal">class</SPAN></FONT></TD></TR>
 <TR><TD ALIGN=LEFT><FONT SIZE=-1><B>Syntax hints:</B>  &nbsp;<A
 HREF="term-obj.html">term-obj</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#FB0000">1</SPAN> &nbsp;<SPAN CLASS=math>0</SPAN><A
-HREF="term_zero.html">term_zero</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#FA0000">2</SPAN> &nbsp;<SPAN CLASS=math> = </SPAN><A
+STYLE="color:#FB0000">1</SPAN> &nbsp;<SPAN CLASS=math> = </SPAN><A
 HREF="wff-equals.html">wff-equals</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#FA0100">6</SPAN> &nbsp;<SPAN CLASS=math> &harr; </SPAN><A
-HREF="wff-bi.html">wff-bi</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#E53A00">103</SPAN> &nbsp;<SPAN CLASS=math>[</SPAN><A
-HREF="wff-psub.html">wff-psub</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#0280F8">720</SPAN></FONT></TD></TR>
+STYLE="color:#FA0100">6</SPAN> &nbsp;<SPAN CLASS=math>&forall;</SPAN><A
+HREF="wff-forall.html">wff-forall</A>&nbsp;<SPAN CLASS=r
+STYLE="color:#FA0200">8</SPAN> &nbsp;<SPAN CLASS=math>&#8498;</SPAN><A
+HREF="wff-nfree.html">wff-nfree</A>&nbsp;<SPAN CLASS=r
+STYLE="color:#0085D9">687</SPAN> &nbsp;<SPAN
+CLASS=math>&#8498;<sub>t</sub></SPAN><A
+HREF="wff-nfreet.html">wff-nfreet</A>&nbsp;<SPAN CLASS=r
+STYLE="color:#ED008F">1120</SPAN></FONT></TD></TR>
 <TR><TD ALIGN=LEFT><FONT SIZE=-1><B>This theorem was proved from axioms:</B>
 &nbsp;<A HREF="ax-L1.html">ax-L1</A>&nbsp;<SPAN CLASS=r
 STYLE="color:#FA0200">11</SPAN> &nbsp;<A HREF="ax-L2.html">ax-L2</A>&nbsp;<SPAN
@@ -147,6 +175,10 @@ HREF="ax-L5.html">ax-L5</A>&nbsp;<SPAN CLASS=r STYLE="color:#F90400">17</SPAN>
 &nbsp;<A HREF="ax-L6.html">ax-L6</A>&nbsp;<SPAN CLASS=r
 STYLE="color:#F90500">18</SPAN> &nbsp;<A HREF="ax-L7.html">ax-L7</A>&nbsp;<SPAN
 CLASS=r STYLE="color:#F90500">19</SPAN> &nbsp;<A
+HREF="ax-L10.html">ax-L10</A>&nbsp;<SPAN CLASS=r
+STYLE="color:#F80700">27</SPAN> &nbsp;<A
+HREF="ax-L11.html">ax-L11</A>&nbsp;<SPAN CLASS=r
+STYLE="color:#F80800">28</SPAN> &nbsp;<A
 HREF="ax-L12.html">ax-L12</A>&nbsp;<SPAN CLASS=r
 STYLE="color:#F80800">29</SPAN></FONT></TD></TR>
 <TR><TD ALIGN=LEFT><FONT SIZE=-1><B>This theorem depends on definitions:</B>
@@ -159,13 +191,15 @@ STYLE="color:#CE5500">155</SPAN> &nbsp;<A
 HREF="df-true-D2.4.html">df-true-D2.4</A>&nbsp;<SPAN CLASS=r
 STYLE="color:#C95A00">165</SPAN> &nbsp;<A
 HREF="df-rcp-AND3.html">df-rcp-AND3</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#C55D00">171</SPAN> &nbsp;<A
+STYLE="color:#C55C00">171</SPAN> &nbsp;<A
 HREF="df-exists-D5.1.html">df-exists-D5.1</A>&nbsp;<SPAN CLASS=r
 STYLE="color:#008F7B">602</SPAN> &nbsp;<A
 HREF="df-nfree-D6.1.html">df-nfree-D6.1</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#0084DB">688</SPAN> &nbsp;<A
+STYLE="color:#0084DA">688</SPAN> &nbsp;<A
 HREF="df-psub-D6.2.html">df-psub-D6.2</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#027FFA">722</SPAN></FONT></TD></TR>
+STYLE="color:#027FF9">722</SPAN> &nbsp;<A
+HREF="df-nfreet-D8.1.html">df-nfreet-D8.1</A>&nbsp;<SPAN CLASS=r
+STYLE="color:#ED008D">1122</SPAN></FONT></TD></TR>
 <TR><TD ALIGN=LEFT><FONT SIZE=-1><B>This theorem is referenced by:</B>
 (None)</FONT></TD></TR>
 </TABLE></CENTER>

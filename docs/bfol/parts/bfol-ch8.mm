@@ -458,12 +458,12 @@ $}
 $( ------------------------------------------------------------------------- $)
 
 ${
-    nfrnegc-P8.1 $e |- ( w_ga -> F/ x -. w_ph ) $.
+    nfrnegconv-P8.1 $e |- ( w_ga -> F/ x -. w_ph ) $.
 
     $( Converse of ~ndnfrneg-P7.2 .
 
        This statement is not deducible with intuitionist logic. $)
-    nfrnegc-P8 $p |- ( w_ga -> F/ x w_ph ) $=
+    nfrnegconv-P8 $p |- ( w_ga -> F/ x w_ph ) $=
         ( wff-neg wff-nfree wff-exists wff-forall wff-imp exnegall-P7
           rcp-NDBIER0 rcp-NDIMP0addall dfnfreealtonlyif-P7 allnegex-P7
           rcp-NDBIEF0 dsyl-P3.25 trnsp-P3.31d dfnfreealtif-P7 dsyl-P3.25.RC )
@@ -473,34 +473,34 @@ ${
 $}
 
 ${
-    nfrnegc-P8.RC.1 $e |- F/ x -. w_ph $.
+    nfrnegconv-P8.RC.1 $e |- F/ x -. w_ph $.
 
-    $( Inference Form of ~nfrnegc-P8 .
+    $( Inference Form of ~nfrnegconv-P8 .
 
        This statement is not deducible with intuitionist logic. $)
-    nfrnegc-P8.RC $p |- F/ x w_ph $=
-        ( wff-nfree wff-true wff-neg ndtruei-P3.17 nfrnegc-P8
+    nfrnegconv-P8.RC $p |- F/ x w_ph $=
+        ( wff-nfree wff-true wff-neg ndtruei-P3.17 nfrnegconv-P8
           ndtruee-P3.18 )
     ABDAEBAFBDCGHI $.
 $}
 
 ${
-    $( Closed Form of ~nfrnegc-P8 .
+    $( Closed Form of ~nfrnegconv-P8 .
 
        This statement is not deducible with intuitionist logic. $)
-    nfrnegc-P8.CL $p |- ( F/ x -. w_ph -> F/ x w_ph ) $=
-        ( wff-neg wff-nfree rcp-NDASM1of1 nfrnegc-P8 ) AACBDZBGEF
+    nfrnegconv-P8.CL $p |- ( F/ x -. w_ph -> F/ x w_ph ) $=
+        ( wff-neg wff-nfree rcp-NDASM1of1 nfrnegconv-P8 ) AACBDZBGEF
     $.
 $}
 
 $( ------------------------------------------------------------------------- $)
 
 ${
-    $( Biconditional Combining ~ndnfrneg-P7.2 and ~nfrnegc-P8 .
+    $( Biconditional Combining ~ndnfrneg-P7.2 and ~nfrnegconv-P8 .
 
        This statement is not deducible with intuitionist logic. $)
     nfrnegbi-P8 $p |- ( F/ x -. w_ph <-> F/ x w_ph ) $=
-        ( wff-neg wff-nfree nfrnegc-P8.CL ndnfrneg-P7.2.CL rcp-NDBII0 )
+        ( wff-neg wff-nfree nfrnegconv-P8.CL ndnfrneg-P7.2.CL rcp-NDBII0 )
         ACBDABDABEABFG
     $.
 $}
@@ -519,7 +519,7 @@ $)
 
 ${
     $( Extend WFF definition to include the effective non-freeness in a term
-       predicate '`F/t`'. $)
+       predicate '`F/t x`. $)
     wff-nfreet $a wff F/t x t_t $.
 $}
 
@@ -555,7 +555,7 @@ ${
     $d t_t y $.
     $d x y $.
 
-    $( Definition of Effictive Non-Freeness in a Term, '`F/t x t_t`'. 
+    $( Definition of Effictive Non-Freeness in a Term, '`F/t x` `t_t`'.
 
        '`y`' is distinct from all other variables. $)
     df-nfreet-D8.1 $a |- ( F/t x t_t <-> A. y F/ x y = t_t ) $.
@@ -563,7 +563,38 @@ $}
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
-  Effective Non-Freeness Over Functions.
+  Effective Non-Freeness Over Atomic Terms.
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+$)
+
+${
+    $d x y $.
+
+    $( Any variable '`x`' is ENF in a constant term. `t.` $)
+    nfrzero-P8 $p |- F/t x 0 $=
+        ( term_zero wff-nfreet objvar-y term-obj wff-equals wff-nfree
+          wff-forall ndnfrv-P7.1 axGEN-P7 df-nfreet-D8.1 bimpr-P4.RC )
+        BZACDEMFZAGZDHODNAIJMADKL
+    $.
+$}
+
+$( ------------------------------------------------------------------------- $)
+
+${
+    $d x y z $.
+
+    $( Any variable '`x`' is ENF in term consisting of some variable, '`y`',
+       that is different from '`x`'. `t.` $)
+    nfrvar-P8 $p |- F/t x y $=
+        ( term-obj wff-nfreet objvar-z wff-equals wff-nfree wff-forall
+          ndnfrv-P7.1 axGEN-P7 df-nfreet-D8.1 bimpr-P4.RC )
+        BCZADECMFZAGZEHOENAIJMAEKL
+    $.
+$}
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+  Effective Non-Freeness Over Functional Terms.
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 $)
 

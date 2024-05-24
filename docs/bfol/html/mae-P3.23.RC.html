@@ -27,7 +27,7 @@ type="text/css"/>
   .term { color: green; } 
   .class { color: #CC33CC; } 
   .typecode { color: gray; } 
-  .math { font-family: XITSRegular; } 
+  .math { font-family: XITSMathRegular; } 
 -->
 </STYLE>
 <TITLE>mae-P3.23.RC - bfol.mm Proof Explorer</TITLE>
@@ -79,7 +79,7 @@ COLOR="#006633">mae-P3.23.RC</FONT></FONT></B>&nbsp;<SPAN CLASS=r
 STYLE="color:#897F00">268</SPAN></CENTER>
 <CENTER><TABLE><TR><TD ALIGN=LEFT><B>Description: </B>Inference Form of <A
 HREF="mae-P3.23.html">mae-P3.23</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#897F00">267</SPAN>. <SPAN
+STYLE="color:#8A7F00">267</SPAN>. <SPAN
 CLASS=math>&dagger;</SPAN></TD></TR></TABLE></CENTER>
 
 <CENTER><TABLE BORDER CELLSPACING=0 BGCOLOR="#EEFFFA"
@@ -123,9 +123,9 @@ CLASS=wff>&#x1D711;</SPAN> &rarr; (<SPAN CLASS=wff>&#x1D713;</SPAN> &rarr;
 <TR ALIGN=LEFT><TD>2</TD><TD><A HREF="#1">1</A></TD><TD><A
 HREF="ndtruei-P3.17.html"
 TITLE="Natural Deduction: '`T.`' Introduction Rule. This can be used to turn an ordinary...">ndtruei-P3.17</A>&nbsp;<SPAN
-CLASS=r STYLE="color:#B86700">192</SPAN></TD><TD><A NAME="2"></A>
+CLASS=r STYLE="color:#B86600">192</SPAN></TD><TD><A NAME="2"></A>
 <SPAN CLASS=i>. . 3</SPAN>
-<SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN>( &top; &rarr; (<SPAN
+<SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN>(&top; &rarr; (<SPAN
 CLASS=wff>&#x1D711;</SPAN> &rarr; (<SPAN CLASS=wff>&#x1D713;</SPAN> &rarr;
 <SPAN CLASS=wff>&#x1D712;</SPAN>)))</SPAN></TD></TR>
 <TR ALIGN=LEFT><TD>3</TD><TD>&nbsp;</TD><TD>mae-P3.23.RC.2</TD><TD><A
@@ -136,22 +136,22 @@ CLASS=wff>&#x1D713;</SPAN></SPAN></TD></TR>
 <TR ALIGN=LEFT><TD>4</TD><TD><A HREF="#3">3</A></TD><TD><A
 HREF="ndtruei-P3.17.html"
 TITLE="Natural Deduction: '`T.`' Introduction Rule. This can be used to turn an ordinary...">ndtruei-P3.17</A>&nbsp;<SPAN
-CLASS=r STYLE="color:#B86700">192</SPAN></TD><TD><A NAME="4"></A>
+CLASS=r STYLE="color:#B86600">192</SPAN></TD><TD><A NAME="4"></A>
 <SPAN CLASS=i>. . 3</SPAN>
-<SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN>( &top; &rarr; <SPAN
+<SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN>(&top; &rarr; <SPAN
 CLASS=wff>&#x1D713;</SPAN>)</SPAN></TD></TR>
 <TR ALIGN=LEFT><TD>5</TD><TD><A HREF="#2">2</A>, <A HREF="#4">4</A></TD><TD><A
 HREF="mae-P3.23.html"
 TITLE="Middle Antecedent Elimination. `t.`">mae-P3.23</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#897F00">267</SPAN></TD><TD><A NAME="5"></A>
+STYLE="color:#8A7F00">267</SPAN></TD><TD><A NAME="5"></A>
 <SPAN CLASS=i>. 2</SPAN>
-<SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN>( &top; &rarr; (<SPAN
+<SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN>(&top; &rarr; (<SPAN
 CLASS=wff>&#x1D711;</SPAN> &rarr; <SPAN
 CLASS=wff>&#x1D712;</SPAN>))</SPAN></TD></TR>
 <TR ALIGN=LEFT><TD>6</TD><TD><A HREF="#5">5</A></TD><TD><A
 HREF="ndtruee-P3.18.html"
 TITLE="Natural Deduction: '`T.`' Elimination Rule. Rules 17 and 18 allow us to write '`( T....">ndtruee-P3.18</A>&nbsp;<SPAN
-CLASS=r STYLE="color:#B76700">193</SPAN></TD><TD><A NAME="6"></A>
+CLASS=r STYLE="color:#B86700">193</SPAN></TD><TD><A NAME="6"></A>
 <SPAN CLASS=i>1</SPAN>
 <SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN>(<SPAN
 CLASS=wff>&#x1D711;</SPAN> &rarr; <SPAN
@@ -165,7 +165,7 @@ STYLE="color:green;font-style:normal">term</SPAN> <SPAN CLASS=typecode
 STYLE="color:#CC33CC;font-style:normal">class</SPAN></FONT></TD></TR>
 <TR><TD ALIGN=LEFT><FONT SIZE=-1><B>Syntax hints:</B>  &nbsp;<SPAN CLASS=math>
 &rarr; </SPAN><A HREF="wff-imp.html">wff-imp</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#FA0200">10</SPAN> &nbsp;<SPAN CLASS=math> &top; </SPAN><A
+STYLE="color:#FA0200">10</SPAN> &nbsp;<SPAN CLASS=math>&top;</SPAN><A
 HREF="wff-true.html">wff-true</A>&nbsp;<SPAN CLASS=r
 STYLE="color:#CA5900">163</SPAN></FONT></TD></TR>
 <TR><TD ALIGN=LEFT><FONT SIZE=-1><B>This theorem was proved from axioms:</B>
@@ -184,15 +184,15 @@ HREF="df-true-D2.4.html">df-true-D2.4</A>&nbsp;<SPAN CLASS=r
 STYLE="color:#C95A00">165</SPAN></FONT></TD></TR>
 <TR><TD ALIGN=LEFT><FONT SIZE=-1><B>This theorem is referenced by:</B> &nbsp;<A
 HREF="lemma-L5.02a.html">lemma-L5.02a</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#0089B5">659</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#0089B3">659</SPAN> &nbsp;<A
 HREF="exipsub-P6.html">exipsub-P6</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#027FFE">726</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#027FFD">726</SPAN> &nbsp;<A
 HREF="lemma-L6.04a.html">lemma-L6.04a</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#3279FF">755</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#3079FF">755</SPAN> &nbsp;<A
 HREF="dfpsubv-P7.html">dfpsubv-P7</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#CF1AF4">983</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#CE1BF4">983</SPAN> &nbsp;<A
 HREF="example-E7.1b.html">example-E7.1b</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#E600B6">1081</SPAN></FONT></TD></TR>
+&nbsp;<SPAN CLASS=r STYLE="color:#E500B9">1081</SPAN></FONT></TD></TR>
 </TABLE></CENTER>
 <TABLE BORDER=0 WIDTH="100%">
 <TR><TD WIDTH="25%">&nbsp;</TD>

@@ -27,10 +27,10 @@ type="text/css"/>
   .term { color: green; } 
   .class { color: #CC33CC; } 
   .typecode { color: gray; } 
-  .math { font-family: XITSRegular; } 
+  .math { font-family: XITSMathRegular; } 
 -->
 </STYLE>
-<TITLE>nfrnegc-P8.CL - bfol.mm Proof Explorer</TITLE>
+<TITLE>psubzero-P6 - bfol.mm Proof Explorer</TITLE>
 <LINK REL="shortcut icon" HREF="favicon.ico" TYPE="image/x-icon">
 </HEAD>
 <BODY BGCOLOR="#FFFFFF">
@@ -48,11 +48,11 @@ bfol.mm Proof Explorer
       </B></FONT></TD>
     <TD ALIGN=RIGHT VALIGN=TOP WIDTH="25%">
       <FONT SIZE=-1 FACE=sans-serif>
-      <A HREF="nfrnegc-P8.RC.html">
+      <A HREF="psubvar2-P6.html">
       &lt; Previous</A>&nbsp;&nbsp;
-      <A HREF="nfrnegbi-P8.html">Next &gt;</A>
+      <A HREF="psubsuccv-P6-L1.html">Next &gt;</A>
       </FONT><FONT FACE=sans-serif SIZE=-2>
-      <BR><A HREF="mmtheorems12.html#nfrnegc-P8.CL">Nearby theorems</A>
+      <BR><A HREF="mmtheorems9.html#psubzero-P6">Nearby theorems</A>
       </FONT>
     </TD>
   </TR>
@@ -63,7 +63,7 @@ bfol.mm Proof Explorer
       &nbsp;<A HREF="../index.html">Home</A>&nbsp; &gt;
       &nbsp;<A HREF="mmset.html">PE Home</A>&nbsp; &gt;
       &nbsp;<A HREF="mmtheorems.html">Th. List</A>&nbsp; &gt;
-      &nbsp;nfrnegc-P8.CL
+      &nbsp;psubzero-P6
       </FONT>
     </TD>
     <TD COLSPAN=2 ALIGN=RIGHT VALIGN=TOP>
@@ -75,52 +75,46 @@ bfol.mm Proof Explorer
 </TABLE>
 <HR NOSHADE SIZE=1>
 <CENTER><B><FONT SIZE="+1">Theorem <FONT
-COLOR="#006633">nfrnegc-P8.CL</FONT></FONT></B>&nbsp;<SPAN CLASS=r
-STYLE="color:#ED008F">1118</SPAN></CENTER>
-<CENTER><TABLE><TR><TD ALIGN=LEFT><B>Description: </B>Closed Form of <A
-HREF="nfrnegc-P8.html">nfrnegc-P8</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#EC0091">1116</SPAN>.
+COLOR="#006633">psubzero-P6</FONT></FONT></B>&nbsp;<SPAN CLASS=r
+STYLE="color:#6E6CFF">810</SPAN></CENTER>
+<CENTER><TABLE><TR><TD ALIGN=LEFT><B>Description: </B>Proper Substitution
+Applied to Atomic Term (constant).
 <P STYLE="margin-bottom:0em">
-       This statement is not deducible with intuitionist
-logic.</TD></TR></TABLE></CENTER>
+    '<SPAN CLASS=math><SPAN CLASS=objvar>&#x1D44E;</SPAN></SPAN>' is distinct
+from all other variables.</TD></TR></TABLE></CENTER>
 
 <CENTER><TABLE BORDER CELLSPACING=0 BGCOLOR="#EEFFFA"
 SUMMARY="Assertion">
 <CAPTION><B>Assertion</B></CAPTION>
 <TR><TH>Ref
 </TH><TH>Expression</TH></TR>
-<TR ALIGN=LEFT><TD><FONT COLOR="#006633"><B>nfrnegc-P8.CL</B></FONT></TD><TD>
-<SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN>(&#8498;<SPAN
-CLASS=objvar>&#x1D465;</SPAN> &not; <SPAN CLASS=wff>&#x1D711;</SPAN> &rarr;
-&#8498;<SPAN CLASS=objvar>&#x1D465;</SPAN><SPAN
-CLASS=wff>&#x1D711;</SPAN>)</SPAN></TD></TR>
+<TR ALIGN=LEFT><TD><FONT COLOR="#006633"><B>psubzero-P6</B></FONT></TD><TD>
+<SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN>([<SPAN
+CLASS=term>&#x1D461;</SPAN> / <SPAN CLASS=objvar>&#x1D465;</SPAN>]<SPAN
+CLASS=objvar>&#x1D44E;</SPAN> = 0 &harr; <SPAN CLASS=objvar>&#x1D44E;</SPAN> =
+0)</SPAN></TD></TR>
 </TABLE></CENTER>
 
 
+<CENTER><A HREF="mmset.html#distinct">Distinct variable</A> groups: <SPAN
+CLASS=math> &nbsp; <SPAN CLASS=term>&#x1D461;</SPAN>,<SPAN
+CLASS=objvar>&#x1D44E;</SPAN> &nbsp; <SPAN CLASS=objvar>&#x1D465;</SPAN>,<SPAN
+CLASS=objvar>&#x1D44E;</SPAN></SPAN></CENTER>
 <HR NOSHADE SIZE=1>
 <CENTER><TABLE BORDER CELLSPACING=0 BGCOLOR="#EEFFFA"
 SUMMARY="Proof of theorem">
 <CAPTION><B>Proof of Theorem <FONT
-   COLOR="#006633">nfrnegc-P8.CL</FONT></B></CAPTION>
+   COLOR="#006633">psubzero-P6</FONT></B></CAPTION>
 <TR><TH>Step</TH><TH>Hyp</TH><TH>Ref
 </TH><TH>Expression</TH></TR>
-<TR ALIGN=LEFT><TD>1</TD><TD>&nbsp;</TD><TD><A HREF="rcp-NDASM1of1.html"
-TITLE="( 1 ) `->` 1. `t.`">rcp-NDASM1of1</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#B26B00">202</SPAN></TD><TD><A NAME="1"></A>
-<SPAN CLASS=i>. 2</SPAN>
-<SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN>(&#8498;<SPAN
-CLASS=objvar>&#x1D465;</SPAN> &not; <SPAN CLASS=wff>&#x1D711;</SPAN> &rarr;
-&#8498;<SPAN CLASS=objvar>&#x1D465;</SPAN> &not; <SPAN
-CLASS=wff>&#x1D711;</SPAN>)</SPAN></TD></TR>
-<TR ALIGN=LEFT><TD>2</TD><TD><A HREF="#1">1</A></TD><TD><A
-HREF="nfrnegc-P8.html"
-TITLE="Converse of ~ndnfrneg-P7.2 . This statement is not deducible with intuitionist logic.">nfrnegc-P8</A>&nbsp;<SPAN
-CLASS=r STYLE="color:#EC0091">1116</SPAN></TD><TD><A NAME="2"></A>
+<TR ALIGN=LEFT><TD>1</TD><TD>&nbsp;</TD><TD><A HREF="psubnfr-P6.VR.html"
+TITLE="Variable Restricted Form of ~psubnfr-P6 . '`x`' cannot occur in '`w_ph`'.">psubnfr-P6.VR</A>&nbsp;<SPAN
+CLASS=r STYLE="color:#5C71FF">791</SPAN></TD><TD><A NAME="1"></A>
 <SPAN CLASS=i>1</SPAN>
-<SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN>(&#8498;<SPAN
-CLASS=objvar>&#x1D465;</SPAN> &not; <SPAN CLASS=wff>&#x1D711;</SPAN> &rarr;
-&#8498;<SPAN CLASS=objvar>&#x1D465;</SPAN><SPAN
-CLASS=wff>&#x1D711;</SPAN>)</SPAN></TD></TR>
+<SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN>([<SPAN
+CLASS=term>&#x1D461;</SPAN> / <SPAN CLASS=objvar>&#x1D465;</SPAN>]<SPAN
+CLASS=objvar>&#x1D44E;</SPAN> = 0 &harr; <SPAN CLASS=objvar>&#x1D44E;</SPAN> =
+0)</SPAN></TD></TR>
 </TABLE></CENTER>
 <CENTER><TABLE CELLSPACING=5><TR><TD ALIGN=LEFT><FONT SIZE=-1><B>Colors of
 variables:</B>  <SPAN CLASS=typecode
@@ -128,13 +122,17 @@ STYLE="color:blue;font-style:normal">wff</SPAN> <SPAN CLASS=typecode
 STYLE="color:red;font-style:normal">objvar</SPAN> <SPAN CLASS=typecode
 STYLE="color:green;font-style:normal">term</SPAN> <SPAN CLASS=typecode
 STYLE="color:#CC33CC;font-style:normal">class</SPAN></FONT></TD></TR>
-<TR><TD ALIGN=LEFT><FONT SIZE=-1><B>Syntax hints:</B>  &nbsp;<SPAN
-CLASS=math>&not; </SPAN><A HREF="wff-neg.html">wff-neg</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#FA0200">9</SPAN> &nbsp;<SPAN CLASS=math> &rarr; </SPAN><A
-HREF="wff-imp.html">wff-imp</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#FA0200">10</SPAN> &nbsp;<SPAN CLASS=math>&#8498;</SPAN><A
-HREF="wff-nfree.html">wff-nfree</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#0084DA">687</SPAN></FONT></TD></TR>
+<TR><TD ALIGN=LEFT><FONT SIZE=-1><B>Syntax hints:</B>  &nbsp;<A
+HREF="term-obj.html">term-obj</A>&nbsp;<SPAN CLASS=r
+STYLE="color:#FB0000">1</SPAN> &nbsp;<SPAN CLASS=math>0</SPAN><A
+HREF="term_zero.html">term_zero</A>&nbsp;<SPAN CLASS=r
+STYLE="color:#FA0000">2</SPAN> &nbsp;<SPAN CLASS=math> = </SPAN><A
+HREF="wff-equals.html">wff-equals</A>&nbsp;<SPAN CLASS=r
+STYLE="color:#FA0100">6</SPAN> &nbsp;<SPAN CLASS=math> &harr; </SPAN><A
+HREF="wff-bi.html">wff-bi</A>&nbsp;<SPAN CLASS=r
+STYLE="color:#E53A00">103</SPAN> &nbsp;<SPAN CLASS=math>[</SPAN><A
+HREF="wff-psub.html">wff-psub</A>&nbsp;<SPAN CLASS=r
+STYLE="color:#0280F7">720</SPAN></FONT></TD></TR>
 <TR><TD ALIGN=LEFT><FONT SIZE=-1><B>This theorem was proved from axioms:</B>
 &nbsp;<A HREF="ax-L1.html">ax-L1</A>&nbsp;<SPAN CLASS=r
 STYLE="color:#FA0200">11</SPAN> &nbsp;<A HREF="ax-L2.html">ax-L2</A>&nbsp;<SPAN
@@ -149,10 +147,6 @@ HREF="ax-L5.html">ax-L5</A>&nbsp;<SPAN CLASS=r STYLE="color:#F90400">17</SPAN>
 &nbsp;<A HREF="ax-L6.html">ax-L6</A>&nbsp;<SPAN CLASS=r
 STYLE="color:#F90500">18</SPAN> &nbsp;<A HREF="ax-L7.html">ax-L7</A>&nbsp;<SPAN
 CLASS=r STYLE="color:#F90500">19</SPAN> &nbsp;<A
-HREF="ax-L10.html">ax-L10</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#F80700">27</SPAN> &nbsp;<A
-HREF="ax-L11.html">ax-L11</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#F80800">28</SPAN> &nbsp;<A
 HREF="ax-L12.html">ax-L12</A>&nbsp;<SPAN CLASS=r
 STYLE="color:#F80800">29</SPAN></FONT></TD></TR>
 <TR><TD ALIGN=LEFT><FONT SIZE=-1><B>This theorem depends on definitions:</B>
@@ -164,19 +158,16 @@ HREF="df-or-D2.3.html">df-or-D2.3</A>&nbsp;<SPAN CLASS=r
 STYLE="color:#CE5500">155</SPAN> &nbsp;<A
 HREF="df-true-D2.4.html">df-true-D2.4</A>&nbsp;<SPAN CLASS=r
 STYLE="color:#C95A00">165</SPAN> &nbsp;<A
-HREF="df-false-D2.5.html">df-false-D2.5</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#C75B00">168</SPAN> &nbsp;<A
 HREF="df-rcp-AND3.html">df-rcp-AND3</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#C55D00">171</SPAN> &nbsp;<A
+STYLE="color:#C55C00">171</SPAN> &nbsp;<A
 HREF="df-exists-D5.1.html">df-exists-D5.1</A>&nbsp;<SPAN CLASS=r
 STYLE="color:#008F7B">602</SPAN> &nbsp;<A
 HREF="df-nfree-D6.1.html">df-nfree-D6.1</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#0084DB">688</SPAN> &nbsp;<A
+STYLE="color:#0084DA">688</SPAN> &nbsp;<A
 HREF="df-psub-D6.2.html">df-psub-D6.2</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#027FFA">722</SPAN></FONT></TD></TR>
-<TR><TD ALIGN=LEFT><FONT SIZE=-1><B>This theorem is referenced by:</B> &nbsp;<A
-HREF="nfrnegbi-P8.html">nfrnegbi-P8</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#ED008E">1119</SPAN></FONT></TD></TR>
+STYLE="color:#027FF9">722</SPAN></FONT></TD></TR>
+<TR><TD ALIGN=LEFT><FONT SIZE=-1><B>This theorem is referenced by:</B>
+(None)</FONT></TD></TR>
 </TABLE></CENTER>
 <TABLE BORDER=0 WIDTH="100%">
 <TR><TD WIDTH="25%">&nbsp;</TD>

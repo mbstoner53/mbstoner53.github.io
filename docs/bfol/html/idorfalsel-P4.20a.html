@@ -27,7 +27,7 @@ type="text/css"/>
   .term { color: green; } 
   .class { color: #CC33CC; } 
   .typecode { color: gray; } 
-  .math { font-family: XITSRegular; } 
+  .math { font-family: XITSMathRegular; } 
 -->
 </STYLE>
 <TITLE>idorfalsel-P4.20a - bfol.mm Proof Explorer</TITLE>
@@ -76,7 +76,7 @@ bfol.mm Proof Explorer
 <HR NOSHADE SIZE=1>
 <CENTER><B><FONT SIZE="+1">Theorem <FONT
 COLOR="#006633">idorfalsel-P4.20a</FONT></FONT></B>&nbsp;<SPAN CLASS=r
-STYLE="color:#1C9300">446</SPAN></CENTER>
+STYLE="color:#1D9300">446</SPAN></CENTER>
 <CENTER><TABLE><TR><TD ALIGN=LEFT><B>Description: </B>'<SPAN
 CLASS=math>&vee;</SPAN>' Identity is '<SPAN CLASS=math>&perp;</SPAN>' (left).
 <SPAN CLASS=math>&dagger;</SPAN></TD></TR></TABLE></CENTER>
@@ -88,7 +88,7 @@ SUMMARY="Assertion">
 </TH><TH>Expression</TH></TR>
 <TR ALIGN=LEFT><TD><FONT
       COLOR="#006633"><B>idorfalsel-P4.20a</B></FONT></TD><TD>
-<SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN>(( &perp; &vee; <SPAN
+<SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN>((&perp; &vee; <SPAN
 CLASS=wff>&#x1D711;</SPAN>) &harr; <SPAN
 CLASS=wff>&#x1D711;</SPAN>)</SPAN></TD></TR>
 </TABLE></CENTER>
@@ -105,51 +105,51 @@ SUMMARY="Proof of theorem">
 TITLE="( 1 `/\` 2 ) `->` 2. `t.`">rcp-NDASM2of2</A>&nbsp;<SPAN CLASS=r
 STYLE="color:#B16C00">204</SPAN></TD><TD><A NAME="1"></A>
 <SPAN CLASS=i>. . . 4</SPAN>
-<SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN>((( &perp; &vee; <SPAN
-CLASS=wff>&#x1D711;</SPAN>) &wedge; &perp; ) &rarr; &perp; )</SPAN></TD></TR>
+<SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN>(((&perp; &vee; <SPAN
+CLASS=wff>&#x1D711;</SPAN>) &wedge; &perp;) &rarr; &perp;)</SPAN></TD></TR>
 <TR ALIGN=LEFT><TD>2</TD><TD><A HREF="#1">1</A></TD><TD><A
 HREF="falseimpoe-P4.4c.html"
 TITLE="Principle of Explosion Utilising '`F.`'. `t.`">falseimpoe-P4.4c</A>&nbsp;<SPAN
-CLASS=r STYLE="color:#458E00">389</SPAN></TD><TD><A NAME="2"></A>
+CLASS=r STYLE="color:#468E00">389</SPAN></TD><TD><A NAME="2"></A>
 <SPAN CLASS=i>. . 3</SPAN>
-<SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN>((( &perp; &vee; <SPAN
-CLASS=wff>&#x1D711;</SPAN>) &wedge; &perp; ) &rarr; <SPAN
+<SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN>(((&perp; &vee; <SPAN
+CLASS=wff>&#x1D711;</SPAN>) &wedge; &perp;) &rarr; <SPAN
 CLASS=wff>&#x1D711;</SPAN>)</SPAN></TD></TR>
 <TR ALIGN=LEFT><TD>3</TD><TD>&nbsp;</TD><TD><A HREF="rcp-NDASM2of2.html"
 TITLE="( 1 `/\` 2 ) `->` 2. `t.`">rcp-NDASM2of2</A>&nbsp;<SPAN CLASS=r
 STYLE="color:#B16C00">204</SPAN></TD><TD><A NAME="3"></A>
 <SPAN CLASS=i>. . 3</SPAN>
-<SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN>((( &perp; &vee; <SPAN
+<SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN>(((&perp; &vee; <SPAN
 CLASS=wff>&#x1D711;</SPAN>) &wedge; <SPAN CLASS=wff>&#x1D711;</SPAN>) &rarr;
 <SPAN CLASS=wff>&#x1D711;</SPAN>)</SPAN></TD></TR>
 <TR ALIGN=LEFT><TD>4</TD><TD>&nbsp;</TD><TD><A HREF="rcp-NDASM1of1.html"
 TITLE="( 1 ) `->` 1. `t.`">rcp-NDASM1of1</A>&nbsp;<SPAN CLASS=r
 STYLE="color:#B26B00">202</SPAN></TD><TD><A NAME="4"></A>
 <SPAN CLASS=i>. . 3</SPAN>
-<SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN>(( &perp; &vee; <SPAN
-CLASS=wff>&#x1D711;</SPAN>) &rarr; ( &perp; &vee; <SPAN
+<SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN>((&perp; &vee; <SPAN
+CLASS=wff>&#x1D711;</SPAN>) &rarr; (&perp; &vee; <SPAN
 CLASS=wff>&#x1D711;</SPAN>))</SPAN></TD></TR>
 <TR ALIGN=LEFT><TD>5</TD><TD><A HREF="#2">2</A>, <A HREF="#3">3</A>, <A
 HREF="#4">4</A></TD><TD><A HREF="rcp-NDORE2.html"
 TITLE="`\/` Elimination Recipe. `t.`">rcp-NDORE2</A>&nbsp;<SPAN CLASS=r
 STYLE="color:#987A00">245</SPAN></TD><TD><A NAME="5"></A>
 <SPAN CLASS=i>. 2</SPAN>
-<SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN>(( &perp; &vee; <SPAN
+<SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN>((&perp; &vee; <SPAN
 CLASS=wff>&#x1D711;</SPAN>) &rarr; <SPAN
 CLASS=wff>&#x1D711;</SPAN>)</SPAN></TD></TR>
 <TR ALIGN=LEFT><TD>6</TD><TD>&nbsp;</TD><TD><A HREF="ndoril-P3.10.CL.html"
 TITLE="Closed Form of ~ndoril-P3.10 . `t.`">ndoril-P3.10.CL</A>&nbsp;<SPAN
-CLASS=r STYLE="color:#917C00">255</SPAN></TD><TD><A NAME="6"></A>
+CLASS=r STYLE="color:#927C00">255</SPAN></TD><TD><A NAME="6"></A>
 <SPAN CLASS=i>. 2</SPAN>
 <SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN>(<SPAN
-CLASS=wff>&#x1D711;</SPAN> &rarr; ( &perp; &vee; <SPAN
+CLASS=wff>&#x1D711;</SPAN> &rarr; (&perp; &vee; <SPAN
 CLASS=wff>&#x1D711;</SPAN>))</SPAN></TD></TR>
 <TR ALIGN=LEFT><TD>7</TD><TD><A HREF="#5">5</A>, <A HREF="#6">6</A></TD><TD><A
 HREF="rcp-NDBII0.html"
 TITLE="'`<->`' Introduction. `t.`">rcp-NDBII0</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#957B00">249</SPAN></TD><TD><A NAME="7"></A>
+STYLE="color:#967B00">249</SPAN></TD><TD><A NAME="7"></A>
 <SPAN CLASS=i>1</SPAN>
-<SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN>(( &perp; &vee; <SPAN
+<SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN>((&perp; &vee; <SPAN
 CLASS=wff>&#x1D711;</SPAN>) &harr; <SPAN
 CLASS=wff>&#x1D711;</SPAN>)</SPAN></TD></TR>
 </TABLE></CENTER>
@@ -165,7 +165,7 @@ STYLE="color:#E53A00">103</SPAN> &nbsp;<SPAN CLASS=math> &wedge; </SPAN><A
 HREF="wff-and.html">wff-and</A>&nbsp;<SPAN CLASS=r
 STYLE="color:#D84B00">133</SPAN> &nbsp;<SPAN CLASS=math> &vee; </SPAN><A
 HREF="wff-or.html">wff-or</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#CE5500">154</SPAN> &nbsp;<SPAN CLASS=math> &perp; </SPAN><A
+STYLE="color:#CF5500">154</SPAN> &nbsp;<SPAN CLASS=math>&perp;</SPAN><A
 HREF="wff-false.html">wff-false</A>&nbsp;<SPAN CLASS=r
 STYLE="color:#C85B00">167</SPAN></FONT></TD></TR>
 <TR><TD ALIGN=LEFT><FONT SIZE=-1><B>This theorem was proved from axioms:</B>
@@ -188,13 +188,13 @@ HREF="df-false-D2.5.html">df-false-D2.5</A>&nbsp;<SPAN CLASS=r
 STYLE="color:#C75B00">168</SPAN></FONT></TD></TR>
 <TR><TD ALIGN=LEFT><FONT SIZE=-1><B>This theorem is referenced by:</B> &nbsp;<A
 HREF="idorfalser-P4.20b.html">idorfalser-P4.20b</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#1C9301">447</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#1C9300">447</SPAN> &nbsp;<A
 HREF="idornthml-P4.24a.html">idornthml-P4.24a</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#169305">454</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#179304">454</SPAN> &nbsp;<A
 HREF="truthtblfort-P4.38c.html">truthtblfort-P4.38c</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#00922F">511</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#00922E">511</SPAN> &nbsp;<A
 HREF="truthtblforf-P4.38d.html">truthtblforf-P4.38d</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#009130">512</SPAN></FONT></TD></TR>
+&nbsp;<SPAN CLASS=r STYLE="color:#00922F">512</SPAN></FONT></TD></TR>
 </TABLE></CENTER>
 <TABLE BORDER=0 WIDTH="100%">
 <TR><TD WIDTH="25%">&nbsp;</TD>

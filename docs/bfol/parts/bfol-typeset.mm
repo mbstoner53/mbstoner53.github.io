@@ -20,7 +20,7 @@ htmlcss '<link rel="stylesheet" \n' +
     '  .term { color: green; } \n' +
     '  .class { color: #CC33CC; } \n' +
     '  .typecode { color: gray; } \n' +
-    '  .math { font-family: XITSRegular; } \n' +
+    '  .math { font-family: XITSMathRegular; } \n' +
     '-->\n' +
     '</STYLE>\n';
 
@@ -291,10 +291,10 @@ latexdef "/\" as "\land";
 althtmldef "\/" as " &vee; ";
 latexdef "\/" as "\lor";
 
-althtmldef "T." as " &top; ";
+althtmldef "T." as "&top;";
 latexdef "T." as "\top";
 
-althtmldef "F." as " &perp; ";
+althtmldef "F." as "&perp;";
 latexdef "F." as "\bot";  
 
 /* ######################################################################### */

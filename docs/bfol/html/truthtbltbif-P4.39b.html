@@ -27,7 +27,7 @@ type="text/css"/>
   .term { color: green; } 
   .class { color: #CC33CC; } 
   .typecode { color: gray; } 
-  .math { font-family: XITSRegular; } 
+  .math { font-family: XITSMathRegular; } 
 -->
 </STYLE>
 <TITLE>truthtbltbif-P4.39b - bfol.mm Proof Explorer</TITLE>
@@ -76,7 +76,7 @@ bfol.mm Proof Explorer
 <HR NOSHADE SIZE=1>
 <CENTER><B><FONT SIZE="+1">Theorem <FONT
 COLOR="#006633">truthtbltbif-P4.39b</FONT></FONT></B>&nbsp;<SPAN CLASS=r
-STYLE="color:#009132">514</SPAN></CENTER>
+STYLE="color:#009131">514</SPAN></CENTER>
 <CENTER><TABLE><TR><TD ALIGN=LEFT><B>Description: </B>( T <SPAN
 CLASS=math>&harr;</SPAN> F ) <SPAN CLASS=math>&hArr;</SPAN> F. <SPAN
 CLASS=math>&dagger;</SPAN></TD></TR></TABLE></CENTER>
@@ -88,8 +88,8 @@ SUMMARY="Assertion">
 </TH><TH>Expression</TH></TR>
 <TR ALIGN=LEFT><TD><FONT
       COLOR="#006633"><B>truthtbltbif-P4.39b</B></FONT></TD><TD>
-<SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN>(( &top; &harr; &perp; )
-&harr; &perp; )</SPAN></TD></TR>
+<SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN>((&top; &harr; &perp;)
+&harr; &perp;)</SPAN></TD></TR>
 </TABLE></CENTER>
 
 
@@ -104,41 +104,41 @@ SUMMARY="Proof of theorem">
 TITLE="'`T.`' is a theorem. `t.`">true-P3.44</A>&nbsp;<SPAN CLASS=r
 STYLE="color:#598C00">358</SPAN></TD><TD><A NAME="1"></A>
 <SPAN CLASS=i>. . . . 5</SPAN>
-<SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN> &top;</SPAN></TD></TR>
+<SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN>&top;</SPAN></TD></TR>
 <TR ALIGN=LEFT><TD>2</TD><TD><A HREF="#1">1</A></TD><TD><A
 HREF="rcp-NDIMP0addall.html"
 TITLE="( ) `=>` ( 1 `/\` ... `/\` n ). `t.`">rcp-NDIMP0addall</A>&nbsp;<SPAN
 CLASS=r STYLE="color:#A97000">217</SPAN></TD><TD><A NAME="2"></A>
 <SPAN CLASS=i>. . . 4</SPAN>
-<SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN>(( &top; &harr; &perp; )
-&rarr; &top; )</SPAN></TD></TR>
+<SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN>((&top; &harr; &perp;)
+&rarr; &top;)</SPAN></TD></TR>
 <TR ALIGN=LEFT><TD>3</TD><TD>&nbsp;</TD><TD><A HREF="ndbief-P3.14.CL.html"
 TITLE="Closed Form of ~ndbief-P3.14 . `t.`">ndbief-P3.14.CL</A>&nbsp;<SPAN
 CLASS=r STYLE="color:#8F7D00">259</SPAN></TD><TD><A NAME="3"></A>
 <SPAN CLASS=i>. . . 4</SPAN>
-<SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN>(( &top; &harr; &perp; )
-&rarr; ( &top; &rarr; &perp; ))</SPAN></TD></TR>
+<SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN>((&top; &harr; &perp;)
+&rarr; (&top; &rarr; &perp;))</SPAN></TD></TR>
 <TR ALIGN=LEFT><TD>4</TD><TD><A HREF="#2">2</A>, <A HREF="#3">3</A></TD><TD><A
 HREF="ndime-P3.6.html"
 TITLE="Natural Deduction: '`->`' Elimination Rule. This rule is just Modus Ponens with an...">ndime-P3.6</A>&nbsp;<SPAN
 CLASS=r STYLE="color:#BF6100">181</SPAN></TD><TD><A NAME="4"></A>
 <SPAN CLASS=i>. . 3</SPAN>
-<SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN>(( &top; &harr; &perp; )
-&rarr; &perp; )</SPAN></TD></TR>
+<SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN>((&top; &harr; &perp;)
+&rarr; &perp;)</SPAN></TD></TR>
 <TR ALIGN=LEFT><TD>5</TD><TD><A HREF="#4">4</A></TD><TD><A
 HREF="ndfalsee-P3.20.html"
 TITLE="Natural Deduction: '`F.`' Elimination Rule. Rules 19 and 20 allow us to write '`(...">ndfalsee-P3.20</A>&nbsp;<SPAN
 CLASS=r STYLE="color:#B66800">195</SPAN></TD><TD><A NAME="5"></A>
 <SPAN CLASS=i>. 2</SPAN>
-<SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN> &not; ( &top; &harr;
-&perp; )</SPAN></TD></TR>
+<SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN> &not; (&top; &harr;
+&perp;)</SPAN></TD></TR>
 <TR ALIGN=LEFT><TD>6</TD><TD><A HREF="#5">5</A></TD><TD><A
 HREF="nthmeqfalse-P4.21b.html"
 TITLE="Any Refuted Statement is Logically Equivalent to '`F.`'. `t.`">nthmeqfalse-P4.21b</A>&nbsp;<SPAN
-CLASS=r STYLE="color:#1A9302">449</SPAN></TD><TD><A NAME="6"></A>
+CLASS=r STYLE="color:#1B9302">449</SPAN></TD><TD><A NAME="6"></A>
 <SPAN CLASS=i>1</SPAN>
-<SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN>(( &top; &harr; &perp; )
-&harr; &perp; )</SPAN></TD></TR>
+<SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN>((&top; &harr; &perp;)
+&harr; &perp;)</SPAN></TD></TR>
 </TABLE></CENTER>
 <CENTER><TABLE CELLSPACING=5><TR><TD ALIGN=LEFT><FONT SIZE=-1><B>Colors of
 variables:</B>  <SPAN CLASS=typecode
@@ -148,9 +148,9 @@ STYLE="color:green;font-style:normal">term</SPAN> <SPAN CLASS=typecode
 STYLE="color:#CC33CC;font-style:normal">class</SPAN></FONT></TD></TR>
 <TR><TD ALIGN=LEFT><FONT SIZE=-1><B>Syntax hints:</B>  &nbsp;<SPAN CLASS=math>
 &harr; </SPAN><A HREF="wff-bi.html">wff-bi</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#E53A00">103</SPAN> &nbsp;<SPAN CLASS=math> &top; </SPAN><A
+STYLE="color:#E53A00">103</SPAN> &nbsp;<SPAN CLASS=math>&top;</SPAN><A
 HREF="wff-true.html">wff-true</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#CA5900">163</SPAN> &nbsp;<SPAN CLASS=math> &perp; </SPAN><A
+STYLE="color:#CA5900">163</SPAN> &nbsp;<SPAN CLASS=math>&perp;</SPAN><A
 HREF="wff-false.html">wff-false</A>&nbsp;<SPAN CLASS=r
 STYLE="color:#C85B00">167</SPAN></FONT></TD></TR>
 <TR><TD ALIGN=LEFT><FONT SIZE=-1><B>This theorem was proved from axioms:</B>
