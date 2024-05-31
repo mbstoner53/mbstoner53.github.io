@@ -16,10 +16,6 @@ img { margin-bottom: -4px }
    }
 -->
 </STYLE>
-<link rel="stylesheet" 
-media="screen" 
-href="https://fontlibrary.org/en/face/xits-math" 
-type="text/css"/> 
 <STYLE TYPE="text/css"> 
 <!--
   .wff { color: blue; } 
@@ -27,7 +23,11 @@ type="text/css"/>
   .term { color: green; } 
   .class { color: #CC33CC; } 
   .typecode { color: gray; } 
-  .math { font-family: XITSMathRegular; } 
+  @font-face {
+     font-family: XITSMath-Regular; 
+     src: url(../fonts/xits-math.woff); 
+  } 
+  .math { font-family: XITSMath-Regular; } 
 -->
 </STYLE>
 <TITLE>qimeqallav-P5-L1 - bfol.mm Proof Explorer</TITLE>
@@ -76,10 +76,10 @@ bfol.mm Proof Explorer
 <HR NOSHADE SIZE=1>
 <CENTER><B><FONT SIZE="+1">Theorem <FONT
 COLOR="#006633">qimeqallav-P5-L1</FONT></FONT></B>&nbsp;<SPAN CLASS=r
-STYLE="color:#008D8D">623</SPAN></CENTER>
+STYLE="color:#008E8B">617</SPAN></CENTER>
 <CENTER><TABLE><TR><TD ALIGN=LEFT><B>Description: </B>Lemma for <A
 HREF="qimeqallav-P5.html">qimeqallav-P5</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#008D8E">624</SPAN>.</TD></TR></TABLE></CENTER>
+STYLE="color:#008D8C">618</SPAN>.</TD></TR></TABLE></CENTER>
 
 <CENTER><TABLE BORDER CELLSPACING=0 BGCOLOR="#EEFFFA"
 SUMMARY="Assertion">
@@ -109,7 +109,7 @@ SUMMARY="Proof of theorem">
 </TH><TH>Expression</TH></TR>
 <TR ALIGN=LEFT><TD>1</TD><TD>&nbsp;</TD><TD><A HREF="axL5ex-P5.html"
 TITLE="Dual of ~ax-L5 . '`x`' does not occur in '`w_ph`'.">axL5ex-P5</A>&nbsp;<SPAN
-CLASS=r STYLE="color:#008E8A">619</SPAN></TD><TD><A NAME="1"></A>
+CLASS=r STYLE="color:#008E87">613</SPAN></TD><TD><A NAME="1"></A>
 <SPAN CLASS=i>. . 3</SPAN>
 <SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN>(&exist;<SPAN
 CLASS=objvar>&#x1D465;</SPAN><SPAN CLASS=wff>&#x1D711;</SPAN> &rarr; <SPAN
@@ -117,7 +117,7 @@ CLASS=wff>&#x1D711;</SPAN>)</SPAN></TD></TR>
 <TR ALIGN=LEFT><TD>2</TD><TD><A HREF="#1">1</A></TD><TD><A
 HREF="rcp-NDIMP0addall.html"
 TITLE="( ) `=>` ( 1 `/\` ... `/\` n ). `t.`">rcp-NDIMP0addall</A>&nbsp;<SPAN
-CLASS=r STYLE="color:#A97000">217</SPAN></TD><TD><A NAME="2"></A>
+CLASS=r STYLE="color:#AE6D00">207</SPAN></TD><TD><A NAME="2"></A>
 <SPAN CLASS=i>. 2</SPAN>
 <SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN>(&forall;<SPAN
 CLASS=objvar>&#x1D465;</SPAN>(<SPAN CLASS=wff>&#x1D711;</SPAN> &rarr; <SPAN
@@ -134,7 +134,7 @@ CLASS=objvar>&#x1D465;</SPAN><SPAN CLASS=wff>&#x1D711;</SPAN>)</SPAN></TD></TR>
 <TR ALIGN=LEFT><TD>4</TD><TD><A HREF="#3">3</A></TD><TD><A
 HREF="rcp-NDIMP0addall.html"
 TITLE="( ) `=>` ( 1 `/\` ... `/\` n ). `t.`">rcp-NDIMP0addall</A>&nbsp;<SPAN
-CLASS=r STYLE="color:#A97000">217</SPAN></TD><TD><A NAME="4"></A>
+CLASS=r STYLE="color:#AE6D00">207</SPAN></TD><TD><A NAME="4"></A>
 <SPAN CLASS=i>. 2</SPAN>
 <SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN>(&forall;<SPAN
 CLASS=objvar>&#x1D465;</SPAN>(<SPAN CLASS=wff>&#x1D711;</SPAN> &rarr; <SPAN
@@ -154,7 +154,7 @@ CLASS=wff>&#x1D713;</SPAN>))</SPAN></TD></TR>
 <TR ALIGN=LEFT><TD>6</TD><TD><A HREF="#2">2</A>, <A HREF="#4">4</A>, <A
 HREF="#5">5</A></TD><TD><A HREF="dsyl-P3.25.html"
 TITLE="Double Syllogism. `t.`">dsyl-P3.25</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#878000">271</SPAN></TD><TD><A NAME="6"></A>
+STYLE="color:#8D7E00">261</SPAN></TD><TD><A NAME="6"></A>
 <SPAN CLASS=i>1</SPAN>
 <SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN>(&forall;<SPAN
 CLASS=objvar>&#x1D465;</SPAN>(<SPAN CLASS=wff>&#x1D711;</SPAN> &rarr; <SPAN
@@ -175,7 +175,7 @@ CLASS=r STYLE="color:#FA0200">8</SPAN> &nbsp;<SPAN CLASS=math> &rarr; </SPAN><A
 HREF="wff-imp.html">wff-imp</A>&nbsp;<SPAN CLASS=r
 STYLE="color:#FA0200">10</SPAN> &nbsp;<SPAN CLASS=math>&exist;</SPAN><A
 HREF="wff-exists.html">wff-exists</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#008F7A">601</SPAN></FONT></TD></TR>
+STYLE="color:#008F77">595</SPAN></FONT></TD></TR>
 <TR><TD ALIGN=LEFT><FONT SIZE=-1><B>This theorem was proved from axioms:</B>
 &nbsp;<A HREF="ax-L1.html">ax-L1</A>&nbsp;<SPAN CLASS=r
 STYLE="color:#FA0200">11</SPAN> &nbsp;<A HREF="ax-L2.html">ax-L2</A>&nbsp;<SPAN
@@ -188,20 +188,20 @@ HREF="ax-L5.html">ax-L5</A>&nbsp;<SPAN CLASS=r
 STYLE="color:#F90400">17</SPAN></FONT></TD></TR>
 <TR><TD ALIGN=LEFT><FONT SIZE=-1><B>This theorem depends on definitions:</B>
 &nbsp;<A HREF="df-bi-D2.1.html">df-bi-D2.1</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#E43C00">106</SPAN> &nbsp;<A
+STYLE="color:#E33D00">107</SPAN> &nbsp;<A
 HREF="df-and-D2.2.html">df-and-D2.2</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#D84C00">134</SPAN> &nbsp;<A
+STYLE="color:#D84C00">133</SPAN> &nbsp;<A
 HREF="df-or-D2.3.html">df-or-D2.3</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#CE5500">155</SPAN> &nbsp;<A
+STYLE="color:#D25100">145</SPAN> &nbsp;<A
 HREF="df-true-D2.4.html">df-true-D2.4</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#C95A00">165</SPAN> &nbsp;<A
+STYLE="color:#CE5500">155</SPAN> &nbsp;<A
 HREF="df-rcp-AND3.html">df-rcp-AND3</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#C55C00">171</SPAN> &nbsp;<A
+STYLE="color:#CB5800">161</SPAN> &nbsp;<A
 HREF="df-exists-D5.1.html">df-exists-D5.1</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#008F7B">602</SPAN></FONT></TD></TR>
+STYLE="color:#008F78">596</SPAN></FONT></TD></TR>
 <TR><TD ALIGN=LEFT><FONT SIZE=-1><B>This theorem is referenced by:</B> &nbsp;<A
 HREF="qimeqallav-P5.html">qimeqallav-P5</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#008D8E">624</SPAN></FONT></TD></TR>
+&nbsp;<SPAN CLASS=r STYLE="color:#008D8C">618</SPAN></FONT></TD></TR>
 </TABLE></CENTER>
 <TABLE BORDER=0 WIDTH="100%">
 <TR><TD WIDTH="25%">&nbsp;</TD>

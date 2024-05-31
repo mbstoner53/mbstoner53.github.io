@@ -16,10 +16,6 @@ img { margin-bottom: -4px }
    }
 -->
 </STYLE>
-<link rel="stylesheet" 
-media="screen" 
-href="https://fontlibrary.org/en/face/xits-math" 
-type="text/css"/> 
 <STYLE TYPE="text/css"> 
 <!--
   .wff { color: blue; } 
@@ -27,7 +23,11 @@ type="text/css"/>
   .term { color: green; } 
   .class { color: #CC33CC; } 
   .typecode { color: gray; } 
-  .math { font-family: XITSMathRegular; } 
+  @font-face {
+     font-family: XITSMath-Regular; 
+     src: url(../fonts/xits-math.woff); 
+  } 
+  .math { font-family: XITSMath-Regular; } 
 -->
 </STYLE>
 <TITLE>gennall-P6 - bfol.mm Proof Explorer</TITLE>
@@ -76,7 +76,7 @@ bfol.mm Proof Explorer
 <HR NOSHADE SIZE=1>
 <CENTER><B><FONT SIZE="+1">Theorem <FONT
 COLOR="#006633">gennall-P6</FONT></FONT></B>&nbsp;<SPAN CLASS=r
-STYLE="color:#107DFF">736</SPAN></CENTER>
+STYLE="color:#0C7DFF">730</SPAN></CENTER>
 <CENTER><TABLE><TR><TD ALIGN=LEFT><B>Description: </B>The WFF '<SPAN
 CLASS=math>&not; &forall;<SPAN CLASS=objvar>&#x1D465;</SPAN><SPAN
 CLASS=wff>&#x1D711;</SPAN></SPAN>' is General For '<SPAN CLASS=math><SPAN
@@ -91,7 +91,7 @@ require
 STYLE="color:#F80800">29</SPAN> as well).
 <P STYLE="margin-bottom:0em">
        See <A HREF="gennallw-P6.html">gennallw-P6</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#0085D5">684</SPAN> for a version that requires only FOL
+STYLE="color:#0086D1">678</SPAN> for a version that requires only FOL
 axioms.</TD></TR></TABLE></CENTER>
 
 <CENTER><TABLE BORDER CELLSPACING=0 BGCOLOR="#EEFFFA"
@@ -141,11 +141,11 @@ STYLE="color:#FA0200">10</SPAN></FONT></TD></TR>
 STYLE="color:#F80700">27</SPAN></FONT></TD></TR>
 <TR><TD ALIGN=LEFT><FONT SIZE=-1><B>This theorem is referenced by:</B> &nbsp;<A
 HREF="genex-P6.html">genex-P6</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#127DFF">737</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#0E7DFF">731</SPAN> &nbsp;<A
 HREF="exgenall-P6.html">exgenall-P6</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#137DFF">738</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#107DFF">732</SPAN> &nbsp;<A
 HREF="genall-P6.html">genall-P6</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#1C7CFF">743</SPAN></FONT></TD></TR>
+&nbsp;<SPAN CLASS=r STYLE="color:#187CFF">737</SPAN></FONT></TD></TR>
 </TABLE></CENTER>
 <TABLE BORDER=0 WIDTH="100%">
 <TR><TD WIDTH="25%">&nbsp;</TD>

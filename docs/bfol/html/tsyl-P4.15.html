@@ -16,10 +16,6 @@ img { margin-bottom: -4px }
    }
 -->
 </STYLE>
-<link rel="stylesheet" 
-media="screen" 
-href="https://fontlibrary.org/en/face/xits-math" 
-type="text/css"/> 
 <STYLE TYPE="text/css"> 
 <!--
   .wff { color: blue; } 
@@ -27,7 +23,11 @@ type="text/css"/>
   .term { color: green; } 
   .class { color: #CC33CC; } 
   .typecode { color: gray; } 
-  .math { font-family: XITSMathRegular; } 
+  @font-face {
+     font-family: XITSMath-Regular; 
+     src: url(../fonts/xits-math.woff); 
+  } 
+  .math { font-family: XITSMath-Regular; } 
 -->
 </STYLE>
 <TITLE>tsyl-P4.15 - bfol.mm Proof Explorer</TITLE>
@@ -76,7 +76,7 @@ bfol.mm Proof Explorer
 <HR NOSHADE SIZE=1>
 <CENTER><B><FONT SIZE="+1">Theorem <FONT
 COLOR="#006633">tsyl-P4.15</FONT></FONT></B>&nbsp;<SPAN CLASS=r
-STYLE="color:#279200">432</SPAN></CENTER>
+STYLE="color:#2A9100">426</SPAN></CENTER>
 <CENTER><TABLE><TR><TD ALIGN=LEFT><B>Description: </B>Triple Syllogism. <SPAN
 CLASS=math>&dagger;</SPAN></TD></TR></TABLE></CENTER>
 
@@ -142,7 +142,7 @@ CLASS=wff>&#x1D6FE;</SPAN> &rarr; (<SPAN CLASS=wff>&#x1D712;</SPAN> &rarr;
 <TR ALIGN=LEFT><TD>4</TD><TD><A HREF="#1">1</A>, <A HREF="#2">2</A>, <A
 HREF="#3">3</A></TD><TD><A HREF="dsyl-P3.25.html"
 TITLE="Double Syllogism. `t.`">dsyl-P3.25</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#878000">271</SPAN></TD><TD><A NAME="4"></A>
+STYLE="color:#8D7E00">261</SPAN></TD><TD><A NAME="4"></A>
 <SPAN CLASS=i>. 2</SPAN>
 <SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN>(<SPAN
 CLASS=wff>&#x1D6FE;</SPAN> &rarr; (<SPAN CLASS=wff>&#x1D711;</SPAN> &rarr;
@@ -155,7 +155,7 @@ CLASS=wff>&#x1D6FE;</SPAN> &rarr; (<SPAN CLASS=wff>&#x1D717;</SPAN> &rarr;
 <SPAN CLASS=wff>&#x1D70F;</SPAN>))</SPAN></TD></TR>
 <TR ALIGN=LEFT><TD>6</TD><TD><A HREF="#4">4</A>, <A HREF="#5">5</A></TD><TD><A
 HREF="syl-P3.24.html" TITLE="Syllogism. `t.`">syl-P3.24</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#887F00">269</SPAN></TD><TD><A NAME="6"></A>
+STYLE="color:#8E7D00">259</SPAN></TD><TD><A NAME="6"></A>
 <SPAN CLASS=i>1</SPAN>
 <SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN>(<SPAN
 CLASS=wff>&#x1D6FE;</SPAN> &rarr; (<SPAN CLASS=wff>&#x1D711;</SPAN> &rarr;
@@ -179,12 +179,12 @@ HREF="ax-L3.html">ax-L3</A>&nbsp;<SPAN CLASS=r STYLE="color:#F90300">13</SPAN>
 STYLE="color:#F90300">14</SPAN></FONT></TD></TR>
 <TR><TD ALIGN=LEFT><FONT SIZE=-1><B>This theorem depends on definitions:</B>
 &nbsp;<A HREF="df-bi-D2.1.html">df-bi-D2.1</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#E43C00">106</SPAN> &nbsp;<A
+STYLE="color:#E33D00">107</SPAN> &nbsp;<A
 HREF="df-and-D2.2.html">df-and-D2.2</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#D84C00">134</SPAN></FONT></TD></TR>
+STYLE="color:#D84C00">133</SPAN></FONT></TD></TR>
 <TR><TD ALIGN=LEFT><FONT SIZE=-1><B>This theorem is referenced by:</B> &nbsp;<A
 HREF="tsyl-P4.15.RC.html">tsyl-P4.15.RC</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#279200">433</SPAN></FONT></TD></TR>
+&nbsp;<SPAN CLASS=r STYLE="color:#299100">427</SPAN></FONT></TD></TR>
 </TABLE></CENTER>
 <TABLE BORDER=0 WIDTH="100%">
 <TR><TD WIDTH="25%">&nbsp;</TD>

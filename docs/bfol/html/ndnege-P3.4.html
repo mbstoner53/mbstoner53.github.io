@@ -16,10 +16,6 @@ img { margin-bottom: -4px }
    }
 -->
 </STYLE>
-<link rel="stylesheet" 
-media="screen" 
-href="https://fontlibrary.org/en/face/xits-math" 
-type="text/css"/> 
 <STYLE TYPE="text/css"> 
 <!--
   .wff { color: blue; } 
@@ -27,7 +23,11 @@ type="text/css"/>
   .term { color: green; } 
   .class { color: #CC33CC; } 
   .typecode { color: gray; } 
-  .math { font-family: XITSMathRegular; } 
+  @font-face {
+     font-family: XITSMath-Regular; 
+     src: url(../fonts/xits-math.woff); 
+  } 
+  .math { font-family: XITSMath-Regular; } 
 -->
 </STYLE>
 <TITLE>ndnege-P3.4 - bfol.mm Proof Explorer</TITLE>
@@ -76,7 +76,7 @@ bfol.mm Proof Explorer
 <HR NOSHADE SIZE=1>
 <CENTER><B><FONT SIZE="+1">Theorem <FONT
 COLOR="#006633">ndnege-P3.4</FONT></FONT></B>&nbsp;<SPAN CLASS=r
-STYLE="color:#C06000">179</SPAN></CENTER>
+STYLE="color:#C65C00">169</SPAN></CENTER>
 <CENTER><TABLE><TR><TD ALIGN=LEFT><B>Description: </B>Natural Deduction: '<SPAN
 CLASS=math>&not;</SPAN>' Elimination Rule.
 <P STYLE="margin-bottom:0em">
@@ -132,7 +132,7 @@ CLASS=wff>&#x1D711;</SPAN>)</SPAN></TD></TR>
 <TR ALIGN=LEFT><TD>3</TD><TD><A HREF="#1">1</A>, <A HREF="#2">2</A></TD><TD><A
 HREF="poe-P1.11b.AC.2SH.html"
 TITLE="Deductive Form of ~poe-P1.11b .">poe-P1.11b.AC.2SH</A>&nbsp;<SPAN
-CLASS=r STYLE="color:#F11F00">66</SPAN></TD><TD><A NAME="3"></A>
+CLASS=r STYLE="color:#F12000">67</SPAN></TD><TD><A NAME="3"></A>
 <SPAN CLASS=i>1</SPAN>
 <SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN>(<SPAN
 CLASS=wff>&#x1D6FE;</SPAN> &rarr; <SPAN
@@ -158,25 +158,25 @@ HREF="ax-L3.html">ax-L3</A>&nbsp;<SPAN CLASS=r STYLE="color:#F90300">13</SPAN>
 STYLE="color:#F90300">14</SPAN></FONT></TD></TR>
 <TR><TD ALIGN=LEFT><FONT SIZE=-1><B>This theorem is referenced by:</B> &nbsp;<A
 HREF="ndfalsei-P3.19.html">ndfalsei-P3.19</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#B76700">194</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#BD6300">184</SPAN> &nbsp;<A
 HREF="rcp-NDNEGE0.html">rcp-NDNEGE0</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#A07600">233</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#A57300">223</SPAN> &nbsp;<A
 HREF="ndnege-P3.4.CL.html">ndnege-P3.4.CL</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#937C00">253</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#997A00">243</SPAN> &nbsp;<A
 HREF="dnege-P3.30.html">dnege-P3.30</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#7E8300">286</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#838100">276</SPAN> &nbsp;<A
 HREF="orasim-P3.48-L1.html">orasim-P3.48-L1</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#558D00">365</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#588C00">359</SPAN> &nbsp;<A
 HREF="impoe-P4.4a.html">impoe-P4.4a</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#4A8E00">383</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#4C8E00">377</SPAN> &nbsp;<A
 HREF="nimpoe-P4.4b.html">nimpoe-P4.4b</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#488E00">386</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#4A8E00">380</SPAN> &nbsp;<A
 HREF="profeliml-P4.5a.html">profeliml-P4.5a</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#448E00">391</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#478E00">385</SPAN> &nbsp;<A
 HREF="profelimr-P4.5b.html">profelimr-P4.5b</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#438F00">393</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#468E00">387</SPAN> &nbsp;<A
 HREF="dmorgarev-L4.2.html">dmorgarev-L4.2</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#139307">459</SPAN></FONT></TD></TR>
+&nbsp;<SPAN CLASS=r STYLE="color:#169305">453</SPAN></FONT></TD></TR>
 </TABLE></CENTER>
 <TABLE BORDER=0 WIDTH="100%">
 <TR><TD WIDTH="25%">&nbsp;</TD>

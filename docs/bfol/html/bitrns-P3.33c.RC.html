@@ -16,10 +16,6 @@ img { margin-bottom: -4px }
    }
 -->
 </STYLE>
-<link rel="stylesheet" 
-media="screen" 
-href="https://fontlibrary.org/en/face/xits-math" 
-type="text/css"/> 
 <STYLE TYPE="text/css"> 
 <!--
   .wff { color: blue; } 
@@ -27,7 +23,11 @@ type="text/css"/>
   .term { color: green; } 
   .class { color: #CC33CC; } 
   .typecode { color: gray; } 
-  .math { font-family: XITSMathRegular; } 
+  @font-face {
+     font-family: XITSMath-Regular; 
+     src: url(../fonts/xits-math.woff); 
+  } 
+  .math { font-family: XITSMath-Regular; } 
 -->
 </STYLE>
 <TITLE>bitrns-P3.33c.RC - bfol.mm Proof Explorer</TITLE>
@@ -76,10 +76,10 @@ bfol.mm Proof Explorer
 <HR NOSHADE SIZE=1>
 <CENTER><B><FONT SIZE="+1">Theorem <FONT
 COLOR="#006633">bitrns-P3.33c.RC</FONT></FONT></B>&nbsp;<SPAN CLASS=r
-STYLE="color:#728600">313</SPAN></CENTER>
+STYLE="color:#768500">303</SPAN></CENTER>
 <CENTER><TABLE><TR><TD ALIGN=LEFT><B>Description: </B>Inference Form of <A
 HREF="bitrns-P3.33c.html">bitrns-P3.33c</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#738600">312</SPAN>. <SPAN
+STYLE="color:#768500">302</SPAN>. <SPAN
 CLASS=math>&dagger;</SPAN></TD></TR></TABLE></CENTER>
 
 <CENTER><TABLE BORDER CELLSPACING=0 BGCOLOR="#EEFFFA"
@@ -125,7 +125,7 @@ CLASS=wff>&#x1D713;</SPAN>)</SPAN></TD></TR>
 <TR ALIGN=LEFT><TD>2</TD><TD><A HREF="#1">1</A></TD><TD><A
 HREF="ndtruei-P3.17.html"
 TITLE="Natural Deduction: '`T.`' Introduction Rule. This can be used to turn an ordinary...">ndtruei-P3.17</A>&nbsp;<SPAN
-CLASS=r STYLE="color:#B86600">192</SPAN></TD><TD><A NAME="2"></A>
+CLASS=r STYLE="color:#BE6200">182</SPAN></TD><TD><A NAME="2"></A>
 <SPAN CLASS=i>. . 3</SPAN>
 <SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN>(&top; &rarr; (<SPAN
 CLASS=wff>&#x1D711;</SPAN> &harr; <SPAN
@@ -139,7 +139,7 @@ CLASS=wff>&#x1D712;</SPAN>)</SPAN></TD></TR>
 <TR ALIGN=LEFT><TD>4</TD><TD><A HREF="#3">3</A></TD><TD><A
 HREF="ndtruei-P3.17.html"
 TITLE="Natural Deduction: '`T.`' Introduction Rule. This can be used to turn an ordinary...">ndtruei-P3.17</A>&nbsp;<SPAN
-CLASS=r STYLE="color:#B86600">192</SPAN></TD><TD><A NAME="4"></A>
+CLASS=r STYLE="color:#BE6200">182</SPAN></TD><TD><A NAME="4"></A>
 <SPAN CLASS=i>. . 3</SPAN>
 <SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN>(&top; &rarr; (<SPAN
 CLASS=wff>&#x1D713;</SPAN> &harr; <SPAN
@@ -147,7 +147,7 @@ CLASS=wff>&#x1D712;</SPAN>))</SPAN></TD></TR>
 <TR ALIGN=LEFT><TD>5</TD><TD><A HREF="#2">2</A>, <A HREF="#4">4</A></TD><TD><A
 HREF="bitrns-P3.33c.html"
 TITLE="Equivalence Property: '`<->`' Transitivity. `t.`">bitrns-P3.33c</A>&nbsp;<SPAN
-CLASS=r STYLE="color:#738600">312</SPAN></TD><TD><A NAME="5"></A>
+CLASS=r STYLE="color:#768500">302</SPAN></TD><TD><A NAME="5"></A>
 <SPAN CLASS=i>. 2</SPAN>
 <SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN>(&top; &rarr; (<SPAN
 CLASS=wff>&#x1D711;</SPAN> &harr; <SPAN
@@ -155,7 +155,7 @@ CLASS=wff>&#x1D712;</SPAN>))</SPAN></TD></TR>
 <TR ALIGN=LEFT><TD>6</TD><TD><A HREF="#5">5</A></TD><TD><A
 HREF="ndtruee-P3.18.html"
 TITLE="Natural Deduction: '`T.`' Elimination Rule. Rules 17 and 18 allow us to write '`( T....">ndtruee-P3.18</A>&nbsp;<SPAN
-CLASS=r STYLE="color:#B86700">193</SPAN></TD><TD><A NAME="6"></A>
+CLASS=r STYLE="color:#BD6300">183</SPAN></TD><TD><A NAME="6"></A>
 <SPAN CLASS=i>1</SPAN>
 <SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN>(<SPAN
 CLASS=wff>&#x1D711;</SPAN> &harr; <SPAN
@@ -169,9 +169,9 @@ STYLE="color:green;font-style:normal">term</SPAN> <SPAN CLASS=typecode
 STYLE="color:#CC33CC;font-style:normal">class</SPAN></FONT></TD></TR>
 <TR><TD ALIGN=LEFT><FONT SIZE=-1><B>Syntax hints:</B>  &nbsp;<SPAN CLASS=math>
 &harr; </SPAN><A HREF="wff-bi.html">wff-bi</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#E53A00">103</SPAN> &nbsp;<SPAN CLASS=math>&top;</SPAN><A
+STYLE="color:#E43B00">104</SPAN> &nbsp;<SPAN CLASS=math>&top;</SPAN><A
 HREF="wff-true.html">wff-true</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#CA5900">163</SPAN></FONT></TD></TR>
+STYLE="color:#CF5500">153</SPAN></FONT></TD></TR>
 <TR><TD ALIGN=LEFT><FONT SIZE=-1><B>This theorem was proved from axioms:</B>
 &nbsp;<A HREF="ax-L1.html">ax-L1</A>&nbsp;<SPAN CLASS=r
 STYLE="color:#FA0200">11</SPAN> &nbsp;<A HREF="ax-L2.html">ax-L2</A>&nbsp;<SPAN
@@ -181,74 +181,74 @@ HREF="ax-L3.html">ax-L3</A>&nbsp;<SPAN CLASS=r STYLE="color:#F90300">13</SPAN>
 STYLE="color:#F90300">14</SPAN></FONT></TD></TR>
 <TR><TD ALIGN=LEFT><FONT SIZE=-1><B>This theorem depends on definitions:</B>
 &nbsp;<A HREF="df-bi-D2.1.html">df-bi-D2.1</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#E43C00">106</SPAN> &nbsp;<A
+STYLE="color:#E33D00">107</SPAN> &nbsp;<A
 HREF="df-and-D2.2.html">df-and-D2.2</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#D84C00">134</SPAN> &nbsp;<A
+STYLE="color:#D84C00">133</SPAN> &nbsp;<A
 HREF="df-true-D2.4.html">df-true-D2.4</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#C95A00">165</SPAN></FONT></TD></TR>
+STYLE="color:#CE5500">155</SPAN></FONT></TD></TR>
 <TR><TD ALIGN=LEFT><FONT SIZE=-1><B>This theorem is referenced by:</B> &nbsp;<A
 HREF="oroverbi-P4.28-L3.html">oroverbi-P4.28-L3</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#08930F">474</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#0B930D">468</SPAN> &nbsp;<A
 HREF="imoverbi-P4.30-L2.html">imoverbi-P4.30-L2</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#019315">484</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#039313">478</SPAN> &nbsp;<A
 HREF="lemma-L4.5.html">lemma-L4.5</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#00931A">490</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#009316">484</SPAN> &nbsp;<A
 HREF="imasand-P4.33a.html">imasand-P4.33a</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#00931E">495</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#00931B">489</SPAN> &nbsp;<A
 HREF="biasandor-P4.34a.html">biasandor-P4.34a</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#009320">497</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#00931D">491</SPAN> &nbsp;<A
 HREF="allnegex-P5.html">allnegex-P5</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#008F7B">603</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#008F79">597</SPAN> &nbsp;<A
 HREF="exnegall-P5.html">exnegall-P5</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#008F7C">604</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#008F7A">598</SPAN> &nbsp;<A
 HREF="allasex-P5.html">allasex-P5</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#008F7D">605</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#008F7B">599</SPAN> &nbsp;<A
 HREF="lemma-L5.01a.html">lemma-L5.01a</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#008F7E">606</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#008F7B">600</SPAN> &nbsp;<A
 HREF="lemma-L5.03a.html">lemma-L5.03a</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#0087C5">672</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#0088C1">666</SPAN> &nbsp;<A
 HREF="example-E5.04a.html">example-E5.04a</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#0086D1">681</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#0086CD">675</SPAN> &nbsp;<A
 HREF="solvedsub-P6a.html">solvedsub-P6a</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#0280F4">717</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#0280F2">711</SPAN> &nbsp;<A
 HREF="dfpsubv-P6.html">dfpsubv-P6</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#027FFA">723</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#0280F8">717</SPAN> &nbsp;<A
 HREF="isubtopsubv-P6.html">isubtopsubv-P6</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#0B7EFF">733</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#077EFF">727</SPAN> &nbsp;<A
 HREF="lemma-L6.03a.html">lemma-L6.03a</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#0C7DFF">734</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#097EFF">728</SPAN> &nbsp;<A
 HREF="isubtopsub-P6.html">isubtopsub-P6</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#0E7DFF">735</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#0B7EFF">729</SPAN> &nbsp;<A
 HREF="qcexandr-P6.html">qcexandr-P6</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#4477FF">767</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#4177FF">761</SPAN> &nbsp;<A
 HREF="qcexandl-P6.html">qcexandl-P6</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#4677FF">768</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#4277FF">762</SPAN> &nbsp;<A
 HREF="lemma-L6.08a.html">lemma-L6.08a</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#5174FF">779</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#4F74FF">773</SPAN> &nbsp;<A
 HREF="dfpsubalt-P6.html">dfpsubalt-P6</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#5274FF">780</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#5074FF">774</SPAN> &nbsp;<A
 HREF="psubneg-P6-L1.html">psubneg-P6-L1</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#5E70FF">793</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#5C71FF">787</SPAN> &nbsp;<A
 HREF="psubneg-P6.html">psubneg-P6</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#5F70FF">794</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#5D71FF">788</SPAN> &nbsp;<A
 HREF="psuband-P6.html">psuband-P6</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#636FFF">798</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#6170FF">792</SPAN> &nbsp;<A
 HREF="psubex2v-P6.html">psubex2v-P6</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#686EFF">803</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#666EFF">797</SPAN> &nbsp;<A
 HREF="psuball2-P6.html">psuball2-P6</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#696EFF">804</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#676EFF">798</SPAN> &nbsp;<A
 HREF="psubex2-P6.html">psubex2-P6</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#6A6DFF">805</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#686EFF">799</SPAN> &nbsp;<A
 HREF="psubsplitelof-P6.html">psubsplitelof-P6</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#6C6DFF">807</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#6A6DFF">801</SPAN> &nbsp;<A
 HREF="psubid-P7.html">psubid-P7</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#C12FFC">946</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#C030FC">940</SPAN> &nbsp;<A
 HREF="dfnfreeint-P7.html">dfnfreeint-P7</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#CD1FF7">975</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#CC1FF7">969</SPAN> &nbsp;<A
 HREF="exnegall-P7.html">exnegall-P7</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#DD00DD">1052</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#DD00DD">1046</SPAN> &nbsp;<A
 HREF="allasex-P7.html">allasex-P7</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#DD00DA">1054</SPAN></FONT></TD></TR>
+&nbsp;<SPAN CLASS=r STYLE="color:#DD00DB">1048</SPAN></FONT></TD></TR>
 </TABLE></CENTER>
 <TABLE BORDER=0 WIDTH="100%">
 <TR><TD WIDTH="25%">&nbsp;</TD>

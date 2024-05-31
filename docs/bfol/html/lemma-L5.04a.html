@@ -16,10 +16,6 @@ img { margin-bottom: -4px }
    }
 -->
 </STYLE>
-<link rel="stylesheet" 
-media="screen" 
-href="https://fontlibrary.org/en/face/xits-math" 
-type="text/css"/> 
 <STYLE TYPE="text/css"> 
 <!--
   .wff { color: blue; } 
@@ -27,7 +23,11 @@ type="text/css"/>
   .term { color: green; } 
   .class { color: #CC33CC; } 
   .typecode { color: gray; } 
-  .math { font-family: XITSMathRegular; } 
+  @font-face {
+     font-family: XITSMath-Regular; 
+     src: url(../fonts/xits-math.woff); 
+  } 
+  .math { font-family: XITSMath-Regular; } 
 -->
 </STYLE>
 <TITLE>lemma-L5.04a - bfol.mm Proof Explorer</TITLE>
@@ -76,7 +76,7 @@ bfol.mm Proof Explorer
 <HR NOSHADE SIZE=1>
 <CENTER><B><FONT SIZE="+1">Theorem <FONT
 COLOR="#006633">lemma-L5.04a</FONT></FONT></B>&nbsp;<SPAN CLASS=r
-STYLE="color:#0087C6">673</SPAN></CENTER>
+STYLE="color:#0087C3">667</SPAN></CENTER>
 <CENTER><TABLE><TR><TD ALIGN=LEFT><B>Description: </B>A lemma for commuting
 universal quantifiers.
 <P STYLE="margin-bottom:0em">
@@ -134,7 +134,7 @@ CLASS=wff>&#x1D711;&#x2081;</SPAN>))</SPAN></TD></TR>
 <TR ALIGN=LEFT><TD>2</TD><TD><A HREF="#1">1</A></TD><TD><A
 HREF="cbvallv-P5.html"
 TITLE="Change of Bound Variable Law for '`A. x`' (variable restriction). '`x`' cannot occur...">cbvallv-P5</A>&nbsp;<SPAN
-CLASS=r STYLE="color:#0088BB">665</SPAN></TD><TD><A NAME="2"></A>
+CLASS=r STYLE="color:#0089B8">659</SPAN></TD><TD><A NAME="2"></A>
 <SPAN CLASS=i>. . . 4</SPAN>
 <SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN>(&forall;<SPAN
 CLASS=objvar>&#x1D466;</SPAN><SPAN CLASS=wff>&#x1D711;</SPAN> &harr;
@@ -143,7 +143,7 @@ CLASS=wff>&#x1D711;&#x2081;</SPAN>)</SPAN></TD></TR>
 <TR ALIGN=LEFT><TD>3</TD><TD><A HREF="#2">2</A></TD><TD><A
 HREF="rcp-NDBIEF0.html"
 TITLE="'`<->`' Elimination by Forward Implication Introduction. `t.`">rcp-NDBIEF0</A>&nbsp;<SPAN
-CLASS=r STYLE="color:#957B00">250</SPAN></TD><TD><A NAME="3"></A>
+CLASS=r STYLE="color:#9B7900">240</SPAN></TD><TD><A NAME="3"></A>
 <SPAN CLASS=i>. . 3</SPAN>
 <SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN>(&forall;<SPAN
 CLASS=objvar>&#x1D466;</SPAN><SPAN CLASS=wff>&#x1D711;</SPAN> &rarr;
@@ -152,7 +152,7 @@ CLASS=wff>&#x1D711;&#x2081;</SPAN>)</SPAN></TD></TR>
 <TR ALIGN=LEFT><TD>4</TD><TD><A HREF="#3">3</A></TD><TD><A
 HREF="alloverim-P5.RC.GEN.html"
 TITLE="Inference Form of ~alloverim-P5 with Generalization. For the deductive form with a...">alloverim-P5.RC.GEN</A>&nbsp;<SPAN
-CLASS=r STYLE="color:#008F77">598</SPAN></TD><TD><A NAME="4"></A>
+CLASS=r STYLE="color:#008F75">592</SPAN></TD><TD><A NAME="4"></A>
 <SPAN CLASS=i>. 2</SPAN>
 <SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN>(&forall;<SPAN
 CLASS=objvar>&#x1D465;</SPAN>&forall;<SPAN CLASS=objvar>&#x1D466;</SPAN><SPAN
@@ -174,7 +174,7 @@ CLASS=wff>&#x1D711;&#x2081;</SPAN>)</SPAN></TD></TR>
 <TR ALIGN=LEFT><TD>6</TD><TD><A HREF="#1">1</A></TD><TD><A
 HREF="bisym-P3.33b.html"
 TITLE="Equivalence Property: '`<->`' Symmetry. `t.`">bisym-P3.33b</A>&nbsp;<SPAN
-CLASS=r STYLE="color:#748600">308</SPAN></TD><TD><A NAME="6"></A>
+CLASS=r STYLE="color:#788400">298</SPAN></TD><TD><A NAME="6"></A>
 <SPAN CLASS=i>. . . . . 6</SPAN>
 <SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN>(<SPAN
 CLASS=objvar>&#x1D466;</SPAN> = <SPAN CLASS=objvar>&#x1D466;&#x2081;</SPAN>
@@ -182,7 +182,7 @@ CLASS=objvar>&#x1D466;</SPAN> = <SPAN CLASS=objvar>&#x1D466;&#x2081;</SPAN>
 CLASS=wff>&#x1D711;</SPAN>))</SPAN></TD></TR>
 <TR ALIGN=LEFT><TD>7</TD><TD>&nbsp;</TD><TD><A HREF="eqsym-P5.CL.SYM.html"
 TITLE="Closed Symmetric Form of ~eqsym-P5 .">eqsym-P5.CL.SYM</A>&nbsp;<SPAN
-CLASS=r STYLE="color:#008C98">635</SPAN></TD><TD><A NAME="7"></A>
+CLASS=r STYLE="color:#008D96">629</SPAN></TD><TD><A NAME="7"></A>
 <SPAN CLASS=i>. . . . . 6</SPAN>
 <SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN>(<SPAN
 CLASS=objvar>&#x1D466;</SPAN> = <SPAN CLASS=objvar>&#x1D466;&#x2081;</SPAN>
@@ -191,7 +191,7 @@ CLASS=objvar>&#x1D466;</SPAN>)</SPAN></TD></TR>
 <TR ALIGN=LEFT><TD>8</TD><TD><A HREF="#6">6</A>, <A HREF="#7">7</A></TD><TD><A
 HREF="subiml2-P4.RC.html"
 TITLE="Inference Form of ~subiml2-P4 . `t.`">subiml2-P4.RC</A>&nbsp;<SPAN
-CLASS=r STYLE="color:#00914E">547</SPAN></TD><TD><A NAME="8"></A>
+CLASS=r STYLE="color:#00914B">541</SPAN></TD><TD><A NAME="8"></A>
 <SPAN CLASS=i>. . . . 5</SPAN>
 <SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN>(<SPAN
 CLASS=objvar>&#x1D466;&#x2081;</SPAN> = <SPAN CLASS=objvar>&#x1D466;</SPAN>
@@ -200,7 +200,7 @@ CLASS=wff>&#x1D711;</SPAN>))</SPAN></TD></TR>
 <TR ALIGN=LEFT><TD>9</TD><TD><A HREF="#8">8</A></TD><TD><A
 HREF="specisub-P5.html"
 TITLE="Specialization Theorem with Implicit Substitution. '`x`' cannot occur in either...">specisub-P5</A>&nbsp;<SPAN
-CLASS=r STYLE="color:#0089B4">660</SPAN></TD><TD><A NAME="9"></A>
+CLASS=r STYLE="color:#008AB1">654</SPAN></TD><TD><A NAME="9"></A>
 <SPAN CLASS=i>. . . 4</SPAN>
 <SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN>(&forall;<SPAN
 CLASS=objvar>&#x1D466;&#x2081;</SPAN><SPAN CLASS=wff>&#x1D711;&#x2081;</SPAN>
@@ -208,7 +208,7 @@ CLASS=objvar>&#x1D466;&#x2081;</SPAN><SPAN CLASS=wff>&#x1D711;&#x2081;</SPAN>
 <TR ALIGN=LEFT><TD>10</TD><TD><A HREF="#9">9</A></TD><TD><A
 HREF="alloverim-P5.RC.GEN.html"
 TITLE="Inference Form of ~alloverim-P5 with Generalization. For the deductive form with a...">alloverim-P5.RC.GEN</A>&nbsp;<SPAN
-CLASS=r STYLE="color:#008F77">598</SPAN></TD><TD><A NAME="10"></A>
+CLASS=r STYLE="color:#008F75">592</SPAN></TD><TD><A NAME="10"></A>
 <SPAN CLASS=i>. . 3</SPAN>
 <SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN>(&forall;<SPAN
 CLASS=objvar>&#x1D465;</SPAN>&forall;<SPAN
@@ -218,7 +218,7 @@ CLASS=wff>&#x1D711;</SPAN>)</SPAN></TD></TR>
 <TR ALIGN=LEFT><TD>11</TD><TD><A HREF="#10">10</A></TD><TD><A
 HREF="alloverim-P5.RC.GEN.html"
 TITLE="Inference Form of ~alloverim-P5 with Generalization. For the deductive form with a...">alloverim-P5.RC.GEN</A>&nbsp;<SPAN
-CLASS=r STYLE="color:#008F77">598</SPAN></TD><TD><A NAME="11"></A>
+CLASS=r STYLE="color:#008F75">592</SPAN></TD><TD><A NAME="11"></A>
 <SPAN CLASS=i>. 2</SPAN>
 <SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN>(&forall;<SPAN
 CLASS=objvar>&#x1D466;</SPAN>&forall;<SPAN
@@ -229,7 +229,7 @@ CLASS=objvar>&#x1D465;</SPAN><SPAN CLASS=wff>&#x1D711;</SPAN>)</SPAN></TD></TR>
 <TR ALIGN=LEFT><TD>12</TD><TD><A HREF="#4">4</A>, <A HREF="#5">5</A>, <A
 HREF="#11">11</A></TD><TD><A HREF="dsyl-P3.25.RC.html"
 TITLE="Inference Form of ~dsyl-P3.25 . `t.`">dsyl-P3.25.RC</A>&nbsp;<SPAN
-CLASS=r STYLE="color:#868000">272</SPAN></TD><TD><A NAME="12"></A>
+CLASS=r STYLE="color:#8C7E00">262</SPAN></TD><TD><A NAME="12"></A>
 <SPAN CLASS=i>1</SPAN>
 <SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN>(&forall;<SPAN
 CLASS=objvar>&#x1D465;</SPAN>&forall;<SPAN CLASS=objvar>&#x1D466;</SPAN><SPAN
@@ -253,7 +253,7 @@ STYLE="color:#FA0200">8</SPAN> &nbsp;<SPAN CLASS=math> &rarr; </SPAN><A
 HREF="wff-imp.html">wff-imp</A>&nbsp;<SPAN CLASS=r
 STYLE="color:#FA0200">10</SPAN> &nbsp;<SPAN CLASS=math> &harr; </SPAN><A
 HREF="wff-bi.html">wff-bi</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#E53A00">103</SPAN></FONT></TD></TR>
+STYLE="color:#E43B00">104</SPAN></FONT></TD></TR>
 <TR><TD ALIGN=LEFT><FONT SIZE=-1><B>This theorem was proved from axioms:</B>
 &nbsp;<A HREF="ax-L1.html">ax-L1</A>&nbsp;<SPAN CLASS=r
 STYLE="color:#FA0200">11</SPAN> &nbsp;<A HREF="ax-L2.html">ax-L2</A>&nbsp;<SPAN
@@ -270,24 +270,24 @@ STYLE="color:#F90500">18</SPAN> &nbsp;<A HREF="ax-L7.html">ax-L7</A>&nbsp;<SPAN
 CLASS=r STYLE="color:#F90500">19</SPAN></FONT></TD></TR>
 <TR><TD ALIGN=LEFT><FONT SIZE=-1><B>This theorem depends on definitions:</B>
 &nbsp;<A HREF="df-bi-D2.1.html">df-bi-D2.1</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#E43C00">106</SPAN> &nbsp;<A
+STYLE="color:#E33D00">107</SPAN> &nbsp;<A
 HREF="df-and-D2.2.html">df-and-D2.2</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#D84C00">134</SPAN> &nbsp;<A
+STYLE="color:#D84C00">133</SPAN> &nbsp;<A
 HREF="df-or-D2.3.html">df-or-D2.3</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#CE5500">155</SPAN> &nbsp;<A
+STYLE="color:#D25100">145</SPAN> &nbsp;<A
 HREF="df-true-D2.4.html">df-true-D2.4</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#C95A00">165</SPAN> &nbsp;<A
+STYLE="color:#CE5500">155</SPAN> &nbsp;<A
 HREF="df-rcp-AND3.html">df-rcp-AND3</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#C55C00">171</SPAN> &nbsp;<A
+STYLE="color:#CB5800">161</SPAN> &nbsp;<A
 HREF="df-exists-D5.1.html">df-exists-D5.1</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#008F7B">602</SPAN></FONT></TD></TR>
+STYLE="color:#008F78">596</SPAN></FONT></TD></TR>
 <TR><TD ALIGN=LEFT><FONT SIZE=-1><B>This theorem is referenced by:</B> &nbsp;<A
 HREF="lemma-L5.05a.html">lemma-L5.05a</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#0087C7">674</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#0087C4">668</SPAN> &nbsp;<A
 HREF="allcommw-P5.html">allcommw-P5</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#0087C9">675</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#0087C5">669</SPAN> &nbsp;<A
 HREF="nfrall2w-P6.html">nfrall2w-P6</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#0083E5">700</SPAN></FONT></TD></TR>
+&nbsp;<SPAN CLASS=r STYLE="color:#0083E3">694</SPAN></FONT></TD></TR>
 </TABLE></CENTER>
 <TABLE BORDER=0 WIDTH="100%">
 <TR><TD WIDTH="25%">&nbsp;</TD>

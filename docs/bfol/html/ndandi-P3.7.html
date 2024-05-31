@@ -16,10 +16,6 @@ img { margin-bottom: -4px }
    }
 -->
 </STYLE>
-<link rel="stylesheet" 
-media="screen" 
-href="https://fontlibrary.org/en/face/xits-math" 
-type="text/css"/> 
 <STYLE TYPE="text/css"> 
 <!--
   .wff { color: blue; } 
@@ -27,7 +23,11 @@ type="text/css"/>
   .term { color: green; } 
   .class { color: #CC33CC; } 
   .typecode { color: gray; } 
-  .math { font-family: XITSMathRegular; } 
+  @font-face {
+     font-family: XITSMath-Regular; 
+     src: url(../fonts/xits-math.woff); 
+  } 
+  .math { font-family: XITSMath-Regular; } 
 -->
 </STYLE>
 <TITLE>ndandi-P3.7 - bfol.mm Proof Explorer</TITLE>
@@ -76,7 +76,7 @@ bfol.mm Proof Explorer
 <HR NOSHADE SIZE=1>
 <CENTER><B><FONT SIZE="+1">Theorem <FONT
 COLOR="#006633">ndandi-P3.7</FONT></FONT></B>&nbsp;<SPAN CLASS=r
-STYLE="color:#BE6200">182</SPAN></CENTER>
+STYLE="color:#C45D00">172</SPAN></CENTER>
 <CENTER><TABLE><TR><TD ALIGN=LEFT><B>Description: </B>Natural Deduction: '<SPAN
 CLASS=math>&wedge;</SPAN>' Introduction Rule.
 <P STYLE="margin-bottom:0em">
@@ -129,9 +129,9 @@ NAME="2"></A>
 CLASS=wff>&#x1D6FE;</SPAN> &rarr; <SPAN
 CLASS=wff>&#x1D713;</SPAN>)</SPAN></TD></TR>
 <TR ALIGN=LEFT><TD>3</TD><TD><A HREF="#1">1</A>, <A HREF="#2">2</A></TD><TD><A
-HREF="cmb-P2.11c.AC.2SH.html"
-TITLE="Deductive Form of ~cmb-P2.11c .">cmb-P2.11c.AC.2SH</A>&nbsp;<SPAN
-CLASS=r STYLE="color:#D54E00">140</SPAN></TD><TD><A NAME="3"></A>
+HREF="cmb-P2.9c.AC.2SH.html"
+TITLE="Deductive Form of ~cmb-P2.9c .">cmb-P2.9c.AC.2SH</A>&nbsp;<SPAN CLASS=r
+STYLE="color:#D54E00">139</SPAN></TD><TD><A NAME="3"></A>
 <SPAN CLASS=i>1</SPAN>
 <SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN>(<SPAN
 CLASS=wff>&#x1D6FE;</SPAN> &rarr; (<SPAN CLASS=wff>&#x1D711;</SPAN> &wedge;
@@ -147,7 +147,7 @@ STYLE="color:#CC33CC;font-style:normal">class</SPAN></FONT></TD></TR>
 &rarr; </SPAN><A HREF="wff-imp.html">wff-imp</A>&nbsp;<SPAN CLASS=r
 STYLE="color:#FA0200">10</SPAN> &nbsp;<SPAN CLASS=math> &wedge; </SPAN><A
 HREF="wff-and.html">wff-and</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#D84B00">133</SPAN></FONT></TD></TR>
+STYLE="color:#D94B00">132</SPAN></FONT></TD></TR>
 <TR><TD ALIGN=LEFT><FONT SIZE=-1><B>This theorem was proved from axioms:</B>
 &nbsp;<A HREF="ax-L1.html">ax-L1</A>&nbsp;<SPAN CLASS=r
 STYLE="color:#FA0200">11</SPAN> &nbsp;<A HREF="ax-L2.html">ax-L2</A>&nbsp;<SPAN
@@ -157,68 +157,68 @@ HREF="ax-L3.html">ax-L3</A>&nbsp;<SPAN CLASS=r STYLE="color:#F90300">13</SPAN>
 STYLE="color:#F90300">14</SPAN></FONT></TD></TR>
 <TR><TD ALIGN=LEFT><FONT SIZE=-1><B>This theorem depends on definitions:</B>
 &nbsp;<A HREF="df-bi-D2.1.html">df-bi-D2.1</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#E43C00">106</SPAN> &nbsp;<A
+STYLE="color:#E33D00">107</SPAN> &nbsp;<A
 HREF="df-and-D2.2.html">df-and-D2.2</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#D84C00">134</SPAN></FONT></TD></TR>
+STYLE="color:#D84C00">133</SPAN></FONT></TD></TR>
 <TR><TD ALIGN=LEFT><FONT SIZE=-1><B>This theorem is referenced by:</B> &nbsp;<A
 HREF="rcp-NDANDI0.html">rcp-NDANDI0</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#9C7800">239</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#A17500">229</SPAN> &nbsp;<A
 HREF="export-P3.34b.html">export-P3.34b</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#718700">317</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#748600">307</SPAN> &nbsp;<A
 HREF="andcomm-P3.35-L1.html">andcomm-P3.35-L1</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#708700">319</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#718600">313</SPAN> &nbsp;<A
 HREF="andassoc-P3.36-L1.html">andassoc-P3.36-L1</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#6F8700">321</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#718700">315</SPAN> &nbsp;<A
 HREF="andassoc-P3.36-L2.html">andassoc-P3.36-L2</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#6E8700">322</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#708700">316</SPAN> &nbsp;<A
 HREF="subandl-P3.42a-L1.html">subandl-P3.42a-L1</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#628A00">344</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#648900">338</SPAN> &nbsp;<A
 HREF="andasim-P3.46-L2.html">andasim-P3.46-L2</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#588C00">361</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#5A8C00">355</SPAN> &nbsp;<A
 HREF="dfbi-P3.47.html">dfbi-P3.47</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#568C00">364</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#588C00">358</SPAN> &nbsp;<A
 HREF="nprofeliml-P4.6a.html">nprofeliml-P4.6a</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#428F00">395</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#448E00">389</SPAN> &nbsp;<A
 HREF="nprofelimr-P4.6b.html">nprofelimr-P4.6b</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#418F00">397</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#438F00">391</SPAN> &nbsp;<A
 HREF="joinimandres-P4.8b.html">joinimandres-P4.8b</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#3B9000">406</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#3D8F00">400</SPAN> &nbsp;<A
 HREF="sepimandr-P4.9a.html">sepimandr-P4.9a</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#369000">412</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#399000">406</SPAN> &nbsp;<A
 HREF="sepimorl-P4.9b.html">sepimorl-P4.9b</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#349000">415</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#379000">409</SPAN> &nbsp;<A
 HREF="idandtruel-P4.19a.html">idandtruel-P4.19a</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#1E9200">444</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#219200">438</SPAN> &nbsp;<A
 HREF="idempotand-P4.25a.html">idempotand-P4.25a</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#169305">456</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#189303">450</SPAN> &nbsp;<A
 HREF="dmorgafwd-L4.1.html">dmorgafwd-L4.1</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#149306">458</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#179304">452</SPAN> &nbsp;<A
 HREF="dmorgbfwd-L4.3.html">dmorgbfwd-L4.3</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#139307">460</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#159306">454</SPAN> &nbsp;<A
 HREF="andoveror-P4.27-L1.html">andoveror-P4.27-L1</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#0F930A">465</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#129308">459</SPAN> &nbsp;<A
 HREF="andoveror-P4.27-L2.html">andoveror-P4.27-L2</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#0E930B">466</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#119309">460</SPAN> &nbsp;<A
 HREF="oroverand-P4.27-L3.html">oroverand-P4.27-L3</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#0D930C">468</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#0F930A">462</SPAN> &nbsp;<A
 HREF="oroverand-P4.27-L4.html">oroverand-P4.27-L4</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#0C930C">469</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#0F930A">463</SPAN> &nbsp;<A
 HREF="joinimandinc2-P4.html">joinimandinc2-P4</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#00906A">582</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#009068">576</SPAN> &nbsp;<A
 HREF="joinimandinc3-P4.html">joinimandinc3-P4</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#00906C">584</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#009069">578</SPAN> &nbsp;<A
 HREF="joinimandres2-P4.html">joinimandres2-P4</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#00906D">586</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#00906B">580</SPAN> &nbsp;<A
 HREF="joinimandres3-P4.html">joinimandres3-P4</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#008F6F">588</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#00906D">582</SPAN> &nbsp;<A
 HREF="eqmiddle-P6.html">eqmiddle-P6</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#0181F2">714</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#0181F0">708</SPAN> &nbsp;<A
 HREF="lemma-L6.07a-L2.html">lemma-L6.07a-L2</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#4F74FF">777</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#4D75FF">771</SPAN> &nbsp;<A
 HREF="spliteq-P6-L1.html">spliteq-P6-L1</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#5373FF">781</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#5174FF">775</SPAN> &nbsp;<A
 HREF="splitelof-P6-L1.html">splitelof-P6-L1</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#5573FF">783</SPAN></FONT></TD></TR>
+&nbsp;<SPAN CLASS=r STYLE="color:#5373FF">777</SPAN></FONT></TD></TR>
 </TABLE></CENTER>
 <TABLE BORDER=0 WIDTH="100%">
 <TR><TD WIDTH="25%">&nbsp;</TD>

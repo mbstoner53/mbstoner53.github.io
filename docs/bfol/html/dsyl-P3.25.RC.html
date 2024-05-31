@@ -16,10 +16,6 @@ img { margin-bottom: -4px }
    }
 -->
 </STYLE>
-<link rel="stylesheet" 
-media="screen" 
-href="https://fontlibrary.org/en/face/xits-math" 
-type="text/css"/> 
 <STYLE TYPE="text/css"> 
 <!--
   .wff { color: blue; } 
@@ -27,7 +23,11 @@ type="text/css"/>
   .term { color: green; } 
   .class { color: #CC33CC; } 
   .typecode { color: gray; } 
-  .math { font-family: XITSMathRegular; } 
+  @font-face {
+     font-family: XITSMath-Regular; 
+     src: url(../fonts/xits-math.woff); 
+  } 
+  .math { font-family: XITSMath-Regular; } 
 -->
 </STYLE>
 <TITLE>dsyl-P3.25.RC - bfol.mm Proof Explorer</TITLE>
@@ -76,10 +76,10 @@ bfol.mm Proof Explorer
 <HR NOSHADE SIZE=1>
 <CENTER><B><FONT SIZE="+1">Theorem <FONT
 COLOR="#006633">dsyl-P3.25.RC</FONT></FONT></B>&nbsp;<SPAN CLASS=r
-STYLE="color:#868000">272</SPAN></CENTER>
+STYLE="color:#8C7E00">262</SPAN></CENTER>
 <CENTER><TABLE><TR><TD ALIGN=LEFT><B>Description: </B>Inference Form of <A
 HREF="dsyl-P3.25.html">dsyl-P3.25</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#878000">271</SPAN>. <SPAN
+STYLE="color:#8D7E00">261</SPAN>. <SPAN
 CLASS=math>&dagger;</SPAN></TD></TR></TABLE></CENTER>
 
 <CENTER><TABLE BORDER CELLSPACING=0 BGCOLOR="#EEFFFA"
@@ -128,7 +128,7 @@ CLASS=wff>&#x1D713;</SPAN>)</SPAN></TD></TR>
 <TR ALIGN=LEFT><TD>2</TD><TD><A HREF="#1">1</A></TD><TD><A
 HREF="ndtruei-P3.17.html"
 TITLE="Natural Deduction: '`T.`' Introduction Rule. This can be used to turn an ordinary...">ndtruei-P3.17</A>&nbsp;<SPAN
-CLASS=r STYLE="color:#B86600">192</SPAN></TD><TD><A NAME="2"></A>
+CLASS=r STYLE="color:#BE6200">182</SPAN></TD><TD><A NAME="2"></A>
 <SPAN CLASS=i>. . 3</SPAN>
 <SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN>(&top; &rarr; (<SPAN
 CLASS=wff>&#x1D711;</SPAN> &rarr; <SPAN
@@ -142,7 +142,7 @@ CLASS=wff>&#x1D712;</SPAN>)</SPAN></TD></TR>
 <TR ALIGN=LEFT><TD>4</TD><TD><A HREF="#3">3</A></TD><TD><A
 HREF="ndtruei-P3.17.html"
 TITLE="Natural Deduction: '`T.`' Introduction Rule. This can be used to turn an ordinary...">ndtruei-P3.17</A>&nbsp;<SPAN
-CLASS=r STYLE="color:#B86600">192</SPAN></TD><TD><A NAME="4"></A>
+CLASS=r STYLE="color:#BE6200">182</SPAN></TD><TD><A NAME="4"></A>
 <SPAN CLASS=i>. . 3</SPAN>
 <SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN>(&top; &rarr; (<SPAN
 CLASS=wff>&#x1D713;</SPAN> &rarr; <SPAN
@@ -156,7 +156,7 @@ CLASS=wff>&#x1D717;</SPAN>)</SPAN></TD></TR>
 <TR ALIGN=LEFT><TD>6</TD><TD><A HREF="#5">5</A></TD><TD><A
 HREF="ndtruei-P3.17.html"
 TITLE="Natural Deduction: '`T.`' Introduction Rule. This can be used to turn an ordinary...">ndtruei-P3.17</A>&nbsp;<SPAN
-CLASS=r STYLE="color:#B86600">192</SPAN></TD><TD><A NAME="6"></A>
+CLASS=r STYLE="color:#BE6200">182</SPAN></TD><TD><A NAME="6"></A>
 <SPAN CLASS=i>. . 3</SPAN>
 <SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN>(&top; &rarr; (<SPAN
 CLASS=wff>&#x1D712;</SPAN> &rarr; <SPAN
@@ -164,7 +164,7 @@ CLASS=wff>&#x1D717;</SPAN>))</SPAN></TD></TR>
 <TR ALIGN=LEFT><TD>7</TD><TD><A HREF="#2">2</A>, <A HREF="#4">4</A>, <A
 HREF="#6">6</A></TD><TD><A HREF="dsyl-P3.25.html"
 TITLE="Double Syllogism. `t.`">dsyl-P3.25</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#878000">271</SPAN></TD><TD><A NAME="7"></A>
+STYLE="color:#8D7E00">261</SPAN></TD><TD><A NAME="7"></A>
 <SPAN CLASS=i>. 2</SPAN>
 <SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN>(&top; &rarr; (<SPAN
 CLASS=wff>&#x1D711;</SPAN> &rarr; <SPAN
@@ -172,7 +172,7 @@ CLASS=wff>&#x1D717;</SPAN>))</SPAN></TD></TR>
 <TR ALIGN=LEFT><TD>8</TD><TD><A HREF="#7">7</A></TD><TD><A
 HREF="ndtruee-P3.18.html"
 TITLE="Natural Deduction: '`T.`' Elimination Rule. Rules 17 and 18 allow us to write '`( T....">ndtruee-P3.18</A>&nbsp;<SPAN
-CLASS=r STYLE="color:#B86700">193</SPAN></TD><TD><A NAME="8"></A>
+CLASS=r STYLE="color:#BD6300">183</SPAN></TD><TD><A NAME="8"></A>
 <SPAN CLASS=i>1</SPAN>
 <SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN>(<SPAN
 CLASS=wff>&#x1D711;</SPAN> &rarr; <SPAN
@@ -188,7 +188,7 @@ STYLE="color:#CC33CC;font-style:normal">class</SPAN></FONT></TD></TR>
 &rarr; </SPAN><A HREF="wff-imp.html">wff-imp</A>&nbsp;<SPAN CLASS=r
 STYLE="color:#FA0200">10</SPAN> &nbsp;<SPAN CLASS=math>&top;</SPAN><A
 HREF="wff-true.html">wff-true</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#CA5900">163</SPAN></FONT></TD></TR>
+STYLE="color:#CF5500">153</SPAN></FONT></TD></TR>
 <TR><TD ALIGN=LEFT><FONT SIZE=-1><B>This theorem was proved from axioms:</B>
 &nbsp;<A HREF="ax-L1.html">ax-L1</A>&nbsp;<SPAN CLASS=r
 STYLE="color:#FA0200">11</SPAN> &nbsp;<A HREF="ax-L2.html">ax-L2</A>&nbsp;<SPAN
@@ -198,32 +198,32 @@ HREF="ax-L3.html">ax-L3</A>&nbsp;<SPAN CLASS=r STYLE="color:#F90300">13</SPAN>
 STYLE="color:#F90300">14</SPAN></FONT></TD></TR>
 <TR><TD ALIGN=LEFT><FONT SIZE=-1><B>This theorem depends on definitions:</B>
 &nbsp;<A HREF="df-bi-D2.1.html">df-bi-D2.1</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#E43C00">106</SPAN> &nbsp;<A
+STYLE="color:#E33D00">107</SPAN> &nbsp;<A
 HREF="df-and-D2.2.html">df-and-D2.2</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#D84C00">134</SPAN> &nbsp;<A
+STYLE="color:#D84C00">133</SPAN> &nbsp;<A
 HREF="df-true-D2.4.html">df-true-D2.4</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#C95A00">165</SPAN></FONT></TD></TR>
+STYLE="color:#CE5500">155</SPAN></FONT></TD></TR>
 <TR><TD ALIGN=LEFT><FONT SIZE=-1><B>This theorem is referenced by:</B> &nbsp;<A
 HREF="lemma-L5.04a.html">lemma-L5.04a</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#0087C6">673</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#0087C3">667</SPAN> &nbsp;<A
 HREF="nfrim-P6.html">nfrim-P6</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#0083E0">695</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#0084DE">689</SPAN> &nbsp;<A
 HREF="trnsvsubw-P6.html">trnsvsubw-P6</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#0280F3">716</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#0181F1">710</SPAN> &nbsp;<A
 HREF="exipsub-P6.html">exipsub-P6</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#027FFD">726</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#027FFB">720</SPAN> &nbsp;<A
 HREF="trnsvsub-P6.html">trnsvsub-P6</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#4776FF">769</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#4477FF">763</SPAN> &nbsp;<A
 HREF="splitelof-P6-L1.html">splitelof-P6-L1</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#5573FF">783</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#5373FF">777</SPAN> &nbsp;<A
 HREF="dfnfreeint-P7.html">dfnfreeint-P7</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#CD1FF7">975</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#CC1FF7">969</SPAN> &nbsp;<A
 HREF="dfpsubv-P7.html">dfpsubv-P7</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#CE1BF4">983</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#CE1CF4">977</SPAN> &nbsp;<A
 HREF="nfrexall-P8.html">nfrexall-P8</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#E900AB">1092</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#E900AB">1086</SPAN> &nbsp;<A
 HREF="nfrnegconv-P8.html">nfrnegconv-P8</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#EC0093">1116</SPAN></FONT></TD></TR>
+&nbsp;<SPAN CLASS=r STYLE="color:#EC0093">1110</SPAN></FONT></TD></TR>
 </TABLE></CENTER>
 <TABLE BORDER=0 WIDTH="100%">
 <TR><TD WIDTH="25%">&nbsp;</TD>

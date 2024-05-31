@@ -16,10 +16,6 @@ img { margin-bottom: -4px }
    }
 -->
 </STYLE>
-<link rel="stylesheet" 
-media="screen" 
-href="https://fontlibrary.org/en/face/xits-math" 
-type="text/css"/> 
 <STYLE TYPE="text/css"> 
 <!--
   .wff { color: blue; } 
@@ -27,7 +23,11 @@ type="text/css"/>
   .term { color: green; } 
   .class { color: #CC33CC; } 
   .typecode { color: gray; } 
-  .math { font-family: XITSMathRegular; } 
+  @font-face {
+     font-family: XITSMath-Regular; 
+     src: url(../fonts/xits-math.woff); 
+  } 
+  .math { font-family: XITSMath-Regular; } 
 -->
 </STYLE>
 <TITLE>alloverim-P5.RC.GEN - bfol.mm Proof Explorer</TITLE>
@@ -76,16 +76,16 @@ bfol.mm Proof Explorer
 <HR NOSHADE SIZE=1>
 <CENTER><B><FONT SIZE="+1">Theorem <FONT
 COLOR="#006633">alloverim-P5.RC.GEN</FONT></FONT></B>&nbsp;<SPAN CLASS=r
-STYLE="color:#008F77">598</SPAN></CENTER>
+STYLE="color:#008F75">592</SPAN></CENTER>
 <CENTER><TABLE><TR><TD ALIGN=LEFT><B>Description: </B>Inference Form of <A
 HREF="alloverim-P5.html">alloverim-P5</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#008F74">594</SPAN> with Generalization.
+STYLE="color:#008F72">588</SPAN> with Generalization.
 <P STYLE="margin-bottom:0em">
        For the deductive form with a variable restriction see
        <A HREF="alloverim-P5.GENV.html">alloverim-P5.GENV</A>&nbsp;<SPAN
-CLASS=r STYLE="color:#008D91">627</SPAN>.  For the most general form, see
+CLASS=r STYLE="color:#008D8E">621</SPAN>.  For the most general form, see
        <A HREF="alloverim-P5.GENF.html">alloverim-P5.GENF</A>&nbsp;<SPAN
-CLASS=r STYLE="color:#2C7AFF">753</SPAN>.</TD></TR></TABLE></CENTER>
+CLASS=r STYLE="color:#297AFF">747</SPAN>.</TD></TR></TABLE></CENTER>
 
 <CENTER><TABLE BORDER CELLSPACING=0 BGCOLOR="#EEFFFA"
 SUMMARY="Hypothesis">
@@ -134,7 +134,7 @@ CLASS=wff>&#x1D713;</SPAN>)</SPAN></TD></TR>
 <TR ALIGN=LEFT><TD>3</TD><TD><A HREF="#2">2</A></TD><TD><A
 HREF="alloverim-P5.RC.html"
 TITLE="Inference Form of ~alloverim-P5 .">alloverim-P5.RC</A>&nbsp;<SPAN
-CLASS=r STYLE="color:#008F75">595</SPAN></TD><TD><A NAME="3"></A>
+CLASS=r STYLE="color:#008F72">589</SPAN></TD><TD><A NAME="3"></A>
 <SPAN CLASS=i>1</SPAN>
 <SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN>(&forall;<SPAN
 CLASS=objvar>&#x1D465;</SPAN><SPAN CLASS=wff>&#x1D711;</SPAN> &rarr;
@@ -164,30 +164,30 @@ STYLE="color:#F90400">15</SPAN> &nbsp;<A HREF="ax-L4.html">ax-L4</A>&nbsp;<SPAN
 CLASS=r STYLE="color:#F90400">16</SPAN></FONT></TD></TR>
 <TR><TD ALIGN=LEFT><FONT SIZE=-1><B>This theorem depends on definitions:</B>
 &nbsp;<A HREF="df-bi-D2.1.html">df-bi-D2.1</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#E43C00">106</SPAN> &nbsp;<A
+STYLE="color:#E33D00">107</SPAN> &nbsp;<A
 HREF="df-and-D2.2.html">df-and-D2.2</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#D84C00">134</SPAN> &nbsp;<A
+STYLE="color:#D84C00">133</SPAN> &nbsp;<A
 HREF="df-true-D2.4.html">df-true-D2.4</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#C95A00">165</SPAN></FONT></TD></TR>
+STYLE="color:#CE5500">155</SPAN></FONT></TD></TR>
 <TR><TD ALIGN=LEFT><FONT SIZE=-1><B>This theorem is referenced by:</B> &nbsp;<A
 HREF="qimeqallhalf-P5.html">qimeqallhalf-P5</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#008E86">615</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#008E83">609</SPAN> &nbsp;<A
 HREF="allicv-P5.html">allicv-P5</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#008E8B">620</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#008E88">614</SPAN> &nbsp;<A
 HREF="cbvallv-P5-L1.html">cbvallv-P5-L1</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#0089BA">664</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#0089B7">658</SPAN> &nbsp;<A
 HREF="lemma-L5.04a.html">lemma-L5.04a</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#0087C6">673</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#0087C3">667</SPAN> &nbsp;<A
 HREF="nfrall2w-P6.html">nfrall2w-P6</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#0083E5">700</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#0083E3">694</SPAN> &nbsp;<A
 HREF="specpsub-P6.html">specpsub-P6</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#027FFE">727</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#027FFC">721</SPAN> &nbsp;<A
 HREF="nfrall2-P6.html">nfrall2-P6</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#267AFF">749</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#227BFF">743</SPAN> &nbsp;<A
 HREF="allic-P6.html">allic-P6</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#297AFF">751</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#267AFF">745</SPAN> &nbsp;<A
 HREF="exgennfrcl-L6.html">exgennfrcl-L6</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#756AFF">820</SPAN></FONT></TD></TR>
+&nbsp;<SPAN CLASS=r STYLE="color:#746AFF">814</SPAN></FONT></TD></TR>
 </TABLE></CENTER>
 <TABLE BORDER=0 WIDTH="100%">
 <TR><TD WIDTH="25%">&nbsp;</TD>

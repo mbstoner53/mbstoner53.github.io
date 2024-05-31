@@ -16,10 +16,6 @@ img { margin-bottom: -4px }
    }
 -->
 </STYLE>
-<link rel="stylesheet" 
-media="screen" 
-href="https://fontlibrary.org/en/face/xits-math" 
-type="text/css"/> 
 <STYLE TYPE="text/css"> 
 <!--
   .wff { color: blue; } 
@@ -27,7 +23,11 @@ type="text/css"/>
   .term { color: green; } 
   .class { color: #CC33CC; } 
   .typecode { color: gray; } 
-  .math { font-family: XITSMathRegular; } 
+  @font-face {
+     font-family: XITSMath-Regular; 
+     src: url(../fonts/xits-math.woff); 
+  } 
+  .math { font-family: XITSMath-Regular; } 
 -->
 </STYLE>
 <TITLE>alloverim-P5 - bfol.mm Proof Explorer</TITLE>
@@ -76,7 +76,7 @@ bfol.mm Proof Explorer
 <HR NOSHADE SIZE=1>
 <CENTER><B><FONT SIZE="+1">Theorem <FONT
 COLOR="#006633">alloverim-P5</FONT></FONT></B>&nbsp;<SPAN CLASS=r
-STYLE="color:#008F74">594</SPAN></CENTER>
+STYLE="color:#008F72">588</SPAN></CENTER>
 <CENTER><TABLE><TR><TD ALIGN=LEFT><B>Description: </B>'<SPAN
 CLASS=math>&forall;<SPAN CLASS=objvar>&#x1D465;</SPAN></SPAN>' Distributes Over
 '<SPAN CLASS=math>&rarr;</SPAN>'.
@@ -136,7 +136,7 @@ CLASS=wff>&#x1D713;</SPAN>))</SPAN></TD></TR>
 <TR ALIGN=LEFT><TD>3</TD><TD><A HREF="#2">2</A></TD><TD><A
 HREF="rcp-NDIMP0addall.html"
 TITLE="( ) `=>` ( 1 `/\` ... `/\` n ). `t.`">rcp-NDIMP0addall</A>&nbsp;<SPAN
-CLASS=r STYLE="color:#A97000">217</SPAN></TD><TD><A NAME="3"></A>
+CLASS=r STYLE="color:#AE6D00">207</SPAN></TD><TD><A NAME="3"></A>
 <SPAN CLASS=i>. 2</SPAN>
 <SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN>(<SPAN
 CLASS=wff>&#x1D6FE;</SPAN> &rarr; (&forall;<SPAN
@@ -148,7 +148,7 @@ CLASS=wff>&#x1D713;</SPAN>)))</SPAN></TD></TR>
 <TR ALIGN=LEFT><TD>4</TD><TD><A HREF="#1">1</A>, <A HREF="#3">3</A></TD><TD><A
 HREF="ndime-P3.6.html"
 TITLE="Natural Deduction: '`->`' Elimination Rule. This rule is just Modus Ponens with an...">ndime-P3.6</A>&nbsp;<SPAN
-CLASS=r STYLE="color:#BF6100">181</SPAN></TD><TD><A NAME="4"></A>
+CLASS=r STYLE="color:#C55D00">171</SPAN></TD><TD><A NAME="4"></A>
 <SPAN CLASS=i>1</SPAN>
 <SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN>(<SPAN
 CLASS=wff>&#x1D6FE;</SPAN> &rarr; (&forall;<SPAN
@@ -177,24 +177,24 @@ STYLE="color:#F90300">14</SPAN> &nbsp;<A HREF="ax-L4.html">ax-L4</A>&nbsp;<SPAN
 CLASS=r STYLE="color:#F90400">16</SPAN></FONT></TD></TR>
 <TR><TD ALIGN=LEFT><FONT SIZE=-1><B>This theorem depends on definitions:</B>
 &nbsp;<A HREF="df-bi-D2.1.html">df-bi-D2.1</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#E43C00">106</SPAN> &nbsp;<A
+STYLE="color:#E33D00">107</SPAN> &nbsp;<A
 HREF="df-and-D2.2.html">df-and-D2.2</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#D84C00">134</SPAN> &nbsp;<A
+STYLE="color:#D84C00">133</SPAN> &nbsp;<A
 HREF="df-true-D2.4.html">df-true-D2.4</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#C95A00">165</SPAN></FONT></TD></TR>
+STYLE="color:#CE5500">155</SPAN></FONT></TD></TR>
 <TR><TD ALIGN=LEFT><FONT SIZE=-1><B>This theorem is referenced by:</B> &nbsp;<A
 HREF="alloverim-P5.RC.html">alloverim-P5.RC</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#008F75">595</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#008F72">589</SPAN> &nbsp;<A
 HREF="dalloverim-P5.html">dalloverim-P5</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#008F76">596</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#008F73">590</SPAN> &nbsp;<A
 HREF="alloverimex-P5.html">alloverimex-P5</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#008E7F">607</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#008F7C">601</SPAN> &nbsp;<A
 HREF="dalloverimex-P5.html">dalloverimex-P5</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#008E82">611</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#008E80">605</SPAN> &nbsp;<A
 HREF="alloverim-P5.GENV.html">alloverim-P5.GENV</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#008D91">627</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#008D8E">621</SPAN> &nbsp;<A
 HREF="alloverim-P5.GENF.html">alloverim-P5.GENF</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#2C7AFF">753</SPAN></FONT></TD></TR>
+&nbsp;<SPAN CLASS=r STYLE="color:#297AFF">747</SPAN></FONT></TD></TR>
 </TABLE></CENTER>
 <TABLE BORDER=0 WIDTH="100%">
 <TR><TD WIDTH="25%">&nbsp;</TD>

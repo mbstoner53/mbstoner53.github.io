@@ -16,10 +16,6 @@ img { margin-bottom: -4px }
    }
 -->
 </STYLE>
-<link rel="stylesheet" 
-media="screen" 
-href="https://fontlibrary.org/en/face/xits-math" 
-type="text/css"/> 
 <STYLE TYPE="text/css"> 
 <!--
   .wff { color: blue; } 
@@ -27,7 +23,11 @@ type="text/css"/>
   .term { color: green; } 
   .class { color: #CC33CC; } 
   .typecode { color: gray; } 
-  .math { font-family: XITSMathRegular; } 
+  @font-face {
+     font-family: XITSMath-Regular; 
+     src: url(../fonts/xits-math.woff); 
+  } 
+  .math { font-family: XITSMath-Regular; } 
 -->
 </STYLE>
 <TITLE>ax-L8-inl - bfol.mm Proof Explorer</TITLE>
@@ -164,7 +164,7 @@ STYLE="color:red;font-style:normal">objvar</SPAN> <SPAN CLASS=typecode
 STYLE="color:green;font-style:normal">term</SPAN> <SPAN CLASS=typecode
 STYLE="color:#CC33CC;font-style:normal">class</SPAN></FONT></TD></TR>
 <TR><TD ALIGN=LEFT><FONT SIZE=-1><B>This axiom is referenced by:</B> &nbsp;<A HREF="subelofl-P5.html">subelofl-P5</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#008CA0">644</SPAN></FONT></TD></TR></TABLE></CENTER>
+&nbsp;<SPAN CLASS=r STYLE="color:#008C9E">638</SPAN></FONT></TD></TR></TABLE></CENTER>
 <TABLE BORDER=0 WIDTH="100%">
 <TR><TD WIDTH="25%">&nbsp;</TD>
 <TD ALIGN=CENTER VALIGN=BOTTOM>

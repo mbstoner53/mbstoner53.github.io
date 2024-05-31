@@ -16,10 +16,6 @@ img { margin-bottom: -4px }
    }
 -->
 </STYLE>
-<link rel="stylesheet" 
-media="screen" 
-href="https://fontlibrary.org/en/face/xits-math" 
-type="text/css"/> 
 <STYLE TYPE="text/css"> 
 <!--
   .wff { color: blue; } 
@@ -27,7 +23,11 @@ type="text/css"/>
   .term { color: green; } 
   .class { color: #CC33CC; } 
   .typecode { color: gray; } 
-  .math { font-family: XITSMathRegular; } 
+  @font-face {
+     font-family: XITSMath-Regular; 
+     src: url(../fonts/xits-math.woff); 
+  } 
+  .math { font-family: XITSMath-Regular; } 
 -->
 </STYLE>
 <TITLE>true-P3.44 - bfol.mm Proof Explorer</TITLE>
@@ -76,7 +76,7 @@ bfol.mm Proof Explorer
 <HR NOSHADE SIZE=1>
 <CENTER><B><FONT SIZE="+1">Theorem <FONT
 COLOR="#006633">true-P3.44</FONT></FONT></B>&nbsp;<SPAN CLASS=r
-STYLE="color:#598C00">358</SPAN></CENTER>
+STYLE="color:#5C8B00">352</SPAN></CENTER>
 <CENTER><TABLE><TR><TD ALIGN=LEFT><B>Description: </B>'<SPAN
 CLASS=math>&top;</SPAN>' is a theorem. <SPAN
 CLASS=math>&dagger;</SPAN></TD></TR></TABLE></CENTER>
@@ -100,14 +100,14 @@ SUMMARY="Proof of theorem">
 </TH><TH>Expression</TH></TR>
 <TR ALIGN=LEFT><TD>1</TD><TD>&nbsp;</TD><TD><A HREF="rcp-NDASM1of1.html"
 TITLE="( 1 ) `->` 1. `t.`">rcp-NDASM1of1</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#B26B00">202</SPAN></TD><TD><A NAME="1"></A>
+STYLE="color:#B86700">192</SPAN></TD><TD><A NAME="1"></A>
 <SPAN CLASS=i>. 2</SPAN>
 <SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN>(&top; &rarr;
 &top;)</SPAN></TD></TR>
 <TR ALIGN=LEFT><TD>2</TD><TD><A HREF="#1">1</A></TD><TD><A
 HREF="ndtruee-P3.18.html"
 TITLE="Natural Deduction: '`T.`' Elimination Rule. Rules 17 and 18 allow us to write '`( T....">ndtruee-P3.18</A>&nbsp;<SPAN
-CLASS=r STYLE="color:#B86700">193</SPAN></TD><TD><A NAME="2"></A>
+CLASS=r STYLE="color:#BD6300">183</SPAN></TD><TD><A NAME="2"></A>
 <SPAN CLASS=i>1</SPAN>
 <SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN>&top;</SPAN></TD></TR>
 </TABLE></CENTER>
@@ -119,7 +119,7 @@ STYLE="color:green;font-style:normal">term</SPAN> <SPAN CLASS=typecode
 STYLE="color:#CC33CC;font-style:normal">class</SPAN></FONT></TD></TR>
 <TR><TD ALIGN=LEFT><FONT SIZE=-1><B>Syntax hints:</B>  &nbsp;<SPAN
 CLASS=math>&top;</SPAN><A HREF="wff-true.html">wff-true</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#CA5900">163</SPAN></FONT></TD></TR>
+STYLE="color:#CF5500">153</SPAN></FONT></TD></TR>
 <TR><TD ALIGN=LEFT><FONT SIZE=-1><B>This theorem was proved from axioms:</B>
 &nbsp;<A HREF="ax-L1.html">ax-L1</A>&nbsp;<SPAN CLASS=r
 STYLE="color:#FA0200">11</SPAN> &nbsp;<A HREF="ax-L2.html">ax-L2</A>&nbsp;<SPAN
@@ -129,22 +129,22 @@ HREF="ax-L3.html">ax-L3</A>&nbsp;<SPAN CLASS=r STYLE="color:#F90300">13</SPAN>
 STYLE="color:#F90300">14</SPAN></FONT></TD></TR>
 <TR><TD ALIGN=LEFT><FONT SIZE=-1><B>This theorem depends on definitions:</B>
 &nbsp;<A HREF="df-bi-D2.1.html">df-bi-D2.1</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#E43C00">106</SPAN> &nbsp;<A
+STYLE="color:#E33D00">107</SPAN> &nbsp;<A
 HREF="df-and-D2.2.html">df-and-D2.2</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#D84C00">134</SPAN> &nbsp;<A
+STYLE="color:#D84C00">133</SPAN> &nbsp;<A
 HREF="df-true-D2.4.html">df-true-D2.4</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#C95A00">165</SPAN></FONT></TD></TR>
+STYLE="color:#CE5500">155</SPAN></FONT></TD></TR>
 <TR><TD ALIGN=LEFT><FONT SIZE=-1><B>This theorem is referenced by:</B> &nbsp;<A
 HREF="dffalse-P3.49-L2.html">dffalse-P3.49-L2</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#528D00">370</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#558D00">364</SPAN> &nbsp;<A
 HREF="idandtruel-P4.19a.html">idandtruel-P4.19a</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#1E9200">444</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#219200">438</SPAN> &nbsp;<A
 HREF="thmeqtrue-P4.21a.html">thmeqtrue-P4.21a</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#1C9301">448</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#1E9200">442</SPAN> &nbsp;<A
 HREF="truthtbltbif-P4.39b.html">truthtbltbif-P4.39b</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#009131">514</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#00922E">508</SPAN> &nbsp;<A
 HREF="truthtblfbit-P4.39c.html">truthtblfbit-P4.39c</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#009132">515</SPAN></FONT></TD></TR>
+&nbsp;<SPAN CLASS=r STYLE="color:#00922F">509</SPAN></FONT></TD></TR>
 </TABLE></CENTER>
 <TABLE BORDER=0 WIDTH="100%">
 <TR><TD WIDTH="25%">&nbsp;</TD>

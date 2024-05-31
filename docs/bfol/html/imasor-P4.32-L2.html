@@ -16,10 +16,6 @@ img { margin-bottom: -4px }
    }
 -->
 </STYLE>
-<link rel="stylesheet" 
-media="screen" 
-href="https://fontlibrary.org/en/face/xits-math" 
-type="text/css"/> 
 <STYLE TYPE="text/css"> 
 <!--
   .wff { color: blue; } 
@@ -27,7 +23,11 @@ type="text/css"/>
   .term { color: green; } 
   .class { color: #CC33CC; } 
   .typecode { color: gray; } 
-  .math { font-family: XITSMathRegular; } 
+  @font-face {
+     font-family: XITSMath-Regular; 
+     src: url(../fonts/xits-math.woff); 
+  } 
+  .math { font-family: XITSMath-Regular; } 
 -->
 </STYLE>
 <TITLE>imasor-P4.32-L2 - bfol.mm Proof Explorer</TITLE>
@@ -76,12 +76,12 @@ bfol.mm Proof Explorer
 <HR NOSHADE SIZE=1>
 <CENTER><B><FONT SIZE="+1">Theorem <FONT
 COLOR="#006633">imasor-P4.32-L2</FONT></FONT></B>&nbsp;<SPAN CLASS=r
-STYLE="color:#00931C">492</SPAN></CENTER>
+STYLE="color:#009318">486</SPAN></CENTER>
 <CENTER><TABLE><TR><TD ALIGN=LEFT><B>Description: </B>Lemma for <A
 HREF="imasor-P4.32a.html">imasor-P4.32a</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#00931D">493</SPAN> and <A
+STYLE="color:#009319">487</SPAN> and <A
 HREF="imasorint-P4.32b.html">imasorint-P4.32b</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#00931E">494</SPAN>. <SPAN
+STYLE="color:#00931A">488</SPAN>. <SPAN
 CLASS=math>&dagger;</SPAN></TD></TR></TABLE></CENTER>
 
 <CENTER><TABLE BORDER CELLSPACING=0 BGCOLOR="#EEFFFA"
@@ -106,7 +106,7 @@ SUMMARY="Proof of theorem">
 </TH><TH>Expression</TH></TR>
 <TR ALIGN=LEFT><TD>1</TD><TD>&nbsp;</TD><TD><A HREF="rcp-NDASM2of2.html"
 TITLE="( 1 `/\` 2 ) `->` 2. `t.`">rcp-NDASM2of2</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#B16C00">204</SPAN></TD><TD><A NAME="1"></A>
+STYLE="color:#B66800">194</SPAN></TD><TD><A NAME="1"></A>
 <SPAN CLASS=i>. . 3</SPAN>
 <SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN>(((&not; <SPAN
 CLASS=wff>&#x1D711;</SPAN> &vee; <SPAN CLASS=wff>&#x1D713;</SPAN>) &wedge;
@@ -115,7 +115,7 @@ CLASS=wff>&#x1D711;</SPAN>)</SPAN></TD></TR>
 <TR ALIGN=LEFT><TD>2</TD><TD><A HREF="#1">1</A></TD><TD><A
 HREF="impoe-P4.4a.html"
 TITLE="Variation of Principle of Explosion Using Implication. `t.`">impoe-P4.4a</A>&nbsp;<SPAN
-CLASS=r STYLE="color:#4A8E00">383</SPAN></TD><TD><A NAME="2"></A>
+CLASS=r STYLE="color:#4C8E00">377</SPAN></TD><TD><A NAME="2"></A>
 <SPAN CLASS=i>. 2</SPAN>
 <SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN>(((&not; <SPAN
 CLASS=wff>&#x1D711;</SPAN> &vee; <SPAN CLASS=wff>&#x1D713;</SPAN>) &wedge;
@@ -124,7 +124,7 @@ CLASS=wff>&#x1D711;</SPAN> &rarr; <SPAN
 CLASS=wff>&#x1D713;</SPAN>))</SPAN></TD></TR>
 <TR ALIGN=LEFT><TD>3</TD><TD>&nbsp;</TD><TD><A HREF="rcp-NDASM2of2.html"
 TITLE="( 1 `/\` 2 ) `->` 2. `t.`">rcp-NDASM2of2</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#B16C00">204</SPAN></TD><TD><A NAME="3"></A>
+STYLE="color:#B66800">194</SPAN></TD><TD><A NAME="3"></A>
 <SPAN CLASS=i>. . 3</SPAN>
 <SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN>(((&not; <SPAN
 CLASS=wff>&#x1D711;</SPAN> &vee; <SPAN CLASS=wff>&#x1D713;</SPAN>) &wedge;
@@ -133,7 +133,7 @@ CLASS=wff>&#x1D713;</SPAN>)</SPAN></TD></TR>
 <TR ALIGN=LEFT><TD>4</TD><TD><A HREF="#3">3</A></TD><TD><A
 HREF="axL1-P3.21.html"
 TITLE="Re-derived Deductive Form of Axiom L1. `t.`">axL1-P3.21</A>&nbsp;<SPAN
-CLASS=r STYLE="color:#8D7E00">262</SPAN></TD><TD><A NAME="4"></A>
+CLASS=r STYLE="color:#937C00">252</SPAN></TD><TD><A NAME="4"></A>
 <SPAN CLASS=i>. 2</SPAN>
 <SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN>(((&not; <SPAN
 CLASS=wff>&#x1D711;</SPAN> &vee; <SPAN CLASS=wff>&#x1D713;</SPAN>) &wedge;
@@ -141,7 +141,7 @@ CLASS=wff>&#x1D711;</SPAN> &vee; <SPAN CLASS=wff>&#x1D713;</SPAN>) &wedge;
 &rarr; <SPAN CLASS=wff>&#x1D713;</SPAN>))</SPAN></TD></TR>
 <TR ALIGN=LEFT><TD>5</TD><TD>&nbsp;</TD><TD><A HREF="rcp-NDASM1of1.html"
 TITLE="( 1 ) `->` 1. `t.`">rcp-NDASM1of1</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#B26B00">202</SPAN></TD><TD><A NAME="5"></A>
+STYLE="color:#B86700">192</SPAN></TD><TD><A NAME="5"></A>
 <SPAN CLASS=i>. 2</SPAN>
 <SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN>((&not; <SPAN
 CLASS=wff>&#x1D711;</SPAN> &vee; <SPAN CLASS=wff>&#x1D713;</SPAN>) &rarr;
@@ -150,7 +150,7 @@ CLASS=wff>&#x1D713;</SPAN>))</SPAN></TD></TR>
 <TR ALIGN=LEFT><TD>6</TD><TD><A HREF="#2">2</A>, <A HREF="#4">4</A>, <A
 HREF="#5">5</A></TD><TD><A HREF="rcp-NDORE2.html"
 TITLE="`\/` Elimination Recipe. `t.`">rcp-NDORE2</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#987A00">245</SPAN></TD><TD><A NAME="6"></A>
+STYLE="color:#9E7700">235</SPAN></TD><TD><A NAME="6"></A>
 <SPAN CLASS=i>1</SPAN>
 <SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN>((&not; <SPAN
 CLASS=wff>&#x1D711;</SPAN> &vee; <SPAN CLASS=wff>&#x1D713;</SPAN>) &rarr;
@@ -169,9 +169,9 @@ STYLE="color:#FA0200">9</SPAN> &nbsp;<SPAN CLASS=math> &rarr; </SPAN><A
 HREF="wff-imp.html">wff-imp</A>&nbsp;<SPAN CLASS=r
 STYLE="color:#FA0200">10</SPAN> &nbsp;<SPAN CLASS=math> &wedge; </SPAN><A
 HREF="wff-and.html">wff-and</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#D84B00">133</SPAN> &nbsp;<SPAN CLASS=math> &vee; </SPAN><A
+STYLE="color:#D94B00">132</SPAN> &nbsp;<SPAN CLASS=math> &vee; </SPAN><A
 HREF="wff-or.html">wff-or</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#CF5500">154</SPAN></FONT></TD></TR>
+STYLE="color:#D35100">144</SPAN></FONT></TD></TR>
 <TR><TD ALIGN=LEFT><FONT SIZE=-1><B>This theorem was proved from axioms:</B>
 &nbsp;<A HREF="ax-L1.html">ax-L1</A>&nbsp;<SPAN CLASS=r
 STYLE="color:#FA0200">11</SPAN> &nbsp;<A HREF="ax-L2.html">ax-L2</A>&nbsp;<SPAN
@@ -181,18 +181,18 @@ HREF="ax-L3.html">ax-L3</A>&nbsp;<SPAN CLASS=r STYLE="color:#F90300">13</SPAN>
 STYLE="color:#F90300">14</SPAN></FONT></TD></TR>
 <TR><TD ALIGN=LEFT><FONT SIZE=-1><B>This theorem depends on definitions:</B>
 &nbsp;<A HREF="df-bi-D2.1.html">df-bi-D2.1</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#E43C00">106</SPAN> &nbsp;<A
+STYLE="color:#E33D00">107</SPAN> &nbsp;<A
 HREF="df-and-D2.2.html">df-and-D2.2</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#D84C00">134</SPAN> &nbsp;<A
+STYLE="color:#D84C00">133</SPAN> &nbsp;<A
 HREF="df-or-D2.3.html">df-or-D2.3</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#CE5500">155</SPAN> &nbsp;<A
+STYLE="color:#D25100">145</SPAN> &nbsp;<A
 HREF="df-true-D2.4.html">df-true-D2.4</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#C95A00">165</SPAN></FONT></TD></TR>
+STYLE="color:#CE5500">155</SPAN></FONT></TD></TR>
 <TR><TD ALIGN=LEFT><FONT SIZE=-1><B>This theorem is referenced by:</B> &nbsp;<A
 HREF="imasor-P4.32a.html">imasor-P4.32a</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#00931D">493</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#009319">487</SPAN> &nbsp;<A
 HREF="imasorint-P4.32b.html">imasorint-P4.32b</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#00931E">494</SPAN></FONT></TD></TR>
+&nbsp;<SPAN CLASS=r STYLE="color:#00931A">488</SPAN></FONT></TD></TR>
 </TABLE></CENTER>
 <TABLE BORDER=0 WIDTH="100%">
 <TR><TD WIDTH="25%">&nbsp;</TD>

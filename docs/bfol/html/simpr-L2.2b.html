@@ -16,10 +16,6 @@ img { margin-bottom: -4px }
    }
 -->
 </STYLE>
-<link rel="stylesheet" 
-media="screen" 
-href="https://fontlibrary.org/en/face/xits-math" 
-type="text/css"/> 
 <STYLE TYPE="text/css"> 
 <!--
   .wff { color: blue; } 
@@ -27,7 +23,11 @@ type="text/css"/>
   .term { color: green; } 
   .class { color: #CC33CC; } 
   .typecode { color: gray; } 
-  .math { font-family: XITSMathRegular; } 
+  @font-face {
+     font-family: XITSMath-Regular; 
+     src: url(../fonts/xits-math.woff); 
+  } 
+  .math { font-family: XITSMath-Regular; } 
 -->
 </STYLE>
 <TITLE>simpr-L2.2b - bfol.mm Proof Explorer</TITLE>
@@ -76,7 +76,7 @@ bfol.mm Proof Explorer
 <HR NOSHADE SIZE=1>
 <CENTER><B><FONT SIZE="+1">Theorem <FONT
 COLOR="#006633">simpr-L2.2b</FONT></FONT></B>&nbsp;<SPAN CLASS=r
-STYLE="color:#E83500">96</SPAN></CENTER>
+STYLE="color:#E73600">97</SPAN></CENTER>
 <CENTER><TABLE><TR><TD ALIGN=LEFT><B>Description: </B>Right Simplification
 Lemma.</TD></TR></TABLE></CENTER>
 
@@ -116,7 +116,7 @@ CLASS=wff>&#x1D711;</SPAN> &rarr; (<SPAN CLASS=wff>&#x1D713;</SPAN> &rarr;
 <TR ALIGN=LEFT><TD>3</TD><TD><A HREF="#2">2</A></TD><TD><A
 HREF="import-L2.1a.SH.html"
 TITLE="Inference from ~import-L2.1a .">import-L2.1a.SH</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#EA3200">91</SPAN></TD><TD><A NAME="3"></A>
+STYLE="color:#E93300">92</SPAN></TD><TD><A NAME="3"></A>
 <SPAN CLASS=i>1</SPAN>
 <SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN>(&not; (<SPAN
 CLASS=wff>&#x1D711;</SPAN> &rarr; &not; <SPAN CLASS=wff>&#x1D713;</SPAN>)
@@ -142,11 +142,11 @@ HREF="ax-L3.html">ax-L3</A>&nbsp;<SPAN CLASS=r STYLE="color:#F90300">13</SPAN>
 STYLE="color:#F90300">14</SPAN></FONT></TD></TR>
 <TR><TD ALIGN=LEFT><FONT SIZE=-1><B>This theorem is referenced by:</B> &nbsp;<A
 HREF="simpr-L2.2b.SH.html">simpr-L2.2b.SH</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#E73600">97</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#E73700">98</SPAN> &nbsp;<A
 HREF="birev-P2.5b.html">birev-P2.5b</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#E14100">114</SPAN> &nbsp;<A
-HREF="simpr-P2.11b.html">simpr-P2.11b</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#D74D00">137</SPAN></FONT></TD></TR>
+&nbsp;<SPAN CLASS=r STYLE="color:#E04200">115</SPAN> &nbsp;<A
+HREF="simpr-P2.9b.html">simpr-P2.9b</A>
+&nbsp;<SPAN CLASS=r STYLE="color:#D74D00">136</SPAN></FONT></TD></TR>
 </TABLE></CENTER>
 <TABLE BORDER=0 WIDTH="100%">
 <TR><TD WIDTH="25%">&nbsp;</TD>

@@ -16,10 +16,6 @@ img { margin-bottom: -4px }
    }
 -->
 </STYLE>
-<link rel="stylesheet" 
-media="screen" 
-href="https://fontlibrary.org/en/face/xits-math" 
-type="text/css"/> 
 <STYLE TYPE="text/css"> 
 <!--
   .wff { color: blue; } 
@@ -27,7 +23,11 @@ type="text/css"/>
   .term { color: green; } 
   .class { color: #CC33CC; } 
   .typecode { color: gray; } 
-  .math { font-family: XITSMathRegular; } 
+  @font-face {
+     font-family: XITSMath-Regular; 
+     src: url(../fonts/xits-math.woff); 
+  } 
+  .math { font-family: XITSMath-Regular; } 
 -->
 </STYLE>
 <TITLE>ndnfrv-P7.1 - bfol.mm Proof Explorer</TITLE>
@@ -76,7 +76,7 @@ bfol.mm Proof Explorer
 <HR NOSHADE SIZE=1>
 <CENTER><B><FONT SIZE="+1">Theorem <FONT
 COLOR="#006633">ndnfrv-P7.1</FONT></FONT></B>&nbsp;<SPAN CLASS=r
-STYLE="color:#7D67FF">832</SPAN></CENTER>
+STYLE="color:#7C67FF">826</SPAN></CENTER>
 <CENTER><TABLE><TR><TD ALIGN=LEFT><B>Description: </B>Natural Deduction: 
 Effective Non-Freeness Rule 1.
 <P STYLE="margin-bottom:0em">
@@ -110,7 +110,7 @@ SUMMARY="Proof of theorem">
 </TH><TH>Expression</TH></TR>
 <TR ALIGN=LEFT><TD>1</TD><TD>&nbsp;</TD><TD><A HREF="nfrv-P6.html"
 TITLE="Does Not Occur in `=>` ENF in. If '`x`' does not occur in '`w_ph`', then '`x`' is...">nfrv-P6</A>&nbsp;<SPAN
-CLASS=r STYLE="color:#0084DD">692</SPAN></TD><TD><A NAME="1"></A>
+CLASS=r STYLE="color:#0084DB">686</SPAN></TD><TD><A NAME="1"></A>
 <SPAN CLASS=i>1</SPAN>
 <SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN>&#8498;<SPAN
 CLASS=objvar>&#x1D465;</SPAN><SPAN CLASS=wff>&#x1D711;</SPAN></SPAN></TD></TR>
@@ -123,7 +123,7 @@ STYLE="color:green;font-style:normal">term</SPAN> <SPAN CLASS=typecode
 STYLE="color:#CC33CC;font-style:normal">class</SPAN></FONT></TD></TR>
 <TR><TD ALIGN=LEFT><FONT SIZE=-1><B>Syntax hints:</B>  &nbsp;<SPAN
 CLASS=math>&#8498;</SPAN><A HREF="wff-nfree.html">wff-nfree</A>&nbsp;<SPAN
-CLASS=r STYLE="color:#0085D9">687</SPAN></FONT></TD></TR>
+CLASS=r STYLE="color:#0085D5">681</SPAN></FONT></TD></TR>
 <TR><TD ALIGN=LEFT><FONT SIZE=-1><B>This theorem was proved from axioms:</B>
 &nbsp;<A HREF="ax-L1.html">ax-L1</A>&nbsp;<SPAN CLASS=r
 STYLE="color:#FA0200">11</SPAN> &nbsp;<A HREF="ax-L2.html">ax-L2</A>&nbsp;<SPAN
@@ -140,168 +140,168 @@ STYLE="color:#F90500">18</SPAN> &nbsp;<A HREF="ax-L7.html">ax-L7</A>&nbsp;<SPAN
 CLASS=r STYLE="color:#F90500">19</SPAN></FONT></TD></TR>
 <TR><TD ALIGN=LEFT><FONT SIZE=-1><B>This theorem depends on definitions:</B>
 &nbsp;<A HREF="df-bi-D2.1.html">df-bi-D2.1</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#E43C00">106</SPAN> &nbsp;<A
+STYLE="color:#E33D00">107</SPAN> &nbsp;<A
 HREF="df-and-D2.2.html">df-and-D2.2</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#D84C00">134</SPAN> &nbsp;<A
+STYLE="color:#D84C00">133</SPAN> &nbsp;<A
 HREF="df-or-D2.3.html">df-or-D2.3</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#CE5500">155</SPAN> &nbsp;<A
+STYLE="color:#D25100">145</SPAN> &nbsp;<A
 HREF="df-true-D2.4.html">df-true-D2.4</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#C95A00">165</SPAN> &nbsp;<A
+STYLE="color:#CE5500">155</SPAN> &nbsp;<A
 HREF="df-rcp-AND3.html">df-rcp-AND3</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#C55C00">171</SPAN> &nbsp;<A
+STYLE="color:#CB5800">161</SPAN> &nbsp;<A
 HREF="df-exists-D5.1.html">df-exists-D5.1</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#008F7B">602</SPAN> &nbsp;<A
+STYLE="color:#008F78">596</SPAN> &nbsp;<A
 HREF="df-nfree-D6.1.html">df-nfree-D6.1</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#0084DA">688</SPAN></FONT></TD></TR>
+STYLE="color:#0085D7">682</SPAN></FONT></TD></TR>
 <TR><TD ALIGN=LEFT><FONT SIZE=-1><B>This theorem is referenced by:</B> &nbsp;<A
 HREF="ndnfrall2-P7.9.VR12of2.html">ndnfrall2-P7.9.VR12of2</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#965AFF">866</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#955BFF">860</SPAN> &nbsp;<A
 HREF="ndnfrex2-P7.10.VR12of2.html">ndnfrex2-P7.10.VR12of2</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#9759FF">867</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#955AFF">861</SPAN> &nbsp;<A
 HREF="ndnfrleq-P7.11.VR.html">ndnfrleq-P7.11.VR</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#9759FF">868</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#9659FF">862</SPAN> &nbsp;<A
 HREF="ndpsub1-P7.13.VR.html">ndpsub1-P7.13.VR</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#9858FF">869</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#9759FF">863</SPAN> &nbsp;<A
 HREF="ndalli-P7.17.VR1of2.html">ndalli-P7.17.VR1of2</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#9958FF">870</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#9858FF">864</SPAN> &nbsp;<A
 HREF="ndalli-P7.17.VR2of2.html">ndalli-P7.17.VR2of2</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#9A57FF">871</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#9958FF">865</SPAN> &nbsp;<A
 HREF="ndalli-P7.17.VR12of2.html">ndalli-P7.17.VR12of2</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#9B57FF">872</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#9957FF">866</SPAN> &nbsp;<A
 HREF="ndexew-P7.VR1of3.html">ndexew-P7.VR1of3</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#9C56FF">874</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#9B56FF">868</SPAN> &nbsp;<A
 HREF="ndexew-P7.VR2of3.html">ndexew-P7.VR2of3</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#9D55FF">875</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#9C56FF">869</SPAN> &nbsp;<A
 HREF="ndexew-P7.VR3of3.html">ndexew-P7.VR3of3</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#9E55FF">876</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#9D55FF">870</SPAN> &nbsp;<A
 HREF="ndexew-P7.VR12of3.html">ndexew-P7.VR12of3</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#9E54FF">877</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#9D55FF">871</SPAN> &nbsp;<A
 HREF="ndexew-P7.VR13of3.html">ndexew-P7.VR13of3</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#9F54FF">878</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#9E54FF">872</SPAN> &nbsp;<A
 HREF="ndexew-P7.VR23of3.html">ndexew-P7.VR23of3</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#A053FF">879</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#9F54FF">873</SPAN> &nbsp;<A
 HREF="ndexew-P7.VR123of3.html">ndexew-P7.VR123of3</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#A153FF">880</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#A053FF">874</SPAN> &nbsp;<A
 HREF="ndalli-P7.17.RC.VR.html">ndalli-P7.17.RC.VR</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#A94DFF">890</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#A84EFF">884</SPAN> &nbsp;<A
 HREF="ndexew-P7.RC.VR1of2.html">ndexew-P7.RC.VR1of2</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#AA4BFF">894</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#AA4CFF">888</SPAN> &nbsp;<A
 HREF="ndexew-P7.RC.VR2of2.html">ndexew-P7.RC.VR2of2</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#AB4BFF">895</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#AA4BFF">889</SPAN> &nbsp;<A
 HREF="ndexew-P7.RC.VR12of2.html">ndexew-P7.RC.VR12of2</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#AB4AFF">896</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#AB4BFF">890</SPAN> &nbsp;<A
 HREF="nfrthm-P7.html">nfrthm-P7</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#BA37FE">932</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#BA38FE">926</SPAN> &nbsp;<A
 HREF="axL5-P7.html">axL5-P7</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#BE33FD">940</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#BD33FD">934</SPAN> &nbsp;<A
 HREF="axL5ex-P7.html">axL5ex-P7</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#BE32FD">941</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#BE33FD">935</SPAN> &nbsp;<A
 HREF="psubid-P7.html">psubid-P7</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#C12FFC">946</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#C030FC">940</SPAN> &nbsp;<A
 HREF="lemma-L7.02a.html">lemma-L7.02a</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#C22DFC">950</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#C22DFC">944</SPAN> &nbsp;<A
 HREF="alloverimex-P7.GENF.RC.html">alloverimex-P7.GENF.RC</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#C529FB">956</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#C52AFB">950</SPAN> &nbsp;<A
 HREF="exia-P7.RC.html">exia-P7.RC</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#C727FA">960</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#C627FA">954</SPAN> &nbsp;<A
 HREF="allnegex-P7-L1.html">allnegex-P7-L1</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#C826FA">962</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#C726FA">956</SPAN> &nbsp;<A
 HREF="lemma-L7.03.html">lemma-L7.03</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#CA22F9">968</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#CA22F9">962</SPAN> &nbsp;<A
 HREF="alloverim-P7.GENF.RC.html">alloverim-P7.GENF.RC</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#CD1DF6">978</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#CD1EF6">972</SPAN> &nbsp;<A
 HREF="suball-P7.RC.html">suball-P7.RC</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#CE1CF5">980</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#CD1DF5">974</SPAN> &nbsp;<A
 HREF="alli-P7r.VR.html">alli-P7r.VR</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#D115EF">997</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#D116F0">991</SPAN> &nbsp;<A
 HREF="exe-P7r.VR1of2.html">exe-P7r.VR1of2</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#D312ED">1005</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#D312ED">999</SPAN> &nbsp;<A
 HREF="exe-P7r.VR2of2.html">exe-P7r.VR2of2</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#D312EC">1006</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#D312EC">1000</SPAN> &nbsp;<A
 HREF="exe-P7r.VR12of2.html">exe-P7r.VR12of2</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#D411EC">1007</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#D411EC">1001</SPAN> &nbsp;<A
 HREF="exe-P7r.RC.html">exe-P7r.RC</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#D411EB">1008</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#D411EC">1002</SPAN> &nbsp;<A
 HREF="exe-P7r.RC.VR.html">exe-P7r.RC.VR</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#D410EB">1009</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#D411EB">1003</SPAN> &nbsp;<A
 HREF="allic-P7.VR1of2.html">allic-P7.VR1of2</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#D50EE9">1014</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#D50EEA">1008</SPAN> &nbsp;<A
 HREF="allic-P7.VR2of2.html">allic-P7.VR2of2</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#D50EE9">1015</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#D50EE9">1009</SPAN> &nbsp;<A
 HREF="allic-P7.VR12of2.html">allic-P7.VR12of2</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#D60DE9">1016</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#D50EE9">1010</SPAN> &nbsp;<A
 HREF="exia-P7r.VR1of2.html">exia-P7r.VR1of2</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#D60DE8">1018</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#D60DE8">1012</SPAN> &nbsp;<A
 HREF="exia-P7r.VR2of2.html">exia-P7r.VR2of2</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#D60CE8">1019</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#D60CE8">1013</SPAN> &nbsp;<A
 HREF="exia-P7r.VR12of2.html">exia-P7r.VR12of2</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#D60CE8">1020</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#D60CE8">1014</SPAN> &nbsp;<A
 HREF="exia-P7r.RC.VR.html">exia-P7r.RC.VR</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#D70BE7">1022</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#D70BE7">1016</SPAN> &nbsp;<A
 HREF="dalloverim-P7.GENF.RC.html">dalloverim-P7.GENF.RC</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#D907E3">1033</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#D907E4">1027</SPAN> &nbsp;<A
 HREF="dalloverimex-P7.GENF.RC.html">dalloverimex-P7.GENF.RC</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#DB02E0">1044</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#DB03E0">1038</SPAN> &nbsp;<A
 HREF="suball-P7r.VR.html">suball-P7r.VR</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#DB02DF">1046</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#DB02DF">1040</SPAN> &nbsp;<A
 HREF="subex-P7.VR.html">subex-P7.VR</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#DC00DE">1049</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#DC01DE">1043</SPAN> &nbsp;<A
 HREF="subex-P7.RC.html">subex-P7.RC</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#DC00DE">1050</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#DC00DE">1044</SPAN> &nbsp;<A
 HREF="exnegallint-P7.html">exnegallint-P7</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#DD00DB">1053</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#DD00DC">1047</SPAN> &nbsp;<A
 HREF="qimeqalla-P7.VR.html">qimeqalla-P7.VR</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#DE00D6">1057</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#DE00D7">1051</SPAN> &nbsp;<A
 HREF="qimeqallb-P7r.VR.html">qimeqallb-P7r.VR</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#DF00D4">1059</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#DF00D4">1053</SPAN> &nbsp;<A
 HREF="cbvall-P7.VR1of2.html">cbvall-P7.VR1of2</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#E100C9">1068</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#E100C9">1062</SPAN> &nbsp;<A
 HREF="cbvall-P7.VR2of2.html">cbvall-P7.VR2of2</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#E200C7">1069</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#E200C8">1063</SPAN> &nbsp;<A
 HREF="cbvall-P7.VR12of2.html">cbvall-P7.VR12of2</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#E200C6">1070</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#E200C7">1064</SPAN> &nbsp;<A
 HREF="cbvex-P7.VR1of2.html">cbvex-P7.VR1of2</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#E300C3">1073</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#E300C3">1067</SPAN> &nbsp;<A
 HREF="cbvex-P7.VR2of2.html">cbvex-P7.VR2of2</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#E300C1">1074</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#E300C2">1068</SPAN> &nbsp;<A
 HREF="cbvex-P7.VR12of2.html">cbvex-P7.VR12of2</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#E400C0">1075</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#E300C0">1069</SPAN> &nbsp;<A
 HREF="cbvallpsub-P7.VR.html">cbvallpsub-P7.VR</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#E400BE">1077</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#E400BE">1071</SPAN> &nbsp;<A
 HREF="cbvexpsub-P7.VR.html">cbvexpsub-P7.VR</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#E500BB">1079</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#E500BB">1073</SPAN> &nbsp;<A
 HREF="example-E7.1a.html">example-E7.1a</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#E500BA">1080</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#E500BA">1074</SPAN> &nbsp;<A
 HREF="nfrgen-P7.VR.html">nfrgen-P7.VR</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#E600B6">1083</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#E600B6">1077</SPAN> &nbsp;<A
 HREF="nfrexgen-P8.VR.html">nfrexgen-P8.VR</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#E700B1">1087</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#E700B2">1081</SPAN> &nbsp;<A
 HREF="nfrexgen-P8.RC.VR.html">nfrexgen-P8.RC.VR</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#E800AF">1089</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#E800AF">1083</SPAN> &nbsp;<A
 HREF="nfrexall-P8.VR.html">nfrexall-P8.VR</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#E900AA">1093</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#E900AA">1087</SPAN> &nbsp;<A
 HREF="nfrexall-P8.RC.VR.html">nfrexall-P8.RC.VR</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#E900A8">1095</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#E900A8">1089</SPAN> &nbsp;<A
 HREF="nfrexall-P8.CL.VR.html">nfrexall-P8.CL.VR</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#E900A6">1097</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#E900A6">1091</SPAN> &nbsp;<A
 HREF="qremall-P8.VR.html">qremall-P8.VR</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#EB009B">1108</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#EB009B">1102</SPAN> &nbsp;<A
 HREF="qremex-P8.VR.html">qremex-P8.VR</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#EB0099">1110</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#EB0099">1104</SPAN> &nbsp;<A
 HREF="qswap-P8.VR.html">qswap-P8.VR</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#EC0097">1112</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#EC0097">1106</SPAN> &nbsp;<A
 HREF="nfrcond-P8.VR.html">nfrcond-P8.VR</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#EC0094">1115</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#EC0094">1109</SPAN> &nbsp;<A
 HREF="nfrzero-P8.html">nfrzero-P8</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#ED008C">1123</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#ED008C">1117</SPAN> &nbsp;<A
 HREF="nfrvar-P8.html">nfrvar-P8</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#ED008B">1124</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#ED008B">1118</SPAN> &nbsp;<A
 HREF="nfrsucc-P8.html">nfrsucc-P8</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#ED008A">1125</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#ED008A">1119</SPAN> &nbsp;<A
 HREF="nfradd-P8.html">nfradd-P8</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#EE0089">1126</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#EE0089">1120</SPAN> &nbsp;<A
 HREF="nfrmult-P8.html">nfrmult-P8</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#EE0088">1127</SPAN></FONT></TD></TR>
+&nbsp;<SPAN CLASS=r STYLE="color:#EE0088">1121</SPAN></FONT></TD></TR>
 </TABLE></CENTER>
 <TABLE BORDER=0 WIDTH="100%">
 <TR><TD WIDTH="25%">&nbsp;</TD>

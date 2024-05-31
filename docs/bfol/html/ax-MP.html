@@ -16,10 +16,6 @@ img { margin-bottom: -4px }
    }
 -->
 </STYLE>
-<link rel="stylesheet" 
-media="screen" 
-href="https://fontlibrary.org/en/face/xits-math" 
-type="text/css"/> 
 <STYLE TYPE="text/css"> 
 <!--
   .wff { color: blue; } 
@@ -27,7 +23,11 @@ type="text/css"/>
   .term { color: green; } 
   .class { color: #CC33CC; } 
   .typecode { color: gray; } 
-  .math { font-family: XITSMathRegular; } 
+  @font-face {
+     font-family: XITSMath-Regular; 
+     src: url(../fonts/xits-math.woff); 
+  } 
+  .math { font-family: XITSMath-Regular; } 
 -->
 </STYLE>
 <TITLE>ax-MP - bfol.mm Proof Explorer</TITLE>
@@ -129,78 +129,75 @@ STYLE="color:#CC33CC;font-style:normal">class</SPAN></FONT></TD></TR>
 &nbsp;<SPAN CLASS=r STYLE="color:#F70900">33</SPAN> &nbsp;<A HREF="syl-P1.2.html">syl-P1.2</A>
 &nbsp;<SPAN CLASS=r STYLE="color:#F70900">34</SPAN> &nbsp;<A HREF="id-P1.4.html">id-P1.4</A>
 &nbsp;<SPAN CLASS=r STYLE="color:#F70A00">36</SPAN> &nbsp;<A HREF="rae-P1.5.SH.html">rae-P1.5.SH</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#F70A00">38</SPAN> &nbsp;<A HREF="rcp-FR1.SH.html">rcp-FR1.SH</A>
+&nbsp;<SPAN CLASS=r STYLE="color:#F70B00">38</SPAN> &nbsp;<A HREF="rcp-FR1.SH.html">rcp-FR1.SH</A>
 &nbsp;<SPAN CLASS=r STYLE="color:#F70B00">40</SPAN> &nbsp;<A HREF="rcp-FR2.SH.html">rcp-FR2.SH</A>
 &nbsp;<SPAN CLASS=r STYLE="color:#F60C00">42</SPAN> &nbsp;<A HREF="rcp-FR3.SH.html">rcp-FR3.SH</A>
 &nbsp;<SPAN CLASS=r STYLE="color:#F60E00">44</SPAN> &nbsp;<A HREF="axL1.AC.SH.html">axL1.AC.SH</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#F60E00">45</SPAN> &nbsp;<A HREF="axL2.AC.SH.html">axL2.AC.SH</A>
+&nbsp;<SPAN CLASS=r STYLE="color:#F60F00">45</SPAN> &nbsp;<A HREF="axL2.AC.SH.html">axL2.AC.SH</A>
 &nbsp;<SPAN CLASS=r STYLE="color:#F50F00">46</SPAN> &nbsp;<A HREF="axL3.AC.SH.html">axL3.AC.SH</A>
 &nbsp;<SPAN CLASS=r STYLE="color:#F51000">47</SPAN> &nbsp;<A HREF="imcomm-P1.6.SH.html">imcomm-P1.6.SH</A>
 &nbsp;<SPAN CLASS=r STYLE="color:#F51200">49</SPAN> &nbsp;<A HREF="imcomm-P1.6.AC.SH.html">imcomm-P1.6.AC.SH</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#F51200">50</SPAN> &nbsp;<A HREF="imsubr-P1.7a.SH.html">imsubr-P1.7a.SH</A>
+&nbsp;<SPAN CLASS=r STYLE="color:#F51300">50</SPAN> &nbsp;<A HREF="imsubr-P1.7a.SH.html">imsubr-P1.7a.SH</A>
 &nbsp;<SPAN CLASS=r STYLE="color:#F41400">52</SPAN> &nbsp;<A HREF="imsubr-P1.7a.AC.SH.html">imsubr-P1.7a.AC.SH</A>
 &nbsp;<SPAN CLASS=r STYLE="color:#F41500">53</SPAN> &nbsp;<A HREF="imsubl-P1.7b.SH.html">imsubl-P1.7b.SH</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#F31600">55</SPAN> &nbsp;<A HREF="imsubl-P1.7b.AC.SH.html">imsubl-P1.7b.AC.SH</A>
+&nbsp;<SPAN CLASS=r STYLE="color:#F31700">55</SPAN> &nbsp;<A HREF="imsubl-P1.7b.AC.SH.html">imsubl-P1.7b.AC.SH</A>
 &nbsp;<SPAN CLASS=r STYLE="color:#F31700">56</SPAN> &nbsp;<A HREF="mpt-P1.8.AC.2SH.html">mpt-P1.8.AC.2SH</A>
 &nbsp;<SPAN CLASS=r STYLE="color:#F31900">58</SPAN> &nbsp;<A HREF="mpt-P1.8.2AC.2SH.html">mpt-P1.8.2AC.2SH</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#F31900">59</SPAN> &nbsp;<A HREF="sylt-P1.9.AC.2SH.html">sylt-P1.9.AC.2SH</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#F21B00">61</SPAN> &nbsp;<A HREF="sylt-P1.9.2AC.2SH.html">sylt-P1.9.2AC.2SH</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#F21C00">62</SPAN> &nbsp;<A HREF="poe-P1.11b.AC.2SH.html">poe-P1.11b.AC.2SH</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#F11F00">66</SPAN> &nbsp;<A HREF="clav-P1.12.AC.SH.html">clav-P1.12.AC.SH</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#F12100">68</SPAN> &nbsp;<A HREF="clav-P1.12.2AC.SH.html">clav-P1.12.2AC.SH</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#F02100">69</SPAN> &nbsp;<A HREF="clav-P1.14.AC.SH.html">clav-P1.14.AC.SH</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#EF2500">73</SPAN> &nbsp;<A HREF="nclav-P1.14.2AC.SH.html">nclav-P1.14.2AC.SH</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#EF2500">74</SPAN> &nbsp;<A HREF="trnsp-P1.15a.SH.html">trnsp-P1.15a.SH</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#EF2700">76</SPAN> &nbsp;<A HREF="trnsp-P1.15b.AC.SH.html">trnsp-P1.15b.AC.SH</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#EE2900">78</SPAN> &nbsp;<A HREF="trnsp-P1.15c.SH.html">trnsp-P1.15c.SH</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#EE2A00">80</SPAN> &nbsp;<A HREF="trnsp-P1.15c.AC.SH.html">trnsp-P1.15c.AC.SH</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#EE2B00">81</SPAN> &nbsp;<A HREF="trnsp-P1.15d.AC.SH.html">trnsp-P1.15d.AC.SH</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#ED2C00">83</SPAN> &nbsp;<A HREF="trnsp-P1.15d.2AC.SH.html">trnsp-P1.15d.2AC.SH</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#ED2D00">84</SPAN> &nbsp;<A HREF="pfbycont-P1.16.AC.2SH.html">pfbycont-P1.16.AC.2SH</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#EC2E00">86</SPAN> &nbsp;<A HREF="pfbycase-P1.17.2SH.html">pfbycase-P1.17.2SH</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#EB3000">88</SPAN> &nbsp;<A HREF="pfbycase-P1.17.AC.2SH.html">pfbycase-P1.17.AC.2SH</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#EB3000">89</SPAN> &nbsp;<A HREF="import-L2.1a.SH.html">import-L2.1a.SH</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#EA3200">91</SPAN> &nbsp;<A HREF="export-L2.1b.SH.html">export-L2.1b.SH</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#E93300">93</SPAN> &nbsp;<A HREF="simpl-L2.2a.SH.html">simpl-L2.2a.SH</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#E83400">95</SPAN> &nbsp;<A HREF="simpr-L2.2b.SH.html">simpr-L2.2b.SH</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#E73600">97</SPAN> &nbsp;<A HREF="cmb-L2.3.2SH.html">cmb-L2.3.2SH</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#E73700">99</SPAN> &nbsp;<A HREF="dfbialt-P2.4.html">dfbialt-P2.4</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#E33E00">109</SPAN> &nbsp;<A HREF="bifwd-P2.5a.SH.html">bifwd-P2.5a.SH</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#E23F00">111</SPAN> &nbsp;<A HREF="bifwd-P2.5a.AC.SH.html">bifwd-P2.5a.AC.SH</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#E24000">112</SPAN> &nbsp;<A HREF="bifwd-P2.5a.2AC.SH.html">bifwd-P2.5a.2AC.SH</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#E14000">113</SPAN> &nbsp;<A HREF="birev-P2.5b.SH.html">birev-P2.5b.SH</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#E04200">115</SPAN> &nbsp;<A HREF="birev-P2.5b.AC.SH.html">birev-P2.5b.AC.SH</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#E04200">116</SPAN> &nbsp;<A HREF="birev-P2.5b.2AC.SH.html">birev-P2.5b.2AC.SH</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#E04300">117</SPAN> &nbsp;<A HREF="bicmb-P2.5c.2SH.html">bicmb-P2.5c.2SH</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#DF4400">119</SPAN> &nbsp;<A HREF="bicmb-P2.5c.AC.2SH.html">bicmb-P2.5c.AC.2SH</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#DE4500">120</SPAN> &nbsp;<A HREF="bicmb-P2.5c.2AC.2SH.html">bicmb-P2.5c.2AC.2SH</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#DE4600">121</SPAN> &nbsp;<A HREF="bisym-P2.6b.SH.html">bisym-P2.6b.SH</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#DD4700">124</SPAN> &nbsp;<A HREF="bitrns-P2.6c.2SH.html">bitrns-P2.6c.2SH</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#DC4800">126</SPAN> &nbsp;<A HREF="bitrns-P2.6c.AC.2SH.html">bitrns-P2.6c.AC.2SH</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#DB4900">127</SPAN> &nbsp;<A HREF="subiml-P2.8a.SH.html">subiml-P2.8a.SH</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#DA4A00">130</SPAN> &nbsp;<A HREF="subimr-P2.8b.SH.html">subimr-P2.8b.SH</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#D94B00">132</SPAN> &nbsp;<A HREF="simpl-P2.11a.AC.SH.html">simpl-P2.11a.AC.SH</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#D74D00">136</SPAN> &nbsp;<A HREF="simpr-P2.11b.AC.SH.html">simpr-P2.11b.AC.SH</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#D64E00">138</SPAN> &nbsp;<A HREF="cmb-P2.11c.html">cmb-P2.11c</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#D64E00">139</SPAN> &nbsp;<A HREF="cmb-P2.11c.AC.2SH.html">cmb-P2.11c.AC.2SH</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#D54E00">140</SPAN> &nbsp;<A HREF="import-P2.10a.SH.html">import-P2.10a.SH</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#D44F00">142</SPAN> &nbsp;<A HREF="export-P2.10b.SH.html">export-P2.10b.SH</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#D35000">144</SPAN> &nbsp;<A HREF="subandl-P2.14a.SH.html">subandl-P2.14a.SH</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#D05300">151</SPAN> &nbsp;<A HREF="subandr-P2.14b.SH.html">subandr-P2.14b.SH</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#CF5400">153</SPAN> &nbsp;<A HREF="orintl-P2.15a.AC.SH.html">orintl-P2.15a.AC.SH</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#CD5600">157</SPAN> &nbsp;<A HREF="orintr-P2.15b.AC.SH.html">orintr-P2.15b.AC.SH</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#CC5700">159</SPAN> &nbsp;<A HREF="orelim-P2.15c.AC.3SH.html">orelim-P2.15c.AC.3SH</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#CB5800">161</SPAN> &nbsp;<A HREF="true-P2.18.html">true-P2.18</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#C85A00">166</SPAN> &nbsp;<A HREF="false-P2.19.html">false-P2.19</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#C75C00">169</SPAN> &nbsp;<A HREF="ndtruee-P3.18.html">ndtruee-P3.18</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#B86700">193</SPAN> &nbsp;<A HREF="ndfalsee-P3.20.html">ndfalsee-P3.20</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#B66800">195</SPAN> &nbsp;<A HREF="rcp-NDSEP3.html">rcp-NDSEP3</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#B66800">196</SPAN> &nbsp;<A HREF="rcp-NDSEP4.html">rcp-NDSEP4</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#B56900">197</SPAN> &nbsp;<A HREF="rcp-NDSEP5.html">rcp-NDSEP5</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#B56900">198</SPAN> &nbsp;<A HREF="rcp-NDJOIN3.html">rcp-NDJOIN3</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#B46A00">199</SPAN> &nbsp;<A HREF="rcp-NDJOIN4.html">rcp-NDJOIN4</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#B36A00">200</SPAN> &nbsp;<A HREF="rcp-NDJOIN5.html">rcp-NDJOIN5</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#B36B00">201</SPAN></FONT></TD></TR></TABLE></CENTER>
+&nbsp;<SPAN CLASS=r STYLE="color:#F31A00">59</SPAN> &nbsp;<A HREF="mpt-P1.8.3AC.2SH.html">mpt-P1.8.3AC.2SH</A>
+&nbsp;<SPAN CLASS=r STYLE="color:#F21A00">60</SPAN> &nbsp;<A HREF="sylt-P1.9.AC.2SH.html">sylt-P1.9.AC.2SH</A>
+&nbsp;<SPAN CLASS=r STYLE="color:#F21C00">62</SPAN> &nbsp;<A HREF="sylt-P1.9.2AC.2SH.html">sylt-P1.9.2AC.2SH</A>
+&nbsp;<SPAN CLASS=r STYLE="color:#F21D00">63</SPAN> &nbsp;<A HREF="poe-P1.11b.AC.2SH.html">poe-P1.11b.AC.2SH</A>
+&nbsp;<SPAN CLASS=r STYLE="color:#F12000">67</SPAN> &nbsp;<A HREF="clav-P1.12.AC.SH.html">clav-P1.12.AC.SH</A>
+&nbsp;<SPAN CLASS=r STYLE="color:#F02200">69</SPAN> &nbsp;<A HREF="clav-P1.12.2AC.SH.html">clav-P1.12.2AC.SH</A>
+&nbsp;<SPAN CLASS=r STYLE="color:#F02200">70</SPAN> &nbsp;<A HREF="clav-P1.14.AC.SH.html">clav-P1.14.AC.SH</A>
+&nbsp;<SPAN CLASS=r STYLE="color:#EF2600">74</SPAN> &nbsp;<A HREF="nclav-P1.14.2AC.SH.html">nclav-P1.14.2AC.SH</A>
+&nbsp;<SPAN CLASS=r STYLE="color:#EF2600">75</SPAN> &nbsp;<A HREF="trnsp-P1.15a.SH.html">trnsp-P1.15a.SH</A>
+&nbsp;<SPAN CLASS=r STYLE="color:#EE2800">77</SPAN> &nbsp;<A HREF="trnsp-P1.15b.AC.SH.html">trnsp-P1.15b.AC.SH</A>
+&nbsp;<SPAN CLASS=r STYLE="color:#EE2A00">79</SPAN> &nbsp;<A HREF="trnsp-P1.15c.SH.html">trnsp-P1.15c.SH</A>
+&nbsp;<SPAN CLASS=r STYLE="color:#EE2B00">81</SPAN> &nbsp;<A HREF="trnsp-P1.15c.AC.SH.html">trnsp-P1.15c.AC.SH</A>
+&nbsp;<SPAN CLASS=r STYLE="color:#ED2C00">82</SPAN> &nbsp;<A HREF="trnsp-P1.15d.AC.SH.html">trnsp-P1.15d.AC.SH</A>
+&nbsp;<SPAN CLASS=r STYLE="color:#EC2D00">84</SPAN> &nbsp;<A HREF="trnsp-P1.15d.2AC.SH.html">trnsp-P1.15d.2AC.SH</A>
+&nbsp;<SPAN CLASS=r STYLE="color:#EC2E00">85</SPAN> &nbsp;<A HREF="pfbycont-P1.16.AC.2SH.html">pfbycont-P1.16.AC.2SH</A>
+&nbsp;<SPAN CLASS=r STYLE="color:#EB2F00">87</SPAN> &nbsp;<A HREF="pfbycase-P1.17.2SH.html">pfbycase-P1.17.2SH</A>
+&nbsp;<SPAN CLASS=r STYLE="color:#EA3100">89</SPAN> &nbsp;<A HREF="pfbycase-P1.17.AC.2SH.html">pfbycase-P1.17.AC.2SH</A>
+&nbsp;<SPAN CLASS=r STYLE="color:#EA3100">90</SPAN> &nbsp;<A HREF="import-L2.1a.SH.html">import-L2.1a.SH</A>
+&nbsp;<SPAN CLASS=r STYLE="color:#E93300">92</SPAN> &nbsp;<A HREF="export-L2.1b.SH.html">export-L2.1b.SH</A>
+&nbsp;<SPAN CLASS=r STYLE="color:#E83400">94</SPAN> &nbsp;<A HREF="simpl-L2.2a.SH.html">simpl-L2.2a.SH</A>
+&nbsp;<SPAN CLASS=r STYLE="color:#E83500">96</SPAN> &nbsp;<A HREF="simpr-L2.2b.SH.html">simpr-L2.2b.SH</A>
+&nbsp;<SPAN CLASS=r STYLE="color:#E73700">98</SPAN> &nbsp;<A HREF="cmb-L2.3.2SH.html">cmb-L2.3.2SH</A>
+&nbsp;<SPAN CLASS=r STYLE="color:#E63800">100</SPAN> &nbsp;<A HREF="dfbialt-P2.4.html">dfbialt-P2.4</A>
+&nbsp;<SPAN CLASS=r STYLE="color:#E23F00">110</SPAN> &nbsp;<A HREF="bifwd-P2.5a.SH.html">bifwd-P2.5a.SH</A>
+&nbsp;<SPAN CLASS=r STYLE="color:#E14000">112</SPAN> &nbsp;<A HREF="bifwd-P2.5a.AC.SH.html">bifwd-P2.5a.AC.SH</A>
+&nbsp;<SPAN CLASS=r STYLE="color:#E14100">113</SPAN> &nbsp;<A HREF="bifwd-P2.5a.2AC.SH.html">bifwd-P2.5a.2AC.SH</A>
+&nbsp;<SPAN CLASS=r STYLE="color:#E14100">114</SPAN> &nbsp;<A HREF="birev-P2.5b.SH.html">birev-P2.5b.SH</A>
+&nbsp;<SPAN CLASS=r STYLE="color:#E04300">116</SPAN> &nbsp;<A HREF="birev-P2.5b.AC.SH.html">birev-P2.5b.AC.SH</A>
+&nbsp;<SPAN CLASS=r STYLE="color:#DF4300">117</SPAN> &nbsp;<A HREF="birev-P2.5b.2AC.SH.html">birev-P2.5b.2AC.SH</A>
+&nbsp;<SPAN CLASS=r STYLE="color:#DF4400">118</SPAN> &nbsp;<A HREF="bicmb-P2.5c.2SH.html">bicmb-P2.5c.2SH</A>
+&nbsp;<SPAN CLASS=r STYLE="color:#DE4500">120</SPAN> &nbsp;<A HREF="bicmb-P2.5c.AC.2SH.html">bicmb-P2.5c.AC.2SH</A>
+&nbsp;<SPAN CLASS=r STYLE="color:#DE4600">121</SPAN> &nbsp;<A HREF="bicmb-P2.5c.2AC.2SH.html">bicmb-P2.5c.2AC.2SH</A>
+&nbsp;<SPAN CLASS=r STYLE="color:#DD4700">122</SPAN> &nbsp;<A HREF="bisym-P2.6b.SH.html">bisym-P2.6b.SH</A>
+&nbsp;<SPAN CLASS=r STYLE="color:#DC4800">125</SPAN> &nbsp;<A HREF="subiml-P2.8a.SH.html">subiml-P2.8a.SH</A>
+&nbsp;<SPAN CLASS=r STYLE="color:#DA4A00">129</SPAN> &nbsp;<A HREF="subimr-P2.8b.SH.html">subimr-P2.8b.SH</A>
+&nbsp;<SPAN CLASS=r STYLE="color:#D94B00">131</SPAN> &nbsp;<A HREF="simpl-P2.9a.AC.SH.html">simpl-P2.9a.AC.SH</A>
+&nbsp;<SPAN CLASS=r STYLE="color:#D74D00">135</SPAN> &nbsp;<A HREF="simpr-P2.9b.AC.SH.html">simpr-P2.9b.AC.SH</A>
+&nbsp;<SPAN CLASS=r STYLE="color:#D64D00">137</SPAN> &nbsp;<A HREF="cmb-P2.9c.html">cmb-P2.9c</A>
+&nbsp;<SPAN CLASS=r STYLE="color:#D64E00">138</SPAN> &nbsp;<A HREF="cmb-P2.9c.AC.2SH.html">cmb-P2.9c.AC.2SH</A>
+&nbsp;<SPAN CLASS=r STYLE="color:#D54E00">139</SPAN> &nbsp;<A HREF="import-P2.10a.SH.html">import-P2.10a.SH</A>
+&nbsp;<SPAN CLASS=r STYLE="color:#D44F00">141</SPAN> &nbsp;<A HREF="export-P2.10b.SH.html">export-P2.10b.SH</A>
+&nbsp;<SPAN CLASS=r STYLE="color:#D35000">143</SPAN> &nbsp;<A HREF="orintl-P2.11a.AC.SH.html">orintl-P2.11a.AC.SH</A>
+&nbsp;<SPAN CLASS=r STYLE="color:#D15200">147</SPAN> &nbsp;<A HREF="orintr-P2.11b.AC.SH.html">orintr-P2.11b.AC.SH</A>
+&nbsp;<SPAN CLASS=r STYLE="color:#D15300">149</SPAN> &nbsp;<A HREF="orelim-P2.11c.AC.3SH.html">orelim-P2.11c.AC.3SH</A>
+&nbsp;<SPAN CLASS=r STYLE="color:#D05400">151</SPAN> &nbsp;<A HREF="true-P2.14.html">true-P2.14</A>
+&nbsp;<SPAN CLASS=r STYLE="color:#CD5600">156</SPAN> &nbsp;<A HREF="false-P2.15.html">false-P2.15</A>
+&nbsp;<SPAN CLASS=r STYLE="color:#CC5700">159</SPAN> &nbsp;<A HREF="ndtruee-P3.18.html">ndtruee-P3.18</A>
+&nbsp;<SPAN CLASS=r STYLE="color:#BD6300">183</SPAN> &nbsp;<A HREF="ndfalsee-P3.20.html">ndfalsee-P3.20</A>
+&nbsp;<SPAN CLASS=r STYLE="color:#BC6400">185</SPAN> &nbsp;<A HREF="rcp-NDSEP3.html">rcp-NDSEP3</A>
+&nbsp;<SPAN CLASS=r STYLE="color:#BB6400">186</SPAN> &nbsp;<A HREF="rcp-NDSEP4.html">rcp-NDSEP4</A>
+&nbsp;<SPAN CLASS=r STYLE="color:#BB6400">187</SPAN> &nbsp;<A HREF="rcp-NDSEP5.html">rcp-NDSEP5</A>
+&nbsp;<SPAN CLASS=r STYLE="color:#BA6500">188</SPAN> &nbsp;<A HREF="rcp-NDJOIN3.html">rcp-NDJOIN3</A>
+&nbsp;<SPAN CLASS=r STYLE="color:#BA6500">189</SPAN> &nbsp;<A HREF="rcp-NDJOIN4.html">rcp-NDJOIN4</A>
+&nbsp;<SPAN CLASS=r STYLE="color:#B96600">190</SPAN> &nbsp;<A HREF="rcp-NDJOIN5.html">rcp-NDJOIN5</A>
+&nbsp;<SPAN CLASS=r STYLE="color:#B86600">191</SPAN></FONT></TD></TR></TABLE></CENTER>
 <TABLE BORDER=0 WIDTH="100%">
 <TR><TD WIDTH="25%">&nbsp;</TD>
 <TD ALIGN=CENTER VALIGN=BOTTOM>

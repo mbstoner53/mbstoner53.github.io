@@ -16,10 +16,6 @@ img { margin-bottom: -4px }
    }
 -->
 </STYLE>
-<link rel="stylesheet" 
-media="screen" 
-href="https://fontlibrary.org/en/face/xits-math" 
-type="text/css"/> 
 <STYLE TYPE="text/css"> 
 <!--
   .wff { color: blue; } 
@@ -27,10 +23,14 @@ type="text/css"/>
   .term { color: green; } 
   .class { color: #CC33CC; } 
   .typecode { color: gray; } 
-  .math { font-family: XITSMathRegular; } 
+  @font-face {
+     font-family: XITSMath-Regular; 
+     src: url(../fonts/xits-math.woff); 
+  } 
+  .math { font-family: XITSMath-Regular; } 
 -->
 </STYLE>
-<TITLE>orintl-P2.15a - bfol.mm Proof Explorer</TITLE>
+<TITLE>simpr-P2.9b - bfol.mm Proof Explorer</TITLE>
 <LINK REL="shortcut icon" HREF="favicon.ico" TYPE="image/x-icon">
 </HEAD>
 <BODY BGCOLOR="#FFFFFF">
@@ -48,11 +48,11 @@ bfol.mm Proof Explorer
       </B></FONT></TD>
     <TD ALIGN=RIGHT VALIGN=TOP WIDTH="25%">
       <FONT SIZE=-1 FACE=sans-serif>
-      <A HREF="df-or-D2.3.html">
+      <A HREF="simpl-P2.9a.AC.SH.html">
       &lt; Previous</A>&nbsp;&nbsp;
-      <A HREF="orintl-P2.15a.AC.SH.html">Next &gt;</A>
+      <A HREF="simpr-P2.9b.AC.SH.html">Next &gt;</A>
       </FONT><FONT FACE=sans-serif SIZE=-2>
-      <BR><A HREF="mmtheorems2.html#orintl-P2.15a">Nearby theorems</A>
+      <BR><A HREF="mmtheorems2.html#simpr-P2.9b">Nearby theorems</A>
       </FONT>
     </TD>
   </TR>
@@ -63,7 +63,7 @@ bfol.mm Proof Explorer
       &nbsp;<A HREF="../index.html">Home</A>&nbsp; &gt;
       &nbsp;<A HREF="mmset.html">PE Home</A>&nbsp; &gt;
       &nbsp;<A HREF="mmtheorems.html">Th. List</A>&nbsp; &gt;
-      &nbsp;orintl-P2.15a
+      &nbsp;simpr-P2.9b
       </FONT>
     </TD>
     <TD COLSPAN=2 ALIGN=RIGHT VALIGN=TOP>
@@ -75,20 +75,20 @@ bfol.mm Proof Explorer
 </TABLE>
 <HR NOSHADE SIZE=1>
 <CENTER><B><FONT SIZE="+1">Theorem <FONT
-COLOR="#006633">orintl-P2.15a</FONT></FONT></B>&nbsp;<SPAN CLASS=r
-STYLE="color:#CE5600">156</SPAN></CENTER>
-<CENTER><TABLE><TR><TD ALIGN=LEFT><B>Description: </B>Left Introduction Rule
-for '<SPAN CLASS=math>&vee;</SPAN>'.</TD></TR></TABLE></CENTER>
+COLOR="#006633">simpr-P2.9b</FONT></FONT></B>&nbsp;<SPAN CLASS=r
+STYLE="color:#D74D00">136</SPAN></CENTER>
+<CENTER><TABLE><TR><TD ALIGN=LEFT><B>Description: </B>'<SPAN
+CLASS=math>&wedge;</SPAN>' Right Simplification.</TD></TR></TABLE></CENTER>
 
 <CENTER><TABLE BORDER CELLSPACING=0 BGCOLOR="#EEFFFA"
 SUMMARY="Assertion">
 <CAPTION><B>Assertion</B></CAPTION>
 <TR><TH>Ref
 </TH><TH>Expression</TH></TR>
-<TR ALIGN=LEFT><TD><FONT COLOR="#006633"><B>orintl-P2.15a</B></FONT></TD><TD>
-<SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN>(<SPAN
-CLASS=wff>&#x1D711;</SPAN> &rarr; (<SPAN CLASS=wff>&#x1D713;</SPAN> &vee; <SPAN
-CLASS=wff>&#x1D711;</SPAN>))</SPAN></TD></TR>
+<TR ALIGN=LEFT><TD><FONT COLOR="#006633"><B>simpr-P2.9b</B></FONT></TD><TD>
+<SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN>((<SPAN
+CLASS=wff>&#x1D711;</SPAN> &wedge; <SPAN CLASS=wff>&#x1D713;</SPAN>) &rarr;
+<SPAN CLASS=wff>&#x1D713;</SPAN>)</SPAN></TD></TR>
 </TABLE></CENTER>
 
 
@@ -96,49 +96,40 @@ CLASS=wff>&#x1D711;</SPAN>))</SPAN></TD></TR>
 <CENTER><TABLE BORDER CELLSPACING=0 BGCOLOR="#EEFFFA"
 SUMMARY="Proof of theorem">
 <CAPTION><B>Proof of Theorem <FONT
-   COLOR="#006633">orintl-P2.15a</FONT></B></CAPTION>
+   COLOR="#006633">simpr-P2.9b</FONT></B></CAPTION>
 <TR><TH>Step</TH><TH>Hyp</TH><TH>Ref
 </TH><TH>Expression</TH></TR>
-<TR ALIGN=LEFT><TD>1</TD><TD>&nbsp;</TD><TD><A HREF="poe-P1.11b.html"
-TITLE="Principle of Explosion B. A contradiction implies anything. The other form is...">poe-P1.11b</A>&nbsp;<SPAN
-CLASS=r STYLE="color:#F11E00">65</SPAN></TD><TD><A NAME="1"></A>
-<SPAN CLASS=i>. 2</SPAN>
-<SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN>(<SPAN
-CLASS=wff>&#x1D711;</SPAN> &rarr; (&not; <SPAN CLASS=wff>&#x1D711;</SPAN>
-&rarr; <SPAN CLASS=wff>&#x1D713;</SPAN>))</SPAN></TD></TR>
-<TR ALIGN=LEFT><TD>2</TD><TD>&nbsp;</TD><TD><A HREF="trnsp-P1.15b.html"
-TITLE="Transposition Variant B.">trnsp-P1.15b</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#EF2800">77</SPAN></TD><TD><A NAME="2"></A>
-<SPAN CLASS=i>. 2</SPAN>
-<SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN>((&not; <SPAN
-CLASS=wff>&#x1D711;</SPAN> &rarr; <SPAN CLASS=wff>&#x1D713;</SPAN>) &rarr;
-(&not; <SPAN CLASS=wff>&#x1D713;</SPAN> &rarr; <SPAN
-CLASS=wff>&#x1D711;</SPAN>))</SPAN></TD></TR>
-<TR ALIGN=LEFT><TD>3</TD><TD>&nbsp;</TD><TD><A HREF="df-or-D2.3.html"
-TITLE="Definition of Disjunction, '`\/`'. Read as 'or'.">df-or-D2.3</A>&nbsp;<SPAN
-CLASS=r STYLE="color:#CE5500">155</SPAN></TD><TD><A NAME="3"></A>
+<TR ALIGN=LEFT><TD>1</TD><TD>&nbsp;</TD><TD><A HREF="df-and-D2.2.html"
+TITLE="Definition of Conjunction, '`/\`'. Read as 'and'.">df-and-D2.2</A>&nbsp;<SPAN
+CLASS=r STYLE="color:#D84C00">133</SPAN></TD><TD><A NAME="1"></A>
 <SPAN CLASS=i>. . 3</SPAN>
 <SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN>((<SPAN
-CLASS=wff>&#x1D713;</SPAN> &vee; <SPAN CLASS=wff>&#x1D711;</SPAN>) &harr;
-(&not; <SPAN CLASS=wff>&#x1D713;</SPAN> &rarr; <SPAN
-CLASS=wff>&#x1D711;</SPAN>))</SPAN></TD></TR>
-<TR ALIGN=LEFT><TD>4</TD><TD><A HREF="#3">3</A></TD><TD><A
-HREF="birev-P2.5b.SH.html"
-TITLE="Inference from ~birev-P2.5b .">birev-P2.5b.SH</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#E04200">115</SPAN></TD><TD><A NAME="4"></A>
+CLASS=wff>&#x1D711;</SPAN> &wedge; <SPAN CLASS=wff>&#x1D713;</SPAN>) &harr;
+&not; (<SPAN CLASS=wff>&#x1D711;</SPAN> &rarr; &not; <SPAN
+CLASS=wff>&#x1D713;</SPAN>))</SPAN></TD></TR>
+<TR ALIGN=LEFT><TD>2</TD><TD><A HREF="#1">1</A></TD><TD><A
+HREF="bifwd-P2.5a.SH.html"
+TITLE="Inference from ~bifwd-P2.5a .">bifwd-P2.5a.SH</A>&nbsp;<SPAN CLASS=r
+STYLE="color:#E14000">112</SPAN></TD><TD><A NAME="2"></A>
 <SPAN CLASS=i>. 2</SPAN>
-<SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN>((&not; <SPAN
-CLASS=wff>&#x1D713;</SPAN> &rarr; <SPAN CLASS=wff>&#x1D711;</SPAN>) &rarr;
-(<SPAN CLASS=wff>&#x1D713;</SPAN> &vee; <SPAN
-CLASS=wff>&#x1D711;</SPAN>))</SPAN></TD></TR>
-<TR ALIGN=LEFT><TD>5</TD><TD><A HREF="#1">1</A>, <A HREF="#2">2</A>, <A
-HREF="#4">4</A></TD><TD><A HREF="dsyl-P1.3.html"
-TITLE="Double Syllogism Inference.">dsyl-P1.3</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#F70A00">35</SPAN></TD><TD><A NAME="5"></A>
+<SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN>((<SPAN
+CLASS=wff>&#x1D711;</SPAN> &wedge; <SPAN CLASS=wff>&#x1D713;</SPAN>) &rarr;
+&not; (<SPAN CLASS=wff>&#x1D711;</SPAN> &rarr; &not; <SPAN
+CLASS=wff>&#x1D713;</SPAN>))</SPAN></TD></TR>
+<TR ALIGN=LEFT><TD>3</TD><TD>&nbsp;</TD><TD><A HREF="simpr-L2.2b.html"
+TITLE="Right Simplification Lemma.">simpr-L2.2b</A>&nbsp;<SPAN CLASS=r
+STYLE="color:#E73600">97</SPAN></TD><TD><A NAME="3"></A>
+<SPAN CLASS=i>. 2</SPAN>
+<SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN>(&not; (<SPAN
+CLASS=wff>&#x1D711;</SPAN> &rarr; &not; <SPAN CLASS=wff>&#x1D713;</SPAN>)
+&rarr; <SPAN CLASS=wff>&#x1D713;</SPAN>)</SPAN></TD></TR>
+<TR ALIGN=LEFT><TD>4</TD><TD><A HREF="#2">2</A>, <A HREF="#3">3</A></TD><TD><A
+HREF="syl-P1.2.html" TITLE="Syllogism Inference.">syl-P1.2</A>&nbsp;<SPAN
+CLASS=r STYLE="color:#F70900">34</SPAN></TD><TD><A NAME="4"></A>
 <SPAN CLASS=i>1</SPAN>
-<SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN>(<SPAN
-CLASS=wff>&#x1D711;</SPAN> &rarr; (<SPAN CLASS=wff>&#x1D713;</SPAN> &vee; <SPAN
-CLASS=wff>&#x1D711;</SPAN>))</SPAN></TD></TR>
+<SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN>((<SPAN
+CLASS=wff>&#x1D711;</SPAN> &wedge; <SPAN CLASS=wff>&#x1D713;</SPAN>) &rarr;
+<SPAN CLASS=wff>&#x1D713;</SPAN>)</SPAN></TD></TR>
 </TABLE></CENTER>
 <CENTER><TABLE CELLSPACING=5><TR><TD ALIGN=LEFT><FONT SIZE=-1><B>Colors of
 variables:</B>  <SPAN CLASS=typecode
@@ -150,9 +141,9 @@ STYLE="color:#CC33CC;font-style:normal">class</SPAN></FONT></TD></TR>
 CLASS=math>&not; </SPAN><A HREF="wff-neg.html">wff-neg</A>&nbsp;<SPAN CLASS=r
 STYLE="color:#FA0200">9</SPAN> &nbsp;<SPAN CLASS=math> &rarr; </SPAN><A
 HREF="wff-imp.html">wff-imp</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#FA0200">10</SPAN> &nbsp;<SPAN CLASS=math> &vee; </SPAN><A
-HREF="wff-or.html">wff-or</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#CF5500">154</SPAN></FONT></TD></TR>
+STYLE="color:#FA0200">10</SPAN> &nbsp;<SPAN CLASS=math> &wedge; </SPAN><A
+HREF="wff-and.html">wff-and</A>&nbsp;<SPAN CLASS=r
+STYLE="color:#D94B00">132</SPAN></FONT></TD></TR>
 <TR><TD ALIGN=LEFT><FONT SIZE=-1><B>This theorem was proved from axioms:</B>
 &nbsp;<A HREF="ax-L1.html">ax-L1</A>&nbsp;<SPAN CLASS=r
 STYLE="color:#FA0200">11</SPAN> &nbsp;<A HREF="ax-L2.html">ax-L2</A>&nbsp;<SPAN
@@ -162,14 +153,18 @@ HREF="ax-L3.html">ax-L3</A>&nbsp;<SPAN CLASS=r STYLE="color:#F90300">13</SPAN>
 STYLE="color:#F90300">14</SPAN></FONT></TD></TR>
 <TR><TD ALIGN=LEFT><FONT SIZE=-1><B>This theorem depends on definitions:</B>
 &nbsp;<A HREF="df-bi-D2.1.html">df-bi-D2.1</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#E43C00">106</SPAN> &nbsp;<A
-HREF="df-or-D2.3.html">df-or-D2.3</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#CE5500">155</SPAN></FONT></TD></TR>
+STYLE="color:#E33D00">107</SPAN> &nbsp;<A
+HREF="df-and-D2.2.html">df-and-D2.2</A>&nbsp;<SPAN CLASS=r
+STYLE="color:#D84C00">133</SPAN></FONT></TD></TR>
 <TR><TD ALIGN=LEFT><FONT SIZE=-1><B>This theorem is referenced by:</B> &nbsp;<A
-HREF="orintl-P2.15a.AC.SH.html">orintl-P2.15a.AC.SH</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#CD5600">157</SPAN> &nbsp;<A
-HREF="exclmid-P2.16.html">exclmid-P2.16</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#CB5800">162</SPAN></FONT></TD></TR>
+HREF="simpr-P2.9b.AC.SH.html">simpr-P2.9b.AC.SH</A>
+&nbsp;<SPAN CLASS=r STYLE="color:#D64D00">137</SPAN> &nbsp;<A
+HREF="import-P2.10a.html">import-P2.10a</A>
+&nbsp;<SPAN CLASS=r STYLE="color:#D54F00">140</SPAN> &nbsp;<A
+HREF="orelim-P2.11c.html">orelim-P2.11c</A>
+&nbsp;<SPAN CLASS=r STYLE="color:#D05300">150</SPAN> &nbsp;<A
+HREF="ndasm-P3.1.html">ndasm-P3.1</A>
+&nbsp;<SPAN CLASS=r STYLE="color:#C85B00">166</SPAN></FONT></TD></TR>
 </TABLE></CENTER>
 <TABLE BORDER=0 WIDTH="100%">
 <TR><TD WIDTH="25%">&nbsp;</TD>

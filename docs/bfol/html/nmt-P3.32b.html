@@ -16,10 +16,6 @@ img { margin-bottom: -4px }
    }
 -->
 </STYLE>
-<link rel="stylesheet" 
-media="screen" 
-href="https://fontlibrary.org/en/face/xits-math" 
-type="text/css"/> 
 <STYLE TYPE="text/css"> 
 <!--
   .wff { color: blue; } 
@@ -27,7 +23,11 @@ type="text/css"/>
   .term { color: green; } 
   .class { color: #CC33CC; } 
   .typecode { color: gray; } 
-  .math { font-family: XITSMathRegular; } 
+  @font-face {
+     font-family: XITSMath-Regular; 
+     src: url(../fonts/xits-math.woff); 
+  } 
+  .math { font-family: XITSMath-Regular; } 
 -->
 </STYLE>
 <TITLE>nmt-P3.32b - bfol.mm Proof Explorer</TITLE>
@@ -52,7 +52,7 @@ bfol.mm Proof Explorer
       &lt; Previous</A>&nbsp;&nbsp;
       <A HREF="nmt-P3.32b.RC.html">Next &gt;</A>
       </FONT><FONT FACE=sans-serif SIZE=-2>
-      <BR><A HREF="mmtheorems4.html#nmt-P3.32b">Nearby theorems</A>
+      <BR><A HREF="mmtheorems3.html#nmt-P3.32b">Nearby theorems</A>
       </FONT>
     </TD>
   </TR>
@@ -76,12 +76,12 @@ bfol.mm Proof Explorer
 <HR NOSHADE SIZE=1>
 <CENTER><B><FONT SIZE="+1">Theorem <FONT
 COLOR="#006633">nmt-P3.32b</FONT></FONT></B>&nbsp;<SPAN CLASS=r
-STYLE="color:#768500">304</SPAN></CENTER>
+STYLE="color:#7A8400">294</SPAN></CENTER>
 <CENTER><TABLE><TR><TD ALIGN=LEFT><B>Description: </B>Negated Modus Tollens.
 <P STYLE="margin-bottom:0em">
        This statement is the deductive form of <A
 HREF="clav-P1.12.html">clav-P1.12</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#F12000">67</SPAN>.  It requires the
+STYLE="color:#F02100">68</SPAN>.  It requires the
        Law of Excluded Middle and is thus not deducible with intuitionist
        logic.</TD></TR></TABLE></CENTER>
 
@@ -116,7 +116,7 @@ SUMMARY="Proof of theorem">
 </TH><TH>Expression</TH></TR>
 <TR ALIGN=LEFT><TD>1</TD><TD>&nbsp;</TD><TD><A HREF="rcp-NDASM2of2.html"
 TITLE="( 1 `/\` 2 ) `->` 2. `t.`">rcp-NDASM2of2</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#B16C00">204</SPAN></TD><TD><A NAME="1"></A>
+STYLE="color:#B66800">194</SPAN></TD><TD><A NAME="1"></A>
 <SPAN CLASS=i>. . . 4</SPAN>
 <SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN>((<SPAN
 CLASS=wff>&#x1D6FE;</SPAN> &wedge; &not; <SPAN CLASS=wff>&#x1D711;</SPAN>)
@@ -130,7 +130,7 @@ CLASS=wff>&#x1D6FE;</SPAN> &rarr; (&not; <SPAN CLASS=wff>&#x1D711;</SPAN>
 <TR ALIGN=LEFT><TD>3</TD><TD><A HREF="#2">2</A></TD><TD><A
 HREF="rcp-NDIMP1add1.html"
 TITLE="( 1 ) `=>` ( 1 `/\` 2 ). `t.`">rcp-NDIMP1add1</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#A97100">218</SPAN></TD><TD><A NAME="3"></A>
+STYLE="color:#AE6E00">208</SPAN></TD><TD><A NAME="3"></A>
 <SPAN CLASS=i>. . . 4</SPAN>
 <SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN>((<SPAN
 CLASS=wff>&#x1D6FE;</SPAN> &wedge; &not; <SPAN CLASS=wff>&#x1D711;</SPAN>)
@@ -139,7 +139,7 @@ CLASS=wff>&#x1D711;</SPAN>))</SPAN></TD></TR>
 <TR ALIGN=LEFT><TD>4</TD><TD><A HREF="#1">1</A>, <A HREF="#3">3</A></TD><TD><A
 HREF="ndime-P3.6.html"
 TITLE="Natural Deduction: '`->`' Elimination Rule. This rule is just Modus Ponens with an...">ndime-P3.6</A>&nbsp;<SPAN
-CLASS=r STYLE="color:#BF6100">181</SPAN></TD><TD><A NAME="4"></A>
+CLASS=r STYLE="color:#C55D00">171</SPAN></TD><TD><A NAME="4"></A>
 <SPAN CLASS=i>. . 3</SPAN>
 <SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN>((<SPAN
 CLASS=wff>&#x1D6FE;</SPAN> &wedge; &not; <SPAN CLASS=wff>&#x1D711;</SPAN>)
@@ -147,7 +147,7 @@ CLASS=wff>&#x1D6FE;</SPAN> &wedge; &not; <SPAN CLASS=wff>&#x1D711;</SPAN>)
 <TR ALIGN=LEFT><TD>5</TD><TD><A HREF="#4">4</A>, <A HREF="#1">1</A></TD><TD><A
 HREF="rcp-NDNEGI2.html"
 TITLE="`-.` Introduction Recipe. `t.`">rcp-NDNEGI2</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#A27500">229</SPAN></TD><TD><A NAME="5"></A>
+STYLE="color:#A77100">219</SPAN></TD><TD><A NAME="5"></A>
 <SPAN CLASS=i>. 2</SPAN>
 <SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN>(<SPAN
 CLASS=wff>&#x1D6FE;</SPAN> &rarr; &not; &not; <SPAN
@@ -155,7 +155,7 @@ CLASS=wff>&#x1D711;</SPAN>)</SPAN></TD></TR>
 <TR ALIGN=LEFT><TD>6</TD><TD><A HREF="#5">5</A></TD><TD><A
 HREF="dnege-P3.30.html"
 TITLE="Double Negation Elimination. This statement is equivalent to ~ndexclmid-P3.16 , thus...">dnege-P3.30</A>&nbsp;<SPAN
-CLASS=r STYLE="color:#7E8300">286</SPAN></TD><TD><A NAME="6"></A>
+CLASS=r STYLE="color:#838100">276</SPAN></TD><TD><A NAME="6"></A>
 <SPAN CLASS=i>1</SPAN>
 <SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN>(<SPAN
 CLASS=wff>&#x1D6FE;</SPAN> &rarr; <SPAN
@@ -173,7 +173,7 @@ STYLE="color:#FA0200">9</SPAN> &nbsp;<SPAN CLASS=math> &rarr; </SPAN><A
 HREF="wff-imp.html">wff-imp</A>&nbsp;<SPAN CLASS=r
 STYLE="color:#FA0200">10</SPAN> &nbsp;<SPAN CLASS=math> &wedge; </SPAN><A
 HREF="wff-and.html">wff-and</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#D84B00">133</SPAN></FONT></TD></TR>
+STYLE="color:#D94B00">132</SPAN></FONT></TD></TR>
 <TR><TD ALIGN=LEFT><FONT SIZE=-1><B>This theorem was proved from axioms:</B>
 &nbsp;<A HREF="ax-L1.html">ax-L1</A>&nbsp;<SPAN CLASS=r
 STYLE="color:#FA0200">11</SPAN> &nbsp;<A HREF="ax-L2.html">ax-L2</A>&nbsp;<SPAN
@@ -183,18 +183,18 @@ HREF="ax-L3.html">ax-L3</A>&nbsp;<SPAN CLASS=r STYLE="color:#F90300">13</SPAN>
 STYLE="color:#F90300">14</SPAN></FONT></TD></TR>
 <TR><TD ALIGN=LEFT><FONT SIZE=-1><B>This theorem depends on definitions:</B>
 &nbsp;<A HREF="df-bi-D2.1.html">df-bi-D2.1</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#E43C00">106</SPAN> &nbsp;<A
+STYLE="color:#E33D00">107</SPAN> &nbsp;<A
 HREF="df-and-D2.2.html">df-and-D2.2</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#D84C00">134</SPAN> &nbsp;<A
+STYLE="color:#D84C00">133</SPAN> &nbsp;<A
 HREF="df-or-D2.3.html">df-or-D2.3</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#CE5500">155</SPAN> &nbsp;<A
+STYLE="color:#D25100">145</SPAN> &nbsp;<A
 HREF="df-true-D2.4.html">df-true-D2.4</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#C95A00">165</SPAN></FONT></TD></TR>
+STYLE="color:#CE5500">155</SPAN></FONT></TD></TR>
 <TR><TD ALIGN=LEFT><FONT SIZE=-1><B>This theorem is referenced by:</B> &nbsp;<A
 HREF="nmt-P3.32b.RC.html">nmt-P3.32b.RC</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#768500">305</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#798400">295</SPAN> &nbsp;<A
 HREF="nmt-3.32b.CL.html">nmt-3.32b.CL</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#758500">306</SPAN></FONT></TD></TR>
+&nbsp;<SPAN CLASS=r STYLE="color:#798400">296</SPAN></FONT></TD></TR>
 </TABLE></CENTER>
 <TABLE BORDER=0 WIDTH="100%">
 <TR><TD WIDTH="25%">&nbsp;</TD>

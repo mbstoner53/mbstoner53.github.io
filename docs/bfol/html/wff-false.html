@@ -16,10 +16,6 @@ img { margin-bottom: -4px }
    }
 -->
 </STYLE>
-<link rel="stylesheet" 
-media="screen" 
-href="https://fontlibrary.org/en/face/xits-math" 
-type="text/css"/> 
 <STYLE TYPE="text/css"> 
 <!--
   .wff { color: blue; } 
@@ -27,7 +23,11 @@ type="text/css"/>
   .term { color: green; } 
   .class { color: #CC33CC; } 
   .typecode { color: gray; } 
-  .math { font-family: XITSMathRegular; } 
+  @font-face {
+     font-family: XITSMath-Regular; 
+     src: url(../fonts/xits-math.woff); 
+  } 
+  .math { font-family: XITSMath-Regular; } 
 -->
 </STYLE>
 <TITLE>wff-false - bfol.mm Proof Explorer</TITLE>
@@ -48,7 +48,7 @@ bfol.mm Proof Explorer
       </B></FONT></TD>
     <TD ALIGN=RIGHT VALIGN=TOP WIDTH="25%">
       <FONT SIZE=-1 FACE=sans-serif>
-      <A HREF="true-P2.18.html">
+      <A HREF="true-P2.14.html">
       &lt; Previous</A>&nbsp;&nbsp;
       <A HREF="df-false-D2.5.html">Next &gt;</A>
       </FONT><FONT FACE=sans-serif SIZE=-2>
@@ -76,7 +76,7 @@ bfol.mm Proof Explorer
 <HR NOSHADE SIZE=1>
 <CENTER><B><FONT SIZE="+1">Syntax Definition <FONT
 COLOR="#006633">wff-false</FONT></FONT></B>&nbsp;<SPAN CLASS=r
-STYLE="color:#C85B00">167</SPAN></CENTER>
+STYLE="color:#CD5600">157</SPAN></CENTER>
 <CENTER><TABLE><TR><TD ALIGN=LEFT><B>Description: </B>Extend WFF definition to
 include the &quot;false&quot; constant '<SPAN
 CLASS=math>&perp;</SPAN>'.</TD></TR></TABLE></CENTER>
@@ -94,7 +94,7 @@ SUMMARY="Assertion">
 <HR NOSHADE SIZE=1>
 <CENTER>See definition <A
 HREF="df-false-D2.5.html">df-false-D2.5</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#C75B00">168</SPAN> for more information.</CENTER><HR NOSHADE
+STYLE="color:#CC5700">158</SPAN> for more information.</CENTER><HR NOSHADE
 SIZE=1>
 <CENTER><TABLE CELLSPACING=7><TR><TD ALIGN=LEFT><FONT SIZE=-1><B>Colors of
 variables:</B>  <SPAN CLASS=typecode

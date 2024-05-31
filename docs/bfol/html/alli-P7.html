@@ -16,10 +16,6 @@ img { margin-bottom: -4px }
    }
 -->
 </STYLE>
-<link rel="stylesheet" 
-media="screen" 
-href="https://fontlibrary.org/en/face/xits-math" 
-type="text/css"/> 
 <STYLE TYPE="text/css"> 
 <!--
   .wff { color: blue; } 
@@ -27,7 +23,11 @@ type="text/css"/>
   .term { color: green; } 
   .class { color: #CC33CC; } 
   .typecode { color: gray; } 
-  .math { font-family: XITSMathRegular; } 
+  @font-face {
+     font-family: XITSMath-Regular; 
+     src: url(../fonts/xits-math.woff); 
+  } 
+  .math { font-family: XITSMath-Regular; } 
 -->
 </STYLE>
 <TITLE>alli-P7 - bfol.mm Proof Explorer</TITLE>
@@ -76,15 +76,15 @@ bfol.mm Proof Explorer
 <HR NOSHADE SIZE=1>
 <CENTER><B><FONT SIZE="+1">Theorem <FONT
 COLOR="#006633">alli-P7</FONT></FONT></B>&nbsp;<SPAN CLASS=r
-STYLE="color:#C42BFB">953</SPAN></CENTER>
+STYLE="color:#C32BFB">947</SPAN></CENTER>
 <CENTER><TABLE><TR><TD ALIGN=LEFT><B>Description: </B>Simplified '<SPAN
 CLASS=math>&forall;</SPAN>' Introduction Law. <SPAN CLASS=math>&dagger;</SPAN>
 <P STYLE="margin-bottom:0em">
        For the original form, using explicit substitution, see
        <A HREF="ndalli-P7.17.html">ndalli-P7.17</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#8863FF">848</SPAN>.  The inference form is <A
+STYLE="color:#8763FF">842</SPAN>.  The inference form is <A
 HREF="axGEN-P7.html">axGEN-P7</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#BD33FD">939</SPAN>.</TD></TR></TABLE></CENTER>
+STYLE="color:#BD34FD">933</SPAN>.</TD></TR></TABLE></CENTER>
 
 <CENTER><TABLE BORDER CELLSPACING=0 BGCOLOR="#EEFFFA"
 SUMMARY="Hypotheses">
@@ -125,7 +125,7 @@ CLASS=objvar>&#x1D465;</SPAN><SPAN CLASS=wff>&#x1D6FE;</SPAN></SPAN></TD></TR>
 <TR ALIGN=LEFT><TD>2</TD><TD><A HREF="#1">1</A></TD><TD><A
 HREF="nfrgen-P7.CL.html"
 TITLE="Closed Form of ~nfrgen-P7 . `t.`">nfrgen-P7.CL</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#BC35FE">936</SPAN></TD><TD><A NAME="2"></A>
+STYLE="color:#BC36FE">930</SPAN></TD><TD><A NAME="2"></A>
 <SPAN CLASS=i>. 2</SPAN>
 <SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN>(<SPAN
 CLASS=wff>&#x1D6FE;</SPAN> &rarr; &forall;<SPAN
@@ -137,14 +137,14 @@ CLASS=wff>&#x1D6FE;</SPAN> &rarr; <SPAN
 CLASS=wff>&#x1D711;</SPAN>)</SPAN></TD></TR>
 <TR ALIGN=LEFT><TD>4</TD><TD><A HREF="#3">3</A></TD><TD><A HREF="axGEN-P7.html"
 TITLE="Generalization Rule ( ~ax-GEN ), Derived from Natural Deduction Rules. `t.`">axGEN-P7</A>&nbsp;<SPAN
-CLASS=r STYLE="color:#BD33FD">939</SPAN></TD><TD><A NAME="4"></A>
+CLASS=r STYLE="color:#BD34FD">933</SPAN></TD><TD><A NAME="4"></A>
 <SPAN CLASS=i>. . 3</SPAN>
 <SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN>&forall;<SPAN
 CLASS=objvar>&#x1D465;</SPAN>(<SPAN CLASS=wff>&#x1D6FE;</SPAN> &rarr; <SPAN
 CLASS=wff>&#x1D711;</SPAN>)</SPAN></TD></TR>
 <TR ALIGN=LEFT><TD>5</TD><TD>&nbsp;</TD><TD><A HREF="axL4-P7.html"
 TITLE="~ax-L4 Derived from Natural Deduction Rules. `t.`">axL4-P7</A>&nbsp;<SPAN
-CLASS=r STYLE="color:#C32CFB">951</SPAN></TD><TD><A NAME="5"></A>
+CLASS=r STYLE="color:#C22DFC">945</SPAN></TD><TD><A NAME="5"></A>
 <SPAN CLASS=i>. . 3</SPAN>
 <SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN>(&forall;<SPAN
 CLASS=objvar>&#x1D465;</SPAN>(<SPAN CLASS=wff>&#x1D6FE;</SPAN> &rarr; <SPAN
@@ -155,7 +155,7 @@ CLASS=wff>&#x1D711;</SPAN>))</SPAN></TD></TR>
 <TR ALIGN=LEFT><TD>6</TD><TD><A HREF="#4">4</A>, <A HREF="#5">5</A></TD><TD><A
 HREF="rcp-NDIME0.html"
 TITLE="This is the same is ~ax-MP . `t.`">rcp-NDIME0</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#9D7800">238</SPAN></TD><TD><A NAME="6"></A>
+STYLE="color:#A27500">228</SPAN></TD><TD><A NAME="6"></A>
 <SPAN CLASS=i>. 2</SPAN>
 <SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN>(&forall;<SPAN
 CLASS=objvar>&#x1D465;</SPAN><SPAN CLASS=wff>&#x1D6FE;</SPAN> &rarr;
@@ -164,7 +164,7 @@ CLASS=wff>&#x1D711;</SPAN>)</SPAN></TD></TR>
 <TR ALIGN=LEFT><TD>7</TD><TD><A HREF="#2">2</A>, <A HREF="#6">6</A></TD><TD><A
 HREF="syl-P3.24.RC.html"
 TITLE="Inference Form of ~syl-P3.24.RC . `t.`">syl-P3.24.RC</A>&nbsp;<SPAN
-CLASS=r STYLE="color:#887F00">270</SPAN></TD><TD><A NAME="7"></A>
+CLASS=r STYLE="color:#8D7E00">260</SPAN></TD><TD><A NAME="7"></A>
 <SPAN CLASS=i>1</SPAN>
 <SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN>(<SPAN
 CLASS=wff>&#x1D6FE;</SPAN> &rarr; &forall;<SPAN
@@ -182,7 +182,7 @@ CLASS=r STYLE="color:#FA0200">8</SPAN> &nbsp;<SPAN CLASS=math> &rarr; </SPAN><A
 HREF="wff-imp.html">wff-imp</A>&nbsp;<SPAN CLASS=r
 STYLE="color:#FA0200">10</SPAN> &nbsp;<SPAN CLASS=math>&#8498;</SPAN><A
 HREF="wff-nfree.html">wff-nfree</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#0085D9">687</SPAN></FONT></TD></TR>
+STYLE="color:#0085D5">681</SPAN></FONT></TD></TR>
 <TR><TD ALIGN=LEFT><FONT SIZE=-1><B>This theorem was proved from axioms:</B>
 &nbsp;<A HREF="ax-L1.html">ax-L1</A>&nbsp;<SPAN CLASS=r
 STYLE="color:#FA0200">11</SPAN> &nbsp;<A HREF="ax-L2.html">ax-L2</A>&nbsp;<SPAN
@@ -205,50 +205,50 @@ HREF="ax-L12.html">ax-L12</A>&nbsp;<SPAN CLASS=r
 STYLE="color:#F80800">29</SPAN></FONT></TD></TR>
 <TR><TD ALIGN=LEFT><FONT SIZE=-1><B>This theorem depends on definitions:</B>
 &nbsp;<A HREF="df-bi-D2.1.html">df-bi-D2.1</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#E43C00">106</SPAN> &nbsp;<A
+STYLE="color:#E33D00">107</SPAN> &nbsp;<A
 HREF="df-and-D2.2.html">df-and-D2.2</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#D84C00">134</SPAN> &nbsp;<A
+STYLE="color:#D84C00">133</SPAN> &nbsp;<A
 HREF="df-or-D2.3.html">df-or-D2.3</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#CE5500">155</SPAN> &nbsp;<A
+STYLE="color:#D25100">145</SPAN> &nbsp;<A
 HREF="df-true-D2.4.html">df-true-D2.4</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#C95A00">165</SPAN> &nbsp;<A
+STYLE="color:#CE5500">155</SPAN> &nbsp;<A
 HREF="df-rcp-AND3.html">df-rcp-AND3</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#C55C00">171</SPAN> &nbsp;<A
+STYLE="color:#CB5800">161</SPAN> &nbsp;<A
 HREF="df-exists-D5.1.html">df-exists-D5.1</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#008F7B">602</SPAN> &nbsp;<A
+STYLE="color:#008F78">596</SPAN> &nbsp;<A
 HREF="df-nfree-D6.1.html">df-nfree-D6.1</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#0084DA">688</SPAN> &nbsp;<A
+STYLE="color:#0085D7">682</SPAN> &nbsp;<A
 HREF="df-psub-D6.2.html">df-psub-D6.2</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#027FF9">722</SPAN></FONT></TD></TR>
+STYLE="color:#0280F7">716</SPAN></FONT></TD></TR>
 <TR><TD ALIGN=LEFT><FONT SIZE=-1><B>This theorem is referenced by:</B> &nbsp;<A
 HREF="alloverimex-P7.GENF.html">alloverimex-P7.GENF</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#C52AFB">955</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#C42AFB">949</SPAN> &nbsp;<A
 HREF="allnegex-P7-L2.html">allnegex-P7-L2</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#C825FA">963</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#C825FA">957</SPAN> &nbsp;<A
 HREF="dfnfreealtif-P7.html">dfnfreealtif-P7</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#CB21F9">970</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#CB21F9">964</SPAN> &nbsp;<A
 HREF="alloverim-P7.GENF.html">alloverim-P7.GENF</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#CD1EF6">977</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#CD1EF7">971</SPAN> &nbsp;<A
 HREF="qimeqallhalf-P7.html">qimeqallhalf-P7</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#CE1CF5">981</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#CE1CF5">975</SPAN> &nbsp;<A
 HREF="dfpsubv-P7.html">dfpsubv-P7</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#CE1BF4">983</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#CE1CF4">977</SPAN> &nbsp;<A
 HREF="axL11-P7.html">axL11-P7</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#CF1AF3">986</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#CF1AF3">980</SPAN> &nbsp;<A
 HREF="alli-P7r.html">alli-P7r</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#D116F0">996</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#D116F0">990</SPAN> &nbsp;<A
 HREF="alli-P7r.VR.html">alli-P7r.VR</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#D115EF">997</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#D116F0">991</SPAN> &nbsp;<A
 HREF="allic-P7.html">allic-P7</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#D50FEA">1013</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#D50FEA">1007</SPAN> &nbsp;<A
 HREF="dalloverim-P7.GENF.html">dalloverim-P7.GENF</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#D808E4">1031</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#D808E4">1025</SPAN> &nbsp;<A
 HREF="dalloverimex-P7.GENF.html">dalloverimex-P7.GENF</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#DB03E0">1042</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#DB03E1">1036</SPAN> &nbsp;<A
 HREF="cbvall-P7-L1.html">cbvall-P7-L1</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#E100CB">1066</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#E100CC">1060</SPAN> &nbsp;<A
 HREF="nfrcond-P8.html">nfrcond-P8</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#EC0095">1114</SPAN></FONT></TD></TR>
+&nbsp;<SPAN CLASS=r STYLE="color:#EC0095">1108</SPAN></FONT></TD></TR>
 </TABLE></CENTER>
 <TABLE BORDER=0 WIDTH="100%">
 <TR><TD WIDTH="25%">&nbsp;</TD>

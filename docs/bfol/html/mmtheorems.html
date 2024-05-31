@@ -12,10 +12,6 @@ img { margin-bottom: -4px }
    }
 -->
 </STYLE>
-<link rel="stylesheet" 
-media="screen" 
-href="https://fontlibrary.org/en/face/xits-math" 
-type="text/css"/> 
 <STYLE TYPE="text/css"> 
 <!--
   .wff { color: blue; } 
@@ -23,7 +19,11 @@ type="text/css"/>
   .term { color: green; } 
   .class { color: #CC33CC; } 
   .typecode { color: gray; } 
-  .math { font-family: XITSMathRegular; } 
+  @font-face {
+     font-family: XITSMath-Regular; 
+     src: url(../fonts/xits-math.woff); 
+  } 
+  .math { font-family: XITSMath-Regular; } 
 -->
 </STYLE>
 <TITLE>TOC of Theorem List - bfol.mm Proof Explorer</TITLE>
@@ -202,8 +202,8 @@ This page:</FONT></B>
 &nbsp; &nbsp; &nbsp; <A NAME="dtl:2.1"></A>&#8203;<A
  HREF="mmtheorems1.html#mm30b"><B>2.1&nbsp;&nbsp;Logical
  Implication</B></A><BR>
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <A
- HREF="mmtheorems1.html#mm30s">2.1.1&nbsp;&nbsp;Some Simple Proofs.</A> &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <A NAME="axL1.SH"></A>&#8203;<A
+ HREF="mmtheorems1.html#mm30s">*2.1.1&nbsp;&nbsp;Some Simple Proofs.</A> &nbsp;
  <A HREF="axL1.SH.html">axL1.SH</A>&nbsp;<SPAN CLASS=r
  STYLE="color:#F80800">30</SPAN><BR>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <A
@@ -219,1203 +219,1201 @@ This page:</FONT></B>
  HREF="rcp-FR1.html">rcp-FR1</A>&nbsp;<SPAN CLASS=r
  STYLE="color:#F70B00">39</SPAN><BR>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <A
- HREF="mmtheorems1.html#mm45s">2.1.4.1&nbsp;&nbsp;Application of Proof
+ NAME="axL1.AC.SH"></A> &#8203;<A
+ HREF="mmtheorems1.html#mm45s">*2.1.4.1&nbsp;&nbsp;Application of Proof
  Recipes.</A> &nbsp; <A HREF="axL1.AC.SH.html">axL1.AC.SH</A>&nbsp;<SPAN
- CLASS=r STYLE="color:#F60E00">45</SPAN><BR>
+ CLASS=r STYLE="color:#F60F00">45</SPAN><BR>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <A
  HREF="mmtheorems1.html#mm48s">2.1.5&nbsp;&nbsp;More Implication Theorems.</A>
  &nbsp; <A HREF="imcomm-P1.6.html">imcomm-P1.6</A>&nbsp;<SPAN CLASS=r
  STYLE="color:#F51100">48</SPAN><BR>
 &nbsp; &nbsp; &nbsp; <A NAME="dtl:2.2"></A>&#8203;<A
- HREF="mmtheorems1.html#mm64b"><B>2.2&nbsp;&nbsp;Logical Negation</B></A><BR>
+ HREF="mmtheorems1.html#mm65b"><B>2.2&nbsp;&nbsp;Logical Negation</B></A><BR>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <A
- HREF="mmtheorems1.html#mm64s">2.2.1&nbsp;&nbsp;Basic Negation Laws.</A> &nbsp;
+ HREF="mmtheorems1.html#mm65s">2.2.1&nbsp;&nbsp;Basic Negation Laws.</A> &nbsp;
  <A HREF="poe-P1.11a.html">poe-P1.11a</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#F11D00">64</SPAN><BR>
+ STYLE="color:#F11E00">65</SPAN><BR>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <A
- HREF="mmtheorems1.html#mm75s">2.2.2&nbsp;&nbsp;Transposition Laws.</A> &nbsp;
+ HREF="mmtheorems1.html#mm76s">2.2.2&nbsp;&nbsp;Transposition Laws.</A> &nbsp;
  <A HREF="trnsp-P1.15a.html">trnsp-P1.15a</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#EF2600">75</SPAN><BR>
+ STYLE="color:#EF2700">76</SPAN><BR>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <A
- HREF="mmtheorems1.html#mm85s">2.2.3&nbsp;&nbsp;Classical Arguments.</A> &nbsp;
+ HREF="mmtheorems1.html#mm86s">2.2.3&nbsp;&nbsp;Classical Arguments.</A> &nbsp;
  <A HREF="pfbycont-P1.16.html">pfbycont-P1.16</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#EC2E00">85</SPAN><BR>
-<A NAME="dtl:3"></A>&#8203;<A HREF="mmtheorems1.html#mm90h"><B>PART
+ STYLE="color:#EC2F00">86</SPAN><BR>
+<A NAME="dtl:3"></A>&#8203;<A HREF="mmtheorems1.html#mm91h"><B>PART
  3&nbsp;&nbsp;Chapter 2: Propositional Calculus (Defined
  Connectives)</B></A><BR>
 &nbsp; &nbsp; &nbsp; <A NAME="dtl:3.1"></A>&#8203;<A
  NAME="import-L2.1a"></A>&#8203;<A
- HREF="mmtheorems1.html#mm90b"><B>*3.1&nbsp;&nbsp;Development.</B></A><BR>
+ HREF="mmtheorems1.html#mm91b"><B>*3.1&nbsp;&nbsp;Development.</B></A><BR>
 &nbsp; &nbsp; &nbsp; <A NAME="dtl:3.2"></A>&#8203;<A
- HREF="mmtheorems1.html#mm100b"><B>3.2&nbsp;&nbsp;Logical
+ HREF="mmtheorems2.html#mm101b"><B>3.2&nbsp;&nbsp;Logical
  Equivalence</B></A><BR>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <A NAME="mbifwd-P2.1a"></A>&#8203;<A
- HREF="mmtheorems1.html#mm100s">*3.2.1&nbsp;&nbsp;Motivation Theorems.</A>
+ HREF="mmtheorems2.html#mm101s">*3.2.1&nbsp;&nbsp;Motivation Theorems.</A>
  &nbsp; <A HREF="mbifwd-P2.1a.html">mbifwd-P2.1a</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#E63800">100</SPAN><BR>
+ STYLE="color:#E63900">101</SPAN><BR>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <A NAME="wff-bi"></A>&#8203;<A
- HREF="mmtheorems2.html#mm103s">*3.2.2&nbsp;&nbsp;Defining Logical
+ HREF="mmtheorems2.html#mm104s">*3.2.2&nbsp;&nbsp;Defining Logical
  Equivalence.</A> &nbsp; <A HREF="wff-bi.html">wff-bi</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#E53A00">103</SPAN><BR>
+ STYLE="color:#E43B00">104</SPAN><BR>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <A
- HREF="mmtheorems2.html#mm103s">3.2.2.1&nbsp;&nbsp;Syntax Definition.</A>
+ HREF="mmtheorems2.html#mm104s">3.2.2.1&nbsp;&nbsp;Syntax Definition.</A>
  &nbsp; <A HREF="wff-bi.html">wff-bi</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#E53A00">103</SPAN><BR>
+ STYLE="color:#E43B00">104</SPAN><BR>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <A
  NAME="bijust-P2.2-L1"></A> &#8203;<A
- HREF="mmtheorems2.html#mm104s">*3.2.2.2&nbsp;&nbsp;Justification Theorem.</A>
+ HREF="mmtheorems2.html#mm105s">*3.2.2.2&nbsp;&nbsp;Justification Theorem.</A>
  &nbsp; <A HREF="bijust-P2.2-L1.html">bijust-P2.2-L1</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#E53A00">104</SPAN><BR>
+ STYLE="color:#E43B00">105</SPAN><BR>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <A
- HREF="mmtheorems2.html#mm106s">3.2.2.3&nbsp;&nbsp;Formal Definition.</A>
+ HREF="mmtheorems2.html#mm107s">3.2.2.3&nbsp;&nbsp;Formal Definition.</A>
  &nbsp; <A HREF="df-bi-D2.1.html">df-bi-D2.1</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#E43C00">106</SPAN><BR>
+ STYLE="color:#E33D00">107</SPAN><BR>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <A
  NAME="dfbiif-P2.3a"></A> &#8203;<A
- HREF="mmtheorems2.html#mm107s">*3.2.2.4&nbsp;&nbsp;Standard Form.</A> &nbsp;
+ HREF="mmtheorems2.html#mm108s">*3.2.2.4&nbsp;&nbsp;Standard Form.</A> &nbsp;
  <A HREF="dfbiif-P2.3a.html">dfbiif-P2.3a</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#E43C00">107</SPAN><BR>
+ STYLE="color:#E33D00">108</SPAN><BR>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <A NAME="bifwd-P2.5a"></A>&#8203;<A
- HREF="mmtheorems2.html#mm110s">*3.2.3&nbsp;&nbsp;Fundamental Properties.</A>
+ HREF="mmtheorems2.html#mm111s">*3.2.3&nbsp;&nbsp;Fundamental Properties.</A>
  &nbsp; <A HREF="bifwd-P2.5a.html">bifwd-P2.5a</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#E23E00">110</SPAN><BR>
+ STYLE="color:#E23F00">111</SPAN><BR>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <A NAME="biref-P2.6a"></A>&#8203;<A
- HREF="mmtheorems2.html#mm122s">*3.2.4&nbsp;&nbsp;Equivalence Relation
+ HREF="mmtheorems2.html#mm123s">*3.2.4&nbsp;&nbsp;Equivalence Relation
  Properties.</A> &nbsp; <A HREF="biref-P2.6a.html">biref-P2.6a</A>&nbsp;<SPAN
- CLASS=r STYLE="color:#DE4600">122</SPAN><BR>
+ CLASS=r STYLE="color:#DD4700">123</SPAN><BR>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <A NAME="subneg-P2.7"></A>&#8203;<A
- HREF="mmtheorems2.html#mm128s">*3.2.5&nbsp;&nbsp;Substitution Laws.</A> &nbsp;
+ HREF="mmtheorems2.html#mm127s">*3.2.5&nbsp;&nbsp;Substitution Laws.</A> &nbsp;
  <A HREF="subneg-P2.7.html">subneg-P2.7</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#DB4900">128</SPAN><BR>
+ STYLE="color:#DB4900">127</SPAN><BR>
 &nbsp; &nbsp; &nbsp; <A NAME="dtl:3.3"></A>&#8203;<A
- HREF="mmtheorems2.html#mm133b"><B>3.3&nbsp;&nbsp;Logical
+ HREF="mmtheorems2.html#mm132b"><B>3.3&nbsp;&nbsp;Logical
  Conjunction</B></A><BR>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <A
- HREF="mmtheorems2.html#mm133s">3.3.1&nbsp;&nbsp;Defining Logical
+ HREF="mmtheorems2.html#mm132s">3.3.1&nbsp;&nbsp;Defining Logical
  Conjunction.</A> &nbsp; <A HREF="wff-and.html">wff-and</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#D84B00">133</SPAN><BR>
+ STYLE="color:#D94B00">132</SPAN><BR>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <A
- HREF="mmtheorems2.html#mm133s">3.3.1.1&nbsp;&nbsp;Syntax Definition.</A>
+ HREF="mmtheorems2.html#mm132s">3.3.1.1&nbsp;&nbsp;Syntax Definition.</A>
  &nbsp; <A HREF="wff-and.html">wff-and</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#D84B00">133</SPAN><BR>
+ STYLE="color:#D94B00">132</SPAN><BR>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <A
- HREF="mmtheorems2.html#mm134s">3.3.1.2&nbsp;&nbsp;Formal Definition.</A>
+ HREF="mmtheorems2.html#mm133s">3.3.1.2&nbsp;&nbsp;Formal Definition.</A>
  &nbsp; <A HREF="df-and-D2.2.html">df-and-D2.2</A>&nbsp;<SPAN CLASS=r
+ STYLE="color:#D84C00">133</SPAN><BR>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <A NAME="simpl-P2.9a"></A>&#8203;<A
+ HREF="mmtheorems2.html#mm134s">*3.3.2&nbsp;&nbsp;Fundamental Properties.</A>
+ &nbsp; <A HREF="simpl-P2.9a.html">simpl-P2.9a</A>&nbsp;<SPAN CLASS=r
  STYLE="color:#D84C00">134</SPAN><BR>
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <A NAME="simpl-P2.11a"></A>&#8203;<A
- HREF="mmtheorems2.html#mm135s">*3.3.2&nbsp;&nbsp;Fundamental Properties.</A>
- &nbsp; <A HREF="simpl-P2.11a.html">simpl-P2.11a</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#D74C00">135</SPAN><BR>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <A
- HREF="mmtheorems2.html#mm141s">3.3.3&nbsp;&nbsp;Importation and Exportation
+ HREF="mmtheorems2.html#mm140s">3.3.3&nbsp;&nbsp;Importation and Exportation
  Laws.</A> &nbsp; <A HREF="import-P2.10a.html">import-P2.10a</A>&nbsp;<SPAN
- CLASS=r STYLE="color:#D54F00">141</SPAN><BR>
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <A
- HREF="mmtheorems2.html#mm145s">3.3.4&nbsp;&nbsp;Commutative and Associative
- Properties.</A> &nbsp; <A
- HREF="andcomm-P2.12-L1.html">andcomm-P2.12-L1</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#D35100">145</SPAN><BR>
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <A
- HREF="mmtheorems2.html#mm150s">3.3.5&nbsp;&nbsp;Substitution Laws.</A> &nbsp;
- <A HREF="subandl-P2.14a.html">subandl-P2.14a</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#D05300">150</SPAN><BR>
+ CLASS=r STYLE="color:#D54F00">140</SPAN><BR>
 &nbsp; &nbsp; &nbsp; <A NAME="dtl:3.4"></A>&#8203;<A
- HREF="mmtheorems2.html#mm154b"><B>3.4&nbsp;&nbsp;Logical
+ HREF="mmtheorems2.html#mm144b"><B>3.4&nbsp;&nbsp;Logical
  Disjunction</B></A><BR>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <A
- HREF="mmtheorems2.html#mm154s">3.4.1&nbsp;&nbsp;Defining Logical
+ HREF="mmtheorems2.html#mm144s">3.4.1&nbsp;&nbsp;Defining Logical
  Disjunction.</A> &nbsp; <A HREF="wff-or.html">wff-or</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#CF5500">154</SPAN><BR>
+ STYLE="color:#D35100">144</SPAN><BR>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <A
- HREF="mmtheorems2.html#mm154s">3.4.1.1&nbsp;&nbsp;Syntax Definition.</A>
+ HREF="mmtheorems2.html#mm144s">3.4.1.1&nbsp;&nbsp;Syntax Definition.</A>
  &nbsp; <A HREF="wff-or.html">wff-or</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#CF5500">154</SPAN><BR>
+ STYLE="color:#D35100">144</SPAN><BR>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <A
- HREF="mmtheorems2.html#mm155s">3.4.1.2&nbsp;&nbsp;Formal Definition.</A>
+ HREF="mmtheorems2.html#mm145s">3.4.1.2&nbsp;&nbsp;Formal Definition.</A>
  &nbsp; <A HREF="df-or-D2.3.html">df-or-D2.3</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#CE5500">155</SPAN><BR>
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <A NAME="orintl-P2.15a"></A>&#8203;<A
- HREF="mmtheorems2.html#mm156s">*3.4.2&nbsp;&nbsp;Fundamental Properties.</A>
- &nbsp; <A HREF="orintl-P2.15a.html">orintl-P2.15a</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#CE5600">156</SPAN><BR>
+ STYLE="color:#D25100">145</SPAN><BR>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <A NAME="orintl-P2.11a"></A>&#8203;<A
+ HREF="mmtheorems2.html#mm146s">*3.4.2&nbsp;&nbsp;Fundamental Properties.</A>
+ &nbsp; <A HREF="orintl-P2.11a.html">orintl-P2.11a</A>&nbsp;<SPAN CLASS=r
+ STYLE="color:#D25100">146</SPAN><BR>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <A
- HREF="mmtheorems2.html#mm162s">3.4.3&nbsp;&nbsp;The Law of Excluded
- Middle.</A> &nbsp; <A HREF="exclmid-P2.16.html">exclmid-P2.16</A>&nbsp;<SPAN
- CLASS=r STYLE="color:#CB5800">162</SPAN><BR>
+ HREF="mmtheorems2.html#mm152s">3.4.3&nbsp;&nbsp;The Law of Excluded
+ Middle.</A> &nbsp; <A HREF="exclmid-P2.12.html">exclmid-P2.12</A>&nbsp;<SPAN
+ CLASS=r STYLE="color:#CF5400">152</SPAN><BR>
 &nbsp; &nbsp; &nbsp; <A NAME="dtl:3.5"></A>&#8203;<A
- HREF="mmtheorems2.html#mm163b"><B>3.5&nbsp;&nbsp;True and False
+ HREF="mmtheorems2.html#mm153b"><B>3.5&nbsp;&nbsp;True and False
  Constants.</B></A><BR>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <A
- HREF="mmtheorems2.html#mm163s">3.5.1&nbsp;&nbsp;Defining True.</A> &nbsp; <A
+ HREF="mmtheorems2.html#mm153s">3.5.1&nbsp;&nbsp;Defining True.</A> &nbsp; <A
  HREF="wff-true.html">wff-true</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#CA5900">163</SPAN><BR>
+ STYLE="color:#CF5500">153</SPAN><BR>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <A
- HREF="mmtheorems2.html#mm163s">3.5.1.1&nbsp;&nbsp;Syntax Definition.</A>
+ HREF="mmtheorems2.html#mm153s">3.5.1.1&nbsp;&nbsp;Syntax Definition.</A>
  &nbsp; <A HREF="wff-true.html">wff-true</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#CA5900">163</SPAN><BR>
+ STYLE="color:#CF5500">153</SPAN><BR>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <A
- HREF="mmtheorems2.html#mm164s">3.5.1.2&nbsp;&nbsp;Justification Theorem.</A>
- &nbsp; <A HREF="truejust-P2.17.html">truejust-P2.17</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#CA5900">164</SPAN><BR>
+ HREF="mmtheorems2.html#mm154s">3.5.1.2&nbsp;&nbsp;Justification Theorem.</A>
+ &nbsp; <A HREF="truejust-P2.13.html">truejust-P2.13</A>&nbsp;<SPAN CLASS=r
+ STYLE="color:#CE5500">154</SPAN><BR>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <A
- HREF="mmtheorems2.html#mm165s">3.5.1.3&nbsp;&nbsp;Formal Definition.</A>
+ HREF="mmtheorems2.html#mm155s">3.5.1.3&nbsp;&nbsp;Formal Definition.</A>
  &nbsp; <A HREF="df-true-D2.4.html">df-true-D2.4</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#C95A00">165</SPAN><BR>
+ STYLE="color:#CE5500">155</SPAN><BR>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <A
- HREF="mmtheorems2.html#mm166s">3.5.2&nbsp;&nbsp;Fundamental Property of "True"
- Constant.</A> &nbsp; <A HREF="true-P2.18.html">true-P2.18</A>&nbsp;<SPAN
- CLASS=r STYLE="color:#C85A00">166</SPAN><BR>
+ HREF="mmtheorems2.html#mm156s">3.5.2&nbsp;&nbsp;Fundamental Property of "True"
+ Constant.</A> &nbsp; <A HREF="true-P2.14.html">true-P2.14</A>&nbsp;<SPAN
+ CLASS=r STYLE="color:#CD5600">156</SPAN><BR>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <A
- HREF="mmtheorems2.html#mm167s">3.5.3&nbsp;&nbsp;Defining False.</A> &nbsp; <A
+ HREF="mmtheorems2.html#mm157s">3.5.3&nbsp;&nbsp;Defining False.</A> &nbsp; <A
  HREF="wff-false.html">wff-false</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#C85B00">167</SPAN><BR>
+ STYLE="color:#CD5600">157</SPAN><BR>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <A
- HREF="mmtheorems2.html#mm167s">3.5.3.1&nbsp;&nbsp;Syntax Definition.</A>
+ HREF="mmtheorems2.html#mm157s">3.5.3.1&nbsp;&nbsp;Syntax Definition.</A>
  &nbsp; <A HREF="wff-false.html">wff-false</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#C85B00">167</SPAN><BR>
+ STYLE="color:#CD5600">157</SPAN><BR>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <A
- HREF="mmtheorems2.html#mm168s">3.5.3.2&nbsp;&nbsp;Formal Definition.</A>
+ HREF="mmtheorems2.html#mm158s">3.5.3.2&nbsp;&nbsp;Formal Definition.</A>
  &nbsp; <A HREF="df-false-D2.5.html">df-false-D2.5</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#C75B00">168</SPAN><BR>
+ STYLE="color:#CC5700">158</SPAN><BR>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <A
- HREF="mmtheorems2.html#mm169s">3.5.4&nbsp;&nbsp;Fundamental Property of
+ HREF="mmtheorems2.html#mm159s">3.5.4&nbsp;&nbsp;Fundamental Property of
  "False" Constant.</A> &nbsp; <A
- HREF="false-P2.19.html">false-P2.19</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#C75C00">169</SPAN><BR>
-<A NAME="dtl:4"></A>&#8203;<A HREF="mmtheorems2.html#mm170h"><B>PART
+ HREF="false-P2.15.html">false-P2.15</A>&nbsp;<SPAN CLASS=r
+ STYLE="color:#CC5700">159</SPAN><BR>
+<A NAME="dtl:4"></A>&#8203;<A HREF="mmtheorems2.html#mm160h"><B>PART
  4&nbsp;&nbsp;Chapter 3: Propositional Calculus (Natural Deduction)</B></A><BR>
 &nbsp; &nbsp; &nbsp; <A NAME="dtl:4.1"></A>&#8203;<A
- HREF="mmtheorems2.html#mm170b"><B>4.1&nbsp;&nbsp;Define Conjunction
+ HREF="mmtheorems2.html#mm160b"><B>4.1&nbsp;&nbsp;Define Conjunction
  Tuples.</B></A><BR>
 &nbsp; &nbsp; &nbsp; <A NAME="dtl:4.2"></A>&#8203;<A
  NAME="ndasm-P3.1"></A>&#8203;<A
- HREF="mmtheorems2.html#mm176b"><B>*4.2&nbsp;&nbsp;Natural Deduction for
+ HREF="mmtheorems2.html#mm166b"><B>*4.2&nbsp;&nbsp;Natural Deduction for
  Propositional Calculus.</B></A><BR>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <A
- HREF="mmtheorems2.html#mm176s">4.2.1&nbsp;&nbsp;Axiomatic Rules.</A> &nbsp; <A
+ HREF="mmtheorems2.html#mm166s">4.2.1&nbsp;&nbsp;Axiomatic Rules.</A> &nbsp; <A
  HREF="ndasm-P3.1.html">ndasm-P3.1</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#C25F00">176</SPAN><BR>
+ STYLE="color:#C85B00">166</SPAN><BR>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <A
- HREF="mmtheorems2.html#mm192s">4.2.1.1&nbsp;&nbsp;Rules for "True" and "False"
+ HREF="mmtheorems2.html#mm182s">4.2.1.1&nbsp;&nbsp;Rules for "True" and "False"
  Constants.</A> &nbsp; <A
  HREF="ndtruei-P3.17.html">ndtruei-P3.17</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#B86600">192</SPAN><BR>
+ STYLE="color:#BE6200">182</SPAN><BR>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <A
  NAME="rcp-NDSEP3"></A> &#8203;<A
- HREF="mmtheorems2.html#mm196s">*4.2.1.2&nbsp;&nbsp;Separate Front Supposition
+ HREF="mmtheorems2.html#mm186s">*4.2.1.2&nbsp;&nbsp;Separate Front Supposition
  (Syntactic Axioms).</A> &nbsp; <A
  HREF="rcp-NDSEP3.html">rcp-NDSEP3</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#B66800">196</SPAN><BR>
+ STYLE="color:#BB6400">186</SPAN><BR>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <A
  NAME="rcp-NDJOIN3"></A> &#8203;<A
- HREF="mmtheorems2.html#mm199s">*4.2.1.3&nbsp;&nbsp;Join Front Supposition
+ HREF="mmtheorems2.html#mm189s">*4.2.1.3&nbsp;&nbsp;Join Front Supposition
  (Syntactic Axioms).</A> &nbsp; <A
  HREF="rcp-NDJOIN3.html">rcp-NDJOIN3</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#B46A00">199</SPAN><BR>
+ STYLE="color:#BA6500">189</SPAN><BR>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <A NAME="rcp-NDASM1of1"></A>&#8203;<A
- HREF="mmtheorems3.html#mm202s">*4.2.2&nbsp;&nbsp;Utility Recipes.</A> &nbsp;
+ HREF="mmtheorems2.html#mm192s">*4.2.2&nbsp;&nbsp;Utility Recipes.</A> &nbsp;
  <A HREF="rcp-NDASM1of1.html">rcp-NDASM1of1</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#B26B00">202</SPAN><BR>
+ STYLE="color:#B86700">192</SPAN><BR>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <A
- HREF="mmtheorems3.html#mm202s">*4.2.2.1&nbsp;&nbsp;Derived Rules for Stating /
+ HREF="mmtheorems2.html#mm192s">*4.2.2.1&nbsp;&nbsp;Derived Rules for Stating /
  Re-Stating Assumptions.</A> &nbsp; <A
  HREF="rcp-NDASM1of1.html">rcp-NDASM1of1</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#B26B00">202</SPAN><BR>
+ STYLE="color:#B86700">192</SPAN><BR>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <A
  NAME="rcp-NDIMP0addall"></A> &#8203;<A
- HREF="mmtheorems3.html#mm217s">*4.2.2.2&nbsp;&nbsp;Derived Rules for Importing
+ HREF="mmtheorems3.html#mm207s">*4.2.2.2&nbsp;&nbsp;Derived Rules for Importing
  Previous Results.</A> &nbsp; <A
  HREF="rcp-NDIMP0addall.html">rcp-NDIMP0addall</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#A97000">217</SPAN><BR>
+ STYLE="color:#AE6D00">207</SPAN><BR>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <A
  NAME="rcp-NDNEGI1"></A> &#8203;<A
- HREF="mmtheorems3.html#mm228s">*4.2.2.3&nbsp;&nbsp;Derived Rules for Negation
+ HREF="mmtheorems3.html#mm218s">*4.2.2.3&nbsp;&nbsp;Derived Rules for Negation
  Introduction.</A> &nbsp; <A HREF="rcp-NDNEGI1.html">rcp-NDNEGI1</A>&nbsp;<SPAN
- CLASS=r STYLE="color:#A37400">228</SPAN><BR>
+ CLASS=r STYLE="color:#A87100">218</SPAN><BR>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <A
  NAME="rcp-NDNEGE0"></A> &#8203;<A
- HREF="mmtheorems3.html#mm233s">*4.2.2.4&nbsp;&nbsp;Derived Rule for Negation
+ HREF="mmtheorems3.html#mm223s">*4.2.2.4&nbsp;&nbsp;Derived Rule for Negation
  Elimination.</A> &nbsp; <A HREF="rcp-NDNEGE0.html">rcp-NDNEGE0</A>&nbsp;<SPAN
- CLASS=r STYLE="color:#A07600">233</SPAN><BR>
+ CLASS=r STYLE="color:#A57300">223</SPAN><BR>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <A
  NAME="rcp-NDIMI2"></A> &#8203;<A
- HREF="mmtheorems3.html#mm234s">*4.2.2.5&nbsp;&nbsp;Derived Rules for
+ HREF="mmtheorems3.html#mm224s">*4.2.2.5&nbsp;&nbsp;Derived Rules for
  Implication Introduction.</A> &nbsp; <A
  HREF="rcp-NDIMI2.html">rcp-NDIMI2</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#9F7600">234</SPAN><BR>
+ STYLE="color:#A47300">224</SPAN><BR>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <A
  NAME="rcp-NDIME0"></A> &#8203;<A
- HREF="mmtheorems3.html#mm238s">*4.2.2.6&nbsp;&nbsp;Derived Rule for
+ HREF="mmtheorems3.html#mm228s">*4.2.2.6&nbsp;&nbsp;Derived Rule for
  Implication Elimination.</A> &nbsp; <A
  HREF="rcp-NDIME0.html">rcp-NDIME0</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#9D7800">238</SPAN><BR>
+ STYLE="color:#A27500">228</SPAN><BR>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <A
  NAME="rcp-NDANDI0"></A> &#8203;<A
- HREF="mmtheorems3.html#mm239s">*4.2.2.7&nbsp;&nbsp;Derived Rule for
+ HREF="mmtheorems3.html#mm229s">*4.2.2.7&nbsp;&nbsp;Derived Rule for
  Conjunction Introduction.</A> &nbsp; <A
  HREF="rcp-NDANDI0.html">rcp-NDANDI0</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#9C7800">239</SPAN><BR>
+ STYLE="color:#A17500">229</SPAN><BR>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <A
  NAME="rcp-NDANDEL0"></A> &#8203;<A
- HREF="mmtheorems3.html#mm240s">*4.2.2.8&nbsp;&nbsp;Derived Rule for Left
+ HREF="mmtheorems3.html#mm230s">*4.2.2.8&nbsp;&nbsp;Derived Rule for Left
  Conjunction Elimination.</A> &nbsp; <A
  HREF="rcp-NDANDEL0.html">rcp-NDANDEL0</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#9B7800">240</SPAN><BR>
+ STYLE="color:#A17500">230</SPAN><BR>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <A
  NAME="rcp-NDANDER0"></A> &#8203;<A
- HREF="mmtheorems3.html#mm241s">*4.2.2.9&nbsp;&nbsp;Derived Rule for Right
+ HREF="mmtheorems3.html#mm231s">*4.2.2.9&nbsp;&nbsp;Derived Rule for Right
  Conjunction Elimination.</A> &nbsp; <A
  HREF="rcp-NDANDER0.html">rcp-NDANDER0</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#9B7900">241</SPAN><BR>
+ STYLE="color:#A07600">231</SPAN><BR>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <A
  NAME="rcp-NDORIL0"></A> &#8203;<A
- HREF="mmtheorems3.html#mm242s">*4.2.2.10&nbsp;&nbsp;Derived Rule for Left
+ HREF="mmtheorems3.html#mm232s">*4.2.2.10&nbsp;&nbsp;Derived Rule for Left
  Disjunction Introduction.</A> &nbsp; <A
  HREF="rcp-NDORIL0.html">rcp-NDORIL0</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#9A7900">242</SPAN><BR>
+ STYLE="color:#A07600">232</SPAN><BR>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <A
  NAME="rcp-NDORIR0"></A> &#8203;<A
- HREF="mmtheorems3.html#mm243s">*4.2.2.11&nbsp;&nbsp;Derived Rule for Right
+ HREF="mmtheorems3.html#mm233s">*4.2.2.11&nbsp;&nbsp;Derived Rule for Right
  Disjunction Introduction.</A> &nbsp; <A
  HREF="rcp-NDORIR0.html">rcp-NDORIR0</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#9A7900">243</SPAN><BR>
+ STYLE="color:#9F7600">233</SPAN><BR>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <A
  NAME="rcp-NDORE1"></A> &#8203;<A
- HREF="mmtheorems3.html#mm244s">*4.2.2.12&nbsp;&nbsp;Derived Rules for
+ HREF="mmtheorems3.html#mm234s">*4.2.2.12&nbsp;&nbsp;Derived Rules for
  Disjunction Elimination</A> &nbsp; <A
  HREF="rcp-NDORE1.html">rcp-NDORE1</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#997A00">244</SPAN><BR>
+ STYLE="color:#9E7700">234</SPAN><BR>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <A
  NAME="rcp-NDBII0"></A> &#8203;<A
- HREF="mmtheorems3.html#mm249s">*4.2.2.13&nbsp;&nbsp;Derived Rule for
+ HREF="mmtheorems3.html#mm239s">*4.2.2.13&nbsp;&nbsp;Derived Rule for
  Biconditional Introduction.</A> &nbsp; <A
  HREF="rcp-NDBII0.html">rcp-NDBII0</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#967B00">249</SPAN><BR>
+ STYLE="color:#9B7800">239</SPAN><BR>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <A
  NAME="rcp-NDBIEF0"></A> &#8203;<A
- HREF="mmtheorems3.html#mm250s">*4.2.2.14&nbsp;&nbsp;Derived Rule for
+ HREF="mmtheorems3.html#mm240s">*4.2.2.14&nbsp;&nbsp;Derived Rule for
  Biconditional Forward Implication.</A> &nbsp; <A
  HREF="rcp-NDBIEF0.html">rcp-NDBIEF0</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#957B00">250</SPAN><BR>
+ STYLE="color:#9B7900">240</SPAN><BR>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <A
  NAME="rcp-NDBIER0"></A> &#8203;<A
- HREF="mmtheorems3.html#mm251s">*4.2.2.15&nbsp;&nbsp;Derived Rule for
+ HREF="mmtheorems3.html#mm241s">*4.2.2.15&nbsp;&nbsp;Derived Rule for
  Biconditional Reverse Implication.</A> &nbsp; <A
  HREF="rcp-NDBIER0.html">rcp-NDBIER0</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#947B00">251</SPAN><BR>
+ STYLE="color:#9A7900">241</SPAN><BR>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <A
- HREF="mmtheorems3.html#mm252s">4.2.3&nbsp;&nbsp;Closed Forms of Natural
+ NAME="ndnegi-P3.3.CL"></A>&#8203;<A
+ HREF="mmtheorems3.html#mm242s">*4.2.3&nbsp;&nbsp;Closed Forms of Natural
  Deduction Rules.</A> &nbsp; <A
  HREF="ndnegi-P3.3.CL.html">ndnegi-P3.3.CL</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#947B00">252</SPAN><BR>
+ STYLE="color:#9A7900">242</SPAN><BR>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <A
- HREF="mmtheorems3.html#mm261s">4.2.4&nbsp;&nbsp;A More Convenient form of Law
+ HREF="mmtheorems3.html#mm251s">4.2.4&nbsp;&nbsp;A More Convenient form of Law
  of Excluded Middle.</A> &nbsp; <A
  HREF="ndexclmid-P3.16.AC.html">ndexclmid-P3.16.AC</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#8E7D00">261</SPAN><BR>
+ STYLE="color:#947C00">251</SPAN><BR>
 &nbsp; &nbsp; &nbsp; <A NAME="dtl:4.3"></A>&#8203;<A
- HREF="mmtheorems3.html#mm262b"><B>4.3&nbsp;&nbsp;Revisiting Chapter
+ HREF="mmtheorems3.html#mm252b"><B>4.3&nbsp;&nbsp;Revisiting Chapter
  1.</B></A><BR>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <A
- HREF="mmtheorems3.html#mm262s">4.3.1&nbsp;&nbsp;Propositional Axioms L1 and
+ HREF="mmtheorems3.html#mm252s">4.3.1&nbsp;&nbsp;Propositional Axioms L1 and
  L2.</A> &nbsp; <A HREF="axL1-P3.21.html">axL1-P3.21</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#8D7E00">262</SPAN><BR>
+ STYLE="color:#937C00">252</SPAN><BR>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <A
- HREF="mmtheorems3.html#mm267s">4.3.2&nbsp;&nbsp;Other Implication Laws.</A>
+ HREF="mmtheorems3.html#mm257s">4.3.2&nbsp;&nbsp;Other Implication Laws.</A>
  &nbsp; <A HREF="mae-P3.23.html">mae-P3.23</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#8A7F00">267</SPAN><BR>
+ STYLE="color:#8F7D00">257</SPAN><BR>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <A
- HREF="mmtheorems3.html#mm283s">4.3.3&nbsp;&nbsp;Double Negation Laws.</A>
+ HREF="mmtheorems3.html#mm273s">4.3.3&nbsp;&nbsp;Double Negation Laws.</A>
  &nbsp; <A HREF="dnegi-P3.29.html">dnegi-P3.29</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#7F8200">283</SPAN><BR>
+ STYLE="color:#858000">273</SPAN><BR>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <A
- HREF="mmtheorems3.html#mm289s">4.3.4&nbsp;&nbsp;Transposition Laws (including
+ HREF="mmtheorems3.html#mm279s">4.3.4&nbsp;&nbsp;Transposition Laws (including
  Axiom L3).</A> &nbsp; <A HREF="trnsp-P3.31a.html">trnsp-P3.31a</A>&nbsp;<SPAN
- CLASS=r STYLE="color:#7C8300">289</SPAN><BR>
+ CLASS=r STYLE="color:#818200">279</SPAN><BR>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <A
- HREF="mmtheorems4.html#mm301s">4.3.5&nbsp;&nbsp;Other Laws Involving
+ HREF="mmtheorems3.html#mm291s">4.3.5&nbsp;&nbsp;Other Laws Involving
  Negation.</A> &nbsp; <A HREF="mt-P3.32a.html">mt-P3.32a</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#778500">301</SPAN><BR>
+ STYLE="color:#7B8400">291</SPAN><BR>
 &nbsp; &nbsp; &nbsp; <A NAME="dtl:4.4"></A>&#8203;<A
- HREF="mmtheorems4.html#mm307b"><B>4.4&nbsp;&nbsp;Revisiting Chapter
+ HREF="mmtheorems3.html#mm297b"><B>4.4&nbsp;&nbsp;Revisiting Chapter
  2.</B></A><BR>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <A
- HREF="mmtheorems4.html#mm307s">4.4.1&nbsp;&nbsp;Biconditional Equivalence
+ HREF="mmtheorems3.html#mm297s">4.4.1&nbsp;&nbsp;Biconditional Equivalence
  Properties.</A> &nbsp; <A HREF="biref-P3.33a.html">biref-P3.33a</A>&nbsp;<SPAN
- CLASS=r STYLE="color:#758500">307</SPAN><BR>
+ CLASS=r STYLE="color:#788400">297</SPAN><BR>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <A NAME="import-P3.34a"></A>&#8203;<A
- HREF="mmtheorems4.html#mm315s">*4.4.2&nbsp;&nbsp;Importation and Exportation
+ HREF="mmtheorems4.html#mm305s">*4.4.2&nbsp;&nbsp;Importation and Exportation
  Laws.</A> &nbsp; <A HREF="import-P3.34a.html">import-P3.34a</A>&nbsp;<SPAN
- CLASS=r STYLE="color:#718600">315</SPAN><BR>
+ CLASS=r STYLE="color:#758500">305</SPAN><BR>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <A
+ HREF="mmtheorems4.html#mm309s">4.4.2.1&nbsp;&nbsp;Examples.</A> &nbsp; <A
+ HREF="example-E3.1a.html">example-E3.1a</A>&nbsp;<SPAN CLASS=r
+ STYLE="color:#738600">309</SPAN><BR>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <A
- HREF="mmtheorems4.html#mm319s">4.4.3&nbsp;&nbsp;Commutative and Associative
+ HREF="mmtheorems4.html#mm313s">4.4.3&nbsp;&nbsp;Commutative and Associative
  Properties.</A> &nbsp; <A
  HREF="andcomm-P3.35-L1.html">andcomm-P3.35-L1</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#708700">319</SPAN><BR>
+ STYLE="color:#718600">313</SPAN><BR>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <A NAME="subneg-P3.39"></A>&#8203;<A
- HREF="mmtheorems4.html#mm329s">*4.4.4&nbsp;&nbsp;Substitution Laws.</A> &nbsp;
+ HREF="mmtheorems4.html#mm323s">*4.4.4&nbsp;&nbsp;Substitution Laws.</A> &nbsp;
  <A HREF="subneg-P3.39.html">subneg-P3.39</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#6B8800">329</SPAN><BR>
+ STYLE="color:#6D8800">323</SPAN><BR>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <A
- HREF="mmtheorems4.html#mm358s">4.4.5&nbsp;&nbsp;Theorems for "True" and
+ HREF="mmtheorems4.html#mm352s">4.4.5&nbsp;&nbsp;Theorems for "True" and
  "False" Constants.</A> &nbsp; <A
  HREF="true-P3.44.html">true-P3.44</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#598C00">358</SPAN><BR>
+ STYLE="color:#5C8B00">352</SPAN><BR>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <A
- HREF="mmtheorems4.html#mm360s">4.4.6&nbsp;&nbsp;Re-deriving Chapter 2
+ NAME="andasim-P3.46-L1"></A>&#8203;<A
+ HREF="mmtheorems4.html#mm354s">*4.4.6&nbsp;&nbsp;Re-deriving Chapter 2
  Definitions.</A> &nbsp; <A
  HREF="andasim-P3.46-L1.html">andasim-P3.46-L1</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#588C00">360</SPAN><BR>
-<A NAME="dtl:5"></A>&#8203;<A HREF="mmtheorems4.html#mm372h"><B>PART
+ STYLE="color:#5B8B00">354</SPAN><BR>
+<A NAME="dtl:5"></A>&#8203;<A HREF="mmtheorems4.html#mm366h"><B>PART
  5&nbsp;&nbsp;Chapter 4: Propositional Calculus (continued)</B></A><BR>
 &nbsp; &nbsp; &nbsp; <A NAME="dtl:5.1"></A>&#8203;<A
- HREF="mmtheorems4.html#mm372b"><B>5.1&nbsp;&nbsp;More Useful
+ HREF="mmtheorems4.html#mm366b"><B>5.1&nbsp;&nbsp;More Useful
  Rules.</B></A><BR>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <A
- HREF="mmtheorems4.html#mm372s">5.1.1&nbsp;&nbsp;Law of Non-contradiction.</A>
+ HREF="mmtheorems4.html#mm366s">5.1.1&nbsp;&nbsp;Law of Non-contradiction.</A>
  &nbsp; <A HREF="ncontra-P4.1.html">ncontra-P4.1</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#518D00">372</SPAN><BR>
+ STYLE="color:#538D00">366</SPAN><BR>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <A
- HREF="mmtheorems4.html#mm373s">5.1.2&nbsp;&nbsp;Dual Forms of Introduction and
+ HREF="mmtheorems4.html#mm367s">5.1.2&nbsp;&nbsp;Dual Forms of Introduction and
  Elimination Rules.</A> &nbsp; <A
  HREF="norel-P4.2a.html">norel-P4.2a</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#508D00">373</SPAN><BR>
+ STYLE="color:#538D00">367</SPAN><BR>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <A
- HREF="mmtheorems4.html#mm383s">5.1.3&nbsp;&nbsp;Other Forms of the Principle
+ HREF="mmtheorems4.html#mm377s">5.1.3&nbsp;&nbsp;Other Forms of the Principle
  Of Explosion.</A> &nbsp; <A HREF="impoe-P4.4a.html">impoe-P4.4a</A>&nbsp;<SPAN
- CLASS=r STYLE="color:#4A8E00">383</SPAN><BR>
+ CLASS=r STYLE="color:#4C8E00">377</SPAN><BR>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <A
- HREF="mmtheorems4.html#mm391s">5.1.4&nbsp;&nbsp;Process of Elimination.</A>
+ HREF="mmtheorems4.html#mm385s">5.1.4&nbsp;&nbsp;Process of Elimination.</A>
  &nbsp; <A HREF="profeliml-P4.5a.html">profeliml-P4.5a</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#448E00">391</SPAN><BR>
+ STYLE="color:#478E00">385</SPAN><BR>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <A
- HREF="mmtheorems5.html#mm403s">5.1.5&nbsp;&nbsp;Joining Implications.</A>
+ HREF="mmtheorems4.html#mm397s">5.1.5&nbsp;&nbsp;Joining Implications.</A>
  &nbsp; <A HREF="joinimandinc-P4.8a.html">joinimandinc-P4.8a</A>&nbsp;<SPAN
- CLASS=r STYLE="color:#3D8F00">403</SPAN><BR>
+ CLASS=r STYLE="color:#3F8F00">397</SPAN><BR>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <A
- HREF="mmtheorems5.html#mm412s">5.1.6&nbsp;&nbsp;Separating Implications.</A>
+ HREF="mmtheorems5.html#mm406s">5.1.6&nbsp;&nbsp;Separating Implications.</A>
  &nbsp; <A HREF="sepimandr-P4.9a.html">sepimandr-P4.9a</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#369000">412</SPAN><BR>
+ STYLE="color:#399000">406</SPAN><BR>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <A
- HREF="mmtheorems5.html#mm424s">5.1.7&nbsp;&nbsp;Some Double Negation Laws.</A>
+ HREF="mmtheorems5.html#mm418s">5.1.7&nbsp;&nbsp;Some Double Negation Laws.</A>
  &nbsp; <A HREF="dnegeq-P4.10.html">dnegeq-P4.10</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#2D9100">424</SPAN><BR>
+ STYLE="color:#309100">418</SPAN><BR>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <A
- HREF="mmtheorems5.html#mm432s">5.1.8&nbsp;&nbsp;Extended Syllogism and
+ HREF="mmtheorems5.html#mm426s">5.1.8&nbsp;&nbsp;Extended Syllogism and
  Transitivity Laws.</A> &nbsp; <A
  HREF="tsyl-P4.15.html">tsyl-P4.15</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#279200">432</SPAN><BR>
+ STYLE="color:#2A9100">426</SPAN><BR>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <A
  NAME="falsenegi-P4.18"></A>&#8203;<A
- HREF="mmtheorems5.html#mm438s">*5.1.9&nbsp;&nbsp;Negation Introduction Using
+ HREF="mmtheorems5.html#mm432s">*5.1.9&nbsp;&nbsp;Negation Introduction Using
  "False" Constant.</A> &nbsp; <A
  HREF="falsenegi-P4.18.html">falsenegi-P4.18</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#239200">438</SPAN><BR>
+ STYLE="color:#269200">432</SPAN><BR>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <A
- HREF="mmtheorems5.html#mm438s">5.1.9.1&nbsp;&nbsp;Rule.</A> &nbsp; <A
+ HREF="mmtheorems5.html#mm432s">5.1.9.1&nbsp;&nbsp;Rule.</A> &nbsp; <A
  HREF="falsenegi-P4.18.html">falsenegi-P4.18</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#239200">438</SPAN><BR>
+ STYLE="color:#269200">432</SPAN><BR>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <A
  NAME="rcp-FALSENEGI1"></A> &#8203;<A
- HREF="mmtheorems5.html#mm439s">*5.1.9.2&nbsp;&nbsp;Scheme.</A> &nbsp; <A
+ HREF="mmtheorems5.html#mm433s">*5.1.9.2&nbsp;&nbsp;Scheme.</A> &nbsp; <A
  HREF="rcp-FALSENEGI1.html">rcp-FALSENEGI1</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#229200">439</SPAN><BR>
+ STYLE="color:#259200">433</SPAN><BR>
 &nbsp; &nbsp; &nbsp; <A NAME="dtl:5.2"></A>&#8203;<A
- HREF="mmtheorems5.html#mm444b"><B>5.2&nbsp;&nbsp;Logical
+ HREF="mmtheorems5.html#mm438b"><B>5.2&nbsp;&nbsp;Logical
  Equivalencies.</B></A><BR>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <A
- HREF="mmtheorems5.html#mm444s">5.2.1&nbsp;&nbsp;Identity Laws for Conjunction
+ HREF="mmtheorems5.html#mm438s">5.2.1&nbsp;&nbsp;Identity Laws for Conjunction
  and Disjunction.</A> &nbsp; <A
  HREF="idandtruel-P4.19a.html">idandtruel-P4.19a</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#1E9200">444</SPAN><BR>
+ STYLE="color:#219200">438</SPAN><BR>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <A
- HREF="mmtheorems5.html#mm448s">5.2.2&nbsp;&nbsp;More Equivalence Laws
+ HREF="mmtheorems5.html#mm442s">5.2.2&nbsp;&nbsp;More Equivalence Laws
  Involving "True" and "False".</A> &nbsp; <A
  HREF="thmeqtrue-P4.21a.html">thmeqtrue-P4.21a</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#1C9301">448</SPAN><BR>
+ STYLE="color:#1E9200">442</SPAN><BR>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <A
- HREF="mmtheorems5.html#mm452s">5.2.3&nbsp;&nbsp;Identity Laws Involving
+ HREF="mmtheorems5.html#mm446s">5.2.3&nbsp;&nbsp;Identity Laws Involving
  Theorems.</A> &nbsp; <A
  HREF="idandthml-P4.23a.html">idandthml-P4.23a</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#199303">452</SPAN><BR>
+ STYLE="color:#1B9301">446</SPAN><BR>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <A
- HREF="mmtheorems5.html#mm456s">5.2.4&nbsp;&nbsp;Idempotency Laws.</A> &nbsp;
+ HREF="mmtheorems5.html#mm450s">5.2.4&nbsp;&nbsp;Idempotency Laws.</A> &nbsp;
  <A HREF="idempotand-P4.25a.html">idempotand-P4.25a</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#169305">456</SPAN><BR>
+ STYLE="color:#189303">450</SPAN><BR>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <A
- HREF="mmtheorems5.html#mm458s">5.2.5&nbsp;&nbsp;De Morgan's Laws.</A> &nbsp;
+ HREF="mmtheorems5.html#mm452s">5.2.5&nbsp;&nbsp;De Morgan's Laws.</A> &nbsp;
  <A HREF="dmorgafwd-L4.1.html">dmorgafwd-L4.1</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#149306">458</SPAN><BR>
+ STYLE="color:#179304">452</SPAN><BR>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <A
- HREF="mmtheorems5.html#mm458s">5.2.5.1&nbsp;&nbsp;Parts of De Morgan's
+ HREF="mmtheorems5.html#mm452s">5.2.5.1&nbsp;&nbsp;Parts of De Morgan's
  Laws.</A> &nbsp; <A HREF="dmorgafwd-L4.1.html">dmorgafwd-L4.1</A>&nbsp;<SPAN
- CLASS=r STYLE="color:#149306">458</SPAN><BR>
+ CLASS=r STYLE="color:#179304">452</SPAN><BR>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <A
- HREF="mmtheorems5.html#mm462s">5.2.5.2&nbsp;&nbsp;De Morgan's Laws.</A> &nbsp;
+ HREF="mmtheorems5.html#mm456s">5.2.5.2&nbsp;&nbsp;De Morgan's Laws.</A> &nbsp;
  <A HREF="dmorga-P4.26a.html">dmorga-P4.26a</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#119309">462</SPAN><BR>
+ STYLE="color:#149307">456</SPAN><BR>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <A
- HREF="mmtheorems5.html#mm465s">5.2.6&nbsp;&nbsp;Distributive Laws.</A> &nbsp;
+ HREF="mmtheorems5.html#mm459s">5.2.6&nbsp;&nbsp;Distributive Laws.</A> &nbsp;
  <A HREF="andoveror-P4.27-L1.html">andoveror-P4.27-L1</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#0F930A">465</SPAN><BR>
+ STYLE="color:#129308">459</SPAN><BR>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <A
- HREF="mmtheorems5.html#mm465s">5.2.6.1&nbsp;&nbsp;Conjunction and
+ HREF="mmtheorems5.html#mm459s">5.2.6.1&nbsp;&nbsp;Conjunction and
  Disjunction.</A> &nbsp; <A
  HREF="andoveror-P4.27-L1.html">andoveror-P4.27-L1</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#0F930A">465</SPAN><BR>
+ STYLE="color:#129308">459</SPAN><BR>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <A
- HREF="mmtheorems5.html#mm478s">5.2.6.2&nbsp;&nbsp;Left Implication.</A> &nbsp;
+ HREF="mmtheorems5.html#mm472s">5.2.6.2&nbsp;&nbsp;Left Implication.</A> &nbsp;
  <A HREF="imoverand-P4.29a.html">imoverand-P4.29a</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#059311">478</SPAN><BR>
+ STYLE="color:#08930F">472</SPAN><BR>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <A
- HREF="mmtheorems5.html#mm486s">5.2.7&nbsp;&nbsp;Antidistributive Laws.</A>
+ HREF="mmtheorems5.html#mm480s">5.2.7&nbsp;&nbsp;Antidistributive Laws.</A>
  &nbsp; <A HREF="rimoverand-P4.31-L1.html">rimoverand-P4.31-L1</A>&nbsp;<SPAN
- CLASS=r STYLE="color:#009316">486</SPAN><BR>
+ CLASS=r STYLE="color:#029314">480</SPAN><BR>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <A
- HREF="mmtheorems5.html#mm490s">5.2.8&nbsp;&nbsp;More Useful Logical
+ HREF="mmtheorems5.html#mm484s">5.2.8&nbsp;&nbsp;More Useful Logical
  Equivalencies.</A> &nbsp; <A HREF="lemma-L4.5.html">lemma-L4.5</A>&nbsp;<SPAN
- CLASS=r STYLE="color:#00931A">490</SPAN><BR>
+ CLASS=r STYLE="color:#009316">484</SPAN><BR>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <A
- HREF="mmtheorems5.html#mm499s">5.2.9&nbsp;&nbsp;Truth Tables.</A> &nbsp; <A
+ HREF="mmtheorems5.html#mm493s">5.2.9&nbsp;&nbsp;Truth Tables.</A> &nbsp; <A
  HREF="truthtblnegt-P4.35a.html">truthtblnegt-P4.35a</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#009322">499</SPAN><BR>
+ STYLE="color:#00931F">493</SPAN><BR>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <A
- HREF="mmtheorems5.html#mm499s">5.2.9.1&nbsp;&nbsp;Negation.</A> &nbsp; <A
+ HREF="mmtheorems5.html#mm493s">5.2.9.1&nbsp;&nbsp;Negation.</A> &nbsp; <A
  HREF="truthtblnegt-P4.35a.html">truthtblnegt-P4.35a</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#009322">499</SPAN><BR>
+ STYLE="color:#00931F">493</SPAN><BR>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <A
- HREF="mmtheorems6.html#mm501s">5.2.9.2&nbsp;&nbsp;Implication.</A> &nbsp; <A
+ HREF="mmtheorems5.html#mm495s">5.2.9.2&nbsp;&nbsp;Implication.</A> &nbsp; <A
  HREF="truthtbltimt-P4.36a.html">truthtbltimt-P4.36a</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#009224">501</SPAN><BR>
+ STYLE="color:#009321">495</SPAN><BR>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <A
- HREF="mmtheorems6.html#mm505s">5.2.9.3&nbsp;&nbsp;Conjunction.</A> &nbsp; <A
+ HREF="mmtheorems5.html#mm499s">5.2.9.3&nbsp;&nbsp;Conjunction.</A> &nbsp; <A
  HREF="truthtbltandt-P4.37a.html">truthtbltandt-P4.37a</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#009228">505</SPAN><BR>
+ STYLE="color:#009225">499</SPAN><BR>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <A
- HREF="mmtheorems6.html#mm509s">5.2.9.4&nbsp;&nbsp;Disjunction.</A> &nbsp; <A
+ HREF="mmtheorems6.html#mm503s">5.2.9.4&nbsp;&nbsp;Disjunction.</A> &nbsp; <A
  HREF="truthtbltort-P4.38a.html">truthtbltort-P4.38a</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#00922C">509</SPAN><BR>
+ STYLE="color:#009229">503</SPAN><BR>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <A
- HREF="mmtheorems6.html#mm513s">5.2.9.5&nbsp;&nbsp;Equivalence.</A> &nbsp; <A
+ HREF="mmtheorems6.html#mm507s">5.2.9.5&nbsp;&nbsp;Equivalence.</A> &nbsp; <A
  HREF="truthtbltbit-P4.39a.html">truthtbltbit-P4.39a</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#009130">513</SPAN><BR>
+ STYLE="color:#00922D">507</SPAN><BR>
 &nbsp; &nbsp; &nbsp; <A NAME="dtl:5.3"></A>&#8203;<A
- HREF="mmtheorems6.html#mm517b"><B>5.3&nbsp;&nbsp;Peirce's Law.</B></A><BR>
+ HREF="mmtheorems6.html#mm511b"><B>5.3&nbsp;&nbsp;Peirce's Law.</B></A><BR>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <A
- HREF="mmtheorems6.html#mm517s">5.3.1&nbsp;&nbsp;Classical Proof.</A> &nbsp; <A
+ HREF="mmtheorems6.html#mm511s">5.3.1&nbsp;&nbsp;Classical Proof.</A> &nbsp; <A
  HREF="peirce-P4.40.html">peirce-P4.40</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#009134">517</SPAN><BR>
+ STYLE="color:#009131">511</SPAN><BR>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <A
- HREF="mmtheorems6.html#mm518s">5.3.2&nbsp;&nbsp;Equivalence of Peirce's Law
+ HREF="mmtheorems6.html#mm512s">5.3.2&nbsp;&nbsp;Equivalence of Peirce's Law
  and Law of Excluded Middle.</A> &nbsp; <A
  HREF="exclmid2peirce-P4.41a.html">exclmid2peirce-P4.41a</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#009135">518</SPAN><BR>
+ STYLE="color:#009132">512</SPAN><BR>
 &nbsp; &nbsp; &nbsp; <A NAME="dtl:5.4"></A>&#8203;<A
- HREF="mmtheorems6.html#mm520b"><B>5.4&nbsp;&nbsp;Appendix: Miscellaneous
+ HREF="mmtheorems6.html#mm514b"><B>5.4&nbsp;&nbsp;Appendix: Miscellaneous
  Utility Rules.</B></A><BR>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <A NAME="raa-P4"></A>&#8203;<A
- HREF="mmtheorems6.html#mm520s">*5.4.1&nbsp;&nbsp;Reductio ad Absurdum.</A>
+ HREF="mmtheorems6.html#mm514s">*5.4.1&nbsp;&nbsp;Reductio ad Absurdum.</A>
  &nbsp; <A HREF="raa-P4.html">raa-P4</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#009137">520</SPAN><BR>
+ STYLE="color:#009133">514</SPAN><BR>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <A
- HREF="mmtheorems6.html#mm520s">5.4.1.1&nbsp;&nbsp;Rule.</A> &nbsp; <A
+ HREF="mmtheorems6.html#mm514s">5.4.1.1&nbsp;&nbsp;Rule.</A> &nbsp; <A
  HREF="raa-P4.html">raa-P4</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#009137">520</SPAN><BR>
+ STYLE="color:#009133">514</SPAN><BR>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <A
  NAME="rcp-RAA1"></A> &#8203;<A
- HREF="mmtheorems6.html#mm521s">*5.4.1.2&nbsp;&nbsp;Scheme.</A> &nbsp; <A
+ HREF="mmtheorems6.html#mm515s">*5.4.1.2&nbsp;&nbsp;Scheme.</A> &nbsp; <A
  HREF="rcp-RAA1.html">rcp-RAA1</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#009138">521</SPAN><BR>
+ STYLE="color:#009134">515</SPAN><BR>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <A
- HREF="mmtheorems6.html#mm526s">5.4.2&nbsp;&nbsp;Reductio ad Absurdum Using
+ HREF="mmtheorems6.html#mm520s">5.4.2&nbsp;&nbsp;Reductio ad Absurdum Using
  "False" Constant.</A> &nbsp; <A
  HREF="falseraa-P4.html">falseraa-P4</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#00913C">526</SPAN><BR>
+ STYLE="color:#009139">520</SPAN><BR>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <A
- HREF="mmtheorems6.html#mm526s">5.4.2.1&nbsp;&nbsp;Rule.</A> &nbsp; <A
+ HREF="mmtheorems6.html#mm520s">5.4.2.1&nbsp;&nbsp;Rule.</A> &nbsp; <A
  HREF="falseraa-P4.html">falseraa-P4</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#00913C">526</SPAN><BR>
+ STYLE="color:#009139">520</SPAN><BR>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <A
  NAME="rcp-FALSERAA1"></A> &#8203;<A
- HREF="mmtheorems6.html#mm527s">*5.4.2.2&nbsp;&nbsp;Scheme.</A> &nbsp; <A
+ HREF="mmtheorems6.html#mm521s">*5.4.2.2&nbsp;&nbsp;Scheme.</A> &nbsp; <A
  HREF="rcp-FALSERAA1.html">rcp-FALSERAA1</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#00913D">527</SPAN><BR>
+ STYLE="color:#00913A">521</SPAN><BR>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <A
- HREF="mmtheorems6.html#mm532s">5.4.3&nbsp;&nbsp;Convert Implication to
+ HREF="mmtheorems6.html#mm526s">5.4.3&nbsp;&nbsp;Convert Implication to
  Assumption.</A> &nbsp; <A HREF="impime-P4.html">impime-P4</A>&nbsp;<SPAN
- CLASS=r STYLE="color:#009141">532</SPAN><BR>
+ CLASS=r STYLE="color:#00913F">526</SPAN><BR>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <A
- HREF="mmtheorems6.html#mm532s">5.4.3.1&nbsp;&nbsp;Rule.</A> &nbsp; <A
+ HREF="mmtheorems6.html#mm526s">5.4.3.1&nbsp;&nbsp;Rule.</A> &nbsp; <A
  HREF="impime-P4.html">impime-P4</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#009141">532</SPAN><BR>
+ STYLE="color:#00913F">526</SPAN><BR>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <A
  NAME="rcp-IMPIME1"></A> &#8203;<A
- HREF="mmtheorems6.html#mm533s">*5.4.3.2&nbsp;&nbsp;Scheme.</A> &nbsp; <A
+ HREF="mmtheorems6.html#mm527s">*5.4.3.2&nbsp;&nbsp;Scheme.</A> &nbsp; <A
  HREF="rcp-IMPIME1.html">rcp-IMPIME1</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#009142">533</SPAN><BR>
+ STYLE="color:#009140">527</SPAN><BR>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <A
- HREF="mmtheorems6.html#mm537s">5.4.4&nbsp;&nbsp;Combine Biconditional
+ HREF="mmtheorems6.html#mm531s">5.4.4&nbsp;&nbsp;Combine Biconditional
  Elimination with Modus Ponens.</A> &nbsp; <A
  HREF="bimpf-P4.html">bimpf-P4</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#009145">537</SPAN><BR>
+ STYLE="color:#009143">531</SPAN><BR>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <A
- HREF="mmtheorems6.html#mm541s">5.4.5&nbsp;&nbsp;Transposition Laws as
+ HREF="mmtheorems6.html#mm535s">5.4.5&nbsp;&nbsp;Transposition Laws as
  Equivalence Laws.</A> &nbsp; <A
  HREF="trnspeq-P4a.html">trnspeq-P4a</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#009149">541</SPAN><BR>
+ STYLE="color:#009146">535</SPAN><BR>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <A
- HREF="mmtheorems6.html#mm544s">5.4.6&nbsp;&nbsp;Different Form for
+ HREF="mmtheorems6.html#mm538s">5.4.6&nbsp;&nbsp;Different Form for
  Substitution Laws.</A> &nbsp; <A
  HREF="subneg2-P4.html">subneg2-P4</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#00914B">544</SPAN><BR>
+ STYLE="color:#009149">538</SPAN><BR>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <A
- HREF="mmtheorems6.html#mm570s">5.4.7&nbsp;&nbsp;More Convenient Forms for
+ HREF="mmtheorems6.html#mm564s">5.4.7&nbsp;&nbsp;More Convenient Forms for
  Commutivity Laws.</A> &nbsp; <A
  HREF="andcomm2-P4.html">andcomm2-P4</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#009060">570</SPAN><BR>
+ STYLE="color:#00905E">564</SPAN><BR>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <A
- HREF="mmtheorems6.html#mm574s">5.4.8&nbsp;&nbsp;More Convenient Forms for
+ HREF="mmtheorems6.html#mm568s">5.4.8&nbsp;&nbsp;More Convenient Forms for
  Associativity Laws.</A> &nbsp; <A
  HREF="andassoc2a-P4.html">andassoc2a-P4</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#009064">574</SPAN><BR>
+ STYLE="color:#009061">568</SPAN><BR>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <A
- HREF="mmtheorems6.html#mm582s">5.4.9&nbsp;&nbsp;More Convenient Forms for
+ HREF="mmtheorems6.html#mm576s">5.4.9&nbsp;&nbsp;More Convenient Forms for
  Joining Implications.</A> &nbsp; <A
  HREF="joinimandinc2-P4.html">joinimandinc2-P4</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#00906A">582</SPAN><BR>
-<A NAME="dtl:6"></A>&#8203;<A HREF="mmtheorems6.html#mm594h"><B>PART
+ STYLE="color:#009068">576</SPAN><BR>
+<A NAME="dtl:6"></A>&#8203;<A HREF="mmtheorems6.html#mm588h"><B>PART
  6&nbsp;&nbsp;Chapter 5: Predicate Calculus (FOL Axioms)</B></A><BR>
 &nbsp; &nbsp; &nbsp; <A NAME="dtl:6.1"></A>&#8203;<A
- HREF="mmtheorems6.html#mm594b"><B>6.1&nbsp;&nbsp;Consequences of ax-GEN and
+ HREF="mmtheorems6.html#mm588b"><B>6.1&nbsp;&nbsp;Consequences of ax-GEN and
  ax-L4.</B></A><BR>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <A
- HREF="mmtheorems6.html#mm594s">6.1.1&nbsp;&nbsp;The Universal Quantifier.</A>
+ HREF="mmtheorems6.html#mm588s">6.1.1&nbsp;&nbsp;The Universal Quantifier.</A>
  &nbsp; <A HREF="alloverim-P5.html">alloverim-P5</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#008F74">594</SPAN><BR>
+ STYLE="color:#008F72">588</SPAN><BR>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <A
- HREF="mmtheorems6.html#mm598s">6.1.1.1&nbsp;&nbsp;Generalization
+ HREF="mmtheorems6.html#mm592s">6.1.1.1&nbsp;&nbsp;Generalization
  Augmentation.</A> &nbsp; <A
  HREF="alloverim-P5.RC.GEN.html">alloverim-P5.RC.GEN</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#008F77">598</SPAN><BR>
+ STYLE="color:#008F75">592</SPAN><BR>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <A
- HREF="mmtheorems6.html#mm600s">6.1.1.2&nbsp;&nbsp;A Substitution Law for
+ HREF="mmtheorems6.html#mm594s">6.1.1.2&nbsp;&nbsp;A Substitution Law for
  Universal Quantification.</A> &nbsp; <A
  HREF="suballinf-P5.html">suballinf-P5</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#008F79">600</SPAN><BR>
+ STYLE="color:#008F77">594</SPAN><BR>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <A
- HREF="mmtheorems7.html#mm601s">6.1.2&nbsp;&nbsp;The Existential
+ HREF="mmtheorems6.html#mm595s">6.1.2&nbsp;&nbsp;The Existential
  Quantifier.</A> &nbsp; <A HREF="wff-exists.html">wff-exists</A>&nbsp;<SPAN
- CLASS=r STYLE="color:#008F7A">601</SPAN><BR>
+ CLASS=r STYLE="color:#008F77">595</SPAN><BR>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <A
- HREF="mmtheorems7.html#mm601s">6.1.2.1&nbsp;&nbsp;Syntax Definition.</A>
+ HREF="mmtheorems6.html#mm595s">6.1.2.1&nbsp;&nbsp;Syntax Definition.</A>
  &nbsp; <A HREF="wff-exists.html">wff-exists</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#008F7A">601</SPAN><BR>
+ STYLE="color:#008F77">595</SPAN><BR>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <A
- HREF="mmtheorems7.html#mm602s">6.1.2.2&nbsp;&nbsp;Formal Definition.</A>
+ HREF="mmtheorems6.html#mm596s">6.1.2.2&nbsp;&nbsp;Formal Definition.</A>
  &nbsp; <A HREF="df-exists-D5.1.html">df-exists-D5.1</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#008F7B">602</SPAN><BR>
+ STYLE="color:#008F78">596</SPAN><BR>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <A
- HREF="mmtheorems7.html#mm603s">6.1.3&nbsp;&nbsp;Dual Properties of Universal /
+ HREF="mmtheorems6.html#mm597s">6.1.3&nbsp;&nbsp;Dual Properties of Universal /
  Existential Quantification.</A> &nbsp; <A
  HREF="allnegex-P5.html">allnegex-P5</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#008F7B">603</SPAN><BR>
+ STYLE="color:#008F79">597</SPAN><BR>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <A
- HREF="mmtheorems7.html#mm607s">6.1.4&nbsp;&nbsp;More Quantifier Laws.</A>
+ HREF="mmtheorems7.html#mm601s">6.1.4&nbsp;&nbsp;More Quantifier Laws.</A>
  &nbsp; <A HREF="alloverimex-P5.html">alloverimex-P5</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#008E7F">607</SPAN><BR>
+ STYLE="color:#008F7C">601</SPAN><BR>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <A
- HREF="mmtheorems7.html#mm614s">6.1.4.1&nbsp;&nbsp;A Substitution Law for
+ HREF="mmtheorems7.html#mm608s">6.1.4.1&nbsp;&nbsp;A Substitution Law for
  Existential Quantification.</A> &nbsp; <A
  HREF="subexinf-P5.html">subexinf-P5</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#008E85">614</SPAN><BR>
+ STYLE="color:#008E82">608</SPAN><BR>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <A
- HREF="mmtheorems7.html#mm615s">6.1.5&nbsp;&nbsp;Quantified Implication
+ HREF="mmtheorems7.html#mm609s">6.1.5&nbsp;&nbsp;Quantified Implication
  Equivalence Laws.</A> &nbsp; <A
  HREF="qimeqallhalf-P5.html">qimeqallhalf-P5</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#008E86">615</SPAN><BR>
+ STYLE="color:#008E83">609</SPAN><BR>
 &nbsp; &nbsp; &nbsp; <A NAME="dtl:6.2"></A>&#8203;<A
- HREF="mmtheorems7.html#mm619b"><B>6.2&nbsp;&nbsp;Consequences of
+ HREF="mmtheorems7.html#mm613b"><B>6.2&nbsp;&nbsp;Consequences of
  ax-L5.</B></A><BR>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <A
- HREF="mmtheorems7.html#mm627s">6.2.1&nbsp;&nbsp;Generalization Augmentation
+ HREF="mmtheorems7.html#mm621s">6.2.1&nbsp;&nbsp;Generalization Augmentation
  with Context.</A> &nbsp; <A
  HREF="alloverim-P5.GENV.html">alloverim-P5.GENV</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#008D91">627</SPAN><BR>
+ STYLE="color:#008D8E">621</SPAN><BR>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <A
- HREF="mmtheorems7.html#mm629s">6.2.2&nbsp;&nbsp;Substitution Laws for
+ HREF="mmtheorems7.html#mm623s">6.2.2&nbsp;&nbsp;Substitution Laws for
  Quantifiers.</A> &nbsp; <A HREF="suballv-P5.html">suballv-P5</A>&nbsp;<SPAN
- CLASS=r STYLE="color:#008D93">629</SPAN><BR>
+ CLASS=r STYLE="color:#008D90">623</SPAN><BR>
 &nbsp; &nbsp; &nbsp; <A NAME="dtl:6.3"></A>&#8203;<A
- HREF="mmtheorems7.html#mm631b"><B>6.3&nbsp;&nbsp;Consequences of Axioms
+ HREF="mmtheorems7.html#mm625b"><B>6.3&nbsp;&nbsp;Consequences of Axioms
  Involving Equality ( ax-L6 - ax-L9 ).</B></A><BR>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <A NAME="eqref-P5"></A>&#8203;<A
- HREF="mmtheorems7.html#mm632s">*6.3.1&nbsp;&nbsp;Equivalence Properties of
+ HREF="mmtheorems7.html#mm626s">*6.3.1&nbsp;&nbsp;Equivalence Properties of
  Equality Predicate.</A> &nbsp; <A HREF="eqref-P5.html">eqref-P5</A>&nbsp;<SPAN
- CLASS=r STYLE="color:#008D95">632</SPAN><BR>
+ CLASS=r STYLE="color:#008D93">626</SPAN><BR>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <A
- HREF="mmtheorems7.html#mm638s">6.3.2&nbsp;&nbsp;More Substitution Laws.</A>
+ HREF="mmtheorems7.html#mm632s">6.3.2&nbsp;&nbsp;More Substitution Laws.</A>
  &nbsp; <A HREF="subeql-P5.html">subeql-P5</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#008C9B">638</SPAN><BR>
+ STYLE="color:#008C99">632</SPAN><BR>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <A
- HREF="mmtheorems7.html#mm638s">6.3.2.1&nbsp;&nbsp;Substitution Laws for
+ HREF="mmtheorems7.html#mm632s">6.3.2.1&nbsp;&nbsp;Substitution Laws for
  Equality.</A> &nbsp; <A HREF="subeql-P5.html">subeql-P5</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#008C9B">638</SPAN><BR>
+ STYLE="color:#008C99">632</SPAN><BR>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <A
- HREF="mmtheorems7.html#mm644s">6.3.2.2&nbsp;&nbsp;Substitution Laws for
+ HREF="mmtheorems7.html#mm638s">6.3.2.2&nbsp;&nbsp;Substitution Laws for
  Primitive Predicate.</A> &nbsp; <A
  HREF="subelofl-P5.html">subelofl-P5</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#008CA0">644</SPAN><BR>
+ STYLE="color:#008C9E">638</SPAN><BR>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <A
- HREF="mmtheorems7.html#mm650s">6.3.2.3&nbsp;&nbsp;Substitution Laws for
+ HREF="mmtheorems7.html#mm644s">6.3.2.3&nbsp;&nbsp;Substitution Laws for
  Functions.</A> &nbsp; <A HREF="subsucc-P5.html">subsucc-P5</A>&nbsp;<SPAN
- CLASS=r STYLE="color:#008BA7">650</SPAN><BR>
+ CLASS=r STYLE="color:#008BA4">644</SPAN><BR>
 &nbsp; &nbsp; &nbsp; <A NAME="dtl:6.4"></A>&#8203;<A
- HREF="mmtheorems7.html#mm659b"><B>6.4&nbsp;&nbsp;Implicit Variable
+ HREF="mmtheorems7.html#mm653b"><B>6.4&nbsp;&nbsp;Implicit Variable
  Substitution and Law of Specialization.</B></A><BR>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <A
- HREF="mmtheorems7.html#mm659s">6.4.1&nbsp;&nbsp;Preliminary Law of
+ HREF="mmtheorems7.html#mm653s">6.4.1&nbsp;&nbsp;Preliminary Law of
  Specialization.</A> &nbsp; <A
  HREF="lemma-L5.02a.html">lemma-L5.02a</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#0089B3">659</SPAN><BR>
+ STYLE="color:#008AB0">653</SPAN><BR>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <A
- HREF="mmtheorems7.html#mm662s">6.4.2&nbsp;&nbsp;Quantifier Removal Laws.</A>
+ HREF="mmtheorems7.html#mm656s">6.4.2&nbsp;&nbsp;Quantifier Removal Laws.</A>
  &nbsp; <A HREF="qremallv-P5.html">qremallv-P5</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#0089B7">662</SPAN><BR>
+ STYLE="color:#0089B4">656</SPAN><BR>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <A
- HREF="mmtheorems7.html#mm664s">6.4.3&nbsp;&nbsp;Change of Bound Variables
+ HREF="mmtheorems7.html#mm658s">6.4.3&nbsp;&nbsp;Change of Bound Variables
  Laws.</A> &nbsp; <A HREF="cbvallv-P5-L1.html">cbvallv-P5-L1</A>&nbsp;<SPAN
- CLASS=r STYLE="color:#0089BA">664</SPAN><BR>
+ CLASS=r STYLE="color:#0089B7">658</SPAN><BR>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <A
- HREF="mmtheorems7.html#mm667s">6.4.4&nbsp;&nbsp;Weakened Law of
+ HREF="mmtheorems7.html#mm661s">6.4.4&nbsp;&nbsp;Weakened Law of
  Specialization.</A> &nbsp; <A HREF="specw-P5.html">specw-P5</A>&nbsp;<SPAN
- CLASS=r STYLE="color:#0088BE">667</SPAN><BR>
+ CLASS=r STYLE="color:#0089BB">661</SPAN><BR>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <A
- HREF="mmtheorems7.html#mm669s">6.4.4.1&nbsp;&nbsp;Hypothesis Elimination
+ HREF="mmtheorems7.html#mm663s">6.4.4.1&nbsp;&nbsp;Hypothesis Elimination
  Examples.</A> &nbsp; <A
  HREF="example-E5.01a.html">example-E5.01a</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#0088C1">669</SPAN><BR>
+ STYLE="color:#0088BD">663</SPAN><BR>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <A
- HREF="mmtheorems7.html#mm672s">6.4.5&nbsp;&nbsp;Commutivity of Similar
+ HREF="mmtheorems7.html#mm666s">6.4.5&nbsp;&nbsp;Commutivity of Similar
  Quantifiers (weakened versions).</A> &nbsp; <A
  HREF="lemma-L5.03a.html">lemma-L5.03a</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#0087C5">672</SPAN><BR>
+ STYLE="color:#0088C1">666</SPAN><BR>
 &nbsp; &nbsp; &nbsp; <A NAME="dtl:6.5"></A>&#8203;<A
  NAME="qcallimrv-P5"></A>&#8203;<A
- HREF="mmtheorems7.html#mm677b"><B>*6.5&nbsp;&nbsp;Quantifier Collection
+ HREF="mmtheorems7.html#mm671b"><B>*6.5&nbsp;&nbsp;Quantifier Collection
  Laws.</B></A><BR>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <A
- HREF="mmtheorems7.html#mm681s">6.5.0.1&nbsp;&nbsp;Prenex Form Example.</A>
+ HREF="mmtheorems7.html#mm675s">6.5.0.1&nbsp;&nbsp;Prenex Form Example.</A>
  &nbsp; <A HREF="example-E5.04a.html">example-E5.04a</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#0086D1">681</SPAN><BR>
-<A NAME="dtl:7"></A>&#8203;<A HREF="mmtheorems7.html#mm682h"><B>PART
+ STYLE="color:#0086CD">675</SPAN><BR>
+<A NAME="dtl:7"></A>&#8203;<A HREF="mmtheorems7.html#mm676h"><B>PART
  7&nbsp;&nbsp;Chapter 6: Predicate Calculus (Definitions and ax-L10 -
  ax-L12).</B></A><BR>
 &nbsp; &nbsp; &nbsp; <A NAME="dtl:7.1"></A>&#8203;<A
- HREF="mmtheorems7.html#mm682b"><B>7.1&nbsp;&nbsp;Effective
+ HREF="mmtheorems7.html#mm676b"><B>7.1&nbsp;&nbsp;Effective
  Non-Freeness.</B></A><BR>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <A NAME="genallw-P6"></A>&#8203;<A
- HREF="mmtheorems7.html#mm682s">*7.1.1&nbsp;&nbsp;The "General For"
+ HREF="mmtheorems7.html#mm676s">*7.1.1&nbsp;&nbsp;The "General For"
  Concept.</A> &nbsp; <A HREF="genallw-P6.html">genallw-P6</A>&nbsp;<SPAN
- CLASS=r STYLE="color:#0085D2">682</SPAN><BR>
+ CLASS=r STYLE="color:#0086CF">676</SPAN><BR>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <A
- HREF="mmtheorems7.html#mm682s">7.1.1.1&nbsp;&nbsp;Positive.</A> &nbsp; <A
+ HREF="mmtheorems7.html#mm676s">7.1.1.1&nbsp;&nbsp;Positive.</A> &nbsp; <A
  HREF="genallw-P6.html">genallw-P6</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#0085D2">682</SPAN><BR>
+ STYLE="color:#0086CF">676</SPAN><BR>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <A
- HREF="mmtheorems7.html#mm684s">7.1.1.2&nbsp;&nbsp;Negated.</A> &nbsp; <A
+ HREF="mmtheorems7.html#mm678s">7.1.1.2&nbsp;&nbsp;Negated.</A> &nbsp; <A
  HREF="gennallw-P6.html">gennallw-P6</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#0085D5">684</SPAN><BR>
+ STYLE="color:#0086D1">678</SPAN><BR>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <A
- HREF="mmtheorems7.html#mm686s">7.1.1.3&nbsp;&nbsp;Dual.</A> &nbsp; <A
+ HREF="mmtheorems7.html#mm680s">7.1.1.3&nbsp;&nbsp;Dual.</A> &nbsp; <A
  HREF="exgenallw-P6.html">exgenallw-P6</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#0085D7">686</SPAN><BR>
+ STYLE="color:#0085D4">680</SPAN><BR>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <A
- HREF="mmtheorems7.html#mm687s">7.1.2&nbsp;&nbsp;Define Effective
+ HREF="mmtheorems7.html#mm681s">7.1.2&nbsp;&nbsp;Define Effective
  Non-Freeness.</A> &nbsp; <A HREF="wff-nfree.html">wff-nfree</A>&nbsp;<SPAN
- CLASS=r STYLE="color:#0085D9">687</SPAN><BR>
+ CLASS=r STYLE="color:#0085D5">681</SPAN><BR>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <A
- HREF="mmtheorems7.html#mm687s">7.1.2.1&nbsp;&nbsp;Syntax Definition.</A>
+ HREF="mmtheorems7.html#mm681s">7.1.2.1&nbsp;&nbsp;Syntax Definition.</A>
  &nbsp; <A HREF="wff-nfree.html">wff-nfree</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#0085D9">687</SPAN><BR>
+ STYLE="color:#0085D5">681</SPAN><BR>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <A
- HREF="mmtheorems7.html#mm688s">7.1.2.2&nbsp;&nbsp;Formal Definition.</A>
+ HREF="mmtheorems7.html#mm682s">7.1.2.2&nbsp;&nbsp;Formal Definition.</A>
  &nbsp; <A HREF="df-nfree-D6.1.html">df-nfree-D6.1</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#0084DA">688</SPAN><BR>
+ STYLE="color:#0085D7">682</SPAN><BR>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <A NAME="dfnfreealt-P6"></A>&#8203;<A
- HREF="mmtheorems7.html#mm689s">*7.1.3&nbsp;&nbsp;Equivalencies.</A> &nbsp; <A
+ HREF="mmtheorems7.html#mm683s">*7.1.3&nbsp;&nbsp;Equivalencies.</A> &nbsp; <A
  HREF="dfnfreealt-P6.html">dfnfreealt-P6</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#0084DB">689</SPAN><BR>
+ STYLE="color:#0085D8">683</SPAN><BR>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <A NAME="nfrv-P6"></A>&#8203;<A
- HREF="mmtheorems7.html#mm692s">*7.1.4&nbsp;&nbsp;Relationship to Textbook
+ HREF="mmtheorems7.html#mm686s">*7.1.4&nbsp;&nbsp;Relationship to Textbook
  Definition.</A> &nbsp; <A HREF="nfrv-P6.html">nfrv-P6</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#0084DD">692</SPAN><BR>
+ STYLE="color:#0084DB">686</SPAN><BR>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <A
- HREF="mmtheorems8.html#mm702s">7.1.5&nbsp;&nbsp;More Consequences of Effective
+ HREF="mmtheorems7.html#mm696s">7.1.5&nbsp;&nbsp;More Consequences of Effective
  Non-Freeness.</A> &nbsp; <A
  HREF="nfrexgenw-P6.html">nfrexgenw-P6</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#0182E7">702</SPAN><BR>
+ STYLE="color:#0083E5">696</SPAN><BR>
 &nbsp; &nbsp; &nbsp; <A NAME="dtl:7.2"></A>&#8203;<A
- HREF="mmtheorems8.html#mm710b"><B>7.2&nbsp;&nbsp;Explicit
+ HREF="mmtheorems8.html#mm704b"><B>7.2&nbsp;&nbsp;Explicit
  Substitution.</B></A><BR>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <A
- HREF="mmtheorems8.html#mm710s">7.2.1&nbsp;&nbsp;Motivation.</A> &nbsp; <A
+ HREF="mmtheorems8.html#mm704s">7.2.1&nbsp;&nbsp;Motivation.</A> &nbsp; <A
  HREF="solvesub-P6a.html">solvesub-P6a</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#0181EE">710</SPAN><BR>
+ STYLE="color:#0182EC">704</SPAN><BR>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <A
- HREF="mmtheorems8.html#mm720s">7.2.2&nbsp;&nbsp;Define Proper
+ HREF="mmtheorems8.html#mm714s">7.2.2&nbsp;&nbsp;Define Proper
  Substitution.</A> &nbsp; <A HREF="wff-psub.html">wff-psub</A>&nbsp;<SPAN
- CLASS=r STYLE="color:#0280F7">720</SPAN><BR>
+ CLASS=r STYLE="color:#0280F5">714</SPAN><BR>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <A
- HREF="mmtheorems8.html#mm720s">7.2.2.1&nbsp;&nbsp;Syntax Definition.</A>
+ HREF="mmtheorems8.html#mm714s">7.2.2.1&nbsp;&nbsp;Syntax Definition.</A>
  &nbsp; <A HREF="wff-psub.html">wff-psub</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#0280F7">720</SPAN><BR>
+ STYLE="color:#0280F5">714</SPAN><BR>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <A
- HREF="mmtheorems8.html#mm721s">7.2.2.2&nbsp;&nbsp;Justification Theorem.</A>
+ HREF="mmtheorems8.html#mm715s">7.2.2.2&nbsp;&nbsp;Justification Theorem.</A>
  &nbsp; <A HREF="psubjust-P6.html">psubjust-P6</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#0280F8">721</SPAN><BR>
+ STYLE="color:#0280F6">715</SPAN><BR>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <A
- HREF="mmtheorems8.html#mm722s">7.2.2.3&nbsp;&nbsp;Formal Definition.</A>
+ HREF="mmtheorems8.html#mm716s">7.2.2.3&nbsp;&nbsp;Formal Definition.</A>
  &nbsp; <A HREF="df-psub-D6.2.html">df-psub-D6.2</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#027FF9">722</SPAN><BR>
+ STYLE="color:#0280F7">716</SPAN><BR>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <A
- HREF="mmtheorems8.html#mm723s">7.2.3&nbsp;&nbsp;Simplified Definition.</A>
+ HREF="mmtheorems8.html#mm717s">7.2.3&nbsp;&nbsp;Simplified Definition.</A>
  &nbsp; <A HREF="dfpsubv-P6.html">dfpsubv-P6</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#027FFA">723</SPAN><BR>
+ STYLE="color:#0280F8">717</SPAN><BR>
 &nbsp; &nbsp; &nbsp; <A NAME="dtl:7.3"></A>&#8203;<A
  NAME="exi-P6"></A>&#8203;<A
- HREF="mmtheorems8.html#mm724b"><B>*7.3&nbsp;&nbsp;Scheme Completion Axiom
+ HREF="mmtheorems8.html#mm718b"><B>*7.3&nbsp;&nbsp;Scheme Completion Axiom
  ax-L12.</B></A><BR>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <A
- HREF="mmtheorems8.html#mm724s">7.3.1&nbsp;&nbsp;Existential Quantifier
+ HREF="mmtheorems8.html#mm718s">7.3.1&nbsp;&nbsp;Existential Quantifier
  Introduction and Specialization Revisited.</A> &nbsp; <A
  HREF="exi-P6.html">exi-P6</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#027FFB">724</SPAN><BR>
+ STYLE="color:#027FF9">718</SPAN><BR>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <A
- HREF="mmtheorems8.html#mm724s">*7.3.1.1&nbsp;&nbsp;Basic Forms.</A> &nbsp; <A
+ HREF="mmtheorems8.html#mm718s">*7.3.1.1&nbsp;&nbsp;Basic Forms.</A> &nbsp; <A
  HREF="exi-P6.html">exi-P6</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#027FFB">724</SPAN><BR>
+ STYLE="color:#027FF9">718</SPAN><BR>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <A
  NAME="exipsub-P6"></A> &#8203;<A
- HREF="mmtheorems8.html#mm726s">*7.3.1.2&nbsp;&nbsp;Traditional Textbook
+ HREF="mmtheorems8.html#mm720s">*7.3.1.2&nbsp;&nbsp;Traditional Textbook
  Forms.</A> &nbsp; <A HREF="exipsub-P6.html">exipsub-P6</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#027FFD">726</SPAN><BR>
+ STYLE="color:#027FFB">720</SPAN><BR>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <A
- HREF="mmtheorems8.html#mm728s">7.3.2&nbsp;&nbsp;Strengthened Quantifier
+ HREF="mmtheorems8.html#mm722s">7.3.2&nbsp;&nbsp;Strengthened Quantifier
  Removal Laws.</A> &nbsp; <A HREF="qremall-P6.html">qremall-P6</A>&nbsp;<SPAN
- CLASS=r STYLE="color:#027FFE">728</SPAN><BR>
+ CLASS=r STYLE="color:#027FFC">722</SPAN><BR>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <A NAME="lemma-L6.01a"></A>&#8203;<A
- HREF="mmtheorems8.html#mm730s">*7.3.3&nbsp;&nbsp;Implicit / Explicit
+ HREF="mmtheorems8.html#mm724s">*7.3.3&nbsp;&nbsp;Implicit / Explicit
  Substitution Conversion.</A> &nbsp; <A
  HREF="lemma-L6.01a.html">lemma-L6.01a</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#067EFF">730</SPAN><BR>
+ STYLE="color:#027FFE">724</SPAN><BR>
 &nbsp; &nbsp; &nbsp; <A NAME="dtl:7.4"></A>&#8203;<A
- HREF="mmtheorems8.html#mm736b"><B>7.4&nbsp;&nbsp;Scheme Completion Axioms
+ HREF="mmtheorems8.html#mm730b"><B>7.4&nbsp;&nbsp;Scheme Completion Axioms
  ax-L10 and ax-L11.</B></A><BR>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <A NAME="gennall-P6"></A>&#8203;<A
- HREF="mmtheorems8.html#mm736s">*7.4.1&nbsp;&nbsp;Strengthened "General For"
+ HREF="mmtheorems8.html#mm730s">*7.4.1&nbsp;&nbsp;Strengthened "General For"
  Laws (first half).</A> &nbsp; <A
  HREF="gennall-P6.html">gennall-P6</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#107DFF">736</SPAN><BR>
+ STYLE="color:#0C7DFF">730</SPAN><BR>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <A NAME="nfrgen-P6"></A>&#8203;<A
- HREF="mmtheorems8.html#mm739s">*7.4.2&nbsp;&nbsp;Strengthened "General For" /
+ HREF="mmtheorems8.html#mm733s">*7.4.2&nbsp;&nbsp;Strengthened "General For" /
  "Not Free" Conversion Laws.</A> &nbsp; <A
  HREF="nfrgen-P6.html">nfrgen-P6</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#157CFF">739</SPAN><BR>
+ STYLE="color:#117DFF">733</SPAN><BR>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <A NAME="genall-P6"></A>&#8203;<A
- HREF="mmtheorems8.html#mm743s">*7.4.3&nbsp;&nbsp;Strengthened "General For"
+ HREF="mmtheorems8.html#mm737s">*7.4.3&nbsp;&nbsp;Strengthened "General For"
  Laws (second half).</A> &nbsp; <A
  HREF="genall-P6.html">genall-P6</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#1C7CFF">743</SPAN><BR>
+ STYLE="color:#187CFF">737</SPAN><BR>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <A NAME="allcomm-P6"></A>&#8203;<A
- HREF="mmtheorems8.html#mm745s">*7.4.4&nbsp;&nbsp;Strengthened Quantifier
+ HREF="mmtheorems8.html#mm739s">*7.4.4&nbsp;&nbsp;Strengthened Quantifier
  Commutivity Laws.</A> &nbsp; <A
  HREF="allcomm-P6.html">allcomm-P6</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#1F7BFF">745</SPAN><BR>
+ STYLE="color:#1C7CFF">739</SPAN><BR>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <A NAME="nfrall1-P6"></A>&#8203;<A
- HREF="mmtheorems8.html#mm747s">*7.4.5&nbsp;&nbsp;Strengthened Effective
+ HREF="mmtheorems8.html#mm741s">*7.4.5&nbsp;&nbsp;Strengthened Effective
  Non-Freeness Properties.</A> &nbsp; <A
  HREF="nfrall1-P6.html">nfrall1-P6</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#227BFF">747</SPAN><BR>
+ STYLE="color:#1F7BFF">741</SPAN><BR>
 &nbsp; &nbsp; &nbsp; <A NAME="dtl:7.5"></A>&#8203;<A
- HREF="mmtheorems8.html#mm751b"><B>7.5&nbsp;&nbsp;Replacing Variable
+ HREF="mmtheorems8.html#mm745b"><B>7.5&nbsp;&nbsp;Replacing Variable
  Restrictions with Non-Freeness Conditions.</B></A><BR>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <A
- HREF="mmtheorems8.html#mm751s">7.5.1&nbsp;&nbsp;Basic Quantifier Rules with
+ HREF="mmtheorems8.html#mm745s">7.5.1&nbsp;&nbsp;Basic Quantifier Rules with
  Non-Freeness Conditions.</A> &nbsp; <A
  HREF="allic-P6.html">allic-P6</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#297AFF">751</SPAN><BR>
+ STYLE="color:#267AFF">745</SPAN><BR>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <A
- HREF="mmtheorems8.html#mm755s">7.5.2&nbsp;&nbsp;Change of Bound Variables Laws
+ HREF="mmtheorems8.html#mm749s">7.5.2&nbsp;&nbsp;Change of Bound Variables Laws
  with Non-Freeness Conditions.</A> &nbsp; <A
  HREF="lemma-L6.04a.html">lemma-L6.04a</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#3079FF">755</SPAN><BR>
+ STYLE="color:#2C7AFF">749</SPAN><BR>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <A
- HREF="mmtheorems8.html#mm759s">7.5.3&nbsp;&nbsp;(Implicit) Substitution Laws
+ HREF="mmtheorems8.html#mm753s">7.5.3&nbsp;&nbsp;(Implicit) Substitution Laws
  with Non-Freeness Conditions.</A> &nbsp; <A
  HREF="suball-P6.html">suball-P6</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#3778FF">759</SPAN><BR>
+ STYLE="color:#3379FF">753</SPAN><BR>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <A
- HREF="mmtheorems8.html#mm763s">7.5.4&nbsp;&nbsp;Quantifier Collection Laws
+ HREF="mmtheorems8.html#mm757s">7.5.4&nbsp;&nbsp;Quantifier Collection Laws
  with Non-Freeness Conditions.</A> &nbsp; <A
  HREF="qcallimr-P6.html">qcallimr-P6</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#3D78FF">763</SPAN><BR>
+ STYLE="color:#3A78FF">757</SPAN><BR>
 &nbsp; &nbsp; &nbsp; <A NAME="dtl:7.6"></A>&#8203;<A
- HREF="mmtheorems8.html#mm769b"><B>7.6&nbsp;&nbsp;More on Proper
+ HREF="mmtheorems8.html#mm763b"><B>7.6&nbsp;&nbsp;More on Proper
  Substitution.</B></A><BR>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <A NAME="trnsvsub-P6"></A>&#8203;<A
- HREF="mmtheorems8.html#mm769s">*7.6.1&nbsp;&nbsp;Explicit to Implicit
+ HREF="mmtheorems8.html#mm763s">*7.6.1&nbsp;&nbsp;Explicit to Implicit
  Substitution Conversion.</A> &nbsp; <A
  HREF="trnsvsub-P6.html">trnsvsub-P6</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#4776FF">769</SPAN><BR>
+ STYLE="color:#4477FF">763</SPAN><BR>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <A
- HREF="mmtheorems8.html#mm774s">7.6.2&nbsp;&nbsp;Change of Bound Variable Using
+ HREF="mmtheorems8.html#mm768s">7.6.2&nbsp;&nbsp;Change of Bound Variable Using
  Proper Substitution.</A> &nbsp; <A
  HREF="cbvallpsub-P6.html">cbvallpsub-P6</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#4C75FF">774</SPAN><BR>
+ STYLE="color:#4A76FF">768</SPAN><BR>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <A
- HREF="mmtheorems8.html#mm776s">7.6.3&nbsp;&nbsp;An Alternate Definition of
+ HREF="mmtheorems8.html#mm770s">7.6.3&nbsp;&nbsp;An Alternate Definition of
  Proper Substitution.</A> &nbsp; <A
  HREF="lemma-L6.07a-L1.html">lemma-L6.07a-L1</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#4E75FF">776</SPAN><BR>
+ STYLE="color:#4C75FF">770</SPAN><BR>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <A
- HREF="mmtheorems8.html#mm781s">7.6.4&nbsp;&nbsp;Separating Atomic WFF
+ HREF="mmtheorems8.html#mm775s">7.6.4&nbsp;&nbsp;Separating Atomic WFF
  Terms.</A> &nbsp; <A HREF="spliteq-P6-L1.html">spliteq-P6-L1</A>&nbsp;<SPAN
- CLASS=r STYLE="color:#5373FF">781</SPAN><BR>
+ CLASS=r STYLE="color:#5174FF">775</SPAN><BR>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <A
- HREF="mmtheorems8.html#mm781s">7.6.4.1&nbsp;&nbsp;Split Equality.</A> &nbsp;
+ HREF="mmtheorems8.html#mm775s">7.6.4.1&nbsp;&nbsp;Split Equality.</A> &nbsp;
  <A HREF="spliteq-P6-L1.html">spliteq-P6-L1</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#5373FF">781</SPAN><BR>
+ STYLE="color:#5174FF">775</SPAN><BR>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <A
- HREF="mmtheorems8.html#mm783s">7.6.4.2&nbsp;&nbsp;Split Primitive
+ HREF="mmtheorems8.html#mm777s">7.6.4.2&nbsp;&nbsp;Split Primitive
  Predicate.</A> &nbsp; <A
  HREF="splitelof-P6-L1.html">splitelof-P6-L1</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#5573FF">783</SPAN><BR>
+ STYLE="color:#5373FF">777</SPAN><BR>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <A
- HREF="mmtheorems8.html#mm785s">7.6.4.3&nbsp;&nbsp;Effective Non-Freeness Over
+ HREF="mmtheorems8.html#mm779s">7.6.4.3&nbsp;&nbsp;Effective Non-Freeness Over
  Terms.</A> &nbsp; <A HREF="nfrterm-P6.html">nfrterm-P6</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#5672FF">785</SPAN><BR>
+ STYLE="color:#5573FF">779</SPAN><BR>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <A NAME="psubleq-P6"></A>&#8203;<A
- HREF="mmtheorems8.html#mm789s">*7.6.5&nbsp;&nbsp;Relationship to Textbook
+ HREF="mmtheorems8.html#mm783s">*7.6.5&nbsp;&nbsp;Relationship to Textbook
  Definition.</A> &nbsp; <A HREF="psubleq-P6.html">psubleq-P6</A>&nbsp;<SPAN
- CLASS=r STYLE="color:#5A71FF">789</SPAN><BR>
+ CLASS=r STYLE="color:#5972FF">783</SPAN><BR>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <A
- HREF="mmtheorems9.html#mm806s">7.6.5.1&nbsp;&nbsp;Proper Substitution Applied
+ HREF="mmtheorems8.html#mm800s">7.6.5.1&nbsp;&nbsp;Proper Substitution Applied
  to Atomic Formulae.</A> &nbsp; <A
  HREF="psubspliteq-P6.html">psubspliteq-P6</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#6B6DFF">806</SPAN><BR>
+ STYLE="color:#696EFF">800</SPAN><BR>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <A
- HREF="mmtheorems9.html#mm808s">7.6.5.2&nbsp;&nbsp;Proper Substitution Applied
+ HREF="mmtheorems9.html#mm802s">7.6.5.2&nbsp;&nbsp;Proper Substitution Applied
  to Atomic Terms.</A> &nbsp; <A
  HREF="psubvar1-P6.html">psubvar1-P6</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#6D6DFF">808</SPAN><BR>
+ STYLE="color:#6B6DFF">802</SPAN><BR>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <A
- HREF="mmtheorems9.html#mm811s">7.6.5.3&nbsp;&nbsp;Proper Substitution Applied
+ HREF="mmtheorems9.html#mm805s">7.6.5.3&nbsp;&nbsp;Proper Substitution Applied
  to Terms with Functions.</A> &nbsp; <A
  HREF="psubsuccv-P6-L1.html">psubsuccv-P6-L1</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#6F6CFF">811</SPAN><BR>
+ STYLE="color:#6E6CFF">805</SPAN><BR>
 &nbsp; &nbsp; &nbsp; <A NAME="dtl:7.7"></A>&#8203;<A
- HREF="mmtheorems9.html#mm817b"><B>7.7&nbsp;&nbsp;Deductive Forms.</B></A><BR>
+ HREF="mmtheorems9.html#mm811b"><B>7.7&nbsp;&nbsp;Deductive Forms.</B></A><BR>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <A
- HREF="mmtheorems9.html#mm817s">7.7.1&nbsp;&nbsp;Some Lemmas.</A> &nbsp; <A
+ HREF="mmtheorems9.html#mm811s">7.7.1&nbsp;&nbsp;Some Lemmas.</A> &nbsp; <A
  HREF="nfrgencl-L6.html">nfrgencl-L6</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#736AFF">817</SPAN><BR>
+ STYLE="color:#726BFF">811</SPAN><BR>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <A
- HREF="mmtheorems9.html#mm821s">7.7.2&nbsp;&nbsp;Effective Non-Freeness.</A>
+ HREF="mmtheorems9.html#mm815s">7.7.2&nbsp;&nbsp;Effective Non-Freeness.</A>
  &nbsp; <A HREF="nfrimd-P6.html">nfrimd-P6</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#7669FF">821</SPAN><BR>
+ STYLE="color:#756AFF">815</SPAN><BR>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <A
- HREF="mmtheorems9.html#mm828s">7.7.3&nbsp;&nbsp;Universal Quantifier
+ HREF="mmtheorems9.html#mm822s">7.7.3&nbsp;&nbsp;Universal Quantifier
  Introduction.</A> &nbsp; <A HREF="ndalli-P6.html">ndalli-P6</A>&nbsp;<SPAN
- CLASS=r STYLE="color:#7A68FF">828</SPAN><BR>
+ CLASS=r STYLE="color:#7968FF">822</SPAN><BR>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <A
- HREF="mmtheorems9.html#mm829s">7.7.4&nbsp;&nbsp;Exestential Quantifier
+ HREF="mmtheorems9.html#mm823s">7.7.4&nbsp;&nbsp;Exestential Quantifier
  Elimination.</A> &nbsp; <A HREF="qremexd-P6.html">qremexd-P6</A>&nbsp;<SPAN
- CLASS=r STYLE="color:#7B68FF">829</SPAN><BR>
-<A NAME="dtl:8"></A>&#8203;<A HREF="mmtheorems9.html#mm832h"><B>PART
+ CLASS=r STYLE="color:#7A68FF">823</SPAN><BR>
+<A NAME="dtl:8"></A>&#8203;<A HREF="mmtheorems9.html#mm826h"><B>PART
  8&nbsp;&nbsp;Chapter 7: Predicate Calculus (Natural Deduction)</B></A><BR>
 &nbsp; &nbsp; &nbsp; <A NAME="dtl:8.1"></A>&#8203;<A
- HREF="mmtheorems9.html#mm832b"><B>8.1&nbsp;&nbsp;Natural Deduction for
+ HREF="mmtheorems9.html#mm826b"><B>8.1&nbsp;&nbsp;Natural Deduction for
  Predicate Calculus.</B></A><BR>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <A
- HREF="mmtheorems9.html#mm832s">8.1.1&nbsp;&nbsp;Axiomatic Rules.</A> &nbsp; <A
+ HREF="mmtheorems9.html#mm826s">8.1.1&nbsp;&nbsp;Axiomatic Rules.</A> &nbsp; <A
  HREF="ndnfrv-P7.1.html">ndnfrv-P7.1</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#7D67FF">832</SPAN><BR>
+ STYLE="color:#7C67FF">826</SPAN><BR>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <A
  NAME="ndnfrv-P7.1"></A> &#8203;<A
- HREF="mmtheorems9.html#mm832s">*8.1.1.1&nbsp;&nbsp;Effective Non-Freeness
+ HREF="mmtheorems9.html#mm826s">*8.1.1.1&nbsp;&nbsp;Effective Non-Freeness
  Rules.</A> &nbsp; <A HREF="ndnfrv-P7.1.html">ndnfrv-P7.1</A>&nbsp;<SPAN
- CLASS=r STYLE="color:#7D67FF">832</SPAN><BR>
+ CLASS=r STYLE="color:#7C67FF">826</SPAN><BR>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <A
  NAME="ndpsub1-P7.13"></A> &#8203;<A
- HREF="mmtheorems9.html#mm844s">*8.1.1.2&nbsp;&nbsp;Proper Substitution
+ HREF="mmtheorems9.html#mm838s">*8.1.1.2&nbsp;&nbsp;Proper Substitution
  Rules.</A> &nbsp; <A HREF="ndpsub1-P7.13.html">ndpsub1-P7.13</A>&nbsp;<SPAN
- CLASS=r STYLE="color:#8564FF">844</SPAN><BR>
+ CLASS=r STYLE="color:#8464FF">838</SPAN><BR>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <A
  NAME="ndalli-P7.17"></A> &#8203;<A
- HREF="mmtheorems9.html#mm848s">*8.1.1.3&nbsp;&nbsp;Quantifier Rules.</A>
+ HREF="mmtheorems9.html#mm842s">*8.1.1.3&nbsp;&nbsp;Quantifier Rules.</A>
  &nbsp; <A HREF="ndalli-P7.17.html">ndalli-P7.17</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#8863FF">848</SPAN><BR>
+ STYLE="color:#8763FF">842</SPAN><BR>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <A
  NAME="ndeqi-P7.21"></A> &#8203;<A
- HREF="mmtheorems9.html#mm852s">*8.1.1.4&nbsp;&nbsp;Equality Introduction
+ HREF="mmtheorems9.html#mm846s">*8.1.1.4&nbsp;&nbsp;Equality Introduction
  Axiom.</A> &nbsp; <A HREF="ndeqi-P7.21.html">ndeqi-P7.21</A>&nbsp;<SPAN
- CLASS=r STYLE="color:#8B61FF">852</SPAN><BR>
+ CLASS=r STYLE="color:#8962FF">846</SPAN><BR>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <A
  NAME="ndsubeql-P7.22a"></A> &#8203;<A
- HREF="mmtheorems9.html#mm853s">*8.1.1.5&nbsp;&nbsp;Substitution Rules
+ HREF="mmtheorems9.html#mm847s">*8.1.1.5&nbsp;&nbsp;Substitution Rules
  (Equality Elimination).</A> &nbsp; <A
  HREF="ndsubeql-P7.22a.html">ndsubeql-P7.22a</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#8B61FF">853</SPAN><BR>
+ STYLE="color:#8A61FF">847</SPAN><BR>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <A NAME="ndsubeqd-P7"></A>&#8203;<A
- HREF="mmtheorems9.html#mm862s">*8.1.2&nbsp;&nbsp;Derived Utility Rules.</A>
+ HREF="mmtheorems9.html#mm856s">*8.1.2&nbsp;&nbsp;Derived Utility Rules.</A>
  &nbsp; <A HREF="ndsubeqd-P7.html">ndsubeqd-P7</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#935CFF">862</SPAN><BR>
+ STYLE="color:#915DFF">856</SPAN><BR>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <A
- HREF="mmtheorems9.html#mm862s">8.1.2.1&nbsp;&nbsp;Dual Substitution Rules.</A>
+ HREF="mmtheorems9.html#mm856s">8.1.2.1&nbsp;&nbsp;Dual Substitution Rules.</A>
  &nbsp; <A HREF="ndsubeqd-P7.html">ndsubeqd-P7</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#935CFF">862</SPAN><BR>
+ STYLE="color:#915DFF">856</SPAN><BR>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <A
- HREF="mmtheorems9.html#mm866s">8.1.2.2&nbsp;&nbsp;Restricted Variable Forms of
+ HREF="mmtheorems9.html#mm860s">8.1.2.2&nbsp;&nbsp;Restricted Variable Forms of
  Natural Deduction Rules.</A> &nbsp; <A
  HREF="ndnfrall2-P7.9.VR12of2.html">ndnfrall2-P7.9.VR12of2</A>&nbsp;<SPAN
- CLASS=r STYLE="color:#965AFF">866</SPAN><BR>
+ CLASS=r STYLE="color:#955BFF">860</SPAN><BR>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <A
- HREF="mmtheorems9.html#mm881s">8.1.2.3&nbsp;&nbsp;Inference Forms of Natural
+ HREF="mmtheorems9.html#mm875s">8.1.2.3&nbsp;&nbsp;Inference Forms of Natural
  Deduction Rules.</A> &nbsp; <A
  HREF="ndnfrneg-P7.2.RC.html">ndnfrneg-P7.2.RC</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#A252FF">881</SPAN><BR>
+ STYLE="color:#A153FF">875</SPAN><BR>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <A
- HREF="mmtheorems10.html#mm910s">8.1.2.4&nbsp;&nbsp;Closed Forms of Natural
+ HREF="mmtheorems10.html#mm904s">8.1.2.4&nbsp;&nbsp;Closed Forms of Natural
  Deduction Rules.</A> &nbsp; <A
  HREF="ndnfrneg-P7.2.CL.html">ndnfrneg-P7.2.CL</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#B143FF">910</SPAN><BR>
+ STYLE="color:#B144FF">904</SPAN><BR>
 &nbsp; &nbsp; &nbsp; <A NAME="dtl:8.2"></A>&#8203;<A
- HREF="mmtheorems10.html#mm930b"><B>8.2&nbsp;&nbsp;Recovering Hilbert Axioms
+ HREF="mmtheorems10.html#mm924b"><B>8.2&nbsp;&nbsp;Recovering Hilbert Axioms
  and Definitions.</B></A><BR>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <A
- HREF="mmtheorems10.html#mm930s">8.2.1&nbsp;&nbsp;Axiom L6 (Existential
+ HREF="mmtheorems10.html#mm924s">8.2.1&nbsp;&nbsp;Axiom L6 (Existential
  Form).</A> &nbsp; <A HREF="lemma-L7.01a.html">lemma-L7.01a</A>&nbsp;<SPAN
- CLASS=r STYLE="color:#B939FF">930</SPAN><BR>
+ CLASS=r STYLE="color:#B939FF">924</SPAN><BR>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <A
- HREF="mmtheorems10.html#mm931s">8.2.1.1&nbsp;&nbsp;Recovered Axiom L6
+ HREF="mmtheorems10.html#mm925s">8.2.1.1&nbsp;&nbsp;Recovered Axiom L6
  (Existential Form).</A> &nbsp; <A
  HREF="axL6ex-P7.html">axL6ex-P7</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#BA38FE">931</SPAN><BR>
+ STYLE="color:#B939FF">925</SPAN><BR>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <A
- HREF="mmtheorems10.html#mm932s">8.2.2&nbsp;&nbsp;Generalization Rule and Axiom
+ HREF="mmtheorems10.html#mm926s">8.2.2&nbsp;&nbsp;Generalization Rule and Axiom
  L5.</A> &nbsp; <A HREF="nfrthm-P7.html">nfrthm-P7</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#BA37FE">932</SPAN><BR>
+ STYLE="color:#BA38FE">926</SPAN><BR>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <A
- HREF="mmtheorems10.html#mm939s">8.2.2.1&nbsp;&nbsp;Recovered Generalization
+ HREF="mmtheorems10.html#mm933s">8.2.2.1&nbsp;&nbsp;Recovered Generalization
  Rule.</A> &nbsp; <A HREF="axGEN-P7.html">axGEN-P7</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#BD33FD">939</SPAN><BR>
+ STYLE="color:#BD34FD">933</SPAN><BR>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <A
- HREF="mmtheorems10.html#mm940s">8.2.2.2&nbsp;&nbsp;Recovered Axiom L5.</A>
+ HREF="mmtheorems10.html#mm934s">8.2.2.2&nbsp;&nbsp;Recovered Axiom L5.</A>
  &nbsp; <A HREF="axL5-P7.html">axL5-P7</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#BE33FD">940</SPAN><BR>
+ STYLE="color:#BD33FD">934</SPAN><BR>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <A
- HREF="mmtheorems10.html#mm942s">8.2.3&nbsp;&nbsp;Axiom L4.</A> &nbsp; <A
+ HREF="mmtheorems10.html#mm936s">8.2.3&nbsp;&nbsp;Axiom L4.</A> &nbsp; <A
  HREF="eqsym-P7.html">eqsym-P7</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#BF31FD">942</SPAN><BR>
+ STYLE="color:#BE32FD">936</SPAN><BR>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <A
- HREF="mmtheorems10.html#mm951s">8.2.3.1&nbsp;&nbsp;Recovered Axiom L4.</A>
+ HREF="mmtheorems10.html#mm945s">8.2.3.1&nbsp;&nbsp;Recovered Axiom L4.</A>
  &nbsp; <A HREF="axL4-P7.html">axL4-P7</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#C32CFB">951</SPAN><BR>
+ STYLE="color:#C22DFC">945</SPAN><BR>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <A
- HREF="mmtheorems10.html#mm953s">8.2.4&nbsp;&nbsp;Existential Quantifier</A>
+ HREF="mmtheorems10.html#mm947s">8.2.4&nbsp;&nbsp;Existential Quantifier</A>
  &nbsp; <A HREF="alli-P7.html">alli-P7</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#C42BFB">953</SPAN><BR>
+ STYLE="color:#C32BFB">947</SPAN><BR>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <A
  NAME="dfexists-P7"></A> &#8203;<A
- HREF="mmtheorems10.html#mm965s">*8.2.4.1&nbsp;&nbsp;Recovered Existential
+ HREF="mmtheorems10.html#mm959s">*8.2.4.1&nbsp;&nbsp;Recovered Existential
  Quantifier Definition.</A> &nbsp; <A
  HREF="dfexists-P7.html">dfexists-P7</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#C924F9">965</SPAN><BR>
+ STYLE="color:#C924F9">959</SPAN><BR>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <A
  NAME="axL6-P7"></A> &#8203;<A
- HREF="mmtheorems10.html#mm967s">*8.2.4.2&nbsp;&nbsp;Recovered Axiom L6
+ HREF="mmtheorems10.html#mm961s">*8.2.4.2&nbsp;&nbsp;Recovered Axiom L6
  (Original Form).</A> &nbsp; <A HREF="axL6-P7.html">axL6-P7</A>&nbsp;<SPAN
- CLASS=r STYLE="color:#CA23F9">967</SPAN><BR>
+ CLASS=r STYLE="color:#CA23F9">961</SPAN><BR>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <A
- HREF="mmtheorems10.html#mm968s">8.2.5&nbsp;&nbsp;Effective Non-Freeness.</A>
+ HREF="mmtheorems10.html#mm962s">8.2.5&nbsp;&nbsp;Effective Non-Freeness.</A>
  &nbsp; <A HREF="lemma-L7.03.html">lemma-L7.03</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#CA22F9">968</SPAN><BR>
+ STYLE="color:#CA22F9">962</SPAN><BR>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <A
- HREF="mmtheorems10.html#mm973s">8.2.5.1&nbsp;&nbsp;Recovered Alternate ENF
+ HREF="mmtheorems10.html#mm967s">8.2.5.1&nbsp;&nbsp;Recovered Alternate ENF
  Definition.</A> &nbsp; <A
  HREF="dfnfreealt-P7.html">dfnfreealt-P7</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#CC1FF8">973</SPAN><BR>
+ STYLE="color:#CC20F8">967</SPAN><BR>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <A
  NAME="dfnfree-P7"></A> &#8203;<A
- HREF="mmtheorems10.html#mm974s">*8.2.5.2&nbsp;&nbsp;Recovered ENF
+ HREF="mmtheorems10.html#mm968s">*8.2.5.2&nbsp;&nbsp;Recovered ENF
  Definition.</A> &nbsp; <A HREF="dfnfree-P7.html">dfnfree-P7</A>&nbsp;<SPAN
- CLASS=r STYLE="color:#CC1FF7">974</SPAN><BR>
+ CLASS=r STYLE="color:#CC1FF8">968</SPAN><BR>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <A
- HREF="mmtheorems10.html#mm976s">8.2.6&nbsp;&nbsp;Proper Substitution.</A>
+ HREF="mmtheorems10.html#mm970s">8.2.6&nbsp;&nbsp;Proper Substitution.</A>
  &nbsp; <A HREF="alloverim-P7.html">alloverim-P7</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#CD1EF7">976</SPAN><BR>
+ STYLE="color:#CD1FF7">970</SPAN><BR>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <A
- HREF="mmtheorems10.html#mm983s">8.2.6.1&nbsp;&nbsp;Recovered Simplified Proper
+ HREF="mmtheorems10.html#mm977s">8.2.6.1&nbsp;&nbsp;Recovered Simplified Proper
  Substitution Definition.</A> &nbsp; <A
  HREF="dfpsubv-P7.html">dfpsubv-P7</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#CE1BF4">983</SPAN><BR>
+ STYLE="color:#CE1CF4">977</SPAN><BR>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <A
- HREF="mmtheorems10.html#mm984s">8.2.6.2&nbsp;&nbsp;Recovered Full Proper
+ HREF="mmtheorems10.html#mm978s">8.2.6.2&nbsp;&nbsp;Recovered Full Proper
  Substitution Definition.</A> &nbsp; <A
  HREF="dfpsub-P7.html">dfpsub-P7</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#CF1BF4">984</SPAN><BR>
+ STYLE="color:#CE1BF4">978</SPAN><BR>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <A
- HREF="mmtheorems10.html#mm985s">8.2.7&nbsp;&nbsp;Scheme Completion Axioms.</A>
+ HREF="mmtheorems10.html#mm979s">8.2.7&nbsp;&nbsp;Scheme Completion Axioms.</A>
  &nbsp; <A HREF="axL10-P7.html">axL10-P7</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#CF1AF3">985</SPAN><BR>
+ STYLE="color:#CF1BF4">979</SPAN><BR>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <A
- HREF="mmtheorems10.html#mm985s">8.2.7.1&nbsp;&nbsp;Recovered Axiom L10.</A>
+ HREF="mmtheorems10.html#mm979s">8.2.7.1&nbsp;&nbsp;Recovered Axiom L10.</A>
  &nbsp; <A HREF="axL10-P7.html">axL10-P7</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#CF1AF3">985</SPAN><BR>
+ STYLE="color:#CF1BF4">979</SPAN><BR>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <A
- HREF="mmtheorems10.html#mm986s">8.2.7.2&nbsp;&nbsp;Recovered Axiom L11.</A>
+ HREF="mmtheorems10.html#mm980s">8.2.7.2&nbsp;&nbsp;Recovered Axiom L11.</A>
  &nbsp; <A HREF="axL11-P7.html">axL11-P7</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#CF1AF3">986</SPAN><BR>
+ STYLE="color:#CF1AF3">980</SPAN><BR>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <A
- HREF="mmtheorems10.html#mm988s">8.2.7.3&nbsp;&nbsp;Recovered Axiom L12.</A>
+ HREF="mmtheorems10.html#mm982s">8.2.7.3&nbsp;&nbsp;Recovered Axiom L12.</A>
  &nbsp; <A HREF="axL12-P7.html">axL12-P7</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#CF19F2">988</SPAN><BR>
+ STYLE="color:#CF19F3">982</SPAN><BR>
 &nbsp; &nbsp; &nbsp; <A NAME="dtl:8.3"></A>&#8203;<A
- HREF="mmtheorems10.html#mm989b"><B>8.3&nbsp;&nbsp;Revisiting Chapter
+ HREF="mmtheorems10.html#mm983b"><B>8.3&nbsp;&nbsp;Revisiting Chapter
  5.</B></A><BR>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <A NAME="eqsym-P7r"></A>&#8203;<A
- HREF="mmtheorems10.html#mm989s">*8.3.1&nbsp;&nbsp;Equivalence Properties of
+ HREF="mmtheorems10.html#mm983s">*8.3.1&nbsp;&nbsp;Equivalence Properties of
  Equality Predicate.</A> &nbsp; <A
  HREF="eqsym-P7r.html">eqsym-P7r</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#D019F2">989</SPAN><BR>
+ STYLE="color:#CF19F2">983</SPAN><BR>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <A
- HREF="mmtheorems10.html#mm996s">8.3.2&nbsp;&nbsp;Simplified Quantifier
+ HREF="mmtheorems10.html#mm990s">8.3.2&nbsp;&nbsp;Simplified Quantifier
  Introduction / Elimination Rules.</A> &nbsp; <A
  HREF="alli-P7r.html">alli-P7r</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#D116F0">996</SPAN><BR>
+ STYLE="color:#D116F0">990</SPAN><BR>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <A
- HREF="mmtheorems11.html#mm1010s">8.3.2.1&nbsp;&nbsp;alle-P7 and exi-P7
+ HREF="mmtheorems11.html#mm1004s">8.3.2.1&nbsp;&nbsp;alle-P7 and exi-P7
  Combined.</A> &nbsp; <A HREF="alleexi-P7.html">alleexi-P7</A>&nbsp;<SPAN
- CLASS=r STYLE="color:#D410EB">1010</SPAN><BR>
+ CLASS=r STYLE="color:#D410EB">1004</SPAN><BR>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <A
- HREF="mmtheorems11.html#mm1013s">8.3.2.2&nbsp;&nbsp;Variants of alli-P7 and
+ HREF="mmtheorems11.html#mm1007s">8.3.2.2&nbsp;&nbsp;Variants of alli-P7 and
  exe-P7.</A> &nbsp; <A HREF="allic-P7.html">allic-P7</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#D50FEA">1013</SPAN><BR>
+ STYLE="color:#D50FEA">1007</SPAN><BR>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <A
- HREF="mmtheorems11.html#mm1023s">8.3.3&nbsp;&nbsp;Distributive Laws Producing
+ HREF="mmtheorems11.html#mm1017s">8.3.3&nbsp;&nbsp;Distributive Laws Producing
  Universal Quantifiers.</A> &nbsp; <A
  HREF="alloverim-P7r.html">alloverim-P7r</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#D70BE7">1023</SPAN><BR>
+ STYLE="color:#D70BE7">1017</SPAN><BR>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <A
- HREF="mmtheorems11.html#mm1034s">8.3.4&nbsp;&nbsp;Distributive Laws Producing
+ HREF="mmtheorems11.html#mm1028s">8.3.4&nbsp;&nbsp;Distributive Laws Producing
  Existential Quantifiers.</A> &nbsp; <A
  HREF="alloverimex-P7r.html">alloverimex-P7r</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#D906E3">1034</SPAN><BR>
+ STYLE="color:#D907E3">1028</SPAN><BR>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <A
- HREF="mmtheorems11.html#mm1045s">8.3.5&nbsp;&nbsp;Quantifier Substitution
+ HREF="mmtheorems11.html#mm1039s">8.3.5&nbsp;&nbsp;Quantifier Substitution
  Laws.</A> &nbsp; <A HREF="suball-P7r.html">suball-P7r</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#DB02DF">1045</SPAN><BR>
+ STYLE="color:#DB02E0">1039</SPAN><BR>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <A NAME="allnegex-P7r"></A>&#8203;<A
- HREF="mmtheorems11.html#mm1051s">*8.3.6&nbsp;&nbsp;Dual Properties of
+ HREF="mmtheorems11.html#mm1045s">*8.3.6&nbsp;&nbsp;Dual Properties of
  Universal / Existential Quantification.</A> &nbsp; <A
  HREF="allnegex-P7r.html">allnegex-P7r</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#DC00DE">1051</SPAN><BR>
+ STYLE="color:#DC00DE">1045</SPAN><BR>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <A
- HREF="mmtheorems11.html#mm1055s">8.3.7&nbsp;&nbsp;Quantified Implication
+ HREF="mmtheorems11.html#mm1049s">8.3.7&nbsp;&nbsp;Quantified Implication
  Equivalence Laws.</A> &nbsp; <A
  HREF="qimeqallhalf-P7r.html">qimeqallhalf-P7r</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#DE00D9">1055</SPAN><BR>
+ STYLE="color:#DE00D9">1049</SPAN><BR>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <A
- HREF="mmtheorems11.html#mm1064s">8.3.8&nbsp;&nbsp;Quantifier Commutivity
+ HREF="mmtheorems11.html#mm1058s">8.3.8&nbsp;&nbsp;Quantifier Commutivity
  Laws.</A> &nbsp; <A HREF="allcomm-P7.html">allcomm-P7</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#E000CE">1064</SPAN><BR>
+ STYLE="color:#E000CE">1058</SPAN><BR>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <A
- HREF="mmtheorems11.html#mm1066s">8.3.9&nbsp;&nbsp;Change of Bound Variable
+ HREF="mmtheorems11.html#mm1060s">8.3.9&nbsp;&nbsp;Change of Bound Variable
  Laws.</A> &nbsp; <A HREF="cbvall-P7-L1.html">cbvall-P7-L1</A>&nbsp;<SPAN
- CLASS=r STYLE="color:#E100CB">1066</SPAN><BR>
+ CLASS=r STYLE="color:#E100CC">1060</SPAN><BR>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <A
- HREF="mmtheorems11.html#mm1076s">8.3.9.1&nbsp;&nbsp;Proper Substitution
+ HREF="mmtheorems11.html#mm1070s">8.3.9.1&nbsp;&nbsp;Proper Substitution
  Variants of cbvall-P7 and cbvex-P7.</A> &nbsp; <A
  HREF="cbvallpsub-P7.html">cbvallpsub-P7</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#E400BF">1076</SPAN><BR>
+ STYLE="color:#E400BF">1070</SPAN><BR>
 &nbsp; &nbsp; &nbsp; <A NAME="dtl:8.4"></A>&#8203;<A
- HREF="mmtheorems11.html#mm1080b"><B>8.4&nbsp;&nbsp;Examples.</B></A><BR>
+ HREF="mmtheorems11.html#mm1074b"><B>8.4&nbsp;&nbsp;Examples.</B></A><BR>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <A
- HREF="mmtheorems11.html#mm1080s">8.4.1&nbsp;&nbsp;Conditional Non-Freeness
+ HREF="mmtheorems11.html#mm1074s">8.4.1&nbsp;&nbsp;Conditional Non-Freeness
  Does Not Always Imply Effective Non-Freeness.</A> &nbsp; <A
  HREF="example-E7.1a.html">example-E7.1a</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#E500BA">1080</SPAN><BR>
-<A NAME="dtl:9"></A>&#8203;<A HREF="mmtheorems11.html#mm1082h"><B>PART
+ STYLE="color:#E500BA">1074</SPAN><BR>
+<A NAME="dtl:9"></A>&#8203;<A HREF="mmtheorems11.html#mm1076h"><B>PART
  9&nbsp;&nbsp;Chapter 8: Predicate Calculus (Continued)</B></A><BR>
 &nbsp; &nbsp; &nbsp; <A NAME="dtl:9.1"></A>&#8203;<A
- HREF="mmtheorems11.html#mm1082b"><B>9.1&nbsp;&nbsp;Revisiting Chapter
+ HREF="mmtheorems11.html#mm1076b"><B>9.1&nbsp;&nbsp;Revisiting Chapter
  6.</B></A><BR>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <A
- HREF="mmtheorems11.html#mm1082s">9.1.1&nbsp;&nbsp;"General For" / "Not Free"
+ HREF="mmtheorems11.html#mm1076s">9.1.1&nbsp;&nbsp;"General For" / "Not Free"
  Conversion.</A> &nbsp; <A HREF="nfrgen-P8.html">nfrgen-P8</A>&nbsp;<SPAN
- CLASS=r STYLE="color:#E600B7">1082</SPAN><BR>
+ CLASS=r STYLE="color:#E600B8">1076</SPAN><BR>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <A
- HREF="mmtheorems11.html#mm1082s">9.1.1.1&nbsp;&nbsp;Standard Forms.</A> &nbsp;
+ HREF="mmtheorems11.html#mm1076s">9.1.1.1&nbsp;&nbsp;Standard Forms.</A> &nbsp;
  <A HREF="nfrgen-P8.html">nfrgen-P8</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#E600B7">1082</SPAN><BR>
+ STYLE="color:#E600B8">1076</SPAN><BR>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <A
- HREF="mmtheorems11.html#mm1086s">9.1.1.2&nbsp;&nbsp;Dual Forms.</A> &nbsp; <A
+ HREF="mmtheorems11.html#mm1080s">9.1.1.2&nbsp;&nbsp;Dual Forms.</A> &nbsp; <A
  HREF="nfrexgen-P8.html">nfrexgen-P8</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#E700B2">1086</SPAN><BR>
+ STYLE="color:#E700B3">1080</SPAN><BR>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <A
- HREF="mmtheorems11.html#mm1092s">9.1.1.3&nbsp;&nbsp;Combined Forms.</A> &nbsp;
+ HREF="mmtheorems11.html#mm1086s">9.1.1.3&nbsp;&nbsp;Combined Forms.</A> &nbsp;
  <A HREF="nfrexall-P8.html">nfrexall-P8</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#E900AB">1092</SPAN><BR>
+ STYLE="color:#E900AB">1086</SPAN><BR>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <A
- HREF="mmtheorems11.html#mm1099s">9.1.2&nbsp;&nbsp;Nested Quantifier
+ HREF="mmtheorems11.html#mm1093s">9.1.2&nbsp;&nbsp;Nested Quantifier
  Idempotency Laws.</A> &nbsp; <A
  HREF="idempotall-P8.html">idempotall-P8</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#EA00A4">1099</SPAN><BR>
+ STYLE="color:#EA00A4">1093</SPAN><BR>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <A
- HREF="mmtheorems12.html#mm1107s">9.1.3&nbsp;&nbsp;Quantifier Removal /
+ HREF="mmtheorems12.html#mm1101s">9.1.3&nbsp;&nbsp;Quantifier Removal /
  Swapping Laws.</A> &nbsp; <A HREF="qremall-P8.html">qremall-P8</A>&nbsp;<SPAN
- CLASS=r STYLE="color:#EB009C">1107</SPAN><BR>
+ CLASS=r STYLE="color:#EB009C">1101</SPAN><BR>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <A
- HREF="mmtheorems12.html#mm1113s">9.1.4&nbsp;&nbsp;Other Effective Non-Freeness
+ HREF="mmtheorems12.html#mm1107s">9.1.4&nbsp;&nbsp;Other Effective Non-Freeness
  Properties.</A> &nbsp; <A HREF="nfrthm-P8.html">nfrthm-P8</A>&nbsp;<SPAN
- CLASS=r STYLE="color:#EC0096">1113</SPAN><BR>
+ CLASS=r STYLE="color:#EC0096">1107</SPAN><BR>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <A
- HREF="mmtheorems12.html#mm1120s">9.1.5&nbsp;&nbsp;Define Effective
+ HREF="mmtheorems12.html#mm1114s">9.1.5&nbsp;&nbsp;Define Effective
  Non-Freeness Within a Term.</A> &nbsp; <A
  HREF="wff-nfreet.html">wff-nfreet</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#ED008F">1120</SPAN><BR>
+ STYLE="color:#ED008F">1114</SPAN><BR>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <A
- HREF="mmtheorems12.html#mm1120s">9.1.5.1&nbsp;&nbsp;Syntax Definition.</A>
+ HREF="mmtheorems12.html#mm1114s">9.1.5.1&nbsp;&nbsp;Syntax Definition.</A>
  &nbsp; <A HREF="wff-nfreet.html">wff-nfreet</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#ED008F">1120</SPAN><BR>
+ STYLE="color:#ED008F">1114</SPAN><BR>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <A
- HREF="mmtheorems12.html#mm1121s">9.1.5.2&nbsp;&nbsp;Justification Theorem.</A>
+ HREF="mmtheorems12.html#mm1115s">9.1.5.2&nbsp;&nbsp;Justification Theorem.</A>
  &nbsp; <A HREF="nfreetjust-P8.html">nfreetjust-P8</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#ED008E">1121</SPAN><BR>
+ STYLE="color:#ED008E">1115</SPAN><BR>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <A
- HREF="mmtheorems12.html#mm1122s">9.1.5.3&nbsp;&nbsp;Formal Definition.</A>
+ HREF="mmtheorems12.html#mm1116s">9.1.5.3&nbsp;&nbsp;Formal Definition.</A>
  &nbsp; <A HREF="df-nfreet-D8.1.html">df-nfreet-D8.1</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#ED008D">1122</SPAN><BR>
+ STYLE="color:#ED008D">1116</SPAN><BR>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <A
- HREF="mmtheorems12.html#mm1123s">9.1.6&nbsp;&nbsp;Effective Non-Freeness Over
+ HREF="mmtheorems12.html#mm1117s">9.1.6&nbsp;&nbsp;Effective Non-Freeness Over
  Atomic Terms.</A> &nbsp; <A HREF="nfrzero-P8.html">nfrzero-P8</A>&nbsp;<SPAN
- CLASS=r STYLE="color:#ED008C">1123</SPAN><BR>
+ CLASS=r STYLE="color:#ED008C">1117</SPAN><BR>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <A
- HREF="mmtheorems12.html#mm1125s">9.1.7&nbsp;&nbsp;Effective Non-Freeness Over
+ HREF="mmtheorems12.html#mm1119s">9.1.7&nbsp;&nbsp;Effective Non-Freeness Over
  Functional Terms.</A> &nbsp; <A
  HREF="nfrsucc-P8.html">nfrsucc-P8</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#ED008A">1125</SPAN><BR>
+ STYLE="color:#ED008A">1119</SPAN><BR>
 &nbsp; &nbsp; &nbsp; <A NAME="dtl:9.2"></A>&#8203;<A
- HREF="mmtheorems12.html#mm1128b"><B>9.2&nbsp;&nbsp;More Quantifier
+ HREF="mmtheorems12.html#mm1122b"><B>9.2&nbsp;&nbsp;More Quantifier
  Laws.</B></A><BR>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <A
- HREF="mmtheorems12.html#mm1128s">9.2.1&nbsp;&nbsp;Quantifier Collection
+ HREF="mmtheorems12.html#mm1122s">9.2.1&nbsp;&nbsp;Quantifier Collection
  Laws.</A> &nbsp; <A HREF="qcallimr-P8.html">qcallimr-P8</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#EE0087">1128</SPAN><BR>
+ STYLE="color:#EE0087">1122</SPAN><BR>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <A
- HREF="mmtheorems12.html#mm1128s">9.2.1.1&nbsp;&nbsp;Implication.</A> &nbsp; <A
+ HREF="mmtheorems12.html#mm1122s">9.2.1.1&nbsp;&nbsp;Implication.</A> &nbsp; <A
  HREF="qcallimr-P8.html">qcallimr-P8</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#EE0087">1128</SPAN><BR>
+ STYLE="color:#EE0087">1122</SPAN><BR>
 <HR NOSHADE SIZE=1>
 <TABLE BORDER=0 WIDTH="100%">
   <TR>
@@ -1438,17 +1436,17 @@ This page:</FONT></B>
 Jump to page: 
 Contents&nbsp;
 <A HREF="mmtheorems1.html">1</A>&nbsp;<SPAN CLASS=r STYLE="color:#FB0000">1</SPAN>-<SPAN CLASS=r STYLE="color:#E63800">100</SPAN>
-<A HREF="mmtheorems2.html">2</A>&nbsp;<SPAN CLASS=r STYLE="color:#E63800">101</SPAN>-<SPAN CLASS=r STYLE="color:#B36A00">200</SPAN>
-<A HREF="mmtheorems3.html">3</A>&nbsp;<SPAN CLASS=r STYLE="color:#B36B00">201</SPAN>-<SPAN CLASS=r STYLE="color:#788500">300</SPAN>
-<A HREF="mmtheorems4.html">4</A>&nbsp;<SPAN CLASS=r STYLE="color:#778500">301</SPAN>-<SPAN CLASS=r STYLE="color:#3F8F00">400</SPAN>
-<A HREF="mmtheorems5.html">5</A>&nbsp;<SPAN CLASS=r STYLE="color:#3E8F00">401</SPAN>-<SPAN CLASS=r STYLE="color:#009223">500</SPAN>
-<A HREF="mmtheorems6.html">6</A>&nbsp;<SPAN CLASS=r STYLE="color:#009224">501</SPAN>-<SPAN CLASS=r STYLE="color:#008F79">600</SPAN>
-<A HREF="mmtheorems7.html">7</A>&nbsp;<SPAN CLASS=r STYLE="color:#008F7A">601</SPAN>-<SPAN CLASS=r STYLE="color:#0083E5">700</SPAN>
-<A HREF="mmtheorems8.html">8</A>&nbsp;<SPAN CLASS=r STYLE="color:#0083E6">701</SPAN>-<SPAN CLASS=r STYLE="color:#656FFF">800</SPAN>
-<A HREF="mmtheorems9.html">9</A>&nbsp;<SPAN CLASS=r STYLE="color:#666EFF">801</SPAN>-<SPAN CLASS=r STYLE="color:#AD48FF">900</SPAN>
-<A HREF="mmtheorems10.html">10</A>&nbsp;<SPAN CLASS=r STYLE="color:#AD48FF">901</SPAN>-<SPAN CLASS=r STYLE="color:#D214EE">1000</SPAN>
-<A HREF="mmtheorems11.html">11</A>&nbsp;<SPAN CLASS=r STYLE="color:#D214EE">1001</SPAN>-<SPAN CLASS=r STYLE="color:#EA00A3">1100</SPAN>
-<A HREF="mmtheorems12.html">12</A>&nbsp;<SPAN CLASS=r STYLE="color:#EA00A2">1101</SPAN>-<SPAN CLASS=r STYLE="color:#EE0084">1131</SPAN>
+<A HREF="mmtheorems2.html">2</A>&nbsp;<SPAN CLASS=r STYLE="color:#E63900">101</SPAN>-<SPAN CLASS=r STYLE="color:#B36B00">200</SPAN>
+<A HREF="mmtheorems3.html">3</A>&nbsp;<SPAN CLASS=r STYLE="color:#B26B00">201</SPAN>-<SPAN CLASS=r STYLE="color:#778500">300</SPAN>
+<A HREF="mmtheorems4.html">4</A>&nbsp;<SPAN CLASS=r STYLE="color:#778500">301</SPAN>-<SPAN CLASS=r STYLE="color:#3D8F00">400</SPAN>
+<A HREF="mmtheorems5.html">5</A>&nbsp;<SPAN CLASS=r STYLE="color:#3D8F00">401</SPAN>-<SPAN CLASS=r STYLE="color:#009226">500</SPAN>
+<A HREF="mmtheorems6.html">6</A>&nbsp;<SPAN CLASS=r STYLE="color:#009227">501</SPAN>-<SPAN CLASS=r STYLE="color:#008F7B">600</SPAN>
+<A HREF="mmtheorems7.html">7</A>&nbsp;<SPAN CLASS=r STYLE="color:#008F7C">601</SPAN>-<SPAN CLASS=r STYLE="color:#0182E8">700</SPAN>
+<A HREF="mmtheorems8.html">8</A>&nbsp;<SPAN CLASS=r STYLE="color:#0182E9">701</SPAN>-<SPAN CLASS=r STYLE="color:#696EFF">800</SPAN>
+<A HREF="mmtheorems9.html">9</A>&nbsp;<SPAN CLASS=r STYLE="color:#6A6DFF">801</SPAN>-<SPAN CLASS=r STYLE="color:#AF46FF">900</SPAN>
+<A HREF="mmtheorems10.html">10</A>&nbsp;<SPAN CLASS=r STYLE="color:#AF45FF">901</SPAN>-<SPAN CLASS=r STYLE="color:#D312EC">1000</SPAN>
+<A HREF="mmtheorems11.html">11</A>&nbsp;<SPAN CLASS=r STYLE="color:#D411EC">1001</SPAN>-<SPAN CLASS=r STYLE="color:#EB009D">1100</SPAN>
+<A HREF="mmtheorems12.html">12</A>&nbsp;<SPAN CLASS=r STYLE="color:#EB009C">1101</SPAN>-<SPAN CLASS=r STYLE="color:#EE0084">1125</SPAN>
 <HR NOSHADE SIZE=1>
 <TABLE BORDER=0 WIDTH="100%">
   <TR>

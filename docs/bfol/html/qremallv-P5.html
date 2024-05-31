@@ -16,10 +16,6 @@ img { margin-bottom: -4px }
    }
 -->
 </STYLE>
-<link rel="stylesheet" 
-media="screen" 
-href="https://fontlibrary.org/en/face/xits-math" 
-type="text/css"/> 
 <STYLE TYPE="text/css"> 
 <!--
   .wff { color: blue; } 
@@ -27,7 +23,11 @@ type="text/css"/>
   .term { color: green; } 
   .class { color: #CC33CC; } 
   .typecode { color: gray; } 
-  .math { font-family: XITSMathRegular; } 
+  @font-face {
+     font-family: XITSMath-Regular; 
+     src: url(../fonts/xits-math.woff); 
+  } 
+  .math { font-family: XITSMath-Regular; } 
 -->
 </STYLE>
 <TITLE>qremallv-P5 - bfol.mm Proof Explorer</TITLE>
@@ -76,7 +76,7 @@ bfol.mm Proof Explorer
 <HR NOSHADE SIZE=1>
 <CENTER><B><FONT SIZE="+1">Theorem <FONT
 COLOR="#006633">qremallv-P5</FONT></FONT></B>&nbsp;<SPAN CLASS=r
-STYLE="color:#0089B7">662</SPAN></CENTER>
+STYLE="color:#0089B4">656</SPAN></CENTER>
 <CENTER><TABLE><TR><TD ALIGN=LEFT><B>Description: </B>Universal Quantifier
 Removal (variable restriction).
 <P STYLE="margin-bottom:0em">
@@ -85,7 +85,7 @@ occur in '<SPAN CLASS=math><SPAN CLASS=wff>&#x1D711;</SPAN></SPAN>'.
 <P STYLE="margin-bottom:0em">
        The most general form is <A
 HREF="qremall-P6.html">qremall-P6</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#027FFE">728</SPAN>.</TD></TR></TABLE></CENTER>
+STYLE="color:#027FFC">722</SPAN>.</TD></TR></TABLE></CENTER>
 
 <CENTER><TABLE BORDER CELLSPACING=0 BGCOLOR="#EEFFFA"
 SUMMARY="Assertion">
@@ -114,7 +114,7 @@ SUMMARY="Proof of theorem">
 </TH><TH>Expression</TH></TR>
 <TR ALIGN=LEFT><TD>1</TD><TD>&nbsp;</TD><TD><A HREF="biref-P3.33a.html"
 TITLE="Equivalence Property: '`<->`' Reflexivity. `t.`">biref-P3.33a</A>&nbsp;<SPAN
-CLASS=r STYLE="color:#758500">307</SPAN></TD><TD><A NAME="1"></A>
+CLASS=r STYLE="color:#788400">297</SPAN></TD><TD><A NAME="1"></A>
 <SPAN CLASS=i>. . . 4</SPAN>
 <SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN>(<SPAN
 CLASS=wff>&#x1D711;</SPAN> &harr; <SPAN
@@ -122,7 +122,7 @@ CLASS=wff>&#x1D711;</SPAN>)</SPAN></TD></TR>
 <TR ALIGN=LEFT><TD>2</TD><TD><A HREF="#1">1</A></TD><TD><A
 HREF="rcp-NDIMP0addall.html"
 TITLE="( ) `=>` ( 1 `/\` ... `/\` n ). `t.`">rcp-NDIMP0addall</A>&nbsp;<SPAN
-CLASS=r STYLE="color:#A97000">217</SPAN></TD><TD><A NAME="2"></A>
+CLASS=r STYLE="color:#AE6D00">207</SPAN></TD><TD><A NAME="2"></A>
 <SPAN CLASS=i>. . 3</SPAN>
 <SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN>(<SPAN
 CLASS=objvar>&#x1D465;</SPAN> = <SPAN CLASS=objvar>&#x1D466;</SPAN> &rarr;
@@ -131,7 +131,7 @@ CLASS=wff>&#x1D711;</SPAN>))</SPAN></TD></TR>
 <TR ALIGN=LEFT><TD>3</TD><TD><A HREF="#2">2</A></TD><TD><A
 HREF="specisub-P5.html"
 TITLE="Specialization Theorem with Implicit Substitution. '`x`' cannot occur in either...">specisub-P5</A>&nbsp;<SPAN
-CLASS=r STYLE="color:#0089B4">660</SPAN></TD><TD><A NAME="3"></A>
+CLASS=r STYLE="color:#008AB1">654</SPAN></TD><TD><A NAME="3"></A>
 <SPAN CLASS=i>. 2</SPAN>
 <SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN>(&forall;<SPAN
 CLASS=objvar>&#x1D465;</SPAN><SPAN CLASS=wff>&#x1D711;</SPAN> &rarr; <SPAN
@@ -146,7 +146,7 @@ CLASS=objvar>&#x1D465;</SPAN><SPAN CLASS=wff>&#x1D711;</SPAN>)</SPAN></TD></TR>
 <TR ALIGN=LEFT><TD>5</TD><TD><A HREF="#3">3</A>, <A HREF="#4">4</A></TD><TD><A
 HREF="rcp-NDBII0.html"
 TITLE="'`<->`' Introduction. `t.`">rcp-NDBII0</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#967B00">249</SPAN></TD><TD><A NAME="5"></A>
+STYLE="color:#9B7800">239</SPAN></TD><TD><A NAME="5"></A>
 <SPAN CLASS=i>1</SPAN>
 <SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN>(&forall;<SPAN
 CLASS=objvar>&#x1D465;</SPAN><SPAN CLASS=wff>&#x1D711;</SPAN> &harr; <SPAN
@@ -166,7 +166,7 @@ STYLE="color:#FA0100">6</SPAN> &nbsp;<SPAN CLASS=math>&forall;</SPAN><A
 HREF="wff-forall.html">wff-forall</A>&nbsp;<SPAN CLASS=r
 STYLE="color:#FA0200">8</SPAN> &nbsp;<SPAN CLASS=math> &harr; </SPAN><A
 HREF="wff-bi.html">wff-bi</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#E53A00">103</SPAN></FONT></TD></TR>
+STYLE="color:#E43B00">104</SPAN></FONT></TD></TR>
 <TR><TD ALIGN=LEFT><FONT SIZE=-1><B>This theorem was proved from axioms:</B>
 &nbsp;<A HREF="ax-L1.html">ax-L1</A>&nbsp;<SPAN CLASS=r
 STYLE="color:#FA0200">11</SPAN> &nbsp;<A HREF="ax-L2.html">ax-L2</A>&nbsp;<SPAN
@@ -182,24 +182,24 @@ HREF="ax-L5.html">ax-L5</A>&nbsp;<SPAN CLASS=r STYLE="color:#F90400">17</SPAN>
 STYLE="color:#F90500">18</SPAN></FONT></TD></TR>
 <TR><TD ALIGN=LEFT><FONT SIZE=-1><B>This theorem depends on definitions:</B>
 &nbsp;<A HREF="df-bi-D2.1.html">df-bi-D2.1</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#E43C00">106</SPAN> &nbsp;<A
+STYLE="color:#E33D00">107</SPAN> &nbsp;<A
 HREF="df-and-D2.2.html">df-and-D2.2</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#D84C00">134</SPAN> &nbsp;<A
+STYLE="color:#D84C00">133</SPAN> &nbsp;<A
 HREF="df-or-D2.3.html">df-or-D2.3</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#CE5500">155</SPAN> &nbsp;<A
+STYLE="color:#D25100">145</SPAN> &nbsp;<A
 HREF="df-true-D2.4.html">df-true-D2.4</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#C95A00">165</SPAN> &nbsp;<A
+STYLE="color:#CE5500">155</SPAN> &nbsp;<A
 HREF="df-rcp-AND3.html">df-rcp-AND3</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#C55C00">171</SPAN> &nbsp;<A
+STYLE="color:#CB5800">161</SPAN> &nbsp;<A
 HREF="df-exists-D5.1.html">df-exists-D5.1</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#008F7B">602</SPAN></FONT></TD></TR>
+STYLE="color:#008F78">596</SPAN></FONT></TD></TR>
 <TR><TD ALIGN=LEFT><FONT SIZE=-1><B>This theorem is referenced by:</B> &nbsp;<A
 HREF="qceximrv-P5.html">qceximrv-P5</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#0086CD">678</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#0087C9">672</SPAN> &nbsp;<A
 HREF="qceximlv-P5.html">qceximlv-P5</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#0086CF">680</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#0086CC">674</SPAN> &nbsp;<A
 HREF="psubnfr-P6.html">psubnfr-P6</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#5B71FF">790</SPAN></FONT></TD></TR>
+&nbsp;<SPAN CLASS=r STYLE="color:#5A72FF">784</SPAN></FONT></TD></TR>
 </TABLE></CENTER>
 <TABLE BORDER=0 WIDTH="100%">
 <TR><TD WIDTH="25%">&nbsp;</TD>

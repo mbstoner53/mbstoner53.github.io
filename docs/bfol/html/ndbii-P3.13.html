@@ -16,10 +16,6 @@ img { margin-bottom: -4px }
    }
 -->
 </STYLE>
-<link rel="stylesheet" 
-media="screen" 
-href="https://fontlibrary.org/en/face/xits-math" 
-type="text/css"/> 
 <STYLE TYPE="text/css"> 
 <!--
   .wff { color: blue; } 
@@ -27,7 +23,11 @@ type="text/css"/>
   .term { color: green; } 
   .class { color: #CC33CC; } 
   .typecode { color: gray; } 
-  .math { font-family: XITSMathRegular; } 
+  @font-face {
+     font-family: XITSMath-Regular; 
+     src: url(../fonts/xits-math.woff); 
+  } 
+  .math { font-family: XITSMath-Regular; } 
 -->
 </STYLE>
 <TITLE>ndbii-P3.13 - bfol.mm Proof Explorer</TITLE>
@@ -76,7 +76,7 @@ bfol.mm Proof Explorer
 <HR NOSHADE SIZE=1>
 <CENTER><B><FONT SIZE="+1">Theorem <FONT
 COLOR="#006633">ndbii-P3.13</FONT></FONT></B>&nbsp;<SPAN CLASS=r
-STYLE="color:#BB6400">188</SPAN></CENTER>
+STYLE="color:#C06000">178</SPAN></CENTER>
 <CENTER><TABLE><TR><TD ALIGN=LEFT><B>Description: </B>Natural Deduction: '<SPAN
 CLASS=math>&harr;</SPAN>' Introduction Rule.
 <P STYLE="margin-bottom:0em">
@@ -131,7 +131,7 @@ CLASS=wff>&#x1D6FE;</SPAN> &rarr; (<SPAN CLASS=wff>&#x1D713;</SPAN> &rarr;
 <TR ALIGN=LEFT><TD>3</TD><TD><A HREF="#1">1</A>, <A HREF="#2">2</A></TD><TD><A
 HREF="bicmb-P2.5c.AC.2SH.html"
 TITLE="Deductive Form of ~bicmb-P2.5c .">bicmb-P2.5c.AC.2SH</A>&nbsp;<SPAN
-CLASS=r STYLE="color:#DE4500">120</SPAN></TD><TD><A NAME="3"></A>
+CLASS=r STYLE="color:#DE4600">121</SPAN></TD><TD><A NAME="3"></A>
 <SPAN CLASS=i>1</SPAN>
 <SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN>(<SPAN
 CLASS=wff>&#x1D6FE;</SPAN> &rarr; (<SPAN CLASS=wff>&#x1D711;</SPAN> &harr;
@@ -147,7 +147,7 @@ STYLE="color:#CC33CC;font-style:normal">class</SPAN></FONT></TD></TR>
 &rarr; </SPAN><A HREF="wff-imp.html">wff-imp</A>&nbsp;<SPAN CLASS=r
 STYLE="color:#FA0200">10</SPAN> &nbsp;<SPAN CLASS=math> &harr; </SPAN><A
 HREF="wff-bi.html">wff-bi</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#E53A00">103</SPAN></FONT></TD></TR>
+STYLE="color:#E43B00">104</SPAN></FONT></TD></TR>
 <TR><TD ALIGN=LEFT><FONT SIZE=-1><B>This theorem was proved from axioms:</B>
 &nbsp;<A HREF="ax-L1.html">ax-L1</A>&nbsp;<SPAN CLASS=r
 STYLE="color:#FA0200">11</SPAN> &nbsp;<A HREF="ax-L2.html">ax-L2</A>&nbsp;<SPAN
@@ -157,64 +157,64 @@ HREF="ax-L3.html">ax-L3</A>&nbsp;<SPAN CLASS=r STYLE="color:#F90300">13</SPAN>
 STYLE="color:#F90300">14</SPAN></FONT></TD></TR>
 <TR><TD ALIGN=LEFT><FONT SIZE=-1><B>This theorem depends on definitions:</B>
 &nbsp;<A HREF="df-bi-D2.1.html">df-bi-D2.1</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#E43C00">106</SPAN></FONT></TD></TR>
+STYLE="color:#E33D00">107</SPAN></FONT></TD></TR>
 <TR><TD ALIGN=LEFT><FONT SIZE=-1><B>This theorem is referenced by:</B> &nbsp;<A
 HREF="rcp-NDBII0.html">rcp-NDBII0</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#967B00">249</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#9B7800">239</SPAN> &nbsp;<A
 HREF="ndbii-P3.13.CL.html">ndbii-P3.13.CL</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#907D00">258</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#967B00">248</SPAN> &nbsp;<A
 HREF="bisym-P3.33b.html">bisym-P3.33b</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#748600">308</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#788400">298</SPAN> &nbsp;<A
 HREF="bitrns-P3.33c.html">bitrns-P3.33c</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#738600">312</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#768500">302</SPAN> &nbsp;<A
 HREF="subneg-P3.39.html">subneg-P3.39</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#6B8800">329</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#6D8800">323</SPAN> &nbsp;<A
 HREF="subiml-P3.40a.html">subiml-P3.40a</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#698800">331</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#6C8800">325</SPAN> &nbsp;<A
 HREF="subimr-P3.40b.html">subimr-P3.40b</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#688900">333</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#6B8800">327</SPAN> &nbsp;<A
 HREF="subimd-P3.40c.html">subimd-P3.40c</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#678900">335</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#6A8800">329</SPAN> &nbsp;<A
 HREF="subbil-P3.41a.html">subbil-P3.41a</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#658900">338</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#688900">332</SPAN> &nbsp;<A
 HREF="subandl-P3.42a.html">subandl-P3.42a</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#618A00">345</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#648A00">339</SPAN> &nbsp;<A
 HREF="suborl-P3.43a.html">suborl-P3.43a</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#5D8B00">352</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#5F8A00">346</SPAN> &nbsp;<A
 HREF="oroverbiint-P4.28d.html">oroverbiint-P4.28d</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#069311">477</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#09930F">471</SPAN> &nbsp;<A
 HREF="biasandorint-P4.34b.html">biasandorint-P4.34b</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#009321">498</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#00931E">492</SPAN> &nbsp;<A
 HREF="suballv-P5.html">suballv-P5</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#008D93">629</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#008D90">623</SPAN> &nbsp;<A
 HREF="subexv-P5.html">subexv-P5</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#008D94">630</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#008D91">624</SPAN> &nbsp;<A
 HREF="subeql-P5.html">subeql-P5</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#008C9B">638</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#008C99">632</SPAN> &nbsp;<A
 HREF="subeqr-P5.html">subeqr-P5</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#008C9E">641</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#008C9B">635</SPAN> &nbsp;<A
 HREF="subelofl-P5.html">subelofl-P5</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#008CA0">644</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#008C9E">638</SPAN> &nbsp;<A
 HREF="subelofr-P5.html">subelofr-P5</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#008CA2">646</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#008CA0">640</SPAN> &nbsp;<A
 HREF="lemma-L6.01a.html">lemma-L6.01a</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#067EFF">730</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#027FFE">724</SPAN> &nbsp;<A
 HREF="suball-P6.html">suball-P6</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#3778FF">759</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#3379FF">753</SPAN> &nbsp;<A
 HREF="subex-P6.html">subex-P6</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#3878FF">760</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#3579FF">754</SPAN> &nbsp;<A
 HREF="spliteq-P6-L1.html">spliteq-P6-L1</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#5373FF">781</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#5174FF">775</SPAN> &nbsp;<A
 HREF="splitelof-P6-L1.html">splitelof-P6-L1</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#5573FF">783</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#5373FF">777</SPAN> &nbsp;<A
 HREF="qremexd-P6.html">qremexd-P6</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#7B68FF">829</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#7A68FF">823</SPAN> &nbsp;<A
 HREF="gennfrcl-P7.html">gennfrcl-P7</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#CB21F9">969</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#CA22F9">963</SPAN> &nbsp;<A
 HREF="suball-P7.html">suball-P7</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#CD1DF6">979</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#CD1DF6">973</SPAN> &nbsp;<A
 HREF="subex-P7.html">subex-P7</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#DC01DF">1048</SPAN></FONT></TD></TR>
+&nbsp;<SPAN CLASS=r STYLE="color:#DC01DF">1042</SPAN></FONT></TD></TR>
 </TABLE></CENTER>
 <TABLE BORDER=0 WIDTH="100%">
 <TR><TD WIDTH="25%">&nbsp;</TD>

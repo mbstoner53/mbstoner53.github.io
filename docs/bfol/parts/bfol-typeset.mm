@@ -9,18 +9,22 @@ $)
 $( $t
 
 /* Custom CSS for Unicode fonts */
-htmlcss '<link rel="stylesheet" \n' + 
+/* htmlcss '<link rel="stylesheet" \n' + 
     'media="screen" \n' +
     'href="https://fontlibrary.org/en/face/xits-math" \n' +
-    'type="text/css"/> \n' +
-    '<STYLE TYPE="text/css"> \n' +
+    'type="text/css"/> \n' + */
+htmlcss '<STYLE TYPE="text/css"> \n' +
     '<!--\n' +
     '  .wff { color: blue; } \n' +
     '  .objvar { color: red; } \n' +
     '  .term { color: green; } \n' +
     '  .class { color: #CC33CC; } \n' +
     '  .typecode { color: gray; } \n' +
-    '  .math { font-family: XITSMathRegular; } \n' +
+    '  @font-face {\n' +
+    '     font-family: XITSMath-Regular; \n' +
+    '     src: url(../fonts/xits-math.woff); \n' +
+    '  } \n' +	
+    '  .math { font-family: XITSMath-Regular; } \n' +
     '-->\n' +
     '</STYLE>\n';
 
@@ -102,7 +106,7 @@ althtmldef "x." as " &sdot; ";
 latexdef "x." as "\cdot_p";
 
 /* ========================================================================= */
-/* Typesetting Constants */
+/* Comment Typesetting */
 
 althtmldef "&" as " &amp; ";
 latexdef "&" as "\mathrel{\&}";
@@ -116,7 +120,7 @@ latexdef "<=>" as "\Leftrightarrow";
 althtmldef ":=" as " &coloneq; ";
 latexdef ":=" as ":=";
 
-althtmldef "t." as " &dagger; ";
+althtmldef "t." as "&dagger;";
 latexdef "t." as "\dag";
 
 /* ************************************************************************* */

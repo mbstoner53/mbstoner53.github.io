@@ -16,10 +16,6 @@ img { margin-bottom: -4px }
    }
 -->
 </STYLE>
-<link rel="stylesheet" 
-media="screen" 
-href="https://fontlibrary.org/en/face/xits-math" 
-type="text/css"/> 
 <STYLE TYPE="text/css"> 
 <!--
   .wff { color: blue; } 
@@ -27,7 +23,11 @@ type="text/css"/>
   .term { color: green; } 
   .class { color: #CC33CC; } 
   .typecode { color: gray; } 
-  .math { font-family: XITSMathRegular; } 
+  @font-face {
+     font-family: XITSMath-Regular; 
+     src: url(../fonts/xits-math.woff); 
+  } 
+  .math { font-family: XITSMath-Regular; } 
 -->
 </STYLE>
 <TITLE>rcp-NDSEP5 - bfol.mm Proof Explorer</TITLE>
@@ -76,7 +76,7 @@ bfol.mm Proof Explorer
 <HR NOSHADE SIZE=1>
 <CENTER><B><FONT SIZE="+1">Theorem <FONT
 COLOR="#006633">rcp-NDSEP5</FONT></FONT></B>&nbsp;<SPAN CLASS=r
-STYLE="color:#B56900">198</SPAN></CENTER>
+STYLE="color:#BA6500">188</SPAN></CENTER>
 <CENTER><TABLE><TR><TD ALIGN=LEFT><B>Description: </B>( 1 <SPAN
 CLASS=math>&wedge;</SPAN> 2 <SPAN CLASS=math>&wedge;</SPAN> 3 <SPAN
 CLASS=math>&wedge;</SPAN> 4 <SPAN CLASS=math>&wedge;</SPAN> 5 ) <SPAN
@@ -134,7 +134,7 @@ CLASS=wff>&#x1D6FE;&#x2085;</SPAN>) &rarr; <SPAN
 CLASS=wff>&#x1D711;</SPAN>)</SPAN></TD></TR>
 <TR ALIGN=LEFT><TD>2</TD><TD>&nbsp;</TD><TD><A HREF="df-rcp-AND5.html"
 TITLE="'`/\`' 5-Tuple.">df-rcp-AND5</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#C35E00">175</SPAN></TD><TD><A NAME="2"></A>
+STYLE="color:#C85A00">165</SPAN></TD><TD><A NAME="2"></A>
 <SPAN CLASS=i>. . . 4</SPAN>
 <SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN>((<SPAN
 CLASS=wff>&#x1D6FE;&#x2081;</SPAN> &wedge; <SPAN
@@ -150,7 +150,7 @@ CLASS=wff>&#x1D6FE;&#x2085;</SPAN>))</SPAN></TD></TR>
 <TR ALIGN=LEFT><TD>3</TD><TD><A HREF="#2">2</A></TD><TD><A
 HREF="subiml-P2.8a.SH.html"
 TITLE="Inference from ~subiml-P2.8a .">subiml-P2.8a.SH</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#DA4A00">130</SPAN></TD><TD><A NAME="3"></A>
+STYLE="color:#DA4A00">129</SPAN></TD><TD><A NAME="3"></A>
 <SPAN CLASS=i>. . 3</SPAN>
 <SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN>(((<SPAN
 CLASS=wff>&#x1D6FE;&#x2081;</SPAN> &wedge; <SPAN
@@ -167,7 +167,7 @@ CLASS=wff>&#x1D711;</SPAN>))</SPAN></TD></TR>
 <TR ALIGN=LEFT><TD>4</TD><TD><A HREF="#3">3</A></TD><TD><A
 HREF="bifwd-P2.5a.SH.html"
 TITLE="Inference from ~bifwd-P2.5a .">bifwd-P2.5a.SH</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#E23F00">111</SPAN></TD><TD><A NAME="4"></A>
+STYLE="color:#E14000">112</SPAN></TD><TD><A NAME="4"></A>
 <SPAN CLASS=i>. 2</SPAN>
 <SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN>(((<SPAN
 CLASS=wff>&#x1D6FE;&#x2081;</SPAN> &wedge; <SPAN
@@ -203,11 +203,11 @@ STYLE="color:#CC33CC;font-style:normal">class</SPAN></FONT></TD></TR>
 &rarr; </SPAN><A HREF="wff-imp.html">wff-imp</A>&nbsp;<SPAN CLASS=r
 STYLE="color:#FA0200">10</SPAN> &nbsp;<SPAN CLASS=math> &wedge; </SPAN><A
 HREF="wff-and.html">wff-and</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#D84B00">133</SPAN> &nbsp;<SPAN CLASS=math> &wedge; </SPAN><A
+STYLE="color:#D94B00">132</SPAN> &nbsp;<SPAN CLASS=math> &wedge; </SPAN><A
 HREF="wff-rcp-AND4.html">wff-rcp-AND4</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#C55D00">172</SPAN> &nbsp;<SPAN CLASS=math> &wedge; </SPAN><A
+STYLE="color:#CA5900">162</SPAN> &nbsp;<SPAN CLASS=math> &wedge; </SPAN><A
 HREF="wff-rcp-AND5.html">wff-rcp-AND5</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#C35E00">174</SPAN></FONT></TD></TR>
+STYLE="color:#C95A00">164</SPAN></FONT></TD></TR>
 <TR><TD ALIGN=LEFT><FONT SIZE=-1><B>This theorem was proved from axioms:</B>
 &nbsp;<A HREF="ax-L1.html">ax-L1</A>&nbsp;<SPAN CLASS=r
 STYLE="color:#FA0200">11</SPAN> &nbsp;<A HREF="ax-L2.html">ax-L2</A>&nbsp;<SPAN
@@ -217,18 +217,18 @@ HREF="ax-L3.html">ax-L3</A>&nbsp;<SPAN CLASS=r STYLE="color:#F90300">13</SPAN>
 STYLE="color:#F90300">14</SPAN></FONT></TD></TR>
 <TR><TD ALIGN=LEFT><FONT SIZE=-1><B>This theorem depends on definitions:</B>
 &nbsp;<A HREF="df-bi-D2.1.html">df-bi-D2.1</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#E43C00">106</SPAN> &nbsp;<A
+STYLE="color:#E33D00">107</SPAN> &nbsp;<A
 HREF="df-rcp-AND5.html">df-rcp-AND5</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#C35E00">175</SPAN></FONT></TD></TR>
+STYLE="color:#C85A00">165</SPAN></FONT></TD></TR>
 <TR><TD ALIGN=LEFT><FONT SIZE=-1><B>This theorem is referenced by:</B> &nbsp;<A
 HREF="rcp-NDNEGI5.html">rcp-NDNEGI5</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#A07600">232</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#A57300">222</SPAN> &nbsp;<A
 HREF="rcp-NDIMI5.html">rcp-NDIMI5</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#9D7700">237</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#A37400">227</SPAN> &nbsp;<A
 HREF="rcp-NDORE5.html">rcp-NDORE5</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#967B00">248</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#9C7800">238</SPAN> &nbsp;<A
 HREF="rcp-FALSENEGI5.html">rcp-FALSENEGI5</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#1F9200">443</SPAN></FONT></TD></TR>
+&nbsp;<SPAN CLASS=r STYLE="color:#229200">437</SPAN></FONT></TD></TR>
 </TABLE></CENTER>
 <TABLE BORDER=0 WIDTH="100%">
 <TR><TD WIDTH="25%">&nbsp;</TD>

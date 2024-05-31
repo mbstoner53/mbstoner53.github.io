@@ -16,10 +16,6 @@ img { margin-bottom: -4px }
    }
 -->
 </STYLE>
-<link rel="stylesheet" 
-media="screen" 
-href="https://fontlibrary.org/en/face/xits-math" 
-type="text/css"/> 
 <STYLE TYPE="text/css"> 
 <!--
   .wff { color: blue; } 
@@ -27,7 +23,11 @@ type="text/css"/>
   .term { color: green; } 
   .class { color: #CC33CC; } 
   .typecode { color: gray; } 
-  .math { font-family: XITSMathRegular; } 
+  @font-face {
+     font-family: XITSMath-Regular; 
+     src: url(../fonts/xits-math.woff); 
+  } 
+  .math { font-family: XITSMath-Regular; } 
 -->
 </STYLE>
 <TITLE>oroverand-P4.27b - bfol.mm Proof Explorer</TITLE>
@@ -76,7 +76,7 @@ bfol.mm Proof Explorer
 <HR NOSHADE SIZE=1>
 <CENTER><B><FONT SIZE="+1">Theorem <FONT
 COLOR="#006633">oroverand-P4.27b</FONT></FONT></B>&nbsp;<SPAN CLASS=r
-STYLE="color:#0B930D">470</SPAN></CENTER>
+STYLE="color:#0E930B">464</SPAN></CENTER>
 <CENTER><TABLE><TR><TD ALIGN=LEFT><B>Description: </B>'<SPAN
 CLASS=math>&vee;</SPAN>' Distributes Over '<SPAN CLASS=math>&wedge;</SPAN>'.
 <SPAN CLASS=math>&dagger;</SPAN></TD></TR></TABLE></CENTER>
@@ -106,7 +106,7 @@ SUMMARY="Proof of theorem">
 </TH><TH>Expression</TH></TR>
 <TR ALIGN=LEFT><TD>1</TD><TD>&nbsp;</TD><TD><A HREF="oroverand-P4.27-L3.html"
 TITLE="Lemma for ~oroverand-P4.27b . `t.`">oroverand-P4.27-L3</A>&nbsp;<SPAN
-CLASS=r STYLE="color:#0D930C">468</SPAN></TD><TD><A NAME="1"></A>
+CLASS=r STYLE="color:#0F930A">462</SPAN></TD><TD><A NAME="1"></A>
 <SPAN CLASS=i>. 2</SPAN>
 <SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN>((<SPAN
 CLASS=wff>&#x1D711;</SPAN> &vee; (<SPAN CLASS=wff>&#x1D713;</SPAN> &wedge;
@@ -116,7 +116,7 @@ CLASS=wff>&#x1D711;</SPAN> &vee; <SPAN
 CLASS=wff>&#x1D712;</SPAN>)))</SPAN></TD></TR>
 <TR ALIGN=LEFT><TD>2</TD><TD>&nbsp;</TD><TD><A HREF="oroverand-P4.27-L4.html"
 TITLE="Lemma for ~oroverand-P4.27b . `t.`">oroverand-P4.27-L4</A>&nbsp;<SPAN
-CLASS=r STYLE="color:#0C930C">469</SPAN></TD><TD><A NAME="2"></A>
+CLASS=r STYLE="color:#0F930A">463</SPAN></TD><TD><A NAME="2"></A>
 <SPAN CLASS=i>. 2</SPAN>
 <SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN>(((<SPAN
 CLASS=wff>&#x1D711;</SPAN> &vee; <SPAN CLASS=wff>&#x1D713;</SPAN>) &wedge;
@@ -127,7 +127,7 @@ CLASS=wff>&#x1D712;</SPAN>)))</SPAN></TD></TR>
 <TR ALIGN=LEFT><TD>3</TD><TD><A HREF="#1">1</A>, <A HREF="#2">2</A></TD><TD><A
 HREF="rcp-NDBII0.html"
 TITLE="'`<->`' Introduction. `t.`">rcp-NDBII0</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#967B00">249</SPAN></TD><TD><A NAME="3"></A>
+STYLE="color:#9B7800">239</SPAN></TD><TD><A NAME="3"></A>
 <SPAN CLASS=i>1</SPAN>
 <SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN>((<SPAN
 CLASS=wff>&#x1D711;</SPAN> &vee; (<SPAN CLASS=wff>&#x1D713;</SPAN> &wedge;
@@ -144,11 +144,11 @@ STYLE="color:green;font-style:normal">term</SPAN> <SPAN CLASS=typecode
 STYLE="color:#CC33CC;font-style:normal">class</SPAN></FONT></TD></TR>
 <TR><TD ALIGN=LEFT><FONT SIZE=-1><B>Syntax hints:</B>  &nbsp;<SPAN CLASS=math>
 &harr; </SPAN><A HREF="wff-bi.html">wff-bi</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#E53A00">103</SPAN> &nbsp;<SPAN CLASS=math> &wedge; </SPAN><A
+STYLE="color:#E43B00">104</SPAN> &nbsp;<SPAN CLASS=math> &wedge; </SPAN><A
 HREF="wff-and.html">wff-and</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#D84B00">133</SPAN> &nbsp;<SPAN CLASS=math> &vee; </SPAN><A
+STYLE="color:#D94B00">132</SPAN> &nbsp;<SPAN CLASS=math> &vee; </SPAN><A
 HREF="wff-or.html">wff-or</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#CF5500">154</SPAN></FONT></TD></TR>
+STYLE="color:#D35100">144</SPAN></FONT></TD></TR>
 <TR><TD ALIGN=LEFT><FONT SIZE=-1><B>This theorem was proved from axioms:</B>
 &nbsp;<A HREF="ax-L1.html">ax-L1</A>&nbsp;<SPAN CLASS=r
 STYLE="color:#FA0200">11</SPAN> &nbsp;<A HREF="ax-L2.html">ax-L2</A>&nbsp;<SPAN
@@ -158,20 +158,20 @@ HREF="ax-L3.html">ax-L3</A>&nbsp;<SPAN CLASS=r STYLE="color:#F90300">13</SPAN>
 STYLE="color:#F90300">14</SPAN></FONT></TD></TR>
 <TR><TD ALIGN=LEFT><FONT SIZE=-1><B>This theorem depends on definitions:</B>
 &nbsp;<A HREF="df-bi-D2.1.html">df-bi-D2.1</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#E43C00">106</SPAN> &nbsp;<A
+STYLE="color:#E33D00">107</SPAN> &nbsp;<A
 HREF="df-and-D2.2.html">df-and-D2.2</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#D84C00">134</SPAN> &nbsp;<A
+STYLE="color:#D84C00">133</SPAN> &nbsp;<A
 HREF="df-or-D2.3.html">df-or-D2.3</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#CE5500">155</SPAN> &nbsp;<A
+STYLE="color:#D25100">145</SPAN> &nbsp;<A
 HREF="df-true-D2.4.html">df-true-D2.4</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#C95A00">165</SPAN> &nbsp;<A
+STYLE="color:#CE5500">155</SPAN> &nbsp;<A
 HREF="df-rcp-AND3.html">df-rcp-AND3</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#C55C00">171</SPAN> &nbsp;<A
+STYLE="color:#CB5800">161</SPAN> &nbsp;<A
 HREF="df-rcp-AND4.html">df-rcp-AND4</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#C45D00">173</SPAN></FONT></TD></TR>
+STYLE="color:#CA5900">163</SPAN></FONT></TD></TR>
 <TR><TD ALIGN=LEFT><FONT SIZE=-1><B>This theorem is referenced by:</B> &nbsp;<A
 HREF="oroverbi-P4.28-L3.html">oroverbi-P4.28-L3</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#08930F">474</SPAN></FONT></TD></TR>
+&nbsp;<SPAN CLASS=r STYLE="color:#0B930D">468</SPAN></FONT></TD></TR>
 </TABLE></CENTER>
 <TABLE BORDER=0 WIDTH="100%">
 <TR><TD WIDTH="25%">&nbsp;</TD>

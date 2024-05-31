@@ -16,10 +16,6 @@ img { margin-bottom: -4px }
    }
 -->
 </STYLE>
-<link rel="stylesheet" 
-media="screen" 
-href="https://fontlibrary.org/en/face/xits-math" 
-type="text/css"/> 
 <STYLE TYPE="text/css"> 
 <!--
   .wff { color: blue; } 
@@ -27,7 +23,11 @@ type="text/css"/>
   .term { color: green; } 
   .class { color: #CC33CC; } 
   .typecode { color: gray; } 
-  .math { font-family: XITSMathRegular; } 
+  @font-face {
+     font-family: XITSMath-Regular; 
+     src: url(../fonts/xits-math.woff); 
+  } 
+  .math { font-family: XITSMath-Regular; } 
 -->
 </STYLE>
 <TITLE>ndnfrex1-P7.8 - bfol.mm Proof Explorer</TITLE>
@@ -76,7 +76,7 @@ bfol.mm Proof Explorer
 <HR NOSHADE SIZE=1>
 <CENTER><B><FONT SIZE="+1">Theorem <FONT
 COLOR="#006633">ndnfrex1-P7.8</FONT></FONT></B>&nbsp;<SPAN CLASS=r
-STYLE="color:#8265FF">839</SPAN></CENTER>
+STYLE="color:#8165FF">833</SPAN></CENTER>
 <CENTER><TABLE><TR><TD ALIGN=LEFT><B>Description: </B>Natural Deduction:
 Effective Non-Freeness Rule 8.
 <P STYLE="margin-bottom:0em">
@@ -108,7 +108,7 @@ SUMMARY="Proof of theorem">
 </TH><TH>Expression</TH></TR>
 <TR ALIGN=LEFT><TD>1</TD><TD>&nbsp;</TD><TD><A HREF="nfrex1-P6.html"
 TITLE="ENF Over Existential Quantifier (same variable). See ~nfrex1w-P6 for a version that...">nfrex1-P6</A>&nbsp;<SPAN
-CLASS=r STYLE="color:#247BFF">748</SPAN></TD><TD><A NAME="1"></A>
+CLASS=r STYLE="color:#217BFF">742</SPAN></TD><TD><A NAME="1"></A>
 <SPAN CLASS=i>1</SPAN>
 <SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN>&#8498;<SPAN
 CLASS=objvar>&#x1D465;</SPAN>&exist;<SPAN CLASS=objvar>&#x1D465;</SPAN><SPAN
@@ -122,9 +122,9 @@ STYLE="color:green;font-style:normal">term</SPAN> <SPAN CLASS=typecode
 STYLE="color:#CC33CC;font-style:normal">class</SPAN></FONT></TD></TR>
 <TR><TD ALIGN=LEFT><FONT SIZE=-1><B>Syntax hints:</B>  &nbsp;<SPAN
 CLASS=math>&exist;</SPAN><A HREF="wff-exists.html">wff-exists</A>&nbsp;<SPAN
-CLASS=r STYLE="color:#008F7A">601</SPAN> &nbsp;<SPAN
+CLASS=r STYLE="color:#008F77">595</SPAN> &nbsp;<SPAN
 CLASS=math>&#8498;</SPAN><A HREF="wff-nfree.html">wff-nfree</A>&nbsp;<SPAN
-CLASS=r STYLE="color:#0085D9">687</SPAN></FONT></TD></TR>
+CLASS=r STYLE="color:#0085D5">681</SPAN></FONT></TD></TR>
 <TR><TD ALIGN=LEFT><FONT SIZE=-1><B>This theorem was proved from axioms:</B>
 &nbsp;<A HREF="ax-L1.html">ax-L1</A>&nbsp;<SPAN CLASS=r
 STYLE="color:#FA0200">11</SPAN> &nbsp;<A HREF="ax-L2.html">ax-L2</A>&nbsp;<SPAN
@@ -139,46 +139,46 @@ HREF="ax-L10.html">ax-L10</A>&nbsp;<SPAN CLASS=r
 STYLE="color:#F80700">27</SPAN></FONT></TD></TR>
 <TR><TD ALIGN=LEFT><FONT SIZE=-1><B>This theorem depends on definitions:</B>
 &nbsp;<A HREF="df-bi-D2.1.html">df-bi-D2.1</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#E43C00">106</SPAN> &nbsp;<A
+STYLE="color:#E33D00">107</SPAN> &nbsp;<A
 HREF="df-and-D2.2.html">df-and-D2.2</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#D84C00">134</SPAN> &nbsp;<A
+STYLE="color:#D84C00">133</SPAN> &nbsp;<A
 HREF="df-or-D2.3.html">df-or-D2.3</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#CE5500">155</SPAN> &nbsp;<A
+STYLE="color:#D25100">145</SPAN> &nbsp;<A
 HREF="df-true-D2.4.html">df-true-D2.4</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#C95A00">165</SPAN> &nbsp;<A
+STYLE="color:#CE5500">155</SPAN> &nbsp;<A
 HREF="df-rcp-AND3.html">df-rcp-AND3</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#C55C00">171</SPAN> &nbsp;<A
+STYLE="color:#CB5800">161</SPAN> &nbsp;<A
 HREF="df-exists-D5.1.html">df-exists-D5.1</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#008F7B">602</SPAN> &nbsp;<A
+STYLE="color:#008F78">596</SPAN> &nbsp;<A
 HREF="df-nfree-D6.1.html">df-nfree-D6.1</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#0084DA">688</SPAN></FONT></TD></TR>
+STYLE="color:#0085D7">682</SPAN></FONT></TD></TR>
 <TR><TD ALIGN=LEFT><FONT SIZE=-1><B>This theorem is referenced by:</B> &nbsp;<A
 HREF="allnegex-P7-L1.html">allnegex-P7-L1</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#C826FA">962</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#C726FA">956</SPAN> &nbsp;<A
 HREF="allnegex-P7-L2.html">allnegex-P7-L2</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#C825FA">963</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#C825FA">957</SPAN> &nbsp;<A
 HREF="dfnfreealtif-P7.html">dfnfreealtif-P7</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#CB21F9">970</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#CB21F9">964</SPAN> &nbsp;<A
 HREF="qimeqallhalf-P7.html">qimeqallhalf-P7</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#CE1CF5">981</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#CE1CF5">975</SPAN> &nbsp;<A
 HREF="axL11ex-P7.html">axL11ex-P7</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#CF1AF3">987</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#CF1AF3">981</SPAN> &nbsp;<A
 HREF="exnegallint-P7.html">exnegallint-P7</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#DD00DB">1053</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#DD00DC">1047</SPAN> &nbsp;<A
 HREF="qimeqex-P7-L1.html">qimeqex-P7-L1</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#DF00D3">1060</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#DF00D3">1054</SPAN> &nbsp;<A
 HREF="qimeqex-P7-L2.html">qimeqex-P7-L2</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#DF00D1">1061</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#DF00D2">1055</SPAN> &nbsp;<A
 HREF="exgennfr-P8.html">exgennfr-P8</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#E800AC">1091</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#E800AD">1085</SPAN> &nbsp;<A
 HREF="idempotex-P8.html">idempotex-P8</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#EA00A3">1100</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#EA00A3">1094</SPAN> &nbsp;<A
 HREF="idempotallex-P8.html">idempotallex-P8</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#EA00A2">1101</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#EA00A2">1095</SPAN> &nbsp;<A
 HREF="idempotexnex-P8.html">idempotexnex-P8</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#EA009F">1104</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#EA009F">1098</SPAN> &nbsp;<A
 HREF="idempotallnex-P8.html">idempotallnex-P8</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#EA009E">1105</SPAN></FONT></TD></TR>
+&nbsp;<SPAN CLASS=r STYLE="color:#EA009E">1099</SPAN></FONT></TD></TR>
 </TABLE></CENTER>
 <TABLE BORDER=0 WIDTH="100%">
 <TR><TD WIDTH="25%">&nbsp;</TD>

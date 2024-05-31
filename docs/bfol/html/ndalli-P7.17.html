@@ -16,10 +16,6 @@ img { margin-bottom: -4px }
    }
 -->
 </STYLE>
-<link rel="stylesheet" 
-media="screen" 
-href="https://fontlibrary.org/en/face/xits-math" 
-type="text/css"/> 
 <STYLE TYPE="text/css"> 
 <!--
   .wff { color: blue; } 
@@ -27,7 +23,11 @@ type="text/css"/>
   .term { color: green; } 
   .class { color: #CC33CC; } 
   .typecode { color: gray; } 
-  .math { font-family: XITSMathRegular; } 
+  @font-face {
+     font-family: XITSMath-Regular; 
+     src: url(../fonts/xits-math.woff); 
+  } 
+  .math { font-family: XITSMath-Regular; } 
 -->
 </STYLE>
 <TITLE>ndalli-P7.17 - bfol.mm Proof Explorer</TITLE>
@@ -76,7 +76,7 @@ bfol.mm Proof Explorer
 <HR NOSHADE SIZE=1>
 <CENTER><B><FONT SIZE="+1">Theorem <FONT
 COLOR="#006633">ndalli-P7.17</FONT></FONT></B>&nbsp;<SPAN CLASS=r
-STYLE="color:#8863FF">848</SPAN></CENTER>
+STYLE="color:#8763FF">842</SPAN></CENTER>
 <CENTER><TABLE><TR><TD ALIGN=LEFT><B>Description: </B>Natural Deduction: '<SPAN
 CLASS=math>&forall;</SPAN>' Introduction Rule.
 <P STYLE="margin-bottom:0em">
@@ -181,7 +181,7 @@ CLASS=wff>&#x1D711;</SPAN>)</SPAN></TD></TR>
 <TR ALIGN=LEFT><TD>4</TD><TD><A HREF="#1">1</A>, <A HREF="#2">2</A>, <A
 HREF="#3">3</A></TD><TD><A HREF="ndalli-P6.html"
 TITLE="Natural Deduction Form of Universal Quantifier Introduction.">ndalli-P6</A>&nbsp;<SPAN
-CLASS=r STYLE="color:#7A68FF">828</SPAN></TD><TD><A NAME="4"></A>
+CLASS=r STYLE="color:#7968FF">822</SPAN></TD><TD><A NAME="4"></A>
 <SPAN CLASS=i>1</SPAN>
 <SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN>(<SPAN
 CLASS=wff>&#x1D6FE;</SPAN> &rarr; &forall;<SPAN
@@ -201,9 +201,9 @@ STYLE="color:#FA0200">8</SPAN> &nbsp;<SPAN CLASS=math> &rarr; </SPAN><A
 HREF="wff-imp.html">wff-imp</A>&nbsp;<SPAN CLASS=r
 STYLE="color:#FA0200">10</SPAN> &nbsp;<SPAN CLASS=math>&#8498;</SPAN><A
 HREF="wff-nfree.html">wff-nfree</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#0085D9">687</SPAN> &nbsp;<SPAN CLASS=math>[</SPAN><A
+STYLE="color:#0085D5">681</SPAN> &nbsp;<SPAN CLASS=math>[</SPAN><A
 HREF="wff-psub.html">wff-psub</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#0280F7">720</SPAN></FONT></TD></TR>
+STYLE="color:#0280F5">714</SPAN></FONT></TD></TR>
 <TR><TD ALIGN=LEFT><FONT SIZE=-1><B>This theorem was proved from axioms:</B>
 &nbsp;<A HREF="ax-L1.html">ax-L1</A>&nbsp;<SPAN CLASS=r
 STYLE="color:#FA0200">11</SPAN> &nbsp;<A HREF="ax-L2.html">ax-L2</A>&nbsp;<SPAN
@@ -226,28 +226,28 @@ HREF="ax-L12.html">ax-L12</A>&nbsp;<SPAN CLASS=r
 STYLE="color:#F80800">29</SPAN></FONT></TD></TR>
 <TR><TD ALIGN=LEFT><FONT SIZE=-1><B>This theorem depends on definitions:</B>
 &nbsp;<A HREF="df-bi-D2.1.html">df-bi-D2.1</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#E43C00">106</SPAN> &nbsp;<A
+STYLE="color:#E33D00">107</SPAN> &nbsp;<A
 HREF="df-and-D2.2.html">df-and-D2.2</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#D84C00">134</SPAN> &nbsp;<A
+STYLE="color:#D84C00">133</SPAN> &nbsp;<A
 HREF="df-or-D2.3.html">df-or-D2.3</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#CE5500">155</SPAN> &nbsp;<A
+STYLE="color:#D25100">145</SPAN> &nbsp;<A
 HREF="df-true-D2.4.html">df-true-D2.4</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#C95A00">165</SPAN> &nbsp;<A
+STYLE="color:#CE5500">155</SPAN> &nbsp;<A
 HREF="df-rcp-AND3.html">df-rcp-AND3</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#C55C00">171</SPAN> &nbsp;<A
+STYLE="color:#CB5800">161</SPAN> &nbsp;<A
 HREF="df-exists-D5.1.html">df-exists-D5.1</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#008F7B">602</SPAN> &nbsp;<A
+STYLE="color:#008F78">596</SPAN> &nbsp;<A
 HREF="df-nfree-D6.1.html">df-nfree-D6.1</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#0084DA">688</SPAN> &nbsp;<A
+STYLE="color:#0085D7">682</SPAN> &nbsp;<A
 HREF="df-psub-D6.2.html">df-psub-D6.2</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#027FF9">722</SPAN></FONT></TD></TR>
+STYLE="color:#0280F7">716</SPAN></FONT></TD></TR>
 <TR><TD ALIGN=LEFT><FONT SIZE=-1><B>This theorem is referenced by:</B> &nbsp;<A
 HREF="ndalli-P7.17.VR1of2.html">ndalli-P7.17.VR1of2</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#9958FF">870</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#9858FF">864</SPAN> &nbsp;<A
 HREF="ndalli-P7.17.VR2of2.html">ndalli-P7.17.VR2of2</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#9A57FF">871</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#9958FF">865</SPAN> &nbsp;<A
 HREF="ndalli-P7.17.VR12of2.html">ndalli-P7.17.VR12of2</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#9B57FF">872</SPAN></FONT></TD></TR>
+&nbsp;<SPAN CLASS=r STYLE="color:#9957FF">866</SPAN></FONT></TD></TR>
 </TABLE></CENTER>
 <TABLE BORDER=0 WIDTH="100%">
 <TR><TD WIDTH="25%">&nbsp;</TD>

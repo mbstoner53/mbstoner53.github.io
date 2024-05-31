@@ -16,10 +16,6 @@ img { margin-bottom: -4px }
    }
 -->
 </STYLE>
-<link rel="stylesheet" 
-media="screen" 
-href="https://fontlibrary.org/en/face/xits-math" 
-type="text/css"/> 
 <STYLE TYPE="text/css"> 
 <!--
   .wff { color: blue; } 
@@ -27,7 +23,11 @@ type="text/css"/>
   .term { color: green; } 
   .class { color: #CC33CC; } 
   .typecode { color: gray; } 
-  .math { font-family: XITSMathRegular; } 
+  @font-face {
+     font-family: XITSMath-Regular; 
+     src: url(../fonts/xits-math.woff); 
+  } 
+  .math { font-family: XITSMath-Regular; } 
 -->
 </STYLE>
 <TITLE>submultl-P5 - bfol.mm Proof Explorer</TITLE>
@@ -76,7 +76,7 @@ bfol.mm Proof Explorer
 <HR NOSHADE SIZE=1>
 <CENTER><B><FONT SIZE="+1">Theorem <FONT
 COLOR="#006633">submultl-P5</FONT></FONT></B>&nbsp;<SPAN CLASS=r
-STYLE="color:#008AAE">655</SPAN></CENTER>
+STYLE="color:#008BAA">649</SPAN></CENTER>
 <CENTER><TABLE><TR><TD ALIGN=LEFT><B>Description: </B>Left Substitution Law for
 '<SPAN CLASS=math>&sdot;</SPAN>'.</TD></TR></TABLE></CENTER>
 
@@ -128,7 +128,7 @@ CLASS=term>&#x1D464;</SPAN>))</SPAN></TD></TR>
 <TR ALIGN=LEFT><TD>3</TD><TD><A HREF="#1">1</A>, <A HREF="#2">2</A></TD><TD><A
 HREF="syl-P3.24.RC.html"
 TITLE="Inference Form of ~syl-P3.24.RC . `t.`">syl-P3.24.RC</A>&nbsp;<SPAN
-CLASS=r STYLE="color:#887F00">270</SPAN></TD><TD><A NAME="3"></A>
+CLASS=r STYLE="color:#8D7E00">260</SPAN></TD><TD><A NAME="3"></A>
 <SPAN CLASS=i>1</SPAN>
 <SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN>(<SPAN
 CLASS=wff>&#x1D6FE;</SPAN> &rarr; (<SPAN CLASS=term>&#x1D461;</SPAN> &sdot;
@@ -159,16 +159,16 @@ HREF="ax-L9-multl.html">ax-L9-multl</A>&nbsp;<SPAN CLASS=r
 STYLE="color:#F80700">25</SPAN></FONT></TD></TR>
 <TR><TD ALIGN=LEFT><FONT SIZE=-1><B>This theorem depends on definitions:</B>
 &nbsp;<A HREF="df-bi-D2.1.html">df-bi-D2.1</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#E43C00">106</SPAN> &nbsp;<A
+STYLE="color:#E33D00">107</SPAN> &nbsp;<A
 HREF="df-and-D2.2.html">df-and-D2.2</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#D84C00">134</SPAN> &nbsp;<A
+STYLE="color:#D84C00">133</SPAN> &nbsp;<A
 HREF="df-true-D2.4.html">df-true-D2.4</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#C95A00">165</SPAN></FONT></TD></TR>
+STYLE="color:#CE5500">155</SPAN></FONT></TD></TR>
 <TR><TD ALIGN=LEFT><FONT SIZE=-1><B>This theorem is referenced by:</B> &nbsp;<A
 HREF="submultd-P5.html">submultd-P5</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#008AB0">657</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#008AAD">651</SPAN> &nbsp;<A
 HREF="ndsubmultl-P7.24d.html">ndsubmultl-P7.24d</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#915DFF">860</SPAN></FONT></TD></TR>
+&nbsp;<SPAN CLASS=r STYLE="color:#905EFF">854</SPAN></FONT></TD></TR>
 </TABLE></CENTER>
 <TABLE BORDER=0 WIDTH="100%">
 <TR><TD WIDTH="25%">&nbsp;</TD>

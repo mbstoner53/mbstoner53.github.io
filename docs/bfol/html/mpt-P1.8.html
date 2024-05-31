@@ -16,10 +16,6 @@ img { margin-bottom: -4px }
    }
 -->
 </STYLE>
-<link rel="stylesheet" 
-media="screen" 
-href="https://fontlibrary.org/en/face/xits-math" 
-type="text/css"/> 
 <STYLE TYPE="text/css"> 
 <!--
   .wff { color: blue; } 
@@ -27,7 +23,11 @@ type="text/css"/>
   .term { color: green; } 
   .class { color: #CC33CC; } 
   .typecode { color: gray; } 
-  .math { font-family: XITSMathRegular; } 
+  @font-face {
+     font-family: XITSMath-Regular; 
+     src: url(../fonts/xits-math.woff); 
+  } 
+  .math { font-family: XITSMath-Regular; } 
 -->
 </STYLE>
 <TITLE>mpt-P1.8 - bfol.mm Proof Explorer</TITLE>
@@ -137,7 +137,9 @@ STYLE="color:#F90300">14</SPAN></FONT></TD></TR>
 HREF="mpt-P1.8.AC.2SH.html">mpt-P1.8.AC.2SH</A>
 &nbsp;<SPAN CLASS=r STYLE="color:#F31900">58</SPAN> &nbsp;<A
 HREF="mpt-P1.8.2AC.2SH.html">mpt-P1.8.2AC.2SH</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#F31900">59</SPAN></FONT></TD></TR>
+&nbsp;<SPAN CLASS=r STYLE="color:#F31A00">59</SPAN> &nbsp;<A
+HREF="mpt-P1.8.3AC.2SH.html">mpt-P1.8.3AC.2SH</A>
+&nbsp;<SPAN CLASS=r STYLE="color:#F21A00">60</SPAN></FONT></TD></TR>
 </TABLE></CENTER>
 <TABLE BORDER=0 WIDTH="100%">
 <TR><TD WIDTH="25%">&nbsp;</TD>

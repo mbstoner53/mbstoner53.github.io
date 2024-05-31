@@ -16,10 +16,6 @@ img { margin-bottom: -4px }
    }
 -->
 </STYLE>
-<link rel="stylesheet" 
-media="screen" 
-href="https://fontlibrary.org/en/face/xits-math" 
-type="text/css"/> 
 <STYLE TYPE="text/css"> 
 <!--
   .wff { color: blue; } 
@@ -27,7 +23,11 @@ type="text/css"/>
   .term { color: green; } 
   .class { color: #CC33CC; } 
   .typecode { color: gray; } 
-  .math { font-family: XITSMathRegular; } 
+  @font-face {
+     font-family: XITSMath-Regular; 
+     src: url(../fonts/xits-math.woff); 
+  } 
+  .math { font-family: XITSMath-Regular; } 
 -->
 </STYLE>
 <TITLE>ndsubsucc-P7.24a.RC - bfol.mm Proof Explorer</TITLE>
@@ -52,7 +52,7 @@ bfol.mm Proof Explorer
       &lt; Previous</A>&nbsp;&nbsp;
       <A HREF="ndsubaddl-P7.24b.RC.html">Next &gt;</A>
       </FONT><FONT FACE=sans-serif SIZE=-2>
-      <BR><A HREF="mmtheorems10.html#ndsubsucc-P7.24a.RC">Nearby theorems</A>
+      <BR><A HREF="mmtheorems9.html#ndsubsucc-P7.24a.RC">Nearby theorems</A>
       </FONT>
     </TD>
   </TR>
@@ -76,10 +76,10 @@ bfol.mm Proof Explorer
 <HR NOSHADE SIZE=1>
 <CENTER><B><FONT SIZE="+1">Theorem <FONT
 COLOR="#006633">ndsubsucc-P7.24a.RC</FONT></FONT></B>&nbsp;<SPAN CLASS=r
-STYLE="color:#AE47FF">903</SPAN></CENTER>
+STYLE="color:#AE47FF">897</SPAN></CENTER>
 <CENTER><TABLE><TR><TD ALIGN=LEFT><B>Description: </B>Inference Form of <A
 HREF="ndsubsucc-P7.24a.html">ndsubsucc-P7.24a</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#8F5EFF">857</SPAN>. <SPAN
+STYLE="color:#8D5FFF">851</SPAN>. <SPAN
 CLASS=math>&dagger;</SPAN></TD></TR></TABLE></CENTER>
 
 <CENTER><TABLE BORDER CELLSPACING=0 BGCOLOR="#EEFFFA"
@@ -121,7 +121,7 @@ CLASS=term>&#x1D462;</SPAN></SPAN></TD></TR>
 <TR ALIGN=LEFT><TD>2</TD><TD><A HREF="#1">1</A></TD><TD><A
 HREF="ndtruei-P3.17.html"
 TITLE="Natural Deduction: '`T.`' Introduction Rule. This can be used to turn an ordinary...">ndtruei-P3.17</A>&nbsp;<SPAN
-CLASS=r STYLE="color:#B86600">192</SPAN></TD><TD><A NAME="2"></A>
+CLASS=r STYLE="color:#BE6200">182</SPAN></TD><TD><A NAME="2"></A>
 <SPAN CLASS=i>. . 3</SPAN>
 <SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN>(&top; &rarr; <SPAN
 CLASS=term>&#x1D461;</SPAN> = <SPAN
@@ -129,7 +129,7 @@ CLASS=term>&#x1D462;</SPAN>)</SPAN></TD></TR>
 <TR ALIGN=LEFT><TD>3</TD><TD><A HREF="#2">2</A></TD><TD><A
 HREF="subsucc-P5.html"
 TITLE="Substitution Law for 's&lsquo;'.">subsucc-P5</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#008BA7">650</SPAN></TD><TD><A NAME="3"></A>
+STYLE="color:#008BA4">644</SPAN></TD><TD><A NAME="3"></A>
 <SPAN CLASS=i>. 2</SPAN>
 <SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN>(&top; &rarr;
 s&lsquo;<SPAN CLASS=term>&#x1D461;</SPAN> = s&lsquo;<SPAN
@@ -137,7 +137,7 @@ CLASS=term>&#x1D462;</SPAN>)</SPAN></TD></TR>
 <TR ALIGN=LEFT><TD>4</TD><TD><A HREF="#3">3</A></TD><TD><A
 HREF="ndtruee-P3.18.html"
 TITLE="Natural Deduction: '`T.`' Elimination Rule. Rules 17 and 18 allow us to write '`( T....">ndtruee-P3.18</A>&nbsp;<SPAN
-CLASS=r STYLE="color:#B86700">193</SPAN></TD><TD><A NAME="4"></A>
+CLASS=r STYLE="color:#BD6300">183</SPAN></TD><TD><A NAME="4"></A>
 <SPAN CLASS=i>1</SPAN>
 <SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN>s&lsquo;<SPAN
 CLASS=term>&#x1D461;</SPAN> = s&lsquo;<SPAN
@@ -155,7 +155,7 @@ CLASS=r STYLE="color:#FA0000">3</SPAN> &nbsp;<SPAN CLASS=math> = </SPAN><A
 HREF="wff-equals.html">wff-equals</A>&nbsp;<SPAN CLASS=r
 STYLE="color:#FA0100">6</SPAN> &nbsp;<SPAN CLASS=math>&top;</SPAN><A
 HREF="wff-true.html">wff-true</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#CA5900">163</SPAN></FONT></TD></TR>
+STYLE="color:#CF5500">153</SPAN></FONT></TD></TR>
 <TR><TD ALIGN=LEFT><FONT SIZE=-1><B>This theorem was proved from axioms:</B>
 &nbsp;<A HREF="ax-L1.html">ax-L1</A>&nbsp;<SPAN CLASS=r
 STYLE="color:#FA0200">11</SPAN> &nbsp;<A HREF="ax-L2.html">ax-L2</A>&nbsp;<SPAN
@@ -167,11 +167,11 @@ HREF="ax-L9-succ.html">ax-L9-succ</A>&nbsp;<SPAN CLASS=r
 STYLE="color:#F80600">22</SPAN></FONT></TD></TR>
 <TR><TD ALIGN=LEFT><FONT SIZE=-1><B>This theorem depends on definitions:</B>
 &nbsp;<A HREF="df-bi-D2.1.html">df-bi-D2.1</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#E43C00">106</SPAN> &nbsp;<A
+STYLE="color:#E33D00">107</SPAN> &nbsp;<A
 HREF="df-and-D2.2.html">df-and-D2.2</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#D84C00">134</SPAN> &nbsp;<A
+STYLE="color:#D84C00">133</SPAN> &nbsp;<A
 HREF="df-true-D2.4.html">df-true-D2.4</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#C95A00">165</SPAN></FONT></TD></TR>
+STYLE="color:#CE5500">155</SPAN></FONT></TD></TR>
 <TR><TD ALIGN=LEFT><FONT SIZE=-1><B>This theorem is referenced by:</B>
 (None)</FONT></TD></TR>
 </TABLE></CENTER>

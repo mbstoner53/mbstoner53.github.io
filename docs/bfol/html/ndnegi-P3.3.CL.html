@@ -16,10 +16,6 @@ img { margin-bottom: -4px }
    }
 -->
 </STYLE>
-<link rel="stylesheet" 
-media="screen" 
-href="https://fontlibrary.org/en/face/xits-math" 
-type="text/css"/> 
 <STYLE TYPE="text/css"> 
 <!--
   .wff { color: blue; } 
@@ -27,7 +23,11 @@ type="text/css"/>
   .term { color: green; } 
   .class { color: #CC33CC; } 
   .typecode { color: gray; } 
-  .math { font-family: XITSMathRegular; } 
+  @font-face {
+     font-family: XITSMath-Regular; 
+     src: url(../fonts/xits-math.woff); 
+  } 
+  .math { font-family: XITSMath-Regular; } 
 -->
 </STYLE>
 <TITLE>ndnegi-P3.3.CL - bfol.mm Proof Explorer</TITLE>
@@ -76,10 +76,10 @@ bfol.mm Proof Explorer
 <HR NOSHADE SIZE=1>
 <CENTER><B><FONT SIZE="+1">Theorem <FONT
 COLOR="#006633">ndnegi-P3.3.CL</FONT></FONT></B>&nbsp;<SPAN CLASS=r
-STYLE="color:#947B00">252</SPAN></CENTER>
+STYLE="color:#9A7900">242</SPAN></CENTER>
 <CENTER><TABLE><TR><TD ALIGN=LEFT><B>Description: </B>Closed Form of <A
 HREF="ndnegi-P3.3.html">ndnegi-P3.3</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#C16000">178</SPAN>. <SPAN
+STYLE="color:#C75B00">168</SPAN>. <SPAN
 CLASS=math>&dagger;</SPAN></TD></TR></TABLE></CENTER>
 
 <CENTER><TABLE BORDER CELLSPACING=0 BGCOLOR="#EEFFFA"
@@ -105,7 +105,7 @@ SUMMARY="Proof of theorem">
 </TH><TH>Expression</TH></TR>
 <TR ALIGN=LEFT><TD>1</TD><TD>&nbsp;</TD><TD><A HREF="rcp-NDASM3of3.html"
 TITLE="( 1 `/\` 2 `/\` 3 ) `->` 3. `t.`">rcp-NDASM3of3</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#AF6D00">207</SPAN></TD><TD><A NAME="1"></A>
+STYLE="color:#B56900">197</SPAN></TD><TD><A NAME="1"></A>
 <SPAN CLASS=i>. . 3</SPAN>
 <SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN>(((<SPAN
 CLASS=wff>&#x1D711;</SPAN> &rarr; <SPAN CLASS=wff>&#x1D713;</SPAN>) &wedge;
@@ -114,7 +114,7 @@ CLASS=wff>&#x1D713;</SPAN>) &wedge; <SPAN CLASS=wff>&#x1D711;</SPAN>) &rarr;
 <SPAN CLASS=wff>&#x1D711;</SPAN>)</SPAN></TD></TR>
 <TR ALIGN=LEFT><TD>2</TD><TD>&nbsp;</TD><TD><A HREF="rcp-NDASM1of3.html"
 TITLE="( 1 `/\` 2 `/\` 3 ) `->` 1. `t.`">rcp-NDASM1of3</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#B06C00">205</SPAN></TD><TD><A NAME="2"></A>
+STYLE="color:#B66800">195</SPAN></TD><TD><A NAME="2"></A>
 <SPAN CLASS=i>. . 3</SPAN>
 <SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN>(((<SPAN
 CLASS=wff>&#x1D711;</SPAN> &rarr; <SPAN CLASS=wff>&#x1D713;</SPAN>) &wedge;
@@ -125,7 +125,7 @@ CLASS=wff>&#x1D713;</SPAN>))</SPAN></TD></TR>
 <TR ALIGN=LEFT><TD>3</TD><TD><A HREF="#1">1</A>, <A HREF="#2">2</A></TD><TD><A
 HREF="ndime-P3.6.html"
 TITLE="Natural Deduction: '`->`' Elimination Rule. This rule is just Modus Ponens with an...">ndime-P3.6</A>&nbsp;<SPAN
-CLASS=r STYLE="color:#BF6100">181</SPAN></TD><TD><A NAME="3"></A>
+CLASS=r STYLE="color:#C55D00">171</SPAN></TD><TD><A NAME="3"></A>
 <SPAN CLASS=i>. 2</SPAN>
 <SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN>(((<SPAN
 CLASS=wff>&#x1D711;</SPAN> &rarr; <SPAN CLASS=wff>&#x1D713;</SPAN>) &wedge;
@@ -134,7 +134,7 @@ CLASS=wff>&#x1D713;</SPAN>) &wedge; <SPAN CLASS=wff>&#x1D711;</SPAN>) &rarr;
 <SPAN CLASS=wff>&#x1D713;</SPAN>)</SPAN></TD></TR>
 <TR ALIGN=LEFT><TD>4</TD><TD>&nbsp;</TD><TD><A HREF="rcp-NDASM2of3.html"
 TITLE="( 1 `/\` 2 `/\` 3 ) `->` 2. `t.`">rcp-NDASM2of3</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#B06D00">206</SPAN></TD><TD><A NAME="4"></A>
+STYLE="color:#B56900">196</SPAN></TD><TD><A NAME="4"></A>
 <SPAN CLASS=i>. . 3</SPAN>
 <SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN>(((<SPAN
 CLASS=wff>&#x1D711;</SPAN> &rarr; <SPAN CLASS=wff>&#x1D713;</SPAN>) &wedge;
@@ -145,7 +145,7 @@ CLASS=wff>&#x1D713;</SPAN>))</SPAN></TD></TR>
 <TR ALIGN=LEFT><TD>5</TD><TD><A HREF="#1">1</A>, <A HREF="#4">4</A></TD><TD><A
 HREF="ndime-P3.6.html"
 TITLE="Natural Deduction: '`->`' Elimination Rule. This rule is just Modus Ponens with an...">ndime-P3.6</A>&nbsp;<SPAN
-CLASS=r STYLE="color:#BF6100">181</SPAN></TD><TD><A NAME="5"></A>
+CLASS=r STYLE="color:#C55D00">171</SPAN></TD><TD><A NAME="5"></A>
 <SPAN CLASS=i>. 2</SPAN>
 <SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN>(((<SPAN
 CLASS=wff>&#x1D711;</SPAN> &rarr; <SPAN CLASS=wff>&#x1D713;</SPAN>) &wedge;
@@ -155,7 +155,7 @@ CLASS=wff>&#x1D713;</SPAN>) &wedge; <SPAN CLASS=wff>&#x1D711;</SPAN>) &rarr;
 <TR ALIGN=LEFT><TD>6</TD><TD><A HREF="#3">3</A>, <A HREF="#5">5</A></TD><TD><A
 HREF="rcp-NDNEGI3.html"
 TITLE="`-.` Introduction Recipe. `t.`">rcp-NDNEGI3</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#A17500">230</SPAN></TD><TD><A NAME="6"></A>
+STYLE="color:#A77200">220</SPAN></TD><TD><A NAME="6"></A>
 <SPAN CLASS=i>1</SPAN>
 <SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN>(((<SPAN
 CLASS=wff>&#x1D711;</SPAN> &rarr; <SPAN CLASS=wff>&#x1D713;</SPAN>) &wedge;
@@ -175,9 +175,9 @@ STYLE="color:#FA0200">9</SPAN> &nbsp;<SPAN CLASS=math> &rarr; </SPAN><A
 HREF="wff-imp.html">wff-imp</A>&nbsp;<SPAN CLASS=r
 STYLE="color:#FA0200">10</SPAN> &nbsp;<SPAN CLASS=math> &wedge; </SPAN><A
 HREF="wff-and.html">wff-and</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#D84B00">133</SPAN> &nbsp;<SPAN CLASS=math> &wedge; </SPAN><A
+STYLE="color:#D94B00">132</SPAN> &nbsp;<SPAN CLASS=math> &wedge; </SPAN><A
 HREF="wff-rcp-AND3.html">wff-rcp-AND3</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#C65C00">170</SPAN></FONT></TD></TR>
+STYLE="color:#CB5800">160</SPAN></FONT></TD></TR>
 <TR><TD ALIGN=LEFT><FONT SIZE=-1><B>This theorem was proved from axioms:</B>
 &nbsp;<A HREF="ax-L1.html">ax-L1</A>&nbsp;<SPAN CLASS=r
 STYLE="color:#FA0200">11</SPAN> &nbsp;<A HREF="ax-L2.html">ax-L2</A>&nbsp;<SPAN
@@ -187,13 +187,13 @@ HREF="ax-L3.html">ax-L3</A>&nbsp;<SPAN CLASS=r STYLE="color:#F90300">13</SPAN>
 STYLE="color:#F90300">14</SPAN></FONT></TD></TR>
 <TR><TD ALIGN=LEFT><FONT SIZE=-1><B>This theorem depends on definitions:</B>
 &nbsp;<A HREF="df-bi-D2.1.html">df-bi-D2.1</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#E43C00">106</SPAN> &nbsp;<A
+STYLE="color:#E33D00">107</SPAN> &nbsp;<A
 HREF="df-and-D2.2.html">df-and-D2.2</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#D84C00">134</SPAN> &nbsp;<A
+STYLE="color:#D84C00">133</SPAN> &nbsp;<A
 HREF="df-true-D2.4.html">df-true-D2.4</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#C95A00">165</SPAN> &nbsp;<A
+STYLE="color:#CE5500">155</SPAN> &nbsp;<A
 HREF="df-rcp-AND3.html">df-rcp-AND3</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#C55C00">171</SPAN></FONT></TD></TR>
+STYLE="color:#CB5800">161</SPAN></FONT></TD></TR>
 <TR><TD ALIGN=LEFT><FONT SIZE=-1><B>This theorem is referenced by:</B>
 (None)</FONT></TD></TR>
 </TABLE></CENTER>

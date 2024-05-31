@@ -16,10 +16,6 @@ img { margin-bottom: -4px }
    }
 -->
 </STYLE>
-<link rel="stylesheet" 
-media="screen" 
-href="https://fontlibrary.org/en/face/xits-math" 
-type="text/css"/> 
 <STYLE TYPE="text/css"> 
 <!--
   .wff { color: blue; } 
@@ -27,7 +23,11 @@ type="text/css"/>
   .term { color: green; } 
   .class { color: #CC33CC; } 
   .typecode { color: gray; } 
-  .math { font-family: XITSMathRegular; } 
+  @font-face {
+     font-family: XITSMath-Regular; 
+     src: url(../fonts/xits-math.woff); 
+  } 
+  .math { font-family: XITSMath-Regular; } 
 -->
 </STYLE>
 <TITLE>eqsym-P5.CL.SYM - bfol.mm Proof Explorer</TITLE>
@@ -76,10 +76,10 @@ bfol.mm Proof Explorer
 <HR NOSHADE SIZE=1>
 <CENTER><B><FONT SIZE="+1">Theorem <FONT
 COLOR="#006633">eqsym-P5.CL.SYM</FONT></FONT></B>&nbsp;<SPAN CLASS=r
-STYLE="color:#008C98">635</SPAN></CENTER>
+STYLE="color:#008D96">629</SPAN></CENTER>
 <CENTER><TABLE><TR><TD ALIGN=LEFT><B>Description: </B>Closed Symmetric Form of
 <A HREF="eqsym-P5.html">eqsym-P5</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#008D96">633</SPAN>.</TD></TR></TABLE></CENTER>
+STYLE="color:#008D94">627</SPAN>.</TD></TR></TABLE></CENTER>
 
 <CENTER><TABLE BORDER CELLSPACING=0 BGCOLOR="#EEFFFA"
 SUMMARY="Assertion">
@@ -103,7 +103,7 @@ SUMMARY="Proof of theorem">
 </TH><TH>Expression</TH></TR>
 <TR ALIGN=LEFT><TD>1</TD><TD>&nbsp;</TD><TD><A HREF="eqsym-P5.CL.html"
 TITLE="Closed Form of ~eqsym-P5 .">eqsym-P5.CL</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#008C97">634</SPAN></TD><TD><A NAME="1"></A>
+STYLE="color:#008D95">628</SPAN></TD><TD><A NAME="1"></A>
 <SPAN CLASS=i>. 2</SPAN>
 <SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN>(<SPAN
 CLASS=term>&#x1D461;</SPAN> = <SPAN CLASS=term>&#x1D462;</SPAN> &rarr; <SPAN
@@ -111,7 +111,7 @@ CLASS=term>&#x1D462;</SPAN> = <SPAN
 CLASS=term>&#x1D461;</SPAN>)</SPAN></TD></TR>
 <TR ALIGN=LEFT><TD>2</TD><TD>&nbsp;</TD><TD><A HREF="eqsym-P5.CL.html"
 TITLE="Closed Form of ~eqsym-P5 .">eqsym-P5.CL</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#008C97">634</SPAN></TD><TD><A NAME="2"></A>
+STYLE="color:#008D95">628</SPAN></TD><TD><A NAME="2"></A>
 <SPAN CLASS=i>. 2</SPAN>
 <SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN>(<SPAN
 CLASS=term>&#x1D462;</SPAN> = <SPAN CLASS=term>&#x1D461;</SPAN> &rarr; <SPAN
@@ -120,7 +120,7 @@ CLASS=term>&#x1D462;</SPAN>)</SPAN></TD></TR>
 <TR ALIGN=LEFT><TD>3</TD><TD><A HREF="#1">1</A>, <A HREF="#2">2</A></TD><TD><A
 HREF="rcp-NDBII0.html"
 TITLE="'`<->`' Introduction. `t.`">rcp-NDBII0</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#967B00">249</SPAN></TD><TD><A NAME="3"></A>
+STYLE="color:#9B7800">239</SPAN></TD><TD><A NAME="3"></A>
 <SPAN CLASS=i>1</SPAN>
 <SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN>(<SPAN
 CLASS=term>&#x1D461;</SPAN> = <SPAN CLASS=term>&#x1D462;</SPAN> &harr; <SPAN
@@ -137,7 +137,7 @@ STYLE="color:#CC33CC;font-style:normal">class</SPAN></FONT></TD></TR>
 = </SPAN><A HREF="wff-equals.html">wff-equals</A>&nbsp;<SPAN CLASS=r
 STYLE="color:#FA0100">6</SPAN> &nbsp;<SPAN CLASS=math> &harr; </SPAN><A
 HREF="wff-bi.html">wff-bi</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#E53A00">103</SPAN></FONT></TD></TR>
+STYLE="color:#E43B00">104</SPAN></FONT></TD></TR>
 <TR><TD ALIGN=LEFT><FONT SIZE=-1><B>This theorem was proved from axioms:</B>
 &nbsp;<A HREF="ax-L1.html">ax-L1</A>&nbsp;<SPAN CLASS=r
 STYLE="color:#FA0200">11</SPAN> &nbsp;<A HREF="ax-L2.html">ax-L2</A>&nbsp;<SPAN
@@ -154,38 +154,38 @@ STYLE="color:#F90500">18</SPAN> &nbsp;<A HREF="ax-L7.html">ax-L7</A>&nbsp;<SPAN
 CLASS=r STYLE="color:#F90500">19</SPAN></FONT></TD></TR>
 <TR><TD ALIGN=LEFT><FONT SIZE=-1><B>This theorem depends on definitions:</B>
 &nbsp;<A HREF="df-bi-D2.1.html">df-bi-D2.1</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#E43C00">106</SPAN> &nbsp;<A
+STYLE="color:#E33D00">107</SPAN> &nbsp;<A
 HREF="df-and-D2.2.html">df-and-D2.2</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#D84C00">134</SPAN> &nbsp;<A
+STYLE="color:#D84C00">133</SPAN> &nbsp;<A
 HREF="df-or-D2.3.html">df-or-D2.3</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#CE5500">155</SPAN> &nbsp;<A
+STYLE="color:#D25100">145</SPAN> &nbsp;<A
 HREF="df-true-D2.4.html">df-true-D2.4</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#C95A00">165</SPAN> &nbsp;<A
+STYLE="color:#CE5500">155</SPAN> &nbsp;<A
 HREF="df-rcp-AND3.html">df-rcp-AND3</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#C55C00">171</SPAN> &nbsp;<A
+STYLE="color:#CB5800">161</SPAN> &nbsp;<A
 HREF="df-exists-D5.1.html">df-exists-D5.1</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#008F7B">602</SPAN></FONT></TD></TR>
+STYLE="color:#008F78">596</SPAN></FONT></TD></TR>
 <TR><TD ALIGN=LEFT><FONT SIZE=-1><B>This theorem is referenced by:</B> &nbsp;<A
 HREF="eqtrns-P5.html">eqtrns-P5</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#008C99">636</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#008D97">630</SPAN> &nbsp;<A
 HREF="subeqr-P5-L1.html">subeqr-P5-L1</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#008C9D">640</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#008C9A">634</SPAN> &nbsp;<A
 HREF="subeqr-P5.html">subeqr-P5</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#008C9E">641</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#008C9B">635</SPAN> &nbsp;<A
 HREF="subelofl-P5.html">subelofl-P5</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#008CA0">644</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#008C9E">638</SPAN> &nbsp;<A
 HREF="subelofr-P5.html">subelofr-P5</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#008CA2">646</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#008CA0">640</SPAN> &nbsp;<A
 HREF="cbvallv-P5.html">cbvallv-P5</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#0088BB">665</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#0089B8">659</SPAN> &nbsp;<A
 HREF="specw-P5.html">specw-P5</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#0088BE">667</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#0089BB">661</SPAN> &nbsp;<A
 HREF="lemma-L5.04a.html">lemma-L5.04a</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#0087C6">673</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#0087C3">667</SPAN> &nbsp;<A
 HREF="exi-P6.html">exi-P6</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#027FFB">724</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#027FF9">718</SPAN> &nbsp;<A
 HREF="cbvall-P6.html">cbvall-P6</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#3379FF">757</SPAN></FONT></TD></TR>
+&nbsp;<SPAN CLASS=r STYLE="color:#3079FF">751</SPAN></FONT></TD></TR>
 </TABLE></CENTER>
 <TABLE BORDER=0 WIDTH="100%">
 <TR><TD WIDTH="25%">&nbsp;</TD>

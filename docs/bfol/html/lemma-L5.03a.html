@@ -16,10 +16,6 @@ img { margin-bottom: -4px }
    }
 -->
 </STYLE>
-<link rel="stylesheet" 
-media="screen" 
-href="https://fontlibrary.org/en/face/xits-math" 
-type="text/css"/> 
 <STYLE TYPE="text/css"> 
 <!--
   .wff { color: blue; } 
@@ -27,7 +23,11 @@ type="text/css"/>
   .term { color: green; } 
   .class { color: #CC33CC; } 
   .typecode { color: gray; } 
-  .math { font-family: XITSMathRegular; } 
+  @font-face {
+     font-family: XITSMath-Regular; 
+     src: url(../fonts/xits-math.woff); 
+  } 
+  .math { font-family: XITSMath-Regular; } 
 -->
 </STYLE>
 <TITLE>lemma-L5.03a - bfol.mm Proof Explorer</TITLE>
@@ -76,7 +76,7 @@ bfol.mm Proof Explorer
 <HR NOSHADE SIZE=1>
 <CENTER><B><FONT SIZE="+1">Theorem <FONT
 COLOR="#006633">lemma-L5.03a</FONT></FONT></B>&nbsp;<SPAN CLASS=r
-STYLE="color:#0087C5">672</SPAN></CENTER>
+STYLE="color:#0088C1">666</SPAN></CENTER>
 <CENTER><TABLE><TR><TD ALIGN=LEFT><B>Description: </B>A Lemma for Universal /
 Existential Conversion of Nested
        Quantifiers.</TD></TR></TABLE></CENTER>
@@ -107,7 +107,7 @@ SUMMARY="Proof of theorem">
 </TH><TH>Expression</TH></TR>
 <TR ALIGN=LEFT><TD>1</TD><TD>&nbsp;</TD><TD><A HREF="allnegex-P5.html"
 TITLE="'For all not' is Equivalent to 'Does not exist'. Dual of ~exnegall-P5 .">allnegex-P5</A>&nbsp;<SPAN
-CLASS=r STYLE="color:#008F7B">603</SPAN></TD><TD><A NAME="1"></A>
+CLASS=r STYLE="color:#008F79">597</SPAN></TD><TD><A NAME="1"></A>
 <SPAN CLASS=i>. . 3</SPAN>
 <SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN>(&forall;<SPAN
 CLASS=objvar>&#x1D466;</SPAN> &not; <SPAN CLASS=wff>&#x1D711;</SPAN> &harr;
@@ -116,7 +116,7 @@ CLASS=wff>&#x1D711;</SPAN>)</SPAN></TD></TR>
 <TR ALIGN=LEFT><TD>2</TD><TD><A HREF="#1">1</A></TD><TD><A
 HREF="suballinf-P5.html"
 TITLE="Inference Version of '`A. x`' Substitution Law. For the deductive form with a...">suballinf-P5</A>&nbsp;<SPAN
-CLASS=r STYLE="color:#008F79">600</SPAN></TD><TD><A NAME="2"></A>
+CLASS=r STYLE="color:#008F77">594</SPAN></TD><TD><A NAME="2"></A>
 <SPAN CLASS=i>. 2</SPAN>
 <SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN>(&forall;<SPAN
 CLASS=objvar>&#x1D465;</SPAN>&forall;<SPAN CLASS=objvar>&#x1D466;</SPAN> &not;
@@ -125,7 +125,7 @@ CLASS=objvar>&#x1D465;</SPAN> &not; &exist;<SPAN
 CLASS=objvar>&#x1D466;</SPAN><SPAN CLASS=wff>&#x1D711;</SPAN>)</SPAN></TD></TR>
 <TR ALIGN=LEFT><TD>3</TD><TD>&nbsp;</TD><TD><A HREF="allnegex-P5.html"
 TITLE="'For all not' is Equivalent to 'Does not exist'. Dual of ~exnegall-P5 .">allnegex-P5</A>&nbsp;<SPAN
-CLASS=r STYLE="color:#008F7B">603</SPAN></TD><TD><A NAME="3"></A>
+CLASS=r STYLE="color:#008F79">597</SPAN></TD><TD><A NAME="3"></A>
 <SPAN CLASS=i>. 2</SPAN>
 <SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN>(&forall;<SPAN
 CLASS=objvar>&#x1D465;</SPAN> &not; &exist;<SPAN
@@ -135,7 +135,7 @@ CLASS=objvar>&#x1D466;</SPAN><SPAN CLASS=wff>&#x1D711;</SPAN>)</SPAN></TD></TR>
 <TR ALIGN=LEFT><TD>4</TD><TD><A HREF="#2">2</A>, <A HREF="#3">3</A></TD><TD><A
 HREF="bitrns-P3.33c.RC.html"
 TITLE="Inference Form of ~bitrns-P3.33c . `t.`">bitrns-P3.33c.RC</A>&nbsp;<SPAN
-CLASS=r STYLE="color:#728600">313</SPAN></TD><TD><A NAME="4"></A>
+CLASS=r STYLE="color:#768500">303</SPAN></TD><TD><A NAME="4"></A>
 <SPAN CLASS=i>1</SPAN>
 <SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN>(&forall;<SPAN
 CLASS=objvar>&#x1D465;</SPAN>&forall;<SPAN CLASS=objvar>&#x1D466;</SPAN> &not;
@@ -155,9 +155,9 @@ CLASS=r STYLE="color:#FA0200">8</SPAN> &nbsp;<SPAN CLASS=math>&not; </SPAN><A
 HREF="wff-neg.html">wff-neg</A>&nbsp;<SPAN CLASS=r
 STYLE="color:#FA0200">9</SPAN> &nbsp;<SPAN CLASS=math> &harr; </SPAN><A
 HREF="wff-bi.html">wff-bi</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#E53A00">103</SPAN> &nbsp;<SPAN CLASS=math>&exist;</SPAN><A
+STYLE="color:#E43B00">104</SPAN> &nbsp;<SPAN CLASS=math>&exist;</SPAN><A
 HREF="wff-exists.html">wff-exists</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#008F7A">601</SPAN></FONT></TD></TR>
+STYLE="color:#008F77">595</SPAN></FONT></TD></TR>
 <TR><TD ALIGN=LEFT><FONT SIZE=-1><B>This theorem was proved from axioms:</B>
 &nbsp;<A HREF="ax-L1.html">ax-L1</A>&nbsp;<SPAN CLASS=r
 STYLE="color:#FA0200">11</SPAN> &nbsp;<A HREF="ax-L2.html">ax-L2</A>&nbsp;<SPAN
@@ -170,22 +170,22 @@ STYLE="color:#F90400">15</SPAN> &nbsp;<A HREF="ax-L4.html">ax-L4</A>&nbsp;<SPAN
 CLASS=r STYLE="color:#F90400">16</SPAN></FONT></TD></TR>
 <TR><TD ALIGN=LEFT><FONT SIZE=-1><B>This theorem depends on definitions:</B>
 &nbsp;<A HREF="df-bi-D2.1.html">df-bi-D2.1</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#E43C00">106</SPAN> &nbsp;<A
+STYLE="color:#E33D00">107</SPAN> &nbsp;<A
 HREF="df-and-D2.2.html">df-and-D2.2</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#D84C00">134</SPAN> &nbsp;<A
+STYLE="color:#D84C00">133</SPAN> &nbsp;<A
 HREF="df-or-D2.3.html">df-or-D2.3</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#CE5500">155</SPAN> &nbsp;<A
+STYLE="color:#D25100">145</SPAN> &nbsp;<A
 HREF="df-true-D2.4.html">df-true-D2.4</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#C95A00">165</SPAN> &nbsp;<A
+STYLE="color:#CE5500">155</SPAN> &nbsp;<A
 HREF="df-rcp-AND3.html">df-rcp-AND3</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#C55C00">171</SPAN> &nbsp;<A
+STYLE="color:#CB5800">161</SPAN> &nbsp;<A
 HREF="df-exists-D5.1.html">df-exists-D5.1</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#008F7B">602</SPAN></FONT></TD></TR>
+STYLE="color:#008F78">596</SPAN></FONT></TD></TR>
 <TR><TD ALIGN=LEFT><FONT SIZE=-1><B>This theorem is referenced by:</B> &nbsp;<A
 HREF="lemma-L5.05a.html">lemma-L5.05a</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#0087C7">674</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#0087C4">668</SPAN> &nbsp;<A
 HREF="excomm-P6.html">excomm-P6</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#217BFF">746</SPAN></FONT></TD></TR>
+&nbsp;<SPAN CLASS=r STYLE="color:#1D7BFF">740</SPAN></FONT></TD></TR>
 </TABLE></CENTER>
 <TABLE BORDER=0 WIDTH="100%">
 <TR><TD WIDTH="25%">&nbsp;</TD>

@@ -16,10 +16,6 @@ img { margin-bottom: -4px }
    }
 -->
 </STYLE>
-<link rel="stylesheet" 
-media="screen" 
-href="https://fontlibrary.org/en/face/xits-math" 
-type="text/css"/> 
 <STYLE TYPE="text/css"> 
 <!--
   .wff { color: blue; } 
@@ -27,7 +23,11 @@ type="text/css"/>
   .term { color: green; } 
   .class { color: #CC33CC; } 
   .typecode { color: gray; } 
-  .math { font-family: XITSMathRegular; } 
+  @font-face {
+     font-family: XITSMath-Regular; 
+     src: url(../fonts/xits-math.woff); 
+  } 
+  .math { font-family: XITSMath-Regular; } 
 -->
 </STYLE>
 <TITLE>trnsp-P1.15b - bfol.mm Proof Explorer</TITLE>
@@ -76,7 +76,7 @@ bfol.mm Proof Explorer
 <HR NOSHADE SIZE=1>
 <CENTER><B><FONT SIZE="+1">Theorem <FONT
 COLOR="#006633">trnsp-P1.15b</FONT></FONT></B>&nbsp;<SPAN CLASS=r
-STYLE="color:#EF2800">77</SPAN></CENTER>
+STYLE="color:#EE2900">78</SPAN></CENTER>
 <CENTER><TABLE><TR><TD ALIGN=LEFT><B>Description: </B>Transposition Variant
 B.</TD></TR></TABLE></CENTER>
 
@@ -101,8 +101,8 @@ SUMMARY="Proof of theorem">
 <TR><TH>Step</TH><TH>Hyp</TH><TH>Ref
 </TH><TH>Expression</TH></TR>
 <TR ALIGN=LEFT><TD>1</TD><TD>&nbsp;</TD><TD><A HREF="dneg-P1.13b.html"
-TITLE="Double Negation Law B. This law is not related to the excluded middle and can be...">dneg-P1.13b</A>&nbsp;<SPAN
-CLASS=r STYLE="color:#F02300">71</SPAN></TD><TD><A NAME="1"></A>
+TITLE="Double Negation Law B. The other related law is ~dneg-P1.13a .">dneg-P1.13b</A>&nbsp;<SPAN
+CLASS=r STYLE="color:#F02400">72</SPAN></TD><TD><A NAME="1"></A>
 <SPAN CLASS=i>. . 3</SPAN>
 <SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN>(<SPAN
 CLASS=wff>&#x1D713;</SPAN> &rarr; &not; &not; <SPAN
@@ -153,13 +153,13 @@ HREF="ax-L3.html">ax-L3</A>&nbsp;<SPAN CLASS=r STYLE="color:#F90300">13</SPAN>
 STYLE="color:#F90300">14</SPAN></FONT></TD></TR>
 <TR><TD ALIGN=LEFT><FONT SIZE=-1><B>This theorem is referenced by:</B> &nbsp;<A
 HREF="trnsp-P1.15b.AC.SH.html">trnsp-P1.15b.AC.SH</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#EE2900">78</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#EE2A00">79</SPAN> &nbsp;<A
 HREF="pfbycase-P1.17.html">pfbycase-P1.17</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#EB2F00">87</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#EB3000">88</SPAN> &nbsp;<A
 HREF="export-L2.1b.html">export-L2.1b</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#E93200">92</SPAN> &nbsp;<A
-HREF="orintl-P2.15a.html">orintl-P2.15a</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#CE5600">156</SPAN></FONT></TD></TR>
+&nbsp;<SPAN CLASS=r STYLE="color:#E93300">93</SPAN> &nbsp;<A
+HREF="orintl-P2.11a.html">orintl-P2.11a</A>
+&nbsp;<SPAN CLASS=r STYLE="color:#D25100">146</SPAN></FONT></TD></TR>
 </TABLE></CENTER>
 <TABLE BORDER=0 WIDTH="100%">
 <TR><TD WIDTH="25%">&nbsp;</TD>

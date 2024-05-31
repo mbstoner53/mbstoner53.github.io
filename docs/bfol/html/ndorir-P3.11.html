@@ -16,10 +16,6 @@ img { margin-bottom: -4px }
    }
 -->
 </STYLE>
-<link rel="stylesheet" 
-media="screen" 
-href="https://fontlibrary.org/en/face/xits-math" 
-type="text/css"/> 
 <STYLE TYPE="text/css"> 
 <!--
   .wff { color: blue; } 
@@ -27,7 +23,11 @@ type="text/css"/>
   .term { color: green; } 
   .class { color: #CC33CC; } 
   .typecode { color: gray; } 
-  .math { font-family: XITSMathRegular; } 
+  @font-face {
+     font-family: XITSMath-Regular; 
+     src: url(../fonts/xits-math.woff); 
+  } 
+  .math { font-family: XITSMath-Regular; } 
 -->
 </STYLE>
 <TITLE>ndorir-P3.11 - bfol.mm Proof Explorer</TITLE>
@@ -76,7 +76,7 @@ bfol.mm Proof Explorer
 <HR NOSHADE SIZE=1>
 <CENTER><B><FONT SIZE="+1">Theorem <FONT
 COLOR="#006633">ndorir-P3.11</FONT></FONT></B>&nbsp;<SPAN CLASS=r
-STYLE="color:#BC6400">186</SPAN></CENTER>
+STYLE="color:#C25F00">176</SPAN></CENTER>
 <CENTER><TABLE><TR><TD ALIGN=LEFT><B>Description: </B>Natural Deduction: Right
 '<SPAN CLASS=math>&vee;</SPAN>' Introduction Rule.
 <P STYLE="margin-bottom:0em">
@@ -119,9 +119,9 @@ NAME="1"></A>
 CLASS=wff>&#x1D6FE;</SPAN> &rarr; <SPAN
 CLASS=wff>&#x1D711;</SPAN>)</SPAN></TD></TR>
 <TR ALIGN=LEFT><TD>2</TD><TD><A HREF="#1">1</A></TD><TD><A
-HREF="orintr-P2.15b.AC.SH.html"
-TITLE="Deductive Form of ~orintr-P2.15b .">orintr-P2.15b.AC.SH</A>&nbsp;<SPAN
-CLASS=r STYLE="color:#CC5700">159</SPAN></TD><TD><A NAME="2"></A>
+HREF="orintr-P2.11b.AC.SH.html"
+TITLE="Deductive Form of ~orintr-P2.11b .">orintr-P2.11b.AC.SH</A>&nbsp;<SPAN
+CLASS=r STYLE="color:#D15300">149</SPAN></TD><TD><A NAME="2"></A>
 <SPAN CLASS=i>1</SPAN>
 <SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN>(<SPAN
 CLASS=wff>&#x1D6FE;</SPAN> &rarr; (<SPAN CLASS=wff>&#x1D711;</SPAN> &vee; <SPAN
@@ -137,7 +137,7 @@ STYLE="color:#CC33CC;font-style:normal">class</SPAN></FONT></TD></TR>
 &rarr; </SPAN><A HREF="wff-imp.html">wff-imp</A>&nbsp;<SPAN CLASS=r
 STYLE="color:#FA0200">10</SPAN> &nbsp;<SPAN CLASS=math> &vee; </SPAN><A
 HREF="wff-or.html">wff-or</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#CF5500">154</SPAN></FONT></TD></TR>
+STYLE="color:#D35100">144</SPAN></FONT></TD></TR>
 <TR><TD ALIGN=LEFT><FONT SIZE=-1><B>This theorem was proved from axioms:</B>
 &nbsp;<A HREF="ax-L1.html">ax-L1</A>&nbsp;<SPAN CLASS=r
 STYLE="color:#FA0200">11</SPAN> &nbsp;<A HREF="ax-L2.html">ax-L2</A>&nbsp;<SPAN
@@ -147,48 +147,48 @@ HREF="ax-L3.html">ax-L3</A>&nbsp;<SPAN CLASS=r STYLE="color:#F90300">13</SPAN>
 STYLE="color:#F90300">14</SPAN></FONT></TD></TR>
 <TR><TD ALIGN=LEFT><FONT SIZE=-1><B>This theorem depends on definitions:</B>
 &nbsp;<A HREF="df-bi-D2.1.html">df-bi-D2.1</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#E43C00">106</SPAN> &nbsp;<A
+STYLE="color:#E33D00">107</SPAN> &nbsp;<A
 HREF="df-or-D2.3.html">df-or-D2.3</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#CE5500">155</SPAN></FONT></TD></TR>
+STYLE="color:#D25100">145</SPAN></FONT></TD></TR>
 <TR><TD ALIGN=LEFT><FONT SIZE=-1><B>This theorem is referenced by:</B> &nbsp;<A
 HREF="rcp-NDORIR0.html">rcp-NDORIR0</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#9A7900">243</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#9F7600">233</SPAN> &nbsp;<A
 HREF="ndorir-P3.11.CL.html">ndorir-P3.11.CL</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#917C00">256</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#977A00">246</SPAN> &nbsp;<A
 HREF="orcomm-P3.37-L1.html">orcomm-P3.37-L1</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#6E8700">324</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#6F8700">318</SPAN> &nbsp;<A
 HREF="orassoc-P3.38-L1.html">orassoc-P3.38-L1</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#6C8800">326</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#6F8700">320</SPAN> &nbsp;<A
 HREF="orassoc-P3.38-L2.html">orassoc-P3.38-L2</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#6C8800">327</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#6E8700">321</SPAN> &nbsp;<A
 HREF="suborl-P3.43a-L1.html">suborl-P3.43a-L1</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#5E8B00">351</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#608A00">345</SPAN> &nbsp;<A
 HREF="orasim-P3.48-L2.html">orasim-P3.48-L2</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#558D00">366</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#578C00">360</SPAN> &nbsp;<A
 HREF="norer-P4.2b.html">norer-P4.2b</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#4E8D00">376</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#518D00">370</SPAN> &nbsp;<A
 HREF="joinimandinc-P4.8a.html">joinimandinc-P4.8a</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#3D8F00">403</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#3F8F00">397</SPAN> &nbsp;<A
 HREF="joinimor-P4.8c.html">joinimor-P4.8c</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#389000">409</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#3B9000">403</SPAN> &nbsp;<A
 HREF="sepimorl-P4.9b.html">sepimorl-P4.9b</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#349000">415</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#379000">409</SPAN> &nbsp;<A
 HREF="sepimorr-P4.9c.html">sepimorr-P4.9c</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#329000">418</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#359000">412</SPAN> &nbsp;<A
 HREF="sepimandl-P4.9d.html">sepimandl-P4.9d</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#309100">421</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#329000">415</SPAN> &nbsp;<A
 HREF="andoveror-P4.27-L1.html">andoveror-P4.27-L1</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#0F930A">465</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#129308">459</SPAN> &nbsp;<A
 HREF="andoveror-P4.27-L2.html">andoveror-P4.27-L2</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#0E930B">466</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#119309">460</SPAN> &nbsp;<A
 HREF="oroverand-P4.27-L3.html">oroverand-P4.27-L3</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#0D930C">468</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#0F930A">462</SPAN> &nbsp;<A
 HREF="oroverand-P4.27-L4.html">oroverand-P4.27-L4</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#0C930C">469</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#0F930A">463</SPAN> &nbsp;<A
 HREF="oroverim-P4.28-L2.html">oroverim-P4.28-L2</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#0A930E">472</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#0C930C">466</SPAN> &nbsp;<A
 HREF="imasor-P4.32-L1.html">imasor-P4.32-L1</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#00931B">491</SPAN></FONT></TD></TR>
+&nbsp;<SPAN CLASS=r STYLE="color:#009317">485</SPAN></FONT></TD></TR>
 </TABLE></CENTER>
 <TABLE BORDER=0 WIDTH="100%">
 <TR><TD WIDTH="25%">&nbsp;</TD>

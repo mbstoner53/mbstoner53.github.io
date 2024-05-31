@@ -2082,7 +2082,8 @@ ${
 $}
 
 ${
-    $( One Direction of Existential Quantifier Definition.
+    $( Necessary Condition for (i.e. "If" part of) Existential Quantifier
+       Definition.
 
        Only this direction is deducible with intuitionist logic. `t.` $)
     dfexistsint-P7 $p |- ( E. x w_ph -> -. A. x -. w_ph ) $=
@@ -2157,7 +2158,8 @@ $}
 $( ------------------------------------------------------------------------- $)
 
 ${
-    $( "If" Part of Alternate ENF Definition. `t.` $)
+    $( Necessary Condition for (i.e. "If" part of) Alternate ENF Definition.
+       `t.` $)
     dfnfreealtif-P7 $p |- ( ( E. x w_ph -> A. x w_ph ) -> F/ x w_ph ) $=
         ( wff-exists wff-forall wff-imp wff-nfree ndnfrex1-P7.8
           ndnfrall1-P7.7 ndnfrim-P7.3.RC exi-P7.CL imsubl-P3.28a.RC alli-P7
@@ -2184,7 +2186,8 @@ $}
 $( ------------------------------------------------------------------------- $)
 
 ${
-    $( "Only If" Part of Alternate ENF Definition . `t.` $)
+    $( Sufficient Condition for (i.e. "Only If" part of) Alternate ENF
+       Definition . `t.` $)
     dfnfreealtonlyif-P7 $p |- ( F/ x w_ph -> ( E. x w_ph -> A. x w_ph ) ) $=
         ( wff-forall wff-nfree ndnfrnfr-P7.12 ndnfrall1-P7.7 nfrgencl-P7
           exia-P7 )
@@ -2232,7 +2235,8 @@ $}
 $( ------------------------------------------------------------------------- $)
 
 ${
-    $( "If" Part of ~df-nfree-D6.1 Derived From Natural Deduction Rules. `t.`
+    $( Necessary Condition for (i.e. "If" part of) ~df-nfree-D6.1 Derived From
+       Natural Deduction Rules. `t.`
 
        Only this direction is deducible with intuitionist logic. $)
     dfnfreeint-P7 $p |- ( ( A. x w_ph \/ A. x -. w_ph ) -> F/ x w_ph ) $=

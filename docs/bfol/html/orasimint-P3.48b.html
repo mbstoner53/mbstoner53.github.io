@@ -16,10 +16,6 @@ img { margin-bottom: -4px }
    }
 -->
 </STYLE>
-<link rel="stylesheet" 
-media="screen" 
-href="https://fontlibrary.org/en/face/xits-math" 
-type="text/css"/> 
 <STYLE TYPE="text/css"> 
 <!--
   .wff { color: blue; } 
@@ -27,7 +23,11 @@ type="text/css"/>
   .term { color: green; } 
   .class { color: #CC33CC; } 
   .typecode { color: gray; } 
-  .math { font-family: XITSMathRegular; } 
+  @font-face {
+     font-family: XITSMath-Regular; 
+     src: url(../fonts/xits-math.woff); 
+  } 
+  .math { font-family: XITSMath-Regular; } 
 -->
 </STYLE>
 <TITLE>orasimint-P3.48b - bfol.mm Proof Explorer</TITLE>
@@ -76,10 +76,12 @@ bfol.mm Proof Explorer
 <HR NOSHADE SIZE=1>
 <CENTER><B><FONT SIZE="+1">Theorem <FONT
 COLOR="#006633">orasimint-P3.48b</FONT></FONT></B>&nbsp;<SPAN CLASS=r
-STYLE="color:#538D00">368</SPAN></CENTER>
-<CENTER><TABLE><TR><TD ALIGN=LEFT><B>Description: </B>One Direction of '<SPAN
-CLASS=math>&vee;</SPAN>' in Terms of '<SPAN CLASS=math>&rarr;</SPAN>'. <SPAN
-CLASS=math>&dagger;</SPAN>
+STYLE="color:#568C00">362</SPAN></CENTER>
+<CENTER><TABLE><TR><TD ALIGN=LEFT><B>Description: </B>Necessary Condition for
+(i.e. &quot;If&quot; part of) '<SPAN CLASS=math>&vee;</SPAN>' Defined in Terms
+of
+       '<SPAN CLASS=math>&rarr;</SPAN>' and '<SPAN CLASS=math>&not;</SPAN>'.
+<SPAN CLASS=math>&dagger;</SPAN>
 <P STYLE="margin-bottom:0em">
        Only this direction is deducible with intuitionist
 logic.</TD></TR></TABLE></CENTER>
@@ -107,7 +109,7 @@ SUMMARY="Proof of theorem">
 </TH><TH>Expression</TH></TR>
 <TR ALIGN=LEFT><TD>1</TD><TD>&nbsp;</TD><TD><A HREF="orasim-P3.48-L1.html"
 TITLE="Lemma for ~orasim-P3.48a and ~orasimint-P3.48b . `t.`">orasim-P3.48-L1</A>&nbsp;<SPAN
-CLASS=r STYLE="color:#558D00">365</SPAN></TD><TD><A NAME="1"></A>
+CLASS=r STYLE="color:#588C00">359</SPAN></TD><TD><A NAME="1"></A>
 <SPAN CLASS=i>1</SPAN>
 <SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN>((<SPAN
 CLASS=wff>&#x1D711;</SPAN> &vee; <SPAN CLASS=wff>&#x1D713;</SPAN>) &rarr;
@@ -126,7 +128,7 @@ STYLE="color:#FA0200">9</SPAN> &nbsp;<SPAN CLASS=math> &rarr; </SPAN><A
 HREF="wff-imp.html">wff-imp</A>&nbsp;<SPAN CLASS=r
 STYLE="color:#FA0200">10</SPAN> &nbsp;<SPAN CLASS=math> &vee; </SPAN><A
 HREF="wff-or.html">wff-or</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#CF5500">154</SPAN></FONT></TD></TR>
+STYLE="color:#D35100">144</SPAN></FONT></TD></TR>
 <TR><TD ALIGN=LEFT><FONT SIZE=-1><B>This theorem was proved from axioms:</B>
 &nbsp;<A HREF="ax-L1.html">ax-L1</A>&nbsp;<SPAN CLASS=r
 STYLE="color:#FA0200">11</SPAN> &nbsp;<A HREF="ax-L2.html">ax-L2</A>&nbsp;<SPAN
@@ -136,15 +138,15 @@ HREF="ax-L3.html">ax-L3</A>&nbsp;<SPAN CLASS=r STYLE="color:#F90300">13</SPAN>
 STYLE="color:#F90300">14</SPAN></FONT></TD></TR>
 <TR><TD ALIGN=LEFT><FONT SIZE=-1><B>This theorem depends on definitions:</B>
 &nbsp;<A HREF="df-bi-D2.1.html">df-bi-D2.1</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#E43C00">106</SPAN> &nbsp;<A
+STYLE="color:#E33D00">107</SPAN> &nbsp;<A
 HREF="df-and-D2.2.html">df-and-D2.2</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#D84C00">134</SPAN> &nbsp;<A
+STYLE="color:#D84C00">133</SPAN> &nbsp;<A
 HREF="df-or-D2.3.html">df-or-D2.3</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#CE5500">155</SPAN> &nbsp;<A
+STYLE="color:#D25100">145</SPAN> &nbsp;<A
 HREF="df-true-D2.4.html">df-true-D2.4</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#C95A00">165</SPAN> &nbsp;<A
+STYLE="color:#CE5500">155</SPAN> &nbsp;<A
 HREF="df-rcp-AND3.html">df-rcp-AND3</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#C55C00">171</SPAN></FONT></TD></TR>
+STYLE="color:#CB5800">161</SPAN></FONT></TD></TR>
 <TR><TD ALIGN=LEFT><FONT SIZE=-1><B>This theorem is referenced by:</B>
 (None)</FONT></TD></TR>
 </TABLE></CENTER>

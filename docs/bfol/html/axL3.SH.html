@@ -16,10 +16,6 @@ img { margin-bottom: -4px }
    }
 -->
 </STYLE>
-<link rel="stylesheet" 
-media="screen" 
-href="https://fontlibrary.org/en/face/xits-math" 
-type="text/css"/> 
 <STYLE TYPE="text/css"> 
 <!--
   .wff { color: blue; } 
@@ -27,7 +23,11 @@ type="text/css"/>
   .term { color: green; } 
   .class { color: #CC33CC; } 
   .typecode { color: gray; } 
-  .math { font-family: XITSMathRegular; } 
+  @font-face {
+     font-family: XITSMath-Regular; 
+     src: url(../fonts/xits-math.woff); 
+  } 
+  .math { font-family: XITSMath-Regular; } 
 -->
 </STYLE>
 <TITLE>axL3.SH - bfol.mm Proof Explorer</TITLE>
@@ -148,7 +148,7 @@ STYLE="color:#F90300">13</SPAN> &nbsp;<A HREF="ax-MP.html">ax-MP</A>&nbsp;<SPAN
 CLASS=r STYLE="color:#F90300">14</SPAN></FONT></TD></TR>
 <TR><TD ALIGN=LEFT><FONT SIZE=-1><B>This theorem is referenced by:</B> &nbsp;<A
 HREF="dneg-P1.13b.html">dneg-P1.13b</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#F02300">71</SPAN></FONT></TD></TR>
+&nbsp;<SPAN CLASS=r STYLE="color:#F02400">72</SPAN></FONT></TD></TR>
 </TABLE></CENTER>
 <TABLE BORDER=0 WIDTH="100%">
 <TR><TD WIDTH="25%">&nbsp;</TD>

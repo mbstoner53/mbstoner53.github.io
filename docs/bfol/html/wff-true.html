@@ -16,10 +16,6 @@ img { margin-bottom: -4px }
    }
 -->
 </STYLE>
-<link rel="stylesheet" 
-media="screen" 
-href="https://fontlibrary.org/en/face/xits-math" 
-type="text/css"/> 
 <STYLE TYPE="text/css"> 
 <!--
   .wff { color: blue; } 
@@ -27,7 +23,11 @@ type="text/css"/>
   .term { color: green; } 
   .class { color: #CC33CC; } 
   .typecode { color: gray; } 
-  .math { font-family: XITSMathRegular; } 
+  @font-face {
+     font-family: XITSMath-Regular; 
+     src: url(../fonts/xits-math.woff); 
+  } 
+  .math { font-family: XITSMath-Regular; } 
 -->
 </STYLE>
 <TITLE>wff-true - bfol.mm Proof Explorer</TITLE>
@@ -48,9 +48,9 @@ bfol.mm Proof Explorer
       </B></FONT></TD>
     <TD ALIGN=RIGHT VALIGN=TOP WIDTH="25%">
       <FONT SIZE=-1 FACE=sans-serif>
-      <A HREF="exclmid-P2.16.html">
+      <A HREF="exclmid-P2.12.html">
       &lt; Previous</A>&nbsp;&nbsp;
-      <A HREF="truejust-P2.17.html">Next &gt;</A>
+      <A HREF="truejust-P2.13.html">Next &gt;</A>
       </FONT><FONT FACE=sans-serif SIZE=-2>
       <BR><A HREF="mmtheorems2.html#wff-true">Nearby theorems</A>
       </FONT>
@@ -76,7 +76,7 @@ bfol.mm Proof Explorer
 <HR NOSHADE SIZE=1>
 <CENTER><B><FONT SIZE="+1">Syntax Definition <FONT
 COLOR="#006633">wff-true</FONT></FONT></B>&nbsp;<SPAN CLASS=r
-STYLE="color:#CA5900">163</SPAN></CENTER>
+STYLE="color:#CF5500">153</SPAN></CENTER>
 <CENTER><TABLE><TR><TD ALIGN=LEFT><B>Description: </B>Extend WFF definition to
 include the &quot;true&quot; constant '<SPAN
 CLASS=math>&top;</SPAN>'.</TD></TR></TABLE></CENTER>
@@ -93,7 +93,7 @@ SUMMARY="Assertion">
 
 <HR NOSHADE SIZE=1>
 <CENTER>See definition <A HREF="df-true-D2.4.html">df-true-D2.4</A>&nbsp;<SPAN
-CLASS=r STYLE="color:#C95A00">165</SPAN> for more information.</CENTER><HR
+CLASS=r STYLE="color:#CE5500">155</SPAN> for more information.</CENTER><HR
 NOSHADE SIZE=1>
 <CENTER><TABLE CELLSPACING=7><TR><TD ALIGN=LEFT><FONT SIZE=-1><B>Colors of
 variables:</B>  <SPAN CLASS=typecode

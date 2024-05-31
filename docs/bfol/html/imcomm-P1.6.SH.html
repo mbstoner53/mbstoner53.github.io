@@ -16,10 +16,6 @@ img { margin-bottom: -4px }
    }
 -->
 </STYLE>
-<link rel="stylesheet" 
-media="screen" 
-href="https://fontlibrary.org/en/face/xits-math" 
-type="text/css"/> 
 <STYLE TYPE="text/css"> 
 <!--
   .wff { color: blue; } 
@@ -27,7 +23,11 @@ type="text/css"/>
   .term { color: green; } 
   .class { color: #CC33CC; } 
   .typecode { color: gray; } 
-  .math { font-family: XITSMathRegular; } 
+  @font-face {
+     font-family: XITSMath-Regular; 
+     src: url(../fonts/xits-math.woff); 
+  } 
+  .math { font-family: XITSMath-Regular; } 
 -->
 </STYLE>
 <TITLE>imcomm-P1.6.SH - bfol.mm Proof Explorer</TITLE>
@@ -150,11 +150,11 @@ HREF="ax-MP.html">ax-MP</A>&nbsp;<SPAN CLASS=r
 STYLE="color:#F90300">14</SPAN></FONT></TD></TR>
 <TR><TD ALIGN=LEFT><FONT SIZE=-1><B>This theorem is referenced by:</B> &nbsp;<A
 HREF="imsubl-P1.7b.html">imsubl-P1.7b</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#F41500">54</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#F41600">54</SPAN> &nbsp;<A
 HREF="mpt-P1.8.html">mpt-P1.8</A>
 &nbsp;<SPAN CLASS=r STYLE="color:#F31800">57</SPAN> &nbsp;<A
 HREF="poe-P1.11b.html">poe-P1.11b</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#F11E00">65</SPAN></FONT></TD></TR>
+&nbsp;<SPAN CLASS=r STYLE="color:#F11F00">66</SPAN></FONT></TD></TR>
 </TABLE></CENTER>
 <TABLE BORDER=0 WIDTH="100%">
 <TR><TD WIDTH="25%">&nbsp;</TD>

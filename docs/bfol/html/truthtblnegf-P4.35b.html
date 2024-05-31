@@ -16,10 +16,6 @@ img { margin-bottom: -4px }
    }
 -->
 </STYLE>
-<link rel="stylesheet" 
-media="screen" 
-href="https://fontlibrary.org/en/face/xits-math" 
-type="text/css"/> 
 <STYLE TYPE="text/css"> 
 <!--
   .wff { color: blue; } 
@@ -27,7 +23,11 @@ type="text/css"/>
   .term { color: green; } 
   .class { color: #CC33CC; } 
   .typecode { color: gray; } 
-  .math { font-family: XITSMathRegular; } 
+  @font-face {
+     font-family: XITSMath-Regular; 
+     src: url(../fonts/xits-math.woff); 
+  } 
+  .math { font-family: XITSMath-Regular; } 
 -->
 </STYLE>
 <TITLE>truthtblnegf-P4.35b - bfol.mm Proof Explorer</TITLE>
@@ -76,7 +76,7 @@ bfol.mm Proof Explorer
 <HR NOSHADE SIZE=1>
 <CENTER><B><FONT SIZE="+1">Theorem <FONT
 COLOR="#006633">truthtblnegf-P4.35b</FONT></FONT></B>&nbsp;<SPAN CLASS=r
-STYLE="color:#009223">500</SPAN></CENTER>
+STYLE="color:#009320">494</SPAN></CENTER>
 <CENTER><TABLE><TR><TD ALIGN=LEFT><B>Description: </B><SPAN
 CLASS=math>&not;</SPAN> F <SPAN CLASS=math>&hArr;</SPAN> T. <SPAN
 CLASS=math>&dagger;</SPAN></TD></TR></TABLE></CENTER>
@@ -102,14 +102,14 @@ SUMMARY="Proof of theorem">
 </TH><TH>Expression</TH></TR>
 <TR ALIGN=LEFT><TD>1</TD><TD>&nbsp;</TD><TD><A HREF="false-P3.45.html"
 TITLE="'`F.`' is refutable. `t.`">false-P3.45</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#598C00">359</SPAN></TD><TD><A NAME="1"></A>
+STYLE="color:#5B8B00">353</SPAN></TD><TD><A NAME="1"></A>
 <SPAN CLASS=i>. 2</SPAN>
 <SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN> &not;
 &perp;</SPAN></TD></TR>
 <TR ALIGN=LEFT><TD>2</TD><TD><A HREF="#1">1</A></TD><TD><A
 HREF="thmeqtrue-P4.21a.html"
 TITLE="Any Theorem is Logically Equivalent to '`T.`'. `t.`">thmeqtrue-P4.21a</A>&nbsp;<SPAN
-CLASS=r STYLE="color:#1C9301">448</SPAN></TD><TD><A NAME="2"></A>
+CLASS=r STYLE="color:#1E9200">442</SPAN></TD><TD><A NAME="2"></A>
 <SPAN CLASS=i>1</SPAN>
 <SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN>(&not; &perp; &harr;
 &top;)</SPAN></TD></TR>
@@ -124,11 +124,11 @@ STYLE="color:#CC33CC;font-style:normal">class</SPAN></FONT></TD></TR>
 CLASS=math>&not; </SPAN><A HREF="wff-neg.html">wff-neg</A>&nbsp;<SPAN CLASS=r
 STYLE="color:#FA0200">9</SPAN> &nbsp;<SPAN CLASS=math> &harr; </SPAN><A
 HREF="wff-bi.html">wff-bi</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#E53A00">103</SPAN> &nbsp;<SPAN CLASS=math>&top;</SPAN><A
+STYLE="color:#E43B00">104</SPAN> &nbsp;<SPAN CLASS=math>&top;</SPAN><A
 HREF="wff-true.html">wff-true</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#CA5900">163</SPAN> &nbsp;<SPAN CLASS=math>&perp;</SPAN><A
+STYLE="color:#CF5500">153</SPAN> &nbsp;<SPAN CLASS=math>&perp;</SPAN><A
 HREF="wff-false.html">wff-false</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#C85B00">167</SPAN></FONT></TD></TR>
+STYLE="color:#CD5600">157</SPAN></FONT></TD></TR>
 <TR><TD ALIGN=LEFT><FONT SIZE=-1><B>This theorem was proved from axioms:</B>
 &nbsp;<A HREF="ax-L1.html">ax-L1</A>&nbsp;<SPAN CLASS=r
 STYLE="color:#FA0200">11</SPAN> &nbsp;<A HREF="ax-L2.html">ax-L2</A>&nbsp;<SPAN
@@ -138,13 +138,13 @@ HREF="ax-L3.html">ax-L3</A>&nbsp;<SPAN CLASS=r STYLE="color:#F90300">13</SPAN>
 STYLE="color:#F90300">14</SPAN></FONT></TD></TR>
 <TR><TD ALIGN=LEFT><FONT SIZE=-1><B>This theorem depends on definitions:</B>
 &nbsp;<A HREF="df-bi-D2.1.html">df-bi-D2.1</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#E43C00">106</SPAN> &nbsp;<A
+STYLE="color:#E33D00">107</SPAN> &nbsp;<A
 HREF="df-and-D2.2.html">df-and-D2.2</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#D84C00">134</SPAN> &nbsp;<A
+STYLE="color:#D84C00">133</SPAN> &nbsp;<A
 HREF="df-true-D2.4.html">df-true-D2.4</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#C95A00">165</SPAN> &nbsp;<A
+STYLE="color:#CE5500">155</SPAN> &nbsp;<A
 HREF="df-false-D2.5.html">df-false-D2.5</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#C75B00">168</SPAN></FONT></TD></TR>
+STYLE="color:#CC5700">158</SPAN></FONT></TD></TR>
 <TR><TD ALIGN=LEFT><FONT SIZE=-1><B>This theorem is referenced by:</B>
 (None)</FONT></TD></TR>
 </TABLE></CENTER>

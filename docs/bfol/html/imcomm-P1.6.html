@@ -16,10 +16,6 @@ img { margin-bottom: -4px }
    }
 -->
 </STYLE>
-<link rel="stylesheet" 
-media="screen" 
-href="https://fontlibrary.org/en/face/xits-math" 
-type="text/css"/> 
 <STYLE TYPE="text/css"> 
 <!--
   .wff { color: blue; } 
@@ -27,7 +23,11 @@ type="text/css"/>
   .term { color: green; } 
   .class { color: #CC33CC; } 
   .typecode { color: gray; } 
-  .math { font-family: XITSMathRegular; } 
+  @font-face {
+     font-family: XITSMath-Regular; 
+     src: url(../fonts/xits-math.woff); 
+  } 
+  .math { font-family: XITSMath-Regular; } 
 -->
 </STYLE>
 <TITLE>imcomm-P1.6 - bfol.mm Proof Explorer</TITLE>
@@ -114,7 +114,7 @@ CLASS=wff>&#x1D712;</SPAN>)))</SPAN></TD></TR>
 <TR ALIGN=LEFT><TD>2</TD><TD><A HREF="#1">1</A></TD><TD><A
 HREF="axL1.AC.SH.html"
 TITLE="Deductive Form of ~ax-L1 .">axL1.AC.SH</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#F60E00">45</SPAN></TD><TD><A NAME="2"></A>
+STYLE="color:#F60F00">45</SPAN></TD><TD><A NAME="2"></A>
 <SPAN CLASS=i>. . 3</SPAN>
 <SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN>((<SPAN
 CLASS=wff>&#x1D711;</SPAN> &rarr; (<SPAN CLASS=wff>&#x1D713;</SPAN> &rarr;
@@ -171,9 +171,9 @@ STYLE="color:#F90300">14</SPAN></FONT></TD></TR>
 HREF="imcomm-P1.6.SH.html">imcomm-P1.6.SH</A>
 &nbsp;<SPAN CLASS=r STYLE="color:#F51200">49</SPAN> &nbsp;<A
 HREF="imcomm-P1.6.AC.SH.html">imcomm-P1.6.AC.SH</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#F51200">50</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#F51300">50</SPAN> &nbsp;<A
 HREF="maet-P1.10.html">maet-P1.10</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#F21D00">63</SPAN></FONT></TD></TR>
+&nbsp;<SPAN CLASS=r STYLE="color:#F11E00">64</SPAN></FONT></TD></TR>
 </TABLE></CENTER>
 <TABLE BORDER=0 WIDTH="100%">
 <TR><TD WIDTH="25%">&nbsp;</TD>

@@ -16,10 +16,6 @@ img { margin-bottom: -4px }
    }
 -->
 </STYLE>
-<link rel="stylesheet" 
-media="screen" 
-href="https://fontlibrary.org/en/face/xits-math" 
-type="text/css"/> 
 <STYLE TYPE="text/css"> 
 <!--
   .wff { color: blue; } 
@@ -27,7 +23,11 @@ type="text/css"/>
   .term { color: green; } 
   .class { color: #CC33CC; } 
   .typecode { color: gray; } 
-  .math { font-family: XITSMathRegular; } 
+  @font-face {
+     font-family: XITSMath-Regular; 
+     src: url(../fonts/xits-math.woff); 
+  } 
+  .math { font-family: XITSMath-Regular; } 
 -->
 </STYLE>
 <TITLE>exe-P7r.VR2of2 - bfol.mm Proof Explorer</TITLE>
@@ -52,7 +52,7 @@ bfol.mm Proof Explorer
       &lt; Previous</A>&nbsp;&nbsp;
       <A HREF="exe-P7r.VR12of2.html">Next &gt;</A>
       </FONT><FONT FACE=sans-serif SIZE=-2>
-      <BR><A HREF="mmtheorems11.html#exe-P7r.VR2of2">Nearby theorems</A>
+      <BR><A HREF="mmtheorems10.html#exe-P7r.VR2of2">Nearby theorems</A>
       </FONT>
     </TD>
   </TR>
@@ -76,10 +76,10 @@ bfol.mm Proof Explorer
 <HR NOSHADE SIZE=1>
 <CENTER><B><FONT SIZE="+1">Theorem <FONT
 COLOR="#006633">exe-P7r.VR2of2</FONT></FONT></B>&nbsp;<SPAN CLASS=r
-STYLE="color:#D312EC">1006</SPAN></CENTER>
+STYLE="color:#D312EC">1000</SPAN></CENTER>
 <CENTER><TABLE><TR><TD ALIGN=LEFT><B>Description: </B><A
 HREF="exe-P7r.html">exe-P7r</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#D312ED">1004</SPAN> with one variable restriction.
+STYLE="color:#D313ED">998</SPAN> with one variable restriction.
 <P STYLE="margin-bottom:0em">
        '<SPAN CLASS=math><SPAN CLASS=objvar>&#x1D465;</SPAN></SPAN>' cannot
 occur in '<SPAN CLASS=math><SPAN
@@ -131,7 +131,7 @@ NAME="1"></A>
 CLASS=objvar>&#x1D465;</SPAN><SPAN CLASS=wff>&#x1D6FE;</SPAN></SPAN></TD></TR>
 <TR ALIGN=LEFT><TD>2</TD><TD>&nbsp;</TD><TD><A HREF="ndnfrv-P7.1.html"
 TITLE="Natural Deduction: Effective Non-Freeness Rule 1. If '`x`' does not occur in...">ndnfrv-P7.1</A>&nbsp;<SPAN
-CLASS=r STYLE="color:#7D67FF">832</SPAN></TD><TD><A NAME="2"></A>
+CLASS=r STYLE="color:#7C67FF">826</SPAN></TD><TD><A NAME="2"></A>
 <SPAN CLASS=i>. 2</SPAN>
 <SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN>&#8498;<SPAN
 CLASS=objvar>&#x1D465;</SPAN><SPAN CLASS=wff>&#x1D713;</SPAN></SPAN></TD></TR>
@@ -150,7 +150,7 @@ CLASS=objvar>&#x1D465;</SPAN><SPAN CLASS=wff>&#x1D711;</SPAN>)</SPAN></TD></TR>
 <TR ALIGN=LEFT><TD>5</TD><TD><A HREF="#1">1</A>, <A HREF="#2">2</A>, <A
 HREF="#3">3</A>, <A HREF="#4">4</A></TD><TD><A HREF="exe-P7.html"
 TITLE="Simplified '`E.`' Elimination Law. `t.` For the original form, using explicit...">exe-P7</A>&nbsp;<SPAN
-CLASS=r STYLE="color:#C726FA">961</SPAN></TD><TD><A NAME="5"></A>
+CLASS=r STYLE="color:#C727FA">955</SPAN></TD><TD><A NAME="5"></A>
 <SPAN CLASS=i>1</SPAN>
 <SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN>(<SPAN
 CLASS=wff>&#x1D6FE;</SPAN> &rarr; <SPAN
@@ -166,9 +166,9 @@ STYLE="color:#CC33CC;font-style:normal">class</SPAN></FONT></TD></TR>
 &rarr; </SPAN><A HREF="wff-imp.html">wff-imp</A>&nbsp;<SPAN CLASS=r
 STYLE="color:#FA0200">10</SPAN> &nbsp;<SPAN CLASS=math>&exist;</SPAN><A
 HREF="wff-exists.html">wff-exists</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#008F7A">601</SPAN> &nbsp;<SPAN CLASS=math>&#8498;</SPAN><A
+STYLE="color:#008F77">595</SPAN> &nbsp;<SPAN CLASS=math>&#8498;</SPAN><A
 HREF="wff-nfree.html">wff-nfree</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#0085D9">687</SPAN></FONT></TD></TR>
+STYLE="color:#0085D5">681</SPAN></FONT></TD></TR>
 <TR><TD ALIGN=LEFT><FONT SIZE=-1><B>This theorem was proved from axioms:</B>
 &nbsp;<A HREF="ax-L1.html">ax-L1</A>&nbsp;<SPAN CLASS=r
 STYLE="color:#FA0200">11</SPAN> &nbsp;<A HREF="ax-L2.html">ax-L2</A>&nbsp;<SPAN
@@ -191,21 +191,21 @@ HREF="ax-L12.html">ax-L12</A>&nbsp;<SPAN CLASS=r
 STYLE="color:#F80800">29</SPAN></FONT></TD></TR>
 <TR><TD ALIGN=LEFT><FONT SIZE=-1><B>This theorem depends on definitions:</B>
 &nbsp;<A HREF="df-bi-D2.1.html">df-bi-D2.1</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#E43C00">106</SPAN> &nbsp;<A
+STYLE="color:#E33D00">107</SPAN> &nbsp;<A
 HREF="df-and-D2.2.html">df-and-D2.2</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#D84C00">134</SPAN> &nbsp;<A
+STYLE="color:#D84C00">133</SPAN> &nbsp;<A
 HREF="df-or-D2.3.html">df-or-D2.3</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#CE5500">155</SPAN> &nbsp;<A
+STYLE="color:#D25100">145</SPAN> &nbsp;<A
 HREF="df-true-D2.4.html">df-true-D2.4</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#C95A00">165</SPAN> &nbsp;<A
+STYLE="color:#CE5500">155</SPAN> &nbsp;<A
 HREF="df-rcp-AND3.html">df-rcp-AND3</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#C55C00">171</SPAN> &nbsp;<A
+STYLE="color:#CB5800">161</SPAN> &nbsp;<A
 HREF="df-exists-D5.1.html">df-exists-D5.1</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#008F7B">602</SPAN> &nbsp;<A
+STYLE="color:#008F78">596</SPAN> &nbsp;<A
 HREF="df-nfree-D6.1.html">df-nfree-D6.1</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#0084DA">688</SPAN> &nbsp;<A
+STYLE="color:#0085D7">682</SPAN> &nbsp;<A
 HREF="df-psub-D6.2.html">df-psub-D6.2</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#027FF9">722</SPAN></FONT></TD></TR>
+STYLE="color:#0280F7">716</SPAN></FONT></TD></TR>
 <TR><TD ALIGN=LEFT><FONT SIZE=-1><B>This theorem is referenced by:</B>
 (None)</FONT></TD></TR>
 </TABLE></CENTER>

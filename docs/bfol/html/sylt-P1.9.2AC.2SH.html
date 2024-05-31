@@ -16,10 +16,6 @@ img { margin-bottom: -4px }
    }
 -->
 </STYLE>
-<link rel="stylesheet" 
-media="screen" 
-href="https://fontlibrary.org/en/face/xits-math" 
-type="text/css"/> 
 <STYLE TYPE="text/css"> 
 <!--
   .wff { color: blue; } 
@@ -27,7 +23,11 @@ type="text/css"/>
   .term { color: green; } 
   .class { color: #CC33CC; } 
   .typecode { color: gray; } 
-  .math { font-family: XITSMathRegular; } 
+  @font-face {
+     font-family: XITSMath-Regular; 
+     src: url(../fonts/xits-math.woff); 
+  } 
+  .math { font-family: XITSMath-Regular; } 
 -->
 </STYLE>
 <TITLE>sylt-P1.9.2AC.2SH - bfol.mm Proof Explorer</TITLE>
@@ -76,10 +76,10 @@ bfol.mm Proof Explorer
 <HR NOSHADE SIZE=1>
 <CENTER><B><FONT SIZE="+1">Theorem <FONT
 COLOR="#006633">sylt-P1.9.2AC.2SH</FONT></FONT></B>&nbsp;<SPAN CLASS=r
-STYLE="color:#F21C00">62</SPAN></CENTER>
+STYLE="color:#F21D00">63</SPAN></CENTER>
 <CENTER><TABLE><TR><TD ALIGN=LEFT><B>Description: </B>Another Deductive Form of
 <A HREF="sylt-P1.9.html">sylt-P1.9</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#F21A00">60</SPAN>.</TD></TR></TABLE></CENTER>
+STYLE="color:#F21B00">61</SPAN>.</TD></TR></TABLE></CENTER>
 
 <CENTER><TABLE BORDER CELLSPACING=0 BGCOLOR="#EEFFFA"
 SUMMARY="Hypotheses">
@@ -134,7 +134,7 @@ CLASS=wff>&#x1D6FE;&#x2082;</SPAN> &rarr; (<SPAN CLASS=wff>&#x1D711;</SPAN>
 &rarr; <SPAN CLASS=wff>&#x1D713;</SPAN>)))</SPAN></TD></TR>
 <TR ALIGN=LEFT><TD>3</TD><TD>&nbsp;</TD><TD><A HREF="sylt-P1.9.html"
 TITLE="Closed Form of Syllogism.">sylt-P1.9</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#F21A00">60</SPAN></TD><TD><A NAME="3"></A>
+STYLE="color:#F21B00">61</SPAN></TD><TD><A NAME="3"></A>
 <SPAN CLASS=i>. . . . . . 7</SPAN>
 <SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN>((<SPAN
 CLASS=wff>&#x1D711;</SPAN> &rarr; <SPAN CLASS=wff>&#x1D713;</SPAN>) &rarr;
@@ -224,11 +224,11 @@ HREF="ax-MP.html">ax-MP</A>&nbsp;<SPAN CLASS=r
 STYLE="color:#F90300">14</SPAN></FONT></TD></TR>
 <TR><TD ALIGN=LEFT><FONT SIZE=-1><B>This theorem is referenced by:</B> &nbsp;<A
 HREF="pfbycont-P1.16.html">pfbycont-P1.16</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#EC2E00">85</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#EC2F00">86</SPAN> &nbsp;<A
 HREF="pfbycase-P1.17.html">pfbycase-P1.17</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#EB2F00">87</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#EB3000">88</SPAN> &nbsp;<A
 HREF="bitrns-P2.6c.html">bitrns-P2.6c</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#DC4800">125</SPAN></FONT></TD></TR>
+&nbsp;<SPAN CLASS=r STYLE="color:#DB4900">126</SPAN></FONT></TD></TR>
 </TABLE></CENTER>
 <TABLE BORDER=0 WIDTH="100%">
 <TR><TD WIDTH="25%">&nbsp;</TD>

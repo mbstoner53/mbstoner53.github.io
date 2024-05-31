@@ -12,10 +12,6 @@ img { margin-bottom: -4px }
    }
 -->
 </STYLE>
-<link rel="stylesheet" 
-media="screen" 
-href="https://fontlibrary.org/en/face/xits-math" 
-type="text/css"/> 
 <STYLE TYPE="text/css"> 
 <!--
   .wff { color: blue; } 
@@ -23,7 +19,11 @@ type="text/css"/>
   .term { color: green; } 
   .class { color: #CC33CC; } 
   .typecode { color: gray; } 
-  .math { font-family: XITSMathRegular; } 
+  @font-face {
+     font-family: XITSMath-Regular; 
+     src: url(../fonts/xits-math.woff); 
+  } 
+  .math { font-family: XITSMath-Regular; } 
 -->
 </STYLE>
 <TITLE>P. 9 of Theorem List - bfol.mm Proof Explorer</TITLE>
@@ -70,8 +70,8 @@ This page:</FONT></B>
 <TABLE BORDER CELLSPACING=0 CELLPADDING=3 BGCOLOR="#EEFFFA"
 SUMMARY="Theorem List for bfol.mm Proof Explorer">
 <CAPTION><B>Theorem List for bfol.mm Proof Explorer - </B><SPAN CLASS=r
- STYLE="color:#666EFF">801</SPAN><B>-</B><SPAN CLASS=r
- STYLE="color:#AD48FF">900</SPAN> &nbsp; *Has distinct variable
+ STYLE="color:#6A6DFF">801</SPAN><B>-</B><SPAN CLASS=r
+ STYLE="color:#AF46FF">900</SPAN> &nbsp; *Has distinct variable
  group(s)</CAPTION>
 
 <TR><TH>Type</TH><TH>Label</TH><TH>Description</TH></TR>
@@ -81,128 +81,8 @@ SUMMARY="Theorem List for bfol.mm Proof Explorer">
 
 
 <TR><TD NOWRAP>Theorem</TD><TD ALIGN=CENTER><A
- HREF="psuball2v-P6-L1.html">psuball2v-P6-L1</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#666EFF">801</SPAN>*</TD><TD ALIGN=LEFT><A
- NAME="psuball2v-P6-L1"></A>
-Lemma for <A HREF="psuball2v-P6.html">psuball2v-P6</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#676EFF">802</SPAN>.
-
- <I>[Auxiliary lemma - not displayed.]</I></TD></TR>
-<TR BGCOLOR=white><TD COLSPAN=3><FONT SIZE=-3>&nbsp;</FONT></TD></TR>
-
-<TR><TD NOWRAP>Theorem</TD><TD ALIGN=CENTER><A
- HREF="psuball2v-P6.html">psuball2v-P6</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#676EFF">802</SPAN>*</TD><TD ALIGN=LEFT><A
- NAME="psuball2v-P6"></A>
-Proper Substitution Over Universal Quantifier (different variable -
-       restriction on '<SPAN CLASS=math><SPAN
-CLASS=term>&#x1D461;</SPAN></SPAN>').
-<P STYLE="margin-bottom:0em">
-       '<SPAN CLASS=math><SPAN CLASS=objvar>&#x1D466;</SPAN></SPAN>' cannot
-occur in '<SPAN CLASS=math><SPAN CLASS=term>&#x1D461;</SPAN></SPAN>'.
-
-</TD></TR><TR><TD COLSPAN=3 ALIGN=CENTER><SPAN CLASS=math><SPAN
- CLASS=typecode>&vdash; </SPAN>([<SPAN CLASS=term>&#x1D461;</SPAN> / <SPAN
- CLASS=objvar>&#x1D465;</SPAN>]&forall;<SPAN CLASS=objvar>&#x1D466;</SPAN><SPAN
- CLASS=wff>&#x1D711;</SPAN> &harr; &forall;<SPAN
- CLASS=objvar>&#x1D466;</SPAN>[<SPAN CLASS=term>&#x1D461;</SPAN> / <SPAN
- CLASS=objvar>&#x1D465;</SPAN>]<SPAN
- CLASS=wff>&#x1D711;</SPAN>)</SPAN></TD></TR>
-<TR BGCOLOR=white><TD COLSPAN=3><FONT SIZE=-3>&nbsp;</FONT></TD></TR>
-
-<TR><TD NOWRAP>Theorem</TD><TD ALIGN=CENTER><A
- HREF="psubex2v-P6.html">psubex2v-P6</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#686EFF">803</SPAN>*</TD><TD ALIGN=LEFT><A
- NAME="psubex2v-P6"></A>
-Proper Substitution Over Existential Quantifier (different variable -
-       restriction on '<SPAN CLASS=math><SPAN
-CLASS=term>&#x1D461;</SPAN></SPAN>').
-<P STYLE="margin-bottom:0em">
-       '<SPAN CLASS=math><SPAN CLASS=objvar>&#x1D466;</SPAN></SPAN>' cannot
-occur in '<SPAN CLASS=math><SPAN CLASS=term>&#x1D461;</SPAN></SPAN>'.
-
-</TD></TR><TR><TD COLSPAN=3 ALIGN=CENTER><SPAN CLASS=math><SPAN
- CLASS=typecode>&vdash; </SPAN>([<SPAN CLASS=term>&#x1D461;</SPAN> / <SPAN
- CLASS=objvar>&#x1D465;</SPAN>]&exist;<SPAN CLASS=objvar>&#x1D466;</SPAN><SPAN
- CLASS=wff>&#x1D711;</SPAN> &harr; &exist;<SPAN
- CLASS=objvar>&#x1D466;</SPAN>[<SPAN CLASS=term>&#x1D461;</SPAN> / <SPAN
- CLASS=objvar>&#x1D465;</SPAN>]<SPAN
- CLASS=wff>&#x1D711;</SPAN>)</SPAN></TD></TR>
-<TR BGCOLOR=white><TD COLSPAN=3><FONT SIZE=-3>&nbsp;</FONT></TD></TR>
-
-<TR><TD NOWRAP>Theorem</TD><TD ALIGN=CENTER><A
- HREF="psuball2-P6.html">psuball2-P6</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#696EFF">804</SPAN>*</TD><TD ALIGN=LEFT><A
- NAME="psuball2-P6"></A>
-Proper Substitution Over Universal Quantifier (different variable -
-       non-freeness condition).
-<P STYLE="margin-bottom:0em">
-       '<SPAN CLASS=math><SPAN CLASS=objvar>&#x1D467;</SPAN></SPAN>' cannot
-occur in '<SPAN CLASS=math><SPAN CLASS=term>&#x1D461;</SPAN></SPAN>'.
-
-</TD></TR><TR><TD COLSPAN=3 ALIGN=CENTER><SPAN CLASS=math><SPAN
- CLASS=typecode>&vdash; </SPAN>&#8498;<SPAN CLASS=objvar>&#x1D467;</SPAN><SPAN
- CLASS=wff>&#x1D711;</SPAN></SPAN>&nbsp;&nbsp;&nbsp; <FONT
- FACE=sans-serif>&#8658;</FONT>&nbsp;&nbsp;&nbsp;<SPAN CLASS=math><SPAN
- CLASS=typecode>&vdash; </SPAN>([<SPAN CLASS=term>&#x1D461;</SPAN> / <SPAN
- CLASS=objvar>&#x1D465;</SPAN>]&forall;<SPAN CLASS=objvar>&#x1D466;</SPAN><SPAN
- CLASS=wff>&#x1D711;</SPAN> &harr; &forall;<SPAN
- CLASS=objvar>&#x1D467;</SPAN>[<SPAN CLASS=term>&#x1D461;</SPAN> / <SPAN
- CLASS=objvar>&#x1D465;</SPAN>][<SPAN CLASS=objvar>&#x1D467;</SPAN> / <SPAN
- CLASS=objvar>&#x1D466;</SPAN>]<SPAN
- CLASS=wff>&#x1D711;</SPAN>)</SPAN></TD></TR>
-<TR BGCOLOR=white><TD COLSPAN=3><FONT SIZE=-3>&nbsp;</FONT></TD></TR>
-
-<TR><TD NOWRAP>Theorem</TD><TD ALIGN=CENTER><A
- HREF="psubex2-P6.html">psubex2-P6</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#6A6DFF">805</SPAN>*</TD><TD ALIGN=LEFT><A NAME="psubex2-P6"></A>
-Proper Substitution Over Existential Quantifier (different variable -
-       non-freeness condition).
-<P STYLE="margin-bottom:0em">
-       '<SPAN CLASS=math><SPAN CLASS=objvar>&#x1D467;</SPAN></SPAN>' cannot
-occur in '<SPAN CLASS=math><SPAN CLASS=term>&#x1D461;</SPAN></SPAN>'.
-
-</TD></TR><TR><TD COLSPAN=3 ALIGN=CENTER><SPAN CLASS=math><SPAN
- CLASS=typecode>&vdash; </SPAN>&#8498;<SPAN CLASS=objvar>&#x1D467;</SPAN><SPAN
- CLASS=wff>&#x1D711;</SPAN></SPAN>&nbsp;&nbsp;&nbsp; <FONT
- FACE=sans-serif>&#8658;</FONT>&nbsp;&nbsp;&nbsp;<SPAN CLASS=math><SPAN
- CLASS=typecode>&vdash; </SPAN>([<SPAN CLASS=term>&#x1D461;</SPAN> / <SPAN
- CLASS=objvar>&#x1D465;</SPAN>]&exist;<SPAN CLASS=objvar>&#x1D466;</SPAN><SPAN
- CLASS=wff>&#x1D711;</SPAN> &harr; &exist;<SPAN
- CLASS=objvar>&#x1D467;</SPAN>[<SPAN CLASS=term>&#x1D461;</SPAN> / <SPAN
- CLASS=objvar>&#x1D465;</SPAN>][<SPAN CLASS=objvar>&#x1D467;</SPAN> / <SPAN
- CLASS=objvar>&#x1D466;</SPAN>]<SPAN
- CLASS=wff>&#x1D711;</SPAN>)</SPAN></TD></TR>
-<TR BGCOLOR=white><TD COLSPAN=3><FONT SIZE=-3>&nbsp;</FONT></TD></TR>
-
-<TR BGCOLOR="#FFFFF2"><TD COLSPAN=3><CENTER><B><A
- NAME="mm806s"></A>7.6.5.1&nbsp;&nbsp;Proper Substitution Applied to Atomic
- Formulae.</B></CENTER>
-</TD></TR>
-<TR BGCOLOR=white><TD COLSPAN=3><FONT SIZE=-3>&nbsp;</FONT></TD></TR>
-<TR><TD NOWRAP>Theorem</TD><TD ALIGN=CENTER><A
- HREF="psubspliteq-P6.html">psubspliteq-P6</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#6B6DFF">806</SPAN>*</TD><TD ALIGN=LEFT><A
- NAME="psubspliteq-P6"></A>
-Apply Proper Substitution to Split Equlity.
-<P STYLE="margin-bottom:0em">
-       '<SPAN CLASS=math><SPAN CLASS=objvar>&#x1D44E;</SPAN></SPAN>' is
-distinct from all other variables.
-
-</TD></TR><TR><TD COLSPAN=3 ALIGN=CENTER><SPAN CLASS=math><SPAN
- CLASS=typecode>&vdash; </SPAN>([<SPAN CLASS=term>&#x1D464;</SPAN> / <SPAN
- CLASS=objvar>&#x1D465;</SPAN>] <SPAN CLASS=term>&#x1D461;</SPAN> = <SPAN
- CLASS=term>&#x1D462;</SPAN> &harr; &exist;<SPAN
- CLASS=objvar>&#x1D44E;</SPAN>([<SPAN CLASS=term>&#x1D464;</SPAN> / <SPAN
- CLASS=objvar>&#x1D465;</SPAN>] <SPAN CLASS=objvar>&#x1D44E;</SPAN> = <SPAN
- CLASS=term>&#x1D461;</SPAN> &wedge; [<SPAN CLASS=term>&#x1D464;</SPAN> / <SPAN
- CLASS=objvar>&#x1D465;</SPAN>] <SPAN CLASS=objvar>&#x1D44E;</SPAN> = <SPAN
- CLASS=term>&#x1D462;</SPAN>))</SPAN></TD></TR>
-<TR BGCOLOR=white><TD COLSPAN=3><FONT SIZE=-3>&nbsp;</FONT></TD></TR>
-
-<TR><TD NOWRAP>Theorem</TD><TD ALIGN=CENTER><A
  HREF="psubsplitelof-P6.html">psubsplitelof-P6</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#6C6DFF">807</SPAN>*</TD><TD ALIGN=LEFT><A
+ STYLE="color:#6A6DFF">801</SPAN>*</TD><TD ALIGN=LEFT><A
  NAME="psubsplitelof-P6"></A>
 Apply Proper Substitution to Split &quot;Element Of&quot; Predicate.
 <P STYLE="margin-bottom:0em">
@@ -224,13 +104,13 @@ other variables.
 <TR BGCOLOR=white><TD COLSPAN=3><FONT SIZE=-3>&nbsp;</FONT></TD></TR>
 
 <TR BGCOLOR="#FFFFF2"><TD COLSPAN=3><CENTER><B><A
- NAME="mm808s"></A>7.6.5.2&nbsp;&nbsp;Proper Substitution Applied to Atomic
+ NAME="mm802s"></A>7.6.5.2&nbsp;&nbsp;Proper Substitution Applied to Atomic
  Terms.</B></CENTER>
 </TD></TR>
 <TR BGCOLOR=white><TD COLSPAN=3><FONT SIZE=-3>&nbsp;</FONT></TD></TR>
 <TR><TD NOWRAP>Theorem</TD><TD ALIGN=CENTER><A
  HREF="psubvar1-P6.html">psubvar1-P6</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#6D6DFF">808</SPAN>*</TD><TD ALIGN=LEFT><A
+ STYLE="color:#6B6DFF">802</SPAN>*</TD><TD ALIGN=LEFT><A
  NAME="psubvar1-P6"></A>
 Proper Substitution Applied to Atomic Term (same variable).
 <P STYLE="margin-bottom:0em">
@@ -246,7 +126,7 @@ distinct from all other variables.
 
 <TR><TD NOWRAP>Theorem</TD><TD ALIGN=CENTER><A
  HREF="psubvar2-P6.html">psubvar2-P6</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#6E6CFF">809</SPAN>*</TD><TD ALIGN=LEFT><A
+ STYLE="color:#6C6DFF">803</SPAN>*</TD><TD ALIGN=LEFT><A
  NAME="psubvar2-P6"></A>
 Proper Substitution Applied to Atomic Term (different variable).
 <P STYLE="margin-bottom:0em">
@@ -262,7 +142,7 @@ distinct from all other variables.
 
 <TR><TD NOWRAP>Theorem</TD><TD ALIGN=CENTER><A
  HREF="psubzero-P6.html">psubzero-P6</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#6E6CFF">810</SPAN>*</TD><TD ALIGN=LEFT><A
+ STYLE="color:#6D6DFF">804</SPAN>*</TD><TD ALIGN=LEFT><A
  NAME="psubzero-P6"></A>
 Proper Substitution Applied to Atomic Term (constant).
 <P STYLE="margin-bottom:0em">
@@ -276,23 +156,23 @@ from all other variables.
 <TR BGCOLOR=white><TD COLSPAN=3><FONT SIZE=-3>&nbsp;</FONT></TD></TR>
 
 <TR BGCOLOR="#FFFFF2"><TD COLSPAN=3><CENTER><B><A
- NAME="mm811s"></A>7.6.5.3&nbsp;&nbsp;Proper Substitution Applied to Terms with
+ NAME="mm805s"></A>7.6.5.3&nbsp;&nbsp;Proper Substitution Applied to Terms with
  Functions.</B></CENTER>
 </TD></TR>
 <TR BGCOLOR=white><TD COLSPAN=3><FONT SIZE=-3>&nbsp;</FONT></TD></TR>
 <TR><TD NOWRAP>Theorem</TD><TD ALIGN=CENTER><A
  HREF="psubsuccv-P6-L1.html">psubsuccv-P6-L1</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#6F6CFF">811</SPAN>*</TD><TD ALIGN=LEFT><A
+ STYLE="color:#6E6CFF">805</SPAN>*</TD><TD ALIGN=LEFT><A
  NAME="psubsuccv-P6-L1"></A>
 Lemma for <A HREF="psubsuccv-P6.html">psubsuccv-P6</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#706CFF">812</SPAN>.
+STYLE="color:#6E6CFF">806</SPAN>.
 
  <I>[Auxiliary lemma - not displayed.]</I></TD></TR>
 <TR BGCOLOR=white><TD COLSPAN=3><FONT SIZE=-3>&nbsp;</FONT></TD></TR>
 
 <TR><TD NOWRAP>Theorem</TD><TD ALIGN=CENTER><A
  HREF="psubsuccv-P6.html">psubsuccv-P6</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#706CFF">812</SPAN>*</TD><TD ALIGN=LEFT><A
+ STYLE="color:#6E6CFF">806</SPAN>*</TD><TD ALIGN=LEFT><A
  NAME="psubsuccv-P6"></A>
 Proper Substitution Over Successor Function (variable restriction).
 <P STYLE="margin-bottom:0em">
@@ -317,17 +197,17 @@ CLASS=objvar>&#x1D465;</SPAN></SPAN>' cannot
 
 <TR><TD NOWRAP>Theorem</TD><TD ALIGN=CENTER><A
  HREF="psubaddv-P6-L1.html">psubaddv-P6-L1</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#706BFF">813</SPAN>*</TD><TD ALIGN=LEFT><A
+ STYLE="color:#6F6CFF">807</SPAN>*</TD><TD ALIGN=LEFT><A
  NAME="psubaddv-P6-L1"></A>
 Lemma for <A HREF="psubaddv-P6.html">psubaddv-P6</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#716BFF">814</SPAN>.
+STYLE="color:#706CFF">808</SPAN>.
 
  <I>[Auxiliary lemma - not displayed.]</I></TD></TR>
 <TR BGCOLOR=white><TD COLSPAN=3><FONT SIZE=-3>&nbsp;</FONT></TD></TR>
 
 <TR><TD NOWRAP>Theorem</TD><TD ALIGN=CENTER><A
  HREF="psubaddv-P6.html">psubaddv-P6</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#716BFF">814</SPAN>*</TD><TD ALIGN=LEFT><A
+ STYLE="color:#706CFF">808</SPAN>*</TD><TD ALIGN=LEFT><A
  NAME="psubaddv-P6"></A>
 Proper Substitution Over Addition (variable restriction).
 <P STYLE="margin-bottom:0em">
@@ -361,17 +241,17 @@ CLASS=term>&#x1D464;</SPAN></SPAN>'.
 
 <TR><TD NOWRAP>Theorem</TD><TD ALIGN=CENTER><A
  HREF="psubmultv-P6-L1.html">psubmultv-P6-L1</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#726BFF">815</SPAN>*</TD><TD ALIGN=LEFT><A
+ STYLE="color:#706BFF">809</SPAN>*</TD><TD ALIGN=LEFT><A
  NAME="psubmultv-P6-L1"></A>
 Lemma for <A HREF="psubmultv-P6.html">psubmultv-P6</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#726BFF">816</SPAN>.
+STYLE="color:#716BFF">810</SPAN>.
 
  <I>[Auxiliary lemma - not displayed.]</I></TD></TR>
 <TR BGCOLOR=white><TD COLSPAN=3><FONT SIZE=-3>&nbsp;</FONT></TD></TR>
 
 <TR><TD NOWRAP>Theorem</TD><TD ALIGN=CENTER><A
  HREF="psubmultv-P6.html">psubmultv-P6</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#726BFF">816</SPAN>*</TD><TD ALIGN=LEFT><A
+ STYLE="color:#716BFF">810</SPAN>*</TD><TD ALIGN=LEFT><A
  NAME="psubmultv-P6"></A>
 Proper Substitution Over Multiplication (variable restriction).
 <P STYLE="margin-bottom:0em">
@@ -404,18 +284,18 @@ CLASS=term>&#x1D464;</SPAN></SPAN>'.
 <TR BGCOLOR=white><TD COLSPAN=3><FONT SIZE=-3>&nbsp;</FONT></TD></TR>
 
 <TR BGCOLOR="#FFFFF2"><TD COLSPAN=3><CENTER><FONT SIZE="+1"><B><A
- NAME="mm817b"></A>7.7&nbsp;&nbsp;Deductive Forms.</B></FONT></CENTER>
+ NAME="mm811b"></A>7.7&nbsp;&nbsp;Deductive Forms.</B></FONT></CENTER>
 </TD></TR>
 <TR BGCOLOR=white><TD COLSPAN=3><FONT SIZE=-3>&nbsp;</FONT></TD></TR>
 <TR BGCOLOR="#FFFFF2"><TD COLSPAN=3><CENTER><B><A
- NAME="mm817s"></A>7.7.1&nbsp;&nbsp;Some Lemmas.</B></CENTER>
+ NAME="mm811s"></A>7.7.1&nbsp;&nbsp;Some Lemmas.</B></CENTER>
 </TD></TR>
 <TR BGCOLOR=white><TD COLSPAN=3><FONT SIZE=-3>&nbsp;</FONT></TD></TR>
 <TR><TD NOWRAP>Theorem</TD><TD ALIGN=CENTER><A
  HREF="nfrgencl-L6.html">nfrgencl-L6</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#736AFF">817</SPAN></TD><TD ALIGN=LEFT><A NAME="nfrgencl-L6"></A>
+ STYLE="color:#726BFF">811</SPAN></TD><TD ALIGN=LEFT><A NAME="nfrgencl-L6"></A>
 Closed Form of <A HREF="nfrgen-P6.html">nfrgen-P6</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#157CFF">739</SPAN>.
+STYLE="color:#117DFF">733</SPAN>.
 
 </TD></TR><TR><TD COLSPAN=3 ALIGN=CENTER><SPAN CLASS=math><SPAN
  CLASS=typecode>&vdash; </SPAN>(&#8498;<SPAN CLASS=objvar>&#x1D465;</SPAN><SPAN
@@ -426,9 +306,9 @@ STYLE="color:#157CFF">739</SPAN>.
 
 <TR><TD NOWRAP>Theorem</TD><TD ALIGN=CENTER><A
  HREF="gennfrcl-L6.html">gennfrcl-L6</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#746AFF">818</SPAN></TD><TD ALIGN=LEFT><A NAME="gennfrcl-L6"></A>
+ STYLE="color:#726BFF">812</SPAN></TD><TD ALIGN=LEFT><A NAME="gennfrcl-L6"></A>
 Closed Form of <A HREF="gennfr-P6.html">gennfr-P6</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#177CFF">740</SPAN>.
+STYLE="color:#137DFF">734</SPAN>.
 
 </TD></TR><TR><TD COLSPAN=3 ALIGN=CENTER><SPAN CLASS=math><SPAN
  CLASS=typecode>&vdash; </SPAN>(&forall;<SPAN
@@ -440,10 +320,10 @@ STYLE="color:#177CFF">740</SPAN>.
 
 <TR><TD NOWRAP>Theorem</TD><TD ALIGN=CENTER><A
  HREF="nfrexgencl-L6.html">nfrexgencl-L6</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#746AFF">819</SPAN></TD><TD ALIGN=LEFT><A
+ STYLE="color:#736AFF">813</SPAN></TD><TD ALIGN=LEFT><A
  NAME="nfrexgencl-L6"></A>
 Closed Form of <A HREF="nfrexgen-P6.html">nfrexgen-P6</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#187CFF">741</SPAN>.
+STYLE="color:#157CFF">735</SPAN>.
 
 </TD></TR><TR><TD COLSPAN=3 ALIGN=CENTER><SPAN CLASS=math><SPAN
  CLASS=typecode>&vdash; </SPAN>(&#8498;<SPAN CLASS=objvar>&#x1D465;</SPAN><SPAN
@@ -454,10 +334,10 @@ STYLE="color:#187CFF">741</SPAN>.
 
 <TR><TD NOWRAP>Theorem</TD><TD ALIGN=CENTER><A
  HREF="exgennfrcl-L6.html">exgennfrcl-L6</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#756AFF">820</SPAN></TD><TD ALIGN=LEFT><A
+ STYLE="color:#746AFF">814</SPAN></TD><TD ALIGN=LEFT><A
  NAME="exgennfrcl-L6"></A>
 Closed Form of <A HREF="exgennfr-P6.html">exgennfr-P6</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#1A7CFF">742</SPAN>.
+STYLE="color:#167CFF">736</SPAN>.
 
 </TD></TR><TR><TD COLSPAN=3 ALIGN=CENTER><SPAN CLASS=math><SPAN
  CLASS=typecode>&vdash; </SPAN>(&forall;<SPAN
@@ -468,12 +348,12 @@ STYLE="color:#1A7CFF">742</SPAN>.
 <TR BGCOLOR=white><TD COLSPAN=3><FONT SIZE=-3>&nbsp;</FONT></TD></TR>
 
 <TR BGCOLOR="#FFFFF2"><TD COLSPAN=3><CENTER><B><A
- NAME="mm821s"></A>7.7.2&nbsp;&nbsp;Effective Non-Freeness.</B></CENTER>
+ NAME="mm815s"></A>7.7.2&nbsp;&nbsp;Effective Non-Freeness.</B></CENTER>
 </TD></TR>
 <TR BGCOLOR=white><TD COLSPAN=3><FONT SIZE=-3>&nbsp;</FONT></TD></TR>
 <TR><TD NOWRAP>Theorem</TD><TD ALIGN=CENTER><A
  HREF="nfrimd-P6.html">nfrimd-P6</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#7669FF">821</SPAN></TD><TD ALIGN=LEFT><A NAME="nfrimd-P6"></A>
+ STYLE="color:#756AFF">815</SPAN></TD><TD ALIGN=LEFT><A NAME="nfrimd-P6"></A>
 ENF Over Implication (deductive form).
 
 </TD></TR><TR><TD COLSPAN=3 ALIGN=CENTER><SPAN CLASS=math><SPAN
@@ -492,7 +372,7 @@ ENF Over Implication (deductive form).
 
 <TR><TD NOWRAP>Theorem</TD><TD ALIGN=CENTER><A
  HREF="nfrandd-P6.html">nfrandd-P6</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#7669FF">822</SPAN></TD><TD ALIGN=LEFT><A NAME="nfrandd-P6"></A>
+ STYLE="color:#756AFF">816</SPAN></TD><TD ALIGN=LEFT><A NAME="nfrandd-P6"></A>
 ENF Over Conjunction (deductive form).
 
 </TD></TR><TR><TD COLSPAN=3 ALIGN=CENTER><SPAN CLASS=math><SPAN
@@ -511,7 +391,7 @@ ENF Over Conjunction (deductive form).
 
 <TR><TD NOWRAP>Theorem</TD><TD ALIGN=CENTER><A
  HREF="nfrord-P6.html">nfrord-P6</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#7769FF">823</SPAN></TD><TD ALIGN=LEFT><A NAME="nfrord-P6"></A>
+ STYLE="color:#7669FF">817</SPAN></TD><TD ALIGN=LEFT><A NAME="nfrord-P6"></A>
 ENF Over Disjunction (deductive form).
 
 </TD></TR><TR><TD COLSPAN=3 ALIGN=CENTER><SPAN CLASS=math><SPAN
@@ -530,7 +410,7 @@ ENF Over Disjunction (deductive form).
 
 <TR><TD NOWRAP>Theorem</TD><TD ALIGN=CENTER><A
  HREF="nfrbid-P6.html">nfrbid-P6</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#7869FF">824</SPAN></TD><TD ALIGN=LEFT><A NAME="nfrbid-P6"></A>
+ STYLE="color:#7769FF">818</SPAN></TD><TD ALIGN=LEFT><A NAME="nfrbid-P6"></A>
 ENF Over Biconditional (deductive form).
 
 </TD></TR><TR><TD COLSPAN=3 ALIGN=CENTER><SPAN CLASS=math><SPAN
@@ -549,7 +429,7 @@ ENF Over Biconditional (deductive form).
 
 <TR><TD NOWRAP>Theorem</TD><TD ALIGN=CENTER><A
  HREF="nfrall2d-P6.html">nfrall2d-P6</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#7869FF">825</SPAN>*</TD><TD ALIGN=LEFT><A
+ STYLE="color:#7769FF">819</SPAN>*</TD><TD ALIGN=LEFT><A
  NAME="nfrall2d-P6"></A>
 ENF Over Universal Quantifier (different variable - deductive form).
 
@@ -572,7 +452,7 @@ ENF Over Universal Quantifier (different variable - deductive form).
 
 <TR><TD NOWRAP>Theorem</TD><TD ALIGN=CENTER><A
  HREF="nfrex2d-P6.html">nfrex2d-P6</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#7968FF">826</SPAN>*</TD><TD ALIGN=LEFT><A NAME="nfrex2d-P6"></A>
+ STYLE="color:#7869FF">820</SPAN>*</TD><TD ALIGN=LEFT><A NAME="nfrex2d-P6"></A>
 ENF Over Existential Quantifier (different variable - deductive
        form).
 
@@ -595,7 +475,7 @@ ENF Over Existential Quantifier (different variable - deductive
 
 <TR><TD NOWRAP>Theorem</TD><TD ALIGN=CENTER><A
  HREF="nfrnfr-P6.html">nfrnfr-P6</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#7A68FF">827</SPAN></TD><TD ALIGN=LEFT><A NAME="nfrnfr-P6"></A>
+ STYLE="color:#7968FF">821</SPAN></TD><TD ALIGN=LEFT><A NAME="nfrnfr-P6"></A>
 ENF Over ENF Predicate.
 <P STYLE="margin-bottom:0em">
        Interpreted semantically, this says that the effective non-freeness
@@ -615,13 +495,13 @@ assignment.  We expect this since ENF is a property
 <TR BGCOLOR=white><TD COLSPAN=3><FONT SIZE=-3>&nbsp;</FONT></TD></TR>
 
 <TR BGCOLOR="#FFFFF2"><TD COLSPAN=3><CENTER><B><A
- NAME="mm828s"></A>7.7.3&nbsp;&nbsp;Universal Quantifier
+ NAME="mm822s"></A>7.7.3&nbsp;&nbsp;Universal Quantifier
  Introduction.</B></CENTER>
 </TD></TR>
 <TR BGCOLOR=white><TD COLSPAN=3><FONT SIZE=-3>&nbsp;</FONT></TD></TR>
 <TR><TD NOWRAP>Theorem</TD><TD ALIGN=CENTER><A
  HREF="ndalli-P6.html">ndalli-P6</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#7A68FF">828</SPAN>*</TD><TD ALIGN=LEFT><A NAME="ndalli-P6"></A>
+ STYLE="color:#7968FF">822</SPAN>*</TD><TD ALIGN=LEFT><A NAME="ndalli-P6"></A>
 Natural Deduction Form of Universal Quantifier Introduction.
 
 </TD></TR><TR><TD COLSPAN=3 ALIGN=CENTER><SPAN CLASS=math><SPAN
@@ -641,13 +521,13 @@ Natural Deduction Form of Universal Quantifier Introduction.
 <TR BGCOLOR=white><TD COLSPAN=3><FONT SIZE=-3>&nbsp;</FONT></TD></TR>
 
 <TR BGCOLOR="#FFFFF2"><TD COLSPAN=3><CENTER><B><A
- NAME="mm829s"></A>7.7.4&nbsp;&nbsp;Exestential Quantifier
+ NAME="mm823s"></A>7.7.4&nbsp;&nbsp;Exestential Quantifier
  Elimination.</B></CENTER>
 </TD></TR>
 <TR BGCOLOR=white><TD COLSPAN=3><FONT SIZE=-3>&nbsp;</FONT></TD></TR>
 <TR><TD NOWRAP>Theorem</TD><TD ALIGN=CENTER><A
  HREF="qremexd-P6.html">qremexd-P6</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#7B68FF">829</SPAN></TD><TD ALIGN=LEFT><A NAME="qremexd-P6"></A>
+ STYLE="color:#7A68FF">823</SPAN></TD><TD ALIGN=LEFT><A NAME="qremexd-P6"></A>
 Existential Quantifier Removal Theorem (deductive form).
 
 </TD></TR><TR><TD COLSPAN=3 ALIGN=CENTER><SPAN CLASS=math><SPAN
@@ -662,7 +542,7 @@ Existential Quantifier Removal Theorem (deductive form).
 
 <TR><TD NOWRAP>Theorem</TD><TD ALIGN=CENTER><A
  HREF="exiad-P6.html">exiad-P6</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#7C67FF">830</SPAN></TD><TD ALIGN=LEFT><A NAME="exiad-P6"></A>
+ STYLE="color:#7B68FF">824</SPAN></TD><TD ALIGN=LEFT><A NAME="exiad-P6"></A>
 Introduction of Existential Quantifier as Antecedent (deductive
       form).
 
@@ -684,7 +564,7 @@ Introduction of Existential Quantifier as Antecedent (deductive
 
 <TR><TD NOWRAP>Theorem</TD><TD ALIGN=CENTER><A
  HREF="ndexe-P6.html">ndexe-P6</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#7C67FF">831</SPAN>*</TD><TD ALIGN=LEFT><A NAME="ndexe-P6"></A>
+ STYLE="color:#7B67FF">825</SPAN>*</TD><TD ALIGN=LEFT><A NAME="ndexe-P6"></A>
 Natural Deduction Form of Existential Quantifier Elimination.
 
 </TD></TR><TR><TD COLSPAN=3 ALIGN=CENTER><SPAN CLASS=math><SPAN
@@ -711,21 +591,21 @@ Natural Deduction Form of Existential Quantifier Elimination.
 <TR BGCOLOR=white><TD COLSPAN=3><FONT SIZE=-3>&nbsp;</FONT></TD></TR>
 
 <TR BGCOLOR="#FFFFF2"><TD COLSPAN=3><CENTER><FONT SIZE="+1"><B><A
- NAME="mm832h"></A>PART 8&nbsp;&nbsp;Chapter 7: Predicate Calculus (Natural
+ NAME="mm826h"></A>PART 8&nbsp;&nbsp;Chapter 7: Predicate Calculus (Natural
  Deduction)</B></FONT></CENTER>
 </TD></TR>
 <TR BGCOLOR=white><TD COLSPAN=3><FONT SIZE=-3>&nbsp;</FONT></TD></TR>
 <TR BGCOLOR="#FFFFF2"><TD COLSPAN=3><CENTER><FONT SIZE="+1"><B><A
- NAME="mm832b"></A>8.1&nbsp;&nbsp;Natural Deduction for Predicate
+ NAME="mm826b"></A>8.1&nbsp;&nbsp;Natural Deduction for Predicate
  Calculus.</B></FONT></CENTER>
 </TD></TR>
 <TR BGCOLOR=white><TD COLSPAN=3><FONT SIZE=-3>&nbsp;</FONT></TD></TR>
 <TR BGCOLOR="#FFFFF2"><TD COLSPAN=3><CENTER><B><A
- NAME="mm832s"></A>8.1.1&nbsp;&nbsp;Axiomatic Rules.</B></CENTER>
+ NAME="mm826s"></A>8.1.1&nbsp;&nbsp;Axiomatic Rules.</B></CENTER>
 </TD></TR>
 <TR BGCOLOR=white><TD COLSPAN=3><FONT SIZE=-3>&nbsp;</FONT></TD></TR>
 <TR BGCOLOR="#FFFFF2"><TD COLSPAN=3><CENTER><B><A
- NAME="mm832s"></A>8.1.1.1&nbsp;&nbsp;Effective Non-Freeness
+ NAME="mm826s"></A>8.1.1.1&nbsp;&nbsp;Effective Non-Freeness
  Rules.</B></CENTER>
 <P STYLE="margin-bottom:0em">
 The contextless (obtained by replacing '<SPAN CLASS=math><SPAN
@@ -780,13 +660,13 @@ free in '<SPAN CLASS=math><SPAN CLASS=wff>&#x1D711;</SPAN></SPAN>' (in the
 absolute
   sense). The worked out version of this example is given as <A
 HREF="example-E7.1a.html">example-E7.1a</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#E500BA">1080</SPAN>
+STYLE="color:#E500BA">1074</SPAN>
   and <A HREF="example-E7.1b.html">example-E7.1b</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#E500B9">1081</SPAN>.
+STYLE="color:#E500B9">1075</SPAN>.
 <P STYLE="margin-bottom:0em">
   It also appears that one additional axiom, <A
 HREF="ndnfrnfr-P7.12.html">ndnfrnfr-P7.12</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#8464FF">843</SPAN>, is needed to
+STYLE="color:#8364FF">837</SPAN>, is needed to
   recover the closed form definition of effective non-freeness given in the
   Hilbert system.
 
@@ -794,7 +674,7 @@ STYLE="color:#8464FF">843</SPAN>, is needed to
 <TR BGCOLOR=white><TD COLSPAN=3><FONT SIZE=-3>&nbsp;</FONT></TD></TR>
 <TR><TD NOWRAP>Theorem</TD><TD ALIGN=CENTER><A
  HREF="ndnfrv-P7.1.html">ndnfrv-P7.1</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#7D67FF">832</SPAN>*</TD><TD ALIGN=LEFT><A
+ STYLE="color:#7C67FF">826</SPAN>*</TD><TD ALIGN=LEFT><A
  NAME="ndnfrv-P7.1"></A>
 Natural Deduction:  Effective Non-Freeness Rule 1.
 <P STYLE="margin-bottom:0em">
@@ -811,7 +691,7 @@ not
 
 <TR><TD NOWRAP>Theorem</TD><TD ALIGN=CENTER><A
  HREF="ndnfrneg-P7.2.html">ndnfrneg-P7.2</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#7E67FF">833</SPAN></TD><TD ALIGN=LEFT><A
+ STYLE="color:#7D67FF">827</SPAN></TD><TD ALIGN=LEFT><A
  NAME="ndnfrneg-P7.2"></A>
 Natural Deduction: Effective Non-Freeness Rule 2.
 <P STYLE="margin-bottom:0em">
@@ -834,7 +714,7 @@ CLASS=wff>&#x1D711;</SPAN></SPAN>'.
 
 <TR><TD NOWRAP>Theorem</TD><TD ALIGN=CENTER><A
  HREF="ndnfrim-P7.3.html">ndnfrim-P7.3</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#7E66FF">834</SPAN></TD><TD ALIGN=LEFT><A
+ STYLE="color:#7D67FF">828</SPAN></TD><TD ALIGN=LEFT><A
  NAME="ndnfrim-P7.3"></A>
 Natural Deduction: Effective Non-Freeness Rule 3.
 <P STYLE="margin-bottom:0em">
@@ -863,7 +743,7 @@ CLASS=wff>&#x1D713;</SPAN>)</SPAN>'.
 
 <TR><TD NOWRAP>Theorem</TD><TD ALIGN=CENTER><A
  HREF="ndnfrand-P7.4.html">ndnfrand-P7.4</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#7F66FF">835</SPAN></TD><TD ALIGN=LEFT><A
+ STYLE="color:#7E66FF">829</SPAN></TD><TD ALIGN=LEFT><A
  NAME="ndnfrand-P7.4"></A>
 Natural Deduction: Effective Non-Freeness Rule 4.
 <P STYLE="margin-bottom:0em">
@@ -892,7 +772,7 @@ CLASS=wff>&#x1D713;</SPAN>)</SPAN>'.
 
 <TR><TD NOWRAP>Theorem</TD><TD ALIGN=CENTER><A
  HREF="ndnfror-P7.5.html">ndnfror-P7.5</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#8066FF">836</SPAN></TD><TD ALIGN=LEFT><A
+ STYLE="color:#7F66FF">830</SPAN></TD><TD ALIGN=LEFT><A
  NAME="ndnfror-P7.5"></A>
 Natural Deduction: Effective Non-Freeness Rule 5.
 <P STYLE="margin-bottom:0em">
@@ -921,7 +801,7 @@ CLASS=wff>&#x1D713;</SPAN>)</SPAN>'.
 
 <TR><TD NOWRAP>Theorem</TD><TD ALIGN=CENTER><A
  HREF="ndnfrbi-P7.6.html">ndnfrbi-P7.6</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#8066FF">837</SPAN></TD><TD ALIGN=LEFT><A
+ STYLE="color:#7F66FF">831</SPAN></TD><TD ALIGN=LEFT><A
  NAME="ndnfrbi-P7.6"></A>
 Natural Deduction: Effective Non-Freeness Rule 6.
 <P STYLE="margin-bottom:0em">
@@ -950,7 +830,7 @@ CLASS=wff>&#x1D713;</SPAN>)</SPAN>'.
 
 <TR><TD NOWRAP>Theorem</TD><TD ALIGN=CENTER><A
  HREF="ndnfrall1-P7.7.html">ndnfrall1-P7.7</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#8165FF">838</SPAN></TD><TD ALIGN=LEFT><A
+ STYLE="color:#8066FF">832</SPAN></TD><TD ALIGN=LEFT><A
  NAME="ndnfrall1-P7.7"></A>
 Natural Deduction: Effective Non-Freeness Rule 7.
 <P STYLE="margin-bottom:0em">
@@ -969,7 +849,7 @@ will be bound).
 
 <TR><TD NOWRAP>Theorem</TD><TD ALIGN=CENTER><A
  HREF="ndnfrex1-P7.8.html">ndnfrex1-P7.8</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#8265FF">839</SPAN></TD><TD ALIGN=LEFT><A
+ STYLE="color:#8165FF">833</SPAN></TD><TD ALIGN=LEFT><A
  NAME="ndnfrex1-P7.8"></A>
 Natural Deduction: Effective Non-Freeness Rule 8.
 <P STYLE="margin-bottom:0em">
@@ -988,7 +868,7 @@ will be bound).
 
 <TR><TD NOWRAP>Theorem</TD><TD ALIGN=CENTER><A
  HREF="ndnfrall2-P7.9.html">ndnfrall2-P7.9</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#8265FF">840</SPAN>*</TD><TD ALIGN=LEFT><A
+ STYLE="color:#8165FF">834</SPAN>*</TD><TD ALIGN=LEFT><A
  NAME="ndnfrall2-P7.9"></A>
 Natural Deduction: Effective Non-Freeness Rule 9.
 <P STYLE="margin-bottom:0em">
@@ -1024,7 +904,7 @@ CLASS=wff>&#x1D6FE;</SPAN></SPAN>'.
 
 <TR><TD NOWRAP>Theorem</TD><TD ALIGN=CENTER><A
  HREF="ndnfrex2-P7.10.html">ndnfrex2-P7.10</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#8365FF">841</SPAN>*</TD><TD ALIGN=LEFT><A
+ STYLE="color:#8265FF">835</SPAN>*</TD><TD ALIGN=LEFT><A
  NAME="ndnfrex2-P7.10"></A>
 Natural Deduction: Effective Non-Freeness Rule 10.
 <P STYLE="margin-bottom:0em">
@@ -1060,7 +940,7 @@ CLASS=wff>&#x1D6FE;</SPAN></SPAN>'.
 
 <TR><TD NOWRAP>Theorem</TD><TD ALIGN=CENTER><A
  HREF="ndnfrleq-P7.11.html">ndnfrleq-P7.11</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#8464FF">842</SPAN></TD><TD ALIGN=LEFT><A
+ STYLE="color:#8365FF">836</SPAN></TD><TD ALIGN=LEFT><A
  NAME="ndnfrleq-P7.11"></A>
 Natural Deduction: Effective Non-Freeness Rule 11.
 <P STYLE="margin-bottom:0em">
@@ -1087,7 +967,7 @@ CLASS=objvar>&#x1D465;</SPAN></SPAN>' is conserved between
 
 <TR><TD NOWRAP>Theorem</TD><TD ALIGN=CENTER><A
  HREF="ndnfrnfr-P7.12.html">ndnfrnfr-P7.12</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#8464FF">843</SPAN></TD><TD ALIGN=LEFT><A
+ STYLE="color:#8364FF">837</SPAN></TD><TD ALIGN=LEFT><A
  NAME="ndnfrnfr-P7.12"></A>
 Natural Deduction: Effective Non-Freeness Rule 12.
 <P STYLE="margin-bottom:0em">
@@ -1103,7 +983,7 @@ CLASS=objvar>&#x1D465;</SPAN></SPAN>' does not depend on it's value assignment.
 <TR BGCOLOR=white><TD COLSPAN=3><FONT SIZE=-3>&nbsp;</FONT></TD></TR>
 
 <TR BGCOLOR="#FFFFF2"><TD COLSPAN=3><CENTER><B><A
- NAME="mm844s"></A>8.1.1.2&nbsp;&nbsp;Proper Substitution Rules.</B></CENTER>
+ NAME="mm838s"></A>8.1.1.2&nbsp;&nbsp;Proper Substitution Rules.</B></CENTER>
 <P STYLE="margin-bottom:0em">
 These four rules define define all cases where '<SPAN CLASS=math><SPAN
 CLASS=term>&#x1D461;</SPAN></SPAN>' properly replaces
@@ -1126,7 +1006,7 @@ occur in '<SPAN CLASS=math><SPAN CLASS=term>&#x1D461;</SPAN></SPAN>'.
 <TR BGCOLOR=white><TD COLSPAN=3><FONT SIZE=-3>&nbsp;</FONT></TD></TR>
 <TR><TD NOWRAP>Theorem</TD><TD ALIGN=CENTER><A
  HREF="ndpsub1-P7.13.html">ndpsub1-P7.13</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#8564FF">844</SPAN>*</TD><TD ALIGN=LEFT><A
+ STYLE="color:#8464FF">838</SPAN>*</TD><TD ALIGN=LEFT><A
  NAME="ndpsub1-P7.13"></A>
 Natural Deduction: Proper Substitution Rule 1.
 <P STYLE="margin-bottom:0em">
@@ -1148,7 +1028,7 @@ occur in '<SPAN CLASS=math><SPAN CLASS=term>&#x1D461;</SPAN></SPAN>'.
 
 <TR><TD NOWRAP>Theorem</TD><TD ALIGN=CENTER><A
  HREF="ndpsub2-P7.14.html">ndpsub2-P7.14</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#8664FF">845</SPAN>*</TD><TD ALIGN=LEFT><A
+ STYLE="color:#8564FF">839</SPAN>*</TD><TD ALIGN=LEFT><A
  NAME="ndpsub2-P7.14"></A>
 Natural Deduction: Proper Substitution Rule 2.
 <P STYLE="margin-bottom:0em">
@@ -1164,7 +1044,7 @@ occur in '<SPAN CLASS=math><SPAN CLASS=term>&#x1D461;</SPAN></SPAN>'.
 
 <TR><TD NOWRAP>Theorem</TD><TD ALIGN=CENTER><A
  HREF="ndpsub3-P7.15.html">ndpsub3-P7.15</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#8663FF">846</SPAN>*</TD><TD ALIGN=LEFT><A
+ STYLE="color:#8564FF">840</SPAN>*</TD><TD ALIGN=LEFT><A
  NAME="ndpsub3-P7.15"></A>
 Natural Deduction: Proper Substitution Rule 3.
 <P STYLE="margin-bottom:0em">
@@ -1179,7 +1059,7 @@ occur in '<SPAN CLASS=math><SPAN CLASS=term>&#x1D461;</SPAN></SPAN>'.
 
 <TR><TD NOWRAP>Theorem</TD><TD ALIGN=CENTER><A
  HREF="ndpsub4-P7.16.html">ndpsub4-P7.16</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#8763FF">847</SPAN>*</TD><TD ALIGN=LEFT><A
+ STYLE="color:#8663FF">841</SPAN>*</TD><TD ALIGN=LEFT><A
  NAME="ndpsub4-P7.16"></A>
 Natural Deduction: Proper Substitution Rule 4.
 <P STYLE="margin-bottom:0em">
@@ -1198,7 +1078,7 @@ CLASS=math><SPAN CLASS=objvar>&#x1D466;</SPAN></SPAN>' cannot occur in either
 <TR BGCOLOR=white><TD COLSPAN=3><FONT SIZE=-3>&nbsp;</FONT></TD></TR>
 
 <TR BGCOLOR="#FFFFF2"><TD COLSPAN=3><CENTER><B><A
- NAME="mm848s"></A>8.1.1.3&nbsp;&nbsp;Quantifier Rules.</B></CENTER>
+ NAME="mm842s"></A>8.1.1.3&nbsp;&nbsp;Quantifier Rules.</B></CENTER>
 <P STYLE="margin-bottom:0em">
 These are the classic introduction and elimination rules for '<SPAN
 CLASS=math>&forall;</SPAN>' and
@@ -1211,7 +1091,7 @@ substitution needed to be defined
 <TR BGCOLOR=white><TD COLSPAN=3><FONT SIZE=-3>&nbsp;</FONT></TD></TR>
 <TR><TD NOWRAP>Theorem</TD><TD ALIGN=CENTER><A
  HREF="ndalli-P7.17.html">ndalli-P7.17</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#8863FF">848</SPAN>*</TD><TD ALIGN=LEFT><A
+ STYLE="color:#8763FF">842</SPAN>*</TD><TD ALIGN=LEFT><A
  NAME="ndalli-P7.17"></A>
 Natural Deduction: '<SPAN CLASS=math>&forall;</SPAN>' Introduction Rule.
 <P STYLE="margin-bottom:0em">
@@ -1275,7 +1155,7 @@ deduced).  Within a proof,
 
 <TR><TD NOWRAP>Theorem</TD><TD ALIGN=CENTER><A
  HREF="ndalle-P7.18.html">ndalle-P7.18</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#8863FF">849</SPAN></TD><TD ALIGN=LEFT><A
+ STYLE="color:#8763FF">843</SPAN></TD><TD ALIGN=LEFT><A
  NAME="ndalle-P7.18"></A>
 Natural Deduction: '<SPAN CLASS=math>&forall;</SPAN>' Elimination Rule.
 <P STYLE="margin-bottom:0em">
@@ -1321,7 +1201,7 @@ used.
 
 <TR><TD NOWRAP>Theorem</TD><TD ALIGN=CENTER><A
  HREF="ndexi-P7.19.html">ndexi-P7.19</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#8962FF">850</SPAN></TD><TD ALIGN=LEFT><A NAME="ndexi-P7.19"></A>
+ STYLE="color:#8863FF">844</SPAN></TD><TD ALIGN=LEFT><A NAME="ndexi-P7.19"></A>
 Natural Deduction: '<SPAN CLASS=math>&exist;</SPAN>' Introduction Rule.
 <P STYLE="margin-bottom:0em">
        In the traditional textbook presentation, '<SPAN CLASS=math>[<SPAN
@@ -1358,7 +1238,7 @@ CLASS=objvar>&#x1D465;</SPAN>))</SPAN>'.
 
 <TR><TD NOWRAP>Theorem</TD><TD ALIGN=CENTER><A
  HREF="ndexe-P7.20.html">ndexe-P7.20</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#8A62FF">851</SPAN>*</TD><TD ALIGN=LEFT><A
+ STYLE="color:#8962FF">845</SPAN>*</TD><TD ALIGN=LEFT><A
  NAME="ndexe-P7.20"></A>
 Natural Deduction: '<SPAN CLASS=math>&exist;</SPAN>' Elimination Rule.
 <P STYLE="margin-bottom:0em">
@@ -1457,7 +1337,7 @@ CLASS=objvar>&#x1D465;</SPAN> &rarr; (<SPAN CLASS=wff>&#x1D711;</SPAN> &rarr;
 &forall;<SPAN CLASS=objvar>&#x1D465;</SPAN><SPAN
 CLASS=wff>&#x1D711;</SPAN>))</SPAN>'.  The
        weaker form, given by <A HREF="ndexew-P7.html">ndexew-P7</A>&nbsp;<SPAN
-CLASS=r STYLE="color:#9B56FF">873</SPAN>, is more typically used however.
+CLASS=r STYLE="color:#9A57FF">867</SPAN>, is more typically used however.
 
 </TD></TR><TR><TD COLSPAN=3 ALIGN=CENTER><SPAN CLASS=math><SPAN
  CLASS=typecode>&vdash; </SPAN>&#8498;<SPAN CLASS=objvar>&#x1D466;</SPAN><SPAN
@@ -1483,7 +1363,7 @@ CLASS=r STYLE="color:#9B56FF">873</SPAN>, is more typically used however.
 <TR BGCOLOR=white><TD COLSPAN=3><FONT SIZE=-3>&nbsp;</FONT></TD></TR>
 
 <TR BGCOLOR="#FFFFF2"><TD COLSPAN=3><CENTER><B><A
- NAME="mm852s"></A>8.1.1.4&nbsp;&nbsp;Equality Introduction Axiom.</B></CENTER>
+ NAME="mm846s"></A>8.1.1.4&nbsp;&nbsp;Equality Introduction Axiom.</B></CENTER>
 <P STYLE="margin-bottom:0em">
 The '<SPAN CLASS=math>=</SPAN>' introduction rule serves a similar role as <A
 HREF="ax-L6.html">ax-L6</A>&nbsp;<SPAN CLASS=r STYLE="color:#F90500">18</SPAN>
@@ -1494,7 +1374,7 @@ in the Hilbert
 <TR BGCOLOR=white><TD COLSPAN=3><FONT SIZE=-3>&nbsp;</FONT></TD></TR>
 <TR><TD NOWRAP>Theorem</TD><TD ALIGN=CENTER><A
  HREF="ndeqi-P7.21.html">ndeqi-P7.21</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#8B61FF">852</SPAN></TD><TD ALIGN=LEFT><A NAME="ndeqi-P7.21"></A>
+ STYLE="color:#8962FF">846</SPAN></TD><TD ALIGN=LEFT><A NAME="ndeqi-P7.21"></A>
 Natural Deduction: '<SPAN CLASS=math>=</SPAN>' Introduction Axiom.
 
 </TD></TR><TR><TD COLSPAN=3 ALIGN=CENTER><SPAN CLASS=math><SPAN
@@ -1503,7 +1383,7 @@ Natural Deduction: '<SPAN CLASS=math>=</SPAN>' Introduction Axiom.
 <TR BGCOLOR=white><TD COLSPAN=3><FONT SIZE=-3>&nbsp;</FONT></TD></TR>
 
 <TR BGCOLOR="#FFFFF2"><TD COLSPAN=3><CENTER><B><A
- NAME="mm853s"></A>8.1.1.5&nbsp;&nbsp;Substitution Rules (Equality
+ NAME="mm847s"></A>8.1.1.5&nbsp;&nbsp;Substitution Rules (Equality
  Elimination).</B></CENTER>
 <P STYLE="margin-bottom:0em">
 In classical texts, all of these rules are often combined into one
@@ -1521,7 +1401,7 @@ CLASS=term>&#x1D461;</SPAN></SPAN>' any place it occurs free.  It's impossible
 <TR BGCOLOR=white><TD COLSPAN=3><FONT SIZE=-3>&nbsp;</FONT></TD></TR>
 <TR><TD NOWRAP>Theorem</TD><TD ALIGN=CENTER><A
  HREF="ndsubeql-P7.22a.html">ndsubeql-P7.22a</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#8B61FF">853</SPAN></TD><TD ALIGN=LEFT><A
+ STYLE="color:#8A61FF">847</SPAN></TD><TD ALIGN=LEFT><A
  NAME="ndsubeql-P7.22a"></A>
 Natural Deduction: Equality Substitution Rule (left).
 
@@ -1538,7 +1418,7 @@ Natural Deduction: Equality Substitution Rule (left).
 
 <TR><TD NOWRAP>Theorem</TD><TD ALIGN=CENTER><A
  HREF="ndsubeqr-P7.22b.html">ndsubeqr-P7.22b</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#8C60FF">854</SPAN></TD><TD ALIGN=LEFT><A
+ STYLE="color:#8B61FF">848</SPAN></TD><TD ALIGN=LEFT><A
  NAME="ndsubeqr-P7.22b"></A>
 Natural Deduction: Equality Substitution Rule (right).
 
@@ -1555,7 +1435,7 @@ Natural Deduction: Equality Substitution Rule (right).
 
 <TR><TD NOWRAP>Theorem</TD><TD ALIGN=CENTER><A
  HREF="ndsubelofl-P7.23a.html">ndsubelofl-P7.23a</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#8D60FF">855</SPAN></TD><TD ALIGN=LEFT><A
+ STYLE="color:#8C60FF">849</SPAN></TD><TD ALIGN=LEFT><A
  NAME="ndsubelofl-P7.23a"></A>
 Natural Deduction: Predicate Substitution Rule ('<SPAN
 CLASS=math>&isin;</SPAN>' left).
@@ -1573,7 +1453,7 @@ CLASS=math>&isin;</SPAN>' left).
 
 <TR><TD NOWRAP>Theorem</TD><TD ALIGN=CENTER><A
  HREF="ndsubelofr-P7.23b.html">ndsubelofr-P7.23b</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#8E5FFF">856</SPAN></TD><TD ALIGN=LEFT><A
+ STYLE="color:#8D60FF">850</SPAN></TD><TD ALIGN=LEFT><A
  NAME="ndsubelofr-P7.23b"></A>
 Natural Deduction: Predicate Substitution Rule ('<SPAN
 CLASS=math>&isin;</SPAN>' right).
@@ -1591,7 +1471,7 @@ CLASS=math>&isin;</SPAN>' right).
 
 <TR><TD NOWRAP>Theorem</TD><TD ALIGN=CENTER><A
  HREF="ndsubsucc-P7.24a.html">ndsubsucc-P7.24a</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#8F5EFF">857</SPAN></TD><TD ALIGN=LEFT><A
+ STYLE="color:#8D5FFF">851</SPAN></TD><TD ALIGN=LEFT><A
  NAME="ndsubsucc-P7.24a"></A>
 Natural Deduction: Function Substitution Rule ('s&lsquo;').
 
@@ -1607,7 +1487,7 @@ Natural Deduction: Function Substitution Rule ('s&lsquo;').
 
 <TR><TD NOWRAP>Theorem</TD><TD ALIGN=CENTER><A
  HREF="ndsubaddl-P7.24b.html">ndsubaddl-P7.24b</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#8F5EFF">858</SPAN></TD><TD ALIGN=LEFT><A
+ STYLE="color:#8E5FFF">852</SPAN></TD><TD ALIGN=LEFT><A
  NAME="ndsubaddl-P7.24b"></A>
 Natural Deduction: Function Substitution Rule ('<SPAN CLASS=math>+</SPAN>'
 left).
@@ -1625,7 +1505,7 @@ left).
 
 <TR><TD NOWRAP>Theorem</TD><TD ALIGN=CENTER><A
  HREF="ndsubaddr-P7.24c.html">ndsubaddr-P7.24c</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#905DFF">859</SPAN></TD><TD ALIGN=LEFT><A
+ STYLE="color:#8F5EFF">853</SPAN></TD><TD ALIGN=LEFT><A
  NAME="ndsubaddr-P7.24c"></A>
 Natural Deduction: Function Substitution Rule ('<SPAN CLASS=math>+</SPAN>'
 right).
@@ -1643,7 +1523,7 @@ right).
 
 <TR><TD NOWRAP>Theorem</TD><TD ALIGN=CENTER><A
  HREF="ndsubmultl-P7.24d.html">ndsubmultl-P7.24d</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#915DFF">860</SPAN></TD><TD ALIGN=LEFT><A
+ STYLE="color:#905EFF">854</SPAN></TD><TD ALIGN=LEFT><A
  NAME="ndsubmultl-P7.24d"></A>
 Natural Deduction: Function Substitution Rule ('<SPAN CLASS=math>&sdot;</SPAN>'
 left).
@@ -1661,7 +1541,7 @@ left).
 
 <TR><TD NOWRAP>Theorem</TD><TD ALIGN=CENTER><A
  HREF="ndsubmultr-P7.24e.html">ndsubmultr-P7.24e</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#925CFF">861</SPAN></TD><TD ALIGN=LEFT><A
+ STYLE="color:#915DFF">855</SPAN></TD><TD ALIGN=LEFT><A
  NAME="ndsubmultr-P7.24e"></A>
 Natural Deduction: Function Substitution Rule ('<SPAN CLASS=math>&sdot;</SPAN>'
 right).
@@ -1678,7 +1558,7 @@ right).
 <TR BGCOLOR=white><TD COLSPAN=3><FONT SIZE=-3>&nbsp;</FONT></TD></TR>
 
 <TR BGCOLOR="#FFFFF2"><TD COLSPAN=3><CENTER><B><A
- NAME="mm862s"></A>8.1.2&nbsp;&nbsp;Derived Utility Rules.</B></CENTER>
+ NAME="mm856s"></A>8.1.2&nbsp;&nbsp;Derived Utility Rules.</B></CENTER>
 <P STYLE="margin-bottom:0em">
 From here on we will treat P3.1 - P3.20 and P7.1 - P7.24 as the new set of
   axioms.  We will no longer refer to any results from chapters 1, 2, 5, or 6
@@ -1686,24 +1566,24 @@ From here on we will treat P3.1 - P3.20 and P7.1 - P7.24 as the new set of
 <P STYLE="margin-bottom:0em">
   This will allow us to track the us of <A
 HREF="ndexclmid-P3.16.html">ndexclmid-P3.16</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#B96600">191</SPAN>. By avoiding the Law
+STYLE="color:#BF6200">181</SPAN>. By avoiding the Law
   of Excluded Middle, it is possible to develop an intuitionist logical
   framework alongside the standard classical case.
 <P STYLE="margin-bottom:0em">
   From here on, all theorems derived without reference to the Law of Excluded
   Middle (<A HREF="ndexclmid-P3.16.html">ndexclmid-P3.16</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#B96600">191</SPAN>) will have a <SPAN CLASS=math>&dagger;</SPAN>
+STYLE="color:#BF6200">181</SPAN>) will have a <SPAN CLASS=math>&dagger;</SPAN>
 in the comment.
 
 </TD></TR>
 <TR BGCOLOR=white><TD COLSPAN=3><FONT SIZE=-3>&nbsp;</FONT></TD></TR>
 <TR BGCOLOR="#FFFFF2"><TD COLSPAN=3><CENTER><B><A
- NAME="mm862s"></A>8.1.2.1&nbsp;&nbsp;Dual Substitution Rules.</B></CENTER>
+ NAME="mm856s"></A>8.1.2.1&nbsp;&nbsp;Dual Substitution Rules.</B></CENTER>
 </TD></TR>
 <TR BGCOLOR=white><TD COLSPAN=3><FONT SIZE=-3>&nbsp;</FONT></TD></TR>
 <TR><TD NOWRAP>Theorem</TD><TD ALIGN=CENTER><A
  HREF="ndsubeqd-P7.html">ndsubeqd-P7</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#935CFF">862</SPAN></TD><TD ALIGN=LEFT><A NAME="ndsubeqd-P7"></A>
+ STYLE="color:#915DFF">856</SPAN></TD><TD ALIGN=LEFT><A NAME="ndsubeqd-P7"></A>
 Natural Deduction: Equality Substitution Rule (dual). <SPAN
 CLASS=math>&dagger;</SPAN>
 
@@ -1723,7 +1603,7 @@ CLASS=math>&dagger;</SPAN>
 
 <TR><TD NOWRAP>Theorem</TD><TD ALIGN=CENTER><A
  HREF="ndsubelofd-P7.html">ndsubelofd-P7</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#935BFF">863</SPAN></TD><TD ALIGN=LEFT><A
+ STYLE="color:#925CFF">857</SPAN></TD><TD ALIGN=LEFT><A
  NAME="ndsubelofd-P7"></A>
 Natural Deduction: Predicate Substitution Rule ('<SPAN
 CLASS=math>&isin;</SPAN>' dual). <SPAN CLASS=math>&dagger;</SPAN>
@@ -1744,7 +1624,7 @@ CLASS=math>&isin;</SPAN>' dual). <SPAN CLASS=math>&dagger;</SPAN>
 
 <TR><TD NOWRAP>Theorem</TD><TD ALIGN=CENTER><A
  HREF="ndsubaddd-P7.html">ndsubaddd-P7</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#945BFF">864</SPAN></TD><TD ALIGN=LEFT><A
+ STYLE="color:#935CFF">858</SPAN></TD><TD ALIGN=LEFT><A
  NAME="ndsubaddd-P7"></A>
 Natural Deduction: Function Substitution Rule ('<SPAN CLASS=math>+</SPAN>'
 dual). <SPAN CLASS=math>&dagger;</SPAN>
@@ -1765,7 +1645,7 @@ dual). <SPAN CLASS=math>&dagger;</SPAN>
 
 <TR><TD NOWRAP>Theorem</TD><TD ALIGN=CENTER><A
  HREF="ndsubmultd-P7.html">ndsubmultd-P7</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#955AFF">865</SPAN></TD><TD ALIGN=LEFT><A
+ STYLE="color:#945BFF">859</SPAN></TD><TD ALIGN=LEFT><A
  NAME="ndsubmultd-P7"></A>
 Natural Deduction: Function Substitution Rule ('<SPAN CLASS=math>&sdot;</SPAN>'
 dual). <SPAN CLASS=math>&dagger;</SPAN>
@@ -1785,16 +1665,16 @@ dual). <SPAN CLASS=math>&dagger;</SPAN>
 <TR BGCOLOR=white><TD COLSPAN=3><FONT SIZE=-3>&nbsp;</FONT></TD></TR>
 
 <TR BGCOLOR="#FFFFF2"><TD COLSPAN=3><CENTER><B><A
- NAME="mm866s"></A>8.1.2.2&nbsp;&nbsp;Restricted Variable Forms of Natural
+ NAME="mm860s"></A>8.1.2.2&nbsp;&nbsp;Restricted Variable Forms of Natural
  Deduction Rules.</B></CENTER>
 </TD></TR>
 <TR BGCOLOR=white><TD COLSPAN=3><FONT SIZE=-3>&nbsp;</FONT></TD></TR>
 <TR><TD NOWRAP>Theorem</TD><TD ALIGN=CENTER><A
  HREF="ndnfrall2-P7.9.VR12of2.html">ndnfrall2-P7.9.VR12of2</A>&nbsp;<SPAN
- CLASS=r STYLE="color:#965AFF">866</SPAN>*</TD><TD ALIGN=LEFT><A
+ CLASS=r STYLE="color:#955BFF">860</SPAN>*</TD><TD ALIGN=LEFT><A
  NAME="ndnfrall2-P7.9.VR12of2"></A>
 <A HREF="ndnfrall2-P7.9.html">ndnfrall2-P7.9</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#8265FF">840</SPAN> with 2 variable restrictions. <SPAN
+STYLE="color:#8165FF">834</SPAN> with 2 variable restrictions. <SPAN
 CLASS=math>&dagger;</SPAN>
 <P STYLE="margin-bottom:0em">
        Neither '<SPAN CLASS=math><SPAN CLASS=objvar>&#x1D465;</SPAN></SPAN>'
@@ -1814,10 +1694,10 @@ nor '<SPAN CLASS=math><SPAN CLASS=objvar>&#x1D466;</SPAN></SPAN>' can occur in
 
 <TR><TD NOWRAP>Theorem</TD><TD ALIGN=CENTER><A
  HREF="ndnfrex2-P7.10.VR12of2.html">ndnfrex2-P7.10.VR12of2</A>&nbsp;<SPAN
- CLASS=r STYLE="color:#9759FF">867</SPAN>*</TD><TD ALIGN=LEFT><A
+ CLASS=r STYLE="color:#955AFF">861</SPAN>*</TD><TD ALIGN=LEFT><A
  NAME="ndnfrex2-P7.10.VR12of2"></A>
 <A HREF="ndnfrex2-P7.10.html">ndnfrex2-P7.10</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#8365FF">841</SPAN> with 2 variable restrictions. <SPAN
+STYLE="color:#8265FF">835</SPAN> with 2 variable restrictions. <SPAN
 CLASS=math>&dagger;</SPAN>
 <P STYLE="margin-bottom:0em">
        Neither '<SPAN CLASS=math><SPAN CLASS=objvar>&#x1D465;</SPAN></SPAN>'
@@ -1837,10 +1717,10 @@ nor '<SPAN CLASS=math><SPAN CLASS=objvar>&#x1D466;</SPAN></SPAN>' can occur in
 
 <TR><TD NOWRAP>Theorem</TD><TD ALIGN=CENTER><A
  HREF="ndnfrleq-P7.11.VR.html">ndnfrleq-P7.11.VR</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#9759FF">868</SPAN>*</TD><TD ALIGN=LEFT><A
+ STYLE="color:#9659FF">862</SPAN>*</TD><TD ALIGN=LEFT><A
  NAME="ndnfrleq-P7.11.VR"></A>
 <A HREF="ndnfrleq-P7.11.html">ndnfrleq-P7.11</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#8464FF">842</SPAN> with variable restriction. <SPAN
+STYLE="color:#8365FF">836</SPAN> with variable restriction. <SPAN
 CLASS=math>&dagger;</SPAN>
 <P STYLE="margin-bottom:0em">
        '<SPAN CLASS=math><SPAN CLASS=objvar>&#x1D465;</SPAN></SPAN>' cannot
@@ -1859,10 +1739,10 @@ occur in '<SPAN CLASS=math><SPAN CLASS=wff>&#x1D6FE;</SPAN></SPAN>'.
 
 <TR><TD NOWRAP>Theorem</TD><TD ALIGN=CENTER><A
  HREF="ndpsub1-P7.13.VR.html">ndpsub1-P7.13.VR</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#9858FF">869</SPAN>*</TD><TD ALIGN=LEFT><A
+ STYLE="color:#9759FF">863</SPAN>*</TD><TD ALIGN=LEFT><A
  NAME="ndpsub1-P7.13.VR"></A>
 <A HREF="ndpsub1-P7.13.html">ndpsub1-P7.13</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#8564FF">844</SPAN> with extra variable restriction. <SPAN
+STYLE="color:#8464FF">838</SPAN> with extra variable restriction. <SPAN
 CLASS=math>&dagger;</SPAN>
 <P STYLE="margin-bottom:0em">
        '<SPAN CLASS=math><SPAN CLASS=objvar>&#x1D465;</SPAN></SPAN>' cannot
@@ -1881,10 +1761,10 @@ occur in either '<SPAN CLASS=math><SPAN CLASS=term>&#x1D461;</SPAN></SPAN>' or
 
 <TR><TD NOWRAP>Theorem</TD><TD ALIGN=CENTER><A
  HREF="ndalli-P7.17.VR1of2.html">ndalli-P7.17.VR1of2</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#9958FF">870</SPAN>*</TD><TD ALIGN=LEFT><A
+ STYLE="color:#9858FF">864</SPAN>*</TD><TD ALIGN=LEFT><A
  NAME="ndalli-P7.17.VR1of2"></A>
 <A HREF="ndalli-P7.17.html">ndalli-P7.17</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#8863FF">848</SPAN> with one variable restriction. <SPAN
+STYLE="color:#8763FF">842</SPAN> with one variable restriction. <SPAN
 CLASS=math>&dagger;</SPAN>
 <P STYLE="margin-bottom:0em">
        '<SPAN CLASS=math><SPAN CLASS=objvar>&#x1D466;</SPAN></SPAN>' cannot
@@ -1905,10 +1785,10 @@ occur in '<SPAN CLASS=math><SPAN CLASS=wff>&#x1D6FE;</SPAN></SPAN>'.
 
 <TR><TD NOWRAP>Theorem</TD><TD ALIGN=CENTER><A
  HREF="ndalli-P7.17.VR2of2.html">ndalli-P7.17.VR2of2</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#9A57FF">871</SPAN>*</TD><TD ALIGN=LEFT><A
+ STYLE="color:#9958FF">865</SPAN>*</TD><TD ALIGN=LEFT><A
  NAME="ndalli-P7.17.VR2of2"></A>
 <A HREF="ndalli-P7.17.html">ndalli-P7.17</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#8863FF">848</SPAN> with one variable restriction. <SPAN
+STYLE="color:#8763FF">842</SPAN> with one variable restriction. <SPAN
 CLASS=math>&dagger;</SPAN>
 <P STYLE="margin-bottom:0em">
        '<SPAN CLASS=math><SPAN CLASS=objvar>&#x1D466;</SPAN></SPAN>' cannot
@@ -1929,10 +1809,10 @@ occur in '<SPAN CLASS=math><SPAN CLASS=wff>&#x1D711;</SPAN></SPAN>'.
 
 <TR><TD NOWRAP>Theorem</TD><TD ALIGN=CENTER><A
  HREF="ndalli-P7.17.VR12of2.html">ndalli-P7.17.VR12of2</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#9B57FF">872</SPAN>*</TD><TD ALIGN=LEFT><A
+ STYLE="color:#9957FF">866</SPAN>*</TD><TD ALIGN=LEFT><A
  NAME="ndalli-P7.17.VR12of2"></A>
 <A HREF="ndalli-P7.17.html">ndalli-P7.17</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#8863FF">848</SPAN> with two variable restrictions. <SPAN
+STYLE="color:#8763FF">842</SPAN> with two variable restrictions. <SPAN
 CLASS=math>&dagger;</SPAN>
 <P STYLE="margin-bottom:0em">
        '<SPAN CLASS=math><SPAN CLASS=objvar>&#x1D466;</SPAN></SPAN>' cannot
@@ -1951,9 +1831,9 @@ occur in either '<SPAN CLASS=math><SPAN CLASS=wff>&#x1D6FE;</SPAN></SPAN>' or
 
 <TR><TD NOWRAP>Theorem</TD><TD ALIGN=CENTER><A
  HREF="ndexew-P7.html">ndexew-P7</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#9B56FF">873</SPAN>*</TD><TD ALIGN=LEFT><A NAME="ndexew-P7"></A>
+ STYLE="color:#9A57FF">867</SPAN>*</TD><TD ALIGN=LEFT><A NAME="ndexew-P7"></A>
 <A HREF="ndexe-P7.20.html">ndexe-P7.20</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#8A62FF">851</SPAN> with '<SPAN CLASS=math><SPAN
+STYLE="color:#8962FF">845</SPAN> with '<SPAN CLASS=math><SPAN
 CLASS=objvar>&#x1D466;</SPAN></SPAN>' ENF in '<SPAN CLASS=math><SPAN
 CLASS=wff>&#x1D713;</SPAN></SPAN>'. <SPAN CLASS=math>&dagger;</SPAN>
 <P STYLE="margin-bottom:0em">
@@ -1988,10 +1868,10 @@ CLASS=objvar>&#x1D466;</SPAN><SPAN CLASS=wff>&#x1D713;</SPAN>)</SPAN>'.
 
 <TR><TD NOWRAP>Theorem</TD><TD ALIGN=CENTER><A
  HREF="ndexew-P7.VR1of3.html">ndexew-P7.VR1of3</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#9C56FF">874</SPAN>*</TD><TD ALIGN=LEFT><A
+ STYLE="color:#9B56FF">868</SPAN>*</TD><TD ALIGN=LEFT><A
  NAME="ndexew-P7.VR1of3"></A>
 <A HREF="ndexew-P7.html">ndexew-P7</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#9B56FF">873</SPAN> with one variable restriction. <SPAN
+STYLE="color:#9A57FF">867</SPAN> with one variable restriction. <SPAN
 CLASS=math>&dagger;</SPAN>
 <P STYLE="margin-bottom:0em">
        '<SPAN CLASS=math><SPAN CLASS=objvar>&#x1D466;</SPAN></SPAN>' cannot
@@ -2019,10 +1899,10 @@ occur in '<SPAN CLASS=math><SPAN CLASS=wff>&#x1D6FE;</SPAN></SPAN>'.
 
 <TR><TD NOWRAP>Theorem</TD><TD ALIGN=CENTER><A
  HREF="ndexew-P7.VR2of3.html">ndexew-P7.VR2of3</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#9D55FF">875</SPAN>*</TD><TD ALIGN=LEFT><A
+ STYLE="color:#9C56FF">869</SPAN>*</TD><TD ALIGN=LEFT><A
  NAME="ndexew-P7.VR2of3"></A>
 <A HREF="ndexew-P7.html">ndexew-P7</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#9B56FF">873</SPAN> with one variable restriction. <SPAN
+STYLE="color:#9A57FF">867</SPAN> with one variable restriction. <SPAN
 CLASS=math>&dagger;</SPAN>
 <P STYLE="margin-bottom:0em">
        '<SPAN CLASS=math><SPAN CLASS=objvar>&#x1D466;</SPAN></SPAN>' cannot
@@ -2050,10 +1930,10 @@ occur in '<SPAN CLASS=math><SPAN CLASS=wff>&#x1D711;</SPAN></SPAN>'.
 
 <TR><TD NOWRAP>Theorem</TD><TD ALIGN=CENTER><A
  HREF="ndexew-P7.VR3of3.html">ndexew-P7.VR3of3</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#9E55FF">876</SPAN>*</TD><TD ALIGN=LEFT><A
+ STYLE="color:#9D55FF">870</SPAN>*</TD><TD ALIGN=LEFT><A
  NAME="ndexew-P7.VR3of3"></A>
 <A HREF="ndexew-P7.html">ndexew-P7</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#9B56FF">873</SPAN> with one variable restriction. <SPAN
+STYLE="color:#9A57FF">867</SPAN> with one variable restriction. <SPAN
 CLASS=math>&dagger;</SPAN>
 <P STYLE="margin-bottom:0em">
        '<SPAN CLASS=math><SPAN CLASS=objvar>&#x1D466;</SPAN></SPAN>' cannot
@@ -2081,10 +1961,10 @@ occur in '<SPAN CLASS=math><SPAN CLASS=wff>&#x1D713;</SPAN></SPAN>'
 
 <TR><TD NOWRAP>Theorem</TD><TD ALIGN=CENTER><A
  HREF="ndexew-P7.VR12of3.html">ndexew-P7.VR12of3</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#9E54FF">877</SPAN>*</TD><TD ALIGN=LEFT><A
+ STYLE="color:#9D55FF">871</SPAN>*</TD><TD ALIGN=LEFT><A
  NAME="ndexew-P7.VR12of3"></A>
 <A HREF="ndexew-P7.html">ndexew-P7</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#9B56FF">873</SPAN> with two variable restrictions. <SPAN
+STYLE="color:#9A57FF">867</SPAN> with two variable restrictions. <SPAN
 CLASS=math>&dagger;</SPAN>
 <P STYLE="margin-bottom:0em">
        '<SPAN CLASS=math><SPAN CLASS=objvar>&#x1D466;</SPAN></SPAN>' cannot
@@ -2110,10 +1990,10 @@ occur in either '<SPAN CLASS=math><SPAN CLASS=wff>&#x1D6FE;</SPAN></SPAN>' or
 
 <TR><TD NOWRAP>Theorem</TD><TD ALIGN=CENTER><A
  HREF="ndexew-P7.VR13of3.html">ndexew-P7.VR13of3</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#9F54FF">878</SPAN>*</TD><TD ALIGN=LEFT><A
+ STYLE="color:#9E54FF">872</SPAN>*</TD><TD ALIGN=LEFT><A
  NAME="ndexew-P7.VR13of3"></A>
 <A HREF="ndexew-P7.html">ndexew-P7</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#9B56FF">873</SPAN> with two variable restrictions. <SPAN
+STYLE="color:#9A57FF">867</SPAN> with two variable restrictions. <SPAN
 CLASS=math>&dagger;</SPAN>
 <P STYLE="margin-bottom:0em">
        '<SPAN CLASS=math><SPAN CLASS=objvar>&#x1D466;</SPAN></SPAN>' cannot
@@ -2139,10 +2019,10 @@ occur in either '<SPAN CLASS=math><SPAN CLASS=wff>&#x1D6FE;</SPAN></SPAN>' or
 
 <TR><TD NOWRAP>Theorem</TD><TD ALIGN=CENTER><A
  HREF="ndexew-P7.VR23of3.html">ndexew-P7.VR23of3</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#A053FF">879</SPAN>*</TD><TD ALIGN=LEFT><A
+ STYLE="color:#9F54FF">873</SPAN>*</TD><TD ALIGN=LEFT><A
  NAME="ndexew-P7.VR23of3"></A>
 <A HREF="ndexew-P7.html">ndexew-P7</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#9B56FF">873</SPAN> with two variable restrictions. <SPAN
+STYLE="color:#9A57FF">867</SPAN> with two variable restrictions. <SPAN
 CLASS=math>&dagger;</SPAN>
 <P STYLE="margin-bottom:0em">
        '<SPAN CLASS=math><SPAN CLASS=objvar>&#x1D466;</SPAN></SPAN>' cannot
@@ -2168,10 +2048,10 @@ occur in either '<SPAN CLASS=math><SPAN CLASS=wff>&#x1D711;</SPAN></SPAN>' or
 
 <TR><TD NOWRAP>Theorem</TD><TD ALIGN=CENTER><A
  HREF="ndexew-P7.VR123of3.html">ndexew-P7.VR123of3</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#A153FF">880</SPAN>*</TD><TD ALIGN=LEFT><A
+ STYLE="color:#A053FF">874</SPAN>*</TD><TD ALIGN=LEFT><A
  NAME="ndexew-P7.VR123of3"></A>
 <A HREF="ndexew-P7.html">ndexew-P7</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#9B56FF">873</SPAN> with three variable restrictions. <SPAN
+STYLE="color:#9A57FF">867</SPAN> with three variable restrictions. <SPAN
 CLASS=math>&dagger;</SPAN>
 <P STYLE="margin-bottom:0em">
        '<SPAN CLASS=math><SPAN CLASS=objvar>&#x1D466;</SPAN></SPAN>' cannot
@@ -2194,16 +2074,16 @@ CLASS=wff>&#x1D713;</SPAN></SPAN>'.
 <TR BGCOLOR=white><TD COLSPAN=3><FONT SIZE=-3>&nbsp;</FONT></TD></TR>
 
 <TR BGCOLOR="#FFFFF2"><TD COLSPAN=3><CENTER><B><A
- NAME="mm881s"></A>8.1.2.3&nbsp;&nbsp;Inference Forms of Natural Deduction
+ NAME="mm875s"></A>8.1.2.3&nbsp;&nbsp;Inference Forms of Natural Deduction
  Rules.</B></CENTER>
 </TD></TR>
 <TR BGCOLOR=white><TD COLSPAN=3><FONT SIZE=-3>&nbsp;</FONT></TD></TR>
 <TR><TD NOWRAP>Theorem</TD><TD ALIGN=CENTER><A
  HREF="ndnfrneg-P7.2.RC.html">ndnfrneg-P7.2.RC</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#A252FF">881</SPAN></TD><TD ALIGN=LEFT><A
+ STYLE="color:#A153FF">875</SPAN></TD><TD ALIGN=LEFT><A
  NAME="ndnfrneg-P7.2.RC"></A>
 Inference Form of <A HREF="ndnfrneg-P7.2.html">ndnfrneg-P7.2</A>&nbsp;<SPAN
-CLASS=r STYLE="color:#7E67FF">833</SPAN>.
+CLASS=r STYLE="color:#7D67FF">827</SPAN>.
 
 </TD></TR><TR><TD COLSPAN=3 ALIGN=CENTER><SPAN CLASS=math><SPAN
  CLASS=typecode>&vdash; </SPAN>&#8498;<SPAN CLASS=objvar>&#x1D465;</SPAN><SPAN
@@ -2215,10 +2095,10 @@ CLASS=r STYLE="color:#7E67FF">833</SPAN>.
 
 <TR><TD NOWRAP>Theorem</TD><TD ALIGN=CENTER><A
  HREF="ndnfrim-P7.3.RC.html">ndnfrim-P7.3.RC</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#A251FF">882</SPAN></TD><TD ALIGN=LEFT><A
+ STYLE="color:#A152FF">876</SPAN></TD><TD ALIGN=LEFT><A
  NAME="ndnfrim-P7.3.RC"></A>
 Inference Form of <A HREF="ndnfrim-P7.3.html">ndnfrim-P7.3</A>&nbsp;<SPAN
-CLASS=r STYLE="color:#7E66FF">834</SPAN>. <SPAN CLASS=math>&dagger;</SPAN>
+CLASS=r STYLE="color:#7D67FF">828</SPAN>. <SPAN CLASS=math>&dagger;</SPAN>
 
 </TD></TR><TR><TD COLSPAN=3 ALIGN=CENTER><SPAN CLASS=math><SPAN
  CLASS=typecode>&vdash; </SPAN>&#8498;<SPAN CLASS=objvar>&#x1D465;</SPAN><SPAN
@@ -2234,10 +2114,10 @@ CLASS=r STYLE="color:#7E66FF">834</SPAN>. <SPAN CLASS=math>&dagger;</SPAN>
 
 <TR><TD NOWRAP>Theorem</TD><TD ALIGN=CENTER><A
  HREF="ndnfrand-P7.4.RC.html">ndnfrand-P7.4.RC</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#A351FF">883</SPAN></TD><TD ALIGN=LEFT><A
+ STYLE="color:#A252FF">877</SPAN></TD><TD ALIGN=LEFT><A
  NAME="ndnfrand-P7.4.RC"></A>
 Inference Form of <A HREF="ndnfrand-P7.4.html">ndnfrand-P7.4</A>&nbsp;<SPAN
-CLASS=r STYLE="color:#7F66FF">835</SPAN>. <SPAN CLASS=math>&dagger;</SPAN>
+CLASS=r STYLE="color:#7E66FF">829</SPAN>. <SPAN CLASS=math>&dagger;</SPAN>
 
 </TD></TR><TR><TD COLSPAN=3 ALIGN=CENTER><SPAN CLASS=math><SPAN
  CLASS=typecode>&vdash; </SPAN>&#8498;<SPAN CLASS=objvar>&#x1D465;</SPAN><SPAN
@@ -2253,10 +2133,10 @@ CLASS=r STYLE="color:#7F66FF">835</SPAN>. <SPAN CLASS=math>&dagger;</SPAN>
 
 <TR><TD NOWRAP>Theorem</TD><TD ALIGN=CENTER><A
  HREF="ndnfror-P7.5.RC.html">ndnfror-P7.5.RC</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#A450FF">884</SPAN></TD><TD ALIGN=LEFT><A
+ STYLE="color:#A351FF">878</SPAN></TD><TD ALIGN=LEFT><A
  NAME="ndnfror-P7.5.RC"></A>
 Inference Form of <A HREF="ndnfror-P7.5.html">ndnfror-P7.5</A>&nbsp;<SPAN
-CLASS=r STYLE="color:#8066FF">836</SPAN>. <SPAN CLASS=math>&dagger;</SPAN>
+CLASS=r STYLE="color:#7F66FF">830</SPAN>. <SPAN CLASS=math>&dagger;</SPAN>
 
 </TD></TR><TR><TD COLSPAN=3 ALIGN=CENTER><SPAN CLASS=math><SPAN
  CLASS=typecode>&vdash; </SPAN>&#8498;<SPAN CLASS=objvar>&#x1D465;</SPAN><SPAN
@@ -2272,10 +2152,10 @@ CLASS=r STYLE="color:#8066FF">836</SPAN>. <SPAN CLASS=math>&dagger;</SPAN>
 
 <TR><TD NOWRAP>Theorem</TD><TD ALIGN=CENTER><A
  HREF="ndnfrbi-P7.6.RC.html">ndnfrbi-P7.6.RC</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#A550FF">885</SPAN></TD><TD ALIGN=LEFT><A
+ STYLE="color:#A451FF">879</SPAN></TD><TD ALIGN=LEFT><A
  NAME="ndnfrbi-P7.6.RC"></A>
 Inference Form of <A HREF="ndnfrbi-P7.6.html">ndnfrbi-P7.6</A>&nbsp;<SPAN
-CLASS=r STYLE="color:#8066FF">837</SPAN>.
+CLASS=r STYLE="color:#7F66FF">831</SPAN>.
 
 </TD></TR><TR><TD COLSPAN=3 ALIGN=CENTER><SPAN CLASS=math><SPAN
  CLASS=typecode>&vdash; </SPAN>&#8498;<SPAN CLASS=objvar>&#x1D465;</SPAN><SPAN
@@ -2291,10 +2171,10 @@ CLASS=r STYLE="color:#8066FF">837</SPAN>.
 
 <TR><TD NOWRAP>Theorem</TD><TD ALIGN=CENTER><A
  HREF="ndnfrall2-P7.9.RC.html">ndnfrall2-P7.9.RC</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#A64FFF">886</SPAN>*</TD><TD ALIGN=LEFT><A
+ STYLE="color:#A550FF">880</SPAN>*</TD><TD ALIGN=LEFT><A
  NAME="ndnfrall2-P7.9.RC"></A>
 Inference Form of <A HREF="ndnfrall2-P7.9.html">ndnfrall2-P7.9</A>&nbsp;<SPAN
-CLASS=r STYLE="color:#8265FF">840</SPAN>.
+CLASS=r STYLE="color:#8165FF">834</SPAN>.
 
 </TD></TR><TR><TD COLSPAN=3 ALIGN=CENTER><SPAN CLASS=math><SPAN
  CLASS=typecode>&vdash; </SPAN>&#8498;<SPAN CLASS=objvar>&#x1D465;</SPAN><SPAN
@@ -2307,10 +2187,10 @@ CLASS=r STYLE="color:#8265FF">840</SPAN>.
 
 <TR><TD NOWRAP>Theorem</TD><TD ALIGN=CENTER><A
  HREF="ndnfrex2-P7.10.RC.html">ndnfrex2-P7.10.RC</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#A64FFF">887</SPAN>*</TD><TD ALIGN=LEFT><A
+ STYLE="color:#A550FF">881</SPAN>*</TD><TD ALIGN=LEFT><A
  NAME="ndnfrex2-P7.10.RC"></A>
 Inference Form of <A HREF="ndnfrex2-P7.10.html">ndnfrex2-P7.10</A>&nbsp;<SPAN
-CLASS=r STYLE="color:#8365FF">841</SPAN>.
+CLASS=r STYLE="color:#8265FF">835</SPAN>.
 
 </TD></TR><TR><TD COLSPAN=3 ALIGN=CENTER><SPAN CLASS=math><SPAN
  CLASS=typecode>&vdash; </SPAN>&#8498;<SPAN CLASS=objvar>&#x1D465;</SPAN><SPAN
@@ -2323,10 +2203,10 @@ CLASS=r STYLE="color:#8365FF">841</SPAN>.
 
 <TR><TD NOWRAP>Theorem</TD><TD ALIGN=CENTER><A
  HREF="ndnfrleq-P7.11.RC.html">ndnfrleq-P7.11.RC</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#A74EFF">888</SPAN></TD><TD ALIGN=LEFT><A
+ STYLE="color:#A64FFF">882</SPAN></TD><TD ALIGN=LEFT><A
  NAME="ndnfrleq-P7.11.RC"></A>
 Inference Form of <A HREF="ndnfrleq-P7.11.html">ndnfrleq-P7.11</A>&nbsp;<SPAN
-CLASS=r STYLE="color:#8464FF">842</SPAN>. <SPAN CLASS=math>&dagger;</SPAN>
+CLASS=r STYLE="color:#8365FF">836</SPAN>. <SPAN CLASS=math>&dagger;</SPAN>
 
 </TD></TR><TR><TD COLSPAN=3 ALIGN=CENTER><SPAN CLASS=math><SPAN
  CLASS=typecode>&vdash; </SPAN>(<SPAN CLASS=wff>&#x1D711;</SPAN> &harr; <SPAN
@@ -2340,10 +2220,10 @@ CLASS=r STYLE="color:#8464FF">842</SPAN>. <SPAN CLASS=math>&dagger;</SPAN>
 
 <TR><TD NOWRAP>Theorem</TD><TD ALIGN=CENTER><A
  HREF="ndalli-P7.17.RC.html">ndalli-P7.17.RC</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#A84EFF">889</SPAN>*</TD><TD ALIGN=LEFT><A
+ STYLE="color:#A74FFF">883</SPAN>*</TD><TD ALIGN=LEFT><A
  NAME="ndalli-P7.17.RC"></A>
 Inference form of <A HREF="ndalli-P7.17.html">ndalli-P7.17</A>&nbsp;<SPAN
-CLASS=r STYLE="color:#8863FF">848</SPAN>. <SPAN CLASS=math>&dagger;</SPAN>
+CLASS=r STYLE="color:#8763FF">842</SPAN>. <SPAN CLASS=math>&dagger;</SPAN>
 
 </TD></TR><TR><TD COLSPAN=3 ALIGN=CENTER><SPAN CLASS=math><SPAN
  CLASS=typecode>&vdash; </SPAN>&#8498;<SPAN CLASS=objvar>&#x1D466;</SPAN><SPAN
@@ -2359,10 +2239,10 @@ CLASS=r STYLE="color:#8863FF">848</SPAN>. <SPAN CLASS=math>&dagger;</SPAN>
 
 <TR><TD NOWRAP>Theorem</TD><TD ALIGN=CENTER><A
  HREF="ndalli-P7.17.RC.VR.html">ndalli-P7.17.RC.VR</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#A94DFF">890</SPAN>*</TD><TD ALIGN=LEFT><A
+ STYLE="color:#A84EFF">884</SPAN>*</TD><TD ALIGN=LEFT><A
  NAME="ndalli-P7.17.RC.VR"></A>
 <A HREF="ndalli-P7.17.RC.html">ndalli-P7.17.RC</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#A84EFF">889</SPAN> with variable restriction. <SPAN
+STYLE="color:#A74FFF">883</SPAN> with variable restriction. <SPAN
 CLASS=math>&dagger;</SPAN>
 <P STYLE="margin-bottom:0em">
        '<SPAN CLASS=math><SPAN CLASS=objvar>&#x1D466;</SPAN></SPAN>' cannot
@@ -2379,10 +2259,10 @@ occur in '<SPAN CLASS=math><SPAN CLASS=wff>&#x1D711;</SPAN></SPAN>'.
 
 <TR><TD NOWRAP>Theorem</TD><TD ALIGN=CENTER><A
  HREF="ndalle-P7.18.RC.html">ndalle-P7.18.RC</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#A94DFF">891</SPAN></TD><TD ALIGN=LEFT><A
+ STYLE="color:#A94DFF">885</SPAN></TD><TD ALIGN=LEFT><A
  NAME="ndalle-P7.18.RC"></A>
 Inference Form of <A HREF="ndalle-P7.18.html">ndalle-P7.18</A>&nbsp;<SPAN
-CLASS=r STYLE="color:#8863FF">849</SPAN>. <SPAN CLASS=math>&dagger;</SPAN>
+CLASS=r STYLE="color:#8763FF">843</SPAN>. <SPAN CLASS=math>&dagger;</SPAN>
 
 </TD></TR><TR><TD COLSPAN=3 ALIGN=CENTER><SPAN CLASS=math><SPAN
  CLASS=typecode>&vdash; </SPAN>&forall;<SPAN CLASS=objvar>&#x1D465;</SPAN><SPAN
@@ -2395,10 +2275,10 @@ CLASS=r STYLE="color:#8863FF">849</SPAN>. <SPAN CLASS=math>&dagger;</SPAN>
 
 <TR><TD NOWRAP>Theorem</TD><TD ALIGN=CENTER><A
  HREF="ndexi-P7.19.RC.html">ndexi-P7.19.RC</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#A94CFF">892</SPAN></TD><TD ALIGN=LEFT><A
+ STYLE="color:#A94DFF">886</SPAN></TD><TD ALIGN=LEFT><A
  NAME="ndexi-P7.19.RC"></A>
 Inference Form of <A HREF="ndexi-P7.19.html">ndexi-P7.19</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#8962FF">850</SPAN>. <SPAN CLASS=math>&dagger;</SPAN>
+STYLE="color:#8863FF">844</SPAN>. <SPAN CLASS=math>&dagger;</SPAN>
 
 </TD></TR><TR><TD COLSPAN=3 ALIGN=CENTER><SPAN CLASS=math><SPAN
  CLASS=typecode>&vdash; </SPAN>[<SPAN CLASS=term>&#x1D461;</SPAN> / <SPAN
@@ -2411,10 +2291,10 @@ STYLE="color:#8962FF">850</SPAN>. <SPAN CLASS=math>&dagger;</SPAN>
 
 <TR><TD NOWRAP>Theorem</TD><TD ALIGN=CENTER><A
  HREF="ndexew-P7.RC.html">ndexew-P7.RC</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#AA4CFF">893</SPAN>*</TD><TD ALIGN=LEFT><A
+ STYLE="color:#A94CFF">887</SPAN>*</TD><TD ALIGN=LEFT><A
  NAME="ndexew-P7.RC"></A>
 Inference Form of <A HREF="ndexew-P7.html">ndexew-P7</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#9B56FF">873</SPAN>. <SPAN CLASS=math>&dagger;</SPAN>
+STYLE="color:#9A57FF">867</SPAN>. <SPAN CLASS=math>&dagger;</SPAN>
 
 </TD></TR><TR><TD COLSPAN=3 ALIGN=CENTER><SPAN CLASS=math><SPAN
  CLASS=typecode>&vdash; </SPAN>&#8498;<SPAN CLASS=objvar>&#x1D466;</SPAN><SPAN
@@ -2436,10 +2316,10 @@ STYLE="color:#9B56FF">873</SPAN>. <SPAN CLASS=math>&dagger;</SPAN>
 
 <TR><TD NOWRAP>Theorem</TD><TD ALIGN=CENTER><A
  HREF="ndexew-P7.RC.VR1of2.html">ndexew-P7.RC.VR1of2</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#AA4BFF">894</SPAN>*</TD><TD ALIGN=LEFT><A
+ STYLE="color:#AA4CFF">888</SPAN>*</TD><TD ALIGN=LEFT><A
  NAME="ndexew-P7.RC.VR1of2"></A>
 <A HREF="ndexew-P7.RC.html">ndexew-P7.RC</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#AA4CFF">893</SPAN> with one variable restriction. <SPAN
+STYLE="color:#A94CFF">887</SPAN> with one variable restriction. <SPAN
 CLASS=math>&dagger;</SPAN>
 <P STYLE="margin-bottom:0em">
        '<SPAN CLASS=math><SPAN CLASS=objvar>&#x1D466;</SPAN></SPAN>' cannot
@@ -2462,10 +2342,10 @@ occur in '<SPAN CLASS=math><SPAN CLASS=wff>&#x1D711;</SPAN></SPAN>'.
 
 <TR><TD NOWRAP>Theorem</TD><TD ALIGN=CENTER><A
  HREF="ndexew-P7.RC.VR2of2.html">ndexew-P7.RC.VR2of2</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#AB4BFF">895</SPAN>*</TD><TD ALIGN=LEFT><A
+ STYLE="color:#AA4BFF">889</SPAN>*</TD><TD ALIGN=LEFT><A
  NAME="ndexew-P7.RC.VR2of2"></A>
 <A HREF="ndexew-P7.RC.html">ndexew-P7.RC</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#AA4CFF">893</SPAN> with one variable restriction. <SPAN
+STYLE="color:#A94CFF">887</SPAN> with one variable restriction. <SPAN
 CLASS=math>&dagger;</SPAN>
 <P STYLE="margin-bottom:0em">
        '<SPAN CLASS=math><SPAN CLASS=objvar>&#x1D466;</SPAN></SPAN>' cannot
@@ -2488,10 +2368,10 @@ occur in '<SPAN CLASS=math><SPAN CLASS=wff>&#x1D713;</SPAN></SPAN>'.
 
 <TR><TD NOWRAP>Theorem</TD><TD ALIGN=CENTER><A
  HREF="ndexew-P7.RC.VR12of2.html">ndexew-P7.RC.VR12of2</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#AB4AFF">896</SPAN>*</TD><TD ALIGN=LEFT><A
+ STYLE="color:#AB4BFF">890</SPAN>*</TD><TD ALIGN=LEFT><A
  NAME="ndexew-P7.RC.VR12of2"></A>
 <A HREF="ndexew-P7.RC.html">ndexew-P7.RC</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#AA4CFF">893</SPAN> with two variable restrictions. <SPAN
+STYLE="color:#A94CFF">887</SPAN> with two variable restrictions. <SPAN
 CLASS=math>&dagger;</SPAN>
 <P STYLE="margin-bottom:0em">
        '<SPAN CLASS=math><SPAN CLASS=objvar>&#x1D466;</SPAN></SPAN>' cannot
@@ -2512,10 +2392,10 @@ occur in either '<SPAN CLASS=math><SPAN CLASS=wff>&#x1D711;</SPAN></SPAN>' or
 
 <TR><TD NOWRAP>Theorem</TD><TD ALIGN=CENTER><A
  HREF="ndsubeql-P7.22a.RC.html">ndsubeql-P7.22a.RC</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#AC4AFF">897</SPAN></TD><TD ALIGN=LEFT><A
+ STYLE="color:#AB4AFF">891</SPAN></TD><TD ALIGN=LEFT><A
  NAME="ndsubeql-P7.22a.RC"></A>
 Inference Form of <A HREF="ndsubeql-P7.22a.html">ndsubeql-P7.22a</A>&nbsp;<SPAN
-CLASS=r STYLE="color:#8B61FF">853</SPAN>. <SPAN CLASS=math>&dagger;</SPAN>
+CLASS=r STYLE="color:#8A61FF">847</SPAN>. <SPAN CLASS=math>&dagger;</SPAN>
 
 </TD></TR><TR><TD COLSPAN=3 ALIGN=CENTER><SPAN CLASS=math><SPAN
  CLASS=typecode>&vdash; </SPAN><SPAN CLASS=term>&#x1D461;</SPAN> = <SPAN
@@ -2528,10 +2408,10 @@ CLASS=r STYLE="color:#8B61FF">853</SPAN>. <SPAN CLASS=math>&dagger;</SPAN>
 
 <TR><TD NOWRAP>Theorem</TD><TD ALIGN=CENTER><A
  HREF="ndsubeqr-P7.22b.RC.html">ndsubeqr-P7.22b.RC</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#AC49FF">898</SPAN></TD><TD ALIGN=LEFT><A
+ STYLE="color:#AB4AFF">892</SPAN></TD><TD ALIGN=LEFT><A
  NAME="ndsubeqr-P7.22b.RC"></A>
 Inference Form of <A HREF="ndsubeqr-P7.22b.html">ndsubeqr-P7.22b</A>&nbsp;<SPAN
-CLASS=r STYLE="color:#8C60FF">854</SPAN>. <SPAN CLASS=math>&dagger;</SPAN>
+CLASS=r STYLE="color:#8B61FF">848</SPAN>. <SPAN CLASS=math>&dagger;</SPAN>
 
 </TD></TR><TR><TD COLSPAN=3 ALIGN=CENTER><SPAN CLASS=math><SPAN
  CLASS=typecode>&vdash; </SPAN><SPAN CLASS=term>&#x1D461;</SPAN> = <SPAN
@@ -2544,10 +2424,10 @@ CLASS=r STYLE="color:#8C60FF">854</SPAN>. <SPAN CLASS=math>&dagger;</SPAN>
 
 <TR><TD NOWRAP>Theorem</TD><TD ALIGN=CENTER><A
  HREF="ndsubeqd-P7.RC.html">ndsubeqd-P7.RC</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#AC49FF">899</SPAN></TD><TD ALIGN=LEFT><A
+ STYLE="color:#AC49FF">893</SPAN></TD><TD ALIGN=LEFT><A
  NAME="ndsubeqd-P7.RC"></A>
 Inference Form of <A HREF="ndsubeqd-P7.html">ndsubeqd-P7</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#935CFF">862</SPAN>. <SPAN CLASS=math>&dagger;</SPAN>
+STYLE="color:#915DFF">856</SPAN>. <SPAN CLASS=math>&dagger;</SPAN>
 
 </TD></TR><TR><TD COLSPAN=3 ALIGN=CENTER><SPAN CLASS=math><SPAN
  CLASS=typecode>&vdash; </SPAN><SPAN CLASS=term>&#x1D460;</SPAN> = <SPAN
@@ -2563,11 +2443,11 @@ STYLE="color:#935CFF">862</SPAN>. <SPAN CLASS=math>&dagger;</SPAN>
 
 <TR><TD NOWRAP>Theorem</TD><TD ALIGN=CENTER><A
  HREF="ndsubelofl-P7.23a.RC.html">ndsubelofl-P7.23a.RC</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#AD48FF">900</SPAN></TD><TD ALIGN=LEFT><A
+ STYLE="color:#AC49FF">894</SPAN></TD><TD ALIGN=LEFT><A
  NAME="ndsubelofl-P7.23a.RC"></A>
 Inference Form of <A
 HREF="ndsubelofl-P7.23a.html">ndsubelofl-P7.23a</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#8D60FF">855</SPAN>. <SPAN CLASS=math>&dagger;</SPAN>
+STYLE="color:#8C60FF">849</SPAN>. <SPAN CLASS=math>&dagger;</SPAN>
 
 </TD></TR><TR><TD COLSPAN=3 ALIGN=CENTER><SPAN CLASS=math><SPAN
  CLASS=typecode>&vdash; </SPAN><SPAN CLASS=term>&#x1D461;</SPAN> = <SPAN
@@ -2576,6 +2456,111 @@ STYLE="color:#8D60FF">855</SPAN>. <SPAN CLASS=math>&dagger;</SPAN>
  CLASS=typecode>&vdash; </SPAN>(<SPAN CLASS=term>&#x1D461;</SPAN> &isin; <SPAN
  CLASS=term>&#x1D464;</SPAN> &harr; <SPAN CLASS=term>&#x1D462;</SPAN> &isin;
  <SPAN CLASS=term>&#x1D464;</SPAN>)</SPAN></TD></TR>
+<TR BGCOLOR=white><TD COLSPAN=3><FONT SIZE=-3>&nbsp;</FONT></TD></TR>
+
+<TR><TD NOWRAP>Theorem</TD><TD ALIGN=CENTER><A
+ HREF="ndsubelofr-P7.23b.RC.html">ndsubelofr-P7.23b.RC</A>&nbsp;<SPAN CLASS=r
+ STYLE="color:#AD48FF">895</SPAN></TD><TD ALIGN=LEFT><A
+ NAME="ndsubelofr-P7.23b.RC"></A>
+Inference Form of <A
+HREF="ndsubelofr-P7.23b.html">ndsubelofr-P7.23b</A>&nbsp;<SPAN CLASS=r
+STYLE="color:#8D60FF">850</SPAN>. <SPAN CLASS=math>&dagger;</SPAN>
+
+</TD></TR><TR><TD COLSPAN=3 ALIGN=CENTER><SPAN CLASS=math><SPAN
+ CLASS=typecode>&vdash; </SPAN><SPAN CLASS=term>&#x1D461;</SPAN> = <SPAN
+ CLASS=term>&#x1D462;</SPAN></SPAN>&nbsp;&nbsp;&nbsp; <FONT
+ FACE=sans-serif>&#8658;</FONT>&nbsp;&nbsp;&nbsp;<SPAN CLASS=math><SPAN
+ CLASS=typecode>&vdash; </SPAN>(<SPAN CLASS=term>&#x1D464;</SPAN> &isin; <SPAN
+ CLASS=term>&#x1D461;</SPAN> &harr; <SPAN CLASS=term>&#x1D464;</SPAN> &isin;
+ <SPAN CLASS=term>&#x1D462;</SPAN>)</SPAN></TD></TR>
+<TR BGCOLOR=white><TD COLSPAN=3><FONT SIZE=-3>&nbsp;</FONT></TD></TR>
+
+<TR><TD NOWRAP>Theorem</TD><TD ALIGN=CENTER><A
+ HREF="ndsubelofd-P7.RC.html">ndsubelofd-P7.RC</A>&nbsp;<SPAN CLASS=r
+ STYLE="color:#AD48FF">896</SPAN></TD><TD ALIGN=LEFT><A
+ NAME="ndsubelofd-P7.RC"></A>
+Inference Form of <A HREF="ndsubelofd-P7.html">ndsubelofd-P7</A>&nbsp;<SPAN
+CLASS=r STYLE="color:#925CFF">857</SPAN>. <SPAN CLASS=math>&dagger;</SPAN>
+
+</TD></TR><TR><TD COLSPAN=3 ALIGN=CENTER><SPAN CLASS=math><SPAN
+ CLASS=typecode>&vdash; </SPAN><SPAN CLASS=term>&#x1D460;</SPAN> = <SPAN
+ CLASS=term>&#x1D461;</SPAN></SPAN><SPAN CLASS=math>&nbsp;&nbsp;&nbsp;
+ &amp;&nbsp;&nbsp;&nbsp;</SPAN><SPAN CLASS=math><SPAN CLASS=typecode>&vdash;
+ </SPAN><SPAN CLASS=term>&#x1D462;</SPAN> = <SPAN
+ CLASS=term>&#x1D464;</SPAN></SPAN>&nbsp;&nbsp;&nbsp; <FONT
+ FACE=sans-serif>&#8658;</FONT>&nbsp;&nbsp;&nbsp;<SPAN CLASS=math><SPAN
+ CLASS=typecode>&vdash; </SPAN>(<SPAN CLASS=term>&#x1D460;</SPAN> &isin; <SPAN
+ CLASS=term>&#x1D462;</SPAN> &harr; <SPAN CLASS=term>&#x1D461;</SPAN> &isin;
+ <SPAN CLASS=term>&#x1D464;</SPAN>)</SPAN></TD></TR>
+<TR BGCOLOR=white><TD COLSPAN=3><FONT SIZE=-3>&nbsp;</FONT></TD></TR>
+
+<TR><TD NOWRAP>Theorem</TD><TD ALIGN=CENTER><A
+ HREF="ndsubsucc-P7.24a.RC.html">ndsubsucc-P7.24a.RC</A>&nbsp;<SPAN CLASS=r
+ STYLE="color:#AE47FF">897</SPAN></TD><TD ALIGN=LEFT><A
+ NAME="ndsubsucc-P7.24a.RC"></A>
+Inference Form of <A
+HREF="ndsubsucc-P7.24a.html">ndsubsucc-P7.24a</A>&nbsp;<SPAN CLASS=r
+STYLE="color:#8D5FFF">851</SPAN>. <SPAN CLASS=math>&dagger;</SPAN>
+
+</TD></TR><TR><TD COLSPAN=3 ALIGN=CENTER><SPAN CLASS=math><SPAN
+ CLASS=typecode>&vdash; </SPAN><SPAN CLASS=term>&#x1D461;</SPAN> = <SPAN
+ CLASS=term>&#x1D462;</SPAN></SPAN>&nbsp;&nbsp;&nbsp; <FONT
+ FACE=sans-serif>&#8658;</FONT>&nbsp;&nbsp;&nbsp;<SPAN CLASS=math><SPAN
+ CLASS=typecode>&vdash; </SPAN>s&lsquo;<SPAN CLASS=term>&#x1D461;</SPAN> =
+ s&lsquo;<SPAN CLASS=term>&#x1D462;</SPAN></SPAN></TD></TR>
+<TR BGCOLOR=white><TD COLSPAN=3><FONT SIZE=-3>&nbsp;</FONT></TD></TR>
+
+<TR><TD NOWRAP>Theorem</TD><TD ALIGN=CENTER><A
+ HREF="ndsubaddl-P7.24b.RC.html">ndsubaddl-P7.24b.RC</A>&nbsp;<SPAN CLASS=r
+ STYLE="color:#AE47FF">898</SPAN></TD><TD ALIGN=LEFT><A
+ NAME="ndsubaddl-P7.24b.RC"></A>
+Inference Form of <A
+HREF="ndsubaddl-P7.24b.html">ndsubaddl-P7.24b</A>&nbsp;<SPAN CLASS=r
+STYLE="color:#8E5FFF">852</SPAN>. <SPAN CLASS=math>&dagger;</SPAN>
+
+</TD></TR><TR><TD COLSPAN=3 ALIGN=CENTER><SPAN CLASS=math><SPAN
+ CLASS=typecode>&vdash; </SPAN><SPAN CLASS=term>&#x1D461;</SPAN> = <SPAN
+ CLASS=term>&#x1D462;</SPAN></SPAN>&nbsp;&nbsp;&nbsp; <FONT
+ FACE=sans-serif>&#8658;</FONT>&nbsp;&nbsp;&nbsp;<SPAN CLASS=math><SPAN
+ CLASS=typecode>&vdash; </SPAN>(<SPAN CLASS=term>&#x1D461;</SPAN> + <SPAN
+ CLASS=term>&#x1D464;</SPAN>) = (<SPAN CLASS=term>&#x1D462;</SPAN> + <SPAN
+ CLASS=term>&#x1D464;</SPAN>)</SPAN></TD></TR>
+<TR BGCOLOR=white><TD COLSPAN=3><FONT SIZE=-3>&nbsp;</FONT></TD></TR>
+
+<TR><TD NOWRAP>Theorem</TD><TD ALIGN=CENTER><A
+ HREF="ndsubaddr-P7.24c.RC.html">ndsubaddr-P7.24c.RC</A>&nbsp;<SPAN CLASS=r
+ STYLE="color:#AE46FF">899</SPAN></TD><TD ALIGN=LEFT><A
+ NAME="ndsubaddr-P7.24c.RC"></A>
+Inference Form of <A
+HREF="ndsubaddr-P7.24c.html">ndsubaddr-P7.24c</A>&nbsp;<SPAN CLASS=r
+STYLE="color:#8F5EFF">853</SPAN>. <SPAN CLASS=math>&dagger;</SPAN>
+
+</TD></TR><TR><TD COLSPAN=3 ALIGN=CENTER><SPAN CLASS=math><SPAN
+ CLASS=typecode>&vdash; </SPAN><SPAN CLASS=term>&#x1D461;</SPAN> = <SPAN
+ CLASS=term>&#x1D462;</SPAN></SPAN>&nbsp;&nbsp;&nbsp; <FONT
+ FACE=sans-serif>&#8658;</FONT>&nbsp;&nbsp;&nbsp;<SPAN CLASS=math><SPAN
+ CLASS=typecode>&vdash; </SPAN>(<SPAN CLASS=term>&#x1D464;</SPAN> + <SPAN
+ CLASS=term>&#x1D461;</SPAN>) = (<SPAN CLASS=term>&#x1D464;</SPAN> + <SPAN
+ CLASS=term>&#x1D462;</SPAN>)</SPAN></TD></TR>
+<TR BGCOLOR=white><TD COLSPAN=3><FONT SIZE=-3>&nbsp;</FONT></TD></TR>
+
+<TR><TD NOWRAP>Theorem</TD><TD ALIGN=CENTER><A
+ HREF="ndsubaddd-P7.RC.html">ndsubaddd-P7.RC</A>&nbsp;<SPAN CLASS=r
+ STYLE="color:#AF46FF">900</SPAN></TD><TD ALIGN=LEFT><A
+ NAME="ndsubaddd-P7.RC"></A>
+Inference Form of <A HREF="ndsubaddd-P7.html">ndsubaddd-P7</A>&nbsp;<SPAN
+CLASS=r STYLE="color:#935CFF">858</SPAN>. <SPAN CLASS=math>&dagger;</SPAN>
+
+</TD></TR><TR><TD COLSPAN=3 ALIGN=CENTER><SPAN CLASS=math><SPAN
+ CLASS=typecode>&vdash; </SPAN><SPAN CLASS=term>&#x1D460;</SPAN> = <SPAN
+ CLASS=term>&#x1D461;</SPAN></SPAN><SPAN CLASS=math>&nbsp;&nbsp;&nbsp;
+ &amp;&nbsp;&nbsp;&nbsp;</SPAN><SPAN CLASS=math><SPAN CLASS=typecode>&vdash;
+ </SPAN><SPAN CLASS=term>&#x1D462;</SPAN> = <SPAN
+ CLASS=term>&#x1D464;</SPAN></SPAN>&nbsp;&nbsp;&nbsp; <FONT
+ FACE=sans-serif>&#8658;</FONT>&nbsp;&nbsp;&nbsp;<SPAN CLASS=math><SPAN
+ CLASS=typecode>&vdash; </SPAN>(<SPAN CLASS=term>&#x1D460;</SPAN> + <SPAN
+ CLASS=term>&#x1D462;</SPAN>) = (<SPAN CLASS=term>&#x1D461;</SPAN> + <SPAN
+ CLASS=term>&#x1D464;</SPAN>)</SPAN></TD></TR>
 </TABLE></CENTER>
 
 <TABLE BORDER=0 WIDTH="100%">
@@ -2599,17 +2584,17 @@ STYLE="color:#8D60FF">855</SPAN>. <SPAN CLASS=math>&dagger;</SPAN>
 Jump to page: 
 <A HREF="mmtheorems.html">Contents</A>&nbsp;
 <A HREF="mmtheorems1.html">1</A>&nbsp;<SPAN CLASS=r STYLE="color:#FB0000">1</SPAN>-<SPAN CLASS=r STYLE="color:#E63800">100</SPAN>
-<A HREF="mmtheorems2.html">2</A>&nbsp;<SPAN CLASS=r STYLE="color:#E63800">101</SPAN>-<SPAN CLASS=r STYLE="color:#B36A00">200</SPAN>
-<A HREF="mmtheorems3.html">3</A>&nbsp;<SPAN CLASS=r STYLE="color:#B36B00">201</SPAN>-<SPAN CLASS=r STYLE="color:#788500">300</SPAN>
-<A HREF="mmtheorems4.html">4</A>&nbsp;<SPAN CLASS=r STYLE="color:#778500">301</SPAN>-<SPAN CLASS=r STYLE="color:#3F8F00">400</SPAN>
-<A HREF="mmtheorems5.html">5</A>&nbsp;<SPAN CLASS=r STYLE="color:#3E8F00">401</SPAN>-<SPAN CLASS=r STYLE="color:#009223">500</SPAN>
-<A HREF="mmtheorems6.html">6</A>&nbsp;<SPAN CLASS=r STYLE="color:#009224">501</SPAN>-<SPAN CLASS=r STYLE="color:#008F79">600</SPAN>
-<A HREF="mmtheorems7.html">7</A>&nbsp;<SPAN CLASS=r STYLE="color:#008F7A">601</SPAN>-<SPAN CLASS=r STYLE="color:#0083E5">700</SPAN>
-<A HREF="mmtheorems8.html">8</A>&nbsp;<SPAN CLASS=r STYLE="color:#0083E6">701</SPAN>-<SPAN CLASS=r STYLE="color:#656FFF">800</SPAN>
-9&nbsp;<SPAN CLASS=r STYLE="color:#666EFF">801</SPAN>-<SPAN CLASS=r STYLE="color:#AD48FF">900</SPAN>
-<A HREF="mmtheorems10.html">10</A>&nbsp;<SPAN CLASS=r STYLE="color:#AD48FF">901</SPAN>-<SPAN CLASS=r STYLE="color:#D214EE">1000</SPAN>
-<A HREF="mmtheorems11.html">11</A>&nbsp;<SPAN CLASS=r STYLE="color:#D214EE">1001</SPAN>-<SPAN CLASS=r STYLE="color:#EA00A3">1100</SPAN>
-<A HREF="mmtheorems12.html">12</A>&nbsp;<SPAN CLASS=r STYLE="color:#EA00A2">1101</SPAN>-<SPAN CLASS=r STYLE="color:#EE0084">1131</SPAN>
+<A HREF="mmtheorems2.html">2</A>&nbsp;<SPAN CLASS=r STYLE="color:#E63900">101</SPAN>-<SPAN CLASS=r STYLE="color:#B36B00">200</SPAN>
+<A HREF="mmtheorems3.html">3</A>&nbsp;<SPAN CLASS=r STYLE="color:#B26B00">201</SPAN>-<SPAN CLASS=r STYLE="color:#778500">300</SPAN>
+<A HREF="mmtheorems4.html">4</A>&nbsp;<SPAN CLASS=r STYLE="color:#778500">301</SPAN>-<SPAN CLASS=r STYLE="color:#3D8F00">400</SPAN>
+<A HREF="mmtheorems5.html">5</A>&nbsp;<SPAN CLASS=r STYLE="color:#3D8F00">401</SPAN>-<SPAN CLASS=r STYLE="color:#009226">500</SPAN>
+<A HREF="mmtheorems6.html">6</A>&nbsp;<SPAN CLASS=r STYLE="color:#009227">501</SPAN>-<SPAN CLASS=r STYLE="color:#008F7B">600</SPAN>
+<A HREF="mmtheorems7.html">7</A>&nbsp;<SPAN CLASS=r STYLE="color:#008F7C">601</SPAN>-<SPAN CLASS=r STYLE="color:#0182E8">700</SPAN>
+<A HREF="mmtheorems8.html">8</A>&nbsp;<SPAN CLASS=r STYLE="color:#0182E9">701</SPAN>-<SPAN CLASS=r STYLE="color:#696EFF">800</SPAN>
+9&nbsp;<SPAN CLASS=r STYLE="color:#6A6DFF">801</SPAN>-<SPAN CLASS=r STYLE="color:#AF46FF">900</SPAN>
+<A HREF="mmtheorems10.html">10</A>&nbsp;<SPAN CLASS=r STYLE="color:#AF45FF">901</SPAN>-<SPAN CLASS=r STYLE="color:#D312EC">1000</SPAN>
+<A HREF="mmtheorems11.html">11</A>&nbsp;<SPAN CLASS=r STYLE="color:#D411EC">1001</SPAN>-<SPAN CLASS=r STYLE="color:#EB009D">1100</SPAN>
+<A HREF="mmtheorems12.html">12</A>&nbsp;<SPAN CLASS=r STYLE="color:#EB009C">1101</SPAN>-<SPAN CLASS=r STYLE="color:#EE0084">1125</SPAN>
 <HR NOSHADE SIZE=1>
 <TABLE BORDER=0 WIDTH="100%">
   <TR>

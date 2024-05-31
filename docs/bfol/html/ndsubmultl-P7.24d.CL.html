@@ -16,10 +16,6 @@ img { margin-bottom: -4px }
    }
 -->
 </STYLE>
-<link rel="stylesheet" 
-media="screen" 
-href="https://fontlibrary.org/en/face/xits-math" 
-type="text/css"/> 
 <STYLE TYPE="text/css"> 
 <!--
   .wff { color: blue; } 
@@ -27,7 +23,11 @@ type="text/css"/>
   .term { color: green; } 
   .class { color: #CC33CC; } 
   .typecode { color: gray; } 
-  .math { font-family: XITSMathRegular; } 
+  @font-face {
+     font-family: XITSMath-Regular; 
+     src: url(../fonts/xits-math.woff); 
+  } 
+  .math { font-family: XITSMath-Regular; } 
 -->
 </STYLE>
 <TITLE>ndsubmultl-P7.24d.CL - bfol.mm Proof Explorer</TITLE>
@@ -76,10 +76,10 @@ bfol.mm Proof Explorer
 <HR NOSHADE SIZE=1>
 <CENTER><B><FONT SIZE="+1">Theorem <FONT
 COLOR="#006633">ndsubmultl-P7.24d.CL</FONT></FONT></B>&nbsp;<SPAN CLASS=r
-STYLE="color:#B83AFF">927</SPAN></CENTER>
+STYLE="color:#B83BFF">921</SPAN></CENTER>
 <CENTER><TABLE><TR><TD ALIGN=LEFT><B>Description: </B>Closed Form of <A
 HREF="ndsubmultl-P7.24d.html">ndsubmultl-P7.24d</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#915DFF">860</SPAN>. <SPAN
+STYLE="color:#905EFF">854</SPAN>. <SPAN
 CLASS=math>&dagger;</SPAN></TD></TR></TABLE></CENTER>
 
 <CENTER><TABLE BORDER CELLSPACING=0 BGCOLOR="#EEFFFA"
@@ -106,7 +106,7 @@ SUMMARY="Proof of theorem">
 </TH><TH>Expression</TH></TR>
 <TR ALIGN=LEFT><TD>1</TD><TD>&nbsp;</TD><TD><A HREF="rcp-NDASM1of1.html"
 TITLE="( 1 ) `->` 1. `t.`">rcp-NDASM1of1</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#B26B00">202</SPAN></TD><TD><A NAME="1"></A>
+STYLE="color:#B86700">192</SPAN></TD><TD><A NAME="1"></A>
 <SPAN CLASS=i>. 2</SPAN>
 <SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN>(<SPAN
 CLASS=term>&#x1D461;</SPAN> = <SPAN CLASS=term>&#x1D462;</SPAN> &rarr; <SPAN
@@ -115,7 +115,7 @@ CLASS=term>&#x1D462;</SPAN>)</SPAN></TD></TR>
 <TR ALIGN=LEFT><TD>2</TD><TD><A HREF="#1">1</A></TD><TD><A
 HREF="ndsubmultl-P7.24d.html"
 TITLE="Natural Deduction: Function Substitution Rule ('`x.`' left).">ndsubmultl-P7.24d</A>&nbsp;<SPAN
-CLASS=r STYLE="color:#915DFF">860</SPAN></TD><TD><A NAME="2"></A>
+CLASS=r STYLE="color:#905EFF">854</SPAN></TD><TD><A NAME="2"></A>
 <SPAN CLASS=i>1</SPAN>
 <SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN>(<SPAN
 CLASS=term>&#x1D461;</SPAN> = <SPAN CLASS=term>&#x1D462;</SPAN> &rarr; (<SPAN
@@ -147,14 +147,14 @@ HREF="ax-L9-multl.html">ax-L9-multl</A>&nbsp;<SPAN CLASS=r
 STYLE="color:#F80700">25</SPAN></FONT></TD></TR>
 <TR><TD ALIGN=LEFT><FONT SIZE=-1><B>This theorem depends on definitions:</B>
 &nbsp;<A HREF="df-bi-D2.1.html">df-bi-D2.1</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#E43C00">106</SPAN> &nbsp;<A
+STYLE="color:#E33D00">107</SPAN> &nbsp;<A
 HREF="df-and-D2.2.html">df-and-D2.2</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#D84C00">134</SPAN> &nbsp;<A
+STYLE="color:#D84C00">133</SPAN> &nbsp;<A
 HREF="df-true-D2.4.html">df-true-D2.4</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#C95A00">165</SPAN></FONT></TD></TR>
+STYLE="color:#CE5500">155</SPAN></FONT></TD></TR>
 <TR><TD ALIGN=LEFT><FONT SIZE=-1><B>This theorem is referenced by:</B> &nbsp;<A
 HREF="example-E7.1b.html">example-E7.1b</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#E500B9">1081</SPAN></FONT></TD></TR>
+&nbsp;<SPAN CLASS=r STYLE="color:#E500B9">1075</SPAN></FONT></TD></TR>
 </TABLE></CENTER>
 <TABLE BORDER=0 WIDTH="100%">
 <TR><TD WIDTH="25%">&nbsp;</TD>

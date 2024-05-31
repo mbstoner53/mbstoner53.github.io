@@ -16,10 +16,6 @@ img { margin-bottom: -4px }
    }
 -->
 </STYLE>
-<link rel="stylesheet" 
-media="screen" 
-href="https://fontlibrary.org/en/face/xits-math" 
-type="text/css"/> 
 <STYLE TYPE="text/css"> 
 <!--
   .wff { color: blue; } 
@@ -27,7 +23,11 @@ type="text/css"/>
   .term { color: green; } 
   .class { color: #CC33CC; } 
   .typecode { color: gray; } 
-  .math { font-family: XITSMathRegular; } 
+  @font-face {
+     font-family: XITSMath-Regular; 
+     src: url(../fonts/xits-math.woff); 
+  } 
+  .math { font-family: XITSMath-Regular; } 
 -->
 </STYLE>
 <TITLE>simpl-L2.2a.SH - bfol.mm Proof Explorer</TITLE>
@@ -76,10 +76,10 @@ bfol.mm Proof Explorer
 <HR NOSHADE SIZE=1>
 <CENTER><B><FONT SIZE="+1">Theorem <FONT
 COLOR="#006633">simpl-L2.2a.SH</FONT></FONT></B>&nbsp;<SPAN CLASS=r
-STYLE="color:#E83400">95</SPAN></CENTER>
+STYLE="color:#E83500">96</SPAN></CENTER>
 <CENTER><TABLE><TR><TD ALIGN=LEFT><B>Description: </B>Inference from <A
 HREF="simpl-L2.2a.html">simpl-L2.2a</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#E93400">94</SPAN>.</TD></TR></TABLE></CENTER>
+STYLE="color:#E83500">95</SPAN>.</TD></TR></TABLE></CENTER>
 
 <CENTER><TABLE BORDER CELLSPACING=0 BGCOLOR="#EEFFFA"
 SUMMARY="Hypothesis">
@@ -117,7 +117,7 @@ CLASS=wff>&#x1D711;</SPAN> &rarr; &not; <SPAN
 CLASS=wff>&#x1D713;</SPAN>)</SPAN></TD></TR>
 <TR ALIGN=LEFT><TD>2</TD><TD>&nbsp;</TD><TD><A HREF="simpl-L2.2a.html"
 TITLE="Left Simplification Lemma.">simpl-L2.2a</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#E93400">94</SPAN></TD><TD><A NAME="2"></A>
+STYLE="color:#E83500">95</SPAN></TD><TD><A NAME="2"></A>
 <SPAN CLASS=i>. 2</SPAN>
 <SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN>(&not; (<SPAN
 CLASS=wff>&#x1D711;</SPAN> &rarr; &not; <SPAN CLASS=wff>&#x1D713;</SPAN>)
@@ -149,9 +149,9 @@ HREF="ax-L3.html">ax-L3</A>&nbsp;<SPAN CLASS=r STYLE="color:#F90300">13</SPAN>
 STYLE="color:#F90300">14</SPAN></FONT></TD></TR>
 <TR><TD ALIGN=LEFT><FONT SIZE=-1><B>This theorem is referenced by:</B> &nbsp;<A
 HREF="mbifwd-P2.1a.html">mbifwd-P2.1a</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#E63800">100</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#E63900">101</SPAN> &nbsp;<A
 HREF="dfbionlyif-P2.3b.html">dfbionlyif-P2.3b</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#E33D00">108</SPAN></FONT></TD></TR>
+&nbsp;<SPAN CLASS=r STYLE="color:#E23E00">109</SPAN></FONT></TD></TR>
 </TABLE></CENTER>
 <TABLE BORDER=0 WIDTH="100%">
 <TR><TD WIDTH="25%">&nbsp;</TD>

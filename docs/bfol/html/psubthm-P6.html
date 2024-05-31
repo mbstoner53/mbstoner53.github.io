@@ -16,10 +16,6 @@ img { margin-bottom: -4px }
    }
 -->
 </STYLE>
-<link rel="stylesheet" 
-media="screen" 
-href="https://fontlibrary.org/en/face/xits-math" 
-type="text/css"/> 
 <STYLE TYPE="text/css"> 
 <!--
   .wff { color: blue; } 
@@ -27,7 +23,11 @@ type="text/css"/>
   .term { color: green; } 
   .class { color: #CC33CC; } 
   .typecode { color: gray; } 
-  .math { font-family: XITSMathRegular; } 
+  @font-face {
+     font-family: XITSMath-Regular; 
+     src: url(../fonts/xits-math.woff); 
+  } 
+  .math { font-family: XITSMath-Regular; } 
 -->
 </STYLE>
 <TITLE>psubthm-P6 - bfol.mm Proof Explorer</TITLE>
@@ -76,7 +76,7 @@ bfol.mm Proof Explorer
 <HR NOSHADE SIZE=1>
 <CENTER><B><FONT SIZE="+1">Theorem <FONT
 COLOR="#006633">psubthm-P6</FONT></FONT></B>&nbsp;<SPAN CLASS=r
-STYLE="color:#5D71FF">792</SPAN></CENTER>
+STYLE="color:#5B71FF">786</SPAN></CENTER>
 <CENTER><TABLE><TR><TD ALIGN=LEFT><B>Description: </B>Proper Substitution
 Applied to a Theorem.</TD></TR></TABLE></CENTER>
 
@@ -119,7 +119,7 @@ CLASS=wff>&#x1D711;</SPAN></SPAN></TD></TR>
 <TR ALIGN=LEFT><TD>2</TD><TD><A HREF="#1">1</A></TD><TD><A
 HREF="rcp-NDIMP0addall.html"
 TITLE="( ) `=>` ( 1 `/\` ... `/\` n ). `t.`">rcp-NDIMP0addall</A>&nbsp;<SPAN
-CLASS=r STYLE="color:#A97000">217</SPAN></TD><TD><A NAME="2"></A>
+CLASS=r STYLE="color:#AE6D00">207</SPAN></TD><TD><A NAME="2"></A>
 <SPAN CLASS=i>. . . . 5</SPAN>
 <SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN>(<SPAN
 CLASS=objvar>&#x1D465;</SPAN> = <SPAN CLASS=objvar>&#x1D466;</SPAN> &rarr;
@@ -135,7 +135,7 @@ CLASS=wff>&#x1D711;</SPAN>)</SPAN></TD></TR>
 <TR ALIGN=LEFT><TD>4</TD><TD><A HREF="#3">3</A></TD><TD><A
 HREF="rcp-NDIMP0addall.html"
 TITLE="( ) `=>` ( 1 `/\` ... `/\` n ). `t.`">rcp-NDIMP0addall</A>&nbsp;<SPAN
-CLASS=r STYLE="color:#A97000">217</SPAN></TD><TD><A NAME="4"></A>
+CLASS=r STYLE="color:#AE6D00">207</SPAN></TD><TD><A NAME="4"></A>
 <SPAN CLASS=i>. . 3</SPAN>
 <SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN>(<SPAN
 CLASS=objvar>&#x1D466;</SPAN> = <SPAN CLASS=term>&#x1D461;</SPAN> &rarr;
@@ -154,7 +154,7 @@ CLASS=objvar>&#x1D466;</SPAN> &rarr; <SPAN
 CLASS=wff>&#x1D711;</SPAN>))</SPAN></TD></TR>
 <TR ALIGN=LEFT><TD>6</TD><TD>&nbsp;</TD><TD><A HREF="df-psub-D6.2.html"
 TITLE="Definition of Proper Substitution, '`[ t_t / x ] w_ph`'. Read as 'The formula...">df-psub-D6.2</A>&nbsp;<SPAN
-CLASS=r STYLE="color:#027FF9">722</SPAN></TD><TD><A NAME="6"></A>
+CLASS=r STYLE="color:#0280F7">716</SPAN></TD><TD><A NAME="6"></A>
 <SPAN CLASS=i>. 2</SPAN>
 <SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN>([<SPAN
 CLASS=term>&#x1D461;</SPAN> / <SPAN CLASS=objvar>&#x1D465;</SPAN>]<SPAN
@@ -167,7 +167,7 @@ CLASS=wff>&#x1D711;</SPAN>)))</SPAN></TD></TR>
 <TR ALIGN=LEFT><TD>7</TD><TD><A HREF="#5">5</A>, <A HREF="#6">6</A></TD><TD><A
 HREF="bimpr-P4.RC.html"
 TITLE="Inference Form of ~bimpr-P4 . `t.`">bimpr-P4.RC</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#009148">540</SPAN></TD><TD><A NAME="7"></A>
+STYLE="color:#009145">534</SPAN></TD><TD><A NAME="7"></A>
 <SPAN CLASS=i>1</SPAN>
 <SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN>[<SPAN
 CLASS=term>&#x1D461;</SPAN> / <SPAN CLASS=objvar>&#x1D465;</SPAN>]<SPAN
@@ -189,7 +189,7 @@ STYLE="color:#FA0200">8</SPAN> &nbsp;<SPAN CLASS=math> &rarr; </SPAN><A
 HREF="wff-imp.html">wff-imp</A>&nbsp;<SPAN CLASS=r
 STYLE="color:#FA0200">10</SPAN> &nbsp;<SPAN CLASS=math>[</SPAN><A
 HREF="wff-psub.html">wff-psub</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#0280F7">720</SPAN></FONT></TD></TR>
+STYLE="color:#0280F5">714</SPAN></FONT></TD></TR>
 <TR><TD ALIGN=LEFT><FONT SIZE=-1><B>This theorem was proved from axioms:</B>
 &nbsp;<A HREF="ax-L1.html">ax-L1</A>&nbsp;<SPAN CLASS=r
 STYLE="color:#FA0200">11</SPAN> &nbsp;<A HREF="ax-L2.html">ax-L2</A>&nbsp;<SPAN
@@ -201,16 +201,16 @@ HREF="ax-GEN.html">ax-GEN</A>&nbsp;<SPAN CLASS=r
 STYLE="color:#F90400">15</SPAN></FONT></TD></TR>
 <TR><TD ALIGN=LEFT><FONT SIZE=-1><B>This theorem depends on definitions:</B>
 &nbsp;<A HREF="df-bi-D2.1.html">df-bi-D2.1</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#E43C00">106</SPAN> &nbsp;<A
+STYLE="color:#E33D00">107</SPAN> &nbsp;<A
 HREF="df-and-D2.2.html">df-and-D2.2</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#D84C00">134</SPAN> &nbsp;<A
+STYLE="color:#D84C00">133</SPAN> &nbsp;<A
 HREF="df-true-D2.4.html">df-true-D2.4</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#C95A00">165</SPAN> &nbsp;<A
+STYLE="color:#CE5500">155</SPAN> &nbsp;<A
 HREF="df-psub-D6.2.html">df-psub-D6.2</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#027FF9">722</SPAN></FONT></TD></TR>
+STYLE="color:#0280F7">716</SPAN></FONT></TD></TR>
 <TR><TD ALIGN=LEFT><FONT SIZE=-1><B>This theorem is referenced by:</B> &nbsp;<A
 HREF="psubim-P6-L2.html">psubim-P6-L2</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#6170FF">796</SPAN></FONT></TD></TR>
+&nbsp;<SPAN CLASS=r STYLE="color:#5F70FF">790</SPAN></FONT></TD></TR>
 </TABLE></CENTER>
 <TABLE BORDER=0 WIDTH="100%">
 <TR><TD WIDTH="25%">&nbsp;</TD>

@@ -16,10 +16,6 @@ img { margin-bottom: -4px }
    }
 -->
 </STYLE>
-<link rel="stylesheet" 
-media="screen" 
-href="https://fontlibrary.org/en/face/xits-math" 
-type="text/css"/> 
 <STYLE TYPE="text/css"> 
 <!--
   .wff { color: blue; } 
@@ -27,7 +23,11 @@ type="text/css"/>
   .term { color: green; } 
   .class { color: #CC33CC; } 
   .typecode { color: gray; } 
-  .math { font-family: XITSMathRegular; } 
+  @font-face {
+     font-family: XITSMath-Regular; 
+     src: url(../fonts/xits-math.woff); 
+  } 
+  .math { font-family: XITSMath-Regular; } 
 -->
 </STYLE>
 <TITLE>dnege-P3.30 - bfol.mm Proof Explorer</TITLE>
@@ -76,13 +76,13 @@ bfol.mm Proof Explorer
 <HR NOSHADE SIZE=1>
 <CENTER><B><FONT SIZE="+1">Theorem <FONT
 COLOR="#006633">dnege-P3.30</FONT></FONT></B>&nbsp;<SPAN CLASS=r
-STYLE="color:#7E8300">286</SPAN></CENTER>
+STYLE="color:#838100">276</SPAN></CENTER>
 <CENTER><TABLE><TR><TD ALIGN=LEFT><B>Description: </B>Double Negation
 Elimination.
 <P STYLE="margin-bottom:0em">
        This statement is equivalent to <A
 HREF="ndexclmid-P3.16.html">ndexclmid-P3.16</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#B96600">191</SPAN>, thus it is not
+STYLE="color:#BF6200">181</SPAN>, thus it is not
        deducible with intuitionist logic.</TD></TR></TABLE></CENTER>
 
 <CENTER><TABLE BORDER CELLSPACING=0 BGCOLOR="#EEFFFA"
@@ -116,14 +116,14 @@ SUMMARY="Proof of theorem">
 </TH><TH>Expression</TH></TR>
 <TR ALIGN=LEFT><TD>1</TD><TD>&nbsp;</TD><TD><A HREF="rcp-NDASM2of2.html"
 TITLE="( 1 `/\` 2 ) `->` 2. `t.`">rcp-NDASM2of2</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#B16C00">204</SPAN></TD><TD><A NAME="1"></A>
+STYLE="color:#B66800">194</SPAN></TD><TD><A NAME="1"></A>
 <SPAN CLASS=i>. 2</SPAN>
 <SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN>((<SPAN
 CLASS=wff>&#x1D6FE;</SPAN> &wedge; <SPAN CLASS=wff>&#x1D711;</SPAN>) &rarr;
 <SPAN CLASS=wff>&#x1D711;</SPAN>)</SPAN></TD></TR>
 <TR ALIGN=LEFT><TD>2</TD><TD>&nbsp;</TD><TD><A HREF="rcp-NDASM2of2.html"
 TITLE="( 1 `/\` 2 ) `->` 2. `t.`">rcp-NDASM2of2</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#B16C00">204</SPAN></TD><TD><A NAME="2"></A>
+STYLE="color:#B66800">194</SPAN></TD><TD><A NAME="2"></A>
 <SPAN CLASS=i>. . 3</SPAN>
 <SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN>((<SPAN
 CLASS=wff>&#x1D6FE;</SPAN> &wedge; &not; <SPAN CLASS=wff>&#x1D711;</SPAN>)
@@ -137,7 +137,7 @@ CLASS=wff>&#x1D711;</SPAN>)</SPAN></TD></TR>
 <TR ALIGN=LEFT><TD>4</TD><TD><A HREF="#3">3</A></TD><TD><A
 HREF="rcp-NDIMP1add1.html"
 TITLE="( 1 ) `=>` ( 1 `/\` 2 ). `t.`">rcp-NDIMP1add1</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#A97100">218</SPAN></TD><TD><A NAME="4"></A>
+STYLE="color:#AE6E00">208</SPAN></TD><TD><A NAME="4"></A>
 <SPAN CLASS=i>. . 3</SPAN>
 <SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN>((<SPAN
 CLASS=wff>&#x1D6FE;</SPAN> &wedge; &not; <SPAN CLASS=wff>&#x1D711;</SPAN>)
@@ -145,14 +145,14 @@ CLASS=wff>&#x1D6FE;</SPAN> &wedge; &not; <SPAN CLASS=wff>&#x1D711;</SPAN>)
 <TR ALIGN=LEFT><TD>5</TD><TD><A HREF="#2">2</A>, <A HREF="#4">4</A></TD><TD><A
 HREF="ndnege-P3.4.html"
 TITLE="Natural Deduction: '`-.`' Elimination Rule. If we can deduce a contradiction within...">ndnege-P3.4</A>&nbsp;<SPAN
-CLASS=r STYLE="color:#C06000">179</SPAN></TD><TD><A NAME="5"></A>
+CLASS=r STYLE="color:#C65C00">169</SPAN></TD><TD><A NAME="5"></A>
 <SPAN CLASS=i>. 2</SPAN>
 <SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN>((<SPAN
 CLASS=wff>&#x1D6FE;</SPAN> &wedge; &not; <SPAN CLASS=wff>&#x1D711;</SPAN>)
 &rarr; <SPAN CLASS=wff>&#x1D711;</SPAN>)</SPAN></TD></TR>
 <TR ALIGN=LEFT><TD>6</TD><TD>&nbsp;</TD><TD><A HREF="ndexclmid-P3.16.AC.html"
 TITLE="Alternate Form of Excluded Middle.">ndexclmid-P3.16.AC</A>&nbsp;<SPAN
-CLASS=r STYLE="color:#8E7D00">261</SPAN></TD><TD><A NAME="6"></A>
+CLASS=r STYLE="color:#947C00">251</SPAN></TD><TD><A NAME="6"></A>
 <SPAN CLASS=i>. 2</SPAN>
 <SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN>(<SPAN
 CLASS=wff>&#x1D6FE;</SPAN> &rarr; (<SPAN CLASS=wff>&#x1D711;</SPAN> &vee; &not;
@@ -160,7 +160,7 @@ CLASS=wff>&#x1D6FE;</SPAN> &rarr; (<SPAN CLASS=wff>&#x1D711;</SPAN> &vee; &not;
 <TR ALIGN=LEFT><TD>7</TD><TD><A HREF="#1">1</A>, <A HREF="#5">5</A>, <A
 HREF="#6">6</A></TD><TD><A HREF="ndore-P3.12.html"
 TITLE="Natural Deduction: '`\/`' Elimination Rule. If... 1.) after assuming '`w_ph`' we...">ndore-P3.12</A>&nbsp;<SPAN
-CLASS=r STYLE="color:#BB6400">187</SPAN></TD><TD><A NAME="7"></A>
+CLASS=r STYLE="color:#C16000">177</SPAN></TD><TD><A NAME="7"></A>
 <SPAN CLASS=i>1</SPAN>
 <SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN>(<SPAN
 CLASS=wff>&#x1D6FE;</SPAN> &rarr; <SPAN
@@ -178,7 +178,7 @@ STYLE="color:#FA0200">9</SPAN> &nbsp;<SPAN CLASS=math> &rarr; </SPAN><A
 HREF="wff-imp.html">wff-imp</A>&nbsp;<SPAN CLASS=r
 STYLE="color:#FA0200">10</SPAN> &nbsp;<SPAN CLASS=math> &wedge; </SPAN><A
 HREF="wff-and.html">wff-and</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#D84B00">133</SPAN></FONT></TD></TR>
+STYLE="color:#D94B00">132</SPAN></FONT></TD></TR>
 <TR><TD ALIGN=LEFT><FONT SIZE=-1><B>This theorem was proved from axioms:</B>
 &nbsp;<A HREF="ax-L1.html">ax-L1</A>&nbsp;<SPAN CLASS=r
 STYLE="color:#FA0200">11</SPAN> &nbsp;<A HREF="ax-L2.html">ax-L2</A>&nbsp;<SPAN
@@ -188,48 +188,48 @@ HREF="ax-L3.html">ax-L3</A>&nbsp;<SPAN CLASS=r STYLE="color:#F90300">13</SPAN>
 STYLE="color:#F90300">14</SPAN></FONT></TD></TR>
 <TR><TD ALIGN=LEFT><FONT SIZE=-1><B>This theorem depends on definitions:</B>
 &nbsp;<A HREF="df-bi-D2.1.html">df-bi-D2.1</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#E43C00">106</SPAN> &nbsp;<A
+STYLE="color:#E33D00">107</SPAN> &nbsp;<A
 HREF="df-and-D2.2.html">df-and-D2.2</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#D84C00">134</SPAN> &nbsp;<A
+STYLE="color:#D84C00">133</SPAN> &nbsp;<A
 HREF="df-or-D2.3.html">df-or-D2.3</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#CE5500">155</SPAN> &nbsp;<A
+STYLE="color:#D25100">145</SPAN> &nbsp;<A
 HREF="df-true-D2.4.html">df-true-D2.4</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#C95A00">165</SPAN></FONT></TD></TR>
+STYLE="color:#CE5500">155</SPAN></FONT></TD></TR>
 <TR><TD ALIGN=LEFT><FONT SIZE=-1><B>This theorem is referenced by:</B> &nbsp;<A
 HREF="dnege-P3.30.RC.html">dnege-P3.30.RC</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#7D8300">287</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#828100">277</SPAN> &nbsp;<A
 HREF="dnege-P3.30.CL.html">dnege-P3.30.CL</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#7D8300">288</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#818200">278</SPAN> &nbsp;<A
 HREF="trnsp-P3.31b.html">trnsp-P3.31b</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#7B8400">292</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#7F8200">282</SPAN> &nbsp;<A
 HREF="trnsp-P3.31d.html">trnsp-P3.31d</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#798400">298</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#7C8300">288</SPAN> &nbsp;<A
 HREF="nmt-P3.32b.html">nmt-P3.32b</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#768500">304</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#7A8400">294</SPAN> &nbsp;<A
 HREF="andasim-P3.46-L2.html">andasim-P3.46-L2</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#588C00">361</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#5A8C00">355</SPAN> &nbsp;<A
 HREF="dmorgbfwd-L4.3.html">dmorgbfwd-L4.3</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#139307">460</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#159306">454</SPAN> &nbsp;<A
 HREF="raa-P4.html">raa-P4</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#009137">520</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#009133">514</SPAN> &nbsp;<A
 HREF="rcp-RAA2.html">rcp-RAA2</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#009139">522</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#009135">516</SPAN> &nbsp;<A
 HREF="rcp-RAA3.html">rcp-RAA3</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#00913A">523</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#009136">517</SPAN> &nbsp;<A
 HREF="rcp-RAA4.html">rcp-RAA4</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#00913A">524</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#009137">518</SPAN> &nbsp;<A
 HREF="rcp-RAA5.html">rcp-RAA5</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#00913B">525</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#009138">519</SPAN> &nbsp;<A
 HREF="falseraa-P4.html">falseraa-P4</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#00913C">526</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#009139">520</SPAN> &nbsp;<A
 HREF="rcp-FALSERAA2-P.html">rcp-FALSERAA2-P</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#00913E">528</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#00913B">522</SPAN> &nbsp;<A
 HREF="rcp-FALSERAA3.html">rcp-FALSERAA3</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#00913F">529</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#00913C">523</SPAN> &nbsp;<A
 HREF="rcp-FALSERAA4.html">rcp-FALSERAA4</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#009140">530</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#00913D">524</SPAN> &nbsp;<A
 HREF="rcp-FALSERAA5.html">rcp-FALSERAA5</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#009140">531</SPAN></FONT></TD></TR>
+&nbsp;<SPAN CLASS=r STYLE="color:#00913E">525</SPAN></FONT></TD></TR>
 </TABLE></CENTER>
 <TABLE BORDER=0 WIDTH="100%">
 <TR><TD WIDTH="25%">&nbsp;</TD>

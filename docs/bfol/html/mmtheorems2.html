@@ -12,10 +12,6 @@ img { margin-bottom: -4px }
    }
 -->
 </STYLE>
-<link rel="stylesheet" 
-media="screen" 
-href="https://fontlibrary.org/en/face/xits-math" 
-type="text/css"/> 
 <STYLE TYPE="text/css"> 
 <!--
   .wff { color: blue; } 
@@ -23,7 +19,11 @@ type="text/css"/>
   .term { color: green; } 
   .class { color: #CC33CC; } 
   .typecode { color: gray; } 
-  .math { font-family: XITSMathRegular; } 
+  @font-face {
+     font-family: XITSMath-Regular; 
+     src: url(../fonts/xits-math.woff); 
+  } 
+  .math { font-family: XITSMath-Regular; } 
 -->
 </STYLE>
 <TITLE>P. 2 of Theorem List - bfol.mm Proof Explorer</TITLE>
@@ -70,8 +70,8 @@ This page:</FONT></B>
 <TABLE BORDER CELLSPACING=0 CELLPADDING=3 BGCOLOR="#EEFFFA"
 SUMMARY="Theorem List for bfol.mm Proof Explorer">
 <CAPTION><B>Theorem List for bfol.mm Proof Explorer - </B><SPAN CLASS=r
- STYLE="color:#E63800">101</SPAN><B>-</B><SPAN CLASS=r
- STYLE="color:#B36A00">200</SPAN> &nbsp; *Has distinct variable
+ STYLE="color:#E63900">101</SPAN><B>-</B><SPAN CLASS=r
+ STYLE="color:#B36B00">200</SPAN> &nbsp; *Has distinct variable
  group(s)</CAPTION>
 
 <TR><TH>Type</TH><TH>Label</TH><TH>Description</TH></TR>
@@ -80,9 +80,68 @@ SUMMARY="Theorem List for bfol.mm Proof Explorer">
 <TR BGCOLOR=white><TD COLSPAN=3><FONT SIZE=-3>&nbsp;</FONT></TD></TR>
 
 
+<TR BGCOLOR="#FFFFF2"><TD COLSPAN=3><CENTER><FONT SIZE="+1"><B><A
+ NAME="mm101b"></A>3.2&nbsp;&nbsp;Logical Equivalence</B></FONT></CENTER>
+</TD></TR>
+<TR BGCOLOR=white><TD COLSPAN=3><FONT SIZE=-3>&nbsp;</FONT></TD></TR>
+<TR BGCOLOR="#FFFFF2"><TD COLSPAN=3><CENTER><B><A
+ NAME="mm101s"></A>3.2.1&nbsp;&nbsp;Motivation Theorems.</B></CENTER>
+<P STYLE="margin-bottom:0em">
+If we use 'equiv(<SPAN CLASS=math><SPAN CLASS=wff>&#x1D711;</SPAN></SPAN>,
+<SPAN CLASS=math><SPAN CLASS=wff>&#x1D713;</SPAN></SPAN>)' as an abbreviation
+for
+  '<SPAN CLASS=math>&not; ((<SPAN CLASS=wff>&#x1D711;</SPAN> &rarr; <SPAN
+CLASS=wff>&#x1D713;</SPAN>) &rarr; &not; (<SPAN CLASS=wff>&#x1D713;</SPAN>
+&rarr; <SPAN CLASS=wff>&#x1D711;</SPAN>))</SPAN>', then it follows from
+  lemmas <A HREF="mbifwd-P2.1a.html">mbifwd-P2.1a</A>&nbsp;<SPAN CLASS=r
+STYLE="color:#E63900">101</SPAN>, <A
+HREF="mbirev-P2.1b.html">mbirev-P2.1b</A>&nbsp;<SPAN CLASS=r
+STYLE="color:#E53900">102</SPAN>, and <A
+HREF="mbicmb-P2.1c.html">mbicmb-P2.1c</A>&nbsp;<SPAN CLASS=r
+STYLE="color:#E53A00">103</SPAN> that...
+<P STYLE="margin-bottom:0em">
+  <SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN></SPAN> equiv(<SPAN
+CLASS=math><SPAN CLASS=wff>&#x1D711;</SPAN></SPAN>, <SPAN CLASS=math><SPAN
+CLASS=wff>&#x1D713;</SPAN></SPAN>) <SPAN CLASS=math>&hArr;</SPAN> <SPAN
+CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN>(<SPAN
+CLASS=wff>&#x1D711;</SPAN> &rarr; <SPAN CLASS=wff>&#x1D713;</SPAN>)</SPAN>
+<SPAN CLASS=math>&amp;</SPAN> <SPAN CLASS=math><SPAN CLASS=typecode>&vdash;
+</SPAN>(<SPAN CLASS=wff>&#x1D713;</SPAN> &rarr; <SPAN
+CLASS=wff>&#x1D711;</SPAN>)</SPAN>.
+<P STYLE="margin-bottom:0em">
+  This proves that the formula 'equiv(<SPAN CLASS=math><SPAN
+CLASS=wff>&#x1D711;</SPAN></SPAN>, <SPAN CLASS=math><SPAN
+CLASS=wff>&#x1D713;</SPAN></SPAN>) <SPAN CLASS=math>&coloneq;</SPAN>
+  <SPAN CLASS=math>&not; ((<SPAN CLASS=wff>&#x1D711;</SPAN> &rarr; <SPAN
+CLASS=wff>&#x1D713;</SPAN>) &rarr; &not; (<SPAN CLASS=wff>&#x1D713;</SPAN>
+&rarr; <SPAN CLASS=wff>&#x1D711;</SPAN>))</SPAN>' precisely represents the
+  property of logical equivalence between '<SPAN CLASS=math><SPAN
+CLASS=wff>&#x1D711;</SPAN></SPAN>' and '<SPAN CLASS=math><SPAN
+CLASS=wff>&#x1D713;</SPAN></SPAN>'. We can use
+  this to our advantage in order to define '<SPAN CLASS=math>(<SPAN
+CLASS=wff>&#x1D711;</SPAN> &harr; <SPAN CLASS=wff>&#x1D713;</SPAN>)</SPAN>'.
+
+</TD></TR>
+<TR BGCOLOR=white><TD COLSPAN=3><FONT SIZE=-3>&nbsp;</FONT></TD></TR>
+<TR><TD NOWRAP>Theorem</TD><TD ALIGN=CENTER><A
+ HREF="mbifwd-P2.1a.html">mbifwd-P2.1a</A>&nbsp;<SPAN CLASS=r
+ STYLE="color:#E63900">101</SPAN></TD><TD ALIGN=LEFT><A
+ NAME="mbifwd-P2.1a"></A>
+Motivation for <SPAN CLASS=math>&harr;</SPAN> Definition, Part A.
+
+</TD></TR><TR><TD COLSPAN=3 ALIGN=CENTER><SPAN CLASS=math><SPAN
+ CLASS=typecode>&vdash; </SPAN> &not; ((<SPAN CLASS=wff>&#x1D711;</SPAN> &rarr;
+ <SPAN CLASS=wff>&#x1D713;</SPAN>) &rarr; &not; (<SPAN
+ CLASS=wff>&#x1D713;</SPAN> &rarr; <SPAN
+ CLASS=wff>&#x1D711;</SPAN>))</SPAN>&nbsp;&nbsp;&nbsp; <FONT
+ FACE=sans-serif>&#8658;</FONT>&nbsp;&nbsp;&nbsp;<SPAN CLASS=math><SPAN
+ CLASS=typecode>&vdash; </SPAN>(<SPAN CLASS=wff>&#x1D711;</SPAN> &rarr; <SPAN
+ CLASS=wff>&#x1D713;</SPAN>)</SPAN></TD></TR>
+<TR BGCOLOR=white><TD COLSPAN=3><FONT SIZE=-3>&nbsp;</FONT></TD></TR>
+
 <TR><TD NOWRAP>Theorem</TD><TD ALIGN=CENTER><A
  HREF="mbirev-P2.1b.html">mbirev-P2.1b</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#E63800">101</SPAN></TD><TD ALIGN=LEFT><A
+ STYLE="color:#E53900">102</SPAN></TD><TD ALIGN=LEFT><A
  NAME="mbirev-P2.1b"></A>
 Motivation for <SPAN CLASS=math>&harr;</SPAN> Definition, Part B.
 
@@ -98,7 +157,7 @@ Motivation for <SPAN CLASS=math>&harr;</SPAN> Definition, Part B.
 
 <TR><TD NOWRAP>Theorem</TD><TD ALIGN=CENTER><A
  HREF="mbicmb-P2.1c.html">mbicmb-P2.1c</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#E53900">102</SPAN></TD><TD ALIGN=LEFT><A
+ STYLE="color:#E53A00">103</SPAN></TD><TD ALIGN=LEFT><A
  NAME="mbicmb-P2.1c"></A>
 Motivation for <SPAN CLASS=math>&harr;</SPAN> Definition, Part C.
 
@@ -116,7 +175,7 @@ Motivation for <SPAN CLASS=math>&harr;</SPAN> Definition, Part C.
 <TR BGCOLOR=white><TD COLSPAN=3><FONT SIZE=-3>&nbsp;</FONT></TD></TR>
 
 <TR BGCOLOR="#FFFFF2"><TD COLSPAN=3><CENTER><B><A
- NAME="mm103s"></A>3.2.2&nbsp;&nbsp;Defining Logical Equivalence.</B></CENTER>
+ NAME="mm104s"></A>3.2.2&nbsp;&nbsp;Defining Logical Equivalence.</B></CENTER>
 <P STYLE="margin-bottom:0em">
 While it would be tempting to write '<SPAN CLASS=math><SPAN
 CLASS=typecode>&vdash; </SPAN>((<SPAN CLASS=wff>&#x1D711;</SPAN> &harr; <SPAN
@@ -141,12 +200,12 @@ CLASS=wff>&#x1D713;</SPAN></SPAN>)).
 </TD></TR>
 <TR BGCOLOR=white><TD COLSPAN=3><FONT SIZE=-3>&nbsp;</FONT></TD></TR>
 <TR BGCOLOR="#FFFFF2"><TD COLSPAN=3><CENTER><B><A
- NAME="mm103s"></A>3.2.2.1&nbsp;&nbsp;Syntax Definition.</B></CENTER>
+ NAME="mm104s"></A>3.2.2.1&nbsp;&nbsp;Syntax Definition.</B></CENTER>
 </TD></TR>
 <TR BGCOLOR=white><TD COLSPAN=3><FONT SIZE=-3>&nbsp;</FONT></TD></TR>
 <TR><TD NOWRAP><B><FONT COLOR="#00CC00">Syntax</FONT></B></TD><TD
  ALIGN=CENTER><A HREF="wff-bi.html">wff-bi</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#E53A00">103</SPAN></TD><TD ALIGN=LEFT><A NAME="wff-bi"></A>
+ STYLE="color:#E43B00">104</SPAN></TD><TD ALIGN=LEFT><A NAME="wff-bi"></A>
 Extend WFF definition to include the biconditional symbol '<SPAN
 CLASS=math>&harr;</SPAN>'.
 
@@ -156,11 +215,11 @@ CLASS=math>&harr;</SPAN>'.
 <TR BGCOLOR=white><TD COLSPAN=3><FONT SIZE=-3>&nbsp;</FONT></TD></TR>
 
 <TR BGCOLOR="#FFFFF2"><TD COLSPAN=3><CENTER><B><A
- NAME="mm104s"></A>3.2.2.2&nbsp;&nbsp;Justification Theorem.</B></CENTER>
+ NAME="mm105s"></A>3.2.2.2&nbsp;&nbsp;Justification Theorem.</B></CENTER>
 <P STYLE="margin-bottom:0em">
 We will later use the theorem <A
 HREF="bijust-P2.2.html">bijust-P2.2</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#E43B00">105</SPAN> as an aid the semantic proof that
+STYLE="color:#E43C00">106</SPAN> as an aid the semantic proof that
   this definition conservatively extends the system using the original 9 FOL
   axioms.  The theorem is just the definition...
 <P STYLE="margin-bottom:0em">
@@ -190,25 +249,25 @@ CLASS=wff>&#x1D6FE;</SPAN></SPAN>),
 <P STYLE="margin-bottom:0em">
   which is proven as <A
 HREF="bijust-P2.2-L1.html">bijust-P2.2-L1</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#E53A00">104</SPAN>.
+STYLE="color:#E43B00">105</SPAN>.
 
 </TD></TR>
 <TR BGCOLOR=white><TD COLSPAN=3><FONT SIZE=-3>&nbsp;</FONT></TD></TR>
 <TR><TD NOWRAP>Theorem</TD><TD ALIGN=CENTER><A
  HREF="bijust-P2.2-L1.html">bijust-P2.2-L1</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#E53A00">104</SPAN></TD><TD ALIGN=LEFT><A
+ STYLE="color:#E43B00">105</SPAN></TD><TD ALIGN=LEFT><A
  NAME="bijust-P2.2-L1"></A>
 Lemma for <A HREF="bijust-P2.2.html">bijust-P2.2</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#E43B00">105</SPAN>.
+STYLE="color:#E43C00">106</SPAN>.
 
  <I>[Auxiliary lemma - not displayed.]</I></TD></TR>
 <TR BGCOLOR=white><TD COLSPAN=3><FONT SIZE=-3>&nbsp;</FONT></TD></TR>
 
 <TR><TD NOWRAP>Theorem</TD><TD ALIGN=CENTER><A
  HREF="bijust-P2.2.html">bijust-P2.2</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#E43B00">105</SPAN></TD><TD ALIGN=LEFT><A NAME="bijust-P2.2"></A>
+ STYLE="color:#E43C00">106</SPAN></TD><TD ALIGN=LEFT><A NAME="bijust-P2.2"></A>
 Justification Theorem for <A HREF="df-bi-D2.1.html">df-bi-D2.1</A>&nbsp;<SPAN
-CLASS=r STYLE="color:#E43C00">106</SPAN>.
+CLASS=r STYLE="color:#E33D00">107</SPAN>.
 
 </TD></TR><TR><TD COLSPAN=3 ALIGN=CENTER><SPAN CLASS=math><SPAN
  CLASS=typecode>&vdash; </SPAN> &not; ((&not; ((<SPAN
@@ -226,12 +285,12 @@ CLASS=r STYLE="color:#E43C00">106</SPAN>.
 <TR BGCOLOR=white><TD COLSPAN=3><FONT SIZE=-3>&nbsp;</FONT></TD></TR>
 
 <TR BGCOLOR="#FFFFF2"><TD COLSPAN=3><CENTER><B><A
- NAME="mm106s"></A>3.2.2.3&nbsp;&nbsp;Formal Definition.</B></CENTER>
+ NAME="mm107s"></A>3.2.2.3&nbsp;&nbsp;Formal Definition.</B></CENTER>
 </TD></TR>
 <TR BGCOLOR=white><TD COLSPAN=3><FONT SIZE=-3>&nbsp;</FONT></TD></TR>
 <TR><TD NOWRAP><B><FONT COLOR=blue>Definition</FONT></B></TD><TD
  ALIGN=CENTER><A HREF="df-bi-D2.1.html">df-bi-D2.1</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#E43C00">106</SPAN></TD><TD ALIGN=LEFT><A NAME="df-bi-D2.1"></A>
+ STYLE="color:#E33D00">107</SPAN></TD><TD ALIGN=LEFT><A NAME="df-bi-D2.1"></A>
 Definition of Biconditional, '<SPAN CLASS=math>&harr;</SPAN>'.  Read as
 &quot;if and only if&quot;.
 
@@ -248,13 +307,13 @@ Definition of Biconditional, '<SPAN CLASS=math>&harr;</SPAN>'.  Read as
 <TR BGCOLOR=white><TD COLSPAN=3><FONT SIZE=-3>&nbsp;</FONT></TD></TR>
 
 <TR BGCOLOR="#FFFFF2"><TD COLSPAN=3><CENTER><B><A
- NAME="mm107s"></A>3.2.2.4&nbsp;&nbsp;Standard Form.</B></CENTER>
+ NAME="mm108s"></A>3.2.2.4&nbsp;&nbsp;Standard Form.</B></CENTER>
 <P STYLE="margin-bottom:0em">
 We now derive the &quot;if&quot; (<A
 HREF="dfbiif-P2.3a.html">dfbiif-P2.3a</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#E43C00">107</SPAN>) and &quot;only if&quot; (<A
+STYLE="color:#E33D00">108</SPAN>) and &quot;only if&quot; (<A
 HREF="dfbionlyif-P2.3b.html">dfbionlyif-P2.3b</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#E33D00">108</SPAN>)
+STYLE="color:#E23E00">109</SPAN>)
   parts of the statement that '<SPAN CLASS=math>(<SPAN
 CLASS=wff>&#x1D711;</SPAN> &harr; <SPAN CLASS=wff>&#x1D713;</SPAN>)</SPAN>' is
 equivalent to
@@ -265,15 +324,15 @@ CLASS=math><SPAN CLASS=wff>&#x1D713;</SPAN></SPAN>)'.
 CLASS=math>&harr;</SPAN>' which we
   will prove later, the theorems <A
 HREF="dfbiif-P2.3a.html">dfbiif-P2.3a</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#E43C00">107</SPAN>, and <A
+STYLE="color:#E33D00">108</SPAN>, and <A
 HREF="dfbionlyif-P2.3b.html">dfbionlyif-P2.3b</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#E33D00">108</SPAN> can be
+STYLE="color:#E23E00">109</SPAN> can be
   used to show that the <SPAN CLASS=math>&harr;</SPAN> symbol is always
 eliminable.
 <P STYLE="margin-bottom:0em">
   Finally, we combine the previous statement into one in the form of
   <A HREF="dfbialt-P2.4.html">dfbialt-P2.4</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#E33E00">109</SPAN>.  This can be thought of as the standard form
+STYLE="color:#E23F00">110</SPAN>.  This can be thought of as the standard form
 of the
   definition which follows the typical idiom...
 <P STYLE="margin-bottom:0em">
@@ -283,10 +342,11 @@ of the
 <TR BGCOLOR=white><TD COLSPAN=3><FONT SIZE=-3>&nbsp;</FONT></TD></TR>
 <TR><TD NOWRAP>Theorem</TD><TD ALIGN=CENTER><A
  HREF="dfbiif-P2.3a.html">dfbiif-P2.3a</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#E43C00">107</SPAN></TD><TD ALIGN=LEFT><A
+ STYLE="color:#E33D00">108</SPAN></TD><TD ALIGN=LEFT><A
  NAME="dfbiif-P2.3a"></A>
-&quot;If&quot; Part of <A HREF="df-bi-D2.1.html">df-bi-D2.1</A>&nbsp;<SPAN
-CLASS=r STYLE="color:#E43C00">106</SPAN>.
+Sufficient Conditon for (i.e. &quot;If&quot; part of) <A
+HREF="df-bi-D2.1.html">df-bi-D2.1</A>&nbsp;<SPAN CLASS=r
+STYLE="color:#E33D00">107</SPAN>.
 
 </TD></TR><TR><TD COLSPAN=3 ALIGN=CENTER><SPAN CLASS=math><SPAN
  CLASS=typecode>&vdash; </SPAN>(&not; ((<SPAN CLASS=wff>&#x1D711;</SPAN> &rarr;
@@ -298,10 +358,11 @@ CLASS=r STYLE="color:#E43C00">106</SPAN>.
 
 <TR><TD NOWRAP>Theorem</TD><TD ALIGN=CENTER><A
  HREF="dfbionlyif-P2.3b.html">dfbionlyif-P2.3b</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#E33D00">108</SPAN></TD><TD ALIGN=LEFT><A
+ STYLE="color:#E23E00">109</SPAN></TD><TD ALIGN=LEFT><A
  NAME="dfbionlyif-P2.3b"></A>
-&quot;Only If&quot; Part of <A HREF="df-bi-D2.1.html">df-bi-D2.1</A>&nbsp;<SPAN
-CLASS=r STYLE="color:#E43C00">106</SPAN>.
+Necessary Condition for (i.e. &quot;Only If&quot; part of) <A
+HREF="df-bi-D2.1.html">df-bi-D2.1</A>&nbsp;<SPAN CLASS=r
+STYLE="color:#E33D00">107</SPAN>.
 
 </TD></TR><TR><TD COLSPAN=3 ALIGN=CENTER><SPAN CLASS=math><SPAN
  CLASS=typecode>&vdash; </SPAN>((<SPAN CLASS=wff>&#x1D711;</SPAN> &harr; <SPAN
@@ -313,10 +374,10 @@ CLASS=r STYLE="color:#E43C00">106</SPAN>.
 
 <TR><TD NOWRAP>Theorem</TD><TD ALIGN=CENTER><A
  HREF="dfbialt-P2.4.html">dfbialt-P2.4</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#E33E00">109</SPAN></TD><TD ALIGN=LEFT><A
+ STYLE="color:#E23F00">110</SPAN></TD><TD ALIGN=LEFT><A
  NAME="dfbialt-P2.4"></A>
 Alternate Form of <A HREF="df-bi-D2.1.html">df-bi-D2.1</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#E43C00">106</SPAN>.
+STYLE="color:#E33D00">107</SPAN>.
 
 </TD></TR><TR><TD COLSPAN=3 ALIGN=CENTER><SPAN CLASS=math><SPAN
  CLASS=typecode>&vdash; </SPAN>((<SPAN CLASS=wff>&#x1D711;</SPAN> &harr; <SPAN
@@ -327,21 +388,21 @@ STYLE="color:#E43C00">106</SPAN>.
 <TR BGCOLOR=white><TD COLSPAN=3><FONT SIZE=-3>&nbsp;</FONT></TD></TR>
 
 <TR BGCOLOR="#FFFFF2"><TD COLSPAN=3><CENTER><B><A
- NAME="mm110s"></A>3.2.3&nbsp;&nbsp;Fundamental Properties.</B></CENTER>
+ NAME="mm111s"></A>3.2.3&nbsp;&nbsp;Fundamental Properties.</B></CENTER>
 <P STYLE="margin-bottom:0em">
 Taken together, the properties <A
 HREF="bifwd-P2.5a.html">bifwd-P2.5a</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#E23E00">110</SPAN>, <A
+STYLE="color:#E23F00">111</SPAN>, <A
 HREF="birev-P2.5b.html">birev-P2.5b</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#E14100">114</SPAN>, and
+STYLE="color:#E04200">115</SPAN>, and
   <A HREF="bicmb-P2.5c.html">bicmb-P2.5c</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#DF4400">118</SPAN> completely define logical equivalence.
+STYLE="color:#DF4500">119</SPAN> completely define logical equivalence.
 
 </TD></TR>
 <TR BGCOLOR=white><TD COLSPAN=3><FONT SIZE=-3>&nbsp;</FONT></TD></TR>
 <TR><TD NOWRAP>Theorem</TD><TD ALIGN=CENTER><A
  HREF="bifwd-P2.5a.html">bifwd-P2.5a</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#E23E00">110</SPAN></TD><TD ALIGN=LEFT><A NAME="bifwd-P2.5a"></A>
+ STYLE="color:#E23F00">111</SPAN></TD><TD ALIGN=LEFT><A NAME="bifwd-P2.5a"></A>
 '<SPAN CLASS=math>&harr;</SPAN>' Forward Implication.
 
 </TD></TR><TR><TD COLSPAN=3 ALIGN=CENTER><SPAN CLASS=math><SPAN
@@ -352,10 +413,10 @@ STYLE="color:#DF4400">118</SPAN> completely define logical equivalence.
 
 <TR><TD NOWRAP>Theorem</TD><TD ALIGN=CENTER><A
  HREF="bifwd-P2.5a.SH.html">bifwd-P2.5a.SH</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#E23F00">111</SPAN></TD><TD ALIGN=LEFT><A
+ STYLE="color:#E14000">112</SPAN></TD><TD ALIGN=LEFT><A
  NAME="bifwd-P2.5a.SH"></A>
 Inference from <A HREF="bifwd-P2.5a.html">bifwd-P2.5a</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#E23E00">110</SPAN>.
+STYLE="color:#E23F00">111</SPAN>.
 
 </TD></TR><TR><TD COLSPAN=3 ALIGN=CENTER><SPAN CLASS=math><SPAN
  CLASS=typecode>&vdash; </SPAN>(<SPAN CLASS=wff>&#x1D711;</SPAN> &harr; <SPAN
@@ -367,10 +428,10 @@ STYLE="color:#E23E00">110</SPAN>.
 
 <TR><TD NOWRAP>Theorem</TD><TD ALIGN=CENTER><A
  HREF="bifwd-P2.5a.AC.SH.html">bifwd-P2.5a.AC.SH</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#E24000">112</SPAN></TD><TD ALIGN=LEFT><A
+ STYLE="color:#E14100">113</SPAN></TD><TD ALIGN=LEFT><A
  NAME="bifwd-P2.5a.AC.SH"></A>
 Deductive Form of <A HREF="bifwd-P2.5a.html">bifwd-P2.5a</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#E23E00">110</SPAN>
+STYLE="color:#E23F00">111</SPAN>
 
 </TD></TR><TR><TD COLSPAN=3 ALIGN=CENTER><SPAN CLASS=math><SPAN
  CLASS=typecode>&vdash; </SPAN>(<SPAN CLASS=wff>&#x1D6FE;</SPAN> &rarr; (<SPAN
@@ -384,10 +445,10 @@ STYLE="color:#E23E00">110</SPAN>
 
 <TR><TD NOWRAP>Theorem</TD><TD ALIGN=CENTER><A
  HREF="bifwd-P2.5a.2AC.SH.html">bifwd-P2.5a.2AC.SH</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#E14000">113</SPAN></TD><TD ALIGN=LEFT><A
+ STYLE="color:#E14100">114</SPAN></TD><TD ALIGN=LEFT><A
  NAME="bifwd-P2.5a.2AC.SH"></A>
 Another Deductive form of <A HREF="bifwd-P2.5a.html">bifwd-P2.5a</A>&nbsp;<SPAN
-CLASS=r STYLE="color:#E23E00">110</SPAN>.
+CLASS=r STYLE="color:#E23F00">111</SPAN>.
 
 </TD></TR><TR><TD COLSPAN=3 ALIGN=CENTER><SPAN CLASS=math><SPAN
  CLASS=typecode>&vdash; </SPAN>(<SPAN CLASS=wff>&#x1D6FE;&#x2081;</SPAN> &rarr;
@@ -403,7 +464,7 @@ CLASS=r STYLE="color:#E23E00">110</SPAN>.
 
 <TR><TD NOWRAP>Theorem</TD><TD ALIGN=CENTER><A
  HREF="birev-P2.5b.html">birev-P2.5b</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#E14100">114</SPAN></TD><TD ALIGN=LEFT><A NAME="birev-P2.5b"></A>
+ STYLE="color:#E04200">115</SPAN></TD><TD ALIGN=LEFT><A NAME="birev-P2.5b"></A>
 '<SPAN CLASS=math>&harr;</SPAN>' Reverse Implication.
 
 </TD></TR><TR><TD COLSPAN=3 ALIGN=CENTER><SPAN CLASS=math><SPAN
@@ -414,10 +475,10 @@ CLASS=r STYLE="color:#E23E00">110</SPAN>.
 
 <TR><TD NOWRAP>Theorem</TD><TD ALIGN=CENTER><A
  HREF="birev-P2.5b.SH.html">birev-P2.5b.SH</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#E04200">115</SPAN></TD><TD ALIGN=LEFT><A
+ STYLE="color:#E04300">116</SPAN></TD><TD ALIGN=LEFT><A
  NAME="birev-P2.5b.SH"></A>
 Inference from <A HREF="birev-P2.5b.html">birev-P2.5b</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#E14100">114</SPAN>.
+STYLE="color:#E04200">115</SPAN>.
 
 </TD></TR><TR><TD COLSPAN=3 ALIGN=CENTER><SPAN CLASS=math><SPAN
  CLASS=typecode>&vdash; </SPAN>(<SPAN CLASS=wff>&#x1D711;</SPAN> &harr; <SPAN
@@ -429,10 +490,10 @@ STYLE="color:#E14100">114</SPAN>.
 
 <TR><TD NOWRAP>Theorem</TD><TD ALIGN=CENTER><A
  HREF="birev-P2.5b.AC.SH.html">birev-P2.5b.AC.SH</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#E04200">116</SPAN></TD><TD ALIGN=LEFT><A
+ STYLE="color:#DF4300">117</SPAN></TD><TD ALIGN=LEFT><A
  NAME="birev-P2.5b.AC.SH"></A>
 Deductive Form of <A HREF="birev-P2.5b.html">birev-P2.5b</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#E14100">114</SPAN>
+STYLE="color:#E04200">115</SPAN>
 
 </TD></TR><TR><TD COLSPAN=3 ALIGN=CENTER><SPAN CLASS=math><SPAN
  CLASS=typecode>&vdash; </SPAN>(<SPAN CLASS=wff>&#x1D6FE;</SPAN> &rarr; (<SPAN
@@ -446,10 +507,10 @@ STYLE="color:#E14100">114</SPAN>
 
 <TR><TD NOWRAP>Theorem</TD><TD ALIGN=CENTER><A
  HREF="birev-P2.5b.2AC.SH.html">birev-P2.5b.2AC.SH</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#E04300">117</SPAN></TD><TD ALIGN=LEFT><A
+ STYLE="color:#DF4400">118</SPAN></TD><TD ALIGN=LEFT><A
  NAME="birev-P2.5b.2AC.SH"></A>
 Another Deductive Form of <A HREF="birev-P2.5b.html">birev-P2.5b</A>&nbsp;<SPAN
-CLASS=r STYLE="color:#E14100">114</SPAN>
+CLASS=r STYLE="color:#E04200">115</SPAN>
 
 </TD></TR><TR><TD COLSPAN=3 ALIGN=CENTER><SPAN CLASS=math><SPAN
  CLASS=typecode>&vdash; </SPAN>(<SPAN CLASS=wff>&#x1D6FE;&#x2081;</SPAN> &rarr;
@@ -465,7 +526,7 @@ CLASS=r STYLE="color:#E14100">114</SPAN>
 
 <TR><TD NOWRAP>Theorem</TD><TD ALIGN=CENTER><A
  HREF="bicmb-P2.5c.html">bicmb-P2.5c</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#DF4400">118</SPAN></TD><TD ALIGN=LEFT><A NAME="bicmb-P2.5c"></A>
+ STYLE="color:#DF4500">119</SPAN></TD><TD ALIGN=LEFT><A NAME="bicmb-P2.5c"></A>
 '<SPAN CLASS=math>&harr;</SPAN>' Combine Implications.
 
 </TD></TR><TR><TD COLSPAN=3 ALIGN=CENTER><SPAN CLASS=math><SPAN
@@ -477,10 +538,10 @@ CLASS=r STYLE="color:#E14100">114</SPAN>
 
 <TR><TD NOWRAP>Theorem</TD><TD ALIGN=CENTER><A
  HREF="bicmb-P2.5c.2SH.html">bicmb-P2.5c.2SH</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#DF4400">119</SPAN></TD><TD ALIGN=LEFT><A
+ STYLE="color:#DE4500">120</SPAN></TD><TD ALIGN=LEFT><A
  NAME="bicmb-P2.5c.2SH"></A>
 Inference from <A HREF="bicmb-P2.5c.html">bicmb-P2.5c</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#DF4400">118</SPAN>.
+STYLE="color:#DF4500">119</SPAN>.
 
 </TD></TR><TR><TD COLSPAN=3 ALIGN=CENTER><SPAN CLASS=math><SPAN
  CLASS=typecode>&vdash; </SPAN>(<SPAN CLASS=wff>&#x1D711;</SPAN> &rarr; <SPAN
@@ -495,10 +556,10 @@ STYLE="color:#DF4400">118</SPAN>.
 
 <TR><TD NOWRAP>Theorem</TD><TD ALIGN=CENTER><A
  HREF="bicmb-P2.5c.AC.2SH.html">bicmb-P2.5c.AC.2SH</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#DE4500">120</SPAN></TD><TD ALIGN=LEFT><A
+ STYLE="color:#DE4600">121</SPAN></TD><TD ALIGN=LEFT><A
  NAME="bicmb-P2.5c.AC.2SH"></A>
 Deductive Form of <A HREF="bicmb-P2.5c.html">bicmb-P2.5c</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#DF4400">118</SPAN>.
+STYLE="color:#DF4500">119</SPAN>.
 
 </TD></TR><TR><TD COLSPAN=3 ALIGN=CENTER><SPAN CLASS=math><SPAN
  CLASS=typecode>&vdash; </SPAN>(<SPAN CLASS=wff>&#x1D6FE;</SPAN> &rarr; (<SPAN
@@ -516,10 +577,10 @@ STYLE="color:#DF4400">118</SPAN>.
 
 <TR><TD NOWRAP>Theorem</TD><TD ALIGN=CENTER><A
  HREF="bicmb-P2.5c.2AC.2SH.html">bicmb-P2.5c.2AC.2SH</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#DE4600">121</SPAN></TD><TD ALIGN=LEFT><A
+ STYLE="color:#DD4700">122</SPAN></TD><TD ALIGN=LEFT><A
  NAME="bicmb-P2.5c.2AC.2SH"></A>
 Another Deductive Form of <A HREF="bicmb-P2.5c.html">bicmb-P2.5c</A>&nbsp;<SPAN
-CLASS=r STYLE="color:#DF4400">118</SPAN>.
+CLASS=r STYLE="color:#DF4500">119</SPAN>.
 
 </TD></TR><TR><TD COLSPAN=3 ALIGN=CENTER><SPAN CLASS=math><SPAN
  CLASS=typecode>&vdash; </SPAN>(<SPAN CLASS=wff>&#x1D6FE;&#x2081;</SPAN> &rarr;
@@ -538,7 +599,7 @@ CLASS=r STYLE="color:#DF4400">118</SPAN>.
 <TR BGCOLOR=white><TD COLSPAN=3><FONT SIZE=-3>&nbsp;</FONT></TD></TR>
 
 <TR BGCOLOR="#FFFFF2"><TD COLSPAN=3><CENTER><B><A
- NAME="mm122s"></A>3.2.4&nbsp;&nbsp;Equivalence Relation
+ NAME="mm123s"></A>3.2.4&nbsp;&nbsp;Equivalence Relation
  Properties.</B></CENTER>
 <P STYLE="margin-bottom:0em">
 Show that '<SPAN CLASS=math>&harr;</SPAN>' is an equivalence relation.
@@ -547,7 +608,7 @@ Show that '<SPAN CLASS=math>&harr;</SPAN>' is an equivalence relation.
 <TR BGCOLOR=white><TD COLSPAN=3><FONT SIZE=-3>&nbsp;</FONT></TD></TR>
 <TR><TD NOWRAP>Theorem</TD><TD ALIGN=CENTER><A
  HREF="biref-P2.6a.html">biref-P2.6a</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#DE4600">122</SPAN></TD><TD ALIGN=LEFT><A NAME="biref-P2.6a"></A>
+ STYLE="color:#DD4700">123</SPAN></TD><TD ALIGN=LEFT><A NAME="biref-P2.6a"></A>
 Equivalence Property: '<SPAN CLASS=math>&harr;</SPAN>' Reflexivity.
 
 </TD></TR><TR><TD COLSPAN=3 ALIGN=CENTER><SPAN CLASS=math><SPAN
@@ -557,7 +618,7 @@ Equivalence Property: '<SPAN CLASS=math>&harr;</SPAN>' Reflexivity.
 
 <TR><TD NOWRAP>Theorem</TD><TD ALIGN=CENTER><A
  HREF="bisym-P2.6b.html">bisym-P2.6b</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#DD4700">123</SPAN></TD><TD ALIGN=LEFT><A NAME="bisym-P2.6b"></A>
+ STYLE="color:#DC4800">124</SPAN></TD><TD ALIGN=LEFT><A NAME="bisym-P2.6b"></A>
 Equivalence Property: '<SPAN CLASS=math>&harr;</SPAN>' Symmetry.
 
 </TD></TR><TR><TD COLSPAN=3 ALIGN=CENTER><SPAN CLASS=math><SPAN
@@ -568,10 +629,10 @@ Equivalence Property: '<SPAN CLASS=math>&harr;</SPAN>' Symmetry.
 
 <TR><TD NOWRAP>Theorem</TD><TD ALIGN=CENTER><A
  HREF="bisym-P2.6b.SH.html">bisym-P2.6b.SH</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#DD4700">124</SPAN></TD><TD ALIGN=LEFT><A
+ STYLE="color:#DC4800">125</SPAN></TD><TD ALIGN=LEFT><A
  NAME="bisym-P2.6b.SH"></A>
 Inference from <A HREF="bisym-P2.6b.html">bisym-P2.6b</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#DD4700">123</SPAN>.
+STYLE="color:#DC4800">124</SPAN>.
 
 </TD></TR><TR><TD COLSPAN=3 ALIGN=CENTER><SPAN CLASS=math><SPAN
  CLASS=typecode>&vdash; </SPAN>(<SPAN CLASS=wff>&#x1D711;</SPAN> &harr; <SPAN
@@ -583,7 +644,7 @@ STYLE="color:#DD4700">123</SPAN>.
 
 <TR><TD NOWRAP>Theorem</TD><TD ALIGN=CENTER><A
  HREF="bitrns-P2.6c.html">bitrns-P2.6c</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#DC4800">125</SPAN></TD><TD ALIGN=LEFT><A
+ STYLE="color:#DB4900">126</SPAN></TD><TD ALIGN=LEFT><A
  NAME="bitrns-P2.6c"></A>
 Equivalence Property: '<SPAN CLASS=math>&harr;</SPAN>' Transitivity.
 
@@ -594,47 +655,8 @@ Equivalence Property: '<SPAN CLASS=math>&harr;</SPAN>' Transitivity.
  &harr; <SPAN CLASS=wff>&#x1D712;</SPAN>)))</SPAN></TD></TR>
 <TR BGCOLOR=white><TD COLSPAN=3><FONT SIZE=-3>&nbsp;</FONT></TD></TR>
 
-<TR><TD NOWRAP>Theorem</TD><TD ALIGN=CENTER><A
- HREF="bitrns-P2.6c.2SH.html">bitrns-P2.6c.2SH</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#DC4800">126</SPAN></TD><TD ALIGN=LEFT><A
- NAME="bitrns-P2.6c.2SH"></A>
-Inference from <A HREF="bitrns-P2.6c.html">bitrns-P2.6c</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#DC4800">125</SPAN>.
-
-</TD></TR><TR><TD COLSPAN=3 ALIGN=CENTER><SPAN CLASS=math><SPAN
- CLASS=typecode>&vdash; </SPAN>(<SPAN CLASS=wff>&#x1D711;</SPAN> &harr; <SPAN
- CLASS=wff>&#x1D713;</SPAN>)</SPAN><SPAN CLASS=math>&nbsp;&nbsp;&nbsp;
- &amp;&nbsp;&nbsp;&nbsp;</SPAN><SPAN CLASS=math><SPAN CLASS=typecode>&vdash;
- </SPAN>(<SPAN CLASS=wff>&#x1D713;</SPAN> &harr; <SPAN
- CLASS=wff>&#x1D712;</SPAN>)</SPAN>&nbsp;&nbsp;&nbsp; <FONT
- FACE=sans-serif>&#8658;</FONT>&nbsp;&nbsp;&nbsp;<SPAN CLASS=math><SPAN
- CLASS=typecode>&vdash; </SPAN>(<SPAN CLASS=wff>&#x1D711;</SPAN> &harr; <SPAN
- CLASS=wff>&#x1D712;</SPAN>)</SPAN></TD></TR>
-<TR BGCOLOR=white><TD COLSPAN=3><FONT SIZE=-3>&nbsp;</FONT></TD></TR>
-
-<TR><TD NOWRAP>Theorem</TD><TD ALIGN=CENTER><A
- HREF="bitrns-P2.6c.AC.2SH.html">bitrns-P2.6c.AC.2SH</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#DB4900">127</SPAN></TD><TD ALIGN=LEFT><A
- NAME="bitrns-P2.6c.AC.2SH"></A>
-Deductive Form of <A HREF="bitrns-P2.6c.html">bitrns-P2.6c</A>&nbsp;<SPAN
-CLASS=r STYLE="color:#DC4800">125</SPAN>.
-
-</TD></TR><TR><TD COLSPAN=3 ALIGN=CENTER><SPAN CLASS=math><SPAN
- CLASS=typecode>&vdash; </SPAN>(<SPAN CLASS=wff>&#x1D6FE;</SPAN> &rarr; (<SPAN
- CLASS=wff>&#x1D711;</SPAN> &harr; <SPAN
- CLASS=wff>&#x1D713;</SPAN>))</SPAN><SPAN CLASS=math>&nbsp;&nbsp;&nbsp;
- &amp;&nbsp;&nbsp;&nbsp;</SPAN><SPAN CLASS=math><SPAN CLASS=typecode>&vdash;
- </SPAN>(<SPAN CLASS=wff>&#x1D6FE;</SPAN> &rarr; (<SPAN
- CLASS=wff>&#x1D713;</SPAN> &harr; <SPAN
- CLASS=wff>&#x1D712;</SPAN>))</SPAN>&nbsp;&nbsp;&nbsp; <FONT
- FACE=sans-serif>&#8658;</FONT>&nbsp;&nbsp;&nbsp;<SPAN CLASS=math><SPAN
- CLASS=typecode>&vdash; </SPAN>(<SPAN CLASS=wff>&#x1D6FE;</SPAN> &rarr; (<SPAN
- CLASS=wff>&#x1D711;</SPAN> &harr; <SPAN
- CLASS=wff>&#x1D712;</SPAN>))</SPAN></TD></TR>
-<TR BGCOLOR=white><TD COLSPAN=3><FONT SIZE=-3>&nbsp;</FONT></TD></TR>
-
 <TR BGCOLOR="#FFFFF2"><TD COLSPAN=3><CENTER><B><A
- NAME="mm128s"></A>3.2.5&nbsp;&nbsp;Substitution Laws.</B></CENTER>
+ NAME="mm127s"></A>3.2.5&nbsp;&nbsp;Substitution Laws.</B></CENTER>
 <P STYLE="margin-bottom:0em">
 These laws can be chained together to produce a countably infinite set of
   rules of the form...
@@ -664,7 +686,7 @@ CLASS=wff>&#x1D713;</SPAN></SPAN>'.
 <TR BGCOLOR=white><TD COLSPAN=3><FONT SIZE=-3>&nbsp;</FONT></TD></TR>
 <TR><TD NOWRAP>Theorem</TD><TD ALIGN=CENTER><A
  HREF="subneg-P2.7.html">subneg-P2.7</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#DB4900">128</SPAN></TD><TD ALIGN=LEFT><A NAME="subneg-P2.7"></A>
+ STYLE="color:#DB4900">127</SPAN></TD><TD ALIGN=LEFT><A NAME="subneg-P2.7"></A>
 Substitution Law for '<SPAN CLASS=math>&not;</SPAN>'.
 
 </TD></TR><TR><TD COLSPAN=3 ALIGN=CENTER><SPAN CLASS=math><SPAN
@@ -675,7 +697,7 @@ Substitution Law for '<SPAN CLASS=math>&not;</SPAN>'.
 
 <TR><TD NOWRAP>Theorem</TD><TD ALIGN=CENTER><A
  HREF="subiml-P2.8a.html">subiml-P2.8a</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#DA4A00">129</SPAN></TD><TD ALIGN=LEFT><A
+ STYLE="color:#DA4900">128</SPAN></TD><TD ALIGN=LEFT><A
  NAME="subiml-P2.8a"></A>
 Left Substitution Law for '<SPAN CLASS=math>&rarr;</SPAN>'.
 
@@ -688,10 +710,10 @@ Left Substitution Law for '<SPAN CLASS=math>&rarr;</SPAN>'.
 
 <TR><TD NOWRAP>Theorem</TD><TD ALIGN=CENTER><A
  HREF="subiml-P2.8a.SH.html">subiml-P2.8a.SH</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#DA4A00">130</SPAN></TD><TD ALIGN=LEFT><A
+ STYLE="color:#DA4A00">129</SPAN></TD><TD ALIGN=LEFT><A
  NAME="subiml-P2.8a.SH"></A>
 Inference from <A HREF="subiml-P2.8a.html">subiml-P2.8a</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#DA4A00">129</SPAN>.
+STYLE="color:#DA4900">128</SPAN>.
 
 </TD></TR><TR><TD COLSPAN=3 ALIGN=CENTER><SPAN CLASS=math><SPAN
  CLASS=typecode>&vdash; </SPAN>(<SPAN CLASS=wff>&#x1D711;</SPAN> &harr; <SPAN
@@ -704,7 +726,7 @@ STYLE="color:#DA4A00">129</SPAN>.
 
 <TR><TD NOWRAP>Theorem</TD><TD ALIGN=CENTER><A
  HREF="subimr-P2.8b.html">subimr-P2.8b</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#D94A00">131</SPAN></TD><TD ALIGN=LEFT><A
+ STYLE="color:#D94A00">130</SPAN></TD><TD ALIGN=LEFT><A
  NAME="subimr-P2.8b"></A>
 Right Substitution Law for '<SPAN CLASS=math>&rarr;</SPAN>'.
 
@@ -717,10 +739,10 @@ Right Substitution Law for '<SPAN CLASS=math>&rarr;</SPAN>'.
 
 <TR><TD NOWRAP>Theorem</TD><TD ALIGN=CENTER><A
  HREF="subimr-P2.8b.SH.html">subimr-P2.8b.SH</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#D94B00">132</SPAN></TD><TD ALIGN=LEFT><A
+ STYLE="color:#D94B00">131</SPAN></TD><TD ALIGN=LEFT><A
  NAME="subimr-P2.8b.SH"></A>
 Inference from <A HREF="subimr-P2.8b.html">subimr-P2.8b</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#D94A00">131</SPAN>.
+STYLE="color:#D94A00">130</SPAN>.
 
 </TD></TR><TR><TD COLSPAN=3 ALIGN=CENTER><SPAN CLASS=math><SPAN
  CLASS=typecode>&vdash; </SPAN>(<SPAN CLASS=wff>&#x1D711;</SPAN> &harr; <SPAN
@@ -732,20 +754,20 @@ STYLE="color:#D94A00">131</SPAN>.
 <TR BGCOLOR=white><TD COLSPAN=3><FONT SIZE=-3>&nbsp;</FONT></TD></TR>
 
 <TR BGCOLOR="#FFFFF2"><TD COLSPAN=3><CENTER><FONT SIZE="+1"><B><A
- NAME="mm133b"></A>3.3&nbsp;&nbsp;Logical Conjunction</B></FONT></CENTER>
+ NAME="mm132b"></A>3.3&nbsp;&nbsp;Logical Conjunction</B></FONT></CENTER>
 </TD></TR>
 <TR BGCOLOR=white><TD COLSPAN=3><FONT SIZE=-3>&nbsp;</FONT></TD></TR>
 <TR BGCOLOR="#FFFFF2"><TD COLSPAN=3><CENTER><B><A
- NAME="mm133s"></A>3.3.1&nbsp;&nbsp;Defining Logical Conjunction.</B></CENTER>
+ NAME="mm132s"></A>3.3.1&nbsp;&nbsp;Defining Logical Conjunction.</B></CENTER>
 </TD></TR>
 <TR BGCOLOR=white><TD COLSPAN=3><FONT SIZE=-3>&nbsp;</FONT></TD></TR>
 <TR BGCOLOR="#FFFFF2"><TD COLSPAN=3><CENTER><B><A
- NAME="mm133s"></A>3.3.1.1&nbsp;&nbsp;Syntax Definition.</B></CENTER>
+ NAME="mm132s"></A>3.3.1.1&nbsp;&nbsp;Syntax Definition.</B></CENTER>
 </TD></TR>
 <TR BGCOLOR=white><TD COLSPAN=3><FONT SIZE=-3>&nbsp;</FONT></TD></TR>
 <TR><TD NOWRAP><B><FONT COLOR="#00CC00">Syntax</FONT></B></TD><TD
  ALIGN=CENTER><A HREF="wff-and.html">wff-and</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#D84B00">133</SPAN></TD><TD ALIGN=LEFT><A NAME="wff-and"></A>
+ STYLE="color:#D94B00">132</SPAN></TD><TD ALIGN=LEFT><A NAME="wff-and"></A>
 Extend WFF definition to include the &quot;and&quot; symbol '<SPAN
 CLASS=math>&wedge;</SPAN>'.
 
@@ -755,12 +777,12 @@ CLASS=math>&wedge;</SPAN>'.
 <TR BGCOLOR=white><TD COLSPAN=3><FONT SIZE=-3>&nbsp;</FONT></TD></TR>
 
 <TR BGCOLOR="#FFFFF2"><TD COLSPAN=3><CENTER><B><A
- NAME="mm134s"></A>3.3.1.2&nbsp;&nbsp;Formal Definition.</B></CENTER>
+ NAME="mm133s"></A>3.3.1.2&nbsp;&nbsp;Formal Definition.</B></CENTER>
 </TD></TR>
 <TR BGCOLOR=white><TD COLSPAN=3><FONT SIZE=-3>&nbsp;</FONT></TD></TR>
 <TR><TD NOWRAP><B><FONT COLOR=blue>Definition</FONT></B></TD><TD
  ALIGN=CENTER><A HREF="df-and-D2.2.html">df-and-D2.2</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#D84C00">134</SPAN></TD><TD ALIGN=LEFT><A NAME="df-and-D2.2"></A>
+ STYLE="color:#D84C00">133</SPAN></TD><TD ALIGN=LEFT><A NAME="df-and-D2.2"></A>
 Definition of Conjunction, '<SPAN CLASS=math>&wedge;</SPAN>'. Read as
 &quot;and&quot;.
 
@@ -771,23 +793,22 @@ Definition of Conjunction, '<SPAN CLASS=math>&wedge;</SPAN>'. Read as
 <TR BGCOLOR=white><TD COLSPAN=3><FONT SIZE=-3>&nbsp;</FONT></TD></TR>
 
 <TR BGCOLOR="#FFFFF2"><TD COLSPAN=3><CENTER><B><A
- NAME="mm135s"></A>3.3.2&nbsp;&nbsp;Fundamental Properties.</B></CENTER>
+ NAME="mm134s"></A>3.3.2&nbsp;&nbsp;Fundamental Properties.</B></CENTER>
 <P STYLE="margin-bottom:0em">
 <P STYLE="margin-bottom:0em">
   Taken together, the properties <A
-HREF="simpl-P2.11a.html">simpl-P2.11a</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#D74C00">135</SPAN>, <A
-HREF="simpr-P2.11b.html">simpr-P2.11b</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#D74D00">137</SPAN>, and
-  <A HREF="cmb-P2.11c.html">cmb-P2.11c</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#D64E00">139</SPAN> completely define logical conjunction.
+HREF="simpl-P2.9a.html">simpl-P2.9a</A>&nbsp;<SPAN CLASS=r
+STYLE="color:#D84C00">134</SPAN>, <A
+HREF="simpr-P2.9b.html">simpr-P2.9b</A>&nbsp;<SPAN CLASS=r
+STYLE="color:#D74D00">136</SPAN>, and
+  <A HREF="cmb-P2.9c.html">cmb-P2.9c</A>&nbsp;<SPAN CLASS=r
+STYLE="color:#D64E00">138</SPAN> completely define logical conjunction.
 
 </TD></TR>
 <TR BGCOLOR=white><TD COLSPAN=3><FONT SIZE=-3>&nbsp;</FONT></TD></TR>
 <TR><TD NOWRAP>Theorem</TD><TD ALIGN=CENTER><A
- HREF="simpl-P2.11a.html">simpl-P2.11a</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#D74C00">135</SPAN></TD><TD ALIGN=LEFT><A
- NAME="simpl-P2.11a"></A>
+ HREF="simpl-P2.9a.html">simpl-P2.9a</A>&nbsp;<SPAN CLASS=r
+ STYLE="color:#D84C00">134</SPAN></TD><TD ALIGN=LEFT><A NAME="simpl-P2.9a"></A>
 '<SPAN CLASS=math>&wedge;</SPAN>' Left Simplification.
 
 </TD></TR><TR><TD COLSPAN=3 ALIGN=CENTER><SPAN CLASS=math><SPAN
@@ -797,11 +818,11 @@ STYLE="color:#D64E00">139</SPAN> completely define logical conjunction.
 <TR BGCOLOR=white><TD COLSPAN=3><FONT SIZE=-3>&nbsp;</FONT></TD></TR>
 
 <TR><TD NOWRAP>Theorem</TD><TD ALIGN=CENTER><A
- HREF="simpl-P2.11a.AC.SH.html">simpl-P2.11a.AC.SH</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#D74D00">136</SPAN></TD><TD ALIGN=LEFT><A
- NAME="simpl-P2.11a.AC.SH"></A>
-Deductive Form of <A HREF="simpl-P2.11a.html">simpl-P2.11a</A>&nbsp;<SPAN
-CLASS=r STYLE="color:#D74C00">135</SPAN>.
+ HREF="simpl-P2.9a.AC.SH.html">simpl-P2.9a.AC.SH</A>&nbsp;<SPAN CLASS=r
+ STYLE="color:#D74D00">135</SPAN></TD><TD ALIGN=LEFT><A
+ NAME="simpl-P2.9a.AC.SH"></A>
+Deductive Form of <A HREF="simpl-P2.9a.html">simpl-P2.9a</A>&nbsp;<SPAN CLASS=r
+STYLE="color:#D84C00">134</SPAN>.
 
 </TD></TR><TR><TD COLSPAN=3 ALIGN=CENTER><SPAN CLASS=math><SPAN
  CLASS=typecode>&vdash; </SPAN>(<SPAN CLASS=wff>&#x1D6FE;</SPAN> &rarr; (<SPAN
@@ -813,9 +834,8 @@ CLASS=r STYLE="color:#D74C00">135</SPAN>.
 <TR BGCOLOR=white><TD COLSPAN=3><FONT SIZE=-3>&nbsp;</FONT></TD></TR>
 
 <TR><TD NOWRAP>Theorem</TD><TD ALIGN=CENTER><A
- HREF="simpr-P2.11b.html">simpr-P2.11b</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#D74D00">137</SPAN></TD><TD ALIGN=LEFT><A
- NAME="simpr-P2.11b"></A>
+ HREF="simpr-P2.9b.html">simpr-P2.9b</A>&nbsp;<SPAN CLASS=r
+ STYLE="color:#D74D00">136</SPAN></TD><TD ALIGN=LEFT><A NAME="simpr-P2.9b"></A>
 '<SPAN CLASS=math>&wedge;</SPAN>' Right Simplification.
 
 </TD></TR><TR><TD COLSPAN=3 ALIGN=CENTER><SPAN CLASS=math><SPAN
@@ -825,11 +845,11 @@ CLASS=r STYLE="color:#D74C00">135</SPAN>.
 <TR BGCOLOR=white><TD COLSPAN=3><FONT SIZE=-3>&nbsp;</FONT></TD></TR>
 
 <TR><TD NOWRAP>Theorem</TD><TD ALIGN=CENTER><A
- HREF="simpr-P2.11b.AC.SH.html">simpr-P2.11b.AC.SH</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#D64E00">138</SPAN></TD><TD ALIGN=LEFT><A
- NAME="simpr-P2.11b.AC.SH"></A>
-Deductive Form of <A HREF="simpr-P2.11b.html">simpr-P2.11b</A>&nbsp;<SPAN
-CLASS=r STYLE="color:#D74D00">137</SPAN>.
+ HREF="simpr-P2.9b.AC.SH.html">simpr-P2.9b.AC.SH</A>&nbsp;<SPAN CLASS=r
+ STYLE="color:#D64D00">137</SPAN></TD><TD ALIGN=LEFT><A
+ NAME="simpr-P2.9b.AC.SH"></A>
+Deductive Form of <A HREF="simpr-P2.9b.html">simpr-P2.9b</A>&nbsp;<SPAN CLASS=r
+STYLE="color:#D74D00">136</SPAN>.
 
 </TD></TR><TR><TD COLSPAN=3 ALIGN=CENTER><SPAN CLASS=math><SPAN
  CLASS=typecode>&vdash; </SPAN>(<SPAN CLASS=wff>&#x1D6FE;</SPAN> &rarr; (<SPAN
@@ -841,8 +861,8 @@ CLASS=r STYLE="color:#D74D00">137</SPAN>.
 <TR BGCOLOR=white><TD COLSPAN=3><FONT SIZE=-3>&nbsp;</FONT></TD></TR>
 
 <TR><TD NOWRAP>Theorem</TD><TD ALIGN=CENTER><A
- HREF="cmb-P2.11c.html">cmb-P2.11c</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#D64E00">139</SPAN></TD><TD ALIGN=LEFT><A NAME="cmb-P2.11c"></A>
+ HREF="cmb-P2.9c.html">cmb-P2.9c</A>&nbsp;<SPAN CLASS=r
+ STYLE="color:#D64E00">138</SPAN></TD><TD ALIGN=LEFT><A NAME="cmb-P2.9c"></A>
 '<SPAN CLASS=math>&wedge;</SPAN>' Introduction by Combination.
 
 </TD></TR><TR><TD COLSPAN=3 ALIGN=CENTER><SPAN CLASS=math><SPAN
@@ -852,11 +872,11 @@ CLASS=r STYLE="color:#D74D00">137</SPAN>.
 <TR BGCOLOR=white><TD COLSPAN=3><FONT SIZE=-3>&nbsp;</FONT></TD></TR>
 
 <TR><TD NOWRAP>Theorem</TD><TD ALIGN=CENTER><A
- HREF="cmb-P2.11c.AC.2SH.html">cmb-P2.11c.AC.2SH</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#D54E00">140</SPAN></TD><TD ALIGN=LEFT><A
- NAME="cmb-P2.11c.AC.2SH"></A>
-Deductive Form of <A HREF="cmb-P2.11c.html">cmb-P2.11c</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#D64E00">139</SPAN>.
+ HREF="cmb-P2.9c.AC.2SH.html">cmb-P2.9c.AC.2SH</A>&nbsp;<SPAN CLASS=r
+ STYLE="color:#D54E00">139</SPAN></TD><TD ALIGN=LEFT><A
+ NAME="cmb-P2.9c.AC.2SH"></A>
+Deductive Form of <A HREF="cmb-P2.9c.html">cmb-P2.9c</A>&nbsp;<SPAN CLASS=r
+STYLE="color:#D64E00">138</SPAN>.
 
 </TD></TR><TR><TD COLSPAN=3 ALIGN=CENTER><SPAN CLASS=math><SPAN
  CLASS=typecode>&vdash; </SPAN>(<SPAN CLASS=wff>&#x1D6FE;</SPAN> &rarr; <SPAN
@@ -871,13 +891,13 @@ STYLE="color:#D64E00">139</SPAN>.
 <TR BGCOLOR=white><TD COLSPAN=3><FONT SIZE=-3>&nbsp;</FONT></TD></TR>
 
 <TR BGCOLOR="#FFFFF2"><TD COLSPAN=3><CENTER><B><A
- NAME="mm141s"></A>3.3.3&nbsp;&nbsp;Importation and Exportation
+ NAME="mm140s"></A>3.3.3&nbsp;&nbsp;Importation and Exportation
  Laws.</B></CENTER>
 </TD></TR>
 <TR BGCOLOR=white><TD COLSPAN=3><FONT SIZE=-3>&nbsp;</FONT></TD></TR>
 <TR><TD NOWRAP>Theorem</TD><TD ALIGN=CENTER><A
  HREF="import-P2.10a.html">import-P2.10a</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#D54F00">141</SPAN></TD><TD ALIGN=LEFT><A
+ STYLE="color:#D54F00">140</SPAN></TD><TD ALIGN=LEFT><A
  NAME="import-P2.10a"></A>
 '<SPAN CLASS=math>&wedge;</SPAN>' Importation Law.
 
@@ -890,10 +910,10 @@ STYLE="color:#D64E00">139</SPAN>.
 
 <TR><TD NOWRAP>Theorem</TD><TD ALIGN=CENTER><A
  HREF="import-P2.10a.SH.html">import-P2.10a.SH</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#D44F00">142</SPAN></TD><TD ALIGN=LEFT><A
+ STYLE="color:#D44F00">141</SPAN></TD><TD ALIGN=LEFT><A
  NAME="import-P2.10a.SH"></A>
 Inference from <A HREF="import-P2.10a.html">import-P2.10a</A>&nbsp;<SPAN
-CLASS=r STYLE="color:#D54F00">141</SPAN>.
+CLASS=r STYLE="color:#D54F00">140</SPAN>.
 
 </TD></TR><TR><TD COLSPAN=3 ALIGN=CENTER><SPAN CLASS=math><SPAN
  CLASS=typecode>&vdash; </SPAN>(<SPAN CLASS=wff>&#x1D711;</SPAN> &rarr; (<SPAN
@@ -907,7 +927,7 @@ CLASS=r STYLE="color:#D54F00">141</SPAN>.
 
 <TR><TD NOWRAP>Theorem</TD><TD ALIGN=CENTER><A
  HREF="export-P2.10b.html">export-P2.10b</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#D45000">143</SPAN></TD><TD ALIGN=LEFT><A
+ STYLE="color:#D45000">142</SPAN></TD><TD ALIGN=LEFT><A
  NAME="export-P2.10b"></A>
 '<SPAN CLASS=math>&wedge;</SPAN>' Exportation Law.
 
@@ -921,10 +941,10 @@ CLASS=r STYLE="color:#D54F00">141</SPAN>.
 
 <TR><TD NOWRAP>Theorem</TD><TD ALIGN=CENTER><A
  HREF="export-P2.10b.SH.html">export-P2.10b.SH</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#D35000">144</SPAN></TD><TD ALIGN=LEFT><A
+ STYLE="color:#D35000">143</SPAN></TD><TD ALIGN=LEFT><A
  NAME="export-P2.10b.SH"></A>
 Inference from <A HREF="export-P2.10b.html">export-P2.10b</A>&nbsp;<SPAN
-CLASS=r STYLE="color:#D45000">143</SPAN>.
+CLASS=r STYLE="color:#D45000">142</SPAN>.
 
 </TD></TR><TR><TD COLSPAN=3 ALIGN=CENTER><SPAN CLASS=math><SPAN
  CLASS=typecode>&vdash; </SPAN>((<SPAN CLASS=wff>&#x1D711;</SPAN> &wedge; <SPAN
@@ -936,144 +956,21 @@ CLASS=r STYLE="color:#D45000">143</SPAN>.
  CLASS=wff>&#x1D712;</SPAN>))</SPAN></TD></TR>
 <TR BGCOLOR=white><TD COLSPAN=3><FONT SIZE=-3>&nbsp;</FONT></TD></TR>
 
-<TR BGCOLOR="#FFFFF2"><TD COLSPAN=3><CENTER><B><A
- NAME="mm145s"></A>3.3.4&nbsp;&nbsp;Commutative and Associative
- Properties.</B></CENTER>
-</TD></TR>
-<TR BGCOLOR=white><TD COLSPAN=3><FONT SIZE=-3>&nbsp;</FONT></TD></TR>
-<TR><TD NOWRAP>Theorem</TD><TD ALIGN=CENTER><A
- HREF="andcomm-P2.12-L1.html">andcomm-P2.12-L1</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#D35100">145</SPAN></TD><TD ALIGN=LEFT><A
- NAME="andcomm-P2.12-L1"></A>
-Lemma for <A HREF="andcomm-P2.12.html">andcomm-P2.12</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#D25100">146</SPAN>.
-
- <I>[Auxiliary lemma - not displayed.]</I></TD></TR>
-<TR BGCOLOR=white><TD COLSPAN=3><FONT SIZE=-3>&nbsp;</FONT></TD></TR>
-
-<TR><TD NOWRAP>Theorem</TD><TD ALIGN=CENTER><A
- HREF="andcomm-P2.12.html">andcomm-P2.12</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#D25100">146</SPAN></TD><TD ALIGN=LEFT><A
- NAME="andcomm-P2.12"></A>
-'<SPAN CLASS=math>&wedge;</SPAN>' Commutativity.
-
-</TD></TR><TR><TD COLSPAN=3 ALIGN=CENTER><SPAN CLASS=math><SPAN
- CLASS=typecode>&vdash; </SPAN>((<SPAN CLASS=wff>&#x1D711;</SPAN> &wedge; <SPAN
- CLASS=wff>&#x1D713;</SPAN>) &harr; (<SPAN CLASS=wff>&#x1D713;</SPAN> &wedge;
- <SPAN CLASS=wff>&#x1D711;</SPAN>))</SPAN></TD></TR>
-<TR BGCOLOR=white><TD COLSPAN=3><FONT SIZE=-3>&nbsp;</FONT></TD></TR>
-
-<TR><TD NOWRAP>Theorem</TD><TD ALIGN=CENTER><A
- HREF="andassoc-P2.13-L1.html">andassoc-P2.13-L1</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#D25200">147</SPAN></TD><TD ALIGN=LEFT><A
- NAME="andassoc-P2.13-L1"></A>
-Lemma for <A HREF="andassoc-P2.13.html">andassoc-P2.13</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#D15200">149</SPAN>.
-
- <I>[Auxiliary lemma - not displayed.]</I></TD></TR>
-<TR BGCOLOR=white><TD COLSPAN=3><FONT SIZE=-3>&nbsp;</FONT></TD></TR>
-
-<TR><TD NOWRAP>Theorem</TD><TD ALIGN=CENTER><A
- HREF="andassoc-P2.13-L2.html">andassoc-P2.13-L2</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#D15200">148</SPAN></TD><TD ALIGN=LEFT><A
- NAME="andassoc-P2.13-L2"></A>
-Lemma for <A HREF="andassoc-P2.13.html">andassoc-P2.13</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#D15200">149</SPAN>.
-
- <I>[Auxiliary lemma - not displayed.]</I></TD></TR>
-<TR BGCOLOR=white><TD COLSPAN=3><FONT SIZE=-3>&nbsp;</FONT></TD></TR>
-
-<TR><TD NOWRAP>Theorem</TD><TD ALIGN=CENTER><A
- HREF="andassoc-P2.13.html">andassoc-P2.13</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#D15200">149</SPAN></TD><TD ALIGN=LEFT><A
- NAME="andassoc-P2.13"></A>
-'<SPAN CLASS=math>&wedge;</SPAN>' Associativity.
-
-</TD></TR><TR><TD COLSPAN=3 ALIGN=CENTER><SPAN CLASS=math><SPAN
- CLASS=typecode>&vdash; </SPAN>(((<SPAN CLASS=wff>&#x1D711;</SPAN> &wedge;
- <SPAN CLASS=wff>&#x1D713;</SPAN>) &wedge; <SPAN CLASS=wff>&#x1D712;</SPAN>)
- &harr; (<SPAN CLASS=wff>&#x1D711;</SPAN> &wedge; (<SPAN
- CLASS=wff>&#x1D713;</SPAN> &wedge; <SPAN
- CLASS=wff>&#x1D712;</SPAN>)))</SPAN></TD></TR>
-<TR BGCOLOR=white><TD COLSPAN=3><FONT SIZE=-3>&nbsp;</FONT></TD></TR>
-
-<TR BGCOLOR="#FFFFF2"><TD COLSPAN=3><CENTER><B><A
- NAME="mm150s"></A>3.3.5&nbsp;&nbsp;Substitution Laws.</B></CENTER>
-</TD></TR>
-<TR BGCOLOR=white><TD COLSPAN=3><FONT SIZE=-3>&nbsp;</FONT></TD></TR>
-<TR><TD NOWRAP>Theorem</TD><TD ALIGN=CENTER><A
- HREF="subandl-P2.14a.html">subandl-P2.14a</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#D05300">150</SPAN></TD><TD ALIGN=LEFT><A
- NAME="subandl-P2.14a"></A>
-Left Substitution Law for '<SPAN CLASS=math>&wedge;</SPAN>'.
-
-</TD></TR><TR><TD COLSPAN=3 ALIGN=CENTER><SPAN CLASS=math><SPAN
- CLASS=typecode>&vdash; </SPAN>((<SPAN CLASS=wff>&#x1D711;</SPAN> &harr; <SPAN
- CLASS=wff>&#x1D713;</SPAN>) &rarr; ((<SPAN CLASS=wff>&#x1D711;</SPAN> &wedge;
- <SPAN CLASS=wff>&#x1D712;</SPAN>) &harr; (<SPAN CLASS=wff>&#x1D713;</SPAN>
- &wedge; <SPAN CLASS=wff>&#x1D712;</SPAN>)))</SPAN></TD></TR>
-<TR BGCOLOR=white><TD COLSPAN=3><FONT SIZE=-3>&nbsp;</FONT></TD></TR>
-
-<TR><TD NOWRAP>Theorem</TD><TD ALIGN=CENTER><A
- HREF="subandl-P2.14a.SH.html">subandl-P2.14a.SH</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#D05300">151</SPAN></TD><TD ALIGN=LEFT><A
- NAME="subandl-P2.14a.SH"></A>
-Inference from <A HREF="subandl-P2.14a.html">subandl-P2.14a</A>&nbsp;<SPAN
-CLASS=r STYLE="color:#D05300">150</SPAN>.
-
-</TD></TR><TR><TD COLSPAN=3 ALIGN=CENTER><SPAN CLASS=math><SPAN
- CLASS=typecode>&vdash; </SPAN>(<SPAN CLASS=wff>&#x1D711;</SPAN> &harr; <SPAN
- CLASS=wff>&#x1D713;</SPAN>)</SPAN>&nbsp;&nbsp;&nbsp; <FONT
- FACE=sans-serif>&#8658;</FONT>&nbsp;&nbsp;&nbsp;<SPAN CLASS=math><SPAN
- CLASS=typecode>&vdash; </SPAN>((<SPAN CLASS=wff>&#x1D711;</SPAN> &wedge; <SPAN
- CLASS=wff>&#x1D712;</SPAN>) &harr; (<SPAN CLASS=wff>&#x1D713;</SPAN> &wedge;
- <SPAN CLASS=wff>&#x1D712;</SPAN>))</SPAN></TD></TR>
-<TR BGCOLOR=white><TD COLSPAN=3><FONT SIZE=-3>&nbsp;</FONT></TD></TR>
-
-<TR><TD NOWRAP>Theorem</TD><TD ALIGN=CENTER><A
- HREF="subandr-P2.14b.html">subandr-P2.14b</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#CF5400">152</SPAN></TD><TD ALIGN=LEFT><A
- NAME="subandr-P2.14b"></A>
-Right Substitution Law for '<SPAN CLASS=math>&wedge;</SPAN>'.
-
-</TD></TR><TR><TD COLSPAN=3 ALIGN=CENTER><SPAN CLASS=math><SPAN
- CLASS=typecode>&vdash; </SPAN>((<SPAN CLASS=wff>&#x1D711;</SPAN> &harr; <SPAN
- CLASS=wff>&#x1D713;</SPAN>) &rarr; ((<SPAN CLASS=wff>&#x1D712;</SPAN> &wedge;
- <SPAN CLASS=wff>&#x1D711;</SPAN>) &harr; (<SPAN CLASS=wff>&#x1D712;</SPAN>
- &wedge; <SPAN CLASS=wff>&#x1D713;</SPAN>)))</SPAN></TD></TR>
-<TR BGCOLOR=white><TD COLSPAN=3><FONT SIZE=-3>&nbsp;</FONT></TD></TR>
-
-<TR><TD NOWRAP>Theorem</TD><TD ALIGN=CENTER><A
- HREF="subandr-P2.14b.SH.html">subandr-P2.14b.SH</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#CF5400">153</SPAN></TD><TD ALIGN=LEFT><A
- NAME="subandr-P2.14b.SH"></A>
-Inference from <A HREF="subandr-P2.14b.html">subandr-P2.14b</A>&nbsp;<SPAN
-CLASS=r STYLE="color:#CF5400">152</SPAN>.
-
-</TD></TR><TR><TD COLSPAN=3 ALIGN=CENTER><SPAN CLASS=math><SPAN
- CLASS=typecode>&vdash; </SPAN>(<SPAN CLASS=wff>&#x1D711;</SPAN> &harr; <SPAN
- CLASS=wff>&#x1D713;</SPAN>)</SPAN>&nbsp;&nbsp;&nbsp; <FONT
- FACE=sans-serif>&#8658;</FONT>&nbsp;&nbsp;&nbsp;<SPAN CLASS=math><SPAN
- CLASS=typecode>&vdash; </SPAN>((<SPAN CLASS=wff>&#x1D712;</SPAN> &wedge; <SPAN
- CLASS=wff>&#x1D711;</SPAN>) &harr; (<SPAN CLASS=wff>&#x1D712;</SPAN> &wedge;
- <SPAN CLASS=wff>&#x1D713;</SPAN>))</SPAN></TD></TR>
-<TR BGCOLOR=white><TD COLSPAN=3><FONT SIZE=-3>&nbsp;</FONT></TD></TR>
-
 <TR BGCOLOR="#FFFFF2"><TD COLSPAN=3><CENTER><FONT SIZE="+1"><B><A
- NAME="mm154b"></A>3.4&nbsp;&nbsp;Logical Disjunction</B></FONT></CENTER>
+ NAME="mm144b"></A>3.4&nbsp;&nbsp;Logical Disjunction</B></FONT></CENTER>
 </TD></TR>
 <TR BGCOLOR=white><TD COLSPAN=3><FONT SIZE=-3>&nbsp;</FONT></TD></TR>
 <TR BGCOLOR="#FFFFF2"><TD COLSPAN=3><CENTER><B><A
- NAME="mm154s"></A>3.4.1&nbsp;&nbsp;Defining Logical Disjunction.</B></CENTER>
+ NAME="mm144s"></A>3.4.1&nbsp;&nbsp;Defining Logical Disjunction.</B></CENTER>
 </TD></TR>
 <TR BGCOLOR=white><TD COLSPAN=3><FONT SIZE=-3>&nbsp;</FONT></TD></TR>
 <TR BGCOLOR="#FFFFF2"><TD COLSPAN=3><CENTER><B><A
- NAME="mm154s"></A>3.4.1.1&nbsp;&nbsp;Syntax Definition.</B></CENTER>
+ NAME="mm144s"></A>3.4.1.1&nbsp;&nbsp;Syntax Definition.</B></CENTER>
 </TD></TR>
 <TR BGCOLOR=white><TD COLSPAN=3><FONT SIZE=-3>&nbsp;</FONT></TD></TR>
 <TR><TD NOWRAP><B><FONT COLOR="#00CC00">Syntax</FONT></B></TD><TD
  ALIGN=CENTER><A HREF="wff-or.html">wff-or</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#CF5500">154</SPAN></TD><TD ALIGN=LEFT><A NAME="wff-or"></A>
+ STYLE="color:#D35100">144</SPAN></TD><TD ALIGN=LEFT><A NAME="wff-or"></A>
 Extend WFF definition to include the &quot;or&quot; symbol '<SPAN
 CLASS=math>&vee;</SPAN>'.
 
@@ -1083,12 +980,12 @@ CLASS=math>&vee;</SPAN>'.
 <TR BGCOLOR=white><TD COLSPAN=3><FONT SIZE=-3>&nbsp;</FONT></TD></TR>
 
 <TR BGCOLOR="#FFFFF2"><TD COLSPAN=3><CENTER><B><A
- NAME="mm155s"></A>3.4.1.2&nbsp;&nbsp;Formal Definition.</B></CENTER>
+ NAME="mm145s"></A>3.4.1.2&nbsp;&nbsp;Formal Definition.</B></CENTER>
 </TD></TR>
 <TR BGCOLOR=white><TD COLSPAN=3><FONT SIZE=-3>&nbsp;</FONT></TD></TR>
 <TR><TD NOWRAP><B><FONT COLOR=blue>Definition</FONT></B></TD><TD
  ALIGN=CENTER><A HREF="df-or-D2.3.html">df-or-D2.3</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#CE5500">155</SPAN></TD><TD ALIGN=LEFT><A NAME="df-or-D2.3"></A>
+ STYLE="color:#D25100">145</SPAN></TD><TD ALIGN=LEFT><A NAME="df-or-D2.3"></A>
 Definition of Disjunction, '<SPAN CLASS=math>&vee;</SPAN>'. Read as
 &quot;or&quot;.
 
@@ -1099,23 +996,23 @@ Definition of Disjunction, '<SPAN CLASS=math>&vee;</SPAN>'. Read as
 <TR BGCOLOR=white><TD COLSPAN=3><FONT SIZE=-3>&nbsp;</FONT></TD></TR>
 
 <TR BGCOLOR="#FFFFF2"><TD COLSPAN=3><CENTER><B><A
- NAME="mm156s"></A>3.4.2&nbsp;&nbsp;Fundamental Properties.</B></CENTER>
+ NAME="mm146s"></A>3.4.2&nbsp;&nbsp;Fundamental Properties.</B></CENTER>
 <P STYLE="margin-bottom:0em">
 <P STYLE="margin-bottom:0em">
   Taken together, the properties <A
-HREF="orintl-P2.15a.html">orintl-P2.15a</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#CE5600">156</SPAN>, <A
-HREF="orintr-P2.15b.html">orintr-P2.15b</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#CD5600">158</SPAN>, and
-  <A HREF="orelim-P2.15c.html">orelim-P2.15c</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#CC5700">160</SPAN> completely define logical disjunction.
+HREF="orintl-P2.11a.html">orintl-P2.11a</A>&nbsp;<SPAN CLASS=r
+STYLE="color:#D25100">146</SPAN>, <A
+HREF="orintr-P2.11b.html">orintr-P2.11b</A>&nbsp;<SPAN CLASS=r
+STYLE="color:#D15200">148</SPAN>, and
+  <A HREF="orelim-P2.11c.html">orelim-P2.11c</A>&nbsp;<SPAN CLASS=r
+STYLE="color:#D05300">150</SPAN> completely define logical disjunction.
 
 </TD></TR>
 <TR BGCOLOR=white><TD COLSPAN=3><FONT SIZE=-3>&nbsp;</FONT></TD></TR>
 <TR><TD NOWRAP>Theorem</TD><TD ALIGN=CENTER><A
- HREF="orintl-P2.15a.html">orintl-P2.15a</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#CE5600">156</SPAN></TD><TD ALIGN=LEFT><A
- NAME="orintl-P2.15a"></A>
+ HREF="orintl-P2.11a.html">orintl-P2.11a</A>&nbsp;<SPAN CLASS=r
+ STYLE="color:#D25100">146</SPAN></TD><TD ALIGN=LEFT><A
+ NAME="orintl-P2.11a"></A>
 Left Introduction Rule for '<SPAN CLASS=math>&vee;</SPAN>'.
 
 </TD></TR><TR><TD COLSPAN=3 ALIGN=CENTER><SPAN CLASS=math><SPAN
@@ -1125,11 +1022,11 @@ Left Introduction Rule for '<SPAN CLASS=math>&vee;</SPAN>'.
 <TR BGCOLOR=white><TD COLSPAN=3><FONT SIZE=-3>&nbsp;</FONT></TD></TR>
 
 <TR><TD NOWRAP>Theorem</TD><TD ALIGN=CENTER><A
- HREF="orintl-P2.15a.AC.SH.html">orintl-P2.15a.AC.SH</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#CD5600">157</SPAN></TD><TD ALIGN=LEFT><A
- NAME="orintl-P2.15a.AC.SH"></A>
-Deductive Form of <A HREF="orintl-P2.15a.html">orintl-P2.15a</A>&nbsp;<SPAN
-CLASS=r STYLE="color:#CE5600">156</SPAN>.
+ HREF="orintl-P2.11a.AC.SH.html">orintl-P2.11a.AC.SH</A>&nbsp;<SPAN CLASS=r
+ STYLE="color:#D15200">147</SPAN></TD><TD ALIGN=LEFT><A
+ NAME="orintl-P2.11a.AC.SH"></A>
+Deductive Form of <A HREF="orintl-P2.11a.html">orintl-P2.11a</A>&nbsp;<SPAN
+CLASS=r STYLE="color:#D25100">146</SPAN>.
 
 </TD></TR><TR><TD COLSPAN=3 ALIGN=CENTER><SPAN CLASS=math><SPAN
  CLASS=typecode>&vdash; </SPAN>(<SPAN CLASS=wff>&#x1D6FE;</SPAN> &rarr; <SPAN
@@ -1141,9 +1038,9 @@ CLASS=r STYLE="color:#CE5600">156</SPAN>.
 <TR BGCOLOR=white><TD COLSPAN=3><FONT SIZE=-3>&nbsp;</FONT></TD></TR>
 
 <TR><TD NOWRAP>Theorem</TD><TD ALIGN=CENTER><A
- HREF="orintr-P2.15b.html">orintr-P2.15b</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#CD5600">158</SPAN></TD><TD ALIGN=LEFT><A
- NAME="orintr-P2.15b"></A>
+ HREF="orintr-P2.11b.html">orintr-P2.11b</A>&nbsp;<SPAN CLASS=r
+ STYLE="color:#D15200">148</SPAN></TD><TD ALIGN=LEFT><A
+ NAME="orintr-P2.11b"></A>
 Right Introduction Rule for '<SPAN CLASS=math>&vee;</SPAN>'.
 
 </TD></TR><TR><TD COLSPAN=3 ALIGN=CENTER><SPAN CLASS=math><SPAN
@@ -1153,11 +1050,11 @@ Right Introduction Rule for '<SPAN CLASS=math>&vee;</SPAN>'.
 <TR BGCOLOR=white><TD COLSPAN=3><FONT SIZE=-3>&nbsp;</FONT></TD></TR>
 
 <TR><TD NOWRAP>Theorem</TD><TD ALIGN=CENTER><A
- HREF="orintr-P2.15b.AC.SH.html">orintr-P2.15b.AC.SH</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#CC5700">159</SPAN></TD><TD ALIGN=LEFT><A
- NAME="orintr-P2.15b.AC.SH"></A>
-Deductive Form of <A HREF="orintr-P2.15b.html">orintr-P2.15b</A>&nbsp;<SPAN
-CLASS=r STYLE="color:#CD5600">158</SPAN>.
+ HREF="orintr-P2.11b.AC.SH.html">orintr-P2.11b.AC.SH</A>&nbsp;<SPAN CLASS=r
+ STYLE="color:#D15300">149</SPAN></TD><TD ALIGN=LEFT><A
+ NAME="orintr-P2.11b.AC.SH"></A>
+Deductive Form of <A HREF="orintr-P2.11b.html">orintr-P2.11b</A>&nbsp;<SPAN
+CLASS=r STYLE="color:#D15200">148</SPAN>.
 
 </TD></TR><TR><TD COLSPAN=3 ALIGN=CENTER><SPAN CLASS=math><SPAN
  CLASS=typecode>&vdash; </SPAN>(<SPAN CLASS=wff>&#x1D6FE;</SPAN> &rarr; <SPAN
@@ -1169,12 +1066,12 @@ CLASS=r STYLE="color:#CD5600">158</SPAN>.
 <TR BGCOLOR=white><TD COLSPAN=3><FONT SIZE=-3>&nbsp;</FONT></TD></TR>
 
 <TR><TD NOWRAP>Theorem</TD><TD ALIGN=CENTER><A
- HREF="orelim-P2.15c.html">orelim-P2.15c</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#CC5700">160</SPAN></TD><TD ALIGN=LEFT><A
- NAME="orelim-P2.15c"></A>
+ HREF="orelim-P2.11c.html">orelim-P2.11c</A>&nbsp;<SPAN CLASS=r
+ STYLE="color:#D05300">150</SPAN></TD><TD ALIGN=LEFT><A
+ NAME="orelim-P2.11c"></A>
 '<SPAN CLASS=math>&wedge;</SPAN>' Elimination Law.
 <P STYLE="margin-bottom:0em">
-       This is also known as the &quot;Proof by Cases&quot; rule.
+       This is also known as the &quot;Proof by Cases&quot; law.
 
 </TD></TR><TR><TD COLSPAN=3 ALIGN=CENTER><SPAN CLASS=math><SPAN
  CLASS=typecode>&vdash; </SPAN>((<SPAN CLASS=wff>&#x1D711;</SPAN> &rarr; <SPAN
@@ -1185,11 +1082,11 @@ CLASS=r STYLE="color:#CD5600">158</SPAN>.
 <TR BGCOLOR=white><TD COLSPAN=3><FONT SIZE=-3>&nbsp;</FONT></TD></TR>
 
 <TR><TD NOWRAP>Theorem</TD><TD ALIGN=CENTER><A
- HREF="orelim-P2.15c.AC.3SH.html">orelim-P2.15c.AC.3SH</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#CB5800">161</SPAN></TD><TD ALIGN=LEFT><A
- NAME="orelim-P2.15c.AC.3SH"></A>
-Deductive Form of <A HREF="orelim-P2.15c.html">orelim-P2.15c</A>&nbsp;<SPAN
-CLASS=r STYLE="color:#CC5700">160</SPAN>.
+ HREF="orelim-P2.11c.AC.3SH.html">orelim-P2.11c.AC.3SH</A>&nbsp;<SPAN CLASS=r
+ STYLE="color:#D05400">151</SPAN></TD><TD ALIGN=LEFT><A
+ NAME="orelim-P2.11c.AC.3SH"></A>
+Deductive Form of <A HREF="orelim-P2.11c.html">orelim-P2.11c</A>&nbsp;<SPAN
+CLASS=r STYLE="color:#D05300">150</SPAN>.
 
 </TD></TR><TR><TD COLSPAN=3 ALIGN=CENTER><SPAN CLASS=math><SPAN
  CLASS=typecode>&vdash; </SPAN>(<SPAN CLASS=wff>&#x1D6FE;</SPAN> &rarr; (<SPAN
@@ -1209,13 +1106,13 @@ CLASS=r STYLE="color:#CC5700">160</SPAN>.
 <TR BGCOLOR=white><TD COLSPAN=3><FONT SIZE=-3>&nbsp;</FONT></TD></TR>
 
 <TR BGCOLOR="#FFFFF2"><TD COLSPAN=3><CENTER><B><A
- NAME="mm162s"></A>3.4.3&nbsp;&nbsp;The Law of Excluded Middle.</B></CENTER>
+ NAME="mm152s"></A>3.4.3&nbsp;&nbsp;The Law of Excluded Middle.</B></CENTER>
 </TD></TR>
 <TR BGCOLOR=white><TD COLSPAN=3><FONT SIZE=-3>&nbsp;</FONT></TD></TR>
 <TR><TD NOWRAP>Theorem</TD><TD ALIGN=CENTER><A
- HREF="exclmid-P2.16.html">exclmid-P2.16</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#CB5800">162</SPAN></TD><TD ALIGN=LEFT><A
- NAME="exclmid-P2.16"></A>
+ HREF="exclmid-P2.12.html">exclmid-P2.12</A>&nbsp;<SPAN CLASS=r
+ STYLE="color:#CF5400">152</SPAN></TD><TD ALIGN=LEFT><A
+ NAME="exclmid-P2.12"></A>
 Law of Excluded Middle.
 
 </TD></TR><TR><TD COLSPAN=3 ALIGN=CENTER><SPAN CLASS=math><SPAN
@@ -1224,20 +1121,20 @@ Law of Excluded Middle.
 <TR BGCOLOR=white><TD COLSPAN=3><FONT SIZE=-3>&nbsp;</FONT></TD></TR>
 
 <TR BGCOLOR="#FFFFF2"><TD COLSPAN=3><CENTER><FONT SIZE="+1"><B><A
- NAME="mm163b"></A>3.5&nbsp;&nbsp;True and False Constants.</B></FONT></CENTER>
+ NAME="mm153b"></A>3.5&nbsp;&nbsp;True and False Constants.</B></FONT></CENTER>
 </TD></TR>
 <TR BGCOLOR=white><TD COLSPAN=3><FONT SIZE=-3>&nbsp;</FONT></TD></TR>
 <TR BGCOLOR="#FFFFF2"><TD COLSPAN=3><CENTER><B><A
- NAME="mm163s"></A>3.5.1&nbsp;&nbsp;Defining True.</B></CENTER>
+ NAME="mm153s"></A>3.5.1&nbsp;&nbsp;Defining True.</B></CENTER>
 </TD></TR>
 <TR BGCOLOR=white><TD COLSPAN=3><FONT SIZE=-3>&nbsp;</FONT></TD></TR>
 <TR BGCOLOR="#FFFFF2"><TD COLSPAN=3><CENTER><B><A
- NAME="mm163s"></A>3.5.1.1&nbsp;&nbsp;Syntax Definition.</B></CENTER>
+ NAME="mm153s"></A>3.5.1.1&nbsp;&nbsp;Syntax Definition.</B></CENTER>
 </TD></TR>
 <TR BGCOLOR=white><TD COLSPAN=3><FONT SIZE=-3>&nbsp;</FONT></TD></TR>
 <TR><TD NOWRAP><B><FONT COLOR="#00CC00">Syntax</FONT></B></TD><TD
  ALIGN=CENTER><A HREF="wff-true.html">wff-true</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#CA5900">163</SPAN></TD><TD ALIGN=LEFT><A NAME="wff-true"></A>
+ STYLE="color:#CF5500">153</SPAN></TD><TD ALIGN=LEFT><A NAME="wff-true"></A>
 Extend WFF definition to include the &quot;true&quot; constant '<SPAN
 CLASS=math>&top;</SPAN>'.
 
@@ -1246,16 +1143,16 @@ CLASS=math>&top;</SPAN>'.
 <TR BGCOLOR=white><TD COLSPAN=3><FONT SIZE=-3>&nbsp;</FONT></TD></TR>
 
 <TR BGCOLOR="#FFFFF2"><TD COLSPAN=3><CENTER><B><A
- NAME="mm164s"></A>3.5.1.2&nbsp;&nbsp;Justification Theorem.</B></CENTER>
+ NAME="mm154s"></A>3.5.1.2&nbsp;&nbsp;Justification Theorem.</B></CENTER>
 </TD></TR>
 <TR BGCOLOR=white><TD COLSPAN=3><FONT SIZE=-3>&nbsp;</FONT></TD></TR>
 <TR><TD NOWRAP>Theorem</TD><TD ALIGN=CENTER><A
- HREF="truejust-P2.17.html">truejust-P2.17</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#CA5900">164</SPAN></TD><TD ALIGN=LEFT><A
- NAME="truejust-P2.17"></A>
+ HREF="truejust-P2.13.html">truejust-P2.13</A>&nbsp;<SPAN CLASS=r
+ STYLE="color:#CE5500">154</SPAN></TD><TD ALIGN=LEFT><A
+ NAME="truejust-P2.13"></A>
 Justification Theorem for <A
 HREF="df-true-D2.4.html">df-true-D2.4</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#C95A00">165</SPAN>.
+STYLE="color:#CE5500">155</SPAN>.
 
 </TD></TR><TR><TD COLSPAN=3 ALIGN=CENTER><SPAN CLASS=math><SPAN
  CLASS=typecode>&vdash; </SPAN>((&forall;<SPAN CLASS=objvar>&#x1D465;</SPAN>
@@ -1270,12 +1167,12 @@ STYLE="color:#C95A00">165</SPAN>.
 <TR BGCOLOR=white><TD COLSPAN=3><FONT SIZE=-3>&nbsp;</FONT></TD></TR>
 
 <TR BGCOLOR="#FFFFF2"><TD COLSPAN=3><CENTER><B><A
- NAME="mm165s"></A>3.5.1.3&nbsp;&nbsp;Formal Definition.</B></CENTER>
+ NAME="mm155s"></A>3.5.1.3&nbsp;&nbsp;Formal Definition.</B></CENTER>
 </TD></TR>
 <TR BGCOLOR=white><TD COLSPAN=3><FONT SIZE=-3>&nbsp;</FONT></TD></TR>
 <TR><TD NOWRAP><B><FONT COLOR=blue>Definition</FONT></B></TD><TD
  ALIGN=CENTER><A HREF="df-true-D2.4.html">df-true-D2.4</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#C95A00">165</SPAN></TD><TD ALIGN=LEFT><A
+ STYLE="color:#CE5500">155</SPAN></TD><TD ALIGN=LEFT><A
  NAME="df-true-D2.4"></A>
 Definition of True, '<SPAN CLASS=math>&top;</SPAN>'.
 
@@ -1288,13 +1185,13 @@ Definition of True, '<SPAN CLASS=math>&top;</SPAN>'.
 <TR BGCOLOR=white><TD COLSPAN=3><FONT SIZE=-3>&nbsp;</FONT></TD></TR>
 
 <TR BGCOLOR="#FFFFF2"><TD COLSPAN=3><CENTER><B><A
- NAME="mm166s"></A>3.5.2&nbsp;&nbsp;Fundamental Property of "True"
+ NAME="mm156s"></A>3.5.2&nbsp;&nbsp;Fundamental Property of "True"
  Constant.</B></CENTER>
 </TD></TR>
 <TR BGCOLOR=white><TD COLSPAN=3><FONT SIZE=-3>&nbsp;</FONT></TD></TR>
 <TR><TD NOWRAP>Theorem</TD><TD ALIGN=CENTER><A
- HREF="true-P2.18.html">true-P2.18</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#C85A00">166</SPAN></TD><TD ALIGN=LEFT><A NAME="true-P2.18"></A>
+ HREF="true-P2.14.html">true-P2.14</A>&nbsp;<SPAN CLASS=r
+ STYLE="color:#CD5600">156</SPAN></TD><TD ALIGN=LEFT><A NAME="true-P2.14"></A>
 '<SPAN CLASS=math>&top;</SPAN>' is a theorem.
 
 </TD></TR><TR><TD COLSPAN=3 ALIGN=CENTER><SPAN CLASS=math><SPAN
@@ -1302,16 +1199,16 @@ Definition of True, '<SPAN CLASS=math>&top;</SPAN>'.
 <TR BGCOLOR=white><TD COLSPAN=3><FONT SIZE=-3>&nbsp;</FONT></TD></TR>
 
 <TR BGCOLOR="#FFFFF2"><TD COLSPAN=3><CENTER><B><A
- NAME="mm167s"></A>3.5.3&nbsp;&nbsp;Defining False.</B></CENTER>
+ NAME="mm157s"></A>3.5.3&nbsp;&nbsp;Defining False.</B></CENTER>
 </TD></TR>
 <TR BGCOLOR=white><TD COLSPAN=3><FONT SIZE=-3>&nbsp;</FONT></TD></TR>
 <TR BGCOLOR="#FFFFF2"><TD COLSPAN=3><CENTER><B><A
- NAME="mm167s"></A>3.5.3.1&nbsp;&nbsp;Syntax Definition.</B></CENTER>
+ NAME="mm157s"></A>3.5.3.1&nbsp;&nbsp;Syntax Definition.</B></CENTER>
 </TD></TR>
 <TR BGCOLOR=white><TD COLSPAN=3><FONT SIZE=-3>&nbsp;</FONT></TD></TR>
 <TR><TD NOWRAP><B><FONT COLOR="#00CC00">Syntax</FONT></B></TD><TD
  ALIGN=CENTER><A HREF="wff-false.html">wff-false</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#C85B00">167</SPAN></TD><TD ALIGN=LEFT><A NAME="wff-false"></A>
+ STYLE="color:#CD5600">157</SPAN></TD><TD ALIGN=LEFT><A NAME="wff-false"></A>
 Extend WFF definition to include the &quot;false&quot; constant '<SPAN
 CLASS=math>&perp;</SPAN>'.
 
@@ -1320,12 +1217,12 @@ CLASS=math>&perp;</SPAN>'.
 <TR BGCOLOR=white><TD COLSPAN=3><FONT SIZE=-3>&nbsp;</FONT></TD></TR>
 
 <TR BGCOLOR="#FFFFF2"><TD COLSPAN=3><CENTER><B><A
- NAME="mm168s"></A>3.5.3.2&nbsp;&nbsp;Formal Definition.</B></CENTER>
+ NAME="mm158s"></A>3.5.3.2&nbsp;&nbsp;Formal Definition.</B></CENTER>
 </TD></TR>
 <TR BGCOLOR=white><TD COLSPAN=3><FONT SIZE=-3>&nbsp;</FONT></TD></TR>
 <TR><TD NOWRAP><B><FONT COLOR=blue>Definition</FONT></B></TD><TD
  ALIGN=CENTER><A HREF="df-false-D2.5.html">df-false-D2.5</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#C75B00">168</SPAN></TD><TD ALIGN=LEFT><A
+ STYLE="color:#CC5700">158</SPAN></TD><TD ALIGN=LEFT><A
  NAME="df-false-D2.5"></A>
 Definition of False, '<SPAN CLASS=math>&perp;</SPAN>'.
 
@@ -1334,13 +1231,13 @@ Definition of False, '<SPAN CLASS=math>&perp;</SPAN>'.
 <TR BGCOLOR=white><TD COLSPAN=3><FONT SIZE=-3>&nbsp;</FONT></TD></TR>
 
 <TR BGCOLOR="#FFFFF2"><TD COLSPAN=3><CENTER><B><A
- NAME="mm169s"></A>3.5.4&nbsp;&nbsp;Fundamental Property of "False"
+ NAME="mm159s"></A>3.5.4&nbsp;&nbsp;Fundamental Property of "False"
  Constant.</B></CENTER>
 </TD></TR>
 <TR BGCOLOR=white><TD COLSPAN=3><FONT SIZE=-3>&nbsp;</FONT></TD></TR>
 <TR><TD NOWRAP>Theorem</TD><TD ALIGN=CENTER><A
- HREF="false-P2.19.html">false-P2.19</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#C75C00">169</SPAN></TD><TD ALIGN=LEFT><A NAME="false-P2.19"></A>
+ HREF="false-P2.15.html">false-P2.15</A>&nbsp;<SPAN CLASS=r
+ STYLE="color:#CC5700">159</SPAN></TD><TD ALIGN=LEFT><A NAME="false-P2.15"></A>
 '<SPAN CLASS=math>&perp;</SPAN>' is refutable.
 
 </TD></TR><TR><TD COLSPAN=3 ALIGN=CENTER><SPAN CLASS=math><SPAN
@@ -1348,18 +1245,18 @@ Definition of False, '<SPAN CLASS=math>&perp;</SPAN>'.
 <TR BGCOLOR=white><TD COLSPAN=3><FONT SIZE=-3>&nbsp;</FONT></TD></TR>
 
 <TR BGCOLOR="#FFFFF2"><TD COLSPAN=3><CENTER><FONT SIZE="+1"><B><A
- NAME="mm170h"></A>PART 4&nbsp;&nbsp;Chapter 3: Propositional Calculus (Natural
+ NAME="mm160h"></A>PART 4&nbsp;&nbsp;Chapter 3: Propositional Calculus (Natural
  Deduction)</B></FONT></CENTER>
 </TD></TR>
 <TR BGCOLOR=white><TD COLSPAN=3><FONT SIZE=-3>&nbsp;</FONT></TD></TR>
 <TR BGCOLOR="#FFFFF2"><TD COLSPAN=3><CENTER><FONT SIZE="+1"><B><A
- NAME="mm170b"></A>4.1&nbsp;&nbsp;Define Conjunction
+ NAME="mm160b"></A>4.1&nbsp;&nbsp;Define Conjunction
  Tuples.</B></FONT></CENTER>
 </TD></TR>
 <TR BGCOLOR=white><TD COLSPAN=3><FONT SIZE=-3>&nbsp;</FONT></TD></TR>
 <TR><TD NOWRAP><B><FONT COLOR="#00CC00">Syntax</FONT></B></TD><TD
  ALIGN=CENTER><A HREF="wff-rcp-AND3.html">wff-rcp-AND3</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#C65C00">170</SPAN></TD><TD ALIGN=LEFT><A
+ STYLE="color:#CB5800">160</SPAN></TD><TD ALIGN=LEFT><A
  NAME="wff-rcp-AND3"></A>
 Extend WFF definition to include '<SPAN CLASS=math>&wedge;</SPAN>' 3-Tuple.
 
@@ -1371,7 +1268,7 @@ Extend WFF definition to include '<SPAN CLASS=math>&wedge;</SPAN>' 3-Tuple.
 
 <TR><TD NOWRAP><B><FONT COLOR=blue>Definition</FONT></B></TD><TD
  ALIGN=CENTER><A HREF="df-rcp-AND3.html">df-rcp-AND3</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#C55C00">171</SPAN></TD><TD ALIGN=LEFT><A NAME="df-rcp-AND3"></A>
+ STYLE="color:#CB5800">161</SPAN></TD><TD ALIGN=LEFT><A NAME="df-rcp-AND3"></A>
 '<SPAN CLASS=math>&wedge;</SPAN>' 3-Tuple.
 
 </TD></TR><TR><TD COLSPAN=3 ALIGN=CENTER><SPAN CLASS=math><SPAN
@@ -1385,7 +1282,7 @@ Extend WFF definition to include '<SPAN CLASS=math>&wedge;</SPAN>' 3-Tuple.
 
 <TR><TD NOWRAP><B><FONT COLOR="#00CC00">Syntax</FONT></B></TD><TD
  ALIGN=CENTER><A HREF="wff-rcp-AND4.html">wff-rcp-AND4</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#C55D00">172</SPAN></TD><TD ALIGN=LEFT><A
+ STYLE="color:#CA5900">162</SPAN></TD><TD ALIGN=LEFT><A
  NAME="wff-rcp-AND4"></A>
 Extend WFF definition to include '<SPAN CLASS=math>&wedge;</SPAN>' 4-Tuple.
 
@@ -1398,7 +1295,7 @@ Extend WFF definition to include '<SPAN CLASS=math>&wedge;</SPAN>' 4-Tuple.
 
 <TR><TD NOWRAP><B><FONT COLOR=blue>Definition</FONT></B></TD><TD
  ALIGN=CENTER><A HREF="df-rcp-AND4.html">df-rcp-AND4</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#C45D00">173</SPAN></TD><TD ALIGN=LEFT><A NAME="df-rcp-AND4"></A>
+ STYLE="color:#CA5900">163</SPAN></TD><TD ALIGN=LEFT><A NAME="df-rcp-AND4"></A>
 '<SPAN CLASS=math>&wedge;</SPAN>' 4-Tuple.
 
 </TD></TR><TR><TD COLSPAN=3 ALIGN=CENTER><SPAN CLASS=math><SPAN
@@ -1414,7 +1311,7 @@ Extend WFF definition to include '<SPAN CLASS=math>&wedge;</SPAN>' 4-Tuple.
 
 <TR><TD NOWRAP><B><FONT COLOR="#00CC00">Syntax</FONT></B></TD><TD
  ALIGN=CENTER><A HREF="wff-rcp-AND5.html">wff-rcp-AND5</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#C35E00">174</SPAN></TD><TD ALIGN=LEFT><A
+ STYLE="color:#C95A00">164</SPAN></TD><TD ALIGN=LEFT><A
  NAME="wff-rcp-AND5"></A>
 Extend WFF definition to include '<SPAN CLASS=math>&wedge;</SPAN>' 5-Tuple.
 
@@ -1428,7 +1325,7 @@ Extend WFF definition to include '<SPAN CLASS=math>&wedge;</SPAN>' 5-Tuple.
 
 <TR><TD NOWRAP><B><FONT COLOR=blue>Definition</FONT></B></TD><TD
  ALIGN=CENTER><A HREF="df-rcp-AND5.html">df-rcp-AND5</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#C35E00">175</SPAN></TD><TD ALIGN=LEFT><A NAME="df-rcp-AND5"></A>
+ STYLE="color:#C85A00">165</SPAN></TD><TD ALIGN=LEFT><A NAME="df-rcp-AND5"></A>
 '<SPAN CLASS=math>&wedge;</SPAN>' 5-Tuple.
 
 </TD></TR><TR><TD COLSPAN=3 ALIGN=CENTER><SPAN CLASS=math><SPAN
@@ -1445,7 +1342,7 @@ Extend WFF definition to include '<SPAN CLASS=math>&wedge;</SPAN>' 5-Tuple.
 <TR BGCOLOR=white><TD COLSPAN=3><FONT SIZE=-3>&nbsp;</FONT></TD></TR>
 
 <TR BGCOLOR="#FFFFF2"><TD COLSPAN=3><CENTER><FONT SIZE="+1"><B><A
- NAME="mm176b"></A>4.2&nbsp;&nbsp;Natural Deduction for Propositional
+ NAME="mm166b"></A>4.2&nbsp;&nbsp;Natural Deduction for Propositional
  Calculus.</B></FONT></CENTER>
 <P STYLE="margin-bottom:0em">
 These rules introduce a new axiomatic system designed to emulate natural
@@ -1525,12 +1422,12 @@ CLASS=math>)</SPAN>.
 </TD></TR>
 <TR BGCOLOR=white><TD COLSPAN=3><FONT SIZE=-3>&nbsp;</FONT></TD></TR>
 <TR BGCOLOR="#FFFFF2"><TD COLSPAN=3><CENTER><B><A
- NAME="mm176s"></A>4.2.1&nbsp;&nbsp;Axiomatic Rules.</B></CENTER>
+ NAME="mm166s"></A>4.2.1&nbsp;&nbsp;Axiomatic Rules.</B></CENTER>
 </TD></TR>
 <TR BGCOLOR=white><TD COLSPAN=3><FONT SIZE=-3>&nbsp;</FONT></TD></TR>
 <TR><TD NOWRAP>Theorem</TD><TD ALIGN=CENTER><A
  HREF="ndasm-P3.1.html">ndasm-P3.1</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#C25F00">176</SPAN></TD><TD ALIGN=LEFT><A NAME="ndasm-P3.1"></A>
+ STYLE="color:#C85B00">166</SPAN></TD><TD ALIGN=LEFT><A NAME="ndasm-P3.1"></A>
 Natural Deduction: State Assumption.
 <P STYLE="margin-bottom:0em">
        This rule is simply stating an assumption.
@@ -1543,7 +1440,7 @@ Natural Deduction: State Assumption.
 
 <TR><TD NOWRAP>Theorem</TD><TD ALIGN=CENTER><A
  HREF="ndimp-P3.2.html">ndimp-P3.2</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#C25F00">177</SPAN></TD><TD ALIGN=LEFT><A NAME="ndimp-P3.2"></A>
+ STYLE="color:#C75B00">167</SPAN></TD><TD ALIGN=LEFT><A NAME="ndimp-P3.2"></A>
 Natural Deduction: Import Previous Consequent.
 <P STYLE="margin-bottom:0em">
        Any previous consequent can be re-stated with an additional
@@ -1560,7 +1457,7 @@ Natural Deduction: Import Previous Consequent.
 
 <TR><TD NOWRAP>Theorem</TD><TD ALIGN=CENTER><A
  HREF="ndnegi-P3.3.html">ndnegi-P3.3</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#C16000">178</SPAN></TD><TD ALIGN=LEFT><A NAME="ndnegi-P3.3"></A>
+ STYLE="color:#C75B00">168</SPAN></TD><TD ALIGN=LEFT><A NAME="ndnegi-P3.3"></A>
 Natural Deduction: '<SPAN CLASS=math>&not;</SPAN>' Introduction Rule.
 <P STYLE="margin-bottom:0em">
        If an assumption leads to a contradiction, then we can discharge it
@@ -1581,7 +1478,7 @@ Natural Deduction: '<SPAN CLASS=math>&not;</SPAN>' Introduction Rule.
 
 <TR><TD NOWRAP>Theorem</TD><TD ALIGN=CENTER><A
  HREF="ndnege-P3.4.html">ndnege-P3.4</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#C06000">179</SPAN></TD><TD ALIGN=LEFT><A NAME="ndnege-P3.4"></A>
+ STYLE="color:#C65C00">169</SPAN></TD><TD ALIGN=LEFT><A NAME="ndnege-P3.4"></A>
 Natural Deduction: '<SPAN CLASS=math>&not;</SPAN>' Elimination Rule.
 <P STYLE="margin-bottom:0em">
        If we can deduce a contradiction within some context, then we can
@@ -1600,7 +1497,7 @@ Natural Deduction: '<SPAN CLASS=math>&not;</SPAN>' Elimination Rule.
 
 <TR><TD NOWRAP>Theorem</TD><TD ALIGN=CENTER><A
  HREF="ndimi-P3.5.html">ndimi-P3.5</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#C06100">180</SPAN></TD><TD ALIGN=LEFT><A NAME="ndimi-P3.5"></A>
+ STYLE="color:#C55C00">170</SPAN></TD><TD ALIGN=LEFT><A NAME="ndimi-P3.5"></A>
 Natural Deduction: '<SPAN CLASS=math>&rarr;</SPAN>' Introduction Rule.
 <P STYLE="margin-bottom:0em">
        If we can deduce '<SPAN CLASS=math><SPAN
@@ -1622,7 +1519,7 @@ CLASS=wff>&#x1D711;</SPAN></SPAN>' discharged.
 
 <TR><TD NOWRAP>Theorem</TD><TD ALIGN=CENTER><A
  HREF="ndime-P3.6.html">ndime-P3.6</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#BF6100">181</SPAN></TD><TD ALIGN=LEFT><A NAME="ndime-P3.6"></A>
+ STYLE="color:#C55D00">171</SPAN></TD><TD ALIGN=LEFT><A NAME="ndime-P3.6"></A>
 Natural Deduction: '<SPAN CLASS=math>&rarr;</SPAN>' Elimination Rule.
 <P STYLE="margin-bottom:0em">
        This rule is just Modus Ponens with an added context.
@@ -1641,7 +1538,7 @@ Natural Deduction: '<SPAN CLASS=math>&rarr;</SPAN>' Elimination Rule.
 
 <TR><TD NOWRAP>Theorem</TD><TD ALIGN=CENTER><A
  HREF="ndandi-P3.7.html">ndandi-P3.7</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#BE6200">182</SPAN></TD><TD ALIGN=LEFT><A NAME="ndandi-P3.7"></A>
+ STYLE="color:#C45D00">172</SPAN></TD><TD ALIGN=LEFT><A NAME="ndandi-P3.7"></A>
 Natural Deduction: '<SPAN CLASS=math>&wedge;</SPAN>' Introduction Rule.
 <P STYLE="margin-bottom:0em">
        Deduce the conjunction of two previously deduced WFFs.
@@ -1660,11 +1557,12 @@ Natural Deduction: '<SPAN CLASS=math>&wedge;</SPAN>' Introduction Rule.
 
 <TR><TD NOWRAP>Theorem</TD><TD ALIGN=CENTER><A
  HREF="ndandel-P3.8.html">ndandel-P3.8</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#BE6200">183</SPAN></TD><TD ALIGN=LEFT><A
+ STYLE="color:#C35E00">173</SPAN></TD><TD ALIGN=LEFT><A
  NAME="ndandel-P3.8"></A>
 Natural Deduction: Left '<SPAN CLASS=math>&wedge;</SPAN>' Elimination Rule.
 <P STYLE="margin-bottom:0em">
-       Deduce the left conjunct of a previously deduced conjunction.
+       Deduce the right conjunct (i.e. eliminate the left conjunct) of a
+       previously deduced conjunction.
 
 </TD></TR><TR><TD COLSPAN=3 ALIGN=CENTER><SPAN CLASS=math><SPAN
  CLASS=typecode>&vdash; </SPAN>(<SPAN CLASS=wff>&#x1D6FE;</SPAN> &rarr; (<SPAN
@@ -1677,11 +1575,12 @@ Natural Deduction: Left '<SPAN CLASS=math>&wedge;</SPAN>' Elimination Rule.
 
 <TR><TD NOWRAP>Theorem</TD><TD ALIGN=CENTER><A
  HREF="ndander-P3.9.html">ndander-P3.9</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#BD6300">184</SPAN></TD><TD ALIGN=LEFT><A
+ STYLE="color:#C35E00">174</SPAN></TD><TD ALIGN=LEFT><A
  NAME="ndander-P3.9"></A>
 Natural Deduction: Right '<SPAN CLASS=math>&wedge;</SPAN>' Elimination Rule.
 <P STYLE="margin-bottom:0em">
-       Deduce the right conjunct of a previously deduced conjunction.
+       Deduce the left conjunct (i.e. eliminate the right conjunct) of a
+       previously deduced conjunction.
 
 </TD></TR><TR><TD COLSPAN=3 ALIGN=CENTER><SPAN CLASS=math><SPAN
  CLASS=typecode>&vdash; </SPAN>(<SPAN CLASS=wff>&#x1D6FE;</SPAN> &rarr; (<SPAN
@@ -1694,7 +1593,7 @@ Natural Deduction: Right '<SPAN CLASS=math>&wedge;</SPAN>' Elimination Rule.
 
 <TR><TD NOWRAP>Theorem</TD><TD ALIGN=CENTER><A
  HREF="ndoril-P3.10.html">ndoril-P3.10</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#BD6300">185</SPAN></TD><TD ALIGN=LEFT><A
+ STYLE="color:#C25F00">175</SPAN></TD><TD ALIGN=LEFT><A
  NAME="ndoril-P3.10"></A>
 Natural Deduction: Left '<SPAN CLASS=math>&vee;</SPAN>' Introduction Rule.
 <P STYLE="margin-bottom:0em">
@@ -1712,7 +1611,7 @@ Natural Deduction: Left '<SPAN CLASS=math>&vee;</SPAN>' Introduction Rule.
 
 <TR><TD NOWRAP>Theorem</TD><TD ALIGN=CENTER><A
  HREF="ndorir-P3.11.html">ndorir-P3.11</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#BC6400">186</SPAN></TD><TD ALIGN=LEFT><A
+ STYLE="color:#C25F00">176</SPAN></TD><TD ALIGN=LEFT><A
  NAME="ndorir-P3.11"></A>
 Natural Deduction: Right '<SPAN CLASS=math>&vee;</SPAN>' Introduction Rule.
 <P STYLE="margin-bottom:0em">
@@ -1730,7 +1629,7 @@ Natural Deduction: Right '<SPAN CLASS=math>&vee;</SPAN>' Introduction Rule.
 
 <TR><TD NOWRAP>Theorem</TD><TD ALIGN=CENTER><A
  HREF="ndore-P3.12.html">ndore-P3.12</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#BB6400">187</SPAN></TD><TD ALIGN=LEFT><A NAME="ndore-P3.12"></A>
+ STYLE="color:#C16000">177</SPAN></TD><TD ALIGN=LEFT><A NAME="ndore-P3.12"></A>
 Natural Deduction: '<SPAN CLASS=math>&vee;</SPAN>' Elimination Rule.
 <P STYLE="margin-bottom:0em">
        If...
@@ -1771,7 +1670,7 @@ CLASS=math><SPAN CLASS=wff>&#x1D711;</SPAN></SPAN>' and
 
 <TR><TD NOWRAP>Theorem</TD><TD ALIGN=CENTER><A
  HREF="ndbii-P3.13.html">ndbii-P3.13</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#BB6400">188</SPAN></TD><TD ALIGN=LEFT><A NAME="ndbii-P3.13"></A>
+ STYLE="color:#C06000">178</SPAN></TD><TD ALIGN=LEFT><A NAME="ndbii-P3.13"></A>
 Natural Deduction: '<SPAN CLASS=math>&harr;</SPAN>' Introduction Rule.
 <P STYLE="margin-bottom:0em">
        If we have previously deduced both directions of a biconditional, then
@@ -1793,9 +1692,10 @@ Natural Deduction: '<SPAN CLASS=math>&harr;</SPAN>' Introduction Rule.
 
 <TR><TD NOWRAP>Theorem</TD><TD ALIGN=CENTER><A
  HREF="ndbief-P3.14.html">ndbief-P3.14</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#BA6500">189</SPAN></TD><TD ALIGN=LEFT><A
+ STYLE="color:#C06100">179</SPAN></TD><TD ALIGN=LEFT><A
  NAME="ndbief-P3.14"></A>
-Natural Deduction: '<SPAN CLASS=math>&harr;</SPAN>' Forward Implication Rule.
+Natural Deduction: '<SPAN CLASS=math>&harr;</SPAN>' Elimination Rule - Forward
+Implication.
 <P STYLE="margin-bottom:0em">
        After deducing a biconditional statement, we can deduce the assocated
        forward implication.
@@ -1812,9 +1712,10 @@ Natural Deduction: '<SPAN CLASS=math>&harr;</SPAN>' Forward Implication Rule.
 
 <TR><TD NOWRAP>Theorem</TD><TD ALIGN=CENTER><A
  HREF="ndbier-P3.15.html">ndbier-P3.15</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#BA6500">190</SPAN></TD><TD ALIGN=LEFT><A
+ STYLE="color:#BF6100">180</SPAN></TD><TD ALIGN=LEFT><A
  NAME="ndbier-P3.15"></A>
-Natural Deduction: '<SPAN CLASS=math>&harr;</SPAN>' Reverse Implication Rule.
+Natural Deduction: '<SPAN CLASS=math>&harr;</SPAN>' Elimination Rule - Reverse
+Implication.
 <P STYLE="margin-bottom:0em">
        After deducing a biconditional statement, we can deduce the associated
        reverse implication.
@@ -1831,9 +1732,9 @@ Natural Deduction: '<SPAN CLASS=math>&harr;</SPAN>' Reverse Implication Rule.
 
 <TR><TD NOWRAP>Theorem</TD><TD ALIGN=CENTER><A
  HREF="ndexclmid-P3.16.html">ndexclmid-P3.16</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#B96600">191</SPAN></TD><TD ALIGN=LEFT><A
+ STYLE="color:#BF6200">181</SPAN></TD><TD ALIGN=LEFT><A
  NAME="ndexclmid-P3.16"></A>
-Law of Excluded Middle (restated).
+Natural Deduction: Law of Excluded Middle (restated).
 <P STYLE="margin-bottom:0em">
        Every WFF '<SPAN CLASS=math><SPAN CLASS=wff>&#x1D711;</SPAN></SPAN>' is
 either true or false.  This law is rejected
@@ -1845,13 +1746,13 @@ either true or false.  This law is rejected
 <TR BGCOLOR=white><TD COLSPAN=3><FONT SIZE=-3>&nbsp;</FONT></TD></TR>
 
 <TR BGCOLOR="#FFFFF2"><TD COLSPAN=3><CENTER><B><A
- NAME="mm192s"></A>4.2.1.1&nbsp;&nbsp;Rules for "True" and "False"
+ NAME="mm182s"></A>4.2.1.1&nbsp;&nbsp;Rules for "True" and "False"
  Constants.</B></CENTER>
 </TD></TR>
 <TR BGCOLOR=white><TD COLSPAN=3><FONT SIZE=-3>&nbsp;</FONT></TD></TR>
 <TR><TD NOWRAP>Theorem</TD><TD ALIGN=CENTER><A
  HREF="ndtruei-P3.17.html">ndtruei-P3.17</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#B86600">192</SPAN></TD><TD ALIGN=LEFT><A
+ STYLE="color:#BE6200">182</SPAN></TD><TD ALIGN=LEFT><A
  NAME="ndtruei-P3.17"></A>
 Natural Deduction: '<SPAN CLASS=math>&top;</SPAN>' Introduction Rule.
 <P STYLE="margin-bottom:0em">
@@ -1870,7 +1771,7 @@ CLASS=wff>&#x1D6FE;</SPAN></SPAN>' and any of the rules 1 - 15 can be
 
 <TR><TD NOWRAP>Theorem</TD><TD ALIGN=CENTER><A
  HREF="ndtruee-P3.18.html">ndtruee-P3.18</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#B86700">193</SPAN></TD><TD ALIGN=LEFT><A
+ STYLE="color:#BD6300">183</SPAN></TD><TD ALIGN=LEFT><A
  NAME="ndtruee-P3.18"></A>
 Natural Deduction: '<SPAN CLASS=math>&top;</SPAN>' Elimination Rule.
 <P STYLE="margin-bottom:0em">
@@ -1889,27 +1790,27 @@ is true&quot; (or, more precisely, deducable).
 
 <TR><TD NOWRAP>Theorem</TD><TD ALIGN=CENTER><A
  HREF="ndfalsei-P3.19.html">ndfalsei-P3.19</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#B76700">194</SPAN></TD><TD ALIGN=LEFT><A
+ STYLE="color:#BD6300">184</SPAN></TD><TD ALIGN=LEFT><A
  NAME="ndfalsei-P3.19"></A>
 Natural Deduction: '<SPAN CLASS=math>&perp;</SPAN>' Introduction Rule.
 <P STYLE="margin-bottom:0em">
        This statement can be proved from <A
 HREF="ndasm-P3.1.html">ndasm-P3.1</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#C25F00">176</SPAN>, <A
+STYLE="color:#C85B00">166</SPAN>, <A
 HREF="ndimp-P3.2.html">ndimp-P3.2</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#C25F00">177</SPAN>,
+STYLE="color:#C75B00">167</SPAN>,
        <A HREF="ndimi-P3.5.html">ndimi-P3.5</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#C06100">180</SPAN>, <A
+STYLE="color:#C55C00">170</SPAN>, <A
 HREF="ndnege-P3.4.html">ndnege-P3.4</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#C06000">179</SPAN>, <A
+STYLE="color:#C65C00">169</SPAN>, <A
 HREF="ndtruei-P3.17.html">ndtruei-P3.17</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#B86600">192</SPAN>, and <A
+STYLE="color:#BE6200">182</SPAN>, and <A
 HREF="ndtruee-P3.18.html">ndtruee-P3.18</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#B86700">193</SPAN>. It's
+STYLE="color:#BD6300">183</SPAN>. It's
        included to keep the pattern of having an introduction rule to go along
        with every elimination rule.  <A
 HREF="ndtruei-P3.17.html">ndtruei-P3.17</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#B86600">192</SPAN> would normally be
+STYLE="color:#BE6200">182</SPAN> would normally be
        redundant as well, but it is needed to facilitate the contextless cases
        not covered by rules 1 - 15.
 
@@ -1923,7 +1824,7 @@ STYLE="color:#B86600">192</SPAN> would normally be
 
 <TR><TD NOWRAP>Theorem</TD><TD ALIGN=CENTER><A
  HREF="ndfalsee-P3.20.html">ndfalsee-P3.20</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#B66800">195</SPAN></TD><TD ALIGN=LEFT><A
+ STYLE="color:#BC6400">185</SPAN></TD><TD ALIGN=LEFT><A
  NAME="ndfalsee-P3.20"></A>
 Natural Deduction: '<SPAN CLASS=math>&perp;</SPAN>' Elimination Rule.
 <P STYLE="margin-bottom:0em">
@@ -1942,22 +1843,22 @@ false&quot; (or, more precisely, refutable).
 <TR BGCOLOR=white><TD COLSPAN=3><FONT SIZE=-3>&nbsp;</FONT></TD></TR>
 
 <TR BGCOLOR="#FFFFF2"><TD COLSPAN=3><CENTER><B><A
- NAME="mm196s"></A>4.2.1.2&nbsp;&nbsp;Separate Front Supposition (Syntactic
+ NAME="mm186s"></A>4.2.1.2&nbsp;&nbsp;Separate Front Supposition (Syntactic
  Axioms).</B></CENTER>
 <P STYLE="margin-bottom:0em">
 This recipe is used in conjunction with <A
 HREF="ndnegi-P3.3.html">ndnegi-P3.3</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#C16000">178</SPAN>, <A
+STYLE="color:#C75B00">168</SPAN>, <A
 HREF="ndimi-P3.5.html">ndimi-P3.5</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#C06100">180</SPAN>, and
+STYLE="color:#C55C00">170</SPAN>, and
   <A HREF="ndore-P3.12.html">ndore-P3.12</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#BB6400">187</SPAN>.
+STYLE="color:#C16000">177</SPAN>.
 
 </TD></TR>
 <TR BGCOLOR=white><TD COLSPAN=3><FONT SIZE=-3>&nbsp;</FONT></TD></TR>
 <TR><TD NOWRAP>Theorem</TD><TD ALIGN=CENTER><A
  HREF="rcp-NDSEP3.html">rcp-NDSEP3</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#B66800">196</SPAN></TD><TD ALIGN=LEFT><A NAME="rcp-NDSEP3"></A>
+ STYLE="color:#BB6400">186</SPAN></TD><TD ALIGN=LEFT><A NAME="rcp-NDSEP3"></A>
 ( 1 <SPAN CLASS=math>&wedge;</SPAN> 2 <SPAN CLASS=math>&wedge;</SPAN> 3 ) <SPAN
 CLASS=math>&rArr;</SPAN> ( ( 1 <SPAN CLASS=math>&wedge;</SPAN> 2 ) <SPAN
 CLASS=math>&wedge;</SPAN> 3 ).
@@ -1976,7 +1877,7 @@ CLASS=math>&wedge;</SPAN> 3 ).
 
 <TR><TD NOWRAP>Theorem</TD><TD ALIGN=CENTER><A
  HREF="rcp-NDSEP4.html">rcp-NDSEP4</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#B56900">197</SPAN></TD><TD ALIGN=LEFT><A NAME="rcp-NDSEP4"></A>
+ STYLE="color:#BB6400">187</SPAN></TD><TD ALIGN=LEFT><A NAME="rcp-NDSEP4"></A>
 ( 1 <SPAN CLASS=math>&wedge;</SPAN> 2 <SPAN CLASS=math>&wedge;</SPAN> 3 <SPAN
 CLASS=math>&wedge;</SPAN> 4 ) <SPAN CLASS=math>&rArr;</SPAN> ( ( 1 <SPAN
 CLASS=math>&wedge;</SPAN> 2 <SPAN CLASS=math>&wedge;</SPAN> 3 ) <SPAN
@@ -1998,7 +1899,7 @@ CLASS=math>&wedge;</SPAN> 4 ).
 
 <TR><TD NOWRAP>Theorem</TD><TD ALIGN=CENTER><A
  HREF="rcp-NDSEP5.html">rcp-NDSEP5</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#B56900">198</SPAN></TD><TD ALIGN=LEFT><A NAME="rcp-NDSEP5"></A>
+ STYLE="color:#BA6500">188</SPAN></TD><TD ALIGN=LEFT><A NAME="rcp-NDSEP5"></A>
 ( 1 <SPAN CLASS=math>&wedge;</SPAN> 2 <SPAN CLASS=math>&wedge;</SPAN> 3 <SPAN
 CLASS=math>&wedge;</SPAN> 4 <SPAN CLASS=math>&wedge;</SPAN> 5 ) <SPAN
 CLASS=math>&rArr;</SPAN>
@@ -2022,20 +1923,20 @@ CLASS=math>&rArr;</SPAN>
 <TR BGCOLOR=white><TD COLSPAN=3><FONT SIZE=-3>&nbsp;</FONT></TD></TR>
 
 <TR BGCOLOR="#FFFFF2"><TD COLSPAN=3><CENTER><B><A
- NAME="mm199s"></A>4.2.1.3&nbsp;&nbsp;Join Front Supposition (Syntactic
+ NAME="mm189s"></A>4.2.1.3&nbsp;&nbsp;Join Front Supposition (Syntactic
  Axioms).</B></CENTER>
 <P STYLE="margin-bottom:0em">
 This recipe is used in conjunction with <A
 HREF="ndasm-P3.1.html">ndasm-P3.1</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#C25F00">176</SPAN> and <A
+STYLE="color:#C85B00">166</SPAN> and <A
 HREF="ndimp-P3.2.html">ndimp-P3.2</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#C25F00">177</SPAN>.
+STYLE="color:#C75B00">167</SPAN>.
 
 </TD></TR>
 <TR BGCOLOR=white><TD COLSPAN=3><FONT SIZE=-3>&nbsp;</FONT></TD></TR>
 <TR><TD NOWRAP>Theorem</TD><TD ALIGN=CENTER><A
  HREF="rcp-NDJOIN3.html">rcp-NDJOIN3</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#B46A00">199</SPAN></TD><TD ALIGN=LEFT><A NAME="rcp-NDJOIN3"></A>
+ STYLE="color:#BA6500">189</SPAN></TD><TD ALIGN=LEFT><A NAME="rcp-NDJOIN3"></A>
 ( ( 1 <SPAN CLASS=math>&wedge;</SPAN> 2 ) <SPAN CLASS=math>&wedge;</SPAN> 3 )
 <SPAN CLASS=math>&rArr;</SPAN> ( 1 <SPAN CLASS=math>&wedge;</SPAN> 2 <SPAN
 CLASS=math>&wedge;</SPAN> 3 ).
@@ -2054,7 +1955,7 @@ CLASS=math>&wedge;</SPAN> 3 ).
 
 <TR><TD NOWRAP>Theorem</TD><TD ALIGN=CENTER><A
  HREF="rcp-NDJOIN4.html">rcp-NDJOIN4</A>&nbsp;<SPAN CLASS=r
- STYLE="color:#B36A00">200</SPAN></TD><TD ALIGN=LEFT><A NAME="rcp-NDJOIN4"></A>
+ STYLE="color:#B96600">190</SPAN></TD><TD ALIGN=LEFT><A NAME="rcp-NDJOIN4"></A>
 ( ( 1 <SPAN CLASS=math>&wedge;</SPAN> 2 <SPAN CLASS=math>&wedge;</SPAN> 3 )
 <SPAN CLASS=math>&wedge;</SPAN> 4 ) <SPAN CLASS=math>&rArr;</SPAN> ( 1 <SPAN
 CLASS=math>&wedge;</SPAN> 2 <SPAN CLASS=math>&wedge;</SPAN> 3 <SPAN
@@ -2072,6 +1973,188 @@ CLASS=math>&wedge;</SPAN> 4 ).
  CLASS=wff>&#x1D6FE;&#x2083;</SPAN> &wedge; <SPAN
  CLASS=wff>&#x1D6FE;&#x2084;</SPAN>) &rarr; <SPAN
  CLASS=wff>&#x1D711;</SPAN>)</SPAN></TD></TR>
+<TR BGCOLOR=white><TD COLSPAN=3><FONT SIZE=-3>&nbsp;</FONT></TD></TR>
+
+<TR><TD NOWRAP>Theorem</TD><TD ALIGN=CENTER><A
+ HREF="rcp-NDJOIN5.html">rcp-NDJOIN5</A>&nbsp;<SPAN CLASS=r
+ STYLE="color:#B86600">191</SPAN></TD><TD ALIGN=LEFT><A NAME="rcp-NDJOIN5"></A>
+( ( 1 <SPAN CLASS=math>&wedge;</SPAN> 2 <SPAN CLASS=math>&wedge;</SPAN> 3 <SPAN
+CLASS=math>&wedge;</SPAN> 4 ) <SPAN CLASS=math>&wedge;</SPAN> 5 ) <SPAN
+CLASS=math>&rArr;</SPAN>
+       ( 1 <SPAN CLASS=math>&wedge;</SPAN> 2 <SPAN CLASS=math>&wedge;</SPAN> 3
+<SPAN CLASS=math>&wedge;</SPAN> 4 <SPAN CLASS=math>&wedge;</SPAN> 5 ).
+
+</TD></TR><TR><TD COLSPAN=3 ALIGN=CENTER><SPAN CLASS=math><SPAN
+ CLASS=typecode>&vdash; </SPAN>(((<SPAN CLASS=wff>&#x1D6FE;&#x2081;</SPAN>
+ &wedge; <SPAN CLASS=wff>&#x1D6FE;&#x2082;</SPAN> &wedge; <SPAN
+ CLASS=wff>&#x1D6FE;&#x2083;</SPAN> &wedge; <SPAN
+ CLASS=wff>&#x1D6FE;&#x2084;</SPAN>) &wedge; <SPAN
+ CLASS=wff>&#x1D6FE;&#x2085;</SPAN>) &rarr; <SPAN
+ CLASS=wff>&#x1D711;</SPAN>)</SPAN>&nbsp;&nbsp;&nbsp; <FONT
+ FACE=sans-serif>&#8658;</FONT>&nbsp;&nbsp;&nbsp;<SPAN CLASS=math><SPAN
+ CLASS=typecode>&vdash; </SPAN>((<SPAN CLASS=wff>&#x1D6FE;&#x2081;</SPAN>
+ &wedge; <SPAN CLASS=wff>&#x1D6FE;&#x2082;</SPAN> &wedge; <SPAN
+ CLASS=wff>&#x1D6FE;&#x2083;</SPAN> &wedge; <SPAN
+ CLASS=wff>&#x1D6FE;&#x2084;</SPAN> &wedge; <SPAN
+ CLASS=wff>&#x1D6FE;&#x2085;</SPAN>) &rarr; <SPAN
+ CLASS=wff>&#x1D711;</SPAN>)</SPAN></TD></TR>
+<TR BGCOLOR=white><TD COLSPAN=3><FONT SIZE=-3>&nbsp;</FONT></TD></TR>
+
+<TR BGCOLOR="#FFFFF2"><TD COLSPAN=3><CENTER><B><A
+ NAME="mm192s"></A>4.2.2&nbsp;&nbsp;Utility Recipes.</B></CENTER>
+<P STYLE="margin-bottom:0em">
+For the rest of the chapter we will treat P3.1 - P3.20 as a new set of
+  axioms.  From here on out, we will not rely on any results from chapters 1
+  or 2 (except indirectly through the new set of axioms).
+<P STYLE="margin-bottom:0em">
+  This will allow us to track the use of <A
+HREF="ndexclmid-P3.16.html">ndexclmid-P3.16</A>&nbsp;<SPAN CLASS=r
+STYLE="color:#BF6200">181</SPAN>.  By avoiding the
+  Law of Excluded Middle, it is possible to develop an intuitionist logical
+  framework alongside the standard classical case.
+<P STYLE="margin-bottom:0em">
+  From here on, all theorems derived without reference to the Law of Excluded
+  Middle (<A HREF="ndexclmid-P3.16.html">ndexclmid-P3.16</A>&nbsp;<SPAN CLASS=r
+STYLE="color:#BF6200">181</SPAN>) will have a <SPAN CLASS=math>&dagger;</SPAN>
+in the comment.
+
+</TD></TR>
+<TR BGCOLOR=white><TD COLSPAN=3><FONT SIZE=-3>&nbsp;</FONT></TD></TR>
+<TR BGCOLOR="#FFFFF2"><TD COLSPAN=3><CENTER><B><A
+ NAME="mm192s"></A>4.2.2.1&nbsp;&nbsp;Derived Rules for Stating / Re-Stating
+ Assumptions.</B></CENTER>
+<P STYLE="margin-bottom:0em">
+These derived rules may be used in place of <A
+HREF="ndasm-P3.1.html">ndasm-P3.1</A>&nbsp;<SPAN CLASS=r
+STYLE="color:#C85B00">166</SPAN>.
+
+</TD></TR>
+<TR BGCOLOR=white><TD COLSPAN=3><FONT SIZE=-3>&nbsp;</FONT></TD></TR>
+<TR><TD NOWRAP>Theorem</TD><TD ALIGN=CENTER><A
+ HREF="rcp-NDASM1of1.html">rcp-NDASM1of1</A>&nbsp;<SPAN CLASS=r
+ STYLE="color:#B86700">192</SPAN></TD><TD ALIGN=LEFT><A
+ NAME="rcp-NDASM1of1"></A>
+( 1 ) <SPAN CLASS=math>&rarr;</SPAN> 1. <SPAN CLASS=math>&dagger;</SPAN>
+
+</TD></TR><TR><TD COLSPAN=3 ALIGN=CENTER><SPAN CLASS=math><SPAN
+ CLASS=typecode>&vdash; </SPAN>(<SPAN CLASS=wff>&#x1D6FE;&#x2081;</SPAN> &rarr;
+ <SPAN CLASS=wff>&#x1D6FE;&#x2081;</SPAN>)</SPAN></TD></TR>
+<TR BGCOLOR=white><TD COLSPAN=3><FONT SIZE=-3>&nbsp;</FONT></TD></TR>
+
+<TR><TD NOWRAP>Theorem</TD><TD ALIGN=CENTER><A
+ HREF="rcp-NDASM1of2.html">rcp-NDASM1of2</A>&nbsp;<SPAN CLASS=r
+ STYLE="color:#B76700">193</SPAN></TD><TD ALIGN=LEFT><A
+ NAME="rcp-NDASM1of2"></A>
+( 1 <SPAN CLASS=math>&wedge;</SPAN> 2 ) <SPAN CLASS=math>&rarr;</SPAN> 1. <SPAN
+CLASS=math>&dagger;</SPAN>
+
+</TD></TR><TR><TD COLSPAN=3 ALIGN=CENTER><SPAN CLASS=math><SPAN
+ CLASS=typecode>&vdash; </SPAN>((<SPAN CLASS=wff>&#x1D6FE;&#x2081;</SPAN>
+ &wedge; <SPAN CLASS=wff>&#x1D6FE;&#x2082;</SPAN>) &rarr; <SPAN
+ CLASS=wff>&#x1D6FE;&#x2081;</SPAN>)</SPAN></TD></TR>
+<TR BGCOLOR=white><TD COLSPAN=3><FONT SIZE=-3>&nbsp;</FONT></TD></TR>
+
+<TR><TD NOWRAP>Theorem</TD><TD ALIGN=CENTER><A
+ HREF="rcp-NDASM2of2.html">rcp-NDASM2of2</A>&nbsp;<SPAN CLASS=r
+ STYLE="color:#B66800">194</SPAN></TD><TD ALIGN=LEFT><A
+ NAME="rcp-NDASM2of2"></A>
+( 1 <SPAN CLASS=math>&wedge;</SPAN> 2 ) <SPAN CLASS=math>&rarr;</SPAN> 2. <SPAN
+CLASS=math>&dagger;</SPAN>
+
+</TD></TR><TR><TD COLSPAN=3 ALIGN=CENTER><SPAN CLASS=math><SPAN
+ CLASS=typecode>&vdash; </SPAN>((<SPAN CLASS=wff>&#x1D6FE;&#x2081;</SPAN>
+ &wedge; <SPAN CLASS=wff>&#x1D6FE;&#x2082;</SPAN>) &rarr; <SPAN
+ CLASS=wff>&#x1D6FE;&#x2082;</SPAN>)</SPAN></TD></TR>
+<TR BGCOLOR=white><TD COLSPAN=3><FONT SIZE=-3>&nbsp;</FONT></TD></TR>
+
+<TR><TD NOWRAP>Theorem</TD><TD ALIGN=CENTER><A
+ HREF="rcp-NDASM1of3.html">rcp-NDASM1of3</A>&nbsp;<SPAN CLASS=r
+ STYLE="color:#B66800">195</SPAN></TD><TD ALIGN=LEFT><A
+ NAME="rcp-NDASM1of3"></A>
+( 1 <SPAN CLASS=math>&wedge;</SPAN> 2 <SPAN CLASS=math>&wedge;</SPAN> 3 ) <SPAN
+CLASS=math>&rarr;</SPAN> 1. <SPAN CLASS=math>&dagger;</SPAN>
+
+</TD></TR><TR><TD COLSPAN=3 ALIGN=CENTER><SPAN CLASS=math><SPAN
+ CLASS=typecode>&vdash; </SPAN>((<SPAN CLASS=wff>&#x1D6FE;&#x2081;</SPAN>
+ &wedge; <SPAN CLASS=wff>&#x1D6FE;&#x2082;</SPAN> &wedge; <SPAN
+ CLASS=wff>&#x1D6FE;&#x2083;</SPAN>) &rarr; <SPAN
+ CLASS=wff>&#x1D6FE;&#x2081;</SPAN>)</SPAN></TD></TR>
+<TR BGCOLOR=white><TD COLSPAN=3><FONT SIZE=-3>&nbsp;</FONT></TD></TR>
+
+<TR><TD NOWRAP>Theorem</TD><TD ALIGN=CENTER><A
+ HREF="rcp-NDASM2of3.html">rcp-NDASM2of3</A>&nbsp;<SPAN CLASS=r
+ STYLE="color:#B56900">196</SPAN></TD><TD ALIGN=LEFT><A
+ NAME="rcp-NDASM2of3"></A>
+( 1 <SPAN CLASS=math>&wedge;</SPAN> 2 <SPAN CLASS=math>&wedge;</SPAN> 3 ) <SPAN
+CLASS=math>&rarr;</SPAN> 2. <SPAN CLASS=math>&dagger;</SPAN>
+
+</TD></TR><TR><TD COLSPAN=3 ALIGN=CENTER><SPAN CLASS=math><SPAN
+ CLASS=typecode>&vdash; </SPAN>((<SPAN CLASS=wff>&#x1D6FE;&#x2081;</SPAN>
+ &wedge; <SPAN CLASS=wff>&#x1D6FE;&#x2082;</SPAN> &wedge; <SPAN
+ CLASS=wff>&#x1D6FE;&#x2083;</SPAN>) &rarr; <SPAN
+ CLASS=wff>&#x1D6FE;&#x2082;</SPAN>)</SPAN></TD></TR>
+<TR BGCOLOR=white><TD COLSPAN=3><FONT SIZE=-3>&nbsp;</FONT></TD></TR>
+
+<TR><TD NOWRAP>Theorem</TD><TD ALIGN=CENTER><A
+ HREF="rcp-NDASM3of3.html">rcp-NDASM3of3</A>&nbsp;<SPAN CLASS=r
+ STYLE="color:#B56900">197</SPAN></TD><TD ALIGN=LEFT><A
+ NAME="rcp-NDASM3of3"></A>
+( 1 <SPAN CLASS=math>&wedge;</SPAN> 2 <SPAN CLASS=math>&wedge;</SPAN> 3 ) <SPAN
+CLASS=math>&rarr;</SPAN> 3. <SPAN CLASS=math>&dagger;</SPAN>
+
+</TD></TR><TR><TD COLSPAN=3 ALIGN=CENTER><SPAN CLASS=math><SPAN
+ CLASS=typecode>&vdash; </SPAN>((<SPAN CLASS=wff>&#x1D6FE;&#x2081;</SPAN>
+ &wedge; <SPAN CLASS=wff>&#x1D6FE;&#x2082;</SPAN> &wedge; <SPAN
+ CLASS=wff>&#x1D6FE;&#x2083;</SPAN>) &rarr; <SPAN
+ CLASS=wff>&#x1D6FE;&#x2083;</SPAN>)</SPAN></TD></TR>
+<TR BGCOLOR=white><TD COLSPAN=3><FONT SIZE=-3>&nbsp;</FONT></TD></TR>
+
+<TR><TD NOWRAP>Theorem</TD><TD ALIGN=CENTER><A
+ HREF="rcp-NDASM1of4.html">rcp-NDASM1of4</A>&nbsp;<SPAN CLASS=r
+ STYLE="color:#B46A00">198</SPAN></TD><TD ALIGN=LEFT><A
+ NAME="rcp-NDASM1of4"></A>
+( 1 <SPAN CLASS=math>&wedge;</SPAN> 2 <SPAN CLASS=math>&wedge;</SPAN> 3 <SPAN
+CLASS=math>&wedge;</SPAN> 4 ) <SPAN CLASS=math>&rarr;</SPAN> 1. <SPAN
+CLASS=math>&dagger;</SPAN>
+
+</TD></TR><TR><TD COLSPAN=3 ALIGN=CENTER><SPAN CLASS=math><SPAN
+ CLASS=typecode>&vdash; </SPAN>((<SPAN CLASS=wff>&#x1D6FE;&#x2081;</SPAN>
+ &wedge; <SPAN CLASS=wff>&#x1D6FE;&#x2082;</SPAN> &wedge; <SPAN
+ CLASS=wff>&#x1D6FE;&#x2083;</SPAN> &wedge; <SPAN
+ CLASS=wff>&#x1D6FE;&#x2084;</SPAN>) &rarr; <SPAN
+ CLASS=wff>&#x1D6FE;&#x2081;</SPAN>)</SPAN></TD></TR>
+<TR BGCOLOR=white><TD COLSPAN=3><FONT SIZE=-3>&nbsp;</FONT></TD></TR>
+
+<TR><TD NOWRAP>Theorem</TD><TD ALIGN=CENTER><A
+ HREF="rcp-NDASM2of4.html">rcp-NDASM2of4</A>&nbsp;<SPAN CLASS=r
+ STYLE="color:#B36A00">199</SPAN></TD><TD ALIGN=LEFT><A
+ NAME="rcp-NDASM2of4"></A>
+( 1 <SPAN CLASS=math>&wedge;</SPAN> 2 <SPAN CLASS=math>&wedge;</SPAN> 3 <SPAN
+CLASS=math>&wedge;</SPAN> 4 ) <SPAN CLASS=math>&rarr;</SPAN> 2. <SPAN
+CLASS=math>&dagger;</SPAN>
+
+</TD></TR><TR><TD COLSPAN=3 ALIGN=CENTER><SPAN CLASS=math><SPAN
+ CLASS=typecode>&vdash; </SPAN>((<SPAN CLASS=wff>&#x1D6FE;&#x2081;</SPAN>
+ &wedge; <SPAN CLASS=wff>&#x1D6FE;&#x2082;</SPAN> &wedge; <SPAN
+ CLASS=wff>&#x1D6FE;&#x2083;</SPAN> &wedge; <SPAN
+ CLASS=wff>&#x1D6FE;&#x2084;</SPAN>) &rarr; <SPAN
+ CLASS=wff>&#x1D6FE;&#x2082;</SPAN>)</SPAN></TD></TR>
+<TR BGCOLOR=white><TD COLSPAN=3><FONT SIZE=-3>&nbsp;</FONT></TD></TR>
+
+<TR><TD NOWRAP>Theorem</TD><TD ALIGN=CENTER><A
+ HREF="rcp-NDASM3of4.html">rcp-NDASM3of4</A>&nbsp;<SPAN CLASS=r
+ STYLE="color:#B36B00">200</SPAN></TD><TD ALIGN=LEFT><A
+ NAME="rcp-NDASM3of4"></A>
+( 1 <SPAN CLASS=math>&wedge;</SPAN> 2 <SPAN CLASS=math>&wedge;</SPAN> 3 <SPAN
+CLASS=math>&wedge;</SPAN> 4 ) <SPAN CLASS=math>&rarr;</SPAN> 3. <SPAN
+CLASS=math>&dagger;</SPAN>
+
+</TD></TR><TR><TD COLSPAN=3 ALIGN=CENTER><SPAN CLASS=math><SPAN
+ CLASS=typecode>&vdash; </SPAN>((<SPAN CLASS=wff>&#x1D6FE;&#x2081;</SPAN>
+ &wedge; <SPAN CLASS=wff>&#x1D6FE;&#x2082;</SPAN> &wedge; <SPAN
+ CLASS=wff>&#x1D6FE;&#x2083;</SPAN> &wedge; <SPAN
+ CLASS=wff>&#x1D6FE;&#x2084;</SPAN>) &rarr; <SPAN
+ CLASS=wff>&#x1D6FE;&#x2083;</SPAN>)</SPAN></TD></TR>
 </TABLE></CENTER>
 
 <TABLE BORDER=0 WIDTH="100%">
@@ -2095,17 +2178,17 @@ CLASS=math>&wedge;</SPAN> 4 ).
 Jump to page: 
 <A HREF="mmtheorems.html">Contents</A>&nbsp;
 <A HREF="mmtheorems1.html">1</A>&nbsp;<SPAN CLASS=r STYLE="color:#FB0000">1</SPAN>-<SPAN CLASS=r STYLE="color:#E63800">100</SPAN>
-2&nbsp;<SPAN CLASS=r STYLE="color:#E63800">101</SPAN>-<SPAN CLASS=r STYLE="color:#B36A00">200</SPAN>
-<A HREF="mmtheorems3.html">3</A>&nbsp;<SPAN CLASS=r STYLE="color:#B36B00">201</SPAN>-<SPAN CLASS=r STYLE="color:#788500">300</SPAN>
-<A HREF="mmtheorems4.html">4</A>&nbsp;<SPAN CLASS=r STYLE="color:#778500">301</SPAN>-<SPAN CLASS=r STYLE="color:#3F8F00">400</SPAN>
-<A HREF="mmtheorems5.html">5</A>&nbsp;<SPAN CLASS=r STYLE="color:#3E8F00">401</SPAN>-<SPAN CLASS=r STYLE="color:#009223">500</SPAN>
-<A HREF="mmtheorems6.html">6</A>&nbsp;<SPAN CLASS=r STYLE="color:#009224">501</SPAN>-<SPAN CLASS=r STYLE="color:#008F79">600</SPAN>
-<A HREF="mmtheorems7.html">7</A>&nbsp;<SPAN CLASS=r STYLE="color:#008F7A">601</SPAN>-<SPAN CLASS=r STYLE="color:#0083E5">700</SPAN>
-<A HREF="mmtheorems8.html">8</A>&nbsp;<SPAN CLASS=r STYLE="color:#0083E6">701</SPAN>-<SPAN CLASS=r STYLE="color:#656FFF">800</SPAN>
-<A HREF="mmtheorems9.html">9</A>&nbsp;<SPAN CLASS=r STYLE="color:#666EFF">801</SPAN>-<SPAN CLASS=r STYLE="color:#AD48FF">900</SPAN>
-<A HREF="mmtheorems10.html">10</A>&nbsp;<SPAN CLASS=r STYLE="color:#AD48FF">901</SPAN>-<SPAN CLASS=r STYLE="color:#D214EE">1000</SPAN>
-<A HREF="mmtheorems11.html">11</A>&nbsp;<SPAN CLASS=r STYLE="color:#D214EE">1001</SPAN>-<SPAN CLASS=r STYLE="color:#EA00A3">1100</SPAN>
-<A HREF="mmtheorems12.html">12</A>&nbsp;<SPAN CLASS=r STYLE="color:#EA00A2">1101</SPAN>-<SPAN CLASS=r STYLE="color:#EE0084">1131</SPAN>
+2&nbsp;<SPAN CLASS=r STYLE="color:#E63900">101</SPAN>-<SPAN CLASS=r STYLE="color:#B36B00">200</SPAN>
+<A HREF="mmtheorems3.html">3</A>&nbsp;<SPAN CLASS=r STYLE="color:#B26B00">201</SPAN>-<SPAN CLASS=r STYLE="color:#778500">300</SPAN>
+<A HREF="mmtheorems4.html">4</A>&nbsp;<SPAN CLASS=r STYLE="color:#778500">301</SPAN>-<SPAN CLASS=r STYLE="color:#3D8F00">400</SPAN>
+<A HREF="mmtheorems5.html">5</A>&nbsp;<SPAN CLASS=r STYLE="color:#3D8F00">401</SPAN>-<SPAN CLASS=r STYLE="color:#009226">500</SPAN>
+<A HREF="mmtheorems6.html">6</A>&nbsp;<SPAN CLASS=r STYLE="color:#009227">501</SPAN>-<SPAN CLASS=r STYLE="color:#008F7B">600</SPAN>
+<A HREF="mmtheorems7.html">7</A>&nbsp;<SPAN CLASS=r STYLE="color:#008F7C">601</SPAN>-<SPAN CLASS=r STYLE="color:#0182E8">700</SPAN>
+<A HREF="mmtheorems8.html">8</A>&nbsp;<SPAN CLASS=r STYLE="color:#0182E9">701</SPAN>-<SPAN CLASS=r STYLE="color:#696EFF">800</SPAN>
+<A HREF="mmtheorems9.html">9</A>&nbsp;<SPAN CLASS=r STYLE="color:#6A6DFF">801</SPAN>-<SPAN CLASS=r STYLE="color:#AF46FF">900</SPAN>
+<A HREF="mmtheorems10.html">10</A>&nbsp;<SPAN CLASS=r STYLE="color:#AF45FF">901</SPAN>-<SPAN CLASS=r STYLE="color:#D312EC">1000</SPAN>
+<A HREF="mmtheorems11.html">11</A>&nbsp;<SPAN CLASS=r STYLE="color:#D411EC">1001</SPAN>-<SPAN CLASS=r STYLE="color:#EB009D">1100</SPAN>
+<A HREF="mmtheorems12.html">12</A>&nbsp;<SPAN CLASS=r STYLE="color:#EB009C">1101</SPAN>-<SPAN CLASS=r STYLE="color:#EE0084">1125</SPAN>
 <HR NOSHADE SIZE=1>
 <TABLE BORDER=0 WIDTH="100%">
   <TR>

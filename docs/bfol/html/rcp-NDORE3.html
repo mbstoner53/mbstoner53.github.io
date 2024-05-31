@@ -16,10 +16,6 @@ img { margin-bottom: -4px }
    }
 -->
 </STYLE>
-<link rel="stylesheet" 
-media="screen" 
-href="https://fontlibrary.org/en/face/xits-math" 
-type="text/css"/> 
 <STYLE TYPE="text/css"> 
 <!--
   .wff { color: blue; } 
@@ -27,7 +23,11 @@ type="text/css"/>
   .term { color: green; } 
   .class { color: #CC33CC; } 
   .typecode { color: gray; } 
-  .math { font-family: XITSMathRegular; } 
+  @font-face {
+     font-family: XITSMath-Regular; 
+     src: url(../fonts/xits-math.woff); 
+  } 
+  .math { font-family: XITSMath-Regular; } 
 -->
 </STYLE>
 <TITLE>rcp-NDORE3 - bfol.mm Proof Explorer</TITLE>
@@ -76,7 +76,7 @@ bfol.mm Proof Explorer
 <HR NOSHADE SIZE=1>
 <CENTER><B><FONT SIZE="+1">Theorem <FONT
 COLOR="#006633">rcp-NDORE3</FONT></FONT></B>&nbsp;<SPAN CLASS=r
-STYLE="color:#987A00">246</SPAN></CENTER>
+STYLE="color:#9D7700">236</SPAN></CENTER>
 <CENTER><TABLE><TR><TD ALIGN=LEFT><B>Description: </B><SPAN
 CLASS=math>&vee;</SPAN> Elimination Recipe. <SPAN
 CLASS=math>&dagger;</SPAN></TD></TR></TABLE></CENTER>
@@ -132,7 +132,7 @@ CLASS=wff>&#x1D6FE;&#x2082;</SPAN> &wedge; <SPAN CLASS=wff>&#x1D711;</SPAN>)
 <TR ALIGN=LEFT><TD>2</TD><TD><A HREF="#1">1</A></TD><TD><A
 HREF="rcp-NDSEP3.html"
 TITLE="( 1 `/\` 2 `/\` 3 ) `=>` ( ( 1 `/\` 2 ) `/\` 3 ).">rcp-NDSEP3</A>&nbsp;<SPAN
-CLASS=r STYLE="color:#B66800">196</SPAN></TD><TD><A NAME="2"></A>
+CLASS=r STYLE="color:#BB6400">186</SPAN></TD><TD><A NAME="2"></A>
 <SPAN CLASS=i>. 2</SPAN>
 <SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN>(((<SPAN
 CLASS=wff>&#x1D6FE;&#x2081;</SPAN> &wedge; <SPAN
@@ -148,7 +148,7 @@ CLASS=wff>&#x1D6FE;&#x2082;</SPAN> &wedge; <SPAN CLASS=wff>&#x1D713;</SPAN>)
 <TR ALIGN=LEFT><TD>4</TD><TD><A HREF="#3">3</A></TD><TD><A
 HREF="rcp-NDSEP3.html"
 TITLE="( 1 `/\` 2 `/\` 3 ) `=>` ( ( 1 `/\` 2 ) `/\` 3 ).">rcp-NDSEP3</A>&nbsp;<SPAN
-CLASS=r STYLE="color:#B66800">196</SPAN></TD><TD><A NAME="4"></A>
+CLASS=r STYLE="color:#BB6400">186</SPAN></TD><TD><A NAME="4"></A>
 <SPAN CLASS=i>. 2</SPAN>
 <SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN>(((<SPAN
 CLASS=wff>&#x1D6FE;&#x2081;</SPAN> &wedge; <SPAN
@@ -164,7 +164,7 @@ CLASS=wff>&#x1D6FE;&#x2082;</SPAN>) &rarr; (<SPAN CLASS=wff>&#x1D711;</SPAN>
 <TR ALIGN=LEFT><TD>6</TD><TD><A HREF="#2">2</A>, <A HREF="#4">4</A>, <A
 HREF="#5">5</A></TD><TD><A HREF="ndore-P3.12.html"
 TITLE="Natural Deduction: '`\/`' Elimination Rule. If... 1.) after assuming '`w_ph`' we...">ndore-P3.12</A>&nbsp;<SPAN
-CLASS=r STYLE="color:#BB6400">187</SPAN></TD><TD><A NAME="6"></A>
+CLASS=r STYLE="color:#C16000">177</SPAN></TD><TD><A NAME="6"></A>
 <SPAN CLASS=i>1</SPAN>
 <SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN>((<SPAN
 CLASS=wff>&#x1D6FE;&#x2081;</SPAN> &wedge; <SPAN
@@ -181,11 +181,11 @@ STYLE="color:#CC33CC;font-style:normal">class</SPAN></FONT></TD></TR>
 &rarr; </SPAN><A HREF="wff-imp.html">wff-imp</A>&nbsp;<SPAN CLASS=r
 STYLE="color:#FA0200">10</SPAN> &nbsp;<SPAN CLASS=math> &wedge; </SPAN><A
 HREF="wff-and.html">wff-and</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#D84B00">133</SPAN> &nbsp;<SPAN CLASS=math> &vee; </SPAN><A
+STYLE="color:#D94B00">132</SPAN> &nbsp;<SPAN CLASS=math> &vee; </SPAN><A
 HREF="wff-or.html">wff-or</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#CF5500">154</SPAN> &nbsp;<SPAN CLASS=math> &wedge; </SPAN><A
+STYLE="color:#D35100">144</SPAN> &nbsp;<SPAN CLASS=math> &wedge; </SPAN><A
 HREF="wff-rcp-AND3.html">wff-rcp-AND3</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#C65C00">170</SPAN></FONT></TD></TR>
+STYLE="color:#CB5800">160</SPAN></FONT></TD></TR>
 <TR><TD ALIGN=LEFT><FONT SIZE=-1><B>This theorem was proved from axioms:</B>
 &nbsp;<A HREF="ax-L1.html">ax-L1</A>&nbsp;<SPAN CLASS=r
 STYLE="color:#FA0200">11</SPAN> &nbsp;<A HREF="ax-L2.html">ax-L2</A>&nbsp;<SPAN
@@ -195,32 +195,32 @@ HREF="ax-L3.html">ax-L3</A>&nbsp;<SPAN CLASS=r STYLE="color:#F90300">13</SPAN>
 STYLE="color:#F90300">14</SPAN></FONT></TD></TR>
 <TR><TD ALIGN=LEFT><FONT SIZE=-1><B>This theorem depends on definitions:</B>
 &nbsp;<A HREF="df-bi-D2.1.html">df-bi-D2.1</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#E43C00">106</SPAN> &nbsp;<A
+STYLE="color:#E33D00">107</SPAN> &nbsp;<A
 HREF="df-and-D2.2.html">df-and-D2.2</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#D84C00">134</SPAN> &nbsp;<A
+STYLE="color:#D84C00">133</SPAN> &nbsp;<A
 HREF="df-or-D2.3.html">df-or-D2.3</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#CE5500">155</SPAN> &nbsp;<A
+STYLE="color:#D25100">145</SPAN> &nbsp;<A
 HREF="df-rcp-AND3.html">df-rcp-AND3</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#C55C00">171</SPAN></FONT></TD></TR>
+STYLE="color:#CB5800">161</SPAN></FONT></TD></TR>
 <TR><TD ALIGN=LEFT><FONT SIZE=-1><B>This theorem is referenced by:</B> &nbsp;<A
 HREF="orassoc-P3.38-L1.html">orassoc-P3.38-L1</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#6C8800">326</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#6F8700">320</SPAN> &nbsp;<A
 HREF="orassoc-P3.38-L2.html">orassoc-P3.38-L2</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#6C8800">327</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#6E8700">321</SPAN> &nbsp;<A
 HREF="suborl-P3.43a-L1.html">suborl-P3.43a-L1</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#5E8B00">351</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#608A00">345</SPAN> &nbsp;<A
 HREF="orasim-P3.48-L1.html">orasim-P3.48-L1</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#558D00">365</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#588C00">359</SPAN> &nbsp;<A
 HREF="joinimandinc-P4.8a.html">joinimandinc-P4.8a</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#3D8F00">403</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#3F8F00">397</SPAN> &nbsp;<A
 HREF="joinimor-P4.8c.html">joinimor-P4.8c</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#389000">409</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#3B9000">403</SPAN> &nbsp;<A
 HREF="dmorgarev-L4.2.html">dmorgarev-L4.2</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#139307">459</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#169305">453</SPAN> &nbsp;<A
 HREF="andoveror-P4.27-L1.html">andoveror-P4.27-L1</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#0F930A">465</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#129308">459</SPAN> &nbsp;<A
 HREF="oroverand-P4.27-L4.html">oroverand-P4.27-L4</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#0C930C">469</SPAN></FONT></TD></TR>
+&nbsp;<SPAN CLASS=r STYLE="color:#0F930A">463</SPAN></FONT></TD></TR>
 </TABLE></CENTER>
 <TABLE BORDER=0 WIDTH="100%">
 <TR><TD WIDTH="25%">&nbsp;</TD>

@@ -16,10 +16,6 @@ img { margin-bottom: -4px }
    }
 -->
 </STYLE>
-<link rel="stylesheet" 
-media="screen" 
-href="https://fontlibrary.org/en/face/xits-math" 
-type="text/css"/> 
 <STYLE TYPE="text/css"> 
 <!--
   .wff { color: blue; } 
@@ -27,7 +23,11 @@ type="text/css"/>
   .term { color: green; } 
   .class { color: #CC33CC; } 
   .typecode { color: gray; } 
-  .math { font-family: XITSMathRegular; } 
+  @font-face {
+     font-family: XITSMath-Regular; 
+     src: url(../fonts/xits-math.woff); 
+  } 
+  .math { font-family: XITSMath-Regular; } 
 -->
 </STYLE>
 <TITLE>bifwd-P2.5a.2AC.SH - bfol.mm Proof Explorer</TITLE>
@@ -76,10 +76,10 @@ bfol.mm Proof Explorer
 <HR NOSHADE SIZE=1>
 <CENTER><B><FONT SIZE="+1">Theorem <FONT
 COLOR="#006633">bifwd-P2.5a.2AC.SH</FONT></FONT></B>&nbsp;<SPAN CLASS=r
-STYLE="color:#E14000">113</SPAN></CENTER>
+STYLE="color:#E14100">114</SPAN></CENTER>
 <CENTER><TABLE><TR><TD ALIGN=LEFT><B>Description: </B>Another Deductive form of
 <A HREF="bifwd-P2.5a.html">bifwd-P2.5a</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#E23E00">110</SPAN>.</TD></TR></TABLE></CENTER>
+STYLE="color:#E23F00">111</SPAN>.</TD></TR></TABLE></CENTER>
 
 <CENTER><TABLE BORDER CELLSPACING=0 BGCOLOR="#EEFFFA"
 SUMMARY="Hypothesis">
@@ -122,7 +122,7 @@ CLASS=wff>&#x1D6FE;&#x2082;</SPAN> &rarr; (<SPAN CLASS=wff>&#x1D711;</SPAN>
 &harr; <SPAN CLASS=wff>&#x1D713;</SPAN>)))</SPAN></TD></TR>
 <TR ALIGN=LEFT><TD>2</TD><TD>&nbsp;</TD><TD><A HREF="bifwd-P2.5a.html"
 TITLE="'`<->`' Forward Implication.">bifwd-P2.5a</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#E23E00">110</SPAN></TD><TD><A NAME="2"></A>
+STYLE="color:#E23F00">111</SPAN></TD><TD><A NAME="2"></A>
 <SPAN CLASS=i>. . . . 5</SPAN>
 <SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN>((<SPAN
 CLASS=wff>&#x1D711;</SPAN> &harr; <SPAN CLASS=wff>&#x1D713;</SPAN>) &rarr;
@@ -178,7 +178,7 @@ STYLE="color:#CC33CC;font-style:normal">class</SPAN></FONT></TD></TR>
 &rarr; </SPAN><A HREF="wff-imp.html">wff-imp</A>&nbsp;<SPAN CLASS=r
 STYLE="color:#FA0200">10</SPAN> &nbsp;<SPAN CLASS=math> &harr; </SPAN><A
 HREF="wff-bi.html">wff-bi</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#E53A00">103</SPAN></FONT></TD></TR>
+STYLE="color:#E43B00">104</SPAN></FONT></TD></TR>
 <TR><TD ALIGN=LEFT><FONT SIZE=-1><B>This theorem was proved from axioms:</B>
 &nbsp;<A HREF="ax-L1.html">ax-L1</A>&nbsp;<SPAN CLASS=r
 STYLE="color:#FA0200">11</SPAN> &nbsp;<A HREF="ax-L2.html">ax-L2</A>&nbsp;<SPAN
@@ -188,10 +188,10 @@ HREF="ax-L3.html">ax-L3</A>&nbsp;<SPAN CLASS=r STYLE="color:#F90300">13</SPAN>
 STYLE="color:#F90300">14</SPAN></FONT></TD></TR>
 <TR><TD ALIGN=LEFT><FONT SIZE=-1><B>This theorem depends on definitions:</B>
 &nbsp;<A HREF="df-bi-D2.1.html">df-bi-D2.1</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#E43C00">106</SPAN></FONT></TD></TR>
+STYLE="color:#E33D00">107</SPAN></FONT></TD></TR>
 <TR><TD ALIGN=LEFT><FONT SIZE=-1><B>This theorem is referenced by:</B> &nbsp;<A
 HREF="bitrns-P2.6c.html">bitrns-P2.6c</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#DC4800">125</SPAN></FONT></TD></TR>
+&nbsp;<SPAN CLASS=r STYLE="color:#DB4900">126</SPAN></FONT></TD></TR>
 </TABLE></CENTER>
 <TABLE BORDER=0 WIDTH="100%">
 <TR><TD WIDTH="25%">&nbsp;</TD>

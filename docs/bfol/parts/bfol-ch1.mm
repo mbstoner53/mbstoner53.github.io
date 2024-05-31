@@ -15,6 +15,7 @@ $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
   Some Simple Proofs.
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+  SH = Separate Hypothesis.
 $)
 
 ${
@@ -208,6 +209,8 @@ $(
 -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.
   Application of Proof Recipes.
 -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.
+
+  AC = Add Context.
 $)
 
 ${
@@ -375,6 +378,20 @@ ${
     $.
 $}
 
+${
+    mpt-P1.8.3AC.2SH.1 $e |- ( w_ga1 -> ( w_ga2 -> ( w_ga3 -> w_ph ) ) ) $.
+
+    mpt-P1.8.3AC.2SH.2 $e
+        |- ( w_ga1 -> ( w_ga2 -> ( w_ga3 -> ( w_ph -> w_ps ) ) ) )
+    $.
+
+    $( Another Deductive Form of ~mpt-P1.8 . $)
+    mpt-P1.8.3AC.2SH $p |- ( w_ga1 -> ( w_ga2 -> ( w_ga3 -> w_ps ) ) ) $=
+        ( wff-imp mpt-P1.8 axL1.SH rcp-FR3.SH ax-MP )
+        CDEABHZHHHCDEBHHHGMBEDCCDEAHHHCDEMBHZHHHFANEDCDEANHZHZHCPDOEABIJJJKLKL
+    $.
+$}
+
 $( ------------------------------------------------------------------------- $)
 
 ${
@@ -500,10 +517,9 @@ $}
 $( ------------------------------------------------------------------------- $)
 
 ${
-    $( Double Negation Law A (excluded middle). 
+    $( Double Negation Law A. 
 
-       This law is equivalent to the excluded middle and cannot be proven in
-       the intuitionist system. The other related law is ~dneg-P1.13b . $)
+       The other related law is ~dneg-P1.13b . $)
     dneg-P1.13a $p |- ( -. -. w_ph -> w_ph ) $= 
         ( wff-neg wff-imp poe-P1.11a clav-P1.12 syl-P1.2 ) ABZBGACAGADAEF 
     $.
@@ -514,9 +530,7 @@ $( ------------------------------------------------------------------------- $)
 ${
     $( Double Negation Law B. 
 
-       This law is not related to the excluded middle and can be proven in the
-       intuitionist system. The other related law is ~dneg-P1.13a . 
-    $)
+       The other related law is ~dneg-P1.13a . $)
     dneg-P1.13b $p |- ( w_ph -> -. -. w_ph ) $= 
         ( wff-neg dneg-P1.13a axL3.SH ) ABZBAECD 
     $.

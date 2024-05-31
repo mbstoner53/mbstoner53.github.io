@@ -16,10 +16,6 @@ img { margin-bottom: -4px }
    }
 -->
 </STYLE>
-<link rel="stylesheet" 
-media="screen" 
-href="https://fontlibrary.org/en/face/xits-math" 
-type="text/css"/> 
 <STYLE TYPE="text/css"> 
 <!--
   .wff { color: blue; } 
@@ -27,7 +23,11 @@ type="text/css"/>
   .term { color: green; } 
   .class { color: #CC33CC; } 
   .typecode { color: gray; } 
-  .math { font-family: XITSMathRegular; } 
+  @font-face {
+     font-family: XITSMath-Regular; 
+     src: url(../fonts/xits-math.woff); 
+  } 
+  .math { font-family: XITSMath-Regular; } 
 -->
 </STYLE>
 <TITLE>wff-exists - bfol.mm Proof Explorer</TITLE>
@@ -52,7 +52,7 @@ bfol.mm Proof Explorer
       &lt; Previous</A>&nbsp;&nbsp;
       <A HREF="df-exists-D5.1.html">Next &gt;</A>
       </FONT><FONT FACE=sans-serif SIZE=-2>
-      <BR><A HREF="mmtheorems7.html#wff-exists">Nearby theorems</A>
+      <BR><A HREF="mmtheorems6.html#wff-exists">Nearby theorems</A>
       </FONT>
     </TD>
   </TR>
@@ -76,7 +76,7 @@ bfol.mm Proof Explorer
 <HR NOSHADE SIZE=1>
 <CENTER><B><FONT SIZE="+1">Syntax Definition <FONT
 COLOR="#006633">wff-exists</FONT></FONT></B>&nbsp;<SPAN CLASS=r
-STYLE="color:#008F7A">601</SPAN></CENTER>
+STYLE="color:#008F77">595</SPAN></CENTER>
 <CENTER><TABLE><TR><TD ALIGN=LEFT><B>Description: </B>Extend WFF definition to
 include the existential quantifier '<SPAN
 CLASS=math>&exist;</SPAN>'.</TD></TR></TABLE></CENTER>
@@ -107,7 +107,7 @@ CLASS=objvar>&#x1D465;</SPAN><SPAN CLASS=wff>&#x1D711;</SPAN></SPAN></TD></TR>
 <HR NOSHADE SIZE=1>
 <CENTER>See definition <A
 HREF="df-exists-D5.1.html">df-exists-D5.1</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#008F7B">602</SPAN> for more information.</CENTER><HR NOSHADE
+STYLE="color:#008F78">596</SPAN> for more information.</CENTER><HR NOSHADE
 SIZE=1>
 <CENTER><TABLE CELLSPACING=7><TR><TD ALIGN=LEFT><FONT SIZE=-1><B>Colors of
 variables:</B>  <SPAN CLASS=typecode

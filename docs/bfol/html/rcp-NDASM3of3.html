@@ -16,10 +16,6 @@ img { margin-bottom: -4px }
    }
 -->
 </STYLE>
-<link rel="stylesheet" 
-media="screen" 
-href="https://fontlibrary.org/en/face/xits-math" 
-type="text/css"/> 
 <STYLE TYPE="text/css"> 
 <!--
   .wff { color: blue; } 
@@ -27,7 +23,11 @@ type="text/css"/>
   .term { color: green; } 
   .class { color: #CC33CC; } 
   .typecode { color: gray; } 
-  .math { font-family: XITSMathRegular; } 
+  @font-face {
+     font-family: XITSMath-Regular; 
+     src: url(../fonts/xits-math.woff); 
+  } 
+  .math { font-family: XITSMath-Regular; } 
 -->
 </STYLE>
 <TITLE>rcp-NDASM3of3 - bfol.mm Proof Explorer</TITLE>
@@ -52,7 +52,7 @@ bfol.mm Proof Explorer
       &lt; Previous</A>&nbsp;&nbsp;
       <A HREF="rcp-NDASM1of4.html">Next &gt;</A>
       </FONT><FONT FACE=sans-serif SIZE=-2>
-      <BR><A HREF="mmtheorems3.html#rcp-NDASM3of3">Nearby theorems</A>
+      <BR><A HREF="mmtheorems2.html#rcp-NDASM3of3">Nearby theorems</A>
       </FONT>
     </TD>
   </TR>
@@ -76,7 +76,7 @@ bfol.mm Proof Explorer
 <HR NOSHADE SIZE=1>
 <CENTER><B><FONT SIZE="+1">Theorem <FONT
 COLOR="#006633">rcp-NDASM3of3</FONT></FONT></B>&nbsp;<SPAN CLASS=r
-STYLE="color:#AF6D00">207</SPAN></CENTER>
+STYLE="color:#B56900">197</SPAN></CENTER>
 <CENTER><TABLE><TR><TD ALIGN=LEFT><B>Description: </B>( 1 <SPAN
 CLASS=math>&wedge;</SPAN> 2 <SPAN CLASS=math>&wedge;</SPAN> 3 ) <SPAN
 CLASS=math>&rarr;</SPAN> 3. <SPAN
@@ -105,7 +105,7 @@ SUMMARY="Proof of theorem">
 </TH><TH>Expression</TH></TR>
 <TR ALIGN=LEFT><TD>1</TD><TD>&nbsp;</TD><TD><A HREF="ndasm-P3.1.html"
 TITLE="Natural Deduction: State Assumption. This rule is simply stating an assumption.">ndasm-P3.1</A>&nbsp;<SPAN
-CLASS=r STYLE="color:#C25F00">176</SPAN></TD><TD><A NAME="1"></A>
+CLASS=r STYLE="color:#C85B00">166</SPAN></TD><TD><A NAME="1"></A>
 <SPAN CLASS=i>. 2</SPAN>
 <SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN>(((<SPAN
 CLASS=wff>&#x1D6FE;&#x2081;</SPAN> &wedge; <SPAN
@@ -115,7 +115,7 @@ CLASS=wff>&#x1D6FE;&#x2083;</SPAN>)</SPAN></TD></TR>
 <TR ALIGN=LEFT><TD>2</TD><TD><A HREF="#1">1</A></TD><TD><A
 HREF="rcp-NDJOIN3.html"
 TITLE="( ( 1 `/\` 2 ) `/\` 3 ) `=>` ( 1 `/\` 2 `/\` 3 ).">rcp-NDJOIN3</A>&nbsp;<SPAN
-CLASS=r STYLE="color:#B46A00">199</SPAN></TD><TD><A NAME="2"></A>
+CLASS=r STYLE="color:#BA6500">189</SPAN></TD><TD><A NAME="2"></A>
 <SPAN CLASS=i>1</SPAN>
 <SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN>((<SPAN
 CLASS=wff>&#x1D6FE;&#x2081;</SPAN> &wedge; <SPAN
@@ -133,9 +133,9 @@ STYLE="color:#CC33CC;font-style:normal">class</SPAN></FONT></TD></TR>
 &rarr; </SPAN><A HREF="wff-imp.html">wff-imp</A>&nbsp;<SPAN CLASS=r
 STYLE="color:#FA0200">10</SPAN> &nbsp;<SPAN CLASS=math> &wedge; </SPAN><A
 HREF="wff-and.html">wff-and</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#D84B00">133</SPAN> &nbsp;<SPAN CLASS=math> &wedge; </SPAN><A
+STYLE="color:#D94B00">132</SPAN> &nbsp;<SPAN CLASS=math> &wedge; </SPAN><A
 HREF="wff-rcp-AND3.html">wff-rcp-AND3</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#C65C00">170</SPAN></FONT></TD></TR>
+STYLE="color:#CB5800">160</SPAN></FONT></TD></TR>
 <TR><TD ALIGN=LEFT><FONT SIZE=-1><B>This theorem was proved from axioms:</B>
 &nbsp;<A HREF="ax-L1.html">ax-L1</A>&nbsp;<SPAN CLASS=r
 STYLE="color:#FA0200">11</SPAN> &nbsp;<A HREF="ax-L2.html">ax-L2</A>&nbsp;<SPAN
@@ -145,58 +145,60 @@ HREF="ax-L3.html">ax-L3</A>&nbsp;<SPAN CLASS=r STYLE="color:#F90300">13</SPAN>
 STYLE="color:#F90300">14</SPAN></FONT></TD></TR>
 <TR><TD ALIGN=LEFT><FONT SIZE=-1><B>This theorem depends on definitions:</B>
 &nbsp;<A HREF="df-bi-D2.1.html">df-bi-D2.1</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#E43C00">106</SPAN> &nbsp;<A
+STYLE="color:#E33D00">107</SPAN> &nbsp;<A
 HREF="df-and-D2.2.html">df-and-D2.2</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#D84C00">134</SPAN> &nbsp;<A
+STYLE="color:#D84C00">133</SPAN> &nbsp;<A
 HREF="df-rcp-AND3.html">df-rcp-AND3</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#C55C00">171</SPAN></FONT></TD></TR>
+STYLE="color:#CB5800">161</SPAN></FONT></TD></TR>
 <TR><TD ALIGN=LEFT><FONT SIZE=-1><B>This theorem is referenced by:</B> &nbsp;<A
 HREF="rcp-NDASM3of4.html">rcp-NDASM3of4</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#AD6E00">210</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#B36B00">200</SPAN> &nbsp;<A
 HREF="ndnegi-P3.3.CL.html">ndnegi-P3.3.CL</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#947B00">252</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#9A7900">242</SPAN> &nbsp;<A
 HREF="ndore-P3.12.CL.html">ndore-P3.12.CL</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#907D00">257</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#967B00">247</SPAN> &nbsp;<A
 HREF="axL2-P3.22.html">axL2-P3.22</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#8C7E00">264</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#917C00">254</SPAN> &nbsp;<A
 HREF="imcomm-P3.27.html">imcomm-P3.27</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#848100">275</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#8A7F00">265</SPAN> &nbsp;<A
 HREF="trnsp-P3.31a.html">trnsp-P3.31a</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#7C8300">289</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#818200">279</SPAN> &nbsp;<A
 HREF="trnsp-P3.31b.html">trnsp-P3.31b</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#7B8400">292</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#7F8200">282</SPAN> &nbsp;<A
 HREF="trnsp-P3.31c.html">trnsp-P3.31c</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#7A8400">295</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#7D8300">285</SPAN> &nbsp;<A
 HREF="trnsp-P3.31d.html">trnsp-P3.31d</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#798400">298</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#7C8300">288</SPAN> &nbsp;<A
 HREF="export-P3.34b.html">export-P3.34b</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#718700">317</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#748600">307</SPAN> &nbsp;<A
+HREF="example-E3.2b.html">example-E3.2b</A>
+&nbsp;<SPAN CLASS=r STYLE="color:#728600">312</SPAN> &nbsp;<A
 HREF="orassoc-P3.38-L1.html">orassoc-P3.38-L1</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#6C8800">326</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#6F8700">320</SPAN> &nbsp;<A
 HREF="orassoc-P3.38-L2.html">orassoc-P3.38-L2</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#6C8800">327</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#6E8700">321</SPAN> &nbsp;<A
 HREF="suborl-P3.43a-L1.html">suborl-P3.43a-L1</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#5E8B00">351</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#608A00">345</SPAN> &nbsp;<A
 HREF="orasim-P3.48-L1.html">orasim-P3.48-L1</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#558D00">365</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#588C00">359</SPAN> &nbsp;<A
 HREF="joinimandinc-P4.8a.html">joinimandinc-P4.8a</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#3D8F00">403</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#3F8F00">397</SPAN> &nbsp;<A
 HREF="joinimor-P4.8c.html">joinimor-P4.8c</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#389000">409</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#3B9000">403</SPAN> &nbsp;<A
 HREF="sepimorr-P4.9c.html">sepimorr-P4.9c</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#329000">418</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#359000">412</SPAN> &nbsp;<A
 HREF="sepimandl-P4.9d.html">sepimandl-P4.9d</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#309100">421</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#329000">415</SPAN> &nbsp;<A
 HREF="dmorgarev-L4.2.html">dmorgarev-L4.2</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#139307">459</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#169305">453</SPAN> &nbsp;<A
 HREF="andoveror-P4.27-L1.html">andoveror-P4.27-L1</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#0F930A">465</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#129308">459</SPAN> &nbsp;<A
 HREF="oroverand-P4.27-L4.html">oroverand-P4.27-L4</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#0C930C">469</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#0F930A">463</SPAN> &nbsp;<A
 HREF="oroverim-P4.28-L2.html">oroverim-P4.28-L2</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#0A930E">472</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#0C930C">466</SPAN> &nbsp;<A
 HREF="qimeqex-P7-L2.html">qimeqex-P7-L2</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#DF00D1">1061</SPAN></FONT></TD></TR>
+&nbsp;<SPAN CLASS=r STYLE="color:#DF00D2">1055</SPAN></FONT></TD></TR>
 </TABLE></CENTER>
 <TABLE BORDER=0 WIDTH="100%">
 <TR><TD WIDTH="25%">&nbsp;</TD>

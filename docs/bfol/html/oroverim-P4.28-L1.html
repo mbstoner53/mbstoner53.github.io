@@ -16,10 +16,6 @@ img { margin-bottom: -4px }
    }
 -->
 </STYLE>
-<link rel="stylesheet" 
-media="screen" 
-href="https://fontlibrary.org/en/face/xits-math" 
-type="text/css"/> 
 <STYLE TYPE="text/css"> 
 <!--
   .wff { color: blue; } 
@@ -27,7 +23,11 @@ type="text/css"/>
   .term { color: green; } 
   .class { color: #CC33CC; } 
   .typecode { color: gray; } 
-  .math { font-family: XITSMathRegular; } 
+  @font-face {
+     font-family: XITSMath-Regular; 
+     src: url(../fonts/xits-math.woff); 
+  } 
+  .math { font-family: XITSMath-Regular; } 
 -->
 </STYLE>
 <TITLE>oroverim-P4.28-L1 - bfol.mm Proof Explorer</TITLE>
@@ -76,12 +76,12 @@ bfol.mm Proof Explorer
 <HR NOSHADE SIZE=1>
 <CENTER><B><FONT SIZE="+1">Theorem <FONT
 COLOR="#006633">oroverim-P4.28-L1</FONT></FONT></B>&nbsp;<SPAN CLASS=r
-STYLE="color:#0A930D">471</SPAN></CENTER>
+STYLE="color:#0D930C">465</SPAN></CENTER>
 <CENTER><TABLE><TR><TD ALIGN=LEFT><B>Description: </B>Lemma for <A
 HREF="oroverim-P4.28a.html">oroverim-P4.28a</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#09930F">473</SPAN> and <A
+STYLE="color:#0C930D">467</SPAN> and <A
 HREF="oroverimint-P4.28c.html">oroverimint-P4.28c</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#079310">476</SPAN>. <SPAN
+STYLE="color:#09930E">470</SPAN>. <SPAN
 CLASS=math>&dagger;</SPAN></TD></TR></TABLE></CENTER>
 
 <CENTER><TABLE BORDER CELLSPACING=0 BGCOLOR="#EEFFFA"
@@ -108,7 +108,7 @@ SUMMARY="Proof of theorem">
 </TH><TH>Expression</TH></TR>
 <TR ALIGN=LEFT><TD>1</TD><TD>&nbsp;</TD><TD><A HREF="trueie-P4.22a.html"
 TITLE="'`T.`' Introduction and Elimination (closed form). `t.`">trueie-P4.22a</A>&nbsp;<SPAN
-CLASS=r STYLE="color:#1A9302">450</SPAN></TD><TD><A NAME="1"></A>
+CLASS=r STYLE="color:#1D9300">444</SPAN></TD><TD><A NAME="1"></A>
 <SPAN CLASS=i>. . . . . 6</SPAN>
 <SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN>((&top; &rarr; <SPAN
 CLASS=wff>&#x1D711;</SPAN>) &harr; <SPAN
@@ -116,7 +116,7 @@ CLASS=wff>&#x1D711;</SPAN>)</SPAN></TD></TR>
 <TR ALIGN=LEFT><TD>2</TD><TD><A HREF="#1">1</A></TD><TD><A
 HREF="bisym-P3.33b.RC.html"
 TITLE="Inference Form of ~bisym-P3.33b . `t.`">bisym-P3.33b.RC</A>&nbsp;<SPAN
-CLASS=r STYLE="color:#748600">309</SPAN></TD><TD><A NAME="2"></A>
+CLASS=r STYLE="color:#778500">299</SPAN></TD><TD><A NAME="2"></A>
 <SPAN CLASS=i>. . . . 5</SPAN>
 <SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN>(<SPAN
 CLASS=wff>&#x1D711;</SPAN> &harr; (&top; &rarr; <SPAN
@@ -124,7 +124,7 @@ CLASS=wff>&#x1D711;</SPAN>))</SPAN></TD></TR>
 <TR ALIGN=LEFT><TD>3</TD><TD><A HREF="#2">2</A></TD><TD><A
 HREF="suborl-P3.43a.RC.html"
 TITLE="Inference Form of ~suborl-P3.43a . `t.`">suborl-P3.43a.RC</A>&nbsp;<SPAN
-CLASS=r STYLE="color:#5C8B00">353</SPAN></TD><TD><A NAME="3"></A>
+CLASS=r STYLE="color:#5F8B00">347</SPAN></TD><TD><A NAME="3"></A>
 <SPAN CLASS=i>. . . 4</SPAN>
 <SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN>((<SPAN
 CLASS=wff>&#x1D711;</SPAN> &vee; (<SPAN CLASS=wff>&#x1D713;</SPAN> &rarr; <SPAN
@@ -134,7 +134,7 @@ CLASS=wff>&#x1D711;</SPAN>) &vee; (<SPAN CLASS=wff>&#x1D713;</SPAN> &rarr;
 <TR ALIGN=LEFT><TD>4</TD><TD><A HREF="#3">3</A></TD><TD><A
 HREF="rcp-NDBIEF0.html"
 TITLE="'`<->`' Elimination by Forward Implication Introduction. `t.`">rcp-NDBIEF0</A>&nbsp;<SPAN
-CLASS=r STYLE="color:#957B00">250</SPAN></TD><TD><A NAME="4"></A>
+CLASS=r STYLE="color:#9B7900">240</SPAN></TD><TD><A NAME="4"></A>
 <SPAN CLASS=i>. . 3</SPAN>
 <SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN>((<SPAN
 CLASS=wff>&#x1D711;</SPAN> &vee; (<SPAN CLASS=wff>&#x1D713;</SPAN> &rarr; <SPAN
@@ -144,7 +144,7 @@ CLASS=wff>&#x1D711;</SPAN>) &vee; (<SPAN CLASS=wff>&#x1D713;</SPAN> &rarr;
 <TR ALIGN=LEFT><TD>5</TD><TD><A HREF="#4">4</A></TD><TD><A
 HREF="joinimor-P4.8c.html"
 TITLE="Join Two Implications Through Disjunction. `t.`">joinimor-P4.8c</A>&nbsp;<SPAN
-CLASS=r STYLE="color:#389000">409</SPAN></TD><TD><A NAME="5"></A>
+CLASS=r STYLE="color:#3B9000">403</SPAN></TD><TD><A NAME="5"></A>
 <SPAN CLASS=i>. 2</SPAN>
 <SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN>((<SPAN
 CLASS=wff>&#x1D711;</SPAN> &vee; (<SPAN CLASS=wff>&#x1D713;</SPAN> &rarr; <SPAN
@@ -153,7 +153,7 @@ CLASS=wff>&#x1D713;</SPAN>) &rarr; (<SPAN CLASS=wff>&#x1D711;</SPAN> &vee;
 <SPAN CLASS=wff>&#x1D712;</SPAN>)))</SPAN></TD></TR>
 <TR ALIGN=LEFT><TD>6</TD><TD>&nbsp;</TD><TD><A HREF="idandtruel-P4.19a.html"
 TITLE="'`/\`' Identity is '`T.`' (left). `t.`">idandtruel-P4.19a</A>&nbsp;<SPAN
-CLASS=r STYLE="color:#1E9200">444</SPAN></TD><TD><A NAME="6"></A>
+CLASS=r STYLE="color:#219200">438</SPAN></TD><TD><A NAME="6"></A>
 <SPAN CLASS=i>. . . 4</SPAN>
 <SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN>((&top; &wedge; <SPAN
 CLASS=wff>&#x1D713;</SPAN>) &harr; <SPAN
@@ -161,7 +161,7 @@ CLASS=wff>&#x1D713;</SPAN>)</SPAN></TD></TR>
 <TR ALIGN=LEFT><TD>7</TD><TD><A HREF="#6">6</A></TD><TD><A
 HREF="subiml-P3.40a.RC.html"
 TITLE="Inference Form of ~subiml-P3.40a . `t.`">subiml-P3.40a.RC</A>&nbsp;<SPAN
-CLASS=r STYLE="color:#698800">332</SPAN></TD><TD><A NAME="7"></A>
+CLASS=r STYLE="color:#6B8800">326</SPAN></TD><TD><A NAME="7"></A>
 <SPAN CLASS=i>. . 3</SPAN>
 <SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN>(((&top; &wedge; <SPAN
 CLASS=wff>&#x1D713;</SPAN>) &rarr; (<SPAN CLASS=wff>&#x1D711;</SPAN> &vee;
@@ -171,7 +171,7 @@ CLASS=wff>&#x1D712;</SPAN>)))</SPAN></TD></TR>
 <TR ALIGN=LEFT><TD>8</TD><TD><A HREF="#7">7</A></TD><TD><A
 HREF="rcp-NDBIEF0.html"
 TITLE="'`<->`' Elimination by Forward Implication Introduction. `t.`">rcp-NDBIEF0</A>&nbsp;<SPAN
-CLASS=r STYLE="color:#957B00">250</SPAN></TD><TD><A NAME="8"></A>
+CLASS=r STYLE="color:#9B7900">240</SPAN></TD><TD><A NAME="8"></A>
 <SPAN CLASS=i>. 2</SPAN>
 <SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN>(((&top; &wedge; <SPAN
 CLASS=wff>&#x1D713;</SPAN>) &rarr; (<SPAN CLASS=wff>&#x1D711;</SPAN> &vee;
@@ -180,7 +180,7 @@ CLASS=wff>&#x1D713;</SPAN>) &rarr; (<SPAN CLASS=wff>&#x1D711;</SPAN> &vee;
 CLASS=wff>&#x1D712;</SPAN>)))</SPAN></TD></TR>
 <TR ALIGN=LEFT><TD>9</TD><TD>&nbsp;</TD><TD><A HREF="ndorir-P3.11.CL.html"
 TITLE="Closed Form of ~ndorir-P3.11 . `t.`">ndorir-P3.11.CL</A>&nbsp;<SPAN
-CLASS=r STYLE="color:#917C00">256</SPAN></TD><TD><A NAME="9"></A>
+CLASS=r STYLE="color:#977A00">246</SPAN></TD><TD><A NAME="9"></A>
 <SPAN CLASS=i>. . . . 5</SPAN>
 <SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN>(<SPAN
 CLASS=wff>&#x1D711;</SPAN> &rarr; (<SPAN CLASS=wff>&#x1D711;</SPAN> &vee; <SPAN
@@ -188,7 +188,7 @@ CLASS=wff>&#x1D712;</SPAN>))</SPAN></TD></TR>
 <TR ALIGN=LEFT><TD>10</TD><TD><A HREF="#9">9</A></TD><TD><A
 HREF="idandthml-P4.23a.html"
 TITLE="'`/\`' Identity is Any Theorem (left). `t.`">idandthml-P4.23a</A>&nbsp;<SPAN
-CLASS=r STYLE="color:#199303">452</SPAN></TD><TD><A NAME="10"></A>
+CLASS=r STYLE="color:#1B9301">446</SPAN></TD><TD><A NAME="10"></A>
 <SPAN CLASS=i>. . . 4</SPAN>
 <SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN>(((<SPAN
 CLASS=wff>&#x1D711;</SPAN> &rarr; (<SPAN CLASS=wff>&#x1D711;</SPAN> &vee; <SPAN
@@ -200,7 +200,7 @@ CLASS=wff>&#x1D712;</SPAN>)))</SPAN></TD></TR>
 <TR ALIGN=LEFT><TD>11</TD><TD><A HREF="#10">10</A></TD><TD><A
 HREF="rcp-NDBIER0.html"
 TITLE="'`<->`' Elimination by Reverse Implication Introduction. `t.`">rcp-NDBIER0</A>&nbsp;<SPAN
-CLASS=r STYLE="color:#947B00">251</SPAN></TD><TD><A NAME="11"></A>
+CLASS=r STYLE="color:#9A7900">241</SPAN></TD><TD><A NAME="11"></A>
 <SPAN CLASS=i>. . 3</SPAN>
 <SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN>((<SPAN
 CLASS=wff>&#x1D713;</SPAN> &rarr; (<SPAN CLASS=wff>&#x1D711;</SPAN> &vee; <SPAN
@@ -212,7 +212,7 @@ CLASS=wff>&#x1D712;</SPAN>))))</SPAN></TD></TR>
 <TR ALIGN=LEFT><TD>12</TD><TD><A HREF="#11">11</A></TD><TD><A
 HREF="joinimandinc-P4.8a.html"
 TITLE="Join Two Implications Through Conjunction (Inclusive). `t.`">joinimandinc-P4.8a</A>&nbsp;<SPAN
-CLASS=r STYLE="color:#3D8F00">403</SPAN></TD><TD><A NAME="12"></A>
+CLASS=r STYLE="color:#3F8F00">397</SPAN></TD><TD><A NAME="12"></A>
 <SPAN CLASS=i>. 2</SPAN>
 <SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN>((<SPAN
 CLASS=wff>&#x1D713;</SPAN> &rarr; (<SPAN CLASS=wff>&#x1D711;</SPAN> &vee; <SPAN
@@ -222,7 +222,7 @@ CLASS=wff>&#x1D712;</SPAN>)) &rarr; ((<SPAN CLASS=wff>&#x1D711;</SPAN> &vee;
 &vee; <SPAN CLASS=wff>&#x1D712;</SPAN>))))</SPAN></TD></TR>
 <TR ALIGN=LEFT><TD>13</TD><TD>&nbsp;</TD><TD><A HREF="idempotor-P4.25b.html"
 TITLE="Idempotency Law for '`\/`'. `t.`">idempotor-P4.25b</A>&nbsp;<SPAN
-CLASS=r STYLE="color:#159306">457</SPAN></TD><TD><A NAME="13"></A>
+CLASS=r STYLE="color:#179304">451</SPAN></TD><TD><A NAME="13"></A>
 <SPAN CLASS=i>. . . 4</SPAN>
 <SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN>(((<SPAN
 CLASS=wff>&#x1D711;</SPAN> &vee; <SPAN CLASS=wff>&#x1D712;</SPAN>) &vee; (<SPAN
@@ -232,7 +232,7 @@ CLASS=wff>&#x1D712;</SPAN>))</SPAN></TD></TR>
 <TR ALIGN=LEFT><TD>14</TD><TD><A HREF="#13">13</A></TD><TD><A
 HREF="subimr-P3.40b.RC.html"
 TITLE="Inference Form of ~subimr-P3.40b . `t.`">subimr-P3.40b.RC</A>&nbsp;<SPAN
-CLASS=r STYLE="color:#688900">334</SPAN></TD><TD><A NAME="14"></A>
+CLASS=r STYLE="color:#6A8800">328</SPAN></TD><TD><A NAME="14"></A>
 <SPAN CLASS=i>. . 3</SPAN>
 <SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN>(((<SPAN
 CLASS=wff>&#x1D711;</SPAN> &vee; <SPAN CLASS=wff>&#x1D713;</SPAN>) &rarr;
@@ -244,7 +244,7 @@ CLASS=wff>&#x1D712;</SPAN>))) &harr; ((<SPAN CLASS=wff>&#x1D711;</SPAN> &vee;
 <TR ALIGN=LEFT><TD>15</TD><TD><A HREF="#14">14</A></TD><TD><A
 HREF="rcp-NDBIEF0.html"
 TITLE="'`<->`' Elimination by Forward Implication Introduction. `t.`">rcp-NDBIEF0</A>&nbsp;<SPAN
-CLASS=r STYLE="color:#957B00">250</SPAN></TD><TD><A NAME="15"></A>
+CLASS=r STYLE="color:#9B7900">240</SPAN></TD><TD><A NAME="15"></A>
 <SPAN CLASS=i>. 2</SPAN>
 <SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN>(((<SPAN
 CLASS=wff>&#x1D711;</SPAN> &vee; <SPAN CLASS=wff>&#x1D713;</SPAN>) &rarr;
@@ -256,7 +256,7 @@ CLASS=wff>&#x1D712;</SPAN>))) &rarr; ((<SPAN CLASS=wff>&#x1D711;</SPAN> &vee;
 <TR ALIGN=LEFT><TD>16</TD><TD><A HREF="#5">5</A>, <A HREF="#8">8</A>, <A
 HREF="#12">12</A>, <A HREF="#15">15</A></TD><TD><A HREF="tsyl-P4.15.RC.html"
 TITLE="Inference form of ~tsyl-P4.15 . `t.`">tsyl-P4.15.RC</A>&nbsp;<SPAN
-CLASS=r STYLE="color:#279200">433</SPAN></TD><TD><A NAME="16"></A>
+CLASS=r STYLE="color:#299100">427</SPAN></TD><TD><A NAME="16"></A>
 <SPAN CLASS=i>1</SPAN>
 <SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN>((<SPAN
 CLASS=wff>&#x1D711;</SPAN> &vee; (<SPAN CLASS=wff>&#x1D713;</SPAN> &rarr; <SPAN
@@ -274,11 +274,11 @@ STYLE="color:#CC33CC;font-style:normal">class</SPAN></FONT></TD></TR>
 &rarr; </SPAN><A HREF="wff-imp.html">wff-imp</A>&nbsp;<SPAN CLASS=r
 STYLE="color:#FA0200">10</SPAN> &nbsp;<SPAN CLASS=math> &wedge; </SPAN><A
 HREF="wff-and.html">wff-and</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#D84B00">133</SPAN> &nbsp;<SPAN CLASS=math> &vee; </SPAN><A
+STYLE="color:#D94B00">132</SPAN> &nbsp;<SPAN CLASS=math> &vee; </SPAN><A
 HREF="wff-or.html">wff-or</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#CF5500">154</SPAN> &nbsp;<SPAN CLASS=math>&top;</SPAN><A
+STYLE="color:#D35100">144</SPAN> &nbsp;<SPAN CLASS=math>&top;</SPAN><A
 HREF="wff-true.html">wff-true</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#CA5900">163</SPAN></FONT></TD></TR>
+STYLE="color:#CF5500">153</SPAN></FONT></TD></TR>
 <TR><TD ALIGN=LEFT><FONT SIZE=-1><B>This theorem was proved from axioms:</B>
 &nbsp;<A HREF="ax-L1.html">ax-L1</A>&nbsp;<SPAN CLASS=r
 STYLE="color:#FA0200">11</SPAN> &nbsp;<A HREF="ax-L2.html">ax-L2</A>&nbsp;<SPAN
@@ -288,22 +288,22 @@ HREF="ax-L3.html">ax-L3</A>&nbsp;<SPAN CLASS=r STYLE="color:#F90300">13</SPAN>
 STYLE="color:#F90300">14</SPAN></FONT></TD></TR>
 <TR><TD ALIGN=LEFT><FONT SIZE=-1><B>This theorem depends on definitions:</B>
 &nbsp;<A HREF="df-bi-D2.1.html">df-bi-D2.1</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#E43C00">106</SPAN> &nbsp;<A
+STYLE="color:#E33D00">107</SPAN> &nbsp;<A
 HREF="df-and-D2.2.html">df-and-D2.2</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#D84C00">134</SPAN> &nbsp;<A
+STYLE="color:#D84C00">133</SPAN> &nbsp;<A
 HREF="df-or-D2.3.html">df-or-D2.3</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#CE5500">155</SPAN> &nbsp;<A
+STYLE="color:#D25100">145</SPAN> &nbsp;<A
 HREF="df-true-D2.4.html">df-true-D2.4</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#C95A00">165</SPAN> &nbsp;<A
+STYLE="color:#CE5500">155</SPAN> &nbsp;<A
 HREF="df-rcp-AND3.html">df-rcp-AND3</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#C55C00">171</SPAN></FONT></TD></TR>
+STYLE="color:#CB5800">161</SPAN></FONT></TD></TR>
 <TR><TD ALIGN=LEFT><FONT SIZE=-1><B>This theorem is referenced by:</B> &nbsp;<A
 HREF="oroverim-P4.28a.html">oroverim-P4.28a</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#09930F">473</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#0C930D">467</SPAN> &nbsp;<A
 HREF="oroverimint-P4.28c.html">oroverimint-P4.28c</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#079310">476</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#09930E">470</SPAN> &nbsp;<A
 HREF="oroverbiint-P4.28d.html">oroverbiint-P4.28d</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#069311">477</SPAN></FONT></TD></TR>
+&nbsp;<SPAN CLASS=r STYLE="color:#09930F">471</SPAN></FONT></TD></TR>
 </TABLE></CENTER>
 <TABLE BORDER=0 WIDTH="100%">
 <TR><TD WIDTH="25%">&nbsp;</TD>

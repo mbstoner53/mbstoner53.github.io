@@ -16,10 +16,6 @@ img { margin-bottom: -4px }
    }
 -->
 </STYLE>
-<link rel="stylesheet" 
-media="screen" 
-href="https://fontlibrary.org/en/face/xits-math" 
-type="text/css"/> 
 <STYLE TYPE="text/css"> 
 <!--
   .wff { color: blue; } 
@@ -27,7 +23,11 @@ type="text/css"/>
   .term { color: green; } 
   .class { color: #CC33CC; } 
   .typecode { color: gray; } 
-  .math { font-family: XITSMathRegular; } 
+  @font-face {
+     font-family: XITSMath-Regular; 
+     src: url(../fonts/xits-math.woff); 
+  } 
+  .math { font-family: XITSMath-Regular; } 
 -->
 </STYLE>
 <TITLE>dsyl-P3.25 - bfol.mm Proof Explorer</TITLE>
@@ -76,7 +76,7 @@ bfol.mm Proof Explorer
 <HR NOSHADE SIZE=1>
 <CENTER><B><FONT SIZE="+1">Theorem <FONT
 COLOR="#006633">dsyl-P3.25</FONT></FONT></B>&nbsp;<SPAN CLASS=r
-STYLE="color:#878000">271</SPAN></CENTER>
+STYLE="color:#8D7E00">261</SPAN></CENTER>
 <CENTER><TABLE><TR><TD ALIGN=LEFT><B>Description: </B>Double Syllogism. <SPAN
 CLASS=math>&dagger;</SPAN></TD></TR></TABLE></CENTER>
 
@@ -131,7 +131,7 @@ CLASS=wff>&#x1D6FE;</SPAN> &rarr; (<SPAN CLASS=wff>&#x1D713;</SPAN> &rarr;
 <SPAN CLASS=wff>&#x1D712;</SPAN>))</SPAN></TD></TR>
 <TR ALIGN=LEFT><TD>3</TD><TD><A HREF="#1">1</A>, <A HREF="#2">2</A></TD><TD><A
 HREF="syl-P3.24.html" TITLE="Syllogism. `t.`">syl-P3.24</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#887F00">269</SPAN></TD><TD><A NAME="3"></A>
+STYLE="color:#8E7D00">259</SPAN></TD><TD><A NAME="3"></A>
 <SPAN CLASS=i>. 2</SPAN>
 <SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN>(<SPAN
 CLASS=wff>&#x1D6FE;</SPAN> &rarr; (<SPAN CLASS=wff>&#x1D711;</SPAN> &rarr;
@@ -144,7 +144,7 @@ CLASS=wff>&#x1D6FE;</SPAN> &rarr; (<SPAN CLASS=wff>&#x1D712;</SPAN> &rarr;
 <SPAN CLASS=wff>&#x1D717;</SPAN>))</SPAN></TD></TR>
 <TR ALIGN=LEFT><TD>5</TD><TD><A HREF="#3">3</A>, <A HREF="#4">4</A></TD><TD><A
 HREF="syl-P3.24.html" TITLE="Syllogism. `t.`">syl-P3.24</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#887F00">269</SPAN></TD><TD><A NAME="5"></A>
+STYLE="color:#8E7D00">259</SPAN></TD><TD><A NAME="5"></A>
 <SPAN CLASS=i>1</SPAN>
 <SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN>(<SPAN
 CLASS=wff>&#x1D6FE;</SPAN> &rarr; (<SPAN CLASS=wff>&#x1D711;</SPAN> &rarr;
@@ -168,26 +168,26 @@ HREF="ax-L3.html">ax-L3</A>&nbsp;<SPAN CLASS=r STYLE="color:#F90300">13</SPAN>
 STYLE="color:#F90300">14</SPAN></FONT></TD></TR>
 <TR><TD ALIGN=LEFT><FONT SIZE=-1><B>This theorem depends on definitions:</B>
 &nbsp;<A HREF="df-bi-D2.1.html">df-bi-D2.1</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#E43C00">106</SPAN> &nbsp;<A
+STYLE="color:#E33D00">107</SPAN> &nbsp;<A
 HREF="df-and-D2.2.html">df-and-D2.2</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#D84C00">134</SPAN></FONT></TD></TR>
+STYLE="color:#D84C00">133</SPAN></FONT></TD></TR>
 <TR><TD ALIGN=LEFT><FONT SIZE=-1><B>This theorem is referenced by:</B> &nbsp;<A
 HREF="dsyl-P3.25.RC.html">dsyl-P3.25.RC</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#868000">272</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#8C7E00">262</SPAN> &nbsp;<A
 HREF="tsyl-P4.15.html">tsyl-P4.15</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#279200">432</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#2A9100">426</SPAN> &nbsp;<A
 HREF="qimeqallav-P5-L1.html">qimeqallav-P5-L1</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#008D8D">623</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#008E8B">617</SPAN> &nbsp;<A
 HREF="qimeqallbv-P5-L1.html">qimeqallbv-P5-L1</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#008D8F">625</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#008D8D">619</SPAN> &nbsp;<A
 HREF="nfrimd-P6.html">nfrimd-P6</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#7669FF">821</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#756AFF">815</SPAN> &nbsp;<A
 HREF="lemma-L7.02a-L1.html">lemma-L7.02a-L1</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#C22DFC">949</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#C22EFC">943</SPAN> &nbsp;<A
 HREF="lemma-L7.02a.html">lemma-L7.02a</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#C22DFC">950</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#C22DFC">944</SPAN> &nbsp;<A
 HREF="nfrnegconv-P8.html">nfrnegconv-P8</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#EC0093">1116</SPAN></FONT></TD></TR>
+&nbsp;<SPAN CLASS=r STYLE="color:#EC0093">1110</SPAN></FONT></TD></TR>
 </TABLE></CENTER>
 <TABLE BORDER=0 WIDTH="100%">
 <TR><TD WIDTH="25%">&nbsp;</TD>

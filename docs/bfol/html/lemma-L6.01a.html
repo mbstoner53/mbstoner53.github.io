@@ -16,10 +16,6 @@ img { margin-bottom: -4px }
    }
 -->
 </STYLE>
-<link rel="stylesheet" 
-media="screen" 
-href="https://fontlibrary.org/en/face/xits-math" 
-type="text/css"/> 
 <STYLE TYPE="text/css"> 
 <!--
   .wff { color: blue; } 
@@ -27,7 +23,11 @@ type="text/css"/>
   .term { color: green; } 
   .class { color: #CC33CC; } 
   .typecode { color: gray; } 
-  .math { font-family: XITSMathRegular; } 
+  @font-face {
+     font-family: XITSMath-Regular; 
+     src: url(../fonts/xits-math.woff); 
+  } 
+  .math { font-family: XITSMath-Regular; } 
 -->
 </STYLE>
 <TITLE>lemma-L6.01a - bfol.mm Proof Explorer</TITLE>
@@ -76,10 +76,10 @@ bfol.mm Proof Explorer
 <HR NOSHADE SIZE=1>
 <CENTER><B><FONT SIZE="+1">Theorem <FONT
 COLOR="#006633">lemma-L6.01a</FONT></FONT></B>&nbsp;<SPAN CLASS=r
-STYLE="color:#067EFF">730</SPAN></CENTER>
+STYLE="color:#027FFE">724</SPAN></CENTER>
 <CENTER><TABLE><TR><TD ALIGN=LEFT><B>Description: </B>This lemma is the result
 of <A HREF="solvesub-P6b.html">solvesub-P6b</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#0181F1">713</SPAN> with no hypothesis
+STYLE="color:#0181EF">707</SPAN> with no hypothesis
        required.
 <P STYLE="margin-bottom:0em">
        '<SPAN CLASS=math><SPAN CLASS=objvar>&#x1D465;</SPAN></SPAN>' cannot
@@ -123,7 +123,7 @@ CLASS=term>&#x1D461;</SPAN> &rarr; <SPAN
 CLASS=wff>&#x1D711;</SPAN>)))</SPAN></TD></TR>
 <TR ALIGN=LEFT><TD>2</TD><TD>&nbsp;</TD><TD><A HREF="spec-P6.html"
 TITLE="Law of Specialization. See ~specw-P5 for a version that requires only FOL axioms.">spec-P6</A>&nbsp;<SPAN
-CLASS=r STYLE="color:#027FFC">725</SPAN></TD><TD><A NAME="2"></A>
+CLASS=r STYLE="color:#027FFA">719</SPAN></TD><TD><A NAME="2"></A>
 <SPAN CLASS=i>. . 3</SPAN>
 <SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN>(&forall;<SPAN
 CLASS=objvar>&#x1D465;</SPAN>(<SPAN CLASS=objvar>&#x1D465;</SPAN> = <SPAN
@@ -133,7 +133,7 @@ CLASS=term>&#x1D461;</SPAN> &rarr; <SPAN CLASS=wff>&#x1D711;</SPAN>) &rarr;
 <TR ALIGN=LEFT><TD>3</TD><TD><A HREF="#2">2</A></TD><TD><A
 HREF="imcomm-P3.27.RC.html"
 TITLE="Inference Form of ~imcomm-P3.27 . `t.`">imcomm-P3.27.RC</A>&nbsp;<SPAN
-CLASS=r STYLE="color:#848100">276</SPAN></TD><TD><A NAME="3"></A>
+CLASS=r STYLE="color:#897F00">266</SPAN></TD><TD><A NAME="3"></A>
 <SPAN CLASS=i>. 2</SPAN>
 <SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN>(<SPAN
 CLASS=objvar>&#x1D465;</SPAN> = <SPAN CLASS=term>&#x1D461;</SPAN> &rarr;
@@ -144,7 +144,7 @@ CLASS=wff>&#x1D711;</SPAN>))</SPAN></TD></TR>
 <TR ALIGN=LEFT><TD>4</TD><TD><A HREF="#1">1</A>, <A HREF="#3">3</A></TD><TD><A
 HREF="ndbii-P3.13.html"
 TITLE="Natural Deduction: '`<->`' Introduction Rule. If we have previously deduced both...">ndbii-P3.13</A>&nbsp;<SPAN
-CLASS=r STYLE="color:#BB6400">188</SPAN></TD><TD><A NAME="4"></A>
+CLASS=r STYLE="color:#C06000">178</SPAN></TD><TD><A NAME="4"></A>
 <SPAN CLASS=i>1</SPAN>
 <SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN>(<SPAN
 CLASS=objvar>&#x1D465;</SPAN> = <SPAN CLASS=term>&#x1D461;</SPAN> &rarr; (<SPAN
@@ -169,7 +169,7 @@ STYLE="color:#FA0200">8</SPAN> &nbsp;<SPAN CLASS=math> &rarr; </SPAN><A
 HREF="wff-imp.html">wff-imp</A>&nbsp;<SPAN CLASS=r
 STYLE="color:#FA0200">10</SPAN> &nbsp;<SPAN CLASS=math> &harr; </SPAN><A
 HREF="wff-bi.html">wff-bi</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#E53A00">103</SPAN></FONT></TD></TR>
+STYLE="color:#E43B00">104</SPAN></FONT></TD></TR>
 <TR><TD ALIGN=LEFT><FONT SIZE=-1><B>This theorem was proved from axioms:</B>
 &nbsp;<A HREF="ax-L1.html">ax-L1</A>&nbsp;<SPAN CLASS=r
 STYLE="color:#FA0200">11</SPAN> &nbsp;<A HREF="ax-L2.html">ax-L2</A>&nbsp;<SPAN
@@ -188,26 +188,26 @@ HREF="ax-L12.html">ax-L12</A>&nbsp;<SPAN CLASS=r
 STYLE="color:#F80800">29</SPAN></FONT></TD></TR>
 <TR><TD ALIGN=LEFT><FONT SIZE=-1><B>This theorem depends on definitions:</B>
 &nbsp;<A HREF="df-bi-D2.1.html">df-bi-D2.1</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#E43C00">106</SPAN> &nbsp;<A
+STYLE="color:#E33D00">107</SPAN> &nbsp;<A
 HREF="df-and-D2.2.html">df-and-D2.2</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#D84C00">134</SPAN> &nbsp;<A
+STYLE="color:#D84C00">133</SPAN> &nbsp;<A
 HREF="df-or-D2.3.html">df-or-D2.3</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#CE5500">155</SPAN> &nbsp;<A
+STYLE="color:#D25100">145</SPAN> &nbsp;<A
 HREF="df-true-D2.4.html">df-true-D2.4</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#C95A00">165</SPAN> &nbsp;<A
+STYLE="color:#CE5500">155</SPAN> &nbsp;<A
 HREF="df-rcp-AND3.html">df-rcp-AND3</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#C55C00">171</SPAN> &nbsp;<A
+STYLE="color:#CB5800">161</SPAN> &nbsp;<A
 HREF="df-exists-D5.1.html">df-exists-D5.1</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#008F7B">602</SPAN></FONT></TD></TR>
+STYLE="color:#008F78">596</SPAN></FONT></TD></TR>
 <TR><TD ALIGN=LEFT><FONT SIZE=-1><B>This theorem is referenced by:</B> &nbsp;<A
 HREF="psubtoisubv-P6.html">psubtoisubv-P6</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#077EFF">731</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#047EFF">725</SPAN> &nbsp;<A
 HREF="lemma-L6.05a.html">lemma-L6.05a</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#4876FF">770</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#4677FF">764</SPAN> &nbsp;<A
 HREF="lemma-L6.07a-L1.html">lemma-L6.07a-L1</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#4E75FF">776</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#4C75FF">770</SPAN> &nbsp;<A
 HREF="lemma-L6.07a-L2.html">lemma-L6.07a-L2</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#4F74FF">777</SPAN></FONT></TD></TR>
+&nbsp;<SPAN CLASS=r STYLE="color:#4D75FF">771</SPAN></FONT></TD></TR>
 </TABLE></CENTER>
 <TABLE BORDER=0 WIDTH="100%">
 <TR><TD WIDTH="25%">&nbsp;</TD>

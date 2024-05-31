@@ -16,10 +16,6 @@ img { margin-bottom: -4px }
    }
 -->
 </STYLE>
-<link rel="stylesheet" 
-media="screen" 
-href="https://fontlibrary.org/en/face/xits-math" 
-type="text/css"/> 
 <STYLE TYPE="text/css"> 
 <!--
   .wff { color: blue; } 
@@ -27,7 +23,11 @@ type="text/css"/>
   .term { color: green; } 
   .class { color: #CC33CC; } 
   .typecode { color: gray; } 
-  .math { font-family: XITSMathRegular; } 
+  @font-face {
+     font-family: XITSMath-Regular; 
+     src: url(../fonts/xits-math.woff); 
+  } 
+  .math { font-family: XITSMath-Regular; } 
 -->
 </STYLE>
 <TITLE>idornthml-P4.24a - bfol.mm Proof Explorer</TITLE>
@@ -76,7 +76,7 @@ bfol.mm Proof Explorer
 <HR NOSHADE SIZE=1>
 <CENTER><B><FONT SIZE="+1">Theorem <FONT
 COLOR="#006633">idornthml-P4.24a</FONT></FONT></B>&nbsp;<SPAN CLASS=r
-STYLE="color:#179304">454</SPAN></CENTER>
+STYLE="color:#1A9302">448</SPAN></CENTER>
 <CENTER><TABLE><TR><TD ALIGN=LEFT><B>Description: </B>'<SPAN
 CLASS=math>&vee;</SPAN>' Identity is Any Refuted Statement (left). <SPAN
 CLASS=math>&dagger;</SPAN></TD></TR></TABLE></CENTER>
@@ -112,7 +112,7 @@ SUMMARY="Proof of theorem">
 </TH><TH>Expression</TH></TR>
 <TR ALIGN=LEFT><TD>1</TD><TD>&nbsp;</TD><TD><A HREF="idorfalsel-P4.20a.html"
 TITLE="'`\/`' Identity is '`F.`' (left). `t.`">idorfalsel-P4.20a</A>&nbsp;<SPAN
-CLASS=r STYLE="color:#1D9300">446</SPAN></TD><TD><A NAME="1"></A>
+CLASS=r STYLE="color:#209200">440</SPAN></TD><TD><A NAME="1"></A>
 <SPAN CLASS=i>. 2</SPAN>
 <SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN>((&perp; &vee; <SPAN
 CLASS=wff>&#x1D713;</SPAN>) &harr; <SPAN
@@ -125,14 +125,14 @@ CLASS=wff>&#x1D711;</SPAN></SPAN></TD></TR>
 <TR ALIGN=LEFT><TD>3</TD><TD><A HREF="#2">2</A></TD><TD><A
 HREF="nthmeqfalse-P4.21b.html"
 TITLE="Any Refuted Statement is Logically Equivalent to '`F.`'. `t.`">nthmeqfalse-P4.21b</A>&nbsp;<SPAN
-CLASS=r STYLE="color:#1B9302">449</SPAN></TD><TD><A NAME="3"></A>
+CLASS=r STYLE="color:#1D9300">443</SPAN></TD><TD><A NAME="3"></A>
 <SPAN CLASS=i>. . . . 5</SPAN>
 <SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN>(<SPAN
 CLASS=wff>&#x1D711;</SPAN> &harr; &perp;)</SPAN></TD></TR>
 <TR ALIGN=LEFT><TD>4</TD><TD><A HREF="#3">3</A></TD><TD><A
 HREF="suborl-P3.43a.RC.html"
 TITLE="Inference Form of ~suborl-P3.43a . `t.`">suborl-P3.43a.RC</A>&nbsp;<SPAN
-CLASS=r STYLE="color:#5C8B00">353</SPAN></TD><TD><A NAME="4"></A>
+CLASS=r STYLE="color:#5F8B00">347</SPAN></TD><TD><A NAME="4"></A>
 <SPAN CLASS=i>. . . 4</SPAN>
 <SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN>((<SPAN
 CLASS=wff>&#x1D711;</SPAN> &vee; <SPAN CLASS=wff>&#x1D713;</SPAN>) &harr;
@@ -140,7 +140,7 @@ CLASS=wff>&#x1D711;</SPAN> &vee; <SPAN CLASS=wff>&#x1D713;</SPAN>) &harr;
 <TR ALIGN=LEFT><TD>5</TD><TD><A HREF="#4">4</A></TD><TD><A
 HREF="subbil-P3.41a.RC.html"
 TITLE="Inference Form of ~subbil-P3.41a . `t.`">subbil-P3.41a.RC</A>&nbsp;<SPAN
-CLASS=r STYLE="color:#658900">339</SPAN></TD><TD><A NAME="5"></A>
+CLASS=r STYLE="color:#678900">333</SPAN></TD><TD><A NAME="5"></A>
 <SPAN CLASS=i>. . 3</SPAN>
 <SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN>(((<SPAN
 CLASS=wff>&#x1D711;</SPAN> &vee; <SPAN CLASS=wff>&#x1D713;</SPAN>) &harr; <SPAN
@@ -150,7 +150,7 @@ CLASS=wff>&#x1D713;</SPAN>))</SPAN></TD></TR>
 <TR ALIGN=LEFT><TD>6</TD><TD><A HREF="#5">5</A></TD><TD><A
 HREF="rcp-NDBIER0.html"
 TITLE="'`<->`' Elimination by Reverse Implication Introduction. `t.`">rcp-NDBIER0</A>&nbsp;<SPAN
-CLASS=r STYLE="color:#947B00">251</SPAN></TD><TD><A NAME="6"></A>
+CLASS=r STYLE="color:#9A7900">241</SPAN></TD><TD><A NAME="6"></A>
 <SPAN CLASS=i>. 2</SPAN>
 <SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN>(((&perp; &vee; <SPAN
 CLASS=wff>&#x1D713;</SPAN>) &harr; <SPAN CLASS=wff>&#x1D713;</SPAN>) &rarr;
@@ -159,7 +159,7 @@ CLASS=wff>&#x1D713;</SPAN>) &harr; <SPAN CLASS=wff>&#x1D713;</SPAN>) &rarr;
 <TR ALIGN=LEFT><TD>7</TD><TD><A HREF="#1">1</A>, <A HREF="#6">6</A></TD><TD><A
 HREF="rcp-NDIME0.html"
 TITLE="This is the same is ~ax-MP . `t.`">rcp-NDIME0</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#9D7800">238</SPAN></TD><TD><A NAME="7"></A>
+STYLE="color:#A27500">228</SPAN></TD><TD><A NAME="7"></A>
 <SPAN CLASS=i>1</SPAN>
 <SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN>((<SPAN
 CLASS=wff>&#x1D711;</SPAN> &vee; <SPAN CLASS=wff>&#x1D713;</SPAN>) &harr; <SPAN
@@ -175,11 +175,11 @@ STYLE="color:#CC33CC;font-style:normal">class</SPAN></FONT></TD></TR>
 CLASS=math>&not; </SPAN><A HREF="wff-neg.html">wff-neg</A>&nbsp;<SPAN CLASS=r
 STYLE="color:#FA0200">9</SPAN> &nbsp;<SPAN CLASS=math> &harr; </SPAN><A
 HREF="wff-bi.html">wff-bi</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#E53A00">103</SPAN> &nbsp;<SPAN CLASS=math> &vee; </SPAN><A
+STYLE="color:#E43B00">104</SPAN> &nbsp;<SPAN CLASS=math> &vee; </SPAN><A
 HREF="wff-or.html">wff-or</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#CF5500">154</SPAN> &nbsp;<SPAN CLASS=math>&perp;</SPAN><A
+STYLE="color:#D35100">144</SPAN> &nbsp;<SPAN CLASS=math>&perp;</SPAN><A
 HREF="wff-false.html">wff-false</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#C85B00">167</SPAN></FONT></TD></TR>
+STYLE="color:#CD5600">157</SPAN></FONT></TD></TR>
 <TR><TD ALIGN=LEFT><FONT SIZE=-1><B>This theorem was proved from axioms:</B>
 &nbsp;<A HREF="ax-L1.html">ax-L1</A>&nbsp;<SPAN CLASS=r
 STYLE="color:#FA0200">11</SPAN> &nbsp;<A HREF="ax-L2.html">ax-L2</A>&nbsp;<SPAN
@@ -189,20 +189,20 @@ HREF="ax-L3.html">ax-L3</A>&nbsp;<SPAN CLASS=r STYLE="color:#F90300">13</SPAN>
 STYLE="color:#F90300">14</SPAN></FONT></TD></TR>
 <TR><TD ALIGN=LEFT><FONT SIZE=-1><B>This theorem depends on definitions:</B>
 &nbsp;<A HREF="df-bi-D2.1.html">df-bi-D2.1</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#E43C00">106</SPAN> &nbsp;<A
+STYLE="color:#E33D00">107</SPAN> &nbsp;<A
 HREF="df-and-D2.2.html">df-and-D2.2</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#D84C00">134</SPAN> &nbsp;<A
+STYLE="color:#D84C00">133</SPAN> &nbsp;<A
 HREF="df-or-D2.3.html">df-or-D2.3</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#CE5500">155</SPAN> &nbsp;<A
+STYLE="color:#D25100">145</SPAN> &nbsp;<A
 HREF="df-true-D2.4.html">df-true-D2.4</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#C95A00">165</SPAN> &nbsp;<A
+STYLE="color:#CE5500">155</SPAN> &nbsp;<A
 HREF="df-false-D2.5.html">df-false-D2.5</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#C75B00">168</SPAN> &nbsp;<A
+STYLE="color:#CC5700">158</SPAN> &nbsp;<A
 HREF="df-rcp-AND3.html">df-rcp-AND3</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#C55C00">171</SPAN></FONT></TD></TR>
+STYLE="color:#CB5800">161</SPAN></FONT></TD></TR>
 <TR><TD ALIGN=LEFT><FONT SIZE=-1><B>This theorem is referenced by:</B> &nbsp;<A
 HREF="biasandor-P4.34a.html">biasandor-P4.34a</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#009320">497</SPAN></FONT></TD></TR>
+&nbsp;<SPAN CLASS=r STYLE="color:#00931D">491</SPAN></FONT></TD></TR>
 </TABLE></CENTER>
 <TABLE BORDER=0 WIDTH="100%">
 <TR><TD WIDTH="25%">&nbsp;</TD>

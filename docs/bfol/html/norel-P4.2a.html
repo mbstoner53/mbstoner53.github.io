@@ -16,10 +16,6 @@ img { margin-bottom: -4px }
    }
 -->
 </STYLE>
-<link rel="stylesheet" 
-media="screen" 
-href="https://fontlibrary.org/en/face/xits-math" 
-type="text/css"/> 
 <STYLE TYPE="text/css"> 
 <!--
   .wff { color: blue; } 
@@ -27,7 +23,11 @@ type="text/css"/>
   .term { color: green; } 
   .class { color: #CC33CC; } 
   .typecode { color: gray; } 
-  .math { font-family: XITSMathRegular; } 
+  @font-face {
+     font-family: XITSMath-Regular; 
+     src: url(../fonts/xits-math.woff); 
+  } 
+  .math { font-family: XITSMath-Regular; } 
 -->
 </STYLE>
 <TITLE>norel-P4.2a - bfol.mm Proof Explorer</TITLE>
@@ -76,7 +76,7 @@ bfol.mm Proof Explorer
 <HR NOSHADE SIZE=1>
 <CENTER><B><FONT SIZE="+1">Theorem <FONT
 COLOR="#006633">norel-P4.2a</FONT></FONT></B>&nbsp;<SPAN CLASS=r
-STYLE="color:#508D00">373</SPAN></CENTER>
+STYLE="color:#538D00">367</SPAN></CENTER>
 <CENTER><TABLE><TR><TD ALIGN=LEFT><B>Description: </B>Negated Left '<SPAN
 CLASS=math>&vee;</SPAN>' Elimination. <SPAN
 CLASS=math>&dagger;</SPAN></TD></TR></TABLE></CENTER>
@@ -112,7 +112,7 @@ SUMMARY="Proof of theorem">
 </TH><TH>Expression</TH></TR>
 <TR ALIGN=LEFT><TD>1</TD><TD>&nbsp;</TD><TD><A HREF="rcp-NDASM2of2.html"
 TITLE="( 1 `/\` 2 ) `->` 2. `t.`">rcp-NDASM2of2</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#B16C00">204</SPAN></TD><TD><A NAME="1"></A>
+STYLE="color:#B66800">194</SPAN></TD><TD><A NAME="1"></A>
 <SPAN CLASS=i>. . 3</SPAN>
 <SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN>((<SPAN
 CLASS=wff>&#x1D6FE;</SPAN> &wedge; <SPAN CLASS=wff>&#x1D713;</SPAN>) &rarr;
@@ -120,7 +120,7 @@ CLASS=wff>&#x1D6FE;</SPAN> &wedge; <SPAN CLASS=wff>&#x1D713;</SPAN>) &rarr;
 <TR ALIGN=LEFT><TD>2</TD><TD><A HREF="#1">1</A></TD><TD><A
 HREF="ndoril-P3.10.html"
 TITLE="Natural Deduction: Left '`\/`' Introduction Rule. Deduce a new disjunction...">ndoril-P3.10</A>&nbsp;<SPAN
-CLASS=r STYLE="color:#BD6300">185</SPAN></TD><TD><A NAME="2"></A>
+CLASS=r STYLE="color:#C25F00">175</SPAN></TD><TD><A NAME="2"></A>
 <SPAN CLASS=i>. 2</SPAN>
 <SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN>((<SPAN
 CLASS=wff>&#x1D6FE;</SPAN> &wedge; <SPAN CLASS=wff>&#x1D713;</SPAN>) &rarr;
@@ -135,7 +135,7 @@ CLASS=wff>&#x1D6FE;</SPAN> &rarr; &not; (<SPAN CLASS=wff>&#x1D711;</SPAN> &vee;
 <TR ALIGN=LEFT><TD>4</TD><TD><A HREF="#3">3</A></TD><TD><A
 HREF="rcp-NDIMP1add1.html"
 TITLE="( 1 ) `=>` ( 1 `/\` 2 ). `t.`">rcp-NDIMP1add1</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#A97100">218</SPAN></TD><TD><A NAME="4"></A>
+STYLE="color:#AE6E00">208</SPAN></TD><TD><A NAME="4"></A>
 <SPAN CLASS=i>. 2</SPAN>
 <SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN>((<SPAN
 CLASS=wff>&#x1D6FE;</SPAN> &wedge; <SPAN CLASS=wff>&#x1D713;</SPAN>) &rarr;
@@ -144,7 +144,7 @@ CLASS=wff>&#x1D713;</SPAN>))</SPAN></TD></TR>
 <TR ALIGN=LEFT><TD>5</TD><TD><A HREF="#2">2</A>, <A HREF="#4">4</A></TD><TD><A
 HREF="rcp-NDNEGI2.html"
 TITLE="`-.` Introduction Recipe. `t.`">rcp-NDNEGI2</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#A27500">229</SPAN></TD><TD><A NAME="5"></A>
+STYLE="color:#A77100">219</SPAN></TD><TD><A NAME="5"></A>
 <SPAN CLASS=i>1</SPAN>
 <SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN>(<SPAN
 CLASS=wff>&#x1D6FE;</SPAN> &rarr; &not; <SPAN
@@ -162,9 +162,9 @@ STYLE="color:#FA0200">9</SPAN> &nbsp;<SPAN CLASS=math> &rarr; </SPAN><A
 HREF="wff-imp.html">wff-imp</A>&nbsp;<SPAN CLASS=r
 STYLE="color:#FA0200">10</SPAN> &nbsp;<SPAN CLASS=math> &wedge; </SPAN><A
 HREF="wff-and.html">wff-and</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#D84B00">133</SPAN> &nbsp;<SPAN CLASS=math> &vee; </SPAN><A
+STYLE="color:#D94B00">132</SPAN> &nbsp;<SPAN CLASS=math> &vee; </SPAN><A
 HREF="wff-or.html">wff-or</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#CF5500">154</SPAN></FONT></TD></TR>
+STYLE="color:#D35100">144</SPAN></FONT></TD></TR>
 <TR><TD ALIGN=LEFT><FONT SIZE=-1><B>This theorem was proved from axioms:</B>
 &nbsp;<A HREF="ax-L1.html">ax-L1</A>&nbsp;<SPAN CLASS=r
 STYLE="color:#FA0200">11</SPAN> &nbsp;<A HREF="ax-L2.html">ax-L2</A>&nbsp;<SPAN
@@ -174,16 +174,16 @@ HREF="ax-L3.html">ax-L3</A>&nbsp;<SPAN CLASS=r STYLE="color:#F90300">13</SPAN>
 STYLE="color:#F90300">14</SPAN></FONT></TD></TR>
 <TR><TD ALIGN=LEFT><FONT SIZE=-1><B>This theorem depends on definitions:</B>
 &nbsp;<A HREF="df-bi-D2.1.html">df-bi-D2.1</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#E43C00">106</SPAN> &nbsp;<A
+STYLE="color:#E33D00">107</SPAN> &nbsp;<A
 HREF="df-and-D2.2.html">df-and-D2.2</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#D84C00">134</SPAN> &nbsp;<A
+STYLE="color:#D84C00">133</SPAN> &nbsp;<A
 HREF="df-or-D2.3.html">df-or-D2.3</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#CE5500">155</SPAN></FONT></TD></TR>
+STYLE="color:#D25100">145</SPAN></FONT></TD></TR>
 <TR><TD ALIGN=LEFT><FONT SIZE=-1><B>This theorem is referenced by:</B> &nbsp;<A
 HREF="norel-P4.2a.RC.html">norel-P4.2a.RC</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#4F8D00">374</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#528D00">368</SPAN> &nbsp;<A
 HREF="norel-P4.2a.CL.html">norel-P4.2a.CL</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#4F8D00">375</SPAN></FONT></TD></TR>
+&nbsp;<SPAN CLASS=r STYLE="color:#518D00">369</SPAN></FONT></TD></TR>
 </TABLE></CENTER>
 <TABLE BORDER=0 WIDTH="100%">
 <TR><TD WIDTH="25%">&nbsp;</TD>

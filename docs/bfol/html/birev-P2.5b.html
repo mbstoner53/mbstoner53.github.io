@@ -16,10 +16,6 @@ img { margin-bottom: -4px }
    }
 -->
 </STYLE>
-<link rel="stylesheet" 
-media="screen" 
-href="https://fontlibrary.org/en/face/xits-math" 
-type="text/css"/> 
 <STYLE TYPE="text/css"> 
 <!--
   .wff { color: blue; } 
@@ -27,7 +23,11 @@ type="text/css"/>
   .term { color: green; } 
   .class { color: #CC33CC; } 
   .typecode { color: gray; } 
-  .math { font-family: XITSMathRegular; } 
+  @font-face {
+     font-family: XITSMath-Regular; 
+     src: url(../fonts/xits-math.woff); 
+  } 
+  .math { font-family: XITSMath-Regular; } 
 -->
 </STYLE>
 <TITLE>birev-P2.5b - bfol.mm Proof Explorer</TITLE>
@@ -76,7 +76,7 @@ bfol.mm Proof Explorer
 <HR NOSHADE SIZE=1>
 <CENTER><B><FONT SIZE="+1">Theorem <FONT
 COLOR="#006633">birev-P2.5b</FONT></FONT></B>&nbsp;<SPAN CLASS=r
-STYLE="color:#E14100">114</SPAN></CENTER>
+STYLE="color:#E04200">115</SPAN></CENTER>
 <CENTER><TABLE><TR><TD ALIGN=LEFT><B>Description: </B>'<SPAN
 CLASS=math>&harr;</SPAN>' Reverse Implication.</TD></TR></TABLE></CENTER>
 
@@ -101,8 +101,8 @@ SUMMARY="Proof of theorem">
 <TR><TH>Step</TH><TH>Hyp</TH><TH>Ref
 </TH><TH>Expression</TH></TR>
 <TR ALIGN=LEFT><TD>1</TD><TD>&nbsp;</TD><TD><A HREF="dfbionlyif-P2.3b.html"
-TITLE="'Only If' Part of ~df-bi-D2.1 .">dfbionlyif-P2.3b</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#E33D00">108</SPAN></TD><TD><A NAME="1"></A>
+TITLE="Necessary Condition for (i.e. 'Only If' part of) ~df-bi-D2.1 .">dfbionlyif-P2.3b</A>&nbsp;<SPAN
+CLASS=r STYLE="color:#E23E00">109</SPAN></TD><TD><A NAME="1"></A>
 <SPAN CLASS=i>. 2</SPAN>
 <SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN>((<SPAN
 CLASS=wff>&#x1D711;</SPAN> &harr; <SPAN CLASS=wff>&#x1D713;</SPAN>) &rarr;
@@ -111,7 +111,7 @@ CLASS=wff>&#x1D713;</SPAN>) &rarr; &not; (<SPAN CLASS=wff>&#x1D713;</SPAN>
 &rarr; <SPAN CLASS=wff>&#x1D711;</SPAN>)))</SPAN></TD></TR>
 <TR ALIGN=LEFT><TD>2</TD><TD>&nbsp;</TD><TD><A HREF="simpr-L2.2b.html"
 TITLE="Right Simplification Lemma.">simpr-L2.2b</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#E83500">96</SPAN></TD><TD><A NAME="2"></A>
+STYLE="color:#E73600">97</SPAN></TD><TD><A NAME="2"></A>
 <SPAN CLASS=i>. 2</SPAN>
 <SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN>(&not; ((<SPAN
 CLASS=wff>&#x1D711;</SPAN> &rarr; <SPAN CLASS=wff>&#x1D713;</SPAN>) &rarr;
@@ -139,7 +139,7 @@ STYLE="color:#FA0200">9</SPAN> &nbsp;<SPAN CLASS=math> &rarr; </SPAN><A
 HREF="wff-imp.html">wff-imp</A>&nbsp;<SPAN CLASS=r
 STYLE="color:#FA0200">10</SPAN> &nbsp;<SPAN CLASS=math> &harr; </SPAN><A
 HREF="wff-bi.html">wff-bi</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#E53A00">103</SPAN></FONT></TD></TR>
+STYLE="color:#E43B00">104</SPAN></FONT></TD></TR>
 <TR><TD ALIGN=LEFT><FONT SIZE=-1><B>This theorem was proved from axioms:</B>
 &nbsp;<A HREF="ax-L1.html">ax-L1</A>&nbsp;<SPAN CLASS=r
 STYLE="color:#FA0200">11</SPAN> &nbsp;<A HREF="ax-L2.html">ax-L2</A>&nbsp;<SPAN
@@ -149,22 +149,22 @@ HREF="ax-L3.html">ax-L3</A>&nbsp;<SPAN CLASS=r STYLE="color:#F90300">13</SPAN>
 STYLE="color:#F90300">14</SPAN></FONT></TD></TR>
 <TR><TD ALIGN=LEFT><FONT SIZE=-1><B>This theorem depends on definitions:</B>
 &nbsp;<A HREF="df-bi-D2.1.html">df-bi-D2.1</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#E43C00">106</SPAN></FONT></TD></TR>
+STYLE="color:#E33D00">107</SPAN></FONT></TD></TR>
 <TR><TD ALIGN=LEFT><FONT SIZE=-1><B>This theorem is referenced by:</B> &nbsp;<A
 HREF="birev-P2.5b.SH.html">birev-P2.5b.SH</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#E04200">115</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#E04300">116</SPAN> &nbsp;<A
 HREF="birev-P2.5b.AC.SH.html">birev-P2.5b.AC.SH</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#E04200">116</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#DF4300">117</SPAN> &nbsp;<A
 HREF="birev-P2.5b.2AC.SH.html">birev-P2.5b.2AC.SH</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#E04300">117</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#DF4400">118</SPAN> &nbsp;<A
 HREF="bisym-P2.6b.html">bisym-P2.6b</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#DD4700">123</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#DC4800">124</SPAN> &nbsp;<A
 HREF="subneg-P2.7.html">subneg-P2.7</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#DB4900">128</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#DB4900">127</SPAN> &nbsp;<A
 HREF="subiml-P2.8a.html">subiml-P2.8a</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#DA4A00">129</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#DA4900">128</SPAN> &nbsp;<A
 HREF="subimr-P2.8b.html">subimr-P2.8b</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#D94A00">131</SPAN></FONT></TD></TR>
+&nbsp;<SPAN CLASS=r STYLE="color:#D94A00">130</SPAN></FONT></TD></TR>
 </TABLE></CENTER>
 <TABLE BORDER=0 WIDTH="100%">
 <TR><TD WIDTH="25%">&nbsp;</TD>

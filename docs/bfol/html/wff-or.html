@@ -16,10 +16,6 @@ img { margin-bottom: -4px }
    }
 -->
 </STYLE>
-<link rel="stylesheet" 
-media="screen" 
-href="https://fontlibrary.org/en/face/xits-math" 
-type="text/css"/> 
 <STYLE TYPE="text/css"> 
 <!--
   .wff { color: blue; } 
@@ -27,7 +23,11 @@ type="text/css"/>
   .term { color: green; } 
   .class { color: #CC33CC; } 
   .typecode { color: gray; } 
-  .math { font-family: XITSMathRegular; } 
+  @font-face {
+     font-family: XITSMath-Regular; 
+     src: url(../fonts/xits-math.woff); 
+  } 
+  .math { font-family: XITSMath-Regular; } 
 -->
 </STYLE>
 <TITLE>wff-or - bfol.mm Proof Explorer</TITLE>
@@ -48,7 +48,7 @@ bfol.mm Proof Explorer
       </B></FONT></TD>
     <TD ALIGN=RIGHT VALIGN=TOP WIDTH="25%">
       <FONT SIZE=-1 FACE=sans-serif>
-      <A HREF="subandr-P2.14b.SH.html">
+      <A HREF="export-P2.10b.SH.html">
       &lt; Previous</A>&nbsp;&nbsp;
       <A HREF="df-or-D2.3.html">Next &gt;</A>
       </FONT><FONT FACE=sans-serif SIZE=-2>
@@ -76,7 +76,7 @@ bfol.mm Proof Explorer
 <HR NOSHADE SIZE=1>
 <CENTER><B><FONT SIZE="+1">Syntax Definition <FONT
 COLOR="#006633">wff-or</FONT></FONT></B>&nbsp;<SPAN CLASS=r
-STYLE="color:#CF5500">154</SPAN></CENTER>
+STYLE="color:#D35100">144</SPAN></CENTER>
 <CENTER><TABLE><TR><TD ALIGN=LEFT><B>Description: </B>Extend WFF definition to
 include the &quot;or&quot; symbol '<SPAN
 CLASS=math>&vee;</SPAN>'.</TD></TR></TABLE></CENTER>
@@ -107,7 +107,7 @@ CLASS=wff>&#x1D713;</SPAN>)</SPAN></TD></TR>
 
 <HR NOSHADE SIZE=1>
 <CENTER>See definition <A HREF="df-or-D2.3.html">df-or-D2.3</A>&nbsp;<SPAN
-CLASS=r STYLE="color:#CE5500">155</SPAN> for more information.</CENTER><HR
+CLASS=r STYLE="color:#D25100">145</SPAN> for more information.</CENTER><HR
 NOSHADE SIZE=1>
 <CENTER><TABLE CELLSPACING=7><TR><TD ALIGN=LEFT><FONT SIZE=-1><B>Colors of
 variables:</B>  <SPAN CLASS=typecode

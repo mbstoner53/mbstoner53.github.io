@@ -128,7 +128,7 @@ ${
 
        This rule is simply stating an assumption. $)
     ndasm-P3.1 $p |- ( ( w_ga /\ w_ph ) -> w_ph ) $=
-        ( simpr-P2.11b ) BAC
+        ( simpr-P2.9b ) BAC
     $.
 $}
 
@@ -214,7 +214,7 @@ ${
 
        Deduce the conjunction of two previously deduced WFFs. $)
     ndandi-P3.7 $p |- ( w_ga -> ( w_ph /\ w_ps ) ) $=
-        ( cmb-P2.11c.AC.2SH ) ABCDEF
+        ( cmb-P2.9c.AC.2SH ) ABCDEF
     $.
 $}
 
@@ -225,9 +225,10 @@ ${
 
     $( Natural Deduction: Left '`/\`' Elimination Rule. 
 
-       Deduce the left conjunct of a previously deduced conjunction. $)
+       Deduce the right conjunct (i.e. eliminate the left conjunct) of a
+       previously deduced conjunction. $)
     ndandel-P3.8 $p |- ( w_ga -> w_ps ) $=
-        ( simpr-P2.11b.AC.SH ) ABCDE
+        ( simpr-P2.9b.AC.SH ) ABCDE
     $.
 $}
 
@@ -238,9 +239,10 @@ ${
 
     $( Natural Deduction: Right '`/\`' Elimination Rule. 
 
-       Deduce the right conjunct of a previously deduced conjunction. $)
+       Deduce the left conjunct (i.e. eliminate the right conjunct) of a
+       previously deduced conjunction. $)
     ndander-P3.9 $p |- ( w_ga -> w_ph ) $=
-        ( simpl-P2.11a.AC.SH ) ABCDE
+        ( simpl-P2.9a.AC.SH ) ABCDE
     $.
 $}
 
@@ -254,7 +256,7 @@ ${
        Deduce a new disjunction containing an arbitrary WFF to the left of a
        previously deduced WFF. $)
     ndoril-P3.10 $p |- ( w_ga -> ( w_ps \/ w_ph ) ) $=
-        ( orintl-P2.15a.AC.SH ) ABCDE
+        ( orintl-P2.11a.AC.SH ) ABCDE
     $.
 $}
 
@@ -268,7 +270,7 @@ ${
        Deduce a new disjunction containing an arbitrary WFF to the right of a
        previously deduced WFF. $)
     ndorir-P3.11 $p |- ( w_ga -> ( w_ph \/ w_ps ) ) $=
-        ( orintr-P2.15b.AC.SH ) ABCDE
+        ( orintr-P2.11b.AC.SH ) ABCDE
     $.
 $}
 
@@ -292,7 +294,7 @@ ${
        then we can deduce '`w_ch`' with the case assumptions, '`w_ph`' and
        '`w_ps`', discharged.  $)
     ndore-P3.12 $p |- ( w_ga -> w_ch ) $=
-        ( export-P2.10b.SH orelim-P2.15c.AC.3SH ) ABCDDACEHDBCFHGI
+        ( export-P2.10b.SH orelim-P2.11c.AC.3SH ) ABCDDACEHDBCFHGI
     $.
 $}
 
@@ -316,7 +318,7 @@ $( ------------------------------------------------------------------------- $)
 ${
     ndbief-P3.14.1 $e |- ( w_ga -> ( w_ph <-> w_ps ) ) $.
 
-    $( Natural Deduction: '`<->`' Forward Implication Rule. 
+    $( Natural Deduction: '`<->`' Elimination Rule - Forward Implication. 
 
        After deducing a biconditional statement, we can deduce the assocated
        forward implication. $)
@@ -330,7 +332,7 @@ $( ------------------------------------------------------------------------- $)
 ${
     ndbier-P3.15.1 $e |- ( w_ga -> ( w_ph <-> w_ps ) ) $.
 
-    $( Natural Deduction: '`<->`' Reverse Implication Rule.
+    $( Natural Deduction: '`<->`' Elimination Rule - Reverse Implication.
 
        After deducing a biconditional statement, we can deduce the associated
        reverse implication. $)
@@ -342,12 +344,12 @@ $}
 $( ------------------------------------------------------------------------- $)
 
 ${
-    $( Law of Excluded Middle (restated). 
+    $( Natural Deduction: Law of Excluded Middle (restated). 
 
        Every WFF '`w_ph`' is either true or false.  This law is rejected
        within intuitionist logic. $)
     ndexclmid-P3.16 $p |- ( w_ph \/ -. w_ph ) $=
-        ( exclmid-P2.16 ) AB
+        ( exclmid-P2.12 ) AB
     $.
 $}
 
@@ -380,7 +382,7 @@ ${
        Rules 17 and 18 allow us to write '`( T. -> w_ph )`' as a synonym for
        stating "'`w_ph`' is true" (or, more precisely, deducable). $)
     ndtruee-P3.18 $p |- w_ph $=
-        ( wff-true true-P2.18 ax-MP ) CADBE
+        ( wff-true true-P2.14 ax-MP ) CADBE
     $.
 $}
 
@@ -415,7 +417,7 @@ ${
        "'`w_ph`' is false" (or, more precisely, refutable).
 $)
     ndfalsee-P3.20 $p |- -. w_ph $=
-        ( wff-false wff-neg false-P2.19 trnsp-P1.15c.SH ax-MP ) CZDADEAHBFG
+        ( wff-false wff-neg false-P2.15 trnsp-P1.15c.SH ax-MP ) CZDADEAHBFG
     $.
 $}
 
@@ -1254,6 +1256,12 @@ $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
   Closed Forms of Natural Deduction Rules.
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+  The closed form of ~ndimp-P3.2 is just the Hilbert Axiom L1, which we deduce
+  later as ~axL1-P3.21.CL .  The closed forms of ~ndimi-P3.5 and ~ndandi-P3.7
+  are trivial cases of implication identity, which is already availible as
+  ~rcp-NDASM1of1 .  The closed forms of ~ndandel-P3.8 and ~ndander-P3.9 are 
+  also already availible as ~rcp-NDASM1of2 and ~rcp-NDASM2of2 .
 $)
 
 ${
@@ -1918,7 +1926,7 @@ ${
 $}
 
 ${
-    $( Closed Form of ~nmt-P3.32b . `t.` $)
+    $( Closed Form of ~nmt-P3.32b . $)
     nmt-3.32b.CL $p |- ( ( -. w_ph -> w_ph ) -> w_ph ) $=
         ( wff-neg wff-imp rcp-NDASM1of1 nmt-P3.32b ) AABACZFDE
     $.
@@ -2023,11 +2031,11 @@ $(
   These two laws can be thought of as justification theorems for treating
   a sequent of the form...
 
-  1.) '( `w_ga1`, `w_ga2`, ... , `w_ga`_n ) `|-` `w_ph`'
+  1.) '`w_ga1`, `w_ga2`, ... , `w_ga`_n `|-` `w_ph`'
 
-  as identical to the WFF...
+  as identical to the WFF statement...
 
-  2.) '`( (` ... `( ( w_ga1 /\ w_ga2 ) /\ w_ga3 ) /\` ... `w_ga`_n
+  2.) '`|- ( (` ... `( ( w_ga1 /\ w_ga2 ) /\ w_ga3 ) /\` ... `w_ga`_n
   `) -> w_ph )`.
 
   To obtain 2.) from 1.), first repeatedly apply ~ndimi-P3.5 to obtain a
@@ -2037,6 +2045,11 @@ $(
   To obtain 1.) from 2.), first apply ~export-P3.34b.RC repeatedly to obtain a
   nested implication.  From there, use a combination of ~ndasm-P3.1 ,
   ~ndimp-P3.2 , and ~ndime-P3.6 repeatedly to build the sequent back up.
+
+  The trivial case, '`w_ph` `|- w_ps` `<=>` `|- ( w_ph -> w_ps )`, cannot be
+  replicated formally in metamath, but it is similarly justified using
+  versions of ~ndasm-P3.1 , ~ndimp-P3.2 , ~ndimi-P3.5 , and ~ndime-P3.6 with
+  an empty context.
 $)
 
 ${
@@ -2081,6 +2094,92 @@ ${
        ( wff-imp wff-true wff-and ndtruei-P3.17 export-P3.34b ndtruee-P3.18 )
        ABCEEABCFABGCEDHIJ
    $.
+$}
+
+$(
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.
+  Examples.
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.
+$)
+
+${
+    example-E3.1a.1 $e
+        |- ( ( w_ph1 /\ w_ph2 /\ w_ph3 /\ w_ph4 /\ w_ph5 ) -> w_ps )
+    $.
+
+    $( Convert Sequent to Nested Implication. `t.` $)
+    example-E3.1a $p
+        |- (
+          w_ph1 -> ( w_ph2 -> ( w_ph3 -> ( w_ph4 -> ( w_ph5
+          -> w_ps ) ) ) )
+        )
+    $=
+        ( wff-imp rcp-NDIMI5 rcp-NDIMI4 rcp-NDIMI3 rcp-NDIMI2 )
+        CDEFHZHZHABNABCMABCDFABCDEGIJKL
+    $.
+$}
+
+$( ------------------------------------------------------------------------- $)
+
+${
+    example-E3.1b.1 $e
+        |- ( w_ph1 -> ( w_ph2 -> ( w_ph3 -> ( w_ph4 -> ( w_ph5
+          -> w_ps
+        ) ) ) ) )
+    $.
+
+    $( Convert Nested Implication to Nested Conjunction. `t.` $)
+    example-E3.1b $p
+        |- (
+          ( ( ( ( w_ph1 /\ w_ph2 ) /\ w_ph3 ) /\ w_ph4 ) /\ w_ph5 )
+          -> w_ps
+        )
+    $=
+        ( wff-and wff-imp import-P3.34a.RC ) ABHZCHZDHEFLDEFIZKCDMIZABCNIGJJJJ
+    $.
+$}
+
+$( ------------------------------------------------------------------------- $)
+
+${
+    example-E3.2a.1 $e
+        |- (
+          ( ( ( ( w_ph1 /\ w_ph2 ) /\ w_ph3 ) /\ w_ph4 ) /\ w_ph5 )
+          -> w_ps
+        )
+    $.
+
+    $( Convert Nested Conjunction to Nested Implication. `t.` $)
+    example-E3.2a $p
+        |- (
+          w_ph1 -> ( w_ph2 -> ( w_ph3 -> ( w_ph4 -> ( w_ph5
+          -> w_ps ) ) ) )
+        )
+    $=
+        ( wff-imp wff-and export-P3.34b.RC ) ABCDEFHZHZHABIZCLMCIZDKNDIEFGJJJJ
+    $.
+$}
+
+$( ------------------------------------------------------------------------- $)
+
+${
+    example-E3.2b.1 $e
+        |- (
+          w_ph1 -> ( w_ph2 -> ( w_ph3 -> ( w_ph4 -> ( w_ph5
+          -> w_ps ) ) ) )
+        )
+    $.
+
+    $( Convert Nested Implication to Sequent. `t.` $)
+    example-E3.2b $p
+        |- ( ( w_ph1 /\ w_ph2 /\ w_ph3 /\ w_ph4 /\ w_ph5 ) -> w_ps )
+    $=
+        ( wff-rcp-AND5 rcp-NDASM5of5 wff-imp wff-rcp-AND4 rcp-NDASM4of4
+          wff-rcp-AND3 rcp-NDASM3of3 wff-and rcp-NDASM2of2 rcp-NDIMP1add1
+          ndime-P3.6 rcp-NDIMP2add1 rcp-NDIMP3add1 rcp-NDIMP4add1 )
+        EFABCDEHABCDEIEFJZABCDEDUBABCDKABCDLDUBJZABCDCUCABCMABCNCUCJZABCBUDABO
+        ABPBUDJABGQRSRTRUAR
+    $.
 $}
 
 $(
@@ -2600,6 +2699,32 @@ $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
   Re-deriving Chapter 2 Definitions.
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+  In intuitionist logic, conjunction ('`/\`') and disjunction ('`\/`') are
+  both a stronger notion than they are in the classical case.  In 
+  intuitionist logic we have...
+
+  '`( ( w_ph /\ w_ps ) -> -. ( w_ph -> -. w_ps ) )`' and
+  '`( ( w_ph \/ w_ps ) -> ( -. w_ph -> w_ps ) )`', but not...
+
+  '`( -. ( w_ph -> -. w_ps ) -> ( w_ph /\ w_ps ) )`' or
+  '`( ( -. w_ph -> w_ps ) -> ( w_ph \/ w_ps ) )`'.
+  
+  The biconditional relationship '`( w_ph <-> w_ps )`' is also stronger in the
+  intuitionist case as it can be writter in terms of conjunction as...
+
+  '`( ( w_ph <-> w_ps ) <-> ( ( w_ph -> w_ps ) /\ ( w_ps -> w_ph ) ) )`'
+
+  which can be expanded to...
+
+  '`( ( ( w_ph <-> w_ps ) -> ( ( w_ph -> w_ps ) /\ ( w_ps -> w_ph ) ) ) /\`
+   `( ( ( w_ph -> w_ps ) /\ ( w_ps -> w_ph ) ) -> ( w_ph <-> w_ps ) ) )`.
+
+  In intuitionist logic, ~andasimint-P3.46b allows the '`/\`' symbol within the
+  left conjunct to be replaced with the primitive Hilbert definition.  The same
+  cannot be done with the right conjunct as we would need the "sufficient
+  condition" (or "only if") part of the Hilbert definition, which is not
+  intuitionally valid. 
 $)
 
 ${
@@ -2637,7 +2762,8 @@ $}
 
 $( ------------------------------------------------------------------------- $)
 
-    $( One Direction of '`/\`' in Terms of '`->`'. `t.`
+    $( Necessary Condition for (i.e. "If" part of) '`/\`' Defined in Terms of
+       '`->`' and '`-.`'. `t.`
 
        Only this direction is deducible with intuitionist logic. $)
     andasimint-P3.46b $p |- ( ( w_ph /\ w_ps ) -> -. ( w_ph -> -. w_ps ) ) $=
@@ -2700,7 +2826,8 @@ $}
 $( ------------------------------------------------------------------------- $)
 
 ${
-    $( One Direction of '`\/`' in Terms of '`->`'. `t.`
+    $( Necessary Condition for (i.e. "If" part of) '`\/`' Defined in Terms of
+       '`->`' and '`-.`'. `t.`
 
        Only this direction is deducible with intuitionist logic. $)
     orasimint-P3.48b $p |- ( ( w_ph \/ w_ps ) -> ( -. w_ph -> w_ps ) ) $=

@@ -16,10 +16,6 @@ img { margin-bottom: -4px }
    }
 -->
 </STYLE>
-<link rel="stylesheet" 
-media="screen" 
-href="https://fontlibrary.org/en/face/xits-math" 
-type="text/css"/> 
 <STYLE TYPE="text/css"> 
 <!--
   .wff { color: blue; } 
@@ -27,7 +23,11 @@ type="text/css"/>
   .term { color: green; } 
   .class { color: #CC33CC; } 
   .typecode { color: gray; } 
-  .math { font-family: XITSMathRegular; } 
+  @font-face {
+     font-family: XITSMath-Regular; 
+     src: url(../fonts/xits-math.woff); 
+  } 
+  .math { font-family: XITSMath-Regular; } 
 -->
 </STYLE>
 <TITLE>exnegallint-P7 - bfol.mm Proof Explorer</TITLE>
@@ -76,7 +76,7 @@ bfol.mm Proof Explorer
 <HR NOSHADE SIZE=1>
 <CENTER><B><FONT SIZE="+1">Theorem <FONT
 COLOR="#006633">exnegallint-P7</FONT></FONT></B>&nbsp;<SPAN CLASS=r
-STYLE="color:#DD00DB">1053</SPAN></CENTER>
+STYLE="color:#DD00DC">1047</SPAN></CENTER>
 <CENTER><TABLE><TR><TD ALIGN=LEFT><B>Description: </B>&quot;There exists a
 negative&quot; Implies &quot;Not for all&quot;. <SPAN
 CLASS=math>&dagger;</SPAN>
@@ -106,14 +106,14 @@ SUMMARY="Proof of theorem">
 </TH><TH>Expression</TH></TR>
 <TR ALIGN=LEFT><TD>1</TD><TD>&nbsp;</TD><TD><A HREF="ndnfrex1-P7.8.html"
 TITLE="Natural Deduction: Effective Non-Freeness Rule 8. '`x`' is effectively not free in...">ndnfrex1-P7.8</A>&nbsp;<SPAN
-CLASS=r STYLE="color:#8265FF">839</SPAN></TD><TD><A NAME="1"></A>
+CLASS=r STYLE="color:#8165FF">833</SPAN></TD><TD><A NAME="1"></A>
 <SPAN CLASS=i>. . . 4</SPAN>
 <SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN>&#8498;<SPAN
 CLASS=objvar>&#x1D465;</SPAN>&exist;<SPAN CLASS=objvar>&#x1D465;</SPAN> &not;
 <SPAN CLASS=wff>&#x1D711;</SPAN></SPAN></TD></TR>
 <TR ALIGN=LEFT><TD>2</TD><TD>&nbsp;</TD><TD><A HREF="ndnfrall1-P7.7.html"
 TITLE="Natural Deduction: Effective Non-Freeness Rule 7. '`x`' is effectively not free in...">ndnfrall1-P7.7</A>&nbsp;<SPAN
-CLASS=r STYLE="color:#8165FF">838</SPAN></TD><TD><A NAME="2"></A>
+CLASS=r STYLE="color:#8066FF">832</SPAN></TD><TD><A NAME="2"></A>
 <SPAN CLASS=i>. . . 4</SPAN>
 <SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN>&#8498;<SPAN
 CLASS=objvar>&#x1D465;</SPAN>&forall;<SPAN CLASS=objvar>&#x1D465;</SPAN><SPAN
@@ -121,7 +121,7 @@ CLASS=wff>&#x1D711;</SPAN></SPAN></TD></TR>
 <TR ALIGN=LEFT><TD>3</TD><TD><A HREF="#1">1</A>, <A HREF="#2">2</A></TD><TD><A
 HREF="ndnfrand-P7.4.RC.html"
 TITLE="Inference Form of ~ndnfrand-P7.4 . `t.`">ndnfrand-P7.4.RC</A>&nbsp;<SPAN
-CLASS=r STYLE="color:#A351FF">883</SPAN></TD><TD><A NAME="3"></A>
+CLASS=r STYLE="color:#A252FF">877</SPAN></TD><TD><A NAME="3"></A>
 <SPAN CLASS=i>. . 3</SPAN>
 <SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN>&#8498;<SPAN
 CLASS=objvar>&#x1D465;</SPAN>(&exist;<SPAN CLASS=objvar>&#x1D465;</SPAN> &not;
@@ -129,13 +129,13 @@ CLASS=objvar>&#x1D465;</SPAN>(&exist;<SPAN CLASS=objvar>&#x1D465;</SPAN> &not;
 CLASS=objvar>&#x1D465;</SPAN><SPAN CLASS=wff>&#x1D711;</SPAN>)</SPAN></TD></TR>
 <TR ALIGN=LEFT><TD>4</TD><TD>&nbsp;</TD><TD><A HREF="ndnfrv-P7.1.html"
 TITLE="Natural Deduction: Effective Non-Freeness Rule 1. If '`x`' does not occur in...">ndnfrv-P7.1</A>&nbsp;<SPAN
-CLASS=r STYLE="color:#7D67FF">832</SPAN></TD><TD><A NAME="4"></A>
+CLASS=r STYLE="color:#7C67FF">826</SPAN></TD><TD><A NAME="4"></A>
 <SPAN CLASS=i>. . 3</SPAN>
 <SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN>&#8498;<SPAN
 CLASS=objvar>&#x1D465;</SPAN>&perp;</SPAN></TD></TR>
 <TR ALIGN=LEFT><TD>5</TD><TD>&nbsp;</TD><TD><A HREF="rcp-NDASM2of2.html"
 TITLE="( 1 `/\` 2 ) `->` 2. `t.`">rcp-NDASM2of2</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#B16C00">204</SPAN></TD><TD><A NAME="5"></A>
+STYLE="color:#B66800">194</SPAN></TD><TD><A NAME="5"></A>
 <SPAN CLASS=i>. . . . 5</SPAN>
 <SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN>((&exist;<SPAN
 CLASS=objvar>&#x1D465;</SPAN> &not; <SPAN CLASS=wff>&#x1D711;</SPAN> &wedge;
@@ -144,7 +144,7 @@ CLASS=objvar>&#x1D465;</SPAN> &not; <SPAN CLASS=wff>&#x1D711;</SPAN> &wedge;
 CLASS=wff>&#x1D711;</SPAN>)</SPAN></TD></TR>
 <TR ALIGN=LEFT><TD>6</TD><TD><A HREF="#5">5</A></TD><TD><A HREF="alle-P7.html"
 TITLE="Simplified '`A.`' Elimination Law. `t.` This is also known as the Specialization...">alle-P7</A>&nbsp;<SPAN
-CLASS=r STYLE="color:#C12EFC">947</SPAN></TD><TD><A NAME="6"></A>
+CLASS=r STYLE="color:#C12FFC">941</SPAN></TD><TD><A NAME="6"></A>
 <SPAN CLASS=i>. . . 4</SPAN>
 <SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN>((&exist;<SPAN
 CLASS=objvar>&#x1D465;</SPAN> &not; <SPAN CLASS=wff>&#x1D711;</SPAN> &wedge;
@@ -153,7 +153,7 @@ CLASS=objvar>&#x1D465;</SPAN> &not; <SPAN CLASS=wff>&#x1D711;</SPAN> &wedge;
 <TR ALIGN=LEFT><TD>7</TD><TD><A HREF="#6">6</A></TD><TD><A
 HREF="nimpoe-P4.4b.html"
 TITLE="Variation of Principle of Explosion Using Implication (negated form). `t.`">nimpoe-P4.4b</A>&nbsp;<SPAN
-CLASS=r STYLE="color:#488E00">386</SPAN></TD><TD><A NAME="7"></A>
+CLASS=r STYLE="color:#4A8E00">380</SPAN></TD><TD><A NAME="7"></A>
 <SPAN CLASS=i>. . 3</SPAN>
 <SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN>((&exist;<SPAN
 CLASS=objvar>&#x1D465;</SPAN> &not; <SPAN CLASS=wff>&#x1D711;</SPAN> &wedge;
@@ -161,7 +161,7 @@ CLASS=objvar>&#x1D465;</SPAN> &not; <SPAN CLASS=wff>&#x1D711;</SPAN> &wedge;
 &rarr; (&not; <SPAN CLASS=wff>&#x1D711;</SPAN> &rarr; &perp;))</SPAN></TD></TR>
 <TR ALIGN=LEFT><TD>8</TD><TD>&nbsp;</TD><TD><A HREF="rcp-NDASM1of2.html"
 TITLE="( 1 `/\` 2 ) `->` 1. `t.`">rcp-NDASM1of2</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#B16C00">203</SPAN></TD><TD><A NAME="8"></A>
+STYLE="color:#B76700">193</SPAN></TD><TD><A NAME="8"></A>
 <SPAN CLASS=i>. . 3</SPAN>
 <SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN>((&exist;<SPAN
 CLASS=objvar>&#x1D465;</SPAN> &not; <SPAN CLASS=wff>&#x1D711;</SPAN> &wedge;
@@ -171,7 +171,7 @@ CLASS=wff>&#x1D711;</SPAN>)</SPAN></TD></TR>
 <TR ALIGN=LEFT><TD>9</TD><TD><A HREF="#3">3</A>, <A HREF="#4">4</A>, <A
 HREF="#7">7</A>, <A HREF="#8">8</A></TD><TD><A HREF="exe-P7.html"
 TITLE="Simplified '`E.`' Elimination Law. `t.` For the original form, using explicit...">exe-P7</A>&nbsp;<SPAN
-CLASS=r STYLE="color:#C726FA">961</SPAN></TD><TD><A NAME="9"></A>
+CLASS=r STYLE="color:#C727FA">955</SPAN></TD><TD><A NAME="9"></A>
 <SPAN CLASS=i>. 2</SPAN>
 <SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN>((&exist;<SPAN
 CLASS=objvar>&#x1D465;</SPAN> &not; <SPAN CLASS=wff>&#x1D711;</SPAN> &wedge;
@@ -180,7 +180,7 @@ CLASS=objvar>&#x1D465;</SPAN> &not; <SPAN CLASS=wff>&#x1D711;</SPAN> &wedge;
 <TR ALIGN=LEFT><TD>10</TD><TD><A HREF="#9">9</A></TD><TD><A
 HREF="falsenegi-P4.18.html"
 TITLE="Derived Natural Deduction Rule Using '`F.`'. `t.`">falsenegi-P4.18</A>&nbsp;<SPAN
-CLASS=r STYLE="color:#239200">438</SPAN></TD><TD><A NAME="10"></A>
+CLASS=r STYLE="color:#269200">432</SPAN></TD><TD><A NAME="10"></A>
 <SPAN CLASS=i>1</SPAN>
 <SPAN CLASS=math><SPAN CLASS=typecode>&vdash; </SPAN>(&exist;<SPAN
 CLASS=objvar>&#x1D465;</SPAN> &not; <SPAN CLASS=wff>&#x1D711;</SPAN> &rarr;
@@ -201,11 +201,11 @@ STYLE="color:#FA0200">9</SPAN> &nbsp;<SPAN CLASS=math> &rarr; </SPAN><A
 HREF="wff-imp.html">wff-imp</A>&nbsp;<SPAN CLASS=r
 STYLE="color:#FA0200">10</SPAN> &nbsp;<SPAN CLASS=math> &wedge; </SPAN><A
 HREF="wff-and.html">wff-and</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#D84B00">133</SPAN> &nbsp;<SPAN CLASS=math>&perp;</SPAN><A
+STYLE="color:#D94B00">132</SPAN> &nbsp;<SPAN CLASS=math>&perp;</SPAN><A
 HREF="wff-false.html">wff-false</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#C85B00">167</SPAN> &nbsp;<SPAN CLASS=math>&exist;</SPAN><A
+STYLE="color:#CD5600">157</SPAN> &nbsp;<SPAN CLASS=math>&exist;</SPAN><A
 HREF="wff-exists.html">wff-exists</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#008F7A">601</SPAN></FONT></TD></TR>
+STYLE="color:#008F77">595</SPAN></FONT></TD></TR>
 <TR><TD ALIGN=LEFT><FONT SIZE=-1><B>This theorem was proved from axioms:</B>
 &nbsp;<A HREF="ax-L1.html">ax-L1</A>&nbsp;<SPAN CLASS=r
 STYLE="color:#FA0200">11</SPAN> &nbsp;<A HREF="ax-L2.html">ax-L2</A>&nbsp;<SPAN
@@ -228,23 +228,23 @@ HREF="ax-L12.html">ax-L12</A>&nbsp;<SPAN CLASS=r
 STYLE="color:#F80800">29</SPAN></FONT></TD></TR>
 <TR><TD ALIGN=LEFT><FONT SIZE=-1><B>This theorem depends on definitions:</B>
 &nbsp;<A HREF="df-bi-D2.1.html">df-bi-D2.1</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#E43C00">106</SPAN> &nbsp;<A
+STYLE="color:#E33D00">107</SPAN> &nbsp;<A
 HREF="df-and-D2.2.html">df-and-D2.2</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#D84C00">134</SPAN> &nbsp;<A
+STYLE="color:#D84C00">133</SPAN> &nbsp;<A
 HREF="df-or-D2.3.html">df-or-D2.3</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#CE5500">155</SPAN> &nbsp;<A
+STYLE="color:#D25100">145</SPAN> &nbsp;<A
 HREF="df-true-D2.4.html">df-true-D2.4</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#C95A00">165</SPAN> &nbsp;<A
+STYLE="color:#CE5500">155</SPAN> &nbsp;<A
 HREF="df-false-D2.5.html">df-false-D2.5</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#C75B00">168</SPAN> &nbsp;<A
+STYLE="color:#CC5700">158</SPAN> &nbsp;<A
 HREF="df-rcp-AND3.html">df-rcp-AND3</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#C55C00">171</SPAN> &nbsp;<A
+STYLE="color:#CB5800">161</SPAN> &nbsp;<A
 HREF="df-exists-D5.1.html">df-exists-D5.1</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#008F7B">602</SPAN> &nbsp;<A
+STYLE="color:#008F78">596</SPAN> &nbsp;<A
 HREF="df-nfree-D6.1.html">df-nfree-D6.1</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#0084DA">688</SPAN> &nbsp;<A
+STYLE="color:#0085D7">682</SPAN> &nbsp;<A
 HREF="df-psub-D6.2.html">df-psub-D6.2</A>&nbsp;<SPAN CLASS=r
-STYLE="color:#027FF9">722</SPAN></FONT></TD></TR>
+STYLE="color:#0280F7">716</SPAN></FONT></TD></TR>
 <TR><TD ALIGN=LEFT><FONT SIZE=-1><B>This theorem is referenced by:</B>
 (None)</FONT></TD></TR>
 </TABLE></CENTER>

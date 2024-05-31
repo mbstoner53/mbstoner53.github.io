@@ -684,6 +684,7 @@ $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
   Some Simple Proofs.
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+  SH = Separate Hypothesis.
 $)
 
 ${
@@ -877,6 +878,8 @@ $(
 -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.
   Application of Proof Recipes.
 -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.
+
+  AC = Add Context.
 $)
 
 ${
@@ -1044,6 +1047,20 @@ ${
     $.
 $}
 
+${
+    mpt-P1.8.3AC.2SH.1 $e |- ( w_ga1 -> ( w_ga2 -> ( w_ga3 -> w_ph ) ) ) $.
+
+    mpt-P1.8.3AC.2SH.2 $e
+        |- ( w_ga1 -> ( w_ga2 -> ( w_ga3 -> ( w_ph -> w_ps ) ) ) )
+    $.
+
+    $( Another Deductive Form of ~mpt-P1.8 . $)
+    mpt-P1.8.3AC.2SH $p |- ( w_ga1 -> ( w_ga2 -> ( w_ga3 -> w_ps ) ) ) $=
+        ( wff-imp mpt-P1.8 axL1.SH rcp-FR3.SH ax-MP )
+        CDEABHZHHHCDEBHHHGMBEDCCDEAHHHCDEMBHZHHHFANEDCDEANHZHZHCPDOEABIJJJKLKL
+    $.
+$}
+
 $( ------------------------------------------------------------------------- $)
 
 ${
@@ -1169,10 +1186,9 @@ $}
 $( ------------------------------------------------------------------------- $)
 
 ${
-    $( Double Negation Law A (excluded middle). 
+    $( Double Negation Law A. 
 
-       This law is equivalent to the excluded middle and cannot be proven in
-       the intuitionist system. The other related law is ~dneg-P1.13b . $)
+       The other related law is ~dneg-P1.13b . $)
     dneg-P1.13a $p |- ( -. -. w_ph -> w_ph ) $= 
         ( wff-neg wff-imp poe-P1.11a clav-P1.12 syl-P1.2 ) ABZBGACAGADAEF 
     $.
@@ -1183,9 +1199,7 @@ $( ------------------------------------------------------------------------- $)
 ${
     $( Double Negation Law B. 
 
-       This law is not related to the excluded middle and can be proven in the
-       intuitionist system. The other related law is ~dneg-P1.13a . 
-    $)
+       The other related law is ~dneg-P1.13a . $)
     dneg-P1.13b $p |- ( w_ph -> -. -. w_ph ) $= 
         ( wff-neg dneg-P1.13a axL3.SH ) ABZBAECD 
     $.
@@ -1695,7 +1709,7 @@ $)
 $( ------------------------------------------------------------------------- $)
 
 ${
-    $(  "If" Part of ~df-bi-D2.1 . $)
+    $( Sufficient Conditon for (i.e. "If" part of) ~df-bi-D2.1 . $)
     dfbiif-P2.3a $p 
         |- (
           -. ( ( w_ph -> w_ps ) -> -. ( w_ps -> w_ph ) ) -> ( w_ph <-> w_ps )
@@ -1709,7 +1723,7 @@ $}
 $( ------------------------------------------------------------------------- $)
 
 ${
-    $(  "Only If" Part of ~df-bi-D2.1 . $)
+    $( Necessary Condition for (i.e. "Only If" part of) ~df-bi-D2.1 . $)
     dfbionlyif-P2.3b $p 
         |- (
           ( w_ph <-> w_ps ) -> -. ( ( w_ph -> w_ps ) -> -. ( w_ps -> w_ph ) )
@@ -1914,27 +1928,6 @@ ${
     $.
 $}
 
-${
-    bitrns-P2.6c.2SH.1 $e |- ( w_ph <-> w_ps ) $.
-    bitrns-P2.6c.2SH.2 $e |- ( w_ps <-> w_ch ) $.
-
-    $( Inference from ~bitrns-P2.6c . $)
-    bitrns-P2.6c.2SH $p |- ( w_ph <-> w_ch ) $=
-        ( wff-bi wff-imp bitrns-P2.6c ax-MP ) BCFZACFZEABFJKGDABCHII
-    $.
-$}
-
-${
-    bitrns-P2.6c.AC.2SH.1 $e |- ( w_ga -> ( w_ph <-> w_ps ) ) $.
-    bitrns-P2.6c.AC.2SH.2 $e |- ( w_ga -> ( w_ps <-> w_ch ) ) $.
-
-    $( Deductive Form of ~bitrns-P2.6c . $)
-    bitrns-P2.6c.AC.2SH $p |- ( w_ga -> ( w_ph <-> w_ch ) ) $=
-        ( wff-bi wff-imp bitrns-P2.6c axL1.SH rcp-FR1.SH ax-MP )
-        DBCGZHDACGZHFMNDDABGZHDMNHZHEOPDOPHDABCIJKLKL
-    $.
-$}
-
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
   Substitution Laws.
@@ -2048,13 +2041,13 @@ $(
   Fundamental Properties.
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
   
-  Taken together, the properties ~simpl-P2.11a , ~simpr-P2.11b , and
-  ~cmb-P2.11c completely define logical conjunction.
+  Taken together, the properties ~simpl-P2.9a , ~simpr-P2.9b , and
+  ~cmb-P2.9c completely define logical conjunction.
 $)
 
 ${
     $( '`/\`' Left Simplification. $)
-    simpl-P2.11a $p |- ( ( w_ph /\ w_ps ) -> w_ph ) $= 
+    simpl-P2.9a $p |- ( ( w_ph /\ w_ps ) -> w_ph ) $= 
         ( wff-and wff-neg wff-imp df-and-D2.2 bifwd-P2.5a.SH simpl-L2.2a
           syl-P1.2 ) 
         ABCZABDEDZAJKABFGABHI 
@@ -2062,11 +2055,11 @@ ${
 $}
 
 ${
-    simpl-P2.11a.AC.SH.1 $e |- ( w_ga -> ( w_ph /\ w_ps ) ) $.
+    simpl-P2.9a.AC.SH.1 $e |- ( w_ga -> ( w_ph /\ w_ps ) ) $.
     
-    $( Deductive Form of ~simpl-P2.11a . $)
-    simpl-P2.11a.AC.SH $p |- ( w_ga -> w_ph ) $= 
-        ( wff-and wff-imp simpl-P2.11a axL1.SH rcp-FR1.SH ax-MP )
+    $( Deductive Form of ~simpl-P2.9a . $)
+    simpl-P2.9a.AC.SH $p |- ( w_ga -> w_ph ) $= 
+        ( wff-and wff-imp simpl-P2.9a axL1.SH rcp-FR1.SH ax-MP )
         CABEZFCAFDKACKAFCABGHIJ 
     $.
 $}
@@ -2075,7 +2068,7 @@ $( ------------------------------------------------------------------------- $)
 
 ${
     $( '`/\`' Right Simplification. $)
-    simpr-P2.11b $p |- ( ( w_ph /\ w_ps ) -> w_ps ) $= 
+    simpr-P2.9b $p |- ( ( w_ph /\ w_ps ) -> w_ps ) $= 
         ( wff-and wff-neg wff-imp df-and-D2.2 bifwd-P2.5a.SH simpr-L2.2b
           syl-P1.2 ) 
         ABCZABDEDZBJKABFGABHI 
@@ -2083,11 +2076,11 @@ ${
 $}
 
 ${
-    simpr-P2.11b.AC.SH.1 $e |- ( w_ga -> ( w_ph /\ w_ps ) ) $.
+    simpr-P2.9b.AC.SH.1 $e |- ( w_ga -> ( w_ph /\ w_ps ) ) $.
     
-    $( Deductive Form of ~simpr-P2.11b . $)
-    simpr-P2.11b.AC.SH $p |- ( w_ga -> w_ps ) $= 
-        ( wff-and wff-imp simpr-P2.11b axL1.SH rcp-FR1.SH ax-MP )
+    $( Deductive Form of ~simpr-P2.9b . $)
+    simpr-P2.9b.AC.SH $p |- ( w_ga -> w_ps ) $= 
+        ( wff-and wff-imp simpr-P2.9b axL1.SH rcp-FR1.SH ax-MP )
         CABEZFCBFDKBCKBFCABGHIJ
     $.
 $}
@@ -2096,7 +2089,7 @@ $( ------------------------------------------------------------------------- $)
 
 ${
     $( '`/\`' Introduction by Combination. $)
-    cmb-P2.11c $p |- ( w_ph -> ( w_ps -> ( w_ph /\ w_ps ) ) ) $= 
+    cmb-P2.9c $p |- ( w_ph -> ( w_ps -> ( w_ph /\ w_ps ) ) ) $= 
         ( wff-neg wff-imp wff-and cmb-L2.3 df-and-D2.2 subimr-P2.8b.SH
           birev-P2.5b.SH ax-MP )
         ABABCDCZDZDZABABEZDZDZABFPMOLANKBABGHHIJ 
@@ -2104,12 +2097,12 @@ ${
 $}
 
 ${
-    cmb-P2.11c.AC.2SH.1 $e |- ( w_ga -> w_ph ) $.
-    cmb-P2.11c.AC.2SH.2 $e |- ( w_ga -> w_ps ) $.
+    cmb-P2.9c.AC.2SH.1 $e |- ( w_ga -> w_ph ) $.
+    cmb-P2.9c.AC.2SH.2 $e |- ( w_ga -> w_ps ) $.
 
-    $( Deductive Form of ~cmb-P2.11c . $)
-    cmb-P2.11c.AC.2SH $p |- ( w_ga -> ( w_ph /\ w_ps ) ) $= 
-        ( wff-imp wff-and cmb-P2.11c axL1.SH rcp-FR1.SH ax-MP ) 
+    $( Deductive Form of ~cmb-P2.9c . $)
+    cmb-P2.9c.AC.2SH $p |- ( w_ga -> ( w_ph /\ w_ps ) ) $= 
+        ( wff-imp wff-and cmb-P2.9c axL1.SH rcp-FR1.SH ax-MP ) 
         CBFCABGZFEBLCCAFCBLFZFDAMCAMFCABHIJKJK 
     $.
 $}
@@ -2122,12 +2115,12 @@ $)
 
 ${
     $( '`/\`' Importation Law. $)
-    import-P2.10a $p 
+    import-P2.10a $p
         |- ( ( w_ph -> ( w_ps -> w_ch ) ) -> ( ( w_ph /\ w_ps ) -> w_ch ) )
-    $= 
-        ( wff-imp wff-neg wff-and import-L2.1a df-and-D2.2 subiml-P2.8a.SH
-          birev-P2.5b.SH syl-P1.2 ) 
-        ABCDDABEDEZCDZABFZCDZABCGOMNLCABHIJK 
+    $=
+        ( wff-imp wff-and simpr-P2.9b axL1.SH simpl-P2.9a ax-L1
+          mpt-P1.8.2AC.2SH )
+        BCABCDZDZABEZMBDLABFGAKLMMADLABHGLMIJJ
     $.
 $}
 
@@ -2144,12 +2137,12 @@ $( ------------------------------------------------------------------------- $)
 
 ${
     $( '`/\`' Exportation Law. $)
-    export-P2.10b $p 
-        |- ( ( ( w_ph /\ w_ps ) -> w_ch ) -> ( w_ph -> ( w_ps -> w_ch ) ) ) 
-    $= 
-        ( wff-and wff-imp wff-neg df-and-D2.2 subiml-P2.8a.SH bifwd-P2.5a.SH
-          export-L2.1b syl-P1.2 ) 
-        ABDZCEZABFEFZCEZABCEEMOLNCABGHIABCJK 
+    export-P2.10b $p
+        |- ( ( ( w_ph /\ w_ps ) -> w_ch ) -> ( w_ph -> ( w_ps -> w_ch ) ) )
+    $=
+        ( wff-and wff-imp cmb-P2.9c axL1.SH ax-L1 axL1.AC.SH
+          mpt-P1.8.3AC.2SH )
+        ABDZCKCEZABABKEELABFGBLEALLBHIJ
     $.
 $}
 
@@ -2159,108 +2152,6 @@ ${
     $( Inference from ~export-P2.10b . $)
     export-P2.10b.SH $p |- ( w_ph -> ( w_ps -> w_ch ) ) $= 
         ( wff-and wff-imp export-P2.10b ax-MP ) ABECFABCFFDABCGH 
-    $.
-$}
-
-$(
-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
-  Commutative and Associative Properties.
-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
-$)
-
-${
-    $( Lemma for ~andcomm-P2.12 . $)
-    andcomm-P2.12-L1 $p |- ( ( w_ph /\ w_ps ) -> ( w_ps /\ w_ph ) ) $= 
-        ( wff-and simpr-P2.11b simpl-P2.11a cmb-P2.11c.AC.2SH ) BAABCABDABEF
-    $.
-$}
-
-${
-    $( '`/\`' Commutativity. $)
-    andcomm-P2.12 $p |- ( ( w_ph /\ w_ps ) <-> ( w_ps /\ w_ph ) ) $=
-        ( wff-and andcomm-P2.12-L1 bicmb-P2.5c.2SH ) ABCBACABDBADE
-    $.
-$}
-
-$( ------------------------------------------------------------------------- $)
-
-${
-    $( Lemma for ~andassoc-P2.13 . $)
-    andassoc-P2.13-L1 $p 
-        |- ( ( ( w_ph /\ w_ps ) /\ w_ch ) -> ( w_ph /\ ( w_ps /\ w_ch ) ) )
-    $= 
-        ( wff-and simpl-P2.11a simpl-P2.11a.AC.SH simpr-P2.11b.AC.SH
-          simpr-P2.11b cmb-P2.11c.AC.2SH ) 
-        ABCDABDZCDZABKJCEZFBCKABKLGJCHII 
-    $.
-$}
-
-${
-    $( Lemma for ~andassoc-P2.13 . $)
-    andassoc-P2.13-L2 $p
-        |- ( ( w_ph /\ ( w_ps /\ w_ch ) ) -> ( ( w_ph /\ w_ps ) /\ w_ch ) )
-    $= 
-        ( wff-and simpl-P2.11a simpr-P2.11b simpl-P2.11a.AC.SH
-          cmb-P2.11c.AC.2SH simpr-P2.11b.AC.SH ) 
-        ABDCABCDZDZABKAJEBCKAJFZGHBCKLIH 
-    $.
-$}
-
-${
-    $( '`/\`' Associativity. $)
-    andassoc-P2.13 $p 
-        |- ( ( ( w_ph /\ w_ps ) /\ w_ch ) <-> ( w_ph /\ ( w_ps /\ w_ch ) ) )
-    $= 
-        ( wff-and andassoc-P2.13-L1 andassoc-P2.13-L2 bicmb-P2.5c.2SH )
-        ABDCDABCDDABCEABCFG 
-    $.
-$}
-
-$(
-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
-  Substitution Laws.
-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
-$)
-
-${
-    $( Left Substitution Law for '`/\`'. $)
-    subandl-P2.14a $p
-        |- ( ( w_ph <-> w_ps ) -> ( ( w_ph /\ w_ch ) <-> ( w_ps /\ w_ch ) ) )
-    $=
-        ( wff-and wff-neg wff-imp wff-bi df-and-D2.2 axL1.SH subiml-P2.8a
-         subneg-P2.7 syl-P1.2 bitrns-P2.6c.AC.2SH bisym-P2.6b.SH )
-        ACDZBCEZFZEZBCDZABGZOAPFZEZRTOUBGTACHITUAQGUBRGABPJUAQKLMRSGTSRBCHNIM
-    $.
-$}
-
-${
-    subandl-P2.14a.SH.1 $e |- ( w_ph <-> w_ps ) $.
-
-    $( Inference from ~subandl-P2.14a . $)
-    subandl-P2.14a.SH $p |- ( ( w_ph /\ w_ch ) <-> ( w_ps /\ w_ch ) ) $=
-        ( wff-bi wff-and subandl-P2.14a ax-MP ) ABEACFBCFEDABCGH
-    $.
-$}
-
-$( ------------------------------------------------------------------------- $)
-
-${
-    $( Right Substitution Law for '`/\`'. $)
-    subandr-P2.14b $p
-        |- ( ( w_ph <-> w_ps ) -> ( ( w_ch /\ w_ph ) <-> ( w_ch /\ w_ps ) ) )
-    $=
-        ( wff-and wff-bi andcomm-P2.12 axL1.SH subandl-P2.14a
-          bitrns-P2.6c.AC.2SH )
-        CADZBCDZCBDZABEZJACDZKMJNEMCAFGABCHIKLEMBCFGI
-    $.
-$}
-
-${
-    subandr-P2.14b.SH.1 $e |- ( w_ph <-> w_ps ) $.
-
-    $( Inference from ~subandr-P2.14b . $)
-    subandr-P2.14b.SH $p |- ( ( w_ch /\ w_ph ) <-> ( w_ch /\ w_ps ) ) $=
-        ( wff-bi wff-and subandr-P2.14b ax-MP ) ABECAFCBFEDABCGH 
     $.
 $}
 
@@ -2303,15 +2194,15 @@ $(
   Fundamental Properties.
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
   
-  Taken together, the properties ~orintl-P2.15a , ~orintr-P2.15b , and
-  ~orelim-P2.15c completely define logical disjunction.
+  Taken together, the properties ~orintl-P2.11a , ~orintr-P2.11b , and
+  ~orelim-P2.11c completely define logical disjunction.
 $)
 
 $( ------------------------------------------------------------------------- $)
 
 ${
     $( Left Introduction Rule for '`\/`'. $)
-    orintl-P2.15a $p |- ( w_ph -> ( w_ps \/ w_ph ) ) $=
+    orintl-P2.11a $p |- ( w_ph -> ( w_ps \/ w_ph ) ) $=
         ( wff-neg wff-imp wff-or poe-P1.11b trnsp-P1.15b df-or-D2.3
           birev-P2.5b.SH dsyl-P1.3 )
         AACBDBCADZBAEZABFABGLKBAHIJ
@@ -2319,11 +2210,11 @@ ${
 $}
 
 ${
-    orintl-P2.15a.AC.SH.1 $e |- ( w_ga -> w_ph ) $.
+    orintl-P2.11a.AC.SH.1 $e |- ( w_ga -> w_ph ) $.
 
-    $( Deductive Form of ~orintl-P2.15a . $)
-    orintl-P2.15a.AC.SH $p |- ( w_ga -> ( w_ps \/ w_ph ) ) $=
-        ( wff-imp wff-or orintl-P2.15a axL1.SH rcp-FR1.SH ax-MP )
+    $( Deductive Form of ~orintl-P2.11a . $)
+    orintl-P2.11a.AC.SH $p |- ( w_ga -> ( w_ps \/ w_ph ) ) $=
+        ( wff-imp wff-or orintl-P2.11a axL1.SH rcp-FR1.SH ax-MP )
         CAECBAFZEDAKCAKECABGHIJ
     $.
 $}
@@ -2332,7 +2223,7 @@ $( ------------------------------------------------------------------------- $)
 
 ${
     $( Right Introduction Rule for '`\/`'. $)
-    orintr-P2.15b $p |- ( w_ph -> ( w_ph \/ w_ps ) ) $=
+    orintr-P2.11b $p |- ( w_ph -> ( w_ph \/ w_ps ) ) $=
         ( wff-neg wff-imp wff-or poe-P1.11b df-or-D2.3 birev-P2.5b.SH
          syl-P1.2 )
         AACBDZABEZABFKJABGHI
@@ -2340,11 +2231,11 @@ ${
 $}
 
 ${
-    orintr-P2.15b.AC.SH.1 $e |- ( w_ga -> w_ph ) $.
+    orintr-P2.11b.AC.SH.1 $e |- ( w_ga -> w_ph ) $.
 
-    $( Deductive Form of ~orintr-P2.15b . $)
-    orintr-P2.15b.AC.SH $p |- ( w_ga -> ( w_ph \/ w_ps ) ) $=
-        ( wff-imp wff-or orintr-P2.15b axL1.SH rcp-FR1.SH ax-MP )
+    $( Deductive Form of ~orintr-P2.11b . $)
+    orintr-P2.11b.AC.SH $p |- ( w_ga -> ( w_ph \/ w_ps ) ) $=
+        ( wff-imp wff-or orintr-P2.11b axL1.SH rcp-FR1.SH ax-MP )
         CAECABFZEDAKCAKECABGHIJ
     $.
 $}
@@ -2354,30 +2245,30 @@ $( ------------------------------------------------------------------------- $)
 ${
     $( '`/\`' Elimination Law.
 
-       This is also known as the "Proof by Cases" rule. $)
-    orelim-P2.15c $p
-        |- ( 
+       This is also known as the "Proof by Cases" law.  $)
+    orelim-P2.11c $p
+        |- (
           ( w_ph -> w_ch ) ->
           ( ( w_ps -> w_ch ) ->
           ( ( w_ph \/ w_ps ) -> w_ch ) )
-        ) 
+        )
     $=
-        ( wff-imp wff-or wff-and simpl-P2.11a axL1.AC.SH import-P2.10a.SH
-          wff-neg simpr-P2.11b df-or-D2.3 bifwd-P2.5a.SH syl-P1.2
+        ( wff-imp wff-or wff-and simpl-P2.9a simpl-P2.9a.AC.SH wff-neg
+          simpr-P2.9b df-or-D2.3 bifwd-P2.5a.SH syl-P1.2 simpr-P2.9b.AC.SH
           sylt-P1.9.AC.2SH pfbycase-P1.17.AC.2SH export-P2.10b.SH )
-        ACDZBCDZABEZCDRSFZTCACUATFZUATRRTUARSGHIAJZBCUBUBTUCBDZUATKTUDABLMNUAT
-        SSTUARSKHIOPQQ
+        ACDZBCDZABEZCDRSFZTCACUATFZRSUBUATGZHAIZBCUBUBTUDBDZUATJTUEABKLMRSUBUC
+        NOPQQ
     $.
 $}
 
 ${
-    orelim-P2.15c.AC.3SH.1 $e |- ( w_ga -> ( w_ph -> w_ch ) ) $.
-    orelim-P2.15c.AC.3SH.2 $e |- ( w_ga -> ( w_ps -> w_ch ) ) $.
-    orelim-P2.15c.AC.3SH.3 $e |- ( w_ga -> ( w_ph \/ w_ps ) ) $.
+    orelim-P2.11c.AC.3SH.1 $e |- ( w_ga -> ( w_ph -> w_ch ) ) $.
+    orelim-P2.11c.AC.3SH.2 $e |- ( w_ga -> ( w_ps -> w_ch ) ) $.
+    orelim-P2.11c.AC.3SH.3 $e |- ( w_ga -> ( w_ph \/ w_ps ) ) $.
 
-    $( Deductive Form of ~orelim-P2.15c . $)
-    orelim-P2.15c.AC.3SH $p |- ( w_ga -> w_ch ) $=
-        ( wff-or wff-imp orelim-P2.15c axL1.SH rcp-FR1.SH ax-MP axL2.SH )
+    $( Deductive Form of ~orelim-P2.11c . $)
+    orelim-P2.11c.AC.3SH $p |- ( w_ga -> w_ch ) $=
+        ( wff-or wff-imp orelim-P2.11c axL1.SH rcp-FR1.SH ax-MP axL2.SH )
         DABHZIDCIGDOCDBCIZIDOCIZIFPQDDACIZIDPQIZIERSDRSIDABCJKLMLMNM
     $.
 $}
@@ -2390,8 +2281,8 @@ $)
 
 ${
     $( Law of Excluded Middle. $)
-    exclmid-P2.16 $p |- ( w_ph \/ -. w_ph ) $=
-        ( wff-neg wff-or orintr-P2.15b orintl-P2.15a pfbycase-P1.17.2SH )
+    exclmid-P2.12 $p |- ( w_ph \/ -. w_ph ) $=
+        ( wff-neg wff-or orintr-P2.11b orintl-P2.11a pfbycase-P1.17.2SH )
         AAABZCAGDGAEF
     $.
 $}
@@ -2427,7 +2318,7 @@ $)
 
 ${
     $( Justification Theorem for ~df-true-D2.4 . $)
-    truejust-P2.17 $p
+    truejust-P2.13 $p
         |- ( ( A. x x = x -> A. x x = x ) <-> ( A. y y = y -> A. y y = y ) )
     $=
         ( term-obj wff-equals wff-forall wff-imp id-P1.4 axL1.SH
@@ -2455,7 +2346,7 @@ $)
 
 ${
     $( '`T.`' is a theorem. $)
-    true-P2.18 $p |- T. $=
+    true-P2.14 $p |- T. $=
         ( objvar-x term-obj wff-equals wff-forall wff-imp wff-true id-P1.4
           df-true-D2.4 birev-P2.5b.SH ax-MP )
         ABZKCADZLEZFZLGNMAHIJ
@@ -2498,8 +2389,8 @@ $)
 
 ${
     $( '`F.`' is refutable. $)
-    false-P2.19 $p |- -. F. $=
-        ( wff-true wff-false wff-neg true-P2.18 df-false-D2.5 bifwd-P2.5a.SH
+    false-P2.15 $p |- -. F. $=
+        ( wff-true wff-false wff-neg true-P2.14 df-false-D2.5 bifwd-P2.5a.SH
           trnsp-P1.15a.SH ax-MP )
         AZBZCDJIJICEFGH
     $.
@@ -2636,7 +2527,7 @@ ${
 
        This rule is simply stating an assumption. $)
     ndasm-P3.1 $p |- ( ( w_ga /\ w_ph ) -> w_ph ) $=
-        ( simpr-P2.11b ) BAC
+        ( simpr-P2.9b ) BAC
     $.
 $}
 
@@ -2722,7 +2613,7 @@ ${
 
        Deduce the conjunction of two previously deduced WFFs. $)
     ndandi-P3.7 $p |- ( w_ga -> ( w_ph /\ w_ps ) ) $=
-        ( cmb-P2.11c.AC.2SH ) ABCDEF
+        ( cmb-P2.9c.AC.2SH ) ABCDEF
     $.
 $}
 
@@ -2733,9 +2624,10 @@ ${
 
     $( Natural Deduction: Left '`/\`' Elimination Rule. 
 
-       Deduce the left conjunct of a previously deduced conjunction. $)
+       Deduce the right conjunct (i.e. eliminate the left conjunct) of a
+       previously deduced conjunction. $)
     ndandel-P3.8 $p |- ( w_ga -> w_ps ) $=
-        ( simpr-P2.11b.AC.SH ) ABCDE
+        ( simpr-P2.9b.AC.SH ) ABCDE
     $.
 $}
 
@@ -2746,9 +2638,10 @@ ${
 
     $( Natural Deduction: Right '`/\`' Elimination Rule. 
 
-       Deduce the right conjunct of a previously deduced conjunction. $)
+       Deduce the left conjunct (i.e. eliminate the right conjunct) of a
+       previously deduced conjunction. $)
     ndander-P3.9 $p |- ( w_ga -> w_ph ) $=
-        ( simpl-P2.11a.AC.SH ) ABCDE
+        ( simpl-P2.9a.AC.SH ) ABCDE
     $.
 $}
 
@@ -2762,7 +2655,7 @@ ${
        Deduce a new disjunction containing an arbitrary WFF to the left of a
        previously deduced WFF. $)
     ndoril-P3.10 $p |- ( w_ga -> ( w_ps \/ w_ph ) ) $=
-        ( orintl-P2.15a.AC.SH ) ABCDE
+        ( orintl-P2.11a.AC.SH ) ABCDE
     $.
 $}
 
@@ -2776,7 +2669,7 @@ ${
        Deduce a new disjunction containing an arbitrary WFF to the right of a
        previously deduced WFF. $)
     ndorir-P3.11 $p |- ( w_ga -> ( w_ph \/ w_ps ) ) $=
-        ( orintr-P2.15b.AC.SH ) ABCDE
+        ( orintr-P2.11b.AC.SH ) ABCDE
     $.
 $}
 
@@ -2800,7 +2693,7 @@ ${
        then we can deduce '`w_ch`' with the case assumptions, '`w_ph`' and
        '`w_ps`', discharged.  $)
     ndore-P3.12 $p |- ( w_ga -> w_ch ) $=
-        ( export-P2.10b.SH orelim-P2.15c.AC.3SH ) ABCDDACEHDBCFHGI
+        ( export-P2.10b.SH orelim-P2.11c.AC.3SH ) ABCDDACEHDBCFHGI
     $.
 $}
 
@@ -2824,7 +2717,7 @@ $( ------------------------------------------------------------------------- $)
 ${
     ndbief-P3.14.1 $e |- ( w_ga -> ( w_ph <-> w_ps ) ) $.
 
-    $( Natural Deduction: '`<->`' Forward Implication Rule. 
+    $( Natural Deduction: '`<->`' Elimination Rule - Forward Implication. 
 
        After deducing a biconditional statement, we can deduce the assocated
        forward implication. $)
@@ -2838,7 +2731,7 @@ $( ------------------------------------------------------------------------- $)
 ${
     ndbier-P3.15.1 $e |- ( w_ga -> ( w_ph <-> w_ps ) ) $.
 
-    $( Natural Deduction: '`<->`' Reverse Implication Rule.
+    $( Natural Deduction: '`<->`' Elimination Rule - Reverse Implication.
 
        After deducing a biconditional statement, we can deduce the associated
        reverse implication. $)
@@ -2850,12 +2743,12 @@ $}
 $( ------------------------------------------------------------------------- $)
 
 ${
-    $( Law of Excluded Middle (restated). 
+    $( Natural Deduction: Law of Excluded Middle (restated). 
 
        Every WFF '`w_ph`' is either true or false.  This law is rejected
        within intuitionist logic. $)
     ndexclmid-P3.16 $p |- ( w_ph \/ -. w_ph ) $=
-        ( exclmid-P2.16 ) AB
+        ( exclmid-P2.12 ) AB
     $.
 $}
 
@@ -2888,7 +2781,7 @@ ${
        Rules 17 and 18 allow us to write '`( T. -> w_ph )`' as a synonym for
        stating "'`w_ph`' is true" (or, more precisely, deducable). $)
     ndtruee-P3.18 $p |- w_ph $=
-        ( wff-true true-P2.18 ax-MP ) CADBE
+        ( wff-true true-P2.14 ax-MP ) CADBE
     $.
 $}
 
@@ -2923,7 +2816,7 @@ ${
        "'`w_ph`' is false" (or, more precisely, refutable).
 $)
     ndfalsee-P3.20 $p |- -. w_ph $=
-        ( wff-false wff-neg false-P2.19 trnsp-P1.15c.SH ax-MP ) CZDADEAHBFG
+        ( wff-false wff-neg false-P2.15 trnsp-P1.15c.SH ax-MP ) CZDADEAHBFG
     $.
 $}
 
@@ -3762,6 +3655,12 @@ $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
   Closed Forms of Natural Deduction Rules.
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+  The closed form of ~ndimp-P3.2 is just the Hilbert Axiom L1, which we deduce
+  later as ~axL1-P3.21.CL .  The closed forms of ~ndimi-P3.5 and ~ndandi-P3.7
+  are trivial cases of implication identity, which is already availible as
+  ~rcp-NDASM1of1 .  The closed forms of ~ndandel-P3.8 and ~ndander-P3.9 are 
+  also already availible as ~rcp-NDASM1of2 and ~rcp-NDASM2of2 .
 $)
 
 ${
@@ -4426,7 +4325,7 @@ ${
 $}
 
 ${
-    $( Closed Form of ~nmt-P3.32b . `t.` $)
+    $( Closed Form of ~nmt-P3.32b . $)
     nmt-3.32b.CL $p |- ( ( -. w_ph -> w_ph ) -> w_ph ) $=
         ( wff-neg wff-imp rcp-NDASM1of1 nmt-P3.32b ) AABACZFDE
     $.
@@ -4531,11 +4430,11 @@ $(
   These two laws can be thought of as justification theorems for treating
   a sequent of the form...
 
-  1.) '( `w_ga1`, `w_ga2`, ... , `w_ga`_n ) `|-` `w_ph`'
+  1.) '`w_ga1`, `w_ga2`, ... , `w_ga`_n `|-` `w_ph`'
 
-  as identical to the WFF...
+  as identical to the WFF statement...
 
-  2.) '`( (` ... `( ( w_ga1 /\ w_ga2 ) /\ w_ga3 ) /\` ... `w_ga`_n
+  2.) '`|- ( (` ... `( ( w_ga1 /\ w_ga2 ) /\ w_ga3 ) /\` ... `w_ga`_n
   `) -> w_ph )`.
 
   To obtain 2.) from 1.), first repeatedly apply ~ndimi-P3.5 to obtain a
@@ -4545,6 +4444,11 @@ $(
   To obtain 1.) from 2.), first apply ~export-P3.34b.RC repeatedly to obtain a
   nested implication.  From there, use a combination of ~ndasm-P3.1 ,
   ~ndimp-P3.2 , and ~ndime-P3.6 repeatedly to build the sequent back up.
+
+  The trivial case, '`w_ph` `|- w_ps` `<=>` `|- ( w_ph -> w_ps )`, cannot be
+  replicated formally in metamath, but it is similarly justified using
+  versions of ~ndasm-P3.1 , ~ndimp-P3.2 , ~ndimi-P3.5 , and ~ndime-P3.6 with
+  an empty context.
 $)
 
 ${
@@ -4589,6 +4493,92 @@ ${
        ( wff-imp wff-true wff-and ndtruei-P3.17 export-P3.34b ndtruee-P3.18 )
        ABCEEABCFABGCEDHIJ
    $.
+$}
+
+$(
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.
+  Examples.
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.
+$)
+
+${
+    example-E3.1a.1 $e
+        |- ( ( w_ph1 /\ w_ph2 /\ w_ph3 /\ w_ph4 /\ w_ph5 ) -> w_ps )
+    $.
+
+    $( Convert Sequent to Nested Implication. `t.` $)
+    example-E3.1a $p
+        |- (
+          w_ph1 -> ( w_ph2 -> ( w_ph3 -> ( w_ph4 -> ( w_ph5
+          -> w_ps ) ) ) )
+        )
+    $=
+        ( wff-imp rcp-NDIMI5 rcp-NDIMI4 rcp-NDIMI3 rcp-NDIMI2 )
+        CDEFHZHZHABNABCMABCDFABCDEGIJKL
+    $.
+$}
+
+$( ------------------------------------------------------------------------- $)
+
+${
+    example-E3.1b.1 $e
+        |- ( w_ph1 -> ( w_ph2 -> ( w_ph3 -> ( w_ph4 -> ( w_ph5
+          -> w_ps
+        ) ) ) ) )
+    $.
+
+    $( Convert Nested Implication to Nested Conjunction. `t.` $)
+    example-E3.1b $p
+        |- (
+          ( ( ( ( w_ph1 /\ w_ph2 ) /\ w_ph3 ) /\ w_ph4 ) /\ w_ph5 )
+          -> w_ps
+        )
+    $=
+        ( wff-and wff-imp import-P3.34a.RC ) ABHZCHZDHEFLDEFIZKCDMIZABCNIGJJJJ
+    $.
+$}
+
+$( ------------------------------------------------------------------------- $)
+
+${
+    example-E3.2a.1 $e
+        |- (
+          ( ( ( ( w_ph1 /\ w_ph2 ) /\ w_ph3 ) /\ w_ph4 ) /\ w_ph5 )
+          -> w_ps
+        )
+    $.
+
+    $( Convert Nested Conjunction to Nested Implication. `t.` $)
+    example-E3.2a $p
+        |- (
+          w_ph1 -> ( w_ph2 -> ( w_ph3 -> ( w_ph4 -> ( w_ph5
+          -> w_ps ) ) ) )
+        )
+    $=
+        ( wff-imp wff-and export-P3.34b.RC ) ABCDEFHZHZHABIZCLMCIZDKNDIEFGJJJJ
+    $.
+$}
+
+$( ------------------------------------------------------------------------- $)
+
+${
+    example-E3.2b.1 $e
+        |- (
+          w_ph1 -> ( w_ph2 -> ( w_ph3 -> ( w_ph4 -> ( w_ph5
+          -> w_ps ) ) ) )
+        )
+    $.
+
+    $( Convert Nested Implication to Sequent. `t.` $)
+    example-E3.2b $p
+        |- ( ( w_ph1 /\ w_ph2 /\ w_ph3 /\ w_ph4 /\ w_ph5 ) -> w_ps )
+    $=
+        ( wff-rcp-AND5 rcp-NDASM5of5 wff-imp wff-rcp-AND4 rcp-NDASM4of4
+          wff-rcp-AND3 rcp-NDASM3of3 wff-and rcp-NDASM2of2 rcp-NDIMP1add1
+          ndime-P3.6 rcp-NDIMP2add1 rcp-NDIMP3add1 rcp-NDIMP4add1 )
+        EFABCDEHABCDEIEFJZABCDEDUBABCDKABCDLDUBJZABCDCUCABCMABCNCUCJZABCBUDABO
+        ABPBUDJABGQRSRTRUAR
+    $.
 $}
 
 $(
@@ -5108,6 +5098,32 @@ $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
   Re-deriving Chapter 2 Definitions.
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+  In intuitionist logic, conjunction ('`/\`') and disjunction ('`\/`') are
+  both a stronger notion than they are in the classical case.  In 
+  intuitionist logic we have...
+
+  '`( ( w_ph /\ w_ps ) -> -. ( w_ph -> -. w_ps ) )`' and
+  '`( ( w_ph \/ w_ps ) -> ( -. w_ph -> w_ps ) )`', but not...
+
+  '`( -. ( w_ph -> -. w_ps ) -> ( w_ph /\ w_ps ) )`' or
+  '`( ( -. w_ph -> w_ps ) -> ( w_ph \/ w_ps ) )`'.
+  
+  The biconditional relationship '`( w_ph <-> w_ps )`' is also stronger in the
+  intuitionist case as it can be writter in terms of conjunction as...
+
+  '`( ( w_ph <-> w_ps ) <-> ( ( w_ph -> w_ps ) /\ ( w_ps -> w_ph ) ) )`'
+
+  which can be expanded to...
+
+  '`( ( ( w_ph <-> w_ps ) -> ( ( w_ph -> w_ps ) /\ ( w_ps -> w_ph ) ) ) /\`
+   `( ( ( w_ph -> w_ps ) /\ ( w_ps -> w_ph ) ) -> ( w_ph <-> w_ps ) ) )`.
+
+  In intuitionist logic, ~andasimint-P3.46b allows the '`/\`' symbol within the
+  left conjunct to be replaced with the primitive Hilbert definition.  The same
+  cannot be done with the right conjunct as we would need the "sufficient
+  condition" (or "only if") part of the Hilbert definition, which is not
+  intuitionally valid. 
 $)
 
 ${
@@ -5145,7 +5161,8 @@ $}
 
 $( ------------------------------------------------------------------------- $)
 
-    $( One Direction of '`/\`' in Terms of '`->`'. `t.`
+    $( Necessary Condition for (i.e. "If" part of) '`/\`' Defined in Terms of
+       '`->`' and '`-.`'. `t.`
 
        Only this direction is deducible with intuitionist logic. $)
     andasimint-P3.46b $p |- ( ( w_ph /\ w_ps ) -> -. ( w_ph -> -. w_ps ) ) $=
@@ -5208,7 +5225,8 @@ $}
 $( ------------------------------------------------------------------------- $)
 
 ${
-    $( One Direction of '`\/`' in Terms of '`->`'. `t.`
+    $( Necessary Condition for (i.e. "If" part of) '`\/`' Defined in Terms of
+       '`->`' and '`-.`'. `t.`
 
        Only this direction is deducible with intuitionist logic. $)
     orasimint-P3.48b $p |- ( ( w_ph \/ w_ps ) -> ( -. w_ph -> w_ps ) ) $=
@@ -15153,7 +15171,8 @@ ${
 $}
 
 ${
-    $( One Direction of Existential Quantifier Definition.
+    $( Necessary Condition for (i.e. "If" part of) Existential Quantifier
+       Definition.
 
        Only this direction is deducible with intuitionist logic. `t.` $)
     dfexistsint-P7 $p |- ( E. x w_ph -> -. A. x -. w_ph ) $=
@@ -15228,7 +15247,8 @@ $}
 $( ------------------------------------------------------------------------- $)
 
 ${
-    $( "If" Part of Alternate ENF Definition. `t.` $)
+    $( Necessary Condition for (i.e. "If" part of) Alternate ENF Definition.
+       `t.` $)
     dfnfreealtif-P7 $p |- ( ( E. x w_ph -> A. x w_ph ) -> F/ x w_ph ) $=
         ( wff-exists wff-forall wff-imp wff-nfree ndnfrex1-P7.8
           ndnfrall1-P7.7 ndnfrim-P7.3.RC exi-P7.CL imsubl-P3.28a.RC alli-P7
@@ -15255,7 +15275,8 @@ $}
 $( ------------------------------------------------------------------------- $)
 
 ${
-    $( "Only If" Part of Alternate ENF Definition . `t.` $)
+    $( Sufficient Condition for (i.e. "Only If" part of) Alternate ENF
+       Definition . `t.` $)
     dfnfreealtonlyif-P7 $p |- ( F/ x w_ph -> ( E. x w_ph -> A. x w_ph ) ) $=
         ( wff-forall wff-nfree ndnfrnfr-P7.12 ndnfrall1-P7.7 nfrgencl-P7
           exia-P7 )
@@ -15303,7 +15324,8 @@ $}
 $( ------------------------------------------------------------------------- $)
 
 ${
-    $( "If" Part of ~df-nfree-D6.1 Derived From Natural Deduction Rules. `t.`
+    $( Necessary Condition for (i.e. "If" part of) ~df-nfree-D6.1 Derived From
+       Natural Deduction Rules. `t.`
 
        Only this direction is deducible with intuitionist logic. $)
     dfnfreeint-P7 $p |- ( ( A. x w_ph \/ A. x -. w_ph ) -> F/ x w_ph ) $=
@@ -17662,18 +17684,22 @@ $)
 $( $t
 
 /* Custom CSS for Unicode fonts */
-htmlcss '<link rel="stylesheet" \n' + 
+/* htmlcss '<link rel="stylesheet" \n' + 
     'media="screen" \n' +
     'href="https://fontlibrary.org/en/face/xits-math" \n' +
-    'type="text/css"/> \n' +
-    '<STYLE TYPE="text/css"> \n' +
+    'type="text/css"/> \n' + */
+htmlcss '<STYLE TYPE="text/css"> \n' +
     '<!--\n' +
     '  .wff { color: blue; } \n' +
     '  .objvar { color: red; } \n' +
     '  .term { color: green; } \n' +
     '  .class { color: #CC33CC; } \n' +
     '  .typecode { color: gray; } \n' +
-    '  .math { font-family: XITSMathRegular; } \n' +
+    '  @font-face {\n' +
+    '     font-family: XITSMath-Regular; \n' +
+    '     src: url(../fonts/xits-math.woff); \n' +
+    '  } \n' +	
+    '  .math { font-family: XITSMath-Regular; } \n' +
     '-->\n' +
     '</STYLE>\n';
 
@@ -17755,7 +17781,7 @@ althtmldef "x." as " &sdot; ";
 latexdef "x." as "\cdot_p";
 
 /* ========================================================================= */
-/* Typesetting Constants */
+/* Comment Typesetting */
 
 althtmldef "&" as " &amp; ";
 latexdef "&" as "\mathrel{\&}";
@@ -17769,7 +17795,7 @@ latexdef "<=>" as "\Leftrightarrow";
 althtmldef ":=" as " &coloneq; ";
 latexdef ":=" as ":=";
 
-althtmldef "t." as " &dagger; ";
+althtmldef "t." as "&dagger;";
 latexdef "t." as "\dag";
 
 /* ************************************************************************* */

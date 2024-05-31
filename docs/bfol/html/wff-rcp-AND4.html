@@ -16,10 +16,6 @@ img { margin-bottom: -4px }
    }
 -->
 </STYLE>
-<link rel="stylesheet" 
-media="screen" 
-href="https://fontlibrary.org/en/face/xits-math" 
-type="text/css"/> 
 <STYLE TYPE="text/css"> 
 <!--
   .wff { color: blue; } 
@@ -27,7 +23,11 @@ type="text/css"/>
   .term { color: green; } 
   .class { color: #CC33CC; } 
   .typecode { color: gray; } 
-  .math { font-family: XITSMathRegular; } 
+  @font-face {
+     font-family: XITSMath-Regular; 
+     src: url(../fonts/xits-math.woff); 
+  } 
+  .math { font-family: XITSMath-Regular; } 
 -->
 </STYLE>
 <TITLE>wff-rcp-AND4 - bfol.mm Proof Explorer</TITLE>
@@ -76,7 +76,7 @@ bfol.mm Proof Explorer
 <HR NOSHADE SIZE=1>
 <CENTER><B><FONT SIZE="+1">Syntax Definition <FONT
 COLOR="#006633">wff-rcp-AND4</FONT></FONT></B>&nbsp;<SPAN CLASS=r
-STYLE="color:#C55D00">172</SPAN></CENTER>
+STYLE="color:#CA5900">162</SPAN></CENTER>
 <CENTER><TABLE><TR><TD ALIGN=LEFT><B>Description: </B>Extend WFF definition to
 include '<SPAN CLASS=math>&wedge;</SPAN>' 4-Tuple.</TD></TR></TABLE></CENTER>
 
@@ -114,7 +114,7 @@ CLASS=wff>&#x1D711;&#x2084;</SPAN>)</SPAN></TD></TR>
 
 <HR NOSHADE SIZE=1>
 <CENTER>See definition <A HREF="df-rcp-AND4.html">df-rcp-AND4</A>&nbsp;<SPAN
-CLASS=r STYLE="color:#C45D00">173</SPAN> for more information.</CENTER><HR
+CLASS=r STYLE="color:#CA5900">163</SPAN> for more information.</CENTER><HR
 NOSHADE SIZE=1>
 <CENTER><TABLE CELLSPACING=7><TR><TD ALIGN=LEFT><FONT SIZE=-1><B>Colors of
 variables:</B>  <SPAN CLASS=typecode

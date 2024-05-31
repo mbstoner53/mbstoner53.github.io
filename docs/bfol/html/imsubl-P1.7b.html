@@ -16,10 +16,6 @@ img { margin-bottom: -4px }
    }
 -->
 </STYLE>
-<link rel="stylesheet" 
-media="screen" 
-href="https://fontlibrary.org/en/face/xits-math" 
-type="text/css"/> 
 <STYLE TYPE="text/css"> 
 <!--
   .wff { color: blue; } 
@@ -27,7 +23,11 @@ type="text/css"/>
   .term { color: green; } 
   .class { color: #CC33CC; } 
   .typecode { color: gray; } 
-  .math { font-family: XITSMathRegular; } 
+  @font-face {
+     font-family: XITSMath-Regular; 
+     src: url(../fonts/xits-math.woff); 
+  } 
+  .math { font-family: XITSMath-Regular; } 
 -->
 </STYLE>
 <TITLE>imsubl-P1.7b - bfol.mm Proof Explorer</TITLE>
@@ -76,7 +76,7 @@ bfol.mm Proof Explorer
 <HR NOSHADE SIZE=1>
 <CENTER><B><FONT SIZE="+1">Theorem <FONT
 COLOR="#006633">imsubl-P1.7b</FONT></FONT></B>&nbsp;<SPAN CLASS=r
-STYLE="color:#F41500">54</SPAN></CENTER>
+STYLE="color:#F41600">54</SPAN></CENTER>
 <CENTER><TABLE><TR><TD ALIGN=LEFT><B>Description: </B>Implication Substitution
 (left).
 <P STYLE="margin-bottom:0em">
@@ -143,11 +143,11 @@ HREF="ax-MP.html">ax-MP</A>&nbsp;<SPAN CLASS=r
 STYLE="color:#F90300">14</SPAN></FONT></TD></TR>
 <TR><TD ALIGN=LEFT><FONT SIZE=-1><B>This theorem is referenced by:</B> &nbsp;<A
 HREF="imsubl-P1.7b.SH.html">imsubl-P1.7b.SH</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#F31600">55</SPAN> &nbsp;<A
+&nbsp;<SPAN CLASS=r STYLE="color:#F31700">55</SPAN> &nbsp;<A
 HREF="imsubl-P1.7b.AC.SH.html">imsubl-P1.7b.AC.SH</A>
 &nbsp;<SPAN CLASS=r STYLE="color:#F31700">56</SPAN> &nbsp;<A
 HREF="sylt-P1.9.html">sylt-P1.9</A>
-&nbsp;<SPAN CLASS=r STYLE="color:#F21A00">60</SPAN></FONT></TD></TR>
+&nbsp;<SPAN CLASS=r STYLE="color:#F21B00">61</SPAN></FONT></TD></TR>
 </TABLE></CENTER>
 <TABLE BORDER=0 WIDTH="100%">
 <TR><TD WIDTH="25%">&nbsp;</TD>
